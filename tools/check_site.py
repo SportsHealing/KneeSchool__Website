@@ -92,7 +92,7 @@ EXEMPTIONS = [
      "the site label matches the source by decision"),
     ("index.html", "PHRASE-001", "meet the",
      "existing approved homepage copy, 'Meet the topic'; flagged to the client, not yet changed"),
-    ("index.html", "PHRASE-001", "not only",
+    ("encyclopaedia/whole-body.html", "PHRASE-001", "not only",
      "the rule targets 'not only X but also Y'; 'the person and not only the scan' is not that "
      "construction, so this is a rule false positive"),
 ]
@@ -109,6 +109,18 @@ def phrase_rules():
     rules = linter.load_rules(os.path.join(ROOT, "pipeline", "config", "lint_rules.json"))
     return [r for r in rules["rules"]
             if r["id"] in ("PHRASE-001", "UK-001") and r.get("banned_phrases")]
+
+
+def chrome_drift():
+    """A page whose header or footer has fallen behind tools/site_chrome.py.
+    The site has no build step, so the ribbon is copied into every file and
+    drift is the obvious failure mode."""
+    import subprocess
+    out = subprocess.run([sys.executable, os.path.join(ROOT, "tools", "apply_chrome.py"),
+                          "--check"], capture_output=True, text=True, cwd=ROOT)
+    return ["%s: header or footer is out of step with tools/site_chrome.py"
+            % line.split()[-1]
+            for line in out.stdout.splitlines() if line.strip().startswith("DRIFTED")]
 
 
 def main():
@@ -181,6 +193,9 @@ def main():
                     failures.append("%s: link %r targets an unparsed page" % (rel, href))
                 elif other is not None and frag not in other.ids:
                     failures.append("%s: link %r targets a missing anchor" % (rel, href))
+
+    drift = chrome_drift()
+    failures.extend(drift)
 
     print("checked %d pages" % len(pages))
     for e in exempt:

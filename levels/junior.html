@@ -19,13 +19,46 @@
     <label class="burger" for="navtoggle">Menu</label>
     <nav class="nav" aria-label="Main">
       <ul>
-        <li><a href="../index.html#levels">Learn by level</a></li>
-        <li><a href="../levels/junior.html">Junior</a></li>
-        <li><a href="../index.html#encyclopaedia">Encyclopaedia</a></li>
-        <li><a href="../conditions/index.html">Conditions</a></li>
-        <li><a href="../index.html#curriculum">Curriculum</a></li>
-        <li><a href="../index.html#tools">Practise</a></li>
-        <li><a href="../index.html#about">About</a></li>
+        <li class="has-menu">
+          <a class="top" href="../index.html#levels">Learn<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../index.html#levels">Find your level</a></li>
+            <li><a href="../levels/junior.html">Junior Academy</a></li>
+            <li><a href="../levels/patient.html">Patient Academy</a></li>
+            <li><a href="../levels/student.html">Student Academy</a></li>
+            <li><a href="../levels/mrcs.html">MRCS Academy</a></li>
+            <li><a href="../levels/frcs.html">FRCS (Tr and Orth) Academy</a></li>
+            <li><a href="../levels/fellowship.html">Fellowship Academy</a></li>
+            <li><a href="../levels/consultant.html">Consultant Masterclass</a></li>
+          </ul>
+        </li>
+        <li class="has-menu">
+          <a class="top" href="../encyclopaedia/index.html">Reference<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../encyclopaedia/index.html">The knee encyclopaedia</a></li>
+            <li><a href="../conditions/index.html">Conditions library</a></li>
+            <li><a href="../encyclopaedia/whole-body.html">Whole body factors</a></li>
+          </ul>
+        </li>
+        <li class="has-menu">
+          <a class="top" href="../practise/index.html">Practise<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../practise/index.html#questions">Question bank</a></li>
+            <li><a href="../practise/index.html#cases">Case library</a></li>
+            <li><a href="../practise/index.html#video">Video academy</a></li>
+            <li><a href="../practise/index.html#scores">Knee score centre</a></li>
+          </ul>
+        </li>
+        <li class="has-menu">
+          <a class="top" href="../about/standards.html">About<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../about/standards.html">How a page reaches this site</a></li>
+            <li><a href="../about/curriculum.html">Mapped to the UK training pathway</a></li>
+            <li><a href="#">Authors and reviewers</a></li>
+            <li><a href="#">References and sources</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
   </div>
@@ -182,6 +215,46 @@
     </div>
   </section>
 
+  <section class="band wrap" style="padding-top:0">
+    <div class="sec-head">
+      <h2>How this tier is governed</h2>
+      <p class="lede">Section 0 carries rules the other tiers do not. They are binding, not aspirational.</p>
+    </div>
+    <div class="stack split">
+      <div>
+        <h3 class="map-title">Rules for this tier</h3>
+        <div class="rules">
+          <ul>
+            <li><b>No commercial content.</b> No products, no supplements and no clinical services anywhere in Section 0. Marketing to minors has no place in an educational brand.</li>
+            <li><b>No clinical advice.</b> Every symptom page closes by pointing the reader to a parent, a teacher, a coach or a doctor. No doses, no self treatment, no rehabilitation prescriptions.</li>
+            <li><b>Privacy by design.</b> Minimal data, no behavioural advertising, high privacy defaults, and parental consent where an account is offered.</li>
+            <li><b>Moderation first.</b> Questions and leaderboards are moderated before they appear. There is no open chat and no direct messaging for under 18s.</li>
+            <li><b>Plain English.</b> Chapters 0.1 and 0.2 target a reading age of 12 to 14 and pass a readability review before publication.</li>
+            <li><b>Safeguarding sign off.</b> A named lead approves outreach and any content that features an identifiable young person.</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <h3 class="map-title">Where each chapter leads</h3>
+        <div class="table-scroll">
+          <table class="map">
+            <thead>
+              <tr><th scope="col">Junior chapter</th><th scope="col">Feeds into</th><th scope="col">How the depth grows</th></tr>
+            </thead>
+            <tbody>
+              <tr><td data-label="Junior chapter">0.1 Discover the knee</td><td data-label="Feeds into">Fundamentals and the Anatomy Academy</td><td data-label="How the depth grows">Illustrated tour, then formal anatomy, then surgical anatomy</td></tr>
+              <tr><td data-label="Junior chapter">0.2 Sport and your knees</td><td data-label="Feeds into">Conditions, performance and prevention</td><td data-label="How the depth grows">Recognition, then pathology, then prevention science</td></tr>
+              <tr><td data-label="Junior chapter">0.3 Careers</td><td data-label="Feeds into">Examination masterclasses</td><td data-label="How the depth grows">Pathway map, then how to pass MRCS and FRCS</td></tr>
+              <tr><td data-label="Junior chapter">0.4 Medical school entry</td><td data-label="Feeds into">Student Academy</td><td data-label="How the depth grows">Aspiration, then the undergraduate curriculum</td></tr>
+              <tr><td data-label="Junior chapter">0.5 Young investigators</td><td data-label="Feeds into">Research Academy</td><td data-label="How the depth grows">Curiosity, then method, then landmark papers</td></tr>
+              <tr><td data-label="Junior chapter">0.6 Certificates</td><td data-label="Feeds into">Certification and diplomas</td><td data-label="How the depth grows">Badges, then certificates, then diplomas</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="band wrap" style="padding-top:clamp(2.4rem,5vw,3.4rem)">
     <div class="adjacent">
       <div><span class="dir">One step back</span><span class="name none">This is where the spiral starts</span></div>
@@ -209,12 +282,10 @@
       <div>
         <h3>Reference</h3>
         <ul>
-          <li><a href="../index.html#encyclopaedia">Anatomy</a></li>
-          <li><a href="../index.html#encyclopaedia">Imaging</a></li>
-          <li><a href="../conditions/index.html">Conditions</a></li>
-          <li><a href="../index.html#encyclopaedia">Rehabilitation</a></li>
-          <li><a href="../index.html#whole">Whole body factors</a></li>
-          <li><a href="../index.html#curriculum">Curriculum mapping</a></li>
+          <li><a href="../encyclopaedia/index.html">The knee encyclopaedia</a></li>
+          <li><a href="../conditions/index.html">Conditions library</a></li>
+          <li><a href="../encyclopaedia/whole-body.html">Whole body factors</a></li>
+          <li><a href="../practise/index.html">Practise and test</a></li>
         </ul>
       </div>
       <div>
@@ -229,10 +300,10 @@
       <div>
         <h3>About</h3>
         <ul>
-          <li><a href="../index.html#standards">Editorial standards</a></li>
+          <li><a href="../about/standards.html">How a page reaches this site</a></li>
+          <li><a href="../about/curriculum.html">Mapped to the UK training pathway</a></li>
           <li><a href="../levels/junior.html">For teachers and coaches</a></li>
           <li><a href="#">Authors and reviewers</a></li>
-          <li><a href="#">References and sources</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </div>

@@ -2,8 +2,15 @@
 """Shared header and footer for the KneeSchool static pages.
 
 There is no build step on the site itself, so this emits complete standalone
-HTML files. Every path is relative with no leading slash, which keeps the pages
-working from the filesystem, from a subdirectory and from a host root alike.
+HTML. tools/apply_chrome.py rewrites the header and footer of every page from
+here, which is what keeps ten hand written pages in step with each other.
+
+Every path is relative with no leading slash, so the pages work from the
+filesystem, from a subdirectory and from a host root alike.
+
+The ribbon is four categories with dropdowns. It carries no JavaScript: the
+menus open on hover and on keyboard focus, and at phone width the whole thing
+expands into one list behind the Menu checkbox.
 """
 
 TIERS = ["junior", "patient", "student", "mrcs", "frcs", "fellowship", "consultant"]
@@ -18,6 +25,35 @@ LEVEL_NAMES = {
     "consultant": "Consultant Masterclass",
 }
 
+# (category label, category href, [(item label, item href)])
+# hrefs are written relative to the site root and rewritten per page depth.
+RIBBON = [
+    ("Learn", "index.html#levels", [
+        ("Find your level", "index.html#levels"),
+    ] + [("%s" % LEVEL_NAMES[t], "levels/%s.html" % t) for t in TIERS]),
+
+    ("Reference", "encyclopaedia/index.html", [
+        ("The knee encyclopaedia", "encyclopaedia/index.html"),
+        ("Conditions library", "conditions/index.html"),
+        ("Whole body factors", "encyclopaedia/whole-body.html"),
+    ]),
+
+    ("Practise", "practise/index.html", [
+        ("Question bank", "practise/index.html#questions"),
+        ("Case library", "practise/index.html#cases"),
+        ("Video academy", "practise/index.html#video"),
+        ("Knee score centre", "practise/index.html#scores"),
+    ]),
+
+    ("About", "about/standards.html", [
+        ("How a page reaches this site", "about/standards.html"),
+        ("Mapped to the UK training pathway", "about/curriculum.html"),
+        ("Authors and reviewers", "#"),
+        ("References and sources", "#"),
+        ("Contact", "#"),
+    ]),
+]
+
 
 def depth_bar(position, total=7, cls="depth"):
     """position is 1 based: junior is 1, consultant is 7."""
@@ -25,6 +61,15 @@ def depth_bar(position, total=7, cls="depth"):
             + "".join('<i class="on"></i>' if i < position else "<i></i>"
                       for i in range(total))
             + "</span>")
+
+
+def _href(target, rel):
+    """Rewrite a root relative href for a page sitting `rel` deep."""
+    if target.startswith(("http", "mailto:")) or target == "#":
+        return target
+    if rel == "" and target.startswith("index.html#"):
+        return target[len("index.html"):]          # stay on the page
+    return rel + target
 
 
 def head(title, description, rel, extra_meta=""):
@@ -47,7 +92,17 @@ def head(title, description, rel, extra_meta=""):
 
 def header(rel):
     home = "index.html" if rel == "" else rel + "index.html"
-    anchor = (lambda frag: "#" + frag) if rel == "" else (lambda frag: rel + "index.html#" + frag)
+    groups = []
+    for n, (label, top_href, items) in enumerate(RIBBON, 1):
+        lis = "\n".join(
+            '            <li><a href="%s">%s</a></li>' % (_href(h, rel), t)
+            for t, h in items)
+        groups.append("""        <li class="has-menu">
+          <a class="top" href="%s">%s<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+%s
+          </ul>
+        </li>""" % (_href(top_href, rel), label, lis))
     return """<header class="site-head">
   <div class="wrap head-in">
     <a class="brand" href="%s"><b>Knee</b><span>School</span></a>
@@ -55,23 +110,15 @@ def header(rel):
     <label class="burger" for="navtoggle">Menu</label>
     <nav class="nav" aria-label="Main">
       <ul>
-        <li><a href="%s">Learn by level</a></li>
-        <li><a href="%slevels/junior.html">Junior</a></li>
-        <li><a href="%s">Encyclopaedia</a></li>
-        <li><a href="%sconditions/index.html">Conditions</a></li>
-        <li><a href="%s">Curriculum</a></li>
-        <li><a href="%s">Practise</a></li>
-        <li><a href="%s">About</a></li>
+%s
       </ul>
     </nav>
   </div>
 </header>
-""" % (home, anchor("levels"), rel, anchor("encyclopaedia"), rel,
-       anchor("curriculum"), anchor("tools"), anchor("about"))
+""" % (home, "\n".join(groups))
 
 
 def footer(rel):
-    anchor = (lambda frag: "#" + frag) if rel == "" else (lambda frag: rel + "index.html#" + frag)
     learn = "\n".join(
         '          <li><a href="%slevels/%s.html">%s</a></li>' % (rel, t, LEVEL_NAMES[t])
         for t in TIERS)
@@ -87,12 +134,10 @@ def footer(rel):
       <div>
         <h3>Reference</h3>
         <ul>
-          <li><a href="%s">Anatomy</a></li>
-          <li><a href="%s">Imaging</a></li>
-          <li><a href="%sconditions/index.html">Conditions</a></li>
-          <li><a href="%s">Rehabilitation</a></li>
-          <li><a href="%s">Whole body factors</a></li>
-          <li><a href="%s">Curriculum mapping</a></li>
+          <li><a href="%sencyclopaedia/index.html">The knee encyclopaedia</a></li>
+          <li><a href="%sconditions/index.html">Conditions library</a></li>
+          <li><a href="%sencyclopaedia/whole-body.html">Whole body factors</a></li>
+          <li><a href="%spractise/index.html">Practise and test</a></li>
         </ul>
       </div>
       <div>
@@ -107,10 +152,10 @@ def footer(rel):
       <div>
         <h3>About</h3>
         <ul>
-          <li><a href="%s">Editorial standards</a></li>
+          <li><a href="%sabout/standards.html">How a page reaches this site</a></li>
+          <li><a href="%sabout/curriculum.html">Mapped to the UK training pathway</a></li>
           <li><a href="%slevels/junior.html">For teachers and coaches</a></li>
           <li><a href="#">Authors and reviewers</a></li>
-          <li><a href="#">References and sources</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </div>
@@ -125,9 +170,7 @@ def footer(rel):
 
 </body>
 </html>
-""" % (learn, anchor("encyclopaedia"), anchor("encyclopaedia"), rel,
-       anchor("encyclopaedia"), anchor("whole"), anchor("curriculum"),
-       anchor("standards"), rel)
+""" % (learn, rel, rel, rel, rel, rel, rel, rel)
 
 
 def crumb(items):

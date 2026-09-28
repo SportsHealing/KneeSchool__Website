@@ -20,13 +20,46 @@
     <label class="burger" for="navtoggle">Menu</label>
     <nav class="nav" aria-label="Main">
       <ul>
-        <li><a href="#levels">Learn by level</a></li>
-        <li><a href="levels/junior.html">Junior</a></li>
-        <li><a href="#encyclopaedia">Encyclopaedia</a></li>
-        <li><a href="conditions/index.html">Conditions</a></li>
-        <li><a href="#curriculum">Curriculum</a></li>
-        <li><a href="#tools">Practise</a></li>
-        <li><a href="#about">About</a></li>
+        <li class="has-menu">
+          <a class="top" href="#levels">Learn<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="#levels">Find your level</a></li>
+            <li><a href="levels/junior.html">Junior Academy</a></li>
+            <li><a href="levels/patient.html">Patient Academy</a></li>
+            <li><a href="levels/student.html">Student Academy</a></li>
+            <li><a href="levels/mrcs.html">MRCS Academy</a></li>
+            <li><a href="levels/frcs.html">FRCS (Tr and Orth) Academy</a></li>
+            <li><a href="levels/fellowship.html">Fellowship Academy</a></li>
+            <li><a href="levels/consultant.html">Consultant Masterclass</a></li>
+          </ul>
+        </li>
+        <li class="has-menu">
+          <a class="top" href="encyclopaedia/index.html">Reference<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="encyclopaedia/index.html">The knee encyclopaedia</a></li>
+            <li><a href="conditions/index.html">Conditions library</a></li>
+            <li><a href="encyclopaedia/whole-body.html">Whole body factors</a></li>
+          </ul>
+        </li>
+        <li class="has-menu">
+          <a class="top" href="practise/index.html">Practise<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="practise/index.html#questions">Question bank</a></li>
+            <li><a href="practise/index.html#cases">Case library</a></li>
+            <li><a href="practise/index.html#video">Video academy</a></li>
+            <li><a href="practise/index.html#scores">Knee score centre</a></li>
+          </ul>
+        </li>
+        <li class="has-menu">
+          <a class="top" href="about/standards.html">About<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="about/standards.html">How a page reaches this site</a></li>
+            <li><a href="about/curriculum.html">Mapped to the UK training pathway</a></li>
+            <li><a href="#">Authors and reviewers</a></li>
+            <li><a href="#">References and sources</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
   </div>
@@ -41,7 +74,7 @@
         <p>KneeSchool teaches the same knee again and again, each time in more detail, from a school science lesson to consultant level surgery.</p>
         <div class="actions">
           <a class="btn" href="#levels">Find your level</a>
-          <a class="btn ghost" href="conditions/index.html">Open the conditions library</a>
+          <a class="btn ghost" href="encyclopaedia/index.html">Open the encyclopaedia</a>
         </div>
       </div>
 
@@ -193,341 +226,6 @@
     </div>
   </section>
 
-  <section class="band wrap" id="junior">
-    <div class="sec-head">
-      <h2>The Junior Academy</h2>
-      <p class="lede">Section 0 sits below the patient tier and closes the spiral at the school end. It is written for learners of roughly 13 to 18 who encounter the knee through sport, through biology or through an ambition to work in medicine.</p>
-    </div>
-
-    <div class="chapters">
-      <div class="chapter">
-        <span class="num">0.1</span>
-        <h3>Discover the knee</h3>
-        <p>An illustrated tour of the joint. The four building blocks, how a hinge rolls and glides, what load does during running and jumping, and why a growing knee behaves differently. Linked to GCSE and A level biology and PE.</p>
-      </div>
-      <div class="chapter">
-        <span class="num">0.2</span>
-        <h3>Sport and your knees</h3>
-        <p>Injuries that show up in young athletes, Osgood Schlatter and growing pains, warm up programmes that are known to work, why ACL risk differs between girls and boys, and when to tell an adult.</p>
-      </div>
-      <div class="chapter">
-        <span class="num">0.3</span>
-        <h3>Careers in knee medicine</h3>
-        <p>An interactive map of the road from school to consultant. A day in the life of a surgeon, a physiotherapist, a radiographer and a theatre nurse. What the letters MRCS and FRCS actually stand for.</p>
-      </div>
-      <div class="chapter">
-        <span class="num">0.4</span>
-        <h3>Getting into medical school</h3>
-        <p>Subject choices, work experience that counts, admissions tests signposted to official sources, personal statements, widening participation routes, and gateway and graduate entry courses.</p>
-      </div>
-      <div class="chapter">
-        <span class="num">0.5</span>
-        <h3>Young investigators</h3>
-        <p>Where medical knowledge comes from. Knee themed EPQ and science fair questions with method guidance, a first look at reading a paper, safe biomechanics experiments, and profiles of working researchers.</p>
-      </div>
-      <div class="chapter">
-        <span class="num">0.6</span>
-        <h3>Certificates and challenges</h3>
-        <p>A Knee Explorer certificate for the first two chapters, a quiz ladder at beginner level, class and school leaderboards, and digital badges that carry into the wider platform.</p>
-      </div>
-      <div class="chapter">
-        <span class="num">0.7</span>
-        <h3>For teachers, coaches and parents</h3>
-        <p>Lesson plans mapped to the biology and PE curricula, downloadable slide decks and worksheets, load management for youth coaches, and guidance on supporting an injured young athlete.</p>
-      </div>
-    </div>
-
-    <div class="stack split">
-      <div>
-        <h3 class="map-title">Rules for this tier</h3>
-        <div class="rules">
-          <ul>
-            <li><b>No commercial content.</b> No products, no supplements and no clinical services anywhere in Section 0. Marketing to minors has no place in an educational brand.</li>
-            <li><b>No clinical advice.</b> Every symptom page closes by pointing the reader to a parent, a teacher, a coach or a doctor. No doses, no self treatment, no rehabilitation prescriptions.</li>
-            <li><b>Privacy by design.</b> Minimal data, no behavioural advertising, high privacy defaults, and parental consent where an account is offered.</li>
-            <li><b>Moderation first.</b> Questions and leaderboards are moderated before they appear. There is no open chat and no direct messaging for under 18s.</li>
-            <li><b>Plain English.</b> Chapters 0.1 and 0.2 target a reading age of 12 to 14 and pass a readability review before publication.</li>
-            <li><b>Safeguarding sign off.</b> A named lead approves outreach and any content that features an identifiable young person.</li>
-          </ul>
-        </div>
-      </div>
-      <div>
-        <h3 class="map-title">Where each chapter leads</h3>
-        <div class="table-scroll">
-          <table class="map">
-            <thead>
-              <tr><th scope="col">Junior chapter</th><th scope="col">Feeds into</th><th scope="col">How the depth grows</th></tr>
-            </thead>
-            <tbody>
-              <tr><td data-label="Junior chapter">0.1 Discover the knee</td><td data-label="Feeds into">Fundamentals and the Anatomy Academy</td><td data-label="How the depth grows">Illustrated tour, then formal anatomy, then surgical anatomy</td></tr>
-              <tr><td data-label="Junior chapter">0.2 Sport and your knees</td><td data-label="Feeds into">Conditions, performance and prevention</td><td data-label="How the depth grows">Recognition, then pathology, then prevention science</td></tr>
-              <tr><td data-label="Junior chapter">0.3 Careers</td><td data-label="Feeds into">Examination masterclasses</td><td data-label="How the depth grows">Pathway map, then how to pass MRCS and FRCS</td></tr>
-              <tr><td data-label="Junior chapter">0.4 Medical school entry</td><td data-label="Feeds into">Student Academy</td><td data-label="How the depth grows">Aspiration, then the undergraduate curriculum</td></tr>
-              <tr><td data-label="Junior chapter">0.5 Young investigators</td><td data-label="Feeds into">Research Academy</td><td data-label="How the depth grows">Curiosity, then method, then landmark papers</td></tr>
-              <tr><td data-label="Junior chapter">0.6 Certificates</td><td data-label="Feeds into">Certification and diplomas</td><td data-label="How the depth grows">Badges, then certificates, then diplomas</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="band dark" id="encyclopaedia">
-    <div class="wrap">
-      <div class="sec-head">
-        <h2>The knee encyclopaedia</h2>
-        <p class="lede">One reference library behind every level. Each page carries a junior section, a patient section, a student section and a trainee section, with references at the foot.</p>
-      </div>
-      <div class="cols">
-        <div class="col">
-          <h3>Structure</h3>
-          <ul>
-            <li><a href="#">Bones and alignment</a></li>
-            <li><a href="encyclopaedia/menisci.html">Menisci</a></li>
-            <li><a href="#">Ligaments</a></li>
-            <li><a href="#">Cartilage</a></li>
-            <li><a href="#">Tendons</a></li>
-            <li><a href="#">Nerves and vessels</a></li>
-          </ul>
-        </div>
-        <div class="col">
-          <h3>Function</h3>
-          <ul>
-            <li><a href="#">Kinematics</a></li>
-            <li><a href="#">Ligament mechanics</a></li>
-            <li><a href="#">Patellofemoral mechanics</a></li>
-            <li><a href="#">Gait analysis</a></li>
-            <li><a href="#">Load and tissue tolerance</a></li>
-          </ul>
-        </div>
-        <div class="col">
-          <h3>Assessment</h3>
-          <ul>
-            <li><a href="#">Clinical examination</a></li>
-            <li><a href="#">Radiographs</a></li>
-            <li><a href="#">MRI</a></li>
-            <li><a href="#">Ultrasound and CT</a></li>
-            <li><a href="#">Knee score centre</a></li>
-          </ul>
-        </div>
-        <div class="col">
-          <h3>Treatment</h3>
-          <ul>
-            <li><a href="#">Arthroscopy</a></li>
-            <li><a href="#">Ligament reconstruction</a></li>
-            <li><a href="#">Osteotomy</a></li>
-            <li><a href="#">Arthroplasty</a></li>
-            <li><a href="#">Rehabilitation</a></li>
-            <li><a href="#">Research and appraisal</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div id="conditions" style="margin-top:clamp(2.5rem,5vw,3.5rem)">
-        <h3 class="sub-head"><a href="conditions/index.html" style="text-decoration:none">Conditions library</a></h3>
-        <ul class="col-list">
-          <li><a href="conditions/acl.html">ACL injury</a></li>
-          <li><a href="conditions/index.html">PCL injury</a></li>
-          <li><a href="conditions/index.html">MCL injury</a></li>
-          <li><a href="conditions/index.html">Posterolateral corner</a></li>
-          <li><a href="conditions/index.html">Meniscal tears</a></li>
-          <li><a href="conditions/index.html">Cartilage defects</a></li>
-          <li><a href="conditions/index.html">Patellofemoral instability</a></li>
-          <li><a href="conditions/index.html">Osteoarthritis</a></li>
-          <li><a href="conditions/index.html">Inflammatory arthritis</a></li>
-          <li><a href="conditions/index.html">Children's knee</a></li>
-          <li><a href="conditions/index.html">Women's knee health</a></li>
-          <li><a href="conditions/index.html">Tumours and infection</a></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="band wrap" id="curriculum">
-    <div class="sec-head">
-      <h2>Mapped to the UK training pathway</h2>
-      <p class="lede">Each professional page carries a curriculum tag, so a trainee can filter by examination and stage and can cite what they have read in a training portfolio.</p>
-    </div>
-
-    <div class="note">
-      <p>These tables are a working framework. The ISCP trauma and orthopaedic curriculum and the JCIE examination regulations are the authoritative sources. Every mapping is checked against the current published version, including the critical conditions and index procedure appendices, before an alignment claim goes live.</p>
-      <p>KneeSchool covers the knee component of MRCS and FRCS preparation and is designed to sit alongside general resources. It is mapped to these curricula. It is not endorsed by any college, board or society.</p>
-    </div>
-
-    <div class="stack">
-      <h3 class="map-title">The pathway at a glance</h3>
-      <div class="table-scroll">
-        <table class="map">
-          <thead>
-            <tr><th scope="col">Stage</th><th scope="col">Examination or framework</th><th scope="col">KneeSchool tier</th></tr>
-          </thead>
-          <tbody>
-              <tr><td data-label="Stage">School</td><td data-label="Examination or framework">GCSE and A level biology and PE</td><td data-label="KneeSchool tier">Junior Academy</td></tr>
-              <tr><td data-label="Stage">Medical school</td><td data-label="Examination or framework">Medical Licensing Assessment and university finals</td><td data-label="KneeSchool tier">Student Academy</td></tr>
-              <tr><td data-label="Stage">Core surgical training</td><td data-label="Examination or framework">MRCS Part A and Part B</td><td data-label="KneeSchool tier">MRCS Academy</td></tr>
-              <tr><td data-label="Stage">Higher specialty training in trauma and orthopaedics</td><td data-label="Examination or framework">ISCP curriculum, FRCS (Tr and Orth) Section 1 and Section 2</td><td data-label="KneeSchool tier">FRCS Academy</td></tr>
-              <tr><td data-label="Stage">Post CCT fellowship</td><td data-label="Examination or framework">Subspecialty fellowship goals</td><td data-label="KneeSchool tier">Fellowship Academy</td></tr>
-              <tr><td data-label="Stage">Consultant practice</td><td data-label="Examination or framework">Continuing professional development, appraisal and revalidation</td><td data-label="KneeSchool tier">Consultant Masterclass</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <div class="stack">
-      <h3 class="map-title">MRCS</h3>
-      <div class="table-scroll">
-        <table class="map">
-          <thead>
-            <tr><th scope="col">Examinable domain</th><th scope="col">How the knee expresses it</th><th scope="col">Where it lives on KneeSchool</th></tr>
-          </thead>
-          <tbody>
-              <tr><td data-label="Examinable domain">Applied anatomy</td><td data-label="How the knee expresses it">Osteology, ligament attachments, menisci, neurovascular relations and surgical approaches</td><td data-label="Where it lives on KneeSchool">Anatomy Academy, MRCS layer</td></tr>
-              <tr><td data-label="Examinable domain">Physiology and basic science</td><td data-label="How the knee expresses it">Cartilage biology, bone healing, graft biology and inflammation</td><td data-label="Where it lives on KneeSchool">Fundamentals and anatomy, MRCS layer</td></tr>
-              <tr><td data-label="Examinable domain">Pathology</td><td data-label="How the knee expresses it">Osteoarthritis, septic arthritis, and meniscal and ligament injury patterns</td><td data-label="Where it lives on KneeSchool">Conditions library</td></tr>
-              <tr><td data-label="Examinable domain">Clinical examination</td><td data-label="How the knee expresses it">Structured knee examination, special tests and communication stations</td><td data-label="Where it lives on KneeSchool">Clinical examination and the video academy</td></tr>
-              <tr><td data-label="Examinable domain">Trauma principles</td><td data-label="How the knee expresses it">Knee dislocation, tibial plateau fracture, extensor mechanism rupture and compartment syndrome</td><td data-label="Where it lives on KneeSchool">Conditions and the Surgery Academy, principles layer</td></tr>
-              <tr><td data-label="Examinable domain">Imaging interpretation</td><td data-label="How the knee expresses it">Radiograph and MRI fundamentals of the knee</td><td data-label="Where it lives on KneeSchool">Imaging</td></tr>
-              <tr><td data-label="Examinable domain">Question practice</td><td data-label="How the knee expresses it">Single best answer banks and mock papers at MRCS standard</td><td data-label="Where it lives on KneeSchool">Question bank and the MRCS revision course</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <div class="stack">
-      <h3 class="map-title">FRCS (Tr and Orth)</h3>
-      <div class="table-scroll">
-        <table class="map">
-          <thead>
-            <tr><th scope="col">Curriculum element</th><th scope="col">Knee relevant requirement</th><th scope="col">Where it lives on KneeSchool</th></tr>
-          </thead>
-          <tbody>
-              <tr><td data-label="Curriculum element">Specialty knowledge syllabus</td><td data-label="Knee relevant requirement">Advanced anatomy, biomechanics, elective and trauma knee pathology, and the evidence base</td><td data-label="Where it lives on KneeSchool">Anatomy through to surgery, FRCS layer throughout</td></tr>
-              <tr><td data-label="Curriculum element">Critical conditions</td><td data-label="Knee relevant requirement">Knee emergencies such as dislocation with vascular injury, septic arthritis, compartment syndrome and open fracture. The full list is checked against the current appendix</td><td data-label="Where it lives on KneeSchool">Conditions library and the Surgery Academy</td></tr>
-              <tr><td data-label="Curriculum element">Index procedures</td><td data-label="Knee relevant requirement">Knee index procedures, chiefly total knee replacement and knee arthroscopy. Indicative numbers are checked against the current appendix</td><td data-label="Where it lives on KneeSchool">Surgery Academy procedure pages, each carrying a curriculum tag</td></tr>
-              <tr><td data-label="Curriculum element">Evidence and research</td><td data-label="Knee relevant requirement">Critical appraisal, landmark trials and statistics</td><td data-label="Where it lives on KneeSchool">Research Academy and landmark papers</td></tr>
-              <tr><td data-label="Curriculum element">Section 1 written paper</td><td data-label="Knee relevant requirement">High volume single best answer practice with explanations at FRCS standard</td><td data-label="Where it lives on KneeSchool">Question bank and the FRCS knee revision course</td></tr>
-              <tr><td data-label="Curriculum element">Section 2 clinical and viva</td><td data-label="Knee relevant requirement">Short and long cases, viva reasoning frameworks and guideline fluency</td><td data-label="Where it lives on KneeSchool">Case library, viva academy and clinical examination</td></tr>
-              <tr><td data-label="Curriculum element">Professional capabilities</td><td data-label="Knee relevant requirement">Consent, shared decision making, multidisciplinary working and disclosure of complications</td><td data-label="Where it lives on KneeSchool">Woven through the procedure and complication pages</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-
-  <section class="band wrap" id="whole">
-    <div class="holistic">
-      <div>
-        <h2 style="font-size:clamp(1.85rem,3.6vw,2.7rem);font-weight:300">Knee pain is rarely only the knee</h2>
-        <p class="lede" style="margin-top:1rem">A joint fails where load meets tolerance. KneeSchool teaches both sides of that equation, so the plan covers the person and not only the scan.</p>
-      </div>
-      <ul class="factors">
-        <li>
-          <h3>Hip and trunk control</h3>
-          <p>Weak abductors and poor trunk control shift load onto the medial compartment and the patella.</p>
-        </li>
-        <li>
-          <h3>Foot and ankle</h3>
-          <p>Stiff ankles and collapsing arches change how force travels up the limb during landing and running.</p>
-        </li>
-        <li>
-          <h3>Training history</h3>
-          <p>Most overuse injury follows a change in volume, surface or footwear within the preceding six weeks.</p>
-        </li>
-        <li>
-          <h3>Sleep and stress</h3>
-          <p>Poor sleep lowers pain thresholds and slows tissue repair, which alters the response to rehabilitation.</p>
-        </li>
-        <li>
-          <h3>Metabolic health</h3>
-          <p>Body mass, diabetes and smoking influence cartilage health, wound healing and surgical risk.</p>
-        </li>
-        <li>
-          <h3>Previous injury</h3>
-          <p>An earlier meniscal or ligament injury remains the strongest predictor of the next one.</p>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="band wrap" id="tools">
-    <div class="sec-head">
-      <h2>Practise, test, track</h2>
-      <p class="lede">Each tool is level aware. Answer at patient level and the explanation stays in plain language. Answer at FRCS level and it cites the paper.</p>
-    </div>
-    <div class="tools">
-      <div class="tool">
-        <h3>Question bank</h3>
-        <p>Single best answer, viva prompts and rapid review sets across anatomy, imaging and management.</p>
-        <a href="#">Take a set</a>
-      </div>
-      <div class="tool">
-        <h3>Case library</h3>
-        <p>Real presentations with images, staged questions, model answers and teaching points.</p>
-        <a href="#">Open a case</a>
-      </div>
-      <div class="tool">
-        <h3>Video academy</h3>
-        <p>Examination technique, imaging walkthroughs, rehabilitation drills and operative steps.</p>
-        <a href="#">Watch a series</a>
-      </div>
-      <div class="tool">
-        <h3>Knee score centre</h3>
-        <p>Validated outcome scores with plain guidance on what a change in score means.</p>
-        <a href="#">Score your knee</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="band dark" id="standards">
-    <div class="wrap">
-      <div class="sec-head">
-        <h2>How a page reaches this site</h2>
-        <p class="lede">Every page passes four stages in order. The last stage is a person, and there is no route around it.</p>
-      </div>
-
-      <div class="steps four">
-        <div class="step">
-          <h3>Draft to a brief</h3>
-          <p>A page starts from a brief that names its tiers, what it must cover and what it must leave to a deeper page. The second list is what keeps the spiral a spiral.</p>
-        </div>
-        <div class="step">
-          <h3>Verify the evidence</h3>
-          <p>A separate pass treats the draft as suspect. It confirms each reference exists and that the source supports the claim as written, at the stated size and population.</p>
-        </div>
-        <div class="step">
-          <h3>Edit for plain speech</h3>
-          <p>A third pass holds British spelling, short sentences and varied rhythm. It works from the verified text alone, so it cannot introduce a new fact.</p>
-        </div>
-        <div class="step">
-          <h3>Consultant review</h3>
-          <p>A consultant knee surgeon approves, amends or rejects. An amendment returns to the style gate. Nothing publishes by any other route.</p>
-        </div>
-      </div>
-
-      <div class="stack split">
-        <div>
-          <h3 class="map-title">Rules that cannot be waived</h3>
-          <div class="rules">
-            <ul>
-              <li><b>Consultant sign off is mandatory.</b> There is no path from the automated checks to publication that avoids a named reviewer.</li>
-              <li><b>No invented references.</b> A reference that cannot be retrieved is removed. A missing reference is acceptable. A fabricated one is a failure.</li>
-              <li><b>No commercial content for minors.</b> The junior tier carries no product placement, no supplement content and no promotion of clinical services.</li>
-              <li><b>Guidance carries a date.</b> Every management page records the guideline version it was checked against, and that check repeats each year.</li>
-              <li><b>Uncertainty is stated.</b> Where the evidence is thin or conflicting, the page says so under its own heading rather than settling the question by tone.</li>
-            </ul>
-          </div>
-        </div>
-        <div>
-          <h3 class="map-title">The style gate</h3>
-          <div class="note">
-            <p>House style is enforced by a deterministic check rather than by judgement, because an editor working at volume will eventually let something through and a rule will not.</p>
-            <p>It rejects em and en dashes, a list of stock phrases, American spellings, any citation marker without a matching reference, and any citation marker at all in junior or patient text. A page that fails goes back for another edit, twice at most, then to a human.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section class="cta">
     <div class="wrap cta-in">
       <div>
@@ -536,7 +234,7 @@
       </div>
       <div class="actions" style="margin-top:0">
         <a class="btn" href="#levels">Choose a level</a>
-        <a class="btn ghost" href="#encyclopaedia">Browse topics</a>
+        <a class="btn ghost" href="encyclopaedia/index.html">Browse topics</a>
       </div>
     </div>
   </section>
@@ -561,12 +259,10 @@
       <div>
         <h3>Reference</h3>
         <ul>
-          <li><a href="#encyclopaedia">Anatomy</a></li>
-          <li><a href="#encyclopaedia">Imaging</a></li>
-          <li><a href="conditions/index.html">Conditions</a></li>
-          <li><a href="#encyclopaedia">Rehabilitation</a></li>
-          <li><a href="#whole">Whole body factors</a></li>
-          <li><a href="#curriculum">Curriculum mapping</a></li>
+          <li><a href="encyclopaedia/index.html">The knee encyclopaedia</a></li>
+          <li><a href="conditions/index.html">Conditions library</a></li>
+          <li><a href="encyclopaedia/whole-body.html">Whole body factors</a></li>
+          <li><a href="practise/index.html">Practise and test</a></li>
         </ul>
       </div>
       <div>
@@ -581,10 +277,10 @@
       <div>
         <h3>About</h3>
         <ul>
-          <li><a href="#standards">Editorial standards</a></li>
+          <li><a href="about/standards.html">How a page reaches this site</a></li>
+          <li><a href="about/curriculum.html">Mapped to the UK training pathway</a></li>
           <li><a href="levels/junior.html">For teachers and coaches</a></li>
           <li><a href="#">Authors and reviewers</a></li>
-          <li><a href="#">References and sources</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </div>

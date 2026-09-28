@@ -207,7 +207,7 @@ def main():
         parent = (label, href)
     else:
         parent = (brief.get("section", {}).get("name", "Encyclopaedia"),
-                  rel + "index.html#encyclopaedia")
+                  rel + "encyclopaedia/index.html")
 
     explore = doc["sections"].get(tpl["cross_links"]["heading"], [])
     items = []
