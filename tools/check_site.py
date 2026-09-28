@@ -180,6 +180,7 @@ def main():
                 failures.append("%s: root relative link %r will not resolve from a subpath" % (rel, href))
                 continue
             target, _, frag = href.partition("#")
+            target = target.split("?", 1)[0]   # drop the cache busting version
             if not target:
                 if frag and frag not in page.ids:
                     failures.append("%s: anchor #%s does not exist on this page" % (rel, frag))

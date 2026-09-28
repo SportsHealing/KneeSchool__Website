@@ -22,6 +22,9 @@ import site_chrome as chrome  # noqa: E402
 SKIP_DIRS = {".git", "pipeline", "docs", "node_modules", "assets"}
 HEADER = re.compile(r'<header class="site-head">.*?</header>\n', re.DOTALL)
 FOOTER = re.compile(r'<footer class="site-foot"[^>]*>.*?</footer>\n', re.DOTALL)
+# The stylesheet link lives in <head>, which the header replacement does not
+# reach, so its cache busting version is rewritten separately.
+STYLES = re.compile(r'href="((?:\.\./)*assets/styles\.css)(?:\?v=[^"]*)?"')
 
 
 def pages():
@@ -56,7 +59,9 @@ def main():
             skipped.append(os.path.relpath(path, ROOT))
             continue
 
-        updated = HEADER.sub(lambda m: chrome.header(rel), original, count=1)
+        version = chrome.stylesheet_version()
+        updated = STYLES.sub(lambda m: 'href="%s?v=%s"' % (m.group(1), version), original)
+        updated = HEADER.sub(lambda m: chrome.header(rel), updated, count=1)
         # the footer template closes the document, so anything after it goes
         updated = FOOTER.sub(lambda m: chrome.footer(rel), updated, count=1)
         updated = re.sub(r'(</footer>\n).*\Z', r'\1\n</body>\n</html>\n', updated,

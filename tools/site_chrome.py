@@ -13,6 +13,29 @@ menus open on hover and on keyboard focus, and at phone width the whole thing
 expands into one list behind the Menu checkbox.
 """
 
+import hashlib
+import os
+
+_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+
+def stylesheet_version():
+    """A short hash of the stylesheet, used as a query string on its link.
+
+    Without it a browser that has the old stylesheet cached keeps using it
+    against the new markup. That failure is worse than no styling at all: the
+    dropdown menus have no rule hiding them, so every menu renders open and the
+    ribbon collapses into one long row. Changing the URL whenever the file
+    changes makes a stale copy impossible.
+    """
+    path = os.path.join(_ROOT, "assets", "styles.css")
+    try:
+        with open(path, "rb") as fh:
+            return hashlib.sha256(fh.read()).hexdigest()[:8]
+    except IOError:
+        return "0"
+
+
 TIERS = ["junior", "patient", "student", "mrcs", "frcs", "fellowship", "consultant"]
 
 LEVEL_NAMES = {
@@ -84,10 +107,10 @@ def head(title, description, rel, extra_meta=""):
 %s<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="%sassets/styles.css">
+<link rel="stylesheet" href="%sassets/styles.css?v=%s">
 </head>
 <body>
-""" % (title, description, extra_meta, rel)
+""" % (title, description, extra_meta, rel, stylesheet_version())
 
 
 def header(rel):
