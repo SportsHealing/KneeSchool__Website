@@ -95,6 +95,14 @@
         "by": "editor",
         "supersedes": "Redraft as v2 with the medical student tier cut back to what 1.2 Basic Knee Anatomy owns, and the patient tier's mechanism sentences removed. Expect roughly 250 fewer words, which stays inside the brief's range."
       }
-    ]
+    ],
+    "resolved": {
+      "date": "2026-10-07",
+      "decision": "docs/decisions/001-section-1-depth.md",
+      "ruling": "Split by tier. Junior and patient tiers unrestricted. The medical student tier carries function and clinical meaning rather than dissection level structure.",
+      "applied": "The Relations and Blood Supply and Innervation sections were removed from the medical student tier. The meniscofemoral and transverse ligaments, the popliteal hiatus, coronary fibres, the perimeniscal plexus and the geniculate supply all moved to chapters 2.5 and 2.6.",
+      "retained_and_why": "The red, red-white and white zones stay, because the architecture's own must_cover list for 1.2.3 requires blood supply zones in simple terms. A page specific must_cover outranks a general exclusion.",
+      "remaining_overstep": "The patient tier's two sentences on traumatic against degenerate tear mechanism were left in place. Decision 001 restricts the professional tiers only, and the architecture's scope line for this page allows why tears matter in outline."
+    }
   }
 }

@@ -119,61 +119,52 @@ where you heard or felt a pop, or where the knee now gives way.
 
 ### Structure and Location
 
-The anterior cruciate ligament passes from the posteromedial aspect of the
-lateral femoral condyle, anteriorly, medially and distally, to the anterior
-intercondylar area of the tibia. It is intracapsular but extrasynovial.
+Four ligaments dominate. The anterior and posterior cruciate ligaments lie in
+the intercondylar region and cross one another. They are intracapsular but
+extrasynovial, which is to say they sit inside the joint capsule and outside
+the fluid filled space.
 
-The posterior cruciate ligament runs from the lateral aspect of the medial
-femoral condyle to the posterior intercondylar area, and is the stronger of
-the two.
+The medial collateral ligament is a broad structure blended with the capsule
+on the inner side. The lateral collateral ligament is a discrete cord on the
+outer side and, unlike its medial counterpart, is separate from the capsule.
 
-The medial collateral ligament has superficial and deep layers, the deep layer
-being continuous with the capsule and attached to the medial meniscus. The
-lateral collateral ligament is extracapsular, running from the lateral femoral
-epicondyle to the fibular head, and is separated from the lateral meniscus by
-the popliteus tendon.
-
-### Blood Supply and Innervation
-
-The cruciate ligaments are supplied largely by the middle geniculate artery,
-with a synovial envelope that is richer proximally. The collateral ligaments
-receive supply from the superior and inferior geniculate vessels.
-
-Innervation arises from articular branches of the tibial nerve and carries
-mechanoreceptors, which provide proprioceptive feedback. Loss of that afferent
-input contributes to the functional deficit after rupture, independent of
-mechanical laxity.
+Precise attachments, bundle anatomy and the named vessels supplying each
+ligament belong to the Anatomy Academy.
 
 ### Function
 
 The cruciates are the primary restraints to anteroposterior tibial
-translation, the ACL anteriorly and the PCL posteriorly, and both contribute
-secondarily to rotational control. The collaterals are the primary restraints
-to valgus and varus angulation respectively.
+translation, the anterior cruciate resisting forward translation and the
+posterior cruciate resisting backward translation. Both contribute secondarily
+to rotational control. The collaterals are the primary restraints to valgus
+and varus angulation respectively.
 
-Each ligament contains fibre bundles that tighten at different flexion angles,
-so some portion remains under tension throughout the arc rather than the whole
+Each ligament contains fibres that tighten at different flexion angles, so
+some portion remains under tension through the arc rather than the whole
 structure loading at once.
+
+Ligaments also carry mechanoreceptors, providing proprioceptive feedback about
+joint position.
 
 ### Clinical Relevance
 
-The intra-articular, extrasynovial position of the cruciates, bathed in
-synovial fluid, is associated with poor intrinsic healing. The extra-articular
-collaterals, particularly the medial, heal considerably better, and this
-difference shapes management.
+The intra-articular position of the cruciates, bathed in synovial fluid, is
+associated with poor intrinsic healing. The collaterals, particularly the
+medial, heal considerably better, and this difference shapes management more
+than any other single fact about these structures.
 
-Proprioceptive loss explains why rehabilitation addresses neuromuscular
-control rather than strength alone.
+Loss of proprioceptive input contributes to the functional deficit after
+rupture, independently of measured laxity, which is why rehabilitation
+addresses neuromuscular control rather than strength alone.
 
-Bundle anatomy in detail, and ligament reconstruction, are covered in the
-anatomy and surgery sections respectively.
+Ligament reconstruction is covered in the surgery section.
 
 ### Key Learning Points
 
-- The cruciates are intracapsular but extrasynovial; the LCL is extracapsular.
-- The deep MCL is continuous with the capsule and attaches to the medial meniscus.
+- The cruciates are intracapsular but extrasynovial; the lateral collateral is extracapsular.
 - Cruciates are primary restraints to anteroposterior translation, collaterals to angulation.
-- Mechanoreceptors provide proprioception, and losing it contributes to functional deficit.
+- Fibres within each ligament tighten at different flexion angles.
+- Mechanoreceptors provide proprioception, and losing it causes deficit beyond laxity.
 - Intra-articular position and synovial fluid exposure explain poor cruciate healing.
 
 ## Explore Further

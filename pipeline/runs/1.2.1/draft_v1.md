@@ -116,57 +116,46 @@ deformed, or if there is severe pain over a bony point after a fall.
 
 ### Structure and Location
 
-The distal femur expands into medial and lateral condyles, separated
-posteriorly by the intercondylar notch and continuous anteriorly with the
-trochlear groove. The medial condyle extends further distally, which
-compensates for the oblique femoral shaft and keeps the joint line roughly
-horizontal in stance.
+The distal femur expands into medial and lateral condyles, separated behind by
+the intercondylar notch and continuous in front with the trochlear groove. The
+proximal tibia presents medial and lateral plateaus, broad and only gently
+dished. The patella is triangular, with the thickest articular cartilage in
+the body on its posterior surface, divided into medial and lateral facets. The
+fibula sits laterally and transmits little axial load.
 
-The proximal tibia presents medial and lateral plateaus separated by the
-intercondylar eminence. The medial plateau is larger and concave; the lateral
-is smaller and convex in the sagittal plane, which has implications for
-translation during flexion. The plateau slopes posteriorly.
-
-The patella is triangular with a proximal base and distal apex. Its posterior
-surface bears the thickest articular cartilage in the body, divided by a
-vertical ridge into medial and lateral facets.
-
-The fibular head articulates with the posterolateral tibia at the proximal
-tibiofibular joint and provides attachment for the lateral collateral ligament
-and the biceps femoris tendon.
+The detailed morphology of each bone, and the attachments it carries, belong
+to the Anatomy Academy.
 
 ### Function
 
 Articular incongruity between convex femoral condyles and a relatively flat
 tibial plateau permits rolling, gliding and rotation, at the cost of bony
-stability. The intercondylar notch houses the cruciate ligaments, and its
-dimensions have been studied in relation to cruciate injury.
+stability. The intercondylar notch houses the cruciate ligaments.
 
-The patella acts as an anatomical pulley, displacing the quadriceps tendon
-anteriorly and increasing its moment arm about the flexion axis, with the gain
+The patella acts as an anatomical pulley, displacing the extensor tendon
+forwards and increasing its moment arm about the flexion axis, with the gain
 greatest in terminal extension.
 
 ### Clinical Relevance
 
-Trochlear morphology governs patellar tracking, and a shallow or dysplastic
-groove predisposes to maltracking and instability. Posterior tibial slope
-influences anteroposterior translation and is of interest in cruciate injury
-and in surgical planning.
+Trochlear shape governs patellar tracking, and a shallow groove predisposes to
+maltracking and instability. The backward slope of the tibial plateau
+influences how the tibia translates under load and is of interest in cruciate
+injury.
 
 Palpable landmarks structure the clinical examination: the joint line, the
-femoral epicondyles, the tibial tubercle and the fibular head. Each
-corresponds to attachments examined in the following pages.
+femoral epicondyles, the tibial tubercle and the fibular head.
 
 Fracture patterns and their management belong to the conditions and surgery
 sections.
 
 ### Key Learning Points
 
-- The medial femoral condyle extends further distally, offsetting the oblique femoral shaft.
-- The medial tibial plateau is concave and larger; the lateral is convex in the sagittal plane.
+- The femur ends in two condyles, with the trochlear groove in front and the notch behind.
+- The tibial plateau is broad and gently dished, so it does not grip the femur.
 - The patella bears the thickest articular cartilage in the body, on two facets.
-- The patella acts as a pulley, increasing the quadriceps moment arm, most in extension.
-- Trochlear morphology governs patellar tracking; posterior slope influences translation.
+- The patella acts as a pulley, increasing the extensor moment arm, most in extension.
+- Trochlear shape governs patellar tracking; tibial slope influences translation.
 
 ## Explore Further
 

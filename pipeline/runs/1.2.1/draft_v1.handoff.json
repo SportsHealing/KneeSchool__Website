@@ -12,11 +12,11 @@
   "sources": [],
   "source_note": "No sources were retrieved. The generation environment had no access to PubMed, Cochrane, the knowledge base or any textbook. The Tier 1 source minimum is NOT met and this draft would not pass Tier 1 in the deployed pipeline.",
   "claims_needing_verification": [
-    "The medial femoral condyle extends further distally, offsetting the oblique femoral shaft.",
-    "The medial tibial plateau is concave and larger; the lateral is convex in the sagittal plane.",
+    "The femur ends in two condyles, with the trochlear groove in front and the notch behind.",
+    "The tibial plateau is broad and gently dished, so it does not grip the femur.",
     "The patella bears the thickest articular cartilage in the body, on two facets.",
-    "The patella acts as a pulley, increasing the quadriceps moment arm, most in extension.",
-    "Trochlear morphology governs patellar tracking; posterior slope influences translation."
+    "The patella acts as a pulley, increasing the extensor moment arm, most in extension.",
+    "Trochlear shape governs patellar tracking; tibial slope influences translation."
   ],
   "claims_note": "Listed above are the substantive claims, taken from the deepest tier's key learning points. Every factual statement in the page body requires the same verification; these are the ones a reviewer should start with.",
   "gaps_or_uncertainties": [

@@ -113,59 +113,53 @@ after a knee injury, or if you cannot lift your foot.
 
 ### Structure and Location
 
-The femoral artery becomes the popliteal artery at the adductor hiatus and
-runs through the popliteal fossa, dividing at the lower border of popliteus
-into the anterior and posterior tibial arteries. It gives five geniculate
-branches, superior medial and lateral, middle, and inferior medial and
-lateral, which form the periarticular anastomosis.
+The femoral artery continues as the popliteal artery behind the knee and
+divides below the joint into the vessels supplying the lower leg and foot. A
+network of smaller branches arises from it to supply the joint itself.
 
-The sciatic nerve divides into tibial and common fibular components, usually
-in the distal thigh. The tibial nerve passes vertically through the fossa
-superficial to the vessels. The common fibular nerve follows the medial border
-of biceps femoris and winds around the fibular neck, where it is subcutaneous.
+The sciatic nerve divides in the distal thigh into a tibial component, which
+passes vertically behind the knee, and a common fibular component, which winds
+around the neck of the fibula where it lies subcutaneously.
 
-Contents of the popliteal fossa from superficial to deep are nerve, vein, then
-artery, which is worth remembering for approaches to the region.
+The surgical anatomy of this region, including the named branches and the
+order of structures in the popliteal fossa, belongs to the Anatomy Academy and
+to the surgery section.
 
 ### Blood Supply and Innervation
 
-The middle geniculate artery pierces the posterior capsule to supply the
-cruciate ligaments. The remaining geniculate branches supply the capsule,
-synovium, collaterals and the peripheral menisci. Penetration into articular
-cartilage and the inner meniscal zones is negligible, which determines their
-healing capacity.
+The periarticular network supplies the capsule, the synovium, the ligaments
+and the peripheral portions of the menisci. Penetration into articular
+cartilage and into the inner meniscal zones is negligible, which determines
+the healing capacity of each tissue.
 
-Articular innervation follows Hilton's law, arising from the nerves supplying
-the muscles acting on the joint: branches of the femoral, obturator, tibial
-and common fibular nerves. Mechanoreceptors within capsule and ligament
-provide proprioceptive afferents.
+Articular innervation follows Hilton's law, arising from the nerves that
+supply the muscles acting on the joint. Mechanoreceptors within capsule and
+ligament provide the proprioceptive afferents.
 
 ### Clinical Relevance
 
-The popliteal artery is relatively fixed proximally and distally, so knee
-dislocation carries a recognised risk of intimal tear or complete disruption.
-Vascular assessment is mandatory, pulses alone are insufficient to exclude
-injury, and the limb tolerates warm ischaemia for only a few hours.
+The popliteal artery is relatively fixed above and below the joint, so knee
+dislocation carries a recognised risk of arterial injury. Vascular assessment
+is mandatory, palpable pulses alone do not exclude it, and the limb tolerates
+warm ischaemia for only a few hours.
 
 The subcutaneous course of the common fibular nerve at the fibular neck makes
 it the most frequently injured peripheral nerve around the knee, whether from
-direct trauma, traction in varus injury, or external compression. The
-resulting deficit is weakness of ankle dorsiflexion and eversion with sensory
-loss over the dorsum of the foot.
+direct trauma, from traction, or from external compression. The deficit is
+weakness of ankle dorsiflexion and eversion with sensory loss over the dorsum
+of the foot.
 
-The infrapatellar branch of the saphenous nerve crosses the anterior knee and
-is commonly injured during anterior incisions, producing a numb patch lateral
-to the scar.
+A small sensory nerve crosses the front of the knee and is commonly injured
+during anterior incisions, producing a numb patch beside the scar.
 
-Surgical approaches and the management of neurovascular injury are covered in
-the anatomy and surgery sections.
+Management of neurovascular injury is covered in the surgery section.
 
 ### Key Learning Points
 
-- Popliteal fossa contents run nerve, vein, artery from superficial to deep.
-- Five geniculate branches form the periarticular anastomosis; the middle supplies the cruciates.
-- Vascular penetration into cartilage and inner meniscus is negligible, limiting healing.
-- Knee dislocation carries a real risk of popliteal arterial injury; pulses do not exclude it.
+- The popliteal artery supplies the whole lower leg and is relatively fixed behind the knee.
+- The periarticular network barely penetrates cartilage or inner meniscus, limiting healing.
+- Articular innervation follows Hilton's law and carries proprioceptive afferents.
+- Knee dislocation risks arterial injury; palpable pulses do not exclude it.
 - The common fibular nerve at the fibular neck is the most commonly injured nerve here.
 
 ## Explore Further

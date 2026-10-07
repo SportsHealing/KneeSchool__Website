@@ -6,14 +6,14 @@
   "findings": [],
   "article_template_version": "1.0",
   "document": {
-    "word_count": 1184,
+    "word_count": 1146,
     "tiers_present": [
       "junior",
       "medical_student",
       "patient"
     ],
     "has_reference_list": true,
-    "sentence_count": 80,
+    "sentence_count": 79,
     "page_type": "anatomy"
   }
 }

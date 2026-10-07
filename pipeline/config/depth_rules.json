@@ -1,0 +1,18 @@
+{
+  "rules_version": "1.0",
+  "source_of_truth": "docs/decisions/001-section-1-depth.md",
+  "note": "The architecture excludes region level anatomy detail from Fundamentals pages without saying where the line falls. Decision 001 places it: the junior and patient tiers are unrestricted, and the medical student tier carries function and clinical meaning rather than dissection level structure.",
+  "forbidden_sections_when_excluded": {
+    "exclusion_phrase": "Region level anatomy detail",
+    "sections": ["Relations", "Blood Supply and Innervation"],
+    "restricted_tiers": ["medical_student", "mrcs", "frcs", "fellowship", "consultant"],
+    "reason": "Both are region level structural detail by definition, and Section 2 owns it."
+  },
+  "exemptions": [
+    {
+      "page_id": "1.2.7",
+      "section": "Blood Supply and Innervation",
+      "reason": "The page's own subject is the nerves and blood supply. It stays in outline: named territories rather than named branches, with surgical anatomy left to 2.10.6 and Section 7."
+    }
+  ]
+}

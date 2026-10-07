@@ -9,6 +9,7 @@
 | Priority | High. The architecture places all sixteen in the Foundation phase, months 1 to 3 |
 | Style gate | All sixteen pass. Zero failures, zero warnings |
 | Evidence verification | **Did not run on any page** |
+| Depth ruling | Decision 001 applied on 7 October 2026. Five pages trimmed |
 | Reference lists | **None** |
 
 ## How these were produced
@@ -48,10 +49,12 @@ If you want a figure anywhere, please supply the one you would stand behind.
 
 1. **Pitch of the junior tier.** Every page targets reading age 12 to 14. Is that
    consistently hit, and is anything too simplified to be accurate?
-2. **The medical student tier and Section 2.** This is the same boundary question
-   raised by the Menisci page and still unanswered. How much structural detail
-   may a Fundamentals page carry before it belongs to the Anatomy Academy? Your
-   answer applies to all sixteen pages here, not one.
+2. **The medical student tier and Section 2.** *Answered by the editor on 7
+   October 2026 and already applied.* Decision 001 splits by tier: junior and
+   patient tiers are unrestricted, and the medical student tier carries function
+   and clinical meaning rather than dissection level structure. Five pages were
+   trimmed as a result. Please confirm the line is in the right place now that
+   you can see it applied, rather than ruling on it from scratch.
 3. **1.1.4 Evolution of the Human Knee.** This page makes comparative and
    evolutionary claims. Is the framing right, and is the statement about sex
    differences in injury risk pitched correctly for a junior reader?
@@ -84,15 +87,15 @@ If you want a figure anywhere, please supply the one you would stand behind.
 | 1.1.4 | Evolution of the Human Knee | 975 |
 | 1.1.5 | Common Knee Problems | 915 |
 | 1.1.6 | Lifelong Knee Health | 932 |
-| 1.2.1 | Bones of the Knee | 1185 |
+| 1.2.1 | Bones of the Knee | 1110 |
 | 1.2.2 | Articular Cartilage | 1100 |
-| 1.2.3 | Menisci | 1598 |
-| 1.2.4 | Ligaments | 1165 |
-| 1.2.5 | Tendons | 1091 |
-| 1.2.6 | Muscles Around the Knee | 1184 |
-| 1.2.7 | Nerves and Blood Supply | 1231 |
+| 1.2.3 | Menisci | 1460 |
+| 1.2.4 | Ligaments | 1106 |
+| 1.2.5 | Tendons | 1051 |
+| 1.2.6 | Muscles Around the Knee | 1146 |
+| 1.2.7 | Nerves and Blood Supply | 1184 |
 | 1.2.8 | Synovium | 1102 |
 | 1.2.9 | Bursa | 1077 |
 | 1.2.10 | Growth Plates | 1216 |
 
-**Total: 17899 words across sixteen pages.**
+**Total: 17502 words across sixteen pages.**

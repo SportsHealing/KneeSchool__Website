@@ -12,11 +12,11 @@
   "sources": [],
   "source_note": "No sources were retrieved. The generation environment had no access to PubMed, Cochrane, the knowledge base or any textbook. The Tier 1 source minimum is NOT met and this draft would not pass Tier 1 in the deployed pipeline.",
   "claims_needing_verification": [
-    "Rectus femoris is the only biarticular quadriceps component.",
-    "Quadriceps are femoral nerve supplied; hamstrings are sciatic nerve supplied.",
+    "Rectus femoris is the only quadriceps head that also crosses the hip.",
     "The hamstrings act as agonists to the ACL by resisting anterior tibial translation.",
     "Popliteus unlocks the extended knee by internally rotating the tibia.",
-    "Arthrogenic muscle inhibition causes rapid, reversible quadriceps weakness."
+    "Arthrogenic muscle inhibition causes rapid, reversible quadriceps weakness.",
+    "Isolated quadriceps weakness points away from the knee and towards the nerve supply."
   ],
   "claims_note": "Listed above are the substantive claims, taken from the deepest tier's key learning points. Every factual statement in the page body requires the same verification; these are the ones a reviewer should start with.",
   "gaps_or_uncertainties": [

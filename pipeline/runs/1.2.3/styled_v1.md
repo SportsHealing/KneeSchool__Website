@@ -123,77 +123,58 @@ swollen knee with a fever.
 
 Each meniscus is a semilunar fibrocartilaginous structure interposed between the
 femoral condyle and the tibial plateau, triangular in cross section with a thick
-peripheral border and a thin free inner edge. The superior surface is concave and
-articulates with the femoral condyle. The inferior surface is flat and rests on
-the tibial plateau.
+peripheral border and a thin free inner edge. The superior surface is concave
+and articulates with the femoral condyle. The inferior surface is flat and rests
+on the tibial plateau.
 
 The medial meniscus is the larger and more open of the two and covers a smaller
-proportion of its tibial plateau. The lateral is more nearly circular and covers a
-greater proportion. Each is anchored to the tibia at an anterior and a posterior
-root.
+proportion of its tibial plateau. The lateral is more nearly circular and covers
+a greater proportion. Each is anchored to the tibia at an anterior and a
+posterior root.
 
-### Relations
-
-The medial meniscus is continuous with the joint capsule at its periphery and is
-attached to the deep fibres of the medial collateral ligament. That attachment is
-the reason for its limited excursion.
-
-The lateral meniscus is separated from the capsule posterolaterally by the
-popliteal hiatus, through which the popliteus tendon passes. It is therefore far
-more mobile than its medial counterpart.
-
-The transverse ligament connects the two anterior horns. The meniscofemoral
-ligaments run from the posterior horn of the lateral meniscus to the medial
-femoral condyle. Coronary fibres tether the peripheral rim to the tibial margin.
-
-### Blood Supply and Innervation
-
-Vascular supply arises from the medial and lateral geniculate arteries, forming a
-perimeniscal capillary plexus in the surrounding capsular and synovial tissue.
-Penetration into the meniscal substance is limited to the peripheral portion.
-
-This produces the described zones: a vascularised peripheral zone, a transitional
-zone with partial supply, and an avascular inner zone nourished by diffusion from
-synovial fluid. Healing capacity follows the same gradient.
-
-Innervation arises from the same articular branches that supply the capsule.
-Mechanoreceptors concentrated at the horns contribute to joint proprioception.
+The ligaments and capsular attachments that tether each meniscus, and the
+vessels that supply them, belong to the Anatomy Academy.
 
 ### Function
 
-Collagen is arranged predominantly in circumferential bundles running parallel to
-the periphery, with radial tie fibres crossing them. Axial load applied by the
-femoral condyle tends to extrude the meniscus outwards. The circumferential
+Collagen is arranged predominantly in circumferential bundles running parallel
+to the periphery, with radial tie fibres crossing them. Axial load applied by
+the femoral condyle tends to extrude the meniscus outwards. The circumferential
 bundles resist that extrusion in tension, which is termed hoop stress, and the
 roots anchor the ends so the tension can develop.
 
-The result is load distribution: contact area increases and peak contact stress on
-the articular cartilage falls. The menisci also deepen the tibial articular
+The result is load distribution: contact area increases and peak contact stress
+on the articular cartilage falls. The menisci also deepen the tibial articular
 surface and so contribute secondarily to joint stability, and their movement
 assists distribution of synovial fluid across the articular surfaces.
 
 Both menisci translate posteriorly during flexion, the lateral considerably
-further than the medial.
+further than the medial, which reflects the difference in how firmly each is
+tethered.
 
 ### Clinical Relevance
+
+Vascular penetration is limited to the peripheral portion, producing the
+described red, red-white and white zones. The inner zone is nourished by
+diffusion from synovial fluid, and healing capacity follows the same gradient.
+This single fact explains most of how meniscal injury behaves.
 
 Composition is largely water, with type one collagen dominating the dry weight.
 Proteoglycan content is low relative to articular cartilage, consistent with a
 tissue loaded principally in tension rather than compression.
 
-Tear patterns follow the fibre architecture, and the zone in which a tear sits
-predicts its healing potential. Loss of meniscal tissue reduces contact area and
-raises peak contact stress, which is the mechanical basis for preferring
-preservation where a tear allows it.
+Loss of meniscal tissue reduces contact area and raises peak contact stress,
+which is the mechanical basis for preferring preservation where a tear allows
+it.
 
 Magnetic resonance imaging is the standard investigation for suspected meniscal
-injury. Signal grading and the choice between treatment options are covered in the
-imaging and surgery sections.
+injury. Signal grading and the choice between treatment options are covered in
+the imaging and surgery sections.
 
 ### Key Learning Points
 
 - Each meniscus is triangular in cross section, thick peripherally and thin at its free edge.
-- Medial meniscal mobility is limited by capsular and medial collateral ligament attachment; the lateral is freed by the popliteal hiatus.
+- The medial is larger and more open; the lateral is more nearly circular.
 - Circumferential collagen bundles convert axial load into hoop stress, which the roots allow to develop.
 - Vascularity is peripheral only, and healing capacity follows that gradient.
 - Meniscal loss reduces contact area and raises peak contact stress on articular cartilage.

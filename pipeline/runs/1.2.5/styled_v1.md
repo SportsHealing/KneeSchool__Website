@@ -112,32 +112,27 @@ can feel above or below the kneecap.
 
 ### Structure and Location
 
-The quadriceps tendon is a trilaminar structure. Rectus femoris contributes
-the superficial layer, vastus medialis and lateralis the intermediate layer,
-and vastus intermedius the deep layer, inserting on the base of the patella.
+The quadriceps tendon is formed by the convergence of the four heads of
+quadriceps femoris and inserts on the base of the patella. The patellar tendon
+runs from the apex of the patella to the tibial tubercle, typically four to
+six centimetres long.
 
-The patellar tendon extends from the apex of the patella to the tibial
-tubercle, typically four to six centimetres long. The medial and lateral
-retinacula run alongside, formed from the fascial expansions of the vasti, and
-can maintain limited active extension when the central tendon is disrupted.
+The medial and lateral retinacula run alongside, formed from the fascial
+expansions of the vasti.
 
-### Blood Supply and Innervation
-
-Supply derives from the geniculate anastomosis, entering the patellar tendon
-largely from the fat pad posteriorly and from the retinacular vessels. The
-region of the proximal patellar tendon is relatively hypovascular, which is
-relevant to the distribution of tendinopathy.
+The layered structure of the quadriceps tendon and the vascular supply of this
+region belong to the Anatomy Academy.
 
 ### Function
 
 The extensor mechanism comprises the quadriceps muscle, the quadriceps tendon,
-the patella, the patellar tendon and the retinacula, functioning as a
+the patella, the patellar tendon and the retinacula, functioning as one
 continuous unit. The patella increases the moment arm of the extensor force
 about the flexion axis, with the effect greatest in terminal extension.
 
 Tensile loads through the mechanism during jumping and landing substantially
-exceed body weight, and are transmitted through a relatively small cross
-sectional area.
+exceed body weight, transmitted through a relatively small cross sectional
+area.
 
 ### Clinical Relevance
 
@@ -154,10 +149,10 @@ Specific tendinopathies and ruptures are covered in the conditions section.
 
 ### Key Learning Points
 
-- The quadriceps tendon is trilaminar, reflecting its four muscular contributions.
+- The quadriceps tendon inserts on the patella; the patellar tendon runs to the tibial tubercle.
 - The retinacula can maintain limited active extension despite central tendon disruption.
 - The patella increases the extensor moment arm, most in terminal extension.
-- Proximal patellar tendon vascularity is relatively poor, matching tendinopathy distribution.
+- Failure anywhere in the chain produces extensor lag; the site varies with age.
 - Tendon adapts over months while muscle adapts over weeks, which explains overload pain.
 
 ## Explore Further

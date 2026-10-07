@@ -519,6 +519,23 @@ def rule_struct_001(doc, rule, brief, template):
             fail("tier '%s' carries an FAQ block; the handbook allows FAQs only in the "
                  "patient tier" % tier, tier)
 
+        # Decision 001: a page told to exclude region level anatomy detail may not
+        # carry a dissection level section in its professional tiers.
+        depth = load_depth_rules()
+        block = depth.get("forbidden_sections_when_excluded") or {}
+        phrase = (block.get("exclusion_phrase") or "").lower()
+        excluded = " ".join(brief.get("scope", {}).get("must_not_cover") or []).lower()
+        if phrase and phrase in excluded and tier in (block.get("restricted_tiers") or []):
+            exempt = set(
+                (e.get("page_id"), e.get("section"))
+                for e in depth.get("exemptions") or [])
+            for banned in block.get("sections") or []:
+                if normalise_title(banned) in [t for t, a, b in subs]:
+                    if (brief.get("page_id"), banned) in exempt:
+                        continue
+                    fail("tier '%s' carries a '%s' section. %s See decision 001."
+                         % (tier, banned, block.get("reason", "")), tier)
+
         # a reference list inside a tier block is forbidden
         for t, a, b in subs:
             if t in REFERENCE_HEADINGS:
@@ -663,6 +680,23 @@ def resolve_template(page_type):
     if mapped:
         return mapped.get("template")
     return page_type
+
+
+def load_depth_rules(path=None):
+    """Decision 001: how deep a Fundamentals page may go.
+
+    The architecture excludes region level anatomy detail from these pages
+    without saying where the line falls. The ruling places it, and this is the
+    machine form so a future page cannot breach it quietly.
+    """
+    here = os.path.dirname(os.path.abspath(__file__))
+    for candidate in [path, os.environ.get("DEPTH_RULES_PATH"),
+                      os.path.join(here, "depth_rules.json"),
+                      os.path.join(here, "..", "..", "config", "depth_rules.json")]:
+        if candidate and os.path.exists(candidate):
+            with open(candidate) as fh:
+                return json.load(fh)
+    return {}
 
 
 def load_article_template(path=None):

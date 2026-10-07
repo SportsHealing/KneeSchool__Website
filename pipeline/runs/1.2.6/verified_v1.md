@@ -118,29 +118,17 @@ your knee gives way, or if weakness is not improving with exercise.
 
 ### Structure and Location
 
-The quadriceps femoris comprises rectus femoris, arising from the anterior
-inferior iliac spine and therefore biarticular, and vastus medialis, lateralis
-and intermedius, arising from the femur. The distal oblique fibres of vastus
-medialis are directed towards the patella and contribute to medial patellar
-stability.
+Four groups act on the knee. Quadriceps femoris lies anteriorly and has four
+heads, of which only rectus femoris also crosses the hip. The hamstrings lie
+posteriorly, cross both hip and knee, and divide into a lateral and a medial
+group. Gastrocnemius arises above the joint and contributes to it. Popliteus
+is a small muscle behind the joint.
 
-The hamstrings comprise biceps femoris laterally, inserting on the fibular
-head, and semitendinosus and semimembranosus medially. Semitendinosus
-contributes to the pes anserinus with sartorius and gracilis.
+The hip abductors and external rotators do not cross the knee and still
+influence it.
 
-Gastrocnemius arises by two heads from the posterior femoral condyles.
-Popliteus arises from the lateral femoral condyle and inserts on the posterior
-tibia.
-
-### Blood Supply and Innervation
-
-The quadriceps is innervated by the femoral nerve, from roots L2 to L4. The
-hamstrings are supplied by the tibial division of the sciatic nerve, with the
-short head of biceps femoris supplied by the common fibular division.
-Gastrocnemius and popliteus are supplied by the tibial nerve.
-
-This segregation is clinically useful: isolated quadriceps weakness points
-towards the femoral nerve or the L3 and L4 roots.
+Origins, insertions and the detailed innervation of each muscle belong to the
+Anatomy Academy.
 
 ### Function
 
@@ -150,8 +138,7 @@ flex the knee and extend the hip, and act as agonists to the anterior cruciate
 ligament by resisting anterior tibial translation.
 
 Popliteus unlocks the extended knee by internally rotating the tibia on the
-femur at the initiation of flexion, and contributes to posterolateral
-stability.
+femur at the initiation of flexion.
 
 Muscle also attenuates load reaching the articular surface and provides reflex
 stabilisation at latencies shorter than voluntary reaction.
@@ -159,11 +146,16 @@ stabilisation at latencies shorter than voluntary reaction.
 ### Clinical Relevance
 
 Arthrogenic muscle inhibition causes rapid quadriceps weakness in the presence
-of effusion or pain, and is reversible but requires deliberate retraining. It
-is a principal target of rehabilitation across the whole range of knee
+of effusion or pain. It is reversible but requires deliberate retraining, and
+it is a principal target of rehabilitation across the whole range of knee
 pathology.
 
-Proximal control matters: hip abductor and external rotator weakness permits
+The extensors and flexors have different nerve supplies, which is clinically
+useful: isolated quadriceps weakness with preserved hamstring power points
+towards the femoral nerve or the upper lumbar roots rather than towards the
+knee itself.
+
+Proximal control matters. Hip abductor and external rotator weakness permits
 femoral adduction and internal rotation in stance, increasing dynamic valgus
 and patellofemoral load.
 
@@ -171,11 +163,11 @@ Muscle and tendon injuries themselves are covered in the conditions section.
 
 ### Key Learning Points
 
-- Rectus femoris is the only biarticular quadriceps component.
-- Quadriceps are femoral nerve supplied; hamstrings are sciatic nerve supplied.
+- Rectus femoris is the only quadriceps head that also crosses the hip.
 - The hamstrings act as agonists to the ACL by resisting anterior tibial translation.
 - Popliteus unlocks the extended knee by internally rotating the tibia.
 - Arthrogenic muscle inhibition causes rapid, reversible quadriceps weakness.
+- Isolated quadriceps weakness points away from the knee and towards the nerve supply.
 
 ## Explore Further
 

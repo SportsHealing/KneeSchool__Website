@@ -12,10 +12,10 @@
   "sources": [],
   "source_note": "No sources were retrieved. The generation environment had no access to PubMed, Cochrane, the knowledge base or any textbook. The Tier 1 source minimum is NOT met and this draft would not pass Tier 1 in the deployed pipeline.",
   "claims_needing_verification": [
-    "Popliteal fossa contents run nerve, vein, artery from superficial to deep.",
-    "Five geniculate branches form the periarticular anastomosis; the middle supplies the cruciates.",
-    "Vascular penetration into cartilage and inner meniscus is negligible, limiting healing.",
-    "Knee dislocation carries a real risk of popliteal arterial injury; pulses do not exclude it.",
+    "The popliteal artery supplies the whole lower leg and is relatively fixed behind the knee.",
+    "The periarticular network barely penetrates cartilage or inner meniscus, limiting healing.",
+    "Articular innervation follows Hilton's law and carries proprioceptive afferents.",
+    "Knee dislocation risks arterial injury; palpable pulses do not exclude it.",
     "The common fibular nerve at the fibular neck is the most commonly injured nerve here."
   ],
   "claims_note": "Listed above are the substantive claims, taken from the deepest tier's key learning points. Every factual statement in the page body requires the same verification; these are the ones a reviewer should start with.",
