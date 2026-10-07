@@ -1,0 +1,34 @@
+{
+  "page_id": "1.2.4",
+  "prompt_version": "1.0",
+  "article_template_version": "1.0",
+  "page_type": "anatomy",
+  "tiers_covered": [
+    "junior",
+    "patient",
+    "medical_student"
+  ],
+  "scope_statement": "The four main ligaments and their jobs.",
+  "sources": [],
+  "source_note": "No sources were retrieved. The generation environment had no access to PubMed, Cochrane, the knowledge base or any textbook. The Tier 1 source minimum is NOT met and this draft would not pass Tier 1 in the deployed pipeline.",
+  "claims_needing_verification": [
+    "The cruciates are intracapsular but extrasynovial; the LCL is extracapsular.",
+    "The deep MCL is continuous with the capsule and attaches to the medial meniscus.",
+    "Cruciates are primary restraints to anteroposterior translation, collaterals to angulation.",
+    "Mechanoreceptors provide proprioception, and losing it contributes to functional deficit.",
+    "Intra-articular position and synovial fluid exposure explain poor cruciate healing."
+  ],
+  "claims_note": "Listed above are the substantive claims, taken from the deepest tier's key learning points. Every factual statement in the page body requires the same verification; these are the ones a reviewer should start with.",
+  "gaps_or_uncertainties": [
+    "No quantitative figure is given anywhere on this page unless it is a definitional range, because none could be verified."
+  ],
+  "duplication_risk_pages": [
+    "2.1",
+    "2.7",
+    "2.8",
+    "2.9",
+    "2.10"
+  ],
+  "architecture_check": "Written against the architecture's own brief for 1.2.4, including its must_not_cover list: Region level anatomy detail (owned per structure by Section 2); Pathology (owned by Section 6); Operative treatment (owned by Section 7); Bundle anatomy (owned by 2.7.8 and 2.7.9); Reconstruction (owned by 7.20 onwards)",
+  "status": "AI_DRAFT_READY_FOR_VERIFICATION"
+}

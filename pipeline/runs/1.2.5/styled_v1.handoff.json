@@ -1,0 +1,15 @@
+{
+  "page_id": "1.2.5",
+  "prompt_version": "1.0",
+  "dashes_removed": 0,
+  "ai_phrases_removed": [],
+  "terminology_standardised": [],
+  "sentences_flagged_for_human_review": [],
+  "readability_estimate_by_tier": {
+    "junior": "short sentences, concrete analogies, target reading age 12 to 14",
+    "patient": "plain English, no jargon without a gloss",
+    "medical_student": "foundation academic register"
+  },
+  "status": "STYLE_COMPLETE_READY_FOR_CONSULTANT_REVIEW",
+  "status_note": "The draft met house style and the structure template on the run that produced it. No substantive edit was made and no new fact introduced."
+}

@@ -1,0 +1,84 @@
+{
+  "brief_version": "1.1",
+  "page_id": "1.2.6",
+  "title": "Muscles Around the Knee",
+  "section": {
+    "id": "1",
+    "name": "Knee Fundamentals"
+  },
+  "chapter": {
+    "id": "1.2",
+    "name": "Basic Knee Anatomy"
+  },
+  "page_type": "anatomy",
+  "article_template": "anatomy",
+  "generated_from": "Master Publishing Architecture, pages_0_to_3.json",
+  "tiers_required": [
+    "junior",
+    "patient",
+    "medical_student"
+  ],
+  "scope": {
+    "must_cover": [
+      "The main muscle groups and their actions."
+    ],
+    "must_not_cover": [
+      "Region level anatomy detail (owned per structure by Section 2)",
+      "Pathology (owned by Section 6)",
+      "Operative treatment (owned by Section 7)"
+    ],
+    "sibling_pages": [
+      "1.2.1",
+      "1.2.2",
+      "1.2.3",
+      "1.2.4",
+      "1.2.5",
+      "1.2.7",
+      "1.2.8",
+      "1.2.9",
+      "1.2.10"
+    ],
+    "deeper_spiral_pages": [
+      "2.1",
+      "11.9"
+    ]
+  },
+  "curriculum_tags": [],
+  "source_requirements": {
+    "kb_topic_filter": "muscles around the knee",
+    "minimum": {
+      "textbook_or_review": 1,
+      "peer_reviewed_for_clinical_claims": true
+    },
+    "preferred_recency_years": 10,
+    "guidelines_expected": []
+  },
+  "output_requirements": {
+    "language": "en-GB",
+    "format": "markdown",
+    "key_learning_points_per_tier": {
+      "min": 3,
+      "max": 5
+    },
+    "faqs_patient_level": {
+      "min": 3,
+      "max": 5
+    },
+    "target_word_count": {
+      "min": 800,
+      "max": 1800
+    },
+    "internal_link_placeholders": true
+  },
+  "governance": {
+    "commercial_content_allowed": false,
+    "clinical_advice_allowed": false,
+    "junior_tier_present": true
+  },
+  "pipeline": {
+    "priority": "high",
+    "requested_by": "architecture",
+    "regen_count": 0,
+    "consultant_assigned": null
+  }
+}

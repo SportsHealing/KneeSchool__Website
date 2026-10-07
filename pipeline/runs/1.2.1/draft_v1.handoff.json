@@ -1,0 +1,33 @@
+{
+  "page_id": "1.2.1",
+  "prompt_version": "1.0",
+  "article_template_version": "1.0",
+  "page_type": "anatomy",
+  "tiers_covered": [
+    "junior",
+    "patient",
+    "medical_student"
+  ],
+  "scope_statement": "Femur, tibia, fibula and patella oriented simply.",
+  "sources": [],
+  "source_note": "No sources were retrieved. The generation environment had no access to PubMed, Cochrane, the knowledge base or any textbook. The Tier 1 source minimum is NOT met and this draft would not pass Tier 1 in the deployed pipeline.",
+  "claims_needing_verification": [
+    "The medial femoral condyle extends further distally, offsetting the oblique femoral shaft.",
+    "The medial tibial plateau is concave and larger; the lateral is convex in the sagittal plane.",
+    "The patella bears the thickest articular cartilage in the body, on two facets.",
+    "The patella acts as a pulley, increasing the quadriceps moment arm, most in extension.",
+    "Trochlear morphology governs patellar tracking; posterior slope influences translation."
+  ],
+  "claims_note": "Listed above are the substantive claims, taken from the deepest tier's key learning points. Every factual statement in the page body requires the same verification; these are the ones a reviewer should start with.",
+  "gaps_or_uncertainties": [
+    "No quantitative figure is given anywhere on this page unless it is a definitional range, because none could be verified."
+  ],
+  "duplication_risk_pages": [
+    "2.1",
+    "2.2",
+    "2.3",
+    "2.4"
+  ],
+  "architecture_check": "Written against the architecture's own brief for 1.2.1, including its must_not_cover list: Region level anatomy detail (owned per structure by Section 2); Pathology (owned by Section 6); Operative treatment (owned by Section 7); Fracture patterns (owned by 6.96 to 6.101)",
+  "status": "AI_DRAFT_READY_FOR_VERIFICATION"
+}

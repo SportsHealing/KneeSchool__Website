@@ -433,5 +433,11 @@ h1,h2,h3,p,li,a{overflow-wrap:break-word}
   list-style:none;margin:0;padding:0}
 .explore li{border-top:1px solid var(--rule);padding-top:.6rem;font-size:.98rem}
 .explore .pid{color:var(--gold-dark);font-size:.82rem;display:block}
+/* page numbers in a topic list: the number is the architecture's own id, so it
+   earns its place as a label rather than as decoration */
+.topic .pid{color:var(--gold-dark);font-size:.8rem;display:inline-block;min-width:3.2rem;
+  font-variant-numeric:tabular-nums}
+.dark .topic .pid{color:var(--gold)}
+.topic li{display:flex;gap:.3rem;align-items:baseline}
 .explore a{text-decoration:none;border-bottom:1px solid var(--gold)}
 .explore .pending{color:var(--ink-soft);opacity:.75}

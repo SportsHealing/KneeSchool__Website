@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bursa | KneeSchool</title>
+<meta name="description" content="Small fluid filled cushions that let tendons and skin slide over bone without rubbing.">
+<meta name="theme-color" content="#0E2A21">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css?v=7d7dc330">
+</head>
+<body>
+<style>
+.dial-tabs{grid-template-columns:repeat(3,1fr)}
+#t0:checked ~ .dial-tabs label[for=t0]{color:var(--ivory);border-top-color:var(--gold)}
+#t0:checked ~ .dial-body .p0{display:block}
+#t0:focus-visible ~ .dial-tabs label[for=t0]{outline:2px solid var(--gold);outline-offset:2px}
+#t1:checked ~ .dial-tabs label[for=t1]{color:var(--ivory);border-top-color:var(--gold)}
+#t1:checked ~ .dial-body .p1{display:block}
+#t1:focus-visible ~ .dial-tabs label[for=t1]{outline:2px solid var(--gold);outline-offset:2px}
+#t2:checked ~ .dial-tabs label[for=t2]{color:var(--ivory);border-top-color:var(--gold)}
+#t2:checked ~ .dial-body .p2{display:block}
+#t2:focus-visible ~ .dial-tabs label[for=t2]{outline:2px solid var(--gold);outline-offset:2px}
+</style>
+<header class="site-head">
+  <div class="wrap head-in">
+    <a class="brand" href="../index.html"><b>Knee</b><span>School</span></a>
+    <input class="nav-toggle" type="checkbox" id="navtoggle" aria-label="Show navigation">
+    <label class="burger" for="navtoggle">Menu</label>
+    <nav class="nav" aria-label="Main">
+      <ul>
+        <li class="has-menu">
+          <a class="top" href="../index.html#levels">Learn<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../index.html#levels">Find your level</a></li>
+            <li><a href="../levels/junior.html">Junior Academy</a></li>
+            <li><a href="../levels/patient.html">Patient Academy</a></li>
+            <li><a href="../levels/student.html">Student Academy</a></li>
+            <li><a href="../levels/mrcs.html">MRCS Academy</a></li>
+            <li><a href="../levels/frcs.html">FRCS (Tr and Orth) Academy</a></li>
+            <li><a href="../levels/fellowship.html">Fellowship Academy</a></li>
+            <li><a href="../levels/consultant.html">Consultant Masterclass</a></li>
+          </ul>
+        </li>
+        <li class="has-menu">
+          <a class="top" href="../encyclopaedia/index.html">Reference<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../encyclopaedia/index.html">The knee encyclopaedia</a></li>
+            <li><a href="../conditions/index.html">Conditions library</a></li>
+            <li><a href="../encyclopaedia/whole-body.html">Whole body factors</a></li>
+          </ul>
+        </li>
+        <li class="has-menu">
+          <a class="top" href="../practise/index.html">Practise<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../practise/index.html#questions">Question bank</a></li>
+            <li><a href="../practise/index.html#cases">Case library</a></li>
+            <li><a href="../practise/index.html#video">Video academy</a></li>
+            <li><a href="../practise/index.html#scores">Knee score centre</a></li>
+          </ul>
+        </li>
+        <li class="has-menu">
+          <a class="top" href="../about/standards.html">About<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../about/standards.html">How a page reaches this site</a></li>
+            <li><a href="../about/curriculum.html">Mapped to the UK training pathway</a></li>
+            <li><a href="#">Authors and reviewers</a></li>
+            <li><a href="#">References and sources</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumb"><a href="../index.html">KneeSchool</a><span>/</span><a href="index.html">Encyclopaedia</a><span>/</span>Bursa</p>
+      <div class="hero-split">
+        <div>
+          <h1>Bursa</h1>
+          <p class="who">Page 1.2.9 &middot; Basic Knee Anatomy &middot; anatomy page</p>
+          <p class="lede">Small fluid filled cushions that let tendons and skin slide over bone without rubbing.</p>
+        </div>
+        <div>
+          <div class="status"><b>Pipeline status.</b> Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band dark">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>The same topic at 3 depths</h2>
+        <p class="lede">Each tier deepens the one below it and never repeats it. Choose the level you want.</p>
+      </div>
+      <div class="dial dial-article">
+        <div class="dial-head">
+          <h2>Bursa</h2>
+          <small>Choose a depth</small>
+        </div>
+        <input type="radio" name="depth" id="t0" checked>
+        <input type="radio" name="depth" id="t1">
+        <input type="radio" name="depth" id="t2">
+        <div class="dial-tabs">
+          <label for="t0">Junior</label>
+          <label for="t1">Patient</label>
+          <label for="t2">Student</label>
+        </div>
+        <div class="dial-body">
+          <div class="dial-panel p0">
+            <h3>For Young Learners</h3>
+            <h4>Structure and Location</h4>
+            <p>A bursa is a small flat sac with a little fluid inside. Think of a thin water balloon with barely any water in it, placed between two things that need to slide past each other.</p>
+            <p>There are quite a few around the knee. The best known sits right in front of the kneecap, just under the skin. Another sits below it, over the top of the shin bone, and one more sits deeper down.</p>
+            <h4>Function</h4>
+            <p>The job is to stop rubbing. Skin slides over the kneecap every time you bend your knee. A tendon slides over bone every time a muscle pulls. Without a cushion in between, those surfaces would wear against each other.</p>
+            <p>If you kneel for a long time, the bursa at the front gets squashed repeatedly and can fill with fluid. It swells into a soft lump you can see on the front of the kneecap. The joint itself is untouched, which is why the knee usually still bends normally.</p>
+            <div class="klp">
+              <h4>Key Learning Points</h4>
+              <ul><li>A bursa is a small flat fluid filled sac that reduces rubbing.</li><li>Several sit around the knee, including one just in front of the kneecap.</li><li>They let skin and tendons slide over bone smoothly.</li><li>Swelling in a bursa sits outside the joint, so the knee usually still bends.</li></ul>
+              <p class="closer">If any of this sounds like something happening to you, speak to a parent, teacher, coach or doctor.</p>
+            </div>
+          </div>
+          <div class="dial-panel p1">
+            <h3>For Patients</h3>
+            <h4>Structure and Location</h4>
+            <p>Bursae are thin sacs lined with a membrane similar to the joint lining, containing a small amount of fluid. More than a dozen have been described around the knee; a handful matter in practice.</p>
+            <p>The prepatellar bursa sits between the skin and the front of the kneecap. The superficial infrapatellar bursa lies in front of the patellar tendon, and the deep infrapatellar bursa behind it. The pes anserine bursa lies on the inner side just below the joint, under the tendons that attach there.</p>
+            <p>The large pouch above the kneecap began as a bursa and usually connects with the joint itself in adults, so it behaves as part of the joint cavity.</p>
+            <h4>Function</h4>
+            <p>Each one reduces friction between structures that move against each other: skin over bone, tendon over bone, or tendon over tendon. They are positioned exactly where that movement occurs.</p>
+            <h4>Clinical Relevance</h4>
+            <p>A bursa can become irritated by repeated pressure or by a direct blow, and then fills with fluid. The prepatellar bursa is the classic example, historically associated with trades involving kneeling.</p>
+            <p>The practical distinction worth understanding is between swelling in a bursa and swelling in the joint. Bursal swelling is localised, sits in front of the kneecap or over the tendon, and usually leaves knee movement comfortable. Joint swelling is diffuse, fills the whole front of the knee, and limits bending.</p>
+            <p>A hot, red, tender bursa can be infected, particularly after a graze or a puncture, and that needs prompt assessment.</p>
+            <p>Individual bursal conditions and their treatment are covered in the conditions section.</p>
+            <div class="klp">
+              <h4>Key Learning Points</h4>
+              <ul><li>Bursae are thin fluid filled sacs that reduce friction at points of movement.</li><li>The prepatellar bursa lies between skin and kneecap and is the one most often affected.</li><li>The pouch above the kneecap connects with the joint in most adults.</li><li>Bursal swelling is localised and usually leaves knee movement comfortable.</li><li>Joint swelling is diffuse and limits bending, which distinguishes the two.</li></ul>
+            </div>
+            <div class="faq">
+              <h4>Frequently Asked Questions</h4>
+              <p><b>Q.</b> I have a soft lump on the front of my kneecap. What is it? Most often a swollen prepatellar bursa, usually from kneeling or a knock. It sits outside the joint, which is why the knee itself still bends.</p>
+              <p><b>Q.</b> How do I tell bursa swelling from joint swelling? Bursal swelling is a localised lump and movement stays comfortable. Joint swelling is spread across the whole front of the knee and makes bending tight.</p>
+              <p><b>Q.</b> Is it dangerous? Usually not. A bursa that is hot, red and very tender, especially after a graze, can be infected and should be assessed promptly.</p>
+              <p><b>Q.</b> Will it come back? It can, if the cause continues. Kneeling pads and changing how long you kneel at a time are the usual preventive measures.</p>
+              <p>See a doctor promptly if a swollen area is hot, red and very tender, particularly after a graze or a cut, or if you develop a fever.</p>
+            </div>
+          </div>
+          <div class="dial-panel p2">
+            <h3>For Medical Students</h3>
+            <h4>Structure and Location</h4>
+            <p>Bursae are synovium lined sacs interposed at sites of friction. Around the knee the clinically relevant ones are the prepatellar, between skin and patella; the superficial infrapatellar, anterior to the patellar tendon; the deep infrapatellar, between the tendon and the tibia; the pes anserine, deep to the conjoined insertion of sartorius, gracilis and semitendinosus; and the semimembranosus and medial gastrocnemius bursa posteromedially.</p>
+            <p>The suprapatellar bursa communicates with the joint cavity in the large majority of adults and is therefore functionally part of it.</p>
+            <h4>Function</h4>
+            <p>Each reduces shear between adjacent moving structures. Their lining resembles synovium and responds to irritation in the same way, with increased fluid production.</p>
+            <h4>Clinical Relevance</h4>
+            <p>Bursitis arises from repetitive pressure, direct trauma, infection or inflammatory arthropathy. Prepatellar bursitis is the classic occupational example.</p>
+            <p>The clinical discrimination that matters is bursal from intra-articular swelling. Bursal swelling is well circumscribed, anterior or superficial, and range of movement is typically preserved. An effusion is diffuse, obliterates the parapatellar hollows and restricts flexion.</p>
+            <p>Septic bursitis is relatively common in superficial bursae because of their subcutaneous position and proximity to skin breaches, and is distinct from septic arthritis, which involves the joint itself. The distinction changes both urgency and treatment.</p>
+            <p>A popliteal cyst arises from the semimembranosus and medial gastrocnemius bursa and commonly communicates with the joint, so it typically reflects intra-articular pathology rather than being a primary problem.</p>
+            <p>Management of each is covered in the conditions section.</p>
+            <div class="klp">
+              <h4>Key Learning Points</h4>
+              <ul><li>Bursae are synovium lined sacs at sites of friction, responding to irritation with fluid.</li><li>The suprapatellar bursa communicates with the joint in most adults.</li><li>Bursal swelling is circumscribed with preserved movement; an effusion is diffuse and restricts flexion.</li><li>Septic bursitis is distinct from septic arthritis and differs in urgency and treatment.</li><li>A popliteal cyst usually communicates with the joint and reflects intra-articular pathology.</li></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band wrap">
+    <div class="sec-head">
+      <h2>Explore Further</h2>
+      <p class="lede">Where this topic came from and where it goes next in the spiral.</p>
+    </div>
+    <ul class="explore">
+        <li><span class="pid">1.2.8</span><span class="pending">Synovium</span></li>
+        <li><span class="pid">1.2.5</span><span class="pending">Tendons</span></li>
+        <li><span class="pid">1.2.6</span><span class="pending">Muscles around the knee</span></li>
+        <li><span class="pid">1.1.5</span><span class="pending">Common knee problems</span></li>
+        <li><span class="pid">2.9</span><span class="pending">Medial structures</span></li>
+    </ul>
+  </section>
+
+  <section class="band wrap" style="padding-top:0">
+    <div class="sec-head">
+      <h2>References</h2>
+    </div>
+    <div class="prose refs">
+      <p>No reference list is attached to this draft. Evidence verification has not run, because source retrieval was unavailable at generation time. Under the Operations Handbook a missing reference is acceptable and an invented one is a critical failure, so nothing has been cited. The medical student tier is written to descriptive anatomy and physiology only, carrying no statistic, incidence figure, indication, outcome claim or guideline statement, so no in text citation marker is required at this stage. Every claim is listed for verification in the accompanying handoff block.</p>
+    </div>
+    <p class="safety"><b>Safety.</b> KneeSchool is educational and does not give individual medical advice. Seek urgent assessment for a knee that cannot bear weight after an injury, a hot swollen knee with a fever, or new numbness, weakness or coldness in the leg or foot.</p>
+  </section>
+
+</main>
+
+<footer class="site-foot" id="about">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h3>Learn</h3>
+        <ul>
+          <li><a href="../levels/junior.html">Junior Academy</a></li>
+          <li><a href="../levels/patient.html">Patient Academy</a></li>
+          <li><a href="../levels/student.html">Student Academy</a></li>
+          <li><a href="../levels/mrcs.html">MRCS Academy</a></li>
+          <li><a href="../levels/frcs.html">FRCS (Tr and Orth) Academy</a></li>
+          <li><a href="../levels/fellowship.html">Fellowship Academy</a></li>
+          <li><a href="../levels/consultant.html">Consultant Masterclass</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Reference</h3>
+        <ul>
+          <li><a href="../encyclopaedia/index.html">The knee encyclopaedia</a></li>
+          <li><a href="../conditions/index.html">Conditions library</a></li>
+          <li><a href="../encyclopaedia/whole-body.html">Whole body factors</a></li>
+          <li><a href="../practise/index.html">Practise and test</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Clinical care</h3>
+        <ul>
+          <li><a href="https://www.chinmaygupte.com/">Consultant clinic</a></li>
+          <li><a href="#">Imaging and injections</a></li>
+          <li><a href="#">Rehabilitation programmes</a></li>
+          <li><a href="#">Braces and recovery products</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>About</h3>
+        <ul>
+          <li><a href="../about/standards.html">How a page reaches this site</a></li>
+          <li><a href="../about/curriculum.html">Mapped to the UK training pathway</a></li>
+          <li><a href="../levels/junior.html">For teachers and coaches</a></li>
+          <li><a href="#">Authors and reviewers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <p>KneeSchool is educational. It does not give individual medical advice and it does not replace assessment by a clinician. Seek urgent care for a hot, swollen knee with fever, a knee that cannot bear weight after injury, or new numbness in the leg.</p>
+      <p>Content written for school age learners carries no advertising and no product placement.</p>
+      <p>&copy; 2026 KneeSchool. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

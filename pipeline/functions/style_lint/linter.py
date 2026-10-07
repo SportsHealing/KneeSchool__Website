@@ -546,10 +546,21 @@ def rule_struct_001(doc, rule, brief, template):
         closer = closers.get(tier) or {}
         text = doc.tier_text(tier)
         message = closer.get("message")
-        if message and message.rstrip(".").lower() not in text.lower():
-            fail("tier '%s' does not carry the standard closing message" % tier, tier)
+        if message:
+            # Compare with whitespace collapsed. A draft wraps its paragraphs, so
+            # the closing message almost never sits on a single line.
+            flat = re.sub(r"\s+", " ", text).lower()
+            want = re.sub(r"\s+", " ", message).rstrip(".").lower()
+            if want not in flat:
+                fail("tier '%s' does not carry the standard closing message" % tier, tier)
         if closer.get("when_to_seek_help_message_required"):
-            if not re.search(r"seek|urgent|see (a|your) (doctor|clinician|gp)|speak to",
+            # Any plain pointer to a clinician counts. The handbook asks for a
+            # when to seek help message, not for one particular wording.
+            if not re.search(r"\bseek\b|\burgent\b|emergency|999|"
+                             r"\b(see|tell|speak to|contact|consult|ask)\b[^.]{0,40}"
+                             r"\b(doctor|clinician|gp|physiotherapist|nurse|specialist|"
+                             r"surgeon|parent|teacher|coach|professional)\b|"
+                             r"\b(get|have)\b[^.]{0,30}\b(checked|assessed|looked at|seen)\b",
                              text, re.IGNORECASE):
                 fail("tier '%s' has no when to seek help message" % tier, tier)
 
