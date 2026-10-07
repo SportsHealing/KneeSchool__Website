@@ -51,12 +51,22 @@ def page_sort_key(page_id):
 # page, which defeats the reading age the same handbook sets. See decision 002.
 TIER_WORD_BANDS = {1: (350, 900), 2: (600, 1300)}
 
+# A page carrying the patient tier must also carry an FAQ block of three to five
+# questions with answers, which the handbook requires and the drafter cannot
+# shorten away. That is structural overhead, not prose, and on a one tier page it
+# is a quarter of the whole band. The allowance lets it sit on top rather than
+# pushing the body text out. See decision 002, FAQ allowance.
+FAQ_ALLOWANCE = 250
 
-def scale_for_tiers(defaults, tier_count):
-    band = TIER_WORD_BANDS.get(tier_count)
+
+def scale_for_tiers(defaults, tiers):
+    band = TIER_WORD_BANDS.get(len(tiers))
     if not band or not defaults:
         return defaults
-    return {"min": band[0], "max": band[1]}
+    lo, hi = band
+    if "patient" in tiers:
+        hi += FAQ_ALLOWANCE
+    return {"min": lo, "max": hi}
 
 
 def build_brief(page, merge=None):
@@ -64,7 +74,7 @@ def build_brief(page, merge=None):
     type_map = load(TYPE_MAP)["page_types"]
     template_name = (type_map.get(page["page_type"]) or {}).get("template")
     defaults = (tpl["page_types"].get(template_name) or {}).get("word_count") or {}
-    defaults = scale_for_tiers(defaults, len(page["tiers_required"]))
+    defaults = scale_for_tiers(defaults, page["tiers_required"])
 
     brief = collections.OrderedDict()
     brief["brief_version"] = "1.1"

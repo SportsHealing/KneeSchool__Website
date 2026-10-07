@@ -1,0 +1,20 @@
+{
+  "page_id": "0.4.6",
+  "prompt_version": "1.0",
+  "claims_checked": 0,
+  "verified": 0,
+  "corrected": [],
+  "removed_claims": [],
+  "reference_actions": [],
+  "red_flags": [
+    "Tier 1 source minimum not met: no source retrieved",
+    "5 listed claims unverified; none confirmed against a source"
+  ],
+  "guidelines_checked": [],
+  "escalate_to_consultant": [
+    "Every claim on this page needs confirmation, because the verification stage could not run. The consultant is standing in for it.",
+    "The template this page is built on is defined by decision 003 rather than by the handbook, and needs editorial confirmation."
+  ],
+  "status": "NOT_RUN_TOOLS_UNAVAILABLE",
+  "status_note": "Agent 2 could not run. No source retrieval was available. In the deployed pipeline this execution would stop here."
+}

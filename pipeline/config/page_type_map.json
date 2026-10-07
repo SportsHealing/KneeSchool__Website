@@ -1,24 +1,91 @@
 {
   "map_version": "1.0",
   "source_of_truth": "KneeSchool_Master_Publishing_Architecture_Part1.md section 6",
-  "note": "The architecture carries a fine grained page_type. The Operations Handbook defines three article templates. This file is the join. Types marked variant_pending use the nearest template today and are candidates for their own template in Handbook v1.1.",
-  "templates": ["anatomy", "condition", "procedure"],
+  "note": "The architecture carries a fine grained page_type. This file is the join onto a template. Three templates come from the Operations Handbook; four (careers, study_skills, teacher_resource, assessment) come from decision 003 and await editorial confirmation. Types still marked variant_pending use the nearest template today and are candidates for their own template in Handbook v1.1.",
+  "templates": [
+    "anatomy",
+    "condition",
+    "procedure",
+    "careers",
+    "study_skills",
+    "teacher_resource",
+    "assessment"
+  ],
   "page_types": {
-    "anatomy":          {"template": "anatomy",   "variant_pending": false},
-    "condition":        {"template": "condition", "variant_pending": false},
-    "procedure":        {"template": "procedure", "variant_pending": false},
-    "biomechanics":     {"template": "anatomy",   "variant_pending": true},
-    "examination":      {"template": "anatomy",   "variant_pending": true},
-    "imaging":          {"template": "anatomy",   "variant_pending": true},
-    "rehabilitation":   {"template": "condition", "variant_pending": true},
-    "foundations":      {"template": "anatomy",   "variant_pending": false},
-    "junior_explainer": {"template": "anatomy",   "variant_pending": false, "framing": "junior"},
-    "careers":          {"template": "anatomy",   "variant_pending": true, "framing": "junior_careers"},
-    "study_skills":     {"template": "anatomy",   "variant_pending": true, "framing": "junior_careers"},
-    "teacher_resource": {"template": "anatomy",   "variant_pending": true, "framing": "junior_careers"},
-    "landmark_papers":  {"template": "anatomy",   "variant_pending": true},
-    "assessment":       {"template": "anatomy",   "variant_pending": true, "owned_by": "Section 14 conventions"},
-    "case":             {"template": "condition", "variant_pending": true, "owned_by": "Section 13 instalment"},
-    "video":            {"template": "anatomy",   "variant_pending": true, "owned_by": "Section 15 instalment"}
+    "anatomy": {
+      "template": "anatomy",
+      "variant_pending": false
+    },
+    "condition": {
+      "template": "condition",
+      "variant_pending": false
+    },
+    "procedure": {
+      "template": "procedure",
+      "variant_pending": false
+    },
+    "biomechanics": {
+      "template": "anatomy",
+      "variant_pending": true
+    },
+    "examination": {
+      "template": "anatomy",
+      "variant_pending": true
+    },
+    "imaging": {
+      "template": "anatomy",
+      "variant_pending": true
+    },
+    "rehabilitation": {
+      "template": "condition",
+      "variant_pending": true
+    },
+    "foundations": {
+      "template": "anatomy",
+      "variant_pending": false
+    },
+    "junior_explainer": {
+      "template": "anatomy",
+      "variant_pending": false,
+      "framing": "junior"
+    },
+    "careers": {
+      "template": "careers",
+      "variant_pending": false,
+      "framing": "junior_careers",
+      "defined_by": "decision 003"
+    },
+    "study_skills": {
+      "template": "study_skills",
+      "variant_pending": false,
+      "framing": "junior_careers",
+      "defined_by": "decision 003"
+    },
+    "teacher_resource": {
+      "template": "teacher_resource",
+      "variant_pending": false,
+      "framing": "junior_careers",
+      "defined_by": "decision 003"
+    },
+    "landmark_papers": {
+      "template": "anatomy",
+      "variant_pending": true
+    },
+    "assessment": {
+      "template": "assessment",
+      "variant_pending": false,
+      "defined_by": "decision 003",
+      "interactive_mechanics_owned_by": "Section 14 conventions"
+    },
+    "case": {
+      "template": "condition",
+      "variant_pending": true,
+      "owned_by": "Section 13 instalment"
+    },
+    "video": {
+      "template": "anatomy",
+      "variant_pending": true,
+      "owned_by": "Section 15 instalment"
+    }
   }
 }

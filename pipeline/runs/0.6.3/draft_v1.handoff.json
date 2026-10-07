@@ -1,0 +1,33 @@
+{
+  "page_id": "0.6.3",
+  "prompt_version": "1.0",
+  "article_template_version": "1.0",
+  "page_type": "assessment",
+  "article_template": "assessment",
+  "template_source": "decision 003, not Handbook v1.0",
+  "tiers_covered": [
+    "junior"
+  ],
+  "scope_statement": "Class and school competitions, pre-moderated.",
+  "sources": [],
+  "source_note": "No sources were retrieved. The generation environment had no access to any external site, including the bodies this page points readers to. The Tier 1 source minimum is NOT met and this draft would not pass Tier 1 in the deployed pipeline.",
+  "claims_needing_verification": [
+    "The leaderboard would rank classes and schools, never named individuals.",
+    "It is not open, because the site has no accounts and no lawful basis for children's data.",
+    "A data protection impact assessment and compliance with the ICO code would come first.",
+    "No personal data would be collected from any pupil at any point.",
+    "Progress would count completion rather than speed, and no prize would attach to a position."
+  ],
+  "claims_note": "Listed above are the substantive claims, taken from the key learning points. Most statements on this page are about United Kingdom education, training or examination structures rather than about clinical matters, and each is checkable against the body named in the page's final section.",
+  "content_rule": "Decision 003: this page carries no entry requirement, test score, fee, deadline or application statistic. Those change annually and none could be verified, so where a figure would normally sit the page names the body that publishes it. A reviewer who wants figures on the page should add them with a dated source rather than asking for them to be written in.",
+  "gaps_or_uncertainties": [
+    "No entry requirement, test score, fee, deadline or application statistic appears anywhere on this page, because none could be verified.",
+    "Platform gap: Leaderboards need accounts, progress tracking, a lawful basis for processing children's data, a data protection impact assessment, ICO Age Appropriate Design Code compliance, a named safeguarding lead and pre moderation. None exists. The page states the rules the feature would run under."
+  ],
+  "duplication_risk_pages": [
+    "14.59",
+    "14.79"
+  ],
+  "architecture_check": "Written against the architecture's own brief for 0.6.3, including its must_not_cover list: Diagnosis or treatment advice at any depth (Sections 4 to 8 own clinical content); Commercial content of any kind (prohibited across Section 0)",
+  "status": "AI_DRAFT_READY_FOR_VERIFICATION"
+}

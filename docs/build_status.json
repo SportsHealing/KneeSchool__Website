@@ -1,0 +1,191 @@
+{
+  "status_version": "1.0",
+  "generated_note": "Hand maintained. tools/build_status.py renders about/status.html from it. Several pages on the site tell the reader that this is where progress on a missing feature is recorded, so an entry here is a promise to that reader.",
+  "groups": [
+    {
+      "name": "Blocked by something outside this repository",
+      "lede": "Work that cannot proceed from here, whatever effort is applied. Each one names what would unblock it.",
+      "items": [
+        {
+          "ref": "EV-1",
+          "title": "Evidence verification has never run",
+          "area": "Content pipeline",
+          "state": "Blocked",
+          "blocker": "The build environment has no access to PubMed, Cochrane, NICE, any journal or any textbook. Agent 2 of the three agent pipeline is the fact checker and it cannot retrieve a single source.",
+          "needed": "Source access, or a human verifier. Until then no page on this site carries a reference, every verified handoff is marked NOT_RUN_TOOLS_UNAVAILABLE, and no citation has been invented to fill the gap.",
+          "pages": "All 55 published article pages"
+        },
+        {
+          "ref": "EV-2",
+          "title": "Consultant review has no return path",
+          "area": "Content pipeline",
+          "state": "Blocked",
+          "blocker": "Review packs are written to docs/review/ and there is no mechanism for a consultant to return a decision into the pipeline. The deployed design uses a Step Functions task token, and the pipeline is not deployed.",
+          "needed": "Either the pipeline deployed to an AWS account, or an agreed manual route for returning review decisions.",
+          "pages": "55 pages awaiting review"
+        },
+        {
+          "ref": "EV-3",
+          "title": "The sgit.ai deployment workflow was never read",
+          "area": "Infrastructure",
+          "state": "Blocked",
+          "blocker": "https://sgit.ai/llms.txt returns 403 at the network egress gateway. The host is not on the allow list for this environment.",
+          "needed": "Either the document contents pasted into the chat, or the host allowed through the environment's network policy."
+        },
+        {
+          "ref": "EV-4",
+          "title": "The pipeline has never been deployed",
+          "area": "Infrastructure",
+          "state": "Blocked",
+          "blocker": "No AWS account, region or budget has been named. The SAM template, the state machine and the Lambda handlers exist and their tests pass locally.",
+          "needed": "An AWS account to deploy into and a monthly budget ceiling for Bedrock."
+        },
+        {
+          "ref": "EV-5",
+          "title": "Architecture parts 2 to 6 have not been supplied",
+          "area": "Content architecture",
+          "state": "Blocked",
+          "blocker": "Only Part 1, covering sections 0 to 3, has been received. Sections 4 to 15 are summarised in Part 1 but have no page level map, so no brief can be generated for them.",
+          "needed": "Parts 2 to 6 of the Master Publishing Architecture from the chat that produced Part 1."
+        }
+      ]
+    },
+    {
+      "name": "Pages that describe a feature the site cannot yet do",
+      "lede": "Each of these pages is written and published. Each one states on the page itself that the feature is not available, rather than implying otherwise.",
+      "items": [
+        {
+          "ref": "PG-1",
+          "title": "Ask a Surgeon has no questions and no submission route",
+          "area": "Section 0.3",
+          "state": "Page published, feature absent",
+          "blocker": "No submission form, no moderation workflow, no answered questions.",
+          "needed": "A moderated submission route, and a consultant willing to answer.",
+          "pages": "0.3.6"
+        },
+        {
+          "ref": "PG-2",
+          "title": "The guided read of a real paper is not attached",
+          "area": "Section 0.5",
+          "state": "Page published, feature absent",
+          "blocker": "The architecture asks for a guided first read of a named paper. No paper could be retrieved or checked. See EV-1.",
+          "needed": "Source access, then a chosen open access paper.",
+          "pages": "0.5.3"
+        },
+        {
+          "ref": "PG-3",
+          "title": "Researcher profiles are not written",
+          "area": "Section 0.5",
+          "state": "Page published, feature absent",
+          "blocker": "A profile of a named person needs that person's consent and their own check of the text. Neither has been sought.",
+          "needed": "Named researchers willing to be profiled.",
+          "pages": "0.5.5"
+        },
+        {
+          "ref": "PG-4",
+          "title": "The Future Surgeon Challenge is not playable",
+          "area": "Section 0.6",
+          "state": "Page published, feature absent",
+          "blocker": "The quiz ladder needs the adaptive question bank, which belongs to Section 14 of the publishing plan. Section 14 is not written.",
+          "needed": "The question bank, or a decision to build a smaller one for the junior rungs.",
+          "pages": "0.6.2"
+        },
+        {
+          "ref": "PG-5",
+          "title": "Leaderboards and badges need accounts and a lawful basis",
+          "area": "Section 0.6",
+          "state": "Page published, feature absent",
+          "blocker": "Both need progress tracking, which needs accounts. Because the users are children, that needs a lawful basis under UK GDPR, a completed data protection impact assessment, compliance with the ICO Age Appropriate Design Code, a named safeguarding lead and a pre moderation process. The site currently has no accounts and no server side anything.",
+          "needed": "A decision on whether to take this on at all. It is the largest single piece of compliance work in the plan.",
+          "pages": "0.6.1, 0.6.3, 0.6.4"
+        },
+        {
+          "ref": "PG-6",
+          "title": "No classroom files exist to download",
+          "area": "Section 0.7",
+          "state": "Page published, feature absent",
+          "blocker": "No slide decks, worksheets, diagram sheets or printable certificate have been produced. The lesson plans are therefore described on the page rather than attached.",
+          "needed": "A decision on format, then the files. Everything they would carry is already written on the pages.",
+          "pages": "0.6.1, 0.7.1, 0.7.2"
+        },
+        {
+          "ref": "PG-7",
+          "title": "The outreach programme cannot be booked",
+          "area": "Section 0.7",
+          "state": "Page published, feature absent",
+          "blocker": "There is no booking route and no contact form anywhere on the site.",
+          "needed": "A contact route. This also unblocks the three dead links in the About menu.",
+          "pages": "0.7.5"
+        },
+        {
+          "ref": "PG-8",
+          "title": "Three About menu links go nowhere",
+          "area": "Site chrome",
+          "state": "Placeholder",
+          "blocker": "Authors and reviewers, References and sources, and Contact all point at '#'. Authors needs real names, references needs EV-1, contact needs PG-7.",
+          "needed": "Names of the editorial team, and a contact address."
+        }
+      ]
+    },
+    {
+      "name": "Decisions applied but not yet confirmed",
+      "lede": "Each of these was a gap in the handbook or the architecture. A ruling was made so work could continue, written up, and applied. None has been confirmed by an editor.",
+      "items": [
+        {
+          "ref": "D-001",
+          "title": "Where the Section 1 depth boundary sits",
+          "area": "Editorial",
+          "state": "Applied, awaiting confirmation",
+          "blocker": "The architecture excludes region level anatomy detail from Fundamentals pages without saying where the line falls.",
+          "needed": "Confirmation of the tier split ruling in docs/decisions/001."
+        },
+        {
+          "ref": "D-002",
+          "title": "Word counts for a page that carries one tier",
+          "area": "Editorial",
+          "state": "Applied, awaiting confirmation",
+          "blocker": "The handbook's word ranges assume a page carrying several tiers. Section 0 pages carry one. The amendment adds room for the patient tier's FAQ block.",
+          "needed": "Confirmation of the bands in docs/decisions/002."
+        },
+        {
+          "ref": "D-003",
+          "title": "Templates for Section 0 chapters 0.3 to 0.7",
+          "area": "Editorial",
+          "state": "Applied, awaiting confirmation",
+          "blocker": "The handbook defines three article templates and 27 Section 0 pages have a page type matching none of them. Four templates were defined locally.",
+          "needed": "Confirmation of the four section orders in docs/decisions/003. If an order is rejected the prose survives; only the headings change."
+        }
+      ]
+    },
+    {
+      "name": "Written and awaiting review",
+      "lede": "Finished work with nothing blocking it except review.",
+      "items": [
+        {
+          "ref": "W-1",
+          "title": "Section 0 Junior Academy, all 38 pages",
+          "area": "Content",
+          "state": "Written, style gate passed, awaiting review",
+          "blocker": "None. Review packs are in docs/review/.",
+          "needed": "Consultant review. 0.2.4 and 0.2.5 are singled out in the chapter 0.1 and 0.2 pack; 0.3.5, 0.6.3 and 0.7.4 in the chapter 0.3 to 0.7 pack."
+        },
+        {
+          "ref": "W-2",
+          "title": "Section 1 Knee Fundamentals, all 16 pages",
+          "area": "Content",
+          "state": "Written, style gate passed, awaiting review",
+          "blocker": "None. The review pack is docs/review/section-1-batch.md.",
+          "needed": "Consultant review."
+        },
+        {
+          "ref": "W-3",
+          "title": "Anterior cruciate ligament injury, the condition pilot",
+          "area": "Content",
+          "state": "With a consultant for review",
+          "blocker": "None.",
+          "needed": "A ruling on the pilot, which was left for the consultant to decide."
+        }
+      ]
+    }
+  ]
+}

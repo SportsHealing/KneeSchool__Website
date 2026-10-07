@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Build status | KneeSchool</title>
+<meta name="description" content="What is finished, what is waiting for review, and what cannot be built from here until something outside the repository changes.">
+<meta name="theme-color" content="#0E2A21">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css?v=7d7dc330">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap head-in">
+    <a class="brand" href="../index.html"><b>Knee</b><span>School</span></a>
+    <input class="nav-toggle" type="checkbox" id="navtoggle" aria-label="Show navigation">
+    <label class="burger" for="navtoggle">Menu</label>
+    <nav class="nav" aria-label="Main">
+      <ul>
+        <li class="has-menu">
+          <a class="top" href="../index.html#levels">Learn<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../index.html#levels">Find your level</a></li>
+            <li><a href="../levels/junior.html">Junior Academy</a></li>
+            <li><a href="../levels/patient.html">Patient Academy</a></li>
+            <li><a href="../levels/student.html">Student Academy</a></li>
+            <li><a href="../levels/mrcs.html">MRCS Academy</a></li>
+            <li><a href="../levels/frcs.html">FRCS (Tr and Orth) Academy</a></li>
+            <li><a href="../levels/fellowship.html">Fellowship Academy</a></li>
+            <li><a href="../levels/consultant.html">Consultant Masterclass</a></li>
+            <li><a href="../junior/ready-made-lesson-plans.html">For teachers and coaches</a></li>
+          </ul>
+        </li>
+        <li class="has-menu">
+          <a class="top" href="../encyclopaedia/index.html">Reference<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../encyclopaedia/index.html">The knee encyclopaedia</a></li>
+            <li><a href="../conditions/index.html">Conditions library</a></li>
+            <li><a href="../encyclopaedia/whole-body.html">Whole body factors</a></li>
+          </ul>
+        </li>
+        <li class="has-menu">
+          <a class="top" href="../practise/index.html">Practise<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../practise/index.html#questions">Question bank</a></li>
+            <li><a href="../practise/index.html#cases">Case library</a></li>
+            <li><a href="../practise/index.html#video">Video academy</a></li>
+            <li><a href="../practise/index.html#scores">Knee score centre</a></li>
+          </ul>
+        </li>
+        <li class="has-menu">
+          <a class="top" href="../about/standards.html">About<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../about/standards.html">How a page reaches this site</a></li>
+            <li><a href="../about/curriculum.html">Mapped to the UK training pathway</a></li>
+            <li><a href="../about/status.html">Build status</a></li>
+            <li><a href="#">Authors and reviewers</a></li>
+            <li><a href="#">References and sources</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumb"><p class="crumb"><a href="../index.html">KneeSchool</a><span>/</span>About<span>/</span>Build status</p></p>
+      <div class="hero-split">
+        <div>
+          <h1>Build status</h1>
+          <p class="who">What is done, what is waiting, and what is blocked</p>
+          <p class="lede">19 open items. A page that tells you a feature is not available yet
+          links here, so this list is the answer to where that work has got to.</p>
+        </div>
+        <div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band dark">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Blocked by something outside this repository</h2>
+        <p class="lede">Work that cannot proceed from here, whatever effort is applied. Each one names what would unblock it.</p>
+      </div>
+      <div class="table-scroll">
+        <table class="map">
+          <thead>
+            <tr><th scope="col">Item</th><th scope="col">State</th><th scope="col">What is in the way</th><th scope="col">What would move it</th><th scope="col">Pages</th></tr>
+          </thead>
+          <tbody>
+            <tr><td data-label="Item"><b>EV-1</b> Evidence verification has never run</td><td data-label="State">Blocked</td><td data-label="What is in the way">The build environment has no access to PubMed, Cochrane, NICE, any journal or any textbook. Agent 2 of the three agent pipeline is the fact checker and it cannot retrieve a single source.</td><td data-label="What would move it">Source access, or a human verifier. Until then no page on this site carries a reference, every verified handoff is marked NOT_RUN_TOOLS_UNAVAILABLE, and no citation has been invented to fill the gap.</td><td data-label="Pages">All 55 published article pages</td></tr>
+            <tr><td data-label="Item"><b>EV-2</b> Consultant review has no return path</td><td data-label="State">Blocked</td><td data-label="What is in the way">Review packs are written to docs/review/ and there is no mechanism for a consultant to return a decision into the pipeline. The deployed design uses a Step Functions task token, and the pipeline is not deployed.</td><td data-label="What would move it">Either the pipeline deployed to an AWS account, or an agreed manual route for returning review decisions.</td><td data-label="Pages">55 pages awaiting review</td></tr>
+            <tr><td data-label="Item"><b>EV-3</b> The sgit.ai deployment workflow was never read</td><td data-label="State">Blocked</td><td data-label="What is in the way">https://sgit.ai/llms.txt returns 403 at the network egress gateway. The host is not on the allow list for this environment.</td><td data-label="What would move it">Either the document contents pasted into the chat, or the host allowed through the environment's network policy.</td></tr>
+            <tr><td data-label="Item"><b>EV-4</b> The pipeline has never been deployed</td><td data-label="State">Blocked</td><td data-label="What is in the way">No AWS account, region or budget has been named. The SAM template, the state machine and the Lambda handlers exist and their tests pass locally.</td><td data-label="What would move it">An AWS account to deploy into and a monthly budget ceiling for Bedrock.</td></tr>
+            <tr><td data-label="Item"><b>EV-5</b> Architecture parts 2 to 6 have not been supplied</td><td data-label="State">Blocked</td><td data-label="What is in the way">Only Part 1, covering sections 0 to 3, has been received. Sections 4 to 15 are summarised in Part 1 but have no page level map, so no brief can be generated for them.</td><td data-label="What would move it">Parts 2 to 6 of the Master Publishing Architecture from the chat that produced Part 1.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Pages that describe a feature the site cannot yet do</h2>
+        <p class="lede">Each of these pages is written and published. Each one states on the page itself that the feature is not available, rather than implying otherwise.</p>
+      </div>
+      <div class="table-scroll">
+        <table class="map">
+          <thead>
+            <tr><th scope="col">Item</th><th scope="col">State</th><th scope="col">What is in the way</th><th scope="col">What would move it</th><th scope="col">Pages</th></tr>
+          </thead>
+          <tbody>
+            <tr><td data-label="Item"><b>PG-1</b> Ask a Surgeon has no questions and no submission route</td><td data-label="State">Page published, feature absent</td><td data-label="What is in the way">No submission form, no moderation workflow, no answered questions.</td><td data-label="What would move it">A moderated submission route, and a consultant willing to answer.</td><td data-label="Pages">0.3.6</td></tr>
+            <tr><td data-label="Item"><b>PG-2</b> The guided read of a real paper is not attached</td><td data-label="State">Page published, feature absent</td><td data-label="What is in the way">The architecture asks for a guided first read of a named paper. No paper could be retrieved or checked. See EV-1.</td><td data-label="What would move it">Source access, then a chosen open access paper.</td><td data-label="Pages">0.5.3</td></tr>
+            <tr><td data-label="Item"><b>PG-3</b> Researcher profiles are not written</td><td data-label="State">Page published, feature absent</td><td data-label="What is in the way">A profile of a named person needs that person's consent and their own check of the text. Neither has been sought.</td><td data-label="What would move it">Named researchers willing to be profiled.</td><td data-label="Pages">0.5.5</td></tr>
+            <tr><td data-label="Item"><b>PG-4</b> The Future Surgeon Challenge is not playable</td><td data-label="State">Page published, feature absent</td><td data-label="What is in the way">The quiz ladder needs the adaptive question bank, which belongs to Section 14 of the publishing plan. Section 14 is not written.</td><td data-label="What would move it">The question bank, or a decision to build a smaller one for the junior rungs.</td><td data-label="Pages">0.6.2</td></tr>
+            <tr><td data-label="Item"><b>PG-5</b> Leaderboards and badges need accounts and a lawful basis</td><td data-label="State">Page published, feature absent</td><td data-label="What is in the way">Both need progress tracking, which needs accounts. Because the users are children, that needs a lawful basis under UK GDPR, a completed data protection impact assessment, compliance with the ICO Age Appropriate Design Code, a named safeguarding lead and a pre moderation process. The site currently has no accounts and no server side anything.</td><td data-label="What would move it">A decision on whether to take this on at all. It is the largest single piece of compliance work in the plan.</td><td data-label="Pages">0.6.1, 0.6.3, 0.6.4</td></tr>
+            <tr><td data-label="Item"><b>PG-6</b> No classroom files exist to download</td><td data-label="State">Page published, feature absent</td><td data-label="What is in the way">No slide decks, worksheets, diagram sheets or printable certificate have been produced. The lesson plans are therefore described on the page rather than attached.</td><td data-label="What would move it">A decision on format, then the files. Everything they would carry is already written on the pages.</td><td data-label="Pages">0.6.1, 0.7.1, 0.7.2</td></tr>
+            <tr><td data-label="Item"><b>PG-7</b> The outreach programme cannot be booked</td><td data-label="State">Page published, feature absent</td><td data-label="What is in the way">There is no booking route and no contact form anywhere on the site.</td><td data-label="What would move it">A contact route. This also unblocks the three dead links in the About menu.</td><td data-label="Pages">0.7.5</td></tr>
+            <tr><td data-label="Item"><b>PG-8</b> Three About menu links go nowhere</td><td data-label="State">Placeholder</td><td data-label="What is in the way">Authors and reviewers, References and sources, and Contact all point at '#'. Authors needs real names, references needs EV-1, contact needs PG-7.</td><td data-label="What would move it">Names of the editorial team, and a contact address.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="band dark">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Decisions applied but not yet confirmed</h2>
+        <p class="lede">Each of these was a gap in the handbook or the architecture. A ruling was made so work could continue, written up, and applied. None has been confirmed by an editor.</p>
+      </div>
+      <div class="table-scroll">
+        <table class="map">
+          <thead>
+            <tr><th scope="col">Item</th><th scope="col">State</th><th scope="col">What is in the way</th><th scope="col">What would move it</th></tr>
+          </thead>
+          <tbody>
+            <tr><td data-label="Item"><b>D-001</b> Where the Section 1 depth boundary sits</td><td data-label="State">Applied, awaiting confirmation</td><td data-label="What is in the way">The architecture excludes region level anatomy detail from Fundamentals pages without saying where the line falls.</td><td data-label="What would move it">Confirmation of the tier split ruling in docs/decisions/001.</td></tr>
+            <tr><td data-label="Item"><b>D-002</b> Word counts for a page that carries one tier</td><td data-label="State">Applied, awaiting confirmation</td><td data-label="What is in the way">The handbook's word ranges assume a page carrying several tiers. Section 0 pages carry one. The amendment adds room for the patient tier's FAQ block.</td><td data-label="What would move it">Confirmation of the bands in docs/decisions/002.</td></tr>
+            <tr><td data-label="Item"><b>D-003</b> Templates for Section 0 chapters 0.3 to 0.7</td><td data-label="State">Applied, awaiting confirmation</td><td data-label="What is in the way">The handbook defines three article templates and 27 Section 0 pages have a page type matching none of them. Four templates were defined locally.</td><td data-label="What would move it">Confirmation of the four section orders in docs/decisions/003. If an order is rejected the prose survives; only the headings change.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Written and awaiting review</h2>
+        <p class="lede">Finished work with nothing blocking it except review.</p>
+      </div>
+      <div class="table-scroll">
+        <table class="map">
+          <thead>
+            <tr><th scope="col">Item</th><th scope="col">State</th><th scope="col">What is in the way</th><th scope="col">What would move it</th></tr>
+          </thead>
+          <tbody>
+            <tr><td data-label="Item"><b>W-1</b> Section 0 Junior Academy, all 38 pages</td><td data-label="State">Written, style gate passed, awaiting review</td><td data-label="What is in the way">None. Review packs are in docs/review/.</td><td data-label="What would move it">Consultant review. 0.2.4 and 0.2.5 are singled out in the chapter 0.1 and 0.2 pack; 0.3.5, 0.6.3 and 0.7.4 in the chapter 0.3 to 0.7 pack.</td></tr>
+            <tr><td data-label="Item"><b>W-2</b> Section 1 Knee Fundamentals, all 16 pages</td><td data-label="State">Written, style gate passed, awaiting review</td><td data-label="What is in the way">None. The review pack is docs/review/section-1-batch.md.</td><td data-label="What would move it">Consultant review.</td></tr>
+            <tr><td data-label="Item"><b>W-3</b> Anterior cruciate ligament injury, the condition pilot</td><td data-label="State">With a consultant for review</td><td data-label="What is in the way">None.</td><td data-label="What would move it">A ruling on the pilot, which was left for the consultant to decide.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="band wrap">
+    <div class="status">
+      <b>How to read this.</b> Nothing on this list is hidden from the pages themselves. Where a
+      page describes something the site cannot yet do, the page says so in its own words. This
+      list exists so that the reason, and what would change it, is recorded in one place.
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot" id="about">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h3>Learn</h3>
+        <ul>
+          <li><a href="../levels/junior.html">Junior Academy</a></li>
+          <li><a href="../levels/patient.html">Patient Academy</a></li>
+          <li><a href="../levels/student.html">Student Academy</a></li>
+          <li><a href="../levels/mrcs.html">MRCS Academy</a></li>
+          <li><a href="../levels/frcs.html">FRCS (Tr and Orth) Academy</a></li>
+          <li><a href="../levels/fellowship.html">Fellowship Academy</a></li>
+          <li><a href="../levels/consultant.html">Consultant Masterclass</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Reference</h3>
+        <ul>
+          <li><a href="../encyclopaedia/index.html">The knee encyclopaedia</a></li>
+          <li><a href="../conditions/index.html">Conditions library</a></li>
+          <li><a href="../encyclopaedia/whole-body.html">Whole body factors</a></li>
+          <li><a href="../practise/index.html">Practise and test</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Clinical care</h3>
+        <ul>
+          <li><a href="https://www.chinmaygupte.com/">Consultant clinic</a></li>
+          <li><a href="#">Imaging and injections</a></li>
+          <li><a href="#">Rehabilitation programmes</a></li>
+          <li><a href="#">Braces and recovery products</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>About</h3>
+        <ul>
+          <li><a href="../about/standards.html">How a page reaches this site</a></li>
+          <li><a href="../about/curriculum.html">Mapped to the UK training pathway</a></li>
+          <li><a href="../levels/junior.html">For teachers and coaches</a></li>
+          <li><a href="#">Authors and reviewers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <p>KneeSchool is educational. It does not give individual medical advice and it does not replace assessment by a clinician. Seek urgent care for a hot, swollen knee with fever, a knee that cannot bear weight after injury, or new numbness in the leg.</p>
+      <p>Content written for school age learners carries no advertising and no product placement.</p>
+      <p>&copy; 2026 KneeSchool. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

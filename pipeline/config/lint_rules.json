@@ -140,8 +140,10 @@
       "notes": [
         "not only: bans the 'not only X but also Y' construction; verifier-approved clinical text never needs it",
         "moreover/furthermore/additionally/overall/ultimately/notably/importantly/interestingly: banned as sentence openers; the trailing comma variants catch this",
-        "best practices: allowed only inside a direct quotation from a cited guideline title"
-      ]
+        "best practices: allowed only inside a direct quotation from a cited guideline title",
+        "excludes_architecture_title: the H1 is not scanned when it matches brief.title exactly. The architecture fixes page titles, so 0.5.5 'Meet the Researchers' trips the 'meet the' ban on a line no drafter is allowed to change. Prose that repeats the phrase in the body is still caught."
+      ],
+      "excludes_architecture_title": true
     },
     {
       "id": "PHRASE-002",

@@ -1,0 +1,33 @@
+{
+  "page_id": "0.6.2",
+  "prompt_version": "1.0",
+  "article_template_version": "1.0",
+  "page_type": "assessment",
+  "article_template": "assessment",
+  "template_source": "decision 003, not Handbook v1.0",
+  "tiers_covered": [
+    "junior"
+  ],
+  "scope_statement": "Quiz ladder using the adaptive bank at beginner level.",
+  "sources": [],
+  "source_note": "No sources were retrieved. The generation environment had no access to any external site, including the bodies this page points readers to. The Tier 1 source minimum is NOT met and this draft would not pass Tier 1 in the deployed pipeline.",
+  "claims_needing_verification": [
+    "The challenge is a ladder of five rungs matched to the site's own levels.",
+    "The same topics appear at every rung, with the depth of the question changing.",
+    "The question bank belongs to Section 14 and has not been built, so nothing is playable yet.",
+    "Rung 1 can be done by hand today using the Knee Explorer Certificate questions.",
+    "No scores will be published against anyone's name."
+  ],
+  "claims_note": "Listed above are the substantive claims, taken from the key learning points. Most statements on this page are about United Kingdom education, training or examination structures rather than about clinical matters, and each is checkable against the body named in the page's final section.",
+  "content_rule": "Decision 003: this page carries no entry requirement, test score, fee, deadline or application statistic. Those change annually and none could be verified, so where a figure would normally sit the page names the body that publishes it. A reviewer who wants figures on the page should add them with a dated source rather than asking for them to be written in.",
+  "gaps_or_uncertainties": [
+    "No entry requirement, test score, fee, deadline or application statistic appears anywhere on this page, because none could be verified.",
+    "Platform gap: The challenge ladder needs the Section 14 adaptive question bank, which does not exist. The page describes the design and says it is not playable."
+  ],
+  "duplication_risk_pages": [
+    "14.59",
+    "14.51"
+  ],
+  "architecture_check": "Written against the architecture's own brief for 0.6.2, including its must_not_cover list: Diagnosis or treatment advice at any depth (Sections 4 to 8 own clinical content); Commercial content of any kind (prohibited across Section 0)",
+  "status": "AI_DRAFT_READY_FOR_VERIFICATION"
+}

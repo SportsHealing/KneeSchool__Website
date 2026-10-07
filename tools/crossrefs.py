@@ -1,0 +1,116 @@
+#!/usr/bin/env python3
+"""Check every cross link on every draft against the architecture.
+
+    python3 tools/crossrefs.py --check
+
+A cross link is written as [[page_id | label]]. Both halves can be wrong
+independently, and both failures are invisible on the rendered page: a wrong
+page_id sends the reader somewhere else, and a wrong label tells them the page is
+about something it is not. Neither shows up in a spell check or in the style gate.
+
+The architecture owns every page_id and every title, so it is the only thing worth
+checking against. Labels are compared loosely, because a cross link legitimately
+shortens a long title, but a label that shares no significant word with the real
+title is reported.
+"""
+
+import argparse
+import json
+import os
+import re
+import sys
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ARCH_DIR = os.path.join(ROOT, "pipeline", "config", "architecture")
+RUNS = os.path.join(ROOT, "pipeline", "runs")
+LINK = re.compile(r"\[\[([^|\]]+)\|([^\]]+)\]\]")
+# A reference written into the prose, as "0.1.2 Bones, Ligaments, Menisci and
+# Muscles covers ...". The page id and the title can disagree here exactly as
+# they can in a cross link, and nothing else looks at them.
+PROSE = re.compile(r"\b(\d+\.\d+\.\d+)\s+"
+                   r"([A-Z][\w'-]*(?:[ ,]+(?:and|the|a|of|to|for|in|on|that|"
+                   r"[A-Z][\w'-]*))*)")
+# Sections beyond 3 are not published yet. A forward link to one is written with
+# an x for the chapter, and that is deliberate rather than a typing error.
+PLACEHOLDER = re.compile(r"^\d+\.x$")
+STOP = set("the a an and of or in to for on at is are be with your you it its as "
+           "from by what how why when".split())
+
+
+def titles():
+    out = {}
+    for name in sorted(os.listdir(ARCH_DIR)):
+        if name.startswith("pages_") and name.endswith(".json"):
+            with open(os.path.join(ARCH_DIR, name)) as fh:
+                for page in json.load(fh):
+                    out[str(page["page_id"])] = page["title"]
+    return out
+
+
+def words(text):
+    return set(w for w in re.findall(r"[a-z0-9]+", text.lower()) if w not in STOP)
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--check", action="store_true",
+                    help="exit non zero if any cross link is wrong")
+    ap.add_argument("--runs", default=RUNS)
+    args = ap.parse_args()
+
+    known = titles()
+    problems = []
+    checked = 0
+    for page_id in sorted(os.listdir(args.runs)):
+        draft = os.path.join(args.runs, page_id, "draft_v1.md")
+        if not os.path.exists(draft):
+            continue
+        with open(draft) as fh:
+            text = fh.read()
+        seen = {}
+        for m in LINK.finditer(text):
+            pid, label = m.group(1).strip(), m.group(2).strip()
+            checked += 1
+            # The same page twice in one cross link block is a merge artefact. It
+            # renders as two rows pointing at one place, which reads as an error
+            # to anyone who follows both. A section placeholder is exempt: two
+            # future pages in the same unpublished section share one id.
+            if pid in seen and not PLACEHOLDER.match(pid):
+                problems.append((page_id, pid, label,
+                                 "already linked on this page as %r" % seen[pid]))
+            seen[pid] = label
+            if pid not in known:
+                # Pages beyond section 3 are not in the architecture file yet. A
+                # forward link to one is expected, so only a malformed id is a
+                # fault.
+                if not (re.match(r"^\d+(\.\d+)*$", pid)
+                        or PLACEHOLDER.match(pid)):
+                    problems.append((page_id, pid, label, "page_id is not a page_id"))
+                continue
+            real = known[pid]
+            if words(label) & words(real):
+                continue
+            problems.append((page_id, pid, label, "label does not match %r" % real))
+        for m in PROSE.finditer(text):
+            pid, phrase = m.group(1), m.group(2).strip()
+            if pid not in known:
+                continue
+            checked += 1
+            # Only a phrase long enough to be a title claim is worth testing. A
+            # sentence that merely ends with the id, then starts a new one, is not.
+            if len(phrase.split()) < 2:
+                continue
+            real = known[pid]
+            if words(phrase) & words(real):
+                continue
+            problems.append((page_id, pid, phrase, "prose names %r for this id" % real))
+
+    for src, pid, label, why in problems:
+        print("%-7s -> [[%s | %s]]  %s" % (src, pid, label, why))
+    print("%d cross links checked, %d wrong" % (checked, len(problems)))
+    if args.check and problems:
+        sys.exit(1)
+
+
+if __name__ == "__main__":
+    main()

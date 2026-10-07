@@ -1,0 +1,32 @@
+{
+  "page_id": "0.6.4",
+  "prompt_version": "1.0",
+  "article_template_version": "1.0",
+  "page_type": "assessment",
+  "article_template": "assessment",
+  "template_source": "decision 003, not Handbook v1.0",
+  "tiers_covered": [
+    "junior"
+  ],
+  "scope_statement": "Shareable badges linked to progress tracking.",
+  "sources": [],
+  "source_note": "No sources were retrieved. The generation environment had no access to any external site, including the bodies this page points readers to. The Tier 1 source minimum is NOT met and this draft would not pass Tier 1 in the deployed pipeline.",
+  "claims_needing_verification": [
+    "A badge is a record of completion with a public link to its criteria.",
+    "Six badges are planned, each tied to a chapter already on the site.",
+    "None can be issued yet, because progress tracking does not exist.",
+    "Badges would be awarded by a teacher, coach or parent rather than by the site.",
+    "No badge is ever awarded for time spent, because rewarding time spent is a recognised harm."
+  ],
+  "claims_note": "Listed above are the substantive claims, taken from the key learning points. Most statements on this page are about United Kingdom education, training or examination structures rather than about clinical matters, and each is checkable against the body named in the page's final section.",
+  "content_rule": "Decision 003: this page carries no entry requirement, test score, fee, deadline or application statistic. Those change annually and none could be verified, so where a figure would normally sit the page names the body that publishes it. A reviewer who wants figures on the page should add them with a dated source rather than asking for them to be written in.",
+  "gaps_or_uncertainties": [
+    "No entry requirement, test score, fee, deadline or application statistic appears anywhere on this page, because none could be verified.",
+    "Platform gap: Badges need progress tracking and the same data protection work as 0.6.3. No badge image files exist."
+  ],
+  "duplication_risk_pages": [
+    "14.59"
+  ],
+  "architecture_check": "Written against the architecture's own brief for 0.6.4, including its must_not_cover list: Diagnosis or treatment advice at any depth (Sections 4 to 8 own clinical content); Commercial content of any kind (prohibited across Section 0)",
+  "status": "AI_DRAFT_READY_FOR_VERIFICATION"
+}

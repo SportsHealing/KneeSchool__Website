@@ -183,8 +183,7 @@ the imaging and surgery sections.
 
 - [[1.2.1 | Bones of the knee]]
 - [[1.2.2 | Articular cartilage]]
-- [[1.2.4 | Cruciate ligaments]]
-- [[1.2.5 | Collateral ligaments and the corners]]
+- [[1.2.4 | Ligaments]]
 - [[2.5 | Meniscal anatomy at surgical depth]]
 - [[2.6 | Meniscal biomechanics]]
 - [[6.x | Meniscal tears]]

@@ -171,3 +171,70 @@ class Autofix(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class ArchitectureTitleExclusion(unittest.TestCase):
+    """0.5.5 is called Meet the Researchers, and "meet the" is a banned phrase.
+
+    The architecture fixes page titles. A title nobody on the pipeline is allowed
+    to reword must not be reported as a style fault, in its own H1 or in the cross
+    link block of every page that points at it. Prose is still scanned.
+    """
+
+    BRIEF = {"title": "Meet the Researchers", "page_type": "study_skills",
+             "tiers_required": ["junior"]}
+
+    def ran(self, text):
+        return linter.lint(text, self.BRIEF)
+
+    def test_the_h1_is_not_scanned(self):
+        doc = "# Meet the Researchers\n\nSome prose about research groups.\n"
+        self.assertNotIn("PHRASE-001", ids(self.ran(doc)))
+
+    def test_a_cross_link_label_is_not_scanned(self):
+        doc = ("# Something Else\n\nProse.\n\n## Explore Further\n\n"
+               "- [[0.5.5 | Meet the Researchers]]\n")
+        self.assertNotIn("PHRASE-001", ids(self.ran(doc)))
+
+    def test_the_phrase_in_prose_is_still_caught(self):
+        doc = "# Meet the Researchers\n\nMeet the team behind the study.\n"
+        self.assertIn("PHRASE-001", ids(self.ran(doc)))
+
+    def test_a_different_h1_is_still_scanned(self):
+        doc = "# Meet the Surgeons\n\nProse.\n"
+        self.assertIn("PHRASE-001", ids(self.ran(doc)))
+
+    def test_a_link_outside_the_cross_link_block_is_still_scanned(self):
+        doc = "# Something Else\n\nSee [[0.5.5 | Meet the Researchers]] for profiles.\n"
+        self.assertIn("PHRASE-001", ids(self.ran(doc)))
+
+
+class JuniorCloserByPageType(unittest.TestCase):
+    """The speak to an adult message attaches to symptom content, not to every
+    junior page. A careers page has nothing for the reader to report. See
+    decision 003."""
+
+    PAGE = ("# Choosing Subjects\n\n"
+            "A summary line for the page.\n\n"
+            "## For Young Learners\n\n"
+            "### What This Is\n\n"
+            "Medical schools set their own entry requirements.\n\n"
+            "### Key Learning Points\n\n"
+            "- One point.\n- Two points.\n- Three points.\n\n"
+            "## Explore Further\n\n- [[0.4.2 | Work Experience and Volunteering]]\n\n"
+            "## References\n\nNothing is cited.\n")
+
+    def closer_findings(self, page_type):
+        brief = {"title": "Choosing Subjects", "page_type": page_type,
+                 "tiers_required": ["junior"],
+                 "output_requirements": {"target_word_count": {"min": 1, "max": 9000}}}
+        report = linter.lint(self.PAGE, brief)
+        return [f for f in report["findings"]
+                if f["rule_id"] == "STRUCT-001" and "closing message" in f["description"]]
+
+    def test_exempt_page_type_does_not_need_the_message(self):
+        for page_type in ("careers", "study_skills", "teacher_resource", "assessment"):
+            self.assertEqual(self.closer_findings(page_type), [], page_type)
+
+    def test_a_junior_explainer_still_needs_it(self):
+        self.assertEqual(len(self.closer_findings("junior_explainer")), 1)

@@ -1,0 +1,17 @@
+{
+  "lint_version": "1.0",
+  "pass": true,
+  "fail_count": 0,
+  "warn_count": 0,
+  "findings": [],
+  "article_template_version": "1.0",
+  "document": {
+    "word_count": 917,
+    "tiers_present": [
+      "patient"
+    ],
+    "has_reference_list": true,
+    "sentence_count": 60,
+    "page_type": "teacher_resource"
+  }
+}

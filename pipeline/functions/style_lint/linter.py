@@ -286,6 +286,38 @@ def run_pattern_rule(doc, rule, brief):
     return out
 
 
+def blank_architecture_titles(text, brief):
+    """Blank the lines that carry page titles the architecture fixed.
+
+    Two places on a page hold a title rather than prose: the H1, and the labels
+    in the cross link block. Neither is written by the drafter. The architecture
+    names every page, and a writer cannot reword a title without breaking the
+    brief or the link. Scanning them for house style reports a fault nobody on
+    the pipeline is allowed to fix. 0.5.5 "Meet the Researchers" is the case that
+    forced this: it trips the "meet the" ban in the H1 of its own page and in the
+    cross link block of every page that points at it.
+
+    Lines are replaced with spaces rather than removed, so every other finding
+    keeps its line number.
+    """
+    want = normalise_title((brief or {}).get("title") or "") or None
+    out, in_cross = [], False
+    for line in text.split("\n"):
+        m = re.match(r"^\s{0,3}(#{1,6})\s+(.+?)\s*$", line)
+        if m:
+            level, title = len(m.group(1)), normalise_title(m.group(2))
+            if level == 1 and want and title == want:
+                out.append(" " * len(line))
+                continue
+            # the cross link block runs from its own heading to the next one
+            in_cross = title in CROSS_LINK_HEADINGS
+        elif in_cross and WIKILINK.search(line):
+            out.append(" " * len(line))
+            continue
+        out.append(line)
+    return "\n".join(out)
+
+
 def run_phrase_rule(doc, rule, brief):
     out = []
     exclude_refs = rule["id"].startswith("UK-")
@@ -293,6 +325,8 @@ def run_phrase_rule(doc, rule, brief):
         if exclude_refs and label == "document":
             text = doc.body_text()
             label = "body (reference list excluded)"
+        if rule.get("excludes_architecture_title"):
+            text = blank_architecture_titles(text, brief)
         for phrase in rule.get("banned_phrases", []):
             for m in phrase_pattern(phrase).finditer(text):
                 out.append(finding(rule["id"], rule["severity"],
@@ -302,6 +336,7 @@ def run_phrase_rule(doc, rule, brief):
     return out
 
 
+WIKILINK = re.compile(r"\[\[[^\]]+\]\]")
 LIST_MARKER = re.compile(r"^(\s*)(?:[-*+]|\d+[.)])(\s)", re.MULTILINE)
 HRULE = re.compile(r"^\s*(?:-{3,}|\*{3,}|_{3,})\s*$", re.MULTILINE)
 TABLE_RULE = re.compile(r"^\s*\|?[\s:|-]{5,}\|?\s*$", re.MULTILINE)
@@ -563,6 +598,10 @@ def rule_struct_001(doc, rule, brief, template):
         closer = closers.get(tier) or {}
         text = doc.tier_text(tier)
         message = closer.get("message")
+        if message and page_type in (closer.get("not_required_for_page_types") or []):
+            # The handbook attaches this message to symptom or injury content.
+            # These page types carry none. See decision 003.
+            message = None
         if message:
             # Compare with whitespace collapsed. A draft wraps its paragraphs, so
             # the closing message almost never sits on a single line.

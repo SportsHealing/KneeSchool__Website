@@ -87,21 +87,34 @@ def html_files():
 # reason, so the list stays short and the remaining warnings stay worth reading.
 # A warning with no entry here is a warning someone still has to answer for.
 EXEMPTIONS = [
-    ("levels/junior.html", "PHRASE-001", "meet the",
-     "chapter 0.5.5 is titled 'Meet the Researchers' in the architecture document; "
-     "the site label matches the source by decision"),
     ("index.html", "PHRASE-001", "meet the",
      "existing approved homepage copy, 'Meet the topic'; flagged to the client, not yet changed"),
     ("encyclopaedia/whole-body.html", "PHRASE-001", "not only",
      "the rule targets 'not only X but also Y'; 'the person and not only the scan' is not that "
      "construction, so this is a rule false positive"),
+    # Path "*" exempts every page, and is only safe with a context requirement:
+    # the hit must sit inside the exact string named. 0.5.5 is called Meet the
+    # Researchers in the architecture, so the phrase appears in its own title, its
+    # breadcrumb, and the cross link block of every page that points at it. The
+    # style gate has the same exemption; see the linter's blank_architecture_titles.
+    ("*", "PHRASE-001", "meet the",
+     "the architecture titles page 0.5.5 'Meet the Researchers'; a page title is not "
+     "written by the drafter and cannot be reworded without breaking the brief",
+     "Meet the Researchers"),
 ]
 
 
-def exemption_for(rel, rule_id, phrase):
-    for path, rid, ph, reason in EXEMPTIONS:
-        if rel == path and rid == rule_id and ph == phrase:
-            return reason
+def exemption_for(rel, rule_id, phrase, context=""):
+    for entry in EXEMPTIONS:
+        path, rid, ph, reason = entry[:4]
+        needs = entry[4] if len(entry) > 4 else None
+        if rid != rule_id or ph != phrase:
+            continue
+        if path != "*" and rel != path:
+            continue
+        if needs and needs.lower() not in context.lower():
+            continue
+        return reason
     return None
 
 
@@ -160,7 +173,7 @@ def main():
             for phrase in rule["banned_phrases"]:
                 for hit in re.finditer(r"(?<![a-z])" + re.escape(phrase.lower()) + r"(?![a-z])", low):
                     ctx = re.sub(r"\s+", " ", body[max(0, hit.start() - 40):hit.end() + 25]).strip()
-                    reason = exemption_for(rel, rule["id"], phrase)
+                    reason = exemption_for(rel, rule["id"], phrase, ctx)
                     line = "%s: %s %r ... %s" % (rel, rule["id"], phrase, ctx)
                     if reason:
                         exempt.append("%s\n          reason: %s" % (line, reason))

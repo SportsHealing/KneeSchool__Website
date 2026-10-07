@@ -53,7 +53,10 @@ LEVEL_NAMES = {
 RIBBON = [
     ("Learn", "index.html#levels", [
         ("Find your level", "index.html#levels"),
-    ] + [("%s" % LEVEL_NAMES[t], "levels/%s.html" % t) for t in TIERS]),
+    ] + [("%s" % LEVEL_NAMES[t], "levels/%s.html" % t) for t in TIERS]
+      # Chapter 0.7 is written for adults, and the only route to it was a page
+      # headed Junior Academy. A teacher or coach is not going to look there.
+      + [("For teachers and coaches", "junior/ready-made-lesson-plans.html")]),
 
     ("Reference", "encyclopaedia/index.html", [
         ("The knee encyclopaedia", "encyclopaedia/index.html"),
@@ -71,6 +74,8 @@ RIBBON = [
     ("About", "about/standards.html", [
         ("How a page reaches this site", "about/standards.html"),
         ("Mapped to the UK training pathway", "about/curriculum.html"),
+        # Published pages point readers here when a feature is not available yet.
+        ("Build status", "about/status.html"),
         ("Authors and reviewers", "#"),
         ("References and sources", "#"),
         ("Contact", "#"),

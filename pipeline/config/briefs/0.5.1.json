@@ -1,0 +1,76 @@
+{
+  "brief_version": "1.1",
+  "page_id": "0.5.1",
+  "title": "How We Know What We Know",
+  "section": {
+    "id": "0",
+    "name": "Junior Academy"
+  },
+  "chapter": {
+    "id": "0.5",
+    "name": "Young Investigators"
+  },
+  "page_type": "study_skills",
+  "article_template": "study_skills",
+  "generated_from": "Master Publishing Architecture, pages_0_to_3.json",
+  "tiers_required": [
+    "junior"
+  ],
+  "scope": {
+    "must_cover": [
+      "Evidence in medicine introduced for school readers."
+    ],
+    "must_not_cover": [
+      "Diagnosis or treatment advice at any depth (Sections 4 to 8 own clinical content)",
+      "Commercial content of any kind (prohibited across Section 0)"
+    ],
+    "sibling_pages": [
+      "0.5.2",
+      "0.5.3",
+      "0.5.4",
+      "0.5.5"
+    ],
+    "deeper_spiral_pages": [
+      "12.1",
+      "12.4"
+    ]
+  },
+  "curriculum_tags": [],
+  "source_requirements": {
+    "kb_topic_filter": "how we know what we know",
+    "minimum": {
+      "textbook_or_review": 1,
+      "peer_reviewed_for_clinical_claims": true
+    },
+    "preferred_recency_years": 10,
+    "guidelines_expected": []
+  },
+  "output_requirements": {
+    "language": "en-GB",
+    "format": "markdown",
+    "key_learning_points_per_tier": {
+      "min": 3,
+      "max": 5
+    },
+    "faqs_patient_level": {
+      "min": 3,
+      "max": 5
+    },
+    "target_word_count": {
+      "min": 350,
+      "max": 900
+    },
+    "internal_link_placeholders": true
+  },
+  "governance": {
+    "commercial_content_allowed": false,
+    "clinical_advice_allowed": false,
+    "junior_tier_present": true
+  },
+  "pipeline": {
+    "priority": "medium",
+    "requested_by": "architecture",
+    "regen_count": 0,
+    "consultant_assigned": null
+  }
+}

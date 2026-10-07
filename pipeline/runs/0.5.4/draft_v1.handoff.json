@@ -1,0 +1,32 @@
+{
+  "page_id": "0.5.4",
+  "prompt_version": "1.0",
+  "article_template_version": "1.0",
+  "page_type": "study_skills",
+  "article_template": "study_skills",
+  "template_source": "decision 003, not Handbook v1.0",
+  "tiers_covered": [
+    "junior"
+  ],
+  "scope_statement": "Safe home and classroom friendly experiments.",
+  "sources": [],
+  "source_note": "No sources were retrieved. The generation environment had no access to any external site, including the bodies this page points readers to. The Tier 1 source minimum is NOT met and this draft would not pass Tier 1 in the deployed pipeline.",
+  "claims_needing_verification": [
+    "The knee rotates slightly as it straightens, and you can see it on your own leg.",
+    "Measuring the same thing several times shows you the error in your own measurement.",
+    "How hard standing up is depends on where the weight sits relative to the joint.",
+    "Stop at pain, never use an injured knee, and get consent before measuring anyone else.",
+    "These experiments measure movement and cannot tell you whether a joint is healthy."
+  ],
+  "claims_note": "Listed above are the substantive claims, taken from the key learning points. Most statements on this page are about United Kingdom education, training or examination structures rather than about clinical matters, and each is checkable against the body named in the page's final section.",
+  "content_rule": "Decision 003: this page carries no entry requirement, test score, fee, deadline or application statistic. Those change annually and none could be verified, so where a figure would normally sit the page names the body that publishes it. A reviewer who wants figures on the page should add them with a dated source rather than asking for them to be written in.",
+  "gaps_or_uncertainties": [
+    "No entry requirement, test score, fee, deadline or application statistic appears anywhere on this page, because none could be verified."
+  ],
+  "duplication_risk_pages": [
+    "12.1",
+    "3.1"
+  ],
+  "architecture_check": "Written against the architecture's own brief for 0.5.4, including its must_not_cover list: Diagnosis or treatment advice at any depth (Sections 4 to 8 own clinical content); Commercial content of any kind (prohibited across Section 0)",
+  "status": "AI_DRAFT_READY_FOR_VERIFICATION"
+}

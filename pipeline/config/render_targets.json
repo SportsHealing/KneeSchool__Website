@@ -1,0 +1,336 @@
+{
+  "targets_version": "1.0",
+  "note": "Where each page is published, which breadcrumb parent it carries and which status note sits at the top. tools/render_site.py renders every entry. Keeping this in the repository is what makes the site reproducible without the build scripts that first produced it.",
+  "pages": {
+    "0.1.1": {
+      "out": "junior/meet-your-knee.html",
+      "parent": "Junior Academy|../levels/junior.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "0.1.2": {
+      "out": "junior/bones-ligaments-menisci-and-muscles.html",
+      "parent": "Junior Academy|../levels/junior.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "0.1.3": {
+      "out": "junior/how-the-knee-moves.html",
+      "parent": "Junior Academy|../levels/junior.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "0.1.4": {
+      "out": "junior/knee-under-load.html",
+      "parent": "Junior Academy|../levels/junior.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "0.1.5": {
+      "out": "junior/growing-knees.html",
+      "parent": "Junior Academy|../levels/junior.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "0.1.6": {
+      "out": "junior/curriculum-links.html",
+      "parent": "Junior Academy|../levels/junior.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "0.2.1": {
+      "out": "junior/common-knee-injuries-in-young-athletes.html",
+      "parent": "Junior Academy|../levels/junior.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "0.2.2": {
+      "out": "junior/osgood-schlatter-and-growing-pains.html",
+      "parent": "Junior Academy|../levels/junior.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "0.2.3": {
+      "out": "junior/warm-ups-that-work.html",
+      "parent": "Junior Academy|../levels/junior.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "0.2.4": {
+      "out": "junior/girls-boys-and-knees.html",
+      "parent": "Junior Academy|../levels/junior.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "0.2.5": {
+      "out": "junior/when-to-tell-an-adult.html",
+      "parent": "Junior Academy|../levels/junior.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "0.2.6": {
+      "out": "junior/athlete-stories.html",
+      "parent": "Junior Academy|../levels/junior.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "0.3.1": {
+      "out": "junior/road-to-knee-surgeon.html",
+      "parent": "Junior Academy|../levels/junior.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "0.3.2": {
+      "out": "junior/day-in-the-life.html",
+      "parent": "Junior Academy|../levels/junior.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "0.3.3": {
+      "out": "junior/beyond-surgery.html",
+      "parent": "Junior Academy|../levels/junior.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "0.3.4": {
+      "out": "junior/what-mrcs-and-frcs-actually-are.html",
+      "parent": "Junior Academy|../levels/junior.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "0.3.5": {
+      "out": "junior/women-in-orthopaedics.html",
+      "parent": "Junior Academy|../levels/junior.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "0.3.6": {
+      "out": "junior/ask-a-surgeon.html",
+      "parent": "Junior Academy|../levels/junior.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "0.4.1": {
+      "out": "junior/choosing-subjects.html",
+      "parent": "Junior Academy|../levels/junior.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "0.4.2": {
+      "out": "junior/work-experience-and-volunteering.html",
+      "parent": "Junior Academy|../levels/junior.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "0.4.3": {
+      "out": "junior/ucat-and-admissions-tests.html",
+      "parent": "Junior Academy|../levels/junior.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "0.4.4": {
+      "out": "junior/personal-statements-and-interviews.html",
+      "parent": "Junior Academy|../levels/junior.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "0.4.5": {
+      "out": "junior/widening-participation.html",
+      "parent": "Junior Academy|../levels/junior.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "0.4.6": {
+      "out": "junior/gateway-and-graduate-entry-routes.html",
+      "parent": "Junior Academy|../levels/junior.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "0.5.1": {
+      "out": "junior/how-we-know-what-we-know.html",
+      "parent": "Junior Academy|../levels/junior.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "0.5.2": {
+      "out": "junior/epq-and-science-fair-project-ideas.html",
+      "parent": "Junior Academy|../levels/junior.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "0.5.3": {
+      "out": "junior/reading-a-science-paper-for-the-first-time.html",
+      "parent": "Junior Academy|../levels/junior.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "0.5.4": {
+      "out": "junior/simple-biomechanics-experiments.html",
+      "parent": "Junior Academy|../levels/junior.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "0.5.5": {
+      "out": "junior/meet-the-researchers.html",
+      "parent": "Junior Academy|../levels/junior.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "0.6.1": {
+      "out": "junior/knee-explorer-certificate.html",
+      "parent": "Junior Academy|../levels/junior.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "0.6.2": {
+      "out": "junior/future-surgeon-challenge.html",
+      "parent": "Junior Academy|../levels/junior.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "0.6.3": {
+      "out": "junior/school-leaderboards.html",
+      "parent": "Junior Academy|../levels/junior.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "0.6.4": {
+      "out": "junior/digital-badges.html",
+      "parent": "Junior Academy|../levels/junior.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "0.7.1": {
+      "out": "junior/ready-made-lesson-plans.html",
+      "parent": "Junior Academy|../levels/junior.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "0.7.2": {
+      "out": "junior/classroom-slide-decks-and-worksheets.html",
+      "parent": "Junior Academy|../levels/junior.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "0.7.3": {
+      "out": "junior/coaching-safely.html",
+      "parent": "Junior Academy|../levels/junior.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "0.7.4": {
+      "out": "junior/supporting-an-injured-young-athlete.html",
+      "parent": "Junior Academy|../levels/junior.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "0.7.5": {
+      "out": "junior/school-outreach-programme.html",
+      "parent": "Junior Academy|../levels/junior.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "1.1.1": {
+      "out": "encyclopaedia/what-is-the-knee.html",
+      "parent": "Encyclopaedia|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "1.1.2": {
+      "out": "encyclopaedia/why-the-knee-is-important.html",
+      "parent": "Encyclopaedia|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "1.1.3": {
+      "out": "encyclopaedia/functions-of-the-knee.html",
+      "parent": "Encyclopaedia|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "1.1.4": {
+      "out": "encyclopaedia/evolution-of-the-human-knee.html",
+      "parent": "Encyclopaedia|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "1.1.5": {
+      "out": "encyclopaedia/common-knee-problems.html",
+      "parent": "Encyclopaedia|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "1.1.6": {
+      "out": "encyclopaedia/lifelong-knee-health.html",
+      "parent": "Encyclopaedia|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "1.2.1": {
+      "out": "encyclopaedia/bones-of-the-knee.html",
+      "parent": "Encyclopaedia|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "1.2.2": {
+      "out": "encyclopaedia/articular-cartilage.html",
+      "parent": "Encyclopaedia|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "1.2.3": {
+      "out": "encyclopaedia/menisci.html",
+      "parent": "Encyclopaedia|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "1.2.4": {
+      "out": "encyclopaedia/ligaments.html",
+      "parent": "Encyclopaedia|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "1.2.5": {
+      "out": "encyclopaedia/tendons.html",
+      "parent": "Encyclopaedia|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "1.2.6": {
+      "out": "encyclopaedia/muscles-around-the-knee.html",
+      "parent": "Encyclopaedia|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "1.2.7": {
+      "out": "encyclopaedia/nerves-and-blood-supply.html",
+      "parent": "Encyclopaedia|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "1.2.8": {
+      "out": "encyclopaedia/synovium.html",
+      "parent": "Encyclopaedia|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "1.2.9": {
+      "out": "encyclopaedia/bursa.html",
+      "parent": "Encyclopaedia|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "1.2.10": {
+      "out": "encyclopaedia/growth-plates.html",
+      "parent": "Encyclopaedia|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.1.1": {
+      "out": "conditions/acl.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. With a consultant for review. Not for clinical use.",
+      "source": "styled_v1.md"
+    }
+  }
+}

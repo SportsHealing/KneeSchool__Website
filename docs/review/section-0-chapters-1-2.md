@@ -20,8 +20,11 @@ pending", and the Operations Handbook has not defined a template for any of
 them. Writing them to the anatomy template would produce headings like
 "Structure and Location" on a page about choosing A levels.
 
-That is handbook open question 5 and architecture open question 6. It is with
-the editor.
+That is handbook open question 5 and architecture open question 6.
+
+**Resolved on 7 October 2026.** Decision 003 defines the four templates locally
+and all 27 pages are now written. They have their own pack:
+`docs/review/section-0-chapters-3-to-7.md`. Section 0 is complete at 38 of 38.
 
 ## What this tier is and why it reads differently
 

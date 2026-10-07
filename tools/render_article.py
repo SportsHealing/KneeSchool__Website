@@ -24,6 +24,7 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
 import site_chrome as chrome  # noqa: E402
+import page_index  # noqa: E402
 
 TEMPLATE_PATH = os.path.join(ROOT, "pipeline", "config", "article_template.json")
 
@@ -171,6 +172,9 @@ def main():
     ap.add_argument("--brief", required=True)
     ap.add_argument("--out", required=True)
     ap.add_argument("--status", default="Editorial draft. Not evidence verified. Not consultant reviewed. Not for clinical use.")
+    ap.add_argument("--register", action="store_true",
+                    help="record this page in the published page index, so other pages' "
+                         "cross links to it resolve on their next render")
     ap.add_argument("--parent", help='breadcrumb parent as "Label|href"; defaults to the brief section pointing at the homepage encyclopaedia')
     args = ap.parse_args()
 
@@ -209,13 +213,24 @@ def main():
         parent = (brief.get("section", {}).get("name", "Encyclopaedia"),
                   rel + "encyclopaedia/index.html")
 
+    published = page_index.load()
     explore = doc["sections"].get(tpl["cross_links"]["heading"], [])
     items = []
     for line in explore:
         m = re.match(r"^\s*[-*+]\s+\[\[([^|\]]+)\|([^\]]+)\]\]\s*$", line)
-        if m:
-            items.append('        <li><span class="pid">%s</span><span class="pending">%s</span></li>'
-                         % (esc(m.group(1).strip()), esc(m.group(2).strip())))
+        if not m:
+            continue
+        pid, label = m.group(1).strip(), m.group(2).strip()
+        target = published.get(pid)
+        if target:
+            # The index stores paths from the repository root; the page needs them
+            # relative to itself.
+            href = os.path.relpath(os.path.join(ROOT, target),
+                                   os.path.dirname(os.path.abspath(args.out)))
+            body = '<a href="%s">%s</a>' % (esc(href), esc(label))
+        else:
+            body = '<span class="pending">%s</span>' % esc(label)
+        items.append('        <li><span class="pid">%s</span>%s</li>' % (esc(pid), body))
     refs = doc["sections"].get("References", [])
 
     page = chrome.head("%s | KneeSchool" % doc["title"], doc["summary"][:160], rel)
@@ -297,7 +312,11 @@ def main():
 
     with open(args.out, "w") as fh:
         fh.write(page)
-    print("%s written, %d tiers, %d cross links" % (args.out, len(tiers), len(items)))
+    if args.register and brief.get("page_id"):
+        page_index.register(brief["page_id"], args.out)
+    resolved = sum(1 for i in items if "<a href=" in i)
+    print("%s written, %d tiers, %d cross links (%d resolved)"
+          % (args.out, len(tiers), len(items), resolved))
 
 
 if __name__ == "__main__":

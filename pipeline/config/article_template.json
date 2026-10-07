@@ -71,7 +71,14 @@
   "tier_closers": {
     "junior": {
       "speak_to_adult_message_required_when": "symptom_or_injury_content_present",
-      "message": "If any of this sounds like something happening to you, speak to a parent, teacher, coach or doctor."
+      "message": "If any of this sounds like something happening to you, speak to a parent, teacher, coach or doctor.",
+      "not_required_for_page_types": [
+        "careers",
+        "study_skills",
+        "teacher_resource",
+        "assessment"
+      ],
+      "not_required_note": "The handbook requires the speak to an adult message when symptom or injury content is present. Chapters 0.3 to 0.7 carry none: a page about choosing A levels has nothing for the reader to report to an adult, and the message reads as a non sequitur there. The gate drives the condition off page type, which the architecture owns, rather than guessing from the prose. See decision 003."
     },
     "patient": {
       "when_to_seek_help_message_required": true
@@ -128,6 +135,68 @@
         "min": 1500,
         "max": 3000
       }
+    },
+    "careers": {
+      "body_sections": [
+        "what_this_is",
+        "the_people_who_do_it",
+        "the_route",
+        "what_the_work_involves",
+        "what_it_takes",
+        "where_to_find_out_more"
+      ],
+      "body_sections_rule": "ordered_subset_per_tier",
+      "word_count": {
+        "min": 500,
+        "max": 1200
+      },
+      "source_of_truth": "decision 003"
+    },
+    "study_skills": {
+      "body_sections": [
+        "what_this_is",
+        "why_it_matters",
+        "how_it_works",
+        "how_to_prepare",
+        "common_mistakes",
+        "where_to_find_out_more"
+      ],
+      "body_sections_rule": "ordered_subset_per_tier",
+      "word_count": {
+        "min": 500,
+        "max": 1200
+      },
+      "source_of_truth": "decision 003"
+    },
+    "teacher_resource": {
+      "body_sections": [
+        "what_this_covers",
+        "curriculum_links",
+        "how_to_use_it",
+        "what_to_watch_for",
+        "where_to_find_out_more"
+      ],
+      "body_sections_rule": "ordered_subset_per_tier",
+      "word_count": {
+        "min": 500,
+        "max": 1200
+      },
+      "source_of_truth": "decision 003"
+    },
+    "assessment": {
+      "body_sections": [
+        "what_this_is",
+        "what_it_covers",
+        "how_to_earn_it",
+        "rules_and_fair_play",
+        "where_to_find_out_more"
+      ],
+      "body_sections_rule": "ordered_subset_per_tier",
+      "word_count": {
+        "min": 400,
+        "max": 1000
+      },
+      "source_of_truth": "decision 003"
     }
   },
   "word_count_override": "brief.output_requirements.target_word_count overrides page_type default when present",
@@ -145,5 +214,26 @@
     "figure_dash",
     "horizontal_bar",
     "space_hyphen_space"
-  ]
+  ],
+  "local_additions_note": "page_types careers, study_skills, teacher_resource and assessment are not in Handbook v1.0. The handbook defines three templates and leaves Section 0 chapters 0.3 to 0.7 without one, which is handbook open question 5 and architecture open question 6. Decision 003 defines them locally so those pages can be written and linted. They are candidates for Handbook v1.1 and are subject to editorial confirmation.",
+  "body_section_headings": {
+    "common_mistakes": "Common Mistakes",
+    "curriculum_links": "Curriculum Links",
+    "how_it_works": "How It Works",
+    "how_to_earn_it": "How to Earn It",
+    "how_to_prepare": "How to Prepare",
+    "how_to_use_it": "How to Use It",
+    "rules_and_fair_play": "Rules and Fair Play",
+    "the_people_who_do_it": "The People Who Do It",
+    "the_route": "The Route",
+    "what_it_covers": "What It Covers",
+    "what_it_takes": "What It Takes",
+    "what_the_work_involves": "What the Work Involves",
+    "what_this_covers": "What This Covers",
+    "what_this_is": "What This Is",
+    "what_to_watch_for": "What to Watch For",
+    "where_to_find_out_more": "Where to Find Out More",
+    "why_it_matters": "Why It Matters"
+  },
+  "body_section_headings_note": "The heading a body section slug is written as. Supplied for the decision 003 page types so a heading is never derived by guesswork from the slug."
 }

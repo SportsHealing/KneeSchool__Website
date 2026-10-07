@@ -13,6 +13,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 REPO = os.path.dirname(ROOT)
 sys.path.insert(0, os.path.join(ROOT, "functions", "style_lint"))
 import linter  # noqa: E402
+sys.path.insert(0, os.path.join(REPO, "tools"))
+import architecture  # noqa: E402
 
 
 def load(*parts):
@@ -174,3 +176,55 @@ class TrackerSeed(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class DecisionZeroZeroThreeTemplates(unittest.TestCase):
+    """The four Section 0 templates added by decision 003."""
+
+    NAMES = ("careers", "study_skills", "teacher_resource", "assessment")
+
+    def setUp(self):
+        here = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        with open(os.path.join(here, "config", "article_template.json")) as fh:
+            self.tpl = json.load(fh)
+        with open(os.path.join(here, "config", "page_type_map.json")) as fh:
+            self.map = json.load(fh)["page_types"]
+
+    def test_each_type_resolves_to_its_own_template(self):
+        for name in self.NAMES:
+            self.assertEqual(self.map[name]["template"], name)
+            self.assertFalse(self.map[name]["variant_pending"], name)
+            self.assertIn(name, self.tpl["page_types"], name)
+
+    def test_every_body_section_has_a_heading(self):
+        headings = self.tpl["body_section_headings"]
+        for name in self.NAMES:
+            for slug in self.tpl["page_types"][name]["body_sections"]:
+                self.assertIn(slug, headings, "%s/%s" % (name, slug))
+
+    def test_heading_slugifies_back_to_its_slug(self):
+        """The gate slugifies a heading and compares it with the template's list.
+        If the two directions disagree, every page of that type fails STRUCT-001."""
+        headings = self.tpl["body_section_headings"]
+        for slug, heading in headings.items():
+            self.assertEqual(linter.slugify(linter.normalise_title(heading)), slug)
+
+    def test_these_types_are_marked_as_not_from_the_handbook(self):
+        self.assertIn("decision 003", self.tpl["local_additions_note"].lower())
+        for name in self.NAMES:
+            self.assertEqual(self.tpl["page_types"][name]["source_of_truth"], "decision 003")
+
+
+class FaqAllowance(unittest.TestCase):
+    """Decision 002 amendment: the patient tier's FAQ block gets its own room."""
+
+    def test_patient_tier_raises_the_maximum(self):
+        band = architecture.scale_for_tiers({"min": 500, "max": 1200}, ["junior"])
+        self.assertEqual(band, {"min": 350, "max": 900})
+        band = architecture.scale_for_tiers({"min": 500, "max": 1200}, ["patient"])
+        self.assertEqual(band, {"min": 350, "max": 900 + architecture.FAQ_ALLOWANCE})
+
+    def test_the_minimum_does_not_move(self):
+        a = architecture.scale_for_tiers({"min": 500, "max": 1200}, ["junior"])
+        b = architecture.scale_for_tiers({"min": 500, "max": 1200}, ["patient"])
+        self.assertEqual(a["min"], b["min"])

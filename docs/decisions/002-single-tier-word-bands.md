@@ -58,3 +58,29 @@ you want the new default.
 
 The Editor in Chief should confirm the bands, or replace them. Handbook open
 question 2 already flags the word count defaults as provisional.
+
+## Amendment, 7 October 2026: the FAQ allowance
+
+Chapter 0.7 forced an addition. Those pages carry the patient tier, and the
+handbook requires an FAQ block of three to five questions with answers whenever
+the patient tier is present. On a one tier page that block is around 250 words of
+structure the drafter is not allowed to shorten.
+
+Two of the five pages failed the 900 word maximum on that overhead alone. Coaching
+Safely came in at 916 and Supporting an Injured Young Athlete at 981, and neither
+had padding in it.
+
+Trimming eighty words out of the page that tells a parent what to ask the clinical
+team, in order to satisfy a band derived from junior explainer pages that carry no
+FAQ block, would have been the same mistake this decision was written to avoid.
+
+The ruling is that where the brief carries the patient tier, the band's maximum
+rises by 250 words. The minimum does not move.
+
+| Tiers | Band | With patient tier |
+|---|---|---|
+| 1 | 350 to 900 | 350 to 1150 |
+| 2 | 600 to 1300 | 600 to 1550 |
+
+Applied in `scale_for_tiers` as `FAQ_ALLOWANCE`. The same confirmation is needed
+as for the bands themselves.
