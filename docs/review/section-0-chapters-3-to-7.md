@@ -4,9 +4,10 @@
 |---|---|
 | Section | 0 Junior Academy |
 | Chapters | 0.3 Careers, 0.4 Medical School Entry, 0.5 Young Investigators, 0.6 Certificates, 0.7 For Teachers, Coaches and Parents, plus 0.1.6 |
-| Pages | 27, completing Section 0 at 38 of 38 |
-| Page types | careers 6, study_skills 11, teacher_resource 6, assessment 4 |
+| Pages | 27 written, 26 published. Section 0 is 38 written, 37 published |
+| Page types | careers 6, study_skills 11, teacher_resource 6, assessment 4 (3 published) |
 | Tier | Junior on 22 pages, Patient on the five chapter 0.7 pages |
+| Held unpublished | 0.6.4 Digital Badges, at the client's instruction |
 | Style gate | All 27 pass. Zero failures, zero warnings |
 | Evidence verification | **Did not run on any page** |
 | Reference lists | **None** |
@@ -57,10 +58,20 @@ them with a dated source rather than asking for them to be written in.
 3. **Accuracy on the training pathway.** Chapter 0.3 describes the route from
    school to consultant, and chapter 0.3.4 describes MRCS and FRCS. You have
    been through both. Nobody else reviewing this has.
-4. **Nine pages describe a feature the site cannot do.** Each says so on the
-   page. The question is whether saying so is the right call, or whether those
-   pages should be withheld until the feature exists. They are listed on
-   `about/status.html` and in `docs/build_status.json` as PG-1 to PG-8.
+4. **Eight published pages describe a feature the site cannot do.** Each says
+   so on the page. They are listed on `about/status.html` and in
+   `docs/build_status.json` as PG-1 to PG-8.
+
+   This question has been answered once already, for badges. 0.6.4 Digital
+   Badges was written, passed the gate, and is held unpublished: a page whose
+   whole job is to explain why there are no badges was judged not worth the
+   shelf space, and the syllabus shows it as coming soon instead. The draft is
+   in `pipeline/runs/0.6.4` and publishing it is a one line change.
+
+   **0.6.3 School Leaderboards is the same blocker and the same chapter, and it
+   is still published.** If badges were not worth the shelf space, leaderboards
+   probably are not either. That is the one call in this pack worth making
+   quickly.
 
 ## Three pages to read first
 
@@ -106,10 +117,10 @@ verifying a clinical claim.
 | 0.3 | 6 careers pages | `junior/` |
 | 0.4 | 6 study skills pages | `junior/` |
 | 0.5 | 5 study skills pages | `junior/` |
-| 0.6 | 4 assessment pages | `junior/` |
+| 0.6 | 4 assessment pages, 3 published | `junior/` |
 | 0.7 | 5 teacher resource pages | `junior/` |
 
-All 38 are linked from `levels/junior.html`, which no longer carries a single
-"coming soon" marker. Chapter 0.7 is also reachable from the Learn menu, because
-a teacher is not going to look for adult material under a heading that says
-Junior Academy.
+All 38 are listed on `levels/junior.html`. Thirty seven are links; Digital
+Badges shows as coming soon. Chapter 0.7 is also reachable from the Learn menu,
+because a teacher is not going to look for adult material under a heading that
+says Junior Academy.

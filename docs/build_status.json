@@ -94,10 +94,10 @@
           "ref": "PG-5",
           "title": "Leaderboards and badges need accounts and a lawful basis",
           "area": "Section 0.6",
-          "state": "Page published, feature absent",
+          "state": "Badges page withheld, leaderboards page published",
           "blocker": "Both need progress tracking, which needs accounts. Because the users are children, that needs a lawful basis under UK GDPR, a completed data protection impact assessment, compliance with the ICO Age Appropriate Design Code, a named safeguarding lead and a pre moderation process. The site currently has no accounts and no server side anything.",
-          "needed": "A decision on whether to take this on at all. It is the largest single piece of compliance work in the plan.",
-          "pages": "0.6.1, 0.6.3, 0.6.4"
+          "needed": "A decision on whether to take this on at all. It is the largest single piece of compliance work in the plan. The Digital Badges page (0.6.4) has been written and gated but is held unpublished at the client's instruction, because a page whose whole job is to explain why there are no badges is not worth the shelf space. The Junior Academy syllabus shows it as coming soon. The draft is in pipeline/runs/0.6.4 and publishing it is a one line change to render_targets.json.",
+          "pages": "0.6.1, 0.6.3; 0.6.4 written and held"
         },
         {
           "ref": "PG-6",
@@ -163,11 +163,11 @@
       "items": [
         {
           "ref": "W-1",
-          "title": "Section 0 Junior Academy, all 38 pages",
+          "title": "Section 0 Junior Academy, 37 published of 38 written",
           "area": "Content",
           "state": "Written, style gate passed, awaiting review",
           "blocker": "None. Review packs are in docs/review/.",
-          "needed": "Consultant review. 0.2.4 and 0.2.5 are singled out in the chapter 0.1 and 0.2 pack; 0.3.5, 0.6.3 and 0.7.4 in the chapter 0.3 to 0.7 pack."
+          "needed": "Consultant review. 0.2.4 and 0.2.5 are singled out in the chapter 0.1 and 0.2 pack; 0.7.4, 0.7.3 and 0.3.5 in the chapter 0.3 to 0.7 pack. 0.6.4 is written and held, so it needs no review until it is published."
         },
         {
           "ref": "W-2",

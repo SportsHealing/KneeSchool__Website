@@ -194,12 +194,6 @@
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
     },
-    "0.6.4": {
-      "out": "junior/digital-badges.html",
-      "parent": "Junior Academy|../levels/junior.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
     "0.7.1": {
       "out": "junior/ready-made-lesson-plans.html",
       "parent": "Junior Academy|../levels/junior.html",
@@ -332,5 +326,14 @@
       "status": "Editorial draft. Evidence verification did not run. With a consultant for review. Not for clinical use.",
       "source": "styled_v1.md"
     }
-  }
+  },
+  "withheld": {
+    "0.6.4": {
+      "title": "Digital Badges",
+      "reason": "Held at the client's instruction on 7 October 2026. The page was written and passes the style gate, but its whole subject is a feature that needs accounts, progress tracking and the children's data protection work in PG-5. Publishing a page whose job is to explain why there are no badges was judged not worth the shelf space. The Junior Academy syllabus shows it as coming soon instead.",
+      "draft": "pipeline/runs/0.6.4/styled_v1.md",
+      "would_have_been": "junior/digital-badges.html"
+    }
+  },
+  "withheld_note": "Pages written and gated but deliberately not published. The draft and its handoffs stay in pipeline/runs so nothing is lost. Move an entry back into pages and run tools/render_site.py to publish it."
 }
