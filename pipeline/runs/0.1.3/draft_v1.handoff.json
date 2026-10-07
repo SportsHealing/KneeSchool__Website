@@ -1,0 +1,31 @@
+{
+  "page_id": "0.1.3",
+  "prompt_version": "1.0",
+  "article_template_version": "1.0",
+  "page_type": "junior_explainer",
+  "tiers_covered": [
+    "junior"
+  ],
+  "scope_statement": "Hinges, rolling and gliding described in plain terms.",
+  "sources": [],
+  "source_note": "No sources were retrieved. The generation environment had no access to PubMed, Cochrane, the knowledge base or any textbook. The Tier 1 source minimum is NOT met and this draft would not pass Tier 1 in the deployed pipeline.",
+  "claims_needing_verification": [
+    "The knee is more than a hinge: it rolls and glides at the same time.",
+    "Rolling alone would carry the thigh bone off the back of the shin bone.",
+    "The knee also twists a few degrees, most when bent and least when straight.",
+    "At full straightening the joint locks, so standing costs little muscle effort.",
+    "Twisting on a planted foot is how many sports injuries happen."
+  ],
+  "claims_note": "Listed above are the substantive claims, taken from the deepest tier's key learning points. Every factual statement in the page body requires the same verification; these are the ones a reviewer should start with.",
+  "gaps_or_uncertainties": [
+    "No quantitative figure is given anywhere on this page unless it is a definitional range, because none could be verified."
+  ],
+  "duplication_risk_pages": [
+    "1.1",
+    "1.2",
+    "3.2",
+    "3.3"
+  ],
+  "architecture_check": "Written against the architecture's own brief for 0.1.3, including its must_not_cover list: Diagnosis or treatment advice at any depth (Sections 4 to 8 own clinical content); Commercial content of any kind (prohibited across Section 0); Kinematics terminology and analysis (owned by 3.3)",
+  "status": "AI_DRAFT_READY_FOR_VERIFICATION"
+}

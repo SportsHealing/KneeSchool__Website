@@ -1,0 +1,31 @@
+{
+  "page_id": "0.2.2",
+  "prompt_version": "1.0",
+  "article_template_version": "1.0",
+  "page_type": "junior_explainer",
+  "tiers_covered": [
+    "junior"
+  ],
+  "scope_statement": "What they are and why they usually settle.",
+  "sources": [],
+  "source_note": "No sources were retrieved. The generation environment had no access to PubMed, Cochrane, the knowledge base or any textbook. The Tier 1 source minimum is NOT met and this draft would not pass Tier 1 in the deployed pipeline.",
+  "claims_needing_verification": [
+    "The bump below your kneecap is where the thigh tendon attaches to your shin.",
+    "While you are growing, that attachment point is softer than the tendon pulling on it.",
+    "Repeated hard pulling during a growth spurt irritates it, causing a tender lump.",
+    "It settles when the growing area turns to solid bone, though the bump may remain.",
+    "Pain in one exact spot after sport is different from vague evening growing pains."
+  ],
+  "claims_note": "Listed above are the substantive claims, taken from the deepest tier's key learning points. Every factual statement in the page body requires the same verification; these are the ones a reviewer should start with.",
+  "gaps_or_uncertainties": [
+    "No quantitative figure is given anywhere on this page unless it is a definitional range, because none could be verified."
+  ],
+  "duplication_risk_pages": [
+    "10.6",
+    "11.2",
+    "6.67",
+    "10.26"
+  ],
+  "architecture_check": "Written against the architecture's own brief for 0.2.2, including its must_not_cover list: Diagnosis or treatment advice at any depth (Sections 4 to 8 own clinical content); Commercial content of any kind (prohibited across Section 0)",
+  "status": "AI_DRAFT_READY_FOR_VERIFICATION"
+}

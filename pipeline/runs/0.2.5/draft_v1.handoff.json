@@ -1,0 +1,30 @@
+{
+  "page_id": "0.2.5",
+  "prompt_version": "1.0",
+  "article_template_version": "1.0",
+  "page_type": "junior_explainer",
+  "tiers_covered": [
+    "junior"
+  ],
+  "scope_statement": "Warning signs framed as speak to a professional.",
+  "sources": [],
+  "source_note": "No sources were retrieved. The generation environment had no access to PubMed, Cochrane, the knowledge base or any textbook. The Tier 1 source minimum is NOT met and this draft would not pass Tier 1 in the deployed pipeline.",
+  "claims_needing_verification": [
+    "Cannot bear weight, rapid swelling, a pop, or a locked knee all mean tell someone today.",
+    "A hot red swollen knee with feeling unwell needs seeing the same day.",
+    "Numbness, coldness or colour change in the foot after a knee injury is urgent.",
+    "Giving way, disturbed sleep, or soreness lasting weeks means tell someone soon.",
+    "Say when it started, what you were doing, where it hurts and how fast it swelled."
+  ],
+  "claims_note": "Listed above are the substantive claims, taken from the deepest tier's key learning points. Every factual statement in the page body requires the same verification; these are the ones a reviewer should start with.",
+  "gaps_or_uncertainties": [
+    "No quantitative figure is given anywhere on this page unless it is a definitional range, because none could be verified."
+  ],
+  "duplication_risk_pages": [
+    "10.6",
+    "11.2",
+    "10.63"
+  ],
+  "architecture_check": "Written against the architecture's own brief for 0.2.5, including its must_not_cover list: Diagnosis or treatment advice at any depth (Sections 4 to 8 own clinical content); Commercial content of any kind (prohibited across Section 0); Clinical red flag pathways (owned by 10.4.5)",
+  "status": "AI_DRAFT_READY_FOR_VERIFICATION"
+}

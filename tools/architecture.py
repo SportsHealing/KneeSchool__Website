@@ -45,11 +45,26 @@ def page_sort_key(page_id):
     return out
 
 
+# The handbook's word ranges assume a page carrying several tiers. A page with
+# one tier is not a short version of that page; it is a different object. A
+# junior only page padded to eight hundred words stops reading like a junior
+# page, which defeats the reading age the same handbook sets. See decision 002.
+TIER_WORD_BANDS = {1: (350, 900), 2: (600, 1300)}
+
+
+def scale_for_tiers(defaults, tier_count):
+    band = TIER_WORD_BANDS.get(tier_count)
+    if not band or not defaults:
+        return defaults
+    return {"min": band[0], "max": band[1]}
+
+
 def build_brief(page, merge=None):
     tpl = load(TEMPLATE)
     type_map = load(TYPE_MAP)["page_types"]
     template_name = (type_map.get(page["page_type"]) or {}).get("template")
     defaults = (tpl["page_types"].get(template_name) or {}).get("word_count") or {}
+    defaults = scale_for_tiers(defaults, len(page["tiers_required"]))
 
     brief = collections.OrderedDict()
     brief["brief_version"] = "1.1"

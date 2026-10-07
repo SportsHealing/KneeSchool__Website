@@ -1,0 +1,30 @@
+{
+  "page_id": "0.1.4",
+  "prompt_version": "1.0",
+  "article_template_version": "1.0",
+  "page_type": "junior_explainer",
+  "tiers_covered": [
+    "junior"
+  ],
+  "scope_statement": "Forces in walking, running and jumping, introduced simply.",
+  "sources": [],
+  "source_note": "No sources were retrieved. The generation environment had no access to PubMed, Cochrane, the knowledge base or any textbook. The Tier 1 source minimum is NOT met and this draft would not pass Tier 1 in the deployed pipeline.",
+  "claims_needing_verification": [
+    "Walking on the flat sends roughly three times your body weight through each knee.",
+    "Stairs, squatting and landing send considerably more.",
+    "The menisci and cartilage spread force over a wide area, which lowers pressure.",
+    "Bending as you land spreads the force over a longer moment.",
+    "Strong muscles do that bending, which is why strong legs protect knees."
+  ],
+  "claims_note": "Listed above are the substantive claims, taken from the deepest tier's key learning points. Every factual statement in the page body requires the same verification; these are the ones a reviewer should start with.",
+  "gaps_or_uncertainties": [
+    "No quantitative figure is given anywhere on this page unless it is a definitional range, because none could be verified."
+  ],
+  "duplication_risk_pages": [
+    "1.1",
+    "1.2",
+    "3.4"
+  ],
+  "architecture_check": "Written against the architecture's own brief for 0.1.4, including its must_not_cover list: Diagnosis or treatment advice at any depth (Sections 4 to 8 own clinical content); Commercial content of any kind (prohibited across Section 0); Kinetics detail (owned by 3.4)",
+  "status": "AI_DRAFT_READY_FOR_VERIFICATION"
+}

@@ -1,0 +1,33 @@
+{
+  "page_id": "0.1.2",
+  "prompt_version": "1.0",
+  "article_template_version": "1.0",
+  "page_type": "junior_explainer",
+  "tiers_covered": [
+    "junior"
+  ],
+  "scope_statement": "The four building blocks of the knee, simply explained.",
+  "sources": [],
+  "source_note": "No sources were retrieved. The generation environment had no access to PubMed, Cochrane, the knowledge base or any textbook. The Tier 1 source minimum is NOT met and this draft would not pass Tier 1 in the deployed pipeline.",
+  "claims_needing_verification": [
+    "Four groups: bones, ligaments, menisci and muscles with their tendons.",
+    "Ligaments join bone to bone. Tendons join muscle to bone.",
+    "The two cruciate ligaments sit inside the joint and cross each other.",
+    "The menisci are two C shaped pads between the thigh bone and the shin bone.",
+    "Each group fails in its own way, which is why naming the part matters."
+  ],
+  "claims_note": "Listed above are the substantive claims, taken from the deepest tier's key learning points. Every factual statement in the page body requires the same verification; these are the ones a reviewer should start with.",
+  "gaps_or_uncertainties": [
+    "No quantitative figure is given anywhere on this page unless it is a definitional range, because none could be verified."
+  ],
+  "duplication_risk_pages": [
+    "1.1",
+    "1.2",
+    "1.2.1",
+    "1.2.3",
+    "1.2.4",
+    "1.2.6"
+  ],
+  "architecture_check": "Written against the architecture's own brief for 0.1.2, including its must_not_cover list: Diagnosis or treatment advice at any depth (Sections 4 to 8 own clinical content); Commercial content of any kind (prohibited across Section 0); Formal anatomy detail (owned by 1.2 and Section 2)",
+  "status": "AI_DRAFT_READY_FOR_VERIFICATION"
+}

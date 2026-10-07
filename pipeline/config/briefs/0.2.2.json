@@ -1,0 +1,79 @@
+{
+  "brief_version": "1.1",
+  "page_id": "0.2.2",
+  "title": "Osgood-Schlatter and Growing Pains",
+  "section": {
+    "id": "0",
+    "name": "Junior Academy"
+  },
+  "chapter": {
+    "id": "0.2",
+    "name": "Sport and Your Knees"
+  },
+  "page_type": "junior_explainer",
+  "article_template": "anatomy",
+  "generated_from": "Master Publishing Architecture, pages_0_to_3.json",
+  "tiers_required": [
+    "junior"
+  ],
+  "scope": {
+    "must_cover": [
+      "What they are and why they usually settle."
+    ],
+    "must_not_cover": [
+      "Diagnosis or treatment advice at any depth (Sections 4 to 8 own clinical content)",
+      "Commercial content of any kind (prohibited across Section 0)"
+    ],
+    "sibling_pages": [
+      "0.2.1",
+      "0.2.3",
+      "0.2.4",
+      "0.2.5",
+      "0.2.6"
+    ],
+    "deeper_spiral_pages": [
+      "10.6",
+      "11.2",
+      "6.67",
+      "10.26"
+    ]
+  },
+  "curriculum_tags": [],
+  "source_requirements": {
+    "kb_topic_filter": "osgood-schlatter and growing pains",
+    "minimum": {
+      "textbook_or_review": 1,
+      "peer_reviewed_for_clinical_claims": true
+    },
+    "preferred_recency_years": 10,
+    "guidelines_expected": []
+  },
+  "output_requirements": {
+    "language": "en-GB",
+    "format": "markdown",
+    "key_learning_points_per_tier": {
+      "min": 3,
+      "max": 5
+    },
+    "faqs_patient_level": {
+      "min": 3,
+      "max": 5
+    },
+    "target_word_count": {
+      "min": 350,
+      "max": 900
+    },
+    "internal_link_placeholders": true
+  },
+  "governance": {
+    "commercial_content_allowed": false,
+    "clinical_advice_allowed": false,
+    "junior_tier_present": true
+  },
+  "pipeline": {
+    "priority": "medium",
+    "requested_by": "architecture",
+    "regen_count": 0,
+    "consultant_assigned": null
+  }
+}

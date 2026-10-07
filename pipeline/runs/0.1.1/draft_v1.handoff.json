@@ -1,0 +1,30 @@
+{
+  "page_id": "0.1.1",
+  "prompt_version": "1.0",
+  "article_template_version": "1.0",
+  "page_type": "junior_explainer",
+  "tiers_covered": [
+    "junior"
+  ],
+  "scope_statement": "An illustrated first tour of the knee joint and its parts.",
+  "sources": [],
+  "source_note": "No sources were retrieved. The generation environment had no access to PubMed, Cochrane, the knowledge base or any textbook. The Tier 1 source minimum is NOT met and this draft would not pass Tier 1 in the deployed pipeline.",
+  "claims_needing_verification": [
+    "The knee is where the thigh bone and the shin bone meet, with the kneecap at the front.",
+    "The fibula sits on the outside and carries very little weight.",
+    "Ligaments, menisci, cartilage, muscles and a slippery lining fill the spaces.",
+    "The bones alone would slide apart, so the soft parts provide the stability.",
+    "The knee moves a long way, carries a lot, and stays steady, all at once."
+  ],
+  "claims_note": "Listed above are the substantive claims, taken from the deepest tier's key learning points. Every factual statement in the page body requires the same verification; these are the ones a reviewer should start with.",
+  "gaps_or_uncertainties": [
+    "No quantitative figure is given anywhere on this page unless it is a definitional range, because none could be verified."
+  ],
+  "duplication_risk_pages": [
+    "1.1",
+    "1.2",
+    "1.1.1"
+  ],
+  "architecture_check": "Written against the architecture's own brief for 0.1.1, including its must_not_cover list: Diagnosis or treatment advice at any depth (Sections 4 to 8 own clinical content); Commercial content of any kind (prohibited across Section 0)",
+  "status": "AI_DRAFT_READY_FOR_VERIFICATION"
+}
