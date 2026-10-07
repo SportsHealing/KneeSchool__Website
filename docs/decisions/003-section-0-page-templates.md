@@ -4,7 +4,7 @@
 |---|---|
 | Date | 7 October 2026 |
 | Decided by | Build team, applied and flagged for confirmation |
-| Status | Applied, awaiting editorial confirmation |
+| Status | Partly confirmed. The no figures rule is confirmed; the four section orders are being changed |
 | Applies to | page types careers, study_skills, teacher_resource, assessment |
 | Closes | Handbook open question 5, architecture open question 6 |
 
@@ -109,7 +109,13 @@ also satisfies the architecture's own instruction on 0.4.3, which excludes test
 coaching content and asks for official sources to be signposted.
 
 This is a content rule, not a lint rule. It is listed in each page's handoff
-block for the consultant to confirm.
+block.
+
+**Confirmed by the client on 7 October 2026.** The rule stands. No entry
+requirement, test score, fee, deadline or application statistic goes on a
+Section 0 page, and a later reviewer should not add one. Where a figure would
+sit, the page names the body that publishes it. This is no longer an open
+question and does not need raising again in a review pack.
 
 ## Status in the handbook
 

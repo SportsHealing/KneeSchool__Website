@@ -151,9 +151,9 @@
           "ref": "D-003",
           "title": "Templates for Section 0 chapters 0.3 to 0.7",
           "area": "Editorial",
-          "state": "Applied, awaiting confirmation",
+          "state": "Orders being changed; no figures rule confirmed",
           "blocker": "The handbook defines three article templates and 27 Section 0 pages have a page type matching none of them. Four templates were defined locally.",
-          "needed": "Confirmation of the four section orders in docs/decisions/003. If an order is rejected the prose survives; only the headings change."
+          "needed": "The no figures rule is confirmed and closed. The four section orders are being revised at the client's instruction. Nothing else in decision 003 is open."
         }
       ]
     },

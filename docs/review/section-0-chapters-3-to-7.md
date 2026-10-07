@@ -46,15 +46,16 @@ are the General Medical Council, the Royal College of Surgeons, the British
 Orthopaedic Association, the Medical Schools Council, UCAS, the UCAT Consortium,
 Cochrane, NICE and the Information Commissioner's Office.
 
-This is deliberate and it is reversible. If you want figures on these pages, add
-them with a dated source rather than asking for them to be written in.
+**Confirmed by the client. This is closed.** No entry requirement, test score,
+fee, deadline or application statistic goes on a Section 0 page, and a reviewer
+should not add one. Please do not raise it.
 
 ## What you are being asked to confirm
 
 1. **The four section orders.** Decision 003. This is the cheapest thing to
    change now and the most expensive later, because 294 further pages in
    sections 10 to 15 will use at least two of these templates.
-2. **The no figures rule.** Above.
+2. ~~The no figures rule.~~ Confirmed by the client and closed. See above.
 3. **Accuracy on the training pathway.** Chapter 0.3 describes the route from
    school to consultant, and chapter 0.3.4 describes MRCS and FRCS. You have
    been through both. Nobody else reviewing this has.
