@@ -182,18 +182,6 @@
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
     },
-    "0.6.2": {
-      "out": "junior/future-surgeon-challenge.html",
-      "parent": "Junior Academy|../levels/junior.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "0.6.3": {
-      "out": "junior/school-leaderboards.html",
-      "parent": "Junior Academy|../levels/junior.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
     "0.7.1": {
       "out": "junior/ready-made-lesson-plans.html",
       "parent": "Junior Academy|../levels/junior.html",
@@ -328,6 +316,18 @@
     }
   },
   "withheld": {
+    "0.6.2": {
+      "title": "Future Surgeon Challenge",
+      "reason": "Held at the client's instruction on 7 October 2026. The quiz ladder needs the Section 14 adaptive question bank, which does not exist, so the page could only describe a design. The Junior Academy syllabus shows it as coming soon.",
+      "draft": "pipeline/runs/0.6.2/styled_v1.md",
+      "would_have_been": "junior/future-surgeon-challenge.html"
+    },
+    "0.6.3": {
+      "title": "School Leaderboards",
+      "reason": "Held at the client's instruction on 7 October 2026, for the same reason as 0.6.4. A leaderboard needs accounts, progress tracking and the children's data protection work in PG-5, so the page could only set out rules for a feature that does not exist. The Junior Academy syllabus shows it as coming soon.",
+      "draft": "pipeline/runs/0.6.3/styled_v1.md",
+      "would_have_been": "junior/school-leaderboards.html"
+    },
     "0.6.4": {
       "title": "Digital Badges",
       "reason": "Held at the client's instruction on 7 October 2026. The page was written and passes the style gate, but its whole subject is a feature that needs accounts, progress tracking and the children's data protection work in PG-5. Publishing a page whose job is to explain why there are no badges was judged not worth the shelf space. The Junior Academy syllabus shows it as coming soon instead.",

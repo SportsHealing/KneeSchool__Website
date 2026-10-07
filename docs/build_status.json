@@ -52,7 +52,7 @@
     },
     {
       "name": "Pages that describe a feature the site cannot yet do",
-      "lede": "Each of these pages is written and published. Each one states on the page itself that the feature is not available, rather than implying otherwise.",
+      "lede": "Each of these pages is written and has passed the style gate. Where a page is published it says on itself that the feature is not available. Where the feature was the page's whole subject, the page is held and the syllabus shows it as coming soon.",
       "items": [
         {
           "ref": "PG-1",
@@ -83,21 +83,21 @@
         },
         {
           "ref": "PG-4",
-          "title": "The Future Surgeon Challenge is not playable",
+          "title": "The Future Surgeon Challenge is not playable, and its page is held",
           "area": "Section 0.6",
-          "state": "Page published, feature absent",
+          "state": "Written and held unpublished",
           "blocker": "The quiz ladder needs the adaptive question bank, which belongs to Section 14 of the publishing plan. Section 14 is not written.",
-          "needed": "The question bank, or a decision to build a smaller one for the junior rungs.",
-          "pages": "0.6.2"
+          "needed": "The Section 14 adaptive question bank, or a decision to build a smaller one for the junior rungs. Held unpublished at the client's instruction. The draft and its handoffs are in pipeline/runs, render_targets.json records why, and the Junior Academy syllabus shows the page as coming soon. Publishing it is one entry moved back into render_targets.json plus tools/render_site.py.",
+          "pages": "0.6.2 written and held"
         },
         {
           "ref": "PG-5",
           "title": "Leaderboards and badges need accounts and a lawful basis",
           "area": "Section 0.6",
-          "state": "Badges page withheld, leaderboards page published",
+          "state": "Both pages written and held unpublished",
           "blocker": "Both need progress tracking, which needs accounts. Because the users are children, that needs a lawful basis under UK GDPR, a completed data protection impact assessment, compliance with the ICO Age Appropriate Design Code, a named safeguarding lead and a pre moderation process. The site currently has no accounts and no server side anything.",
-          "needed": "A decision on whether to take this on at all. It is the largest single piece of compliance work in the plan. The Digital Badges page (0.6.4) has been written and gated but is held unpublished at the client's instruction, because a page whose whole job is to explain why there are no badges is not worth the shelf space. The Junior Academy syllabus shows it as coming soon. The draft is in pipeline/runs/0.6.4 and publishing it is a one line change to render_targets.json.",
-          "pages": "0.6.1, 0.6.3; 0.6.4 written and held"
+          "needed": "A decision on whether to take this on at all. It is the largest single piece of compliance work in the plan. Held unpublished at the client's instruction. The draft and its handoffs are in pipeline/runs, render_targets.json records why, and the Junior Academy syllabus shows the page as coming soon. Publishing it is one entry moved back into render_targets.json plus tools/render_site.py.",
+          "pages": "0.6.3 and 0.6.4 written and held"
         },
         {
           "ref": "PG-6",
@@ -106,7 +106,7 @@
           "state": "Page published, feature absent",
           "blocker": "No slide decks, worksheets, diagram sheets or printable certificate have been produced. The lesson plans are therefore described on the page rather than attached.",
           "needed": "A decision on format, then the files. Everything they would carry is already written on the pages.",
-          "pages": "0.6.1, 0.7.1, 0.7.2"
+          "pages": "0.7.1, 0.7.2; also the printable certificate on 0.6.1"
         },
         {
           "ref": "PG-7",
@@ -163,11 +163,11 @@
       "items": [
         {
           "ref": "W-1",
-          "title": "Section 0 Junior Academy, 37 published of 38 written",
+          "title": "Section 0 Junior Academy, 35 published of 38 written",
           "area": "Content",
-          "state": "Written, style gate passed, awaiting review",
+          "state": "35 published and awaiting review, 3 held unpublished",
           "blocker": "None. Review packs are in docs/review/.",
-          "needed": "Consultant review. 0.2.4 and 0.2.5 are singled out in the chapter 0.1 and 0.2 pack; 0.7.4, 0.7.3 and 0.3.5 in the chapter 0.3 to 0.7 pack. 0.6.4 is written and held, so it needs no review until it is published."
+          "needed": "Consultant review of the 35 published pages. 0.2.4 and 0.2.5 are singled out in the chapter 0.1 and 0.2 pack; 0.7.4, 0.7.3 and 0.3.5 in the chapter 0.3 to 0.7 pack. The three held pages, 0.6.2 to 0.6.4, need no review until a decision is taken to publish them."
         },
         {
           "ref": "W-2",

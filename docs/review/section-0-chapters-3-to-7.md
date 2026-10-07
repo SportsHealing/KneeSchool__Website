@@ -4,10 +4,10 @@
 |---|---|
 | Section | 0 Junior Academy |
 | Chapters | 0.3 Careers, 0.4 Medical School Entry, 0.5 Young Investigators, 0.6 Certificates, 0.7 For Teachers, Coaches and Parents, plus 0.1.6 |
-| Pages | 27 written, 26 published. Section 0 is 38 written, 37 published |
-| Page types | careers 6, study_skills 11, teacher_resource 6, assessment 4 (3 published) |
+| Pages | 27 written, 24 published. Section 0 is 38 written, 35 published |
+| Page types | careers 6, study_skills 11, teacher_resource 6, assessment 4 (1 published) |
 | Tier | Junior on 22 pages, Patient on the five chapter 0.7 pages |
-| Held unpublished | 0.6.4 Digital Badges, at the client's instruction |
+| Held unpublished | 0.6.2, 0.6.3 and 0.6.4, at the client's instruction. All of chapter 0.6 except the certificate |
 | Style gate | All 27 pass. Zero failures, zero warnings |
 | Evidence verification | **Did not run on any page** |
 | Reference lists | **None** |
@@ -63,16 +63,23 @@ should not add one. Please do not raise it.
    so on the page. They are listed on `about/status.html` and in
    `docs/build_status.json` as PG-1 to PG-8.
 
-   This question has been answered once already, for badges. 0.6.4 Digital
-   Badges was written, passed the gate, and is held unpublished: a page whose
-   whole job is to explain why there are no badges was judged not worth the
-   shelf space, and the syllabus shows it as coming soon instead. The draft is
-   in `pipeline/runs/0.6.4` and publishing it is a one line change.
+This question has been answered, and the answer was consistent. Three of the
+   four chapter 0.6 pages are written, passed the gate, and are held
+   unpublished: Future Surgeon Challenge, School Leaderboards and Digital
+   Badges. A page whose whole subject is a feature that does not exist was
+   judged not worth the shelf space. The syllabus shows all three as coming
+   soon, and the drafts are in `pipeline/runs`.
 
-   **0.6.3 School Leaderboards is the same blocker and the same chapter, and it
-   is still published.** If badges were not worth the shelf space, leaderboards
-   probably are not either. That is the one call in this pack worth making
-   quickly.
+   The rule that came out of it, worth applying to later sections: **a page may
+   say a feature is not ready, but a page whose only subject is a feature that
+   is not ready does not publish.** That is why 0.7.2 Classroom Slide Decks is
+   still live and the badges page is not. 0.7.2 gives a teacher a route without
+   the files; the badges page gave nobody anything.
+
+   The one page this leaves worth a second look is 0.6.1 Knee Explorer
+   Certificate. It survives because a teacher can award it today, and chapter
+   0.6 is now a single page. Is one certificate enough to keep the chapter, or
+   should it move into 0.1?
 
 ## Three pages to read first
 
@@ -118,10 +125,10 @@ verifying a clinical claim.
 | 0.3 | 6 careers pages | `junior/` |
 | 0.4 | 6 study skills pages | `junior/` |
 | 0.5 | 5 study skills pages | `junior/` |
-| 0.6 | 4 assessment pages, 3 published | `junior/` |
+| 0.6 | 4 assessment pages, 1 published | `junior/` |
 | 0.7 | 5 teacher resource pages | `junior/` |
 
-All 38 are listed on `levels/junior.html`. Thirty seven are links; Digital
-Badges shows as coming soon. Chapter 0.7 is also reachable from the Learn menu,
-because a teacher is not going to look for adult material under a heading that
-says Junior Academy.
+All 38 are listed on `levels/junior.html`. Thirty five are links; the three
+held chapter 0.6 pages show as coming soon. Chapter 0.7 is also reachable from
+the Learn menu, because a teacher is not going to look for adult material under
+a heading that says Junior Academy.

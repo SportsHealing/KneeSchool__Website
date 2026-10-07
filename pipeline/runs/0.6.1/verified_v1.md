@@ -82,8 +82,9 @@ finished something, and ignoring it entirely costs nothing.
 Chapters 0.1 and 0.2 are the whole syllabus for this certificate and are
 linked below.
 
-Chapter 0.6 contains the other awards, including the challenge ladder for
-anyone who wants something harder.
+The other awards in chapter 0.6, the challenge ladder and the badges, are
+designed but not open. The build status page records what each one is waiting
+on.
 
 Teachers and coaches will find the curriculum mapping for these chapters on
 the Curriculum Links page.
