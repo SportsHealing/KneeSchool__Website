@@ -4,7 +4,7 @@
 |---|---|
 | Date | 7 October 2026 |
 | Decided by | Build team, applied and flagged for confirmation |
-| Status | Partly confirmed. The no figures rule is confirmed; the four section orders are being changed |
+| Status | Confirmed. Orders revised 7 October 2026 |
 | Applies to | page types careers, study_skills, teacher_resource, assessment |
 | Closes | Handbook open question 5, architecture open question 6 |
 
@@ -41,26 +41,24 @@ learning points are per tier, and the reference list stays at article level.
 
 **careers**
 
-1. What This Is
+1. What the Work Involves
 2. The People Who Do It
 3. The Route
-4. What the Work Involves
-5. What It Takes
-6. Where to Find Out More
+4. What It Takes
+5. Where to Find Out More
 
 **study_skills**
 
 1. What This Is
-2. Why It Matters
-3. How It Works
-4. How to Prepare
-5. Common Mistakes
-6. Where to Find Out More
+2. How It Works
+3. How to Prepare
+4. Common Mistakes
+5. Where to Find Out More
 
 **teacher_resource**
 
-1. What This Covers
-2. Curriculum Links
+1. Curriculum Links
+2. What This Covers
 3. How to Use It
 4. What to Watch For
 5. Where to Find Out More
@@ -68,17 +66,47 @@ learning points are per tier, and the reference list stays at article level.
 **assessment**
 
 1. What This Is
-2. What It Covers
-3. How to Earn It
+2. How to Earn It
+3. What It Covers
 4. Rules and Fair Play
 5. Where to Find Out More
 
 Word bands are 500 to 1200 for the first three and 400 to 1000 for assessment,
 then scaled by decision 002 because every one of these pages carries one tier.
 
-## The reasoning
+## The revision of 7 October 2026
 
-Each order is taken from the question a reader of that chapter arrives with.
+The orders above are the confirmed ones. The first draft of this decision had
+four different orders, and the client changed all four. What changed and why:
+
+| Template | Change |
+|---|---|
+| careers | What the Work Involves moves to the front and What This Is is dropped. Lead with the work, not with a definition |
+| study_skills | Why It Matters is dropped. On a page that is a set of instructions it reads as filler |
+| teacher_resource | Curriculum Links moves to the front. A teacher checks the mapping before anything else |
+| assessment | How to Earn It moves above What It Covers |
+
+The two dropped headings had prose under them on seventeen pages. None of it was
+deleted.
+
+- The careers What This Is prose is folded to the front of The People Who Do It.
+  The reader now meets the work, then who does it and what it is.
+- The study skills Why It Matters prose is folded to the end of What This Is. The
+  heading was the objection, not the facts under it.
+
+Both folds are in `emit2.py` as a documented migration map rather than applied by
+hand, so they are inspectable and repeatable.
+
+One page departs from its order. 0.7.4 Supporting an Injured Young Athlete is
+written for parents, and its Curriculum Links section said "Not applicable".
+That is a reasonable fourth section and a terrible first one, so the page omits
+it and opens with What This Covers. The template allows an ordered subset, so
+this needs no exception.
+
+## The reasoning behind the original orders
+
+Kept for the record. Each was taken from the question a reader of that chapter
+arrives with.
 
 - A fourteen year old reading chapter 0.3 wants to know what the job is, who
   does it, how you get there, and what the day is actually like, in that order.
@@ -124,5 +152,7 @@ These four templates are not in Handbook v1.0. They are candidates for v1.1.
 page type carries `source_of_truth: decision 003`, so a reader of the config can
 tell which templates the handbook owns and which this decision does.
 
-If editorial rejects an order, the prose survives. Only the heading sequence in
-`article_template.json` and the section keys in the content modules change.
+If editorial rejects an order, the prose survives. That claim has now been
+tested: all four orders were changed on 7 October 2026, seventeen pages lost a
+heading, and not one sentence of prose was lost with it. The cost was one
+re-emit, one re-render and about ten minutes.

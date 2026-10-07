@@ -15,8 +15,6 @@ The knee is a good subject for one, because it is a joint you can measure
 without any equipment and because the published research on it is unusually
 accessible.
 
-### Why It Matters
-
 The commonest reason a school research project goes wrong is not effort. It is
 a question that was too broad to answer, chosen in week one and not revisited.
 

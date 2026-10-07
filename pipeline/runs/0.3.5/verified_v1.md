@@ -5,26 +5,6 @@ specialty. This page explains what is known about why, and what is being done.
 
 ## For Young Learners
 
-### What This Is
-
-Medicine as a whole admits more women than men to medical school. Orthopaedic
-surgery does not reflect that. Of all the surgical specialties it has one of
-the smallest proportions of women, among both trainees and consultants.
-
-The current figures are published each year by the General Medical Council and
-by the British Orthopaedic Association. They are moving, so read them there
-rather than taking a number from a page like this one.
-
-### The People Who Do It
-
-There are women consultant knee surgeons in the United Kingdom, women leading
-orthopaedic research groups, and women presidents of surgical organisations.
-The specialty is not closed.
-
-It is, however, a specialty where a female trainee may be the only woman in a
-theatre team, and that is a different working experience from being one of
-several.
-
 ### What the Work Involves
 
 Three explanations come up in the research, and none of them is about ability.
@@ -41,6 +21,24 @@ repeats itself.
 Working patterns. Surgical training involves on call commitments and moving
 between hospitals. Those pressures fall unevenly, and the specialty has been
 slower than others to adapt.
+
+### The People Who Do It
+
+Medicine as a whole admits more women than men to medical school. Orthopaedic
+surgery does not reflect that. Of all the surgical specialties it has one of
+the smallest proportions of women, among both trainees and consultants.
+
+The current figures are published each year by the General Medical Council and
+by the British Orthopaedic Association. They are moving, so read them there
+rather than taking a number from a page like this one.
+
+There are women consultant knee surgeons in the United Kingdom, women leading
+orthopaedic research groups, and women presidents of surgical organisations.
+The specialty is not closed.
+
+It is, however, a specialty where a female trainee may be the only woman in a
+theatre team, and that is a different working experience from being one of
+several.
 
 ### What It Takes
 

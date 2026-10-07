@@ -27,8 +27,6 @@ is not attached yet, because no paper could be retrieved and checked when the
 page was written, and walking you through a paper nobody verified would be
 worse than waiting.
 
-### Why It Matters
-
 Papers look impenetrable, and most of that is vocabulary rather than
 difficulty. The reasoning underneath is usually simpler than the sentences
 suggest.

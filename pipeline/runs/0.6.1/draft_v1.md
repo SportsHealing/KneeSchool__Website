@@ -17,22 +17,6 @@ and is worth mentioning if you later apply for work experience.
 The certificate is awarded by a teacher, a coach or a parent rather than by
 this site, because the site has no accounts and cannot know who has read what.
 
-### What It Covers
-
-Eleven pages across two chapters.
-
-Chapter 0.1 Discover the Knee. What the knee is made of, how it moves, why it
-is built the way it is, how it differs while you are still growing, and how it
-maps onto GCSE and A level biology and physical education.
-
-Chapter 0.2 Sport and Your Knees. The injuries that occur in young athletes,
-how warming up changes risk, why anterior cruciate ligament injury rates
-differ between girls and boys, and when a knee problem needs an adult told
-about it.
-
-The certificate covers understanding, not memory. Nobody needs to recite the
-names of the ligaments to earn it.
-
 ### How to Earn It
 
 Four steps.
@@ -65,6 +49,22 @@ answer and this is the question that shows whether the reading landed.
 A printable certificate is not available to download yet. The page it will sit
 on is part of the classroom materials in chapter 0.7, and those files have not
 been produced.
+
+### What It Covers
+
+Eleven pages across two chapters.
+
+Chapter 0.1 Discover the Knee. What the knee is made of, how it moves, why it
+is built the way it is, how it differs while you are still growing, and how it
+maps onto GCSE and A level biology and physical education.
+
+Chapter 0.2 Sport and Your Knees. The injuries that occur in young athletes,
+how warming up changes risk, why anterior cruciate ligament injury rates
+differ between girls and boys, and when a knee problem needs an adult told
+about it.
+
+The certificate covers understanding, not memory. Nobody needs to recite the
+names of the ligaments to earn it.
 
 ### Rules and Fair Play
 

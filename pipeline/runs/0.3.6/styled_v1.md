@@ -5,7 +5,7 @@ can be answered, and what happens to a question after it is sent.
 
 ## For Young Learners
 
-### What This Is
+### The People Who Do It
 
 Ask a Surgeon is an archive of questions sent in by school age readers, with
 answers written by a consultant and checked before they appear.
@@ -18,8 +18,6 @@ The archive is not open yet. The question route and the moderation process are
 still being built, and no questions have been answered, so there is nothing to
 read here today. This page describes how it will work rather than pretending
 it already does.
-
-### The People Who Do It
 
 Answers are written by a consultant surgeon and reviewed before publication.
 The reviewer checks two separate things.

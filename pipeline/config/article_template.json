@@ -138,10 +138,9 @@
     },
     "careers": {
       "body_sections": [
-        "what_this_is",
+        "what_the_work_involves",
         "the_people_who_do_it",
         "the_route",
-        "what_the_work_involves",
         "what_it_takes",
         "where_to_find_out_more"
       ],
@@ -150,12 +149,11 @@
         "min": 500,
         "max": 1200
       },
-      "source_of_truth": "decision 003"
+      "source_of_truth": "decision 003, orders revised 7 October 2026"
     },
     "study_skills": {
       "body_sections": [
         "what_this_is",
-        "why_it_matters",
         "how_it_works",
         "how_to_prepare",
         "common_mistakes",
@@ -166,12 +164,12 @@
         "min": 500,
         "max": 1200
       },
-      "source_of_truth": "decision 003"
+      "source_of_truth": "decision 003, orders revised 7 October 2026"
     },
     "teacher_resource": {
       "body_sections": [
-        "what_this_covers",
         "curriculum_links",
+        "what_this_covers",
         "how_to_use_it",
         "what_to_watch_for",
         "where_to_find_out_more"
@@ -181,13 +179,13 @@
         "min": 500,
         "max": 1200
       },
-      "source_of_truth": "decision 003"
+      "source_of_truth": "decision 003, orders revised 7 October 2026"
     },
     "assessment": {
       "body_sections": [
         "what_this_is",
-        "what_it_covers",
         "how_to_earn_it",
+        "what_it_covers",
         "rules_and_fair_play",
         "where_to_find_out_more"
       ],
@@ -196,7 +194,7 @@
         "min": 400,
         "max": 1000
       },
-      "source_of_truth": "decision 003"
+      "source_of_truth": "decision 003, orders revised 7 October 2026"
     }
   },
   "word_count_override": "brief.output_requirements.target_word_count overrides page_type default when present",
@@ -215,7 +213,7 @@
     "horizontal_bar",
     "space_hyphen_space"
   ],
-  "local_additions_note": "page_types careers, study_skills, teacher_resource and assessment are not in Handbook v1.0. The handbook defines three templates and leaves Section 0 chapters 0.3 to 0.7 without one, which is handbook open question 5 and architecture open question 6. Decision 003 defines them locally so those pages can be written and linted. They are candidates for Handbook v1.1 and are subject to editorial confirmation.",
+  "local_additions_note": "page_types careers, study_skills, teacher_resource and assessment are not in Handbook v1.0. The handbook defines three templates and leaves Section 0 chapters 0.3 to 0.7 without one, which is handbook open question 5 and architecture open question 6. Decision 003 defines them locally. The section orders below are the revised orders confirmed by the client on 7 October 2026. They are candidates for Handbook v1.1.",
   "body_section_headings": {
     "common_mistakes": "Common Mistakes",
     "curriculum_links": "Curriculum Links",

@@ -6,12 +6,12 @@
   "findings": [],
   "article_template_version": "1.0",
   "document": {
-    "word_count": 979,
+    "word_count": 940,
     "tiers_present": [
       "patient"
     ],
     "has_reference_list": true,
-    "sentence_count": 67,
+    "sentence_count": 65,
     "page_type": "teacher_resource"
   }
 }

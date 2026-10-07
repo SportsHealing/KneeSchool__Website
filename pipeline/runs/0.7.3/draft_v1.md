@@ -5,6 +5,15 @@ where the line sits between coaching and treating.
 
 ## For Patients
 
+### Curriculum Links
+
+This material sits alongside GCSE and A level physical education on injury
+prevention, training principles and periodisation.
+
+Coaches working towards a national governing body qualification will find it
+overlaps with the safeguarding and injury awareness units those awards
+require.
+
 ### What This Covers
 
 Two things a coach has real influence over. How much load a young athlete
@@ -16,15 +25,6 @@ and the most useful thing this page can do is make the boundary clear.
 Load is the one variable a coach controls directly. Most knee complaints in
 youth sport are not sudden injuries. They build up over weeks in which the
 body was asked to do more than it had adapted to.
-
-### Curriculum Links
-
-This material sits alongside GCSE and A level physical education on injury
-prevention, training principles and periodisation.
-
-Coaches working towards a national governing body qualification will find it
-overlaps with the safeguarding and injury awareness units those awards
-require.
 
 ### How to Use It
 

@@ -5,6 +5,17 @@ available now, and how a school will be able to arrange one.
 
 ## For Patients
 
+### Curriculum Links
+
+The careers talk supports careers education and the Gatsby benchmarks on
+encounters with employers and employees.
+
+The biomechanics session supports GCSE and A level physical education on
+levers and movement, and working scientifically in biology.
+
+The virtual tour supports GCSE biology on the skeleton and joints, and
+physical education on injury.
+
 ### What This Covers
 
 Four things are planned for schools and clubs.
@@ -24,17 +35,6 @@ None of these can be booked yet. There is no booking route on this site and no
 contact form, so a school cannot currently arrange any of them, and this page
 does not pretend otherwise. Setting up that route is recorded on the build
 status page.
-
-### Curriculum Links
-
-The careers talk supports careers education and the Gatsby benchmarks on
-encounters with employers and employees.
-
-The biomechanics session supports GCSE and A level physical education on
-levers and movement, and working scientifically in biology.
-
-The virtual tour supports GCSE biology on the skeleton and joints, and
-physical education on injury.
 
 ### How to Use It
 

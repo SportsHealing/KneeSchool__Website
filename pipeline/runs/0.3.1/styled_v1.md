@@ -5,7 +5,7 @@ sets them out in order and names who publishes the rules for each one.
 
 ## For Young Learners
 
-### What This Is
+### The People Who Do It
 
 A knee surgeon is an orthopaedic surgeon who went on to specialise in the
 knee. Orthopaedic surgery covers bones, joints, muscles, tendons and
@@ -16,8 +16,6 @@ and ankle.
 Nobody arrives at that job in one step. The route is built from stages. Each
 stage has an entry point, a list of things you have to show you can do, and an
 assessment or an examination at the end of it.
-
-### The People Who Do It
 
 A consultant knee surgeon runs operating lists and clinics, and usually
 teaches and researches as well. They are one person in a team. A knee service

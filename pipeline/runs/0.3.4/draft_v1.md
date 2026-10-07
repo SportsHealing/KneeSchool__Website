@@ -6,27 +6,6 @@ it sits.
 
 ## For Young Learners
 
-### What This Is
-
-MRCS stands for Member of the Royal College of Surgeons. FRCS stands for
-Fellow of the Royal College of Surgeons. Both are examinations rather than
-degrees, and both are taken while working as a doctor rather than while
-studying full time.
-
-They are not two attempts at the same thing. They test different stages of a
-career and they look completely different when you sit them.
-
-### The People Who Do It
-
-MRCS is taken by doctors in their first surgical posts, usually a few years
-after qualifying. Candidates come from every surgical specialty and sit the
-same examination, because at that stage they are being tested as surgeons
-rather than as knee surgeons.
-
-FRCS is taken near the end of specialty training, by which point a candidate
-has chosen trauma and orthopaedic surgery and has a logbook of their own
-cases. The examination is specific to that specialty.
-
 ### What the Work Involves
 
 MRCS has two parts. The first is written and covers anatomy, physiology,
@@ -42,6 +21,25 @@ Candidates describe it as the hardest thing they have done.
 Neither examination is pass or fail on knowledge alone. Both test whether a
 candidate can explain a decision and justify it under pressure, because that
 is what the job actually consists of.
+
+### The People Who Do It
+
+MRCS stands for Member of the Royal College of Surgeons. FRCS stands for
+Fellow of the Royal College of Surgeons. Both are examinations rather than
+degrees, and both are taken while working as a doctor rather than while
+studying full time.
+
+They are not two attempts at the same thing. They test different stages of a
+career and they look completely different when you sit them.
+
+MRCS is taken by doctors in their first surgical posts, usually a few years
+after qualifying. Candidates come from every surgical specialty and sit the
+same examination, because at that stage they are being tested as surgeons
+rather than as knee surgeons.
+
+FRCS is taken near the end of specialty training, by which point a candidate
+has chosen trauma and orthopaedic surgery and has a logbook of their own
+cases. The examination is specific to that specialty.
 
 ### What It Takes
 

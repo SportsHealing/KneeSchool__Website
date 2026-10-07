@@ -5,6 +5,20 @@ pages already on this site, with the practical work they need.
 
 ## For Patients
 
+### Curriculum Links
+
+Lessons one to three map onto GCSE biology on cells, tissues, the skeleton and
+movement, and onto GCSE physical education on joints, movement and injury
+prevention.
+
+Lesson two also covers A level physical education biomechanics on levers and
+mechanical advantage.
+
+Lesson four fits scientific method and working scientifically at either level,
+and works equally well in a critical thinking or extended project context.
+
+The page by page mapping is on the Curriculum Links page.
+
 ### What This Covers
 
 Four lessons, each designed to run in a single period without equipment beyond
@@ -25,20 +39,6 @@ with a discussion on training load in youth sport.
 
 Lesson four. How we know what we know. Evidence built on 0.5.1, using the
 question of whether warming up prevents injury as the worked example.
-
-### Curriculum Links
-
-Lessons one to three map onto GCSE biology on cells, tissues, the skeleton and
-movement, and onto GCSE physical education on joints, movement and injury
-prevention.
-
-Lesson two also covers A level physical education biomechanics on levers and
-mechanical advantage.
-
-Lesson four fits scientific method and working scientifically at either level,
-and works equally well in a critical thinking or extended project context.
-
-The page by page mapping is on the Curriculum Links page.
 
 ### How to Use It
 

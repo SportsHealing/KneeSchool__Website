@@ -5,15 +5,28 @@ after knees, described by what they do rather than by their job title.
 
 ## For Young Learners
 
-### What This Is
+### What the Work Involves
+
+Four things show up in all five of those roles.
+
+Talking to people who are worried. A knee injury to a sixteen year old
+footballer is not a small event in their life, and treating it as one is the
+fastest way to lose their trust.
+
+Working to a clock. Operating lists and clinic slots are timed, and running
+late has a cost for everyone further down the list.
+
+Writing things down. If it is not recorded, the next person cannot pick it up.
+
+Learning something new most weeks, because the evidence moves.
+
+### The People Who Do It
 
 Job titles tell you very little. Two people with the same title can spend
 their weeks doing almost nothing in common.
 
 This page describes five roles in a knee service by the work itself. None of
 these are better than the others. They suit different people.
-
-### The People Who Do It
 
 The surgeon. Operating lists on some days, clinics on others. A clinic is
 mostly listening and examining, and most of the people seen in a knee clinic
@@ -33,21 +46,6 @@ by name and hands it over before it is asked for.
 The researcher. Works out whether what the rest of the team does actually
 helps. Much of what is now standard in knee surgery was standard for years
 before anyone tested it.
-
-### What the Work Involves
-
-Four things show up in all five of those roles.
-
-Talking to people who are worried. A knee injury to a sixteen year old
-footballer is not a small event in their life, and treating it as one is the
-fastest way to lose their trust.
-
-Working to a clock. Operating lists and clinic slots are timed, and running
-late has a cost for everyone further down the list.
-
-Writing things down. If it is not recorded, the next person cannot pick it up.
-
-Learning something new most weeks, because the evidence moves.
 
 ### What It Takes
 

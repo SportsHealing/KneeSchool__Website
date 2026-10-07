@@ -5,6 +5,7 @@
 | Section | 0 Junior Academy |
 | Chapters | 0.3 Careers, 0.4 Medical School Entry, 0.5 Young Investigators, 0.6 Certificates, 0.7 For Teachers, Coaches and Parents, plus 0.1.6 |
 | Pages | 27 written, 24 published. Section 0 is 38 written, 35 published |
+| Orders | Revised and confirmed 7 October 2026. Not an open question |
 | Page types | careers 6, study_skills 11, teacher_resource 6, assessment 4 (1 published) |
 | Tier | Junior on 22 pages, Patient on the five chapter 0.7 pages |
 | Held unpublished | 0.6.2, 0.6.3 and 0.6.4, at the client's instruction. All of chapter 0.6 except the certificate |
@@ -19,13 +20,24 @@ The last pack said these 27 pages were blocked, because the handbook defines no
 template for any of their four page types. That is resolved, by ruling rather
 than by discovery.
 
-**Decision 003** defines four templates locally, in `article_template.json`,
-each marked `source_of_truth: decision 003` so a reader of the config can tell
-which templates the handbook owns and which this build does. The section orders
-are in `docs/decisions/003-section-0-page-templates.md`.
+**Decision 003** defines four templates locally, in `article_template.json`.
+The orders in it were revised and confirmed by the client on 7 October 2026, so
+they are no longer an open question. They are:
 
-If you reject an order, the prose survives. Only the heading sequence in the
-config and the section keys in the content modules change.
+| Template | Order |
+|---|---|
+| careers | What the Work Involves, The People Who Do It, The Route, What It Takes, Where to Find Out More |
+| study_skills | What This Is, How It Works, How to Prepare, Common Mistakes, Where to Find Out More |
+| teacher_resource | Curriculum Links, What This Covers, How to Use It, What to Watch For, Where to Find Out More |
+| assessment | What This Is, How to Earn It, What It Covers, Rules and Fair Play, Where to Find Out More |
+
+The revision dropped two headings that had prose under them on seventeen pages.
+No prose was lost. The careers What This Is content is folded to the front of
+The People Who Do It, and the study skills Why It Matters content to the end of
+What This Is. Both folds are a documented map in the emitter, not hand edits.
+
+**Chapter 0.6 is closed** under decision 004. Only the certificate survives,
+and it now sits at the end of chapter 0.1.
 
 **Decision 002 gained an FAQ allowance.** The five chapter 0.7 pages carry the
 patient tier, which obliges an FAQ block of three to five questions. On a one
@@ -52,9 +64,9 @@ should not add one. Please do not raise it.
 
 ## What you are being asked to confirm
 
-1. **The four section orders.** Decision 003. This is the cheapest thing to
-   change now and the most expensive later, because 294 further pages in
-   sections 10 to 15 will use at least two of these templates.
+1. ~~The four section orders.~~ Revised and confirmed by the client. Closed.
+   Worth knowing that they will carry: roughly 294 pages in sections 10 to 15
+   will use at least two of these templates.
 2. ~~The no figures rule.~~ Confirmed by the client and closed. See above.
 3. **Accuracy on the training pathway.** Chapter 0.3 describes the route from
    school to consultant, and chapter 0.3.4 describes MRCS and FRCS. You have
@@ -76,10 +88,9 @@ This question has been answered, and the answer was consistent. Three of the
    still live and the badges page is not. 0.7.2 gives a teacher a route without
    the files; the badges page gave nobody anything.
 
-   The one page this leaves worth a second look is 0.6.1 Knee Explorer
-   Certificate. It survives because a teacher can award it today, and chapter
-   0.6 is now a single page. Is one certificate enough to keep the chapter, or
-   should it move into 0.1?
+That question is now closed too. Chapter 0.6 is closed in the site's
+   navigation under decision 004, and the certificate has moved to the end of
+   chapter 0.1 where a reader will actually find it.
 
 ## Three pages to read first
 

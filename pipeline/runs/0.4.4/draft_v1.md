@@ -14,8 +14,6 @@ application get you that far.
 Both are assessments of reasoning rather than of enthusiasm. That distinction
 is the single most useful thing to understand about them.
 
-### Why It Matters
-
 By the interview stage, every candidate in the room has the grades. Enthusiasm
 is universal and therefore worth nothing as a signal.
 

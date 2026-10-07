@@ -87,7 +87,7 @@
           "area": "Section 0.6",
           "state": "Written and held unpublished",
           "blocker": "The quiz ladder needs the adaptive question bank, which belongs to Section 14 of the publishing plan. Section 14 is not written.",
-          "needed": "The Section 14 adaptive question bank, or a decision to build a smaller one for the junior rungs. Held unpublished at the client's instruction. The draft and its handoffs are in pipeline/runs, render_targets.json records why, and the Junior Academy syllabus shows the page as coming soon. Publishing it is one entry moved back into render_targets.json plus tools/render_site.py.",
+          "needed": "The Section 14 adaptive question bank, or a decision to build a smaller one for the junior rungs. Held unpublished at the client's instruction. The draft and its handoffs are in pipeline/runs, render_targets.json records why, and the Junior Academy syllabus shows the page as coming soon. Publishing it is one entry moved back into render_targets.json plus tools/render_site.py. Chapter 0.6 is closed in the site's navigation under decision 004, so the page is not shown as coming soon either; it is simply not there.",
           "pages": "0.6.2 written and held"
         },
         {
@@ -96,7 +96,7 @@
           "area": "Section 0.6",
           "state": "Both pages written and held unpublished",
           "blocker": "Both need progress tracking, which needs accounts. Because the users are children, that needs a lawful basis under UK GDPR, a completed data protection impact assessment, compliance with the ICO Age Appropriate Design Code, a named safeguarding lead and a pre moderation process. The site currently has no accounts and no server side anything.",
-          "needed": "A decision on whether to take this on at all. It is the largest single piece of compliance work in the plan. Held unpublished at the client's instruction. The draft and its handoffs are in pipeline/runs, render_targets.json records why, and the Junior Academy syllabus shows the page as coming soon. Publishing it is one entry moved back into render_targets.json plus tools/render_site.py.",
+          "needed": "A decision on whether to take this on at all. It is the largest single piece of compliance work in the plan. Held unpublished at the client's instruction. The draft and its handoffs are in pipeline/runs, render_targets.json records why, and the Junior Academy syllabus shows the page as coming soon. Publishing it is one entry moved back into render_targets.json plus tools/render_site.py. Chapter 0.6 is closed in the site's navigation under decision 004, so the page is not shown as coming soon either; it is simply not there.",
           "pages": "0.6.3 and 0.6.4 written and held"
         },
         {
@@ -128,8 +128,8 @@
       ]
     },
     {
-      "name": "Decisions applied but not yet confirmed",
-      "lede": "Each of these was a gap in the handbook or the architecture. A ruling was made so work could continue, written up, and applied. None has been confirmed by an editor.",
+      "name": "Decisions taken",
+      "lede": "Each of these was a gap in the handbook or the architecture, or a call the client made during the build. Decisions 001 and 002 are applied and still need an editor's confirmation. 003 and 004 are confirmed.",
       "items": [
         {
           "ref": "D-001",
@@ -151,9 +151,18 @@
           "ref": "D-003",
           "title": "Templates for Section 0 chapters 0.3 to 0.7",
           "area": "Editorial",
-          "state": "Orders being changed; no figures rule confirmed",
+          "state": "Confirmed",
           "blocker": "The handbook defines three article templates and 27 Section 0 pages have a page type matching none of them. Four templates were defined locally.",
-          "needed": "The no figures rule is confirmed and closed. The four section orders are being revised at the client's instruction. Nothing else in decision 003 is open."
+          "needed": "Nothing. The four section orders were revised and confirmed on 7 October 2026 and the no figures rule is closed. Seventeen pages lost a heading in the revision and no prose was lost with it."
+        },
+        {
+          "ref": "D-004",
+          "title": "Chapter 0.6 closed on the site",
+          "area": "Editorial",
+          "state": "Confirmed and applied",
+          "blocker": "Three of the chapter's four pages describe features that do not exist. A chapter heading with one live page and three greyed out rows advertises what the site cannot do, on the page where a new reader is choosing what to read.",
+          "needed": "Nothing. Reopening it needs the features in PG-4 and PG-5, then four steps listed in docs/decisions/004.",
+          "pages": "0.6.1 moved into chapter 0.1; 0.6.2 to 0.6.4 held"
         }
       ]
     },
@@ -167,7 +176,7 @@
           "area": "Content",
           "state": "35 published and awaiting review, 3 held unpublished",
           "blocker": "None. Review packs are in docs/review/.",
-          "needed": "Consultant review of the 35 published pages. 0.2.4 and 0.2.5 are singled out in the chapter 0.1 and 0.2 pack; 0.7.4, 0.7.3 and 0.3.5 in the chapter 0.3 to 0.7 pack. The three held pages, 0.6.2 to 0.6.4, need no review until a decision is taken to publish them."
+          "needed": "Consultant review of the 35 published pages. 0.2.4 and 0.2.5 are singled out in the chapter 0.1 and 0.2 pack; 0.7.4, 0.7.3 and 0.3.5 in the chapter 0.3 to 0.7 pack. The three held pages, 0.6.2 to 0.6.4, need no review until a decision is taken to publish them, and chapter 0.6 is closed on the site under decision 004."
         },
         {
           "ref": "W-2",

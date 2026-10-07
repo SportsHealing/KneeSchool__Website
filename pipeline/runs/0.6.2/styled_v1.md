@@ -20,6 +20,20 @@ The question bank the ladder runs on has not been built. It belongs to Section
 below is therefore a design and not a live feature, and there is nothing to
 attempt on this page today.
 
+### How to Earn It
+
+The design is that you climb a rung by answering a set of questions correctly,
+and that wrong answers send you back to the page the question came from rather
+than simply being marked wrong.
+
+That mechanism needs a question bank, a way of knowing which questions you
+have seen, and somewhere to keep your progress. The site currently has none of
+the three.
+
+Until it does, the ladder can be climbed by hand. Read the section a rung
+covers, then ask somebody to question you on it. The Knee Explorer Certificate
+works this way already and rung 1 of this ladder is the same material.
+
 ### What It Covers
 
 Five rungs, each matched to one of the site's levels.
@@ -42,20 +56,6 @@ the arguments the specialty has not settled.
 A school student working through rung 1 and rung 2 is covering real material
 rather than a simplified version of it, which is the design the ladder is
 meant to show.
-
-### How to Earn It
-
-The design is that you climb a rung by answering a set of questions correctly,
-and that wrong answers send you back to the page the question came from rather
-than simply being marked wrong.
-
-That mechanism needs a question bank, a way of knowing which questions you
-have seen, and somewhere to keep your progress. The site currently has none of
-the three.
-
-Until it does, the ladder can be climbed by hand. Read the section a rung
-covers, then ask somebody to question you on it. The Knee Explorer Certificate
-works this way already and rung 1 of this ladder is the same material.
 
 ### Rules and Fair Play
 

@@ -212,7 +212,9 @@ class DecisionZeroZeroThreeTemplates(unittest.TestCase):
     def test_these_types_are_marked_as_not_from_the_handbook(self):
         self.assertIn("decision 003", self.tpl["local_additions_note"].lower())
         for name in self.NAMES:
-            self.assertEqual(self.tpl["page_types"][name]["source_of_truth"], "decision 003")
+            # the string carries a revision date as well, so match on the decision
+            self.assertIn("decision 003",
+                          self.tpl["page_types"][name]["source_of_truth"])
 
 
 class FaqAllowance(unittest.TestCase):
@@ -228,3 +230,33 @@ class FaqAllowance(unittest.TestCase):
         a = architecture.scale_for_tiers({"min": 500, "max": 1200}, ["junior"])
         b = architecture.scale_for_tiers({"min": 500, "max": 1200}, ["patient"])
         self.assertEqual(a["min"], b["min"])
+
+
+class RevisedOrders(unittest.TestCase):
+    """The orders confirmed on 7 October 2026. These carry into sections 10 to 15,
+    so a silent change to one of them is worth catching."""
+
+    EXPECTED = {
+        "careers": ["what_the_work_involves", "the_people_who_do_it", "the_route",
+                    "what_it_takes", "where_to_find_out_more"],
+        "study_skills": ["what_this_is", "how_it_works", "how_to_prepare",
+                         "common_mistakes", "where_to_find_out_more"],
+        "teacher_resource": ["curriculum_links", "what_this_covers", "how_to_use_it",
+                             "what_to_watch_for", "where_to_find_out_more"],
+        "assessment": ["what_this_is", "how_to_earn_it", "what_it_covers",
+                       "rules_and_fair_play", "where_to_find_out_more"],
+    }
+
+    def test_orders_match_the_confirmed_ones(self):
+        tpl = load("article_template.json")
+        for name, order in self.EXPECTED.items():
+            self.assertEqual(tpl["page_types"][name]["body_sections"], order, name)
+
+    def test_dropped_headings_are_in_no_order(self):
+        """What This Is left careers and Why It Matters left study skills. Both
+        still exist as headings, because other templates use the first and the
+        fold map needs the second resolvable."""
+        tpl = load("article_template.json")
+        self.assertNotIn("what_this_is", tpl["page_types"]["careers"]["body_sections"])
+        for name in self.EXPECTED:
+            self.assertNotIn("why_it_matters", tpl["page_types"][name]["body_sections"], name)

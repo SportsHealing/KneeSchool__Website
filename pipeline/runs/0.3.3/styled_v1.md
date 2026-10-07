@@ -5,7 +5,20 @@ and how people get into them.
 
 ## For Young Learners
 
-### What This Is
+### What the Work Involves
+
+These roles divide roughly into three kinds of work.
+
+Hands on with patients, week after week. Physiotherapy, nursing and orthotics
+sit here.
+
+Measurement. Imaging and sports science sit here. The question is always
+whether the measurement answers something useful.
+
+Design. Engineering sits here, and it is the furthest from the patient and
+often the furthest reaching.
+
+### The People Who Do It
 
 Surgery is the career most people have heard of, which makes it look like the
 only one. It is not even the largest.
@@ -13,8 +26,6 @@ only one. It is not even the largest.
 For every knee operation there are many more appointments, scans,
 rehabilitation sessions and strength programmes, and those are run by people
 who never pick up a scalpel.
-
-### The People Who Do It
 
 Physiotherapist. Assesses how a knee moves and builds a programme to change
 it. Entry is through a physiotherapy degree.
@@ -34,19 +45,6 @@ doctor in the team. Entry is through nursing, then specialist training.
 
 Biomedical engineer. Designs the implants and the instruments. Entry is
 through engineering rather than through a health degree.
-
-### What the Work Involves
-
-These roles divide roughly into three kinds of work.
-
-Hands on with patients, week after week. Physiotherapy, nursing and orthotics
-sit here.
-
-Measurement. Imaging and sports science sit here. The question is always
-whether the measurement answers something useful.
-
-Design. Engineering sits here, and it is the furthest from the patient and
-often the furthest reaching.
 
 ### What It Takes
 

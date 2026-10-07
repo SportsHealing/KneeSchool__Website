@@ -5,6 +5,14 @@ the lessons without them in the meantime.
 
 ## For Patients
 
+### Curriculum Links
+
+The planned materials follow the mapping on the Curriculum Links page, which
+covers GCSE and A level biology and physical education.
+
+Each worksheet is intended to carry the specification reference for the topic
+it covers, so a deck can be dropped into an existing scheme of work.
+
 ### What This Covers
 
 The plan is a set of downloadable files to go with the lesson plans in 0.7.1:
@@ -17,14 +25,6 @@ saying otherwise would waste your preparation time.
 What does exist is every piece of subject content the files would carry. It is
 on the pages this chapter links to, and it is free to read, project and link
 to.
-
-### Curriculum Links
-
-The planned materials follow the mapping on the Curriculum Links page, which
-covers GCSE and A level biology and physical education.
-
-Each worksheet is intended to carry the specification reference for the topic
-it covers, so a deck can be dropped into an existing scheme of work.
 
 ### How to Use It
 

@@ -16,8 +16,6 @@ involves loading a joint heavily, testing how far something will stretch, or
 trying any movement that hurts. That is a deliberate limit and the reason the
 list is short.
 
-### Why It Matters
-
 Reading that the knee is a hinge that also rotates is one thing. Watching your
 own knee rotate while you measure it is another, and the second one stays
 learned.

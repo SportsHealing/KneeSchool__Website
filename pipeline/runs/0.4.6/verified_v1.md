@@ -13,8 +13,6 @@ year degree. It is the most common route and it is not the only one.
 Several alternatives exist, each designed for a different situation. Knowing
 they exist at fifteen is more useful than discovering them at twenty five.
 
-### Why It Matters
-
 People reach medicine from very different starting points. Some miss the
 grades. Some decide at twenty two. Some did not take the right subjects. Some
 had a school that never mentioned the option.

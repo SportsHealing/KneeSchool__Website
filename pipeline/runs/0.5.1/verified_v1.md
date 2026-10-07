@@ -15,8 +15,6 @@ has a shape worth knowing.
 The shape matters because the same claim can be true, half true or wrong
 depending entirely on how it was tested.
 
-### Why It Matters
-
 Knee surgery has a history of operations that were standard for years and then
 stopped being standard. In most of those cases nothing new was discovered.
 Somebody simply ran the test that should have been run first.

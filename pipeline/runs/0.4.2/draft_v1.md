@@ -15,8 +15,6 @@ Most applicants assume it has to be a hospital. Most medical schools say
 clearly that it does not. What they ask for is evidence that you have some
 idea what caring for people is like, and that you have thought about it.
 
-### Why It Matters
-
 Medicine has a high rate of people leaving training. Admissions teams are
 trying to reduce that, and one of the few predictors they have is whether an
 applicant has seen the reality of the work rather than a version of it on

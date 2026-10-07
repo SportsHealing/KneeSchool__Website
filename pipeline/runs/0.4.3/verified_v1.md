@@ -15,8 +15,6 @@ It is not a knowledge test. There is no syllabus of facts to learn. It tests
 how quickly and accurately you handle information under time pressure, which
 is a different thing and is why it feels unfamiliar.
 
-### Why It Matters
-
 Schools use admissions tests to separate applicants whose predicted grades
 look similar, which by that stage is most of them.
 

@@ -5,16 +5,6 @@ physical education, so a page can be set as reading against a specific topic.
 
 ## For Young Learners
 
-### What This Covers
-
-The eleven pages in chapters 0.1 and 0.2 were not written to a syllabus. They
-were written about the knee, and a good deal of the knee is already on the
-syllabus.
-
-This page maps the overlap. It is here for a teacher setting reading, and for
-a student who wants to know which of this material will come up in an
-examination.
-
 ### Curriculum Links
 
 GCSE biology and combined science.
@@ -56,6 +46,16 @@ and return to activity.
 
 Specifications differ between examination boards and are revised. Check the
 mapping against your own board's current specification before relying on it.
+
+### What This Covers
+
+The eleven pages in chapters 0.1 and 0.2 were not written to a syllabus. They
+were written about the knee, and a good deal of the knee is already on the
+syllabus.
+
+This page maps the overlap. It is here for a teacher setting reading, and for
+a student who wants to know which of this material will come up in an
+examination.
 
 ### How to Use It
 

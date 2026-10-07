@@ -19,6 +19,19 @@ No badge can be issued yet. Issuing one needs somewhere to keep your progress,
 and that depends on the same accounts and the same data protection work set
 out on the School Leaderboards page.
 
+### How to Earn It
+
+The design is that a badge is issued by the person who confirmed the work. A
+teacher, a coach or a parent, in the same way the Knee Explorer Certificate is
+awarded.
+
+That keeps an adult in the loop and avoids the site having to decide whether a
+child has done something, which it has no way of knowing.
+
+Until badge files exist, the certificate route works for the first badge. The
+other five have criteria on this page and nothing stops a teacher recording
+them by hand.
+
 ### What It Covers
 
 Six badges are planned, each tied to something already on the site.
@@ -40,19 +53,6 @@ Applicant. Chapter 0.4 completed.
 
 Each badge would link to the pages it covers, so the criteria are checkable
 rather than a claim.
-
-### How to Earn It
-
-The design is that a badge is issued by the person who confirmed the work. A
-teacher, a coach or a parent, in the same way the Knee Explorer Certificate is
-awarded.
-
-That keeps an adult in the loop and avoids the site having to decide whether a
-child has done something, which it has no way of knowing.
-
-Until badge files exist, the certificate route works for the first badge. The
-other five have criteria on this page and nothing stops a teacher recording
-them by hand.
 
 ### Rules and Fair Play
 

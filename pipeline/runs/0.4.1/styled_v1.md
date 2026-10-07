@@ -14,8 +14,6 @@ university prospectus can.
 What is consistent across almost all of them is the shape of the requirement.
 Chemistry and biology sit at the centre of it. Beyond that, schools differ.
 
-### Why It Matters
-
 Subject choice at sixteen closes some doors and opens others, and a few of
 those doors are hard to reopen later.
 

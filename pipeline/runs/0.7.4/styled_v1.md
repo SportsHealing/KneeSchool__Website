@@ -20,14 +20,6 @@ year old who plays sport is more than a physical event. Sport is often where
 their friends are and where a large part of their identity sits, and losing it
 for months lands harder than the injury itself. That part is routinely missed.
 
-### Curriculum Links
-
-Not applicable. This page is written for parents and guardians rather than for
-classroom use.
-
-A school may find it useful alongside Coaching Safely when supporting a pupil
-who is out of sport for a prolonged period.
-
 ### How to Use It
 
 The process usually runs through four stages, with very different timescales

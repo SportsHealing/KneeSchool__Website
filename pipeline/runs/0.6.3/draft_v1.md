@@ -17,18 +17,6 @@ Nothing is open. A leaderboard needs accounts, progress tracking, a moderation
 process and a lawful basis for handling data about children, and this site has
 none of those. This page sets out what would have to be true first.
 
-### What It Covers
-
-The unit entered would be a class, a year group, a team or a school. Never a
-pupil.
-
-What would count is chapters completed by the group and challenge rungs
-cleared by the group, not speed and not individual scores.
-
-A table would show school or class names and their totals. It would show no
-pupil names, no ages, no photographs, no locations beyond the school, and
-nothing that could identify a child.
-
 ### How to Earn It
 
 Entry would be through a teacher or coach, who registers the group. Pupils
@@ -51,6 +39,18 @@ children.
 A named safeguarding lead and a pre moderation process, both of which the
 publishing plan requires for anything on the site that a user can contribute
 to.
+
+### What It Covers
+
+The unit entered would be a class, a year group, a team or a school. Never a
+pupil.
+
+What would count is chapters completed by the group and challenge rungs
+cleared by the group, not speed and not individual scores.
+
+A table would show school or class names and their totals. It would show no
+pupil names, no ages, no photographs, no locations beyond the school, and
+nothing that could identify a child.
 
 ### Rules and Fair Play
 

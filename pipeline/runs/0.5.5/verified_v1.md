@@ -16,8 +16,6 @@ named researchers are not attached yet. A profile needs that person's
 agreement and needs checking with them, and neither had happened when this
 page was written, so nothing has been invented in the meantime.
 
-### Why It Matters
-
 Most school students have never met a researcher and have no mental picture of
 the job beyond a laboratory bench. Very little knee research happens at a
 bench.

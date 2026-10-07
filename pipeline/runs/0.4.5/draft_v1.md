@@ -15,8 +15,6 @@ These are not lower standards. They are adjustments that take account of the
 circumstances in which grades were achieved, plus a lot of practical support
 that other applicants get from their schools or families by default.
 
-### Why It Matters
-
 Two applicants with the same grades have not necessarily done the same amount
 of work. One may have had a school with a medicine application programme, a
 family member who could arrange a placement and a tutor for the admissions
