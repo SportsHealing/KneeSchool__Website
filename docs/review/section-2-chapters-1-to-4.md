@@ -1,17 +1,17 @@
-# Consultant review pack: Section 2, chapters 2.1 and 2.2
+# Consultant review pack: Section 2, chapters 2.1 to 2.4
 
 | Field | Value |
 |---|---|
 | Section | 2 Anatomy Academy |
-| Chapters | 2.1 Femur (9 pages), 2.2 Tibia (6 pages) |
-| Pages | 15 of the 79 in Section 2 |
+| Chapters | 2.1 Femur (9), 2.2 Tibia (6), 2.3 Fibula (3), 2.4 Patella (5) |
+| Pages | 23 of the 79 in Section 2 |
 | Page type | anatomy, on every page |
-| Tiers | Medical student, MRCS and FRCS on all 15; fellowship on 2.1.7 and 2.2.6 |
-| Style gate | All 15 pass. Zero failures, zero warnings |
+| Tiers | Medical student, MRCS and FRCS on all 23; fellowship on 2.1.7, 2.2.6 and 2.4.5 |
+| Style gate | All 23 pass. Zero failures, zero warnings |
 | Evidence verification | **Did not run on any page** |
 | Reference lists | **None** |
-| Measurements | **12, all unverified. See decision 006 and the figure register** |
-| Words | 20,976 |
+| Measurements | **19, all unverified. See decision 006 and the figure register** |
+| Words | 31,564 |
 
 ## Read this part first
 
@@ -38,21 +38,21 @@ standard teaching held in memory, not from a retrieved paper. That is usually
 right, occasionally out of date, and never attributable.
 
 So the figures are here, and the machinery around them has been built to make
-the checking half of the instruction real. Twelve figures across six of the
-fifteen pages, every one registered:
+the checking half of the instruction real. Nineteen figures across eleven of the twenty three pages, every one registered:
 
-| Page | Figure | Tier |
-|---|---|---|
-| 2.1.1 | distal femoral valgus, 5 to 7 degrees | FRCS |
-| 2.1.1 | transepicondylar to posterior condylar rotation, about 3 degrees | MRCS |
-| 2.1.3 | femoral condylar cartilage, 2 to 3 mm | Medical student |
-| 2.1.3 | medial compartment load share, about 60 per cent | Medical student |
-| 2.1.5 | trochlear sulcus angle, about 138 degrees | Medical student |
-| 2.1.5 | trochlear cartilage thickness, about 5 mm | MRCS |
-| 2.1.6 | anterior cruciate femoral footprint, about 17 by 9 mm | MRCS |
-| 2.2.1 | posterior tibial slope, 7 to 10 degrees | Medical student |
-| 2.2.3 | anterior cruciate tibial footprint, about 17 by 11 mm | MRCS |
-| 2.2.3 | posterior cruciate attachment, about 1 cm below the joint line | MRCS |
+| Page | Figure |
+|---|---|
+| 2.1.1 | transepicondylar to posterior condylar rotation, about 3 degrees; distal femoral valgus, 5 to 7 degrees |
+| 2.1.3 | condylar cartilage, 2 to 3 mm; medial compartment load share, about 60 per cent |
+| 2.1.5 | trochlear sulcus angle, about 138 degrees; trochlear cartilage, about 5 mm |
+| 2.1.6 | anterior cruciate femoral footprint, about 17 by 9 mm |
+| 2.2.1 | posterior tibial slope, 7 to 10 degrees |
+| 2.2.3 | anterior cruciate tibial footprint, about 17 by 11 mm; posterior cruciate attachment about 1 cm below the joint line |
+| 2.3.1 | common peroneal nerve about 2 cm below the tip of the fibular head |
+| 2.4.1 | patellar cartilage, 4 to 5 mm, the thickest in the body |
+| 2.4.2 | ossification centre at 3 to 5 years; bipartite patella about 2 per cent |
+| 2.4.3 | Q angle about 14 degrees in men and 17 in women; medial patellofemoral ligament about 60 per cent of medial restraint; patellofemoral load about 3 times body weight on stairs |
+| 2.4.4 | patellar engagement at about 20 to 30 degrees of flexion |
 
 The list to work from is generated, not this table:
 
@@ -86,6 +86,19 @@ the figures left blank for you to fill.
    technique excluded. Decision 005 sets this out in full.
 3. **Accuracy, on 15 pages, by someone who operates.** This is the real ask.
 
+## The word band ruling failed, and that is on the record
+
+Decision 005 also set a narrow 450 to 1100 word band for pages scoped to a single
+bony landmark. All six pages it was applied to overran it, by between 33 and 232
+words, and none of the overage was padding. Every override has been withdrawn and
+the handbook's own band applies throughout.
+
+The reason generalises: page length follows from how many relations a structure
+has, not from how small the structure is. The proximal fibula is a small bone with
+a major nerve lying on it. Distinguishing a bipartite patella from a fracture
+needs the distinguishing features set out rather than named. Both need as many
+words as a femoral condyle.
+
 ## Five pages to read first
 
 **2.2.3 Tibial Spine.** The highest consequence page in the batch. It states
@@ -103,9 +116,16 @@ claims are the checkable part: adductor magnus highest, superficial collateral
 lowest, medial patellofemoral ligament between them; and laterally the
 collateral origin proximal and posterior to the popliteus origin.
 
-**2.1.9 Biomechanical Relevance.** The page closest to the boundary with Section
-3. The architecture excludes biomechanics beyond orientation, so everything here
-is qualitative and hands over to 3.13. Check it has not crossed.
+**2.1.9 Biomechanical Relevance and 2.4.3 Biomechanics.** The two pages closest
+to the boundary with Section 3. The architecture excludes biomechanics beyond
+orientation on both, so everything is qualitative and hands over to 3.13 and
+3.12. Check neither has crossed. 2.4.3 is the one carrying load multiples, which
+are the figures on this batch most likely to be wrong.
+
+**2.3.3 Clinical Importance.** The fibula page, which exists almost entirely
+because the common peroneal nerve lies on the bone. Check the statement that a
+compressive lesion localises to the fibular tunnel while a traction lesion damages
+the nerve over a length, because the prognostic claim rests on it.
 
 ## What has not been checked
 
@@ -119,10 +139,10 @@ the same treatment.
 
 Published under `anatomy/`, named `<chapter>-<page>.html`, because Section 2
 reuses page titles across chapters: Gross Anatomy appears five times in the
-section and Surgical Anatomy five times.
+section, Surgical Anatomy five times, and Anatomy twice.
 
 `anatomy/index.html` is the chapter index. It is generated from the architecture
-and the published page list, so it shows all 79 pages with the 15 written ones
+and the published page list, so it shows all 79 pages with the 23 written ones
 as links and the rest as coming soon. It will stay correct as further chapters
 land without anyone editing it.
 

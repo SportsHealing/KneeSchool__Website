@@ -397,3 +397,79 @@ class FigureRegister(unittest.TestCase):
             self.assertEqual(hits, [], "%s: %s" % (page_id, hits))
             checked += 1
         self.assertTrue(checked, "no pages with figures allowed were found")
+
+
+class FigureExtractorEdgeCases(unittest.TestCase):
+    """The extractor shared by FIG-001 and FIG-002 has to tell a quantity from the
+    cross references this site's prose is full of. These are the cases that have
+    actually gone wrong."""
+
+    BRIEF = {"page_id": "2.9.9", "title": "Test Page", "page_type": "anatomy",
+             "tiers_required": ["medical_student"],
+             "governance": {"figures_allowed": False},
+             "output_requirements": {"target_word_count": {"min": 1, "max": 9000}}}
+
+    def figures(self, sentence):
+        page = ("# Test Page\n\nA summary.\n\n## For Medical Students\n\n"
+                "### Structure and Location\n\n" + sentence + "\n\n"
+                "### Key Learning Points\n\n- One.\n- Two.\n- Three.\n\n"
+                "## Explore Further\n\n- [[2.1.1 | Gross Anatomy]]\n\n"
+                "## References\n\nNothing is cited.\n")
+        report = linter.lint(page, self.BRIEF)
+        return [f["matched_text"] for f in report["findings"] if f["rule_id"] == "FIG-001"]
+
+    def test_a_section_list_does_not_swallow_a_following_page_id(self):
+        """'Section 6 and 7.49' used to leave '.49' behind, and 49 was then read
+        as a quantity."""
+        self.assertEqual(
+            self.figures("Management belongs to Section 6 and 7.49 owns the surgical side."),
+            [])
+
+    def test_a_section_list_still_passes_on_its_own(self):
+        self.assertEqual(self.figures("Sections 6 and 7 own the argument."), [])
+
+    def test_a_page_id_after_a_chapter_list_is_still_a_page_id(self):
+        self.assertEqual(self.figures("Chapters 1, 2 and 3 lead to 10.35 eventually."), [])
+
+    def test_a_quantity_after_a_section_reference_still_fires(self):
+        self.assertTrue(self.figures("Section 7 owns it, and the slope is 9 degrees."))
+
+
+class RangesAndRepeats(unittest.TestCase):
+    """A range is one figure and a repeated figure is one thing to check. Both were
+    wrong in the first register and both are extractor behaviour, so they are
+    tested here rather than in the tool."""
+
+    RULE = {"id": "FIG-001", "severity": "fail", "description": "d",
+            "allowed_bare_integers": list(range(1, 11))}
+
+    def extract(self, sentence):
+        page = ("# Test\n\nA summary.\n\n## For Medical Students\n\n"
+                "### Structure and Location\n\n" + sentence + "\n\n"
+                "### Key Learning Points\n\n- One.\n- Two.\n- Three.\n\n"
+                "## References\n\nNothing.\n")
+        doc = linter.Document(page, linter.load_article_template())
+        return [t for t, a, b, c in linter.body_figures(doc, self.RULE)]
+
+    def test_a_range_is_one_figure(self):
+        self.assertEqual(self.extract("Engagement is at 20 to 30 degrees."),
+                         ["20 to 30 degrees"])
+
+    def test_a_range_with_single_digit_bounds_is_one_figure(self):
+        """'5 to 7 degrees' used to register only '7 degrees', because 5 is an
+        allowed bare integer. A lone bound tells a reviewer nothing."""
+        self.assertEqual(self.extract("Valgus is 5 to 7 degrees."), ["5 to 7 degrees"])
+
+    def test_two_separate_figures_are_not_merged_into_a_range(self):
+        self.assertEqual(
+            self.extract("About 14 degrees in men and 17 degrees in women."),
+            ["14 degrees", "17 degrees"])
+
+    def test_figures_come_back_in_document_order(self):
+        self.assertEqual(
+            self.extract("First 17 mm, then 20 to 30 degrees, then 60 per cent."),
+            ["17 mm", "20 to 30 degrees", "60 per cent"])
+
+    def test_a_repeated_figure_is_reported_at_each_occurrence(self):
+        """The gate wants both line numbers; the register deduplicates."""
+        self.assertEqual(self.extract("It is 17 mm. Again, 17 mm."), ["17 mm", "17 mm"])

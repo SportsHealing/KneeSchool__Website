@@ -50,12 +50,12 @@
         },
         {
           "ref": "EV-6",
-          "title": "12 measurements on the site are unchecked",
+          "title": "19 measurements on the site are unchecked",
           "area": "Content",
           "state": "Live and flagged",
           "blocker": "They are written from memory because no paper could be retrieved. Each page's references note says so and each figure is registered.",
-          "needed": "Source access, or a reviewer with a library. tools/figures.py --report --unchecked is the list.",
-          "pages": "2.1.1, 2.1.3, 2.1.5, 2.1.6, 2.2.1, 2.2.3"
+          "needed": "Source access, or a reviewer with a library. tools/figures.py --report --unchecked is the list, and the gate refuses any figure that is not on it.",
+          "pages": "2.1.1, 2.1.3, 2.1.5, 2.1.6, 2.2.1, 2.2.3, 2.3.1, 2.4.1, 2.4.2, 2.4.3, 2.4.4"
         }
       ]
     },
@@ -177,9 +177,9 @@
           "ref": "D-005",
           "title": "Section 2 depth and tier pattern",
           "area": "Editorial",
-          "state": "Part 1 reversed by D-006; the rest applied",
+          "state": "Part 1 reversed by D-006; part 2 failed and was withdrawn; part 3 applied",
           "blocker": "Anatomy at MRCS and FRCS depth normally carries measurements, and none could be verified. A plausible wrong dimension on an FRCS page is worse than no dimension. The handbook's anatomy word band also does not fit a page about a single bony landmark.",
-          "needed": "Confirmation of the tier pattern in docs/decisions/005. The no figures rule in it was reversed by the client on 8 October 2026.",
+          "needed": "Confirmation of the tier pattern, which is the part still standing. The no figures rule was reversed by the client. The narrow word band was wrong on all six pages it was applied to and has been withdrawn entirely.",
           "pages": "All 79 Section 2 pages"
         },
         {
@@ -223,12 +223,12 @@
         },
         {
           "ref": "W-4",
-          "title": "Section 2 Anatomy Academy, chapters 2.1 and 2.2",
+          "title": "Section 2 Anatomy Academy, chapters 2.1 to 2.4",
           "area": "Content",
-          "state": "15 of 79 written, style gate passed, awaiting review",
-          "blocker": "None on the written pages. The remaining 64 are a matter of time.",
-          "needed": "Consultant review. These are the first pages on the site written entirely for professionals and nothing on them has been verified. They also carry the site's first 12 measurements, none of them checked: run tools/figures.py --report --unchecked for the list.",
-          "pages": "2.1.1 to 2.1.9, 2.2.1 to 2.2.6"
+          "state": "23 of 79 written, style gate passed, awaiting review",
+          "blocker": "None on the written pages. The remaining 56 are a matter of time.",
+          "needed": "Consultant review. These are the first pages on the site written entirely for professionals and nothing on them has been verified. They also carry 19 measurements, none checked: run tools/figures.py --report --unchecked for the list.",
+          "pages": "2.1.1 to 2.1.9, 2.2.1 to 2.2.6, 2.3.1 to 2.3.3, 2.4.1 to 2.4.5"
         }
       ]
     }

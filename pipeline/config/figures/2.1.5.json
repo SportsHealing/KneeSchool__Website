@@ -10,6 +10,7 @@
       "tier": "medical_student",
       "section": "Structure and Location",
       "claim": "The angle between the two facets, the sulcus angle, is conventionally taught as about 138 degrees in a normal knee.",
+      "occurrences": 1,
       "verification": "UNVERIFIED_FROM_MEMORY",
       "source": ""
     },
@@ -18,6 +19,7 @@
       "tier": "mrcs",
       "section": "Structure and Location",
       "claim": "The articular cartilage of the trochlea is the thickest in the knee at the centre of the groove, reaching of the order of 5 mm, and the subchondral bone beneath the lateral facet is denser than beneath the medial, reflecting where load passes.",
+      "occurrences": 1,
       "verification": "UNVERIFIED_FROM_MEMORY",
       "source": ""
     }

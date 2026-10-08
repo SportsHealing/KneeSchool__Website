@@ -96,17 +96,34 @@ The pages this applies to are listed in
 list rather than a heuristic, because no heuristic distinguishes a narrow
 structure from a narrow description of a wide one.
 
-An entry on that list is a prediction about a page nobody has written yet, so it
-is checked once the page exists. Two were wrong on the first batch. 2.2.3 Tibial
-Spine came out at 1219 words and 2.2.4 Gerdy's Tubercle at 1133, both of
-substantive anatomy rather than padding: the spine carries both cruciates and
-all four meniscal roots, and the tubercle carries a disputed capsular structure
-that needs describing carefully. Both overrides were withdrawn and the handbook's
-own band applies to them.
+**This part of the ruling failed, and the record of how is kept.** All six pages
+on the narrow list came out over 1100 words, and none of the overage was padding.
 
-Withdrawn entries stay in the file rather than being deleted. A record of what
-the prediction got wrong is more useful than a clean list, and it is the reason
-the rule is now explicitly "declare, write, then check".
+| Page | Band predicted | Written |
+|---|---|---|
+| 2.2.3 Tibial Spine | 450 to 1100 | 1260 |
+| 2.2.4 Gerdy's Tubercle | 450 to 1100 | 1133 |
+| 2.3.1 Anatomy, proximal fibula | 450 to 1100 | 1332 |
+| 2.3.2 Attachments | 450 to 1100 | 1216 |
+| 2.3.3 Clinical Importance | 450 to 1100 | 1206 |
+| 2.4.2 Ossification | 450 to 1100 | 1231 |
+
+Six out of six. All six overrides are withdrawn and the handbook's own band
+applies to every one of them.
+
+The reason the prediction failed is worth stating, because it generalises. A
+page's length follows from how many relations a structure has, not from how small
+the structure is. Gerdy's tubercle is one bump with a disputed ligament on it.
+The proximal fibula is a small bone with a major nerve lying directly on it.
+Distinguishing a bipartite patella from a fracture needs the distinguishing
+features set out rather than listed. Each of those needs as many words as a
+femoral condyle does.
+
+The handbook's 800 to 1800 band was right and this ruling's prediction method was
+not. The mechanism stays in the code, because a page will eventually need it, but
+no override is active and none should be declared for a page nobody has written.
+Withdrawn entries stay in the config rather than being deleted: the record of
+what the prediction got wrong is the useful part.
 
 ### 3. The tier pattern
 

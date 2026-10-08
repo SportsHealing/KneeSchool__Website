@@ -12,14 +12,12 @@ survivable is that the checking list is generated from the pages rather than
 compiled by hand, so it cannot fall behind them.
 
 A register entry records the figure as written, the sentence it supports, the
-tier and section it sits in, a verification state and a source field for the
-reviewer to fill. Extraction never overwrites a state or a source that somebody
+tier and section it sits in, how many times it appears on the page, a
+verification state and a source field for the reviewer to fill. Extraction never overwrites a state or a source that somebody
 has already set; it adds new figures and marks vanished ones REMOVED.
 
-Known limit. A range written as "5 to 7 degrees" registers one entry, for the
-bound carrying the unit, because a bare small integer is indistinguishable from
-prose numbering. The claim field carries the whole sentence, so the reviewer sees
-the range; the register just does not hold two rows for it.
+A range is one figure. "20 to 30 degrees" registers as that, not as a bare 20
+and a 30 degrees, because a lone bound tells a reviewer nothing.
 """
 
 import argparse
@@ -86,18 +84,25 @@ def scan(page_id):
     doc = linter.Document(raw, template)
     rules = linter.load_rules()
     rule = next((r for r in rules["rules"] if r["id"] == "FIG-002"), {})
-    found = []
+    # One row per distinct figure, not one per occurrence. A figure quoted in the
+    # body and repeated in a key learning point is one thing to check.
+    found = collections.OrderedDict()
     for token, start, end, text in linter.body_figures(doc, rule):
+        key = linter.normalise_figure(token)
+        if key in found:
+            found[key]["occurrences"] += 1
+            continue
         tier, section = located(doc, start, text)
-        found.append(collections.OrderedDict([
+        found[key] = collections.OrderedDict([
             ("as_written", token),
             ("tier", tier),
             ("section", section),
             ("claim", sentence_around(text, start)),
+            ("occurrences", 1),
             ("verification", FRESH),
             ("source", ""),
-        ]))
-    return found
+        ])
+    return list(found.values())
 
 
 def merge(page_id, found):

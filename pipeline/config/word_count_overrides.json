@@ -8,28 +8,7 @@
       "max": 1100
     }
   },
-  "pages": {
-    "2.3.1": {
-      "title": "Anatomy",
-      "band": "narrow_structure",
-      "reason": "Proximal fibular osteology alone. A small bone with one articulation and three attachments, and its pathology sits in 6.26."
-    },
-    "2.3.2": {
-      "title": "Attachments",
-      "band": "narrow_structure",
-      "reason": "The attachment list for one small bone. Each named structure has its own page in 2.10."
-    },
-    "2.3.3": {
-      "title": "Clinical Importance",
-      "band": "narrow_structure",
-      "reason": "One relation, the common peroneal nerve, which has its own page at 2.10.6. This page orients and hands over."
-    },
-    "2.4.2": {
-      "title": "Ossification",
-      "band": "narrow_structure",
-      "reason": "A developmental sequence and one named variant. Physeal injury and bipartite pathology are owned by Section 10."
-    }
-  },
+  "pages": {},
   "withdrawn": {
     "2.2.3": {
       "title": "Tibial Spine",
@@ -42,6 +21,31 @@
       "band": "narrow_structure",
       "reason": "A single landmark with two attachments. Segond fracture is pathology and iliotibial band tenodesis is technique, so both are elsewhere.",
       "withdrawn": "Predicted narrow before the page was written. It came out at 1133 words of substantive anatomy, not padding, so the prediction was wrong and the override was withdrawn rather than the prose cut. The handbook's own 800 to 1800 band applies."
+    },
+    "2.3.1": {
+      "title": "Anatomy",
+      "band": "narrow_structure",
+      "reason": "Proximal fibular osteology alone. A small bone with one articulation and three attachments, and its pathology sits in 6.26.",
+      "withdrawn": "Predicted narrow before the page was written. It came out at 1332 words of substantive anatomy, so the prediction was wrong and the override was withdrawn rather than the prose cut."
+    },
+    "2.3.2": {
+      "title": "Attachments",
+      "band": "narrow_structure",
+      "reason": "The attachment list for one small bone. Each named structure has its own page in 2.10.",
+      "withdrawn": "Predicted narrow before the page was written. It came out at 1216 words of substantive anatomy, so the prediction was wrong and the override was withdrawn rather than the prose cut."
+    },
+    "2.3.3": {
+      "title": "Clinical Importance",
+      "band": "narrow_structure",
+      "reason": "One relation, the common peroneal nerve, which has its own page at 2.10.6. This page orients and hands over.",
+      "withdrawn": "Predicted narrow before the page was written. It came out at 1210 words of substantive anatomy, so the prediction was wrong and the override was withdrawn rather than the prose cut."
+    },
+    "2.4.2": {
+      "title": "Ossification",
+      "band": "narrow_structure",
+      "reason": "A developmental sequence and one named variant. Physeal injury and bipartite pathology are owned by Section 10.",
+      "withdrawn": "Predicted narrow before the page was written. It came out at 1231 words, because distinguishing a bipartite patella from a fracture needs the distinguishing features set out rather than named. Withdrawn."
     }
-  }
+  },
+  "assessment": "All six narrow structure predictions were wrong and all six have been withdrawn: 2.2.3, 2.2.4, 2.3.1, 2.3.2, 2.3.3 and 2.4.2. Not one of them came in under 1100 words. The idea did not work, and the reason is now clear: page length follows from how many relations a structure has, not from how small the structure is. Gerdy's tubercle is one bump with a disputed ligament on it; the proximal fibula is a small bone with a major nerve lying on it. Both need as many words as a femoral condyle. The handbook's 800 to 1800 band was right and the prediction method was not. No override is active, and none should be declared for a page that has not been written. See decision 005."
 }

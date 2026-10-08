@@ -10,14 +10,16 @@
       "tier": "mrcs",
       "section": "Clinical Relevance",
       "claim": "The difference is conventionally taught as about 3 degrees of external rotation.",
+      "occurrences": 1,
       "verification": "UNVERIFIED_FROM_MEMORY",
       "source": ""
     },
     {
-      "as_written": "7 degrees",
+      "as_written": "5 to 7 degrees",
       "tier": "frcs",
       "section": "Function",
       "claim": "The distal articular surface sits in valgus relative to the anatomical axis of the shaft, conventionally taught as 5 to 7 degrees, and the angle between them varies between people.",
+      "occurrences": 1,
       "verification": "UNVERIFIED_FROM_MEMORY",
       "source": ""
     }

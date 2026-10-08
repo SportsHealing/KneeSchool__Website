@@ -486,14 +486,23 @@ UNIT = r"(?:mm|cm|%|per\s?cent|degrees?|mL|ml|kg|MPa|m|N)"
 # unit follows it. A bare decimal with no unit is read as a page id, because on
 # this site that is what it almost always is. Write a unit and the rule fires.
 XREF = re.compile(r"\b\d+(?:\.\d+){1,2}\b(?!\s*" + UNIT + r"\b)")
+# The trailing lookaheads stop a list like "Sections 6 and 7" swallowing the
+# first component of a page id that follows it. "belongs to Section 6 and 7.49
+# owns the rest" used to leave ".49" behind, and 49 was then read as a quantity.
 XREF_WORD = re.compile(r"\b(?:section|sections|chapter|chapters|decision|decisions|"
-                       r"figure|figures|table|tables)\s+\d+"
-                       r"(?:\s*(?:,|and|or|to)\s*\d+)*", re.IGNORECASE)
+                       r"figure|figures|table|tables)\s+\d+(?!\.\d)"
+                       r"(?:\s*(?:,|and|or|to)\s*\d+(?!\.\d))*", re.IGNORECASE)
 # The trailing lookahead stops the pattern matching half of a decimal while
 # still allowing a quantity to end a sentence. "9 degrees." has to fire.
 QUANTITY = re.compile(r"(?<![A-Za-z])(\d+(?:[.,]\d+)?)"
                       r"\s*" + UNIT + r"?"
                       r"(?![A-Za-z0-9]|\.\d)")
+# "20 to 30 degrees" is one figure, not a bare 20 and a 30 degrees. Matched before
+# QUANTITY so the two bounds are never reported separately: a lone "20" tells a
+# reviewer nothing and the unit sits on the far end of the range.
+RANGE = re.compile(r"(?<![A-Za-z])\d+(?:[.,]\d+)?\s*(?:to|and|or)\s*"
+                   r"\d+(?:[.,]\d+)?\s*" + UNIT + r"(?![A-Za-z0-9]|\.\d)",
+                   re.IGNORECASE)
 
 
 def rule_fig_001(doc, rule, brief):
@@ -522,11 +531,18 @@ def body_figures(doc, rule):
     out = []
     allowed = set(str(n) for n in rule.get("allowed_bare_integers") or [])
     text = XREF.sub(" ", XREF_WORD.sub(" ", doc.body_text()))
+    spans = []
+    for m in RANGE.finditer(text):
+        spans.append((m.start(), m.end()))
+        out.append((re.sub(r"\s+", " ", m.group(0)).strip(), m.start(), m.end(), text))
     for m in QUANTITY.finditer(text):
+        if any(a <= m.start() < b for a, b in spans):
+            continue
         token = m.group(0).strip()
         if m.group(1) in allowed and token == m.group(1):
             continue
         out.append((token, m.start(), m.end(), text))
+    out.sort(key=lambda row: row[1])
     return out
 
 
