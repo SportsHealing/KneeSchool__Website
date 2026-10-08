@@ -446,6 +446,84 @@
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
     },
+    "2.5.1": {
+      "out": "anatomy/medial-meniscus-gross-anatomy.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.5.2": {
+      "out": "anatomy/medial-meniscus-histology.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.5.3": {
+      "out": "anatomy/medial-meniscus-vascular-supply.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.5.4": {
+      "out": "anatomy/medial-meniscus-biomechanics.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.5.5": {
+      "out": "anatomy/medial-meniscus-mri-anatomy.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.5.6": {
+      "out": "anatomy/medial-meniscus-surgical-anatomy.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.5.7": {
+      "out": "anatomy/medial-meniscus-root-attachments.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.6.1": {
+      "out": "anatomy/lateral-meniscus-gross-anatomy.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.6.2": {
+      "out": "anatomy/lateral-meniscus-popliteomeniscal-fascicles.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.6.3": {
+      "out": "anatomy/lateral-meniscus-meniscofemoral-ligaments.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.6.4": {
+      "out": "anatomy/lateral-meniscus-root-attachments.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.6.5": {
+      "out": "anatomy/lateral-meniscus-mri-anatomy.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.6.6": {
+      "out": "anatomy/lateral-meniscus-surgical-anatomy.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
     "6.1.1": {
       "out": "conditions/acl.html",
       "parent": "Conditions|index.html",
