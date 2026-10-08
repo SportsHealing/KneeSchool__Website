@@ -15,6 +15,9 @@ On the front is the tibial tubercle, where the patellar tendon inserts. On the
 anterolateral surface, at the level of the lateral plateau, is Gerdy's
 tubercle. On the posterolateral corner is the facet for the fibular head.
 
+Both plateaux are tilted so the back sits lower than the front. That posterior
+slope is conventionally taught as 7 to 10 degrees and varies between people.
+
 The medial surface is subcutaneous for most of its length, which is why the
 bone is palpable from the joint line to the ankle and why it is the site
 chosen for bone graft and for external fixation.
@@ -247,8 +250,9 @@ No reference list is attached to this draft. Evidence verification has not
 run, because source retrieval was unavailable at generation time. Under the
 Operations Handbook a missing reference is acceptable and an invented one is a
 critical failure, so nothing has been cited and no citation marker appears in
-the text. Under decision 005 this page also carries no measurement, angle,
-dimension, distance, normal range or incidence figure. Anatomy is described in
-relative terms. A reviewer with sources can add the figures with a date
-against each one; the claims they would attach to are listed in the
-accompanying handoff block.
+the text. Every measurement on this page is written from standard teaching
+rather than from a retrieved paper, and none has been checked against a
+source. Under decision 006 each one is registered in pipeline/config/figures
+with the sentence it supports and a verification state of
+UNVERIFIED_FROM_MEMORY, so the whole list can be checked and corrected rather
+than hunted for.

@@ -14,7 +14,7 @@
   "guidelines_checked": [],
   "escalate_to_consultant": [
     "Every anatomical claim on this page needs confirmation, because the verification stage could not run. The consultant is standing in for it.",
-    "Decision 005's no figures rule needs confirming or reversing. Reversing it means adding dimensions with dated sources, which cannot be done from the build environment."
+    "Every figure on this page needs a source against it. The client has undertaken to check them; tools/figures.py --report --unchecked is the list."
   ],
   "status": "NOT_RUN_TOOLS_UNAVAILABLE",
   "status_note": "Agent 2 could not run. No source retrieval was available. In the deployed pipeline this execution would stop here."

@@ -12,7 +12,9 @@ a shallow groove running from the front of the intercondylar notch upwards and
 slightly laterally, with a facet on each side of it.
 
 The lateral facet is larger, steeper and stands further forward than the
-medial. That asymmetry is the normal arrangement, not a variant.
+medial. That asymmetry is the normal arrangement, not a variant. The angle
+between the two facets, the sulcus angle, is conventionally taught as about
+138 degrees in a normal knee.
 
 The groove is deepest in its middle and distal parts and becomes shallow
 proximally, where it flattens out onto the front of the femur. The patella
@@ -73,8 +75,9 @@ groove runs proximally and laterally, so the patella does not travel in a
 straight line in the coronal plane as the knee extends.
 
 The articular cartilage of the trochlea is the thickest in the knee at the
-centre of the groove, and the subchondral bone beneath the lateral facet is
-denser than beneath the medial, reflecting where load passes.
+centre of the groove, reaching of the order of 5 mm, and the subchondral bone
+beneath the lateral facet is denser than beneath the medial, reflecting where
+load passes.
 
 Proximally the groove flattens and the cartilage thins at the margin where the
 articular surface meets the anterior femoral cortex. That junction is a normal
@@ -220,8 +223,9 @@ No reference list is attached to this draft. Evidence verification has not
 run, because source retrieval was unavailable at generation time. Under the
 Operations Handbook a missing reference is acceptable and an invented one is a
 critical failure, so nothing has been cited and no citation marker appears in
-the text. Under decision 005 this page also carries no measurement, angle,
-dimension, distance, normal range or incidence figure. Anatomy is described in
-relative terms. A reviewer with sources can add the figures with a date
-against each one; the claims they would attach to are listed in the
-accompanying handoff block.
+the text. Every measurement on this page is written from standard teaching
+rather than from a retrieved paper, and none has been checked against a
+source. Under decision 006 each one is registered in pipeline/config/figures
+with the sentence it supports and a verification state of
+UNVERIFIED_FROM_MEMORY, so the whole list can be checked and corrected rather
+than hunted for.

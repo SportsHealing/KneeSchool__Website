@@ -10,7 +10,7 @@
 | Style gate | All 15 pass. Zero failures, zero warnings |
 | Evidence verification | **Did not run on any page** |
 | Reference lists | **None** |
-| Measurements | **None, deliberately. See decision 005** |
+| Measurements | **12, all unverified. See decision 006 and the figure register** |
 | Words | 20,976 |
 
 ## Read this part first
@@ -27,38 +27,58 @@ relationship between the posterior cruciate attachment and the popliteal artery,
 it needs saying plainly: **this is unverified content written for people who
 operate.**
 
-## The decision that shapes every page
+## The figures, and what they are worth
 
-**These pages carry no measurements.** No footprint dimension, no posterior
-slope in degrees, no sulcus angle, no distance from a landmark, no normal range.
+The client's instruction on 8 October 2026 was to keep the measurements and to
+check them, provided they are based on current papers.
 
-Anatomy at this depth is normally quantitative, and candidates revise exactly
-those numbers. They are absent because none could be verified, and because a
-plausible wrong dimension on an FRCS page is worse than no dimension: it gets
-repeated in an answer and not caught.
+**That last condition is not met and cannot be met from the build environment.**
+There is no source access here. Every figure on these pages is written from
+standard teaching held in memory, not from a retrieved paper. That is usually
+right, occasionally out of date, and never attributable.
 
-Where a number would sit, the page gives the relationship instead. Larger than,
-posterior to, proximal and posterior to, converging on.
+So the figures are here, and the machinery around them has been built to make
+the checking half of the instruction real. Twelve figures across six of the
+fifteen pages, every one registered:
 
-Three pages say so in their own text, because they are the ones where it costs
-the reader most:
+| Page | Figure | Tier |
+|---|---|---|
+| 2.1.1 | distal femoral valgus, 5 to 7 degrees | FRCS |
+| 2.1.1 | transepicondylar to posterior condylar rotation, about 3 degrees | MRCS |
+| 2.1.3 | femoral condylar cartilage, 2 to 3 mm | Medical student |
+| 2.1.3 | medial compartment load share, about 60 per cent | Medical student |
+| 2.1.5 | trochlear sulcus angle, about 138 degrees | Medical student |
+| 2.1.5 | trochlear cartilage thickness, about 5 mm | MRCS |
+| 2.1.6 | anterior cruciate femoral footprint, about 17 by 9 mm | MRCS |
+| 2.2.1 | posterior tibial slope, 7 to 10 degrees | Medical student |
+| 2.2.3 | anterior cruciate tibial footprint, about 17 by 11 mm | MRCS |
+| 2.2.3 | posterior cruciate attachment, about 1 cm below the joint line | MRCS |
 
-- **2.2.3 Tibial Spine.** Every published description of these footprints is
-  quantitative. The page says so in its FRCS tier.
-- **2.1.6 Femoral Attachments of Ligaments.** The page is a map with no
-  coordinates, and says that in as many words.
-- **2.2.6 Surgical Anatomy.** Every published safe zone around the proximal
-  tibia is a distance from a landmark.
+The list to work from is generated, not this table:
 
-This is now enforced by the style gate rather than by drafting discipline.
-FIG-001 fails any page whose brief forbids figures, and the rule covers Section
-0 as well, which is where the same ruling was first made.
+    python3 tools/figures.py --report --unchecked
+
+It prints every figure with the tier it sits in and the whole sentence it
+supports. Set `verification` and `source` in
+`pipeline/config/figures/<page_id>.json` as each is confirmed. A figure you
+correct or delete is marked `REMOVED` rather than deleted, so the record of what
+was checked survives.
+
+The gate refuses any figure that is not on that list, so it cannot fall behind
+the pages.
+
+**What is still absent, and why.** Posterolateral corner origin coordinates,
+condylar radii, notch width index, tunnel geometry, and every threshold
+separating normal from abnormal. Those are values this environment cannot state
+with confidence, and a wrong one would be worse than the gap. They need a
+source, not a better memory. Say the word and I will write the sentences with
+the figures left blank for you to fill.
 
 ## What you are being asked to confirm
 
-1. **The no measurements rule.** Decision 005. Confirm it, or reverse it, in
-   which case the figures need adding with a dated source against each and that
-   cannot be done from here.
+1. ~~The no measurements rule.~~ Reversed by the client. The figures are on the
+   pages, all twelve unverified, and the register is the list to check them
+   against.
 2. **The tier pattern.** Medical student gets Structure, Relations, Function and
    Clinical Relevance. MRCS adds Blood Supply and Innervation. FRCS drops to
    Relations, Function and Clinical Relevance and is written as constraint on a

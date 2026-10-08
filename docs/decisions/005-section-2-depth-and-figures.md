@@ -4,7 +4,7 @@
 |---|---|
 | Date | 8 October 2026 |
 | Decided by | Build team, applied and flagged for confirmation |
-| Status | Applied, awaiting editorial confirmation |
+| Status | Part 1 reversed by decision 006 on 8 October 2026. Parts 2 and 3 stand |
 | Applies to | Section 2 Anatomy Academy, all 79 pages |
 
 ## The problem
@@ -44,6 +44,13 @@ there is padding, which is what decision 002 was written to prevent.
 
 ### 1. No figures in Section 2
 
+> **Reversed on 8 October 2026 by decision 006.** The client's instruction was to
+> keep the measurements and to check them. Section 2 may carry figures, and every
+> figure is now registered so the checking list is generated from the pages. The
+> reasoning below is kept because the risk it describes has not gone away; what
+> changed is who carries it. Read decision 006 next.
+
+
 No page in Section 2 carries a measurement, an angle, a dimension, a distance,
 a normal range, a percentage or an incidence figure. Anatomy is described in
 relative terms, which is how it is actually taught at the table: larger than,
@@ -60,10 +67,10 @@ figure on a page about the trochlea could end up in an operation.
 
 **It is enforced by the gate, not by review.** Decision 003's version of this
 rule was a drafting instruction, which is another way of saying it was a hope.
-FIG-001 in `lint_rules.json` now fails any page whose brief carries
-`governance.figures_allowed: false`, and `tools/architecture.py` sets that flag
-for every page in Sections 0 and 2. Both rulings are therefore the same
-mechanism, and neither depends on a drafter remembering it.
+FIG-001 in `lint_rules.json` fails any page whose brief carries
+`governance.figures_allowed: false`. After decision 006 that flag is set for
+Section 0 only; Section 2 is governed by FIG-002 instead, which permits a figure
+and refuses an unregistered one.
 
 Two things the rule has to get right, and the tests hold both. Page ids,
 section references and decision references are removed before the scan, because

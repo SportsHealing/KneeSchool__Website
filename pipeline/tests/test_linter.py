@@ -285,6 +285,8 @@ class NoFiguresRule(unittest.TestCase):
         self.assertEqual(self.fired("No figure appears in this sentence."), [])
 
     def test_the_rule_is_off_when_the_brief_allows_figures(self):
+        """Decision 006 lifted the ban for Section 2. FIG-001 still guards Section 0,
+        where the figures are entry requirements and no amount of checking fixes them."""
         self.assertEqual(self.fired("The footprint is 17 mm across.", allowed=True), [])
 
     def test_every_written_section_2_page_passes_it(self):
@@ -301,3 +303,97 @@ class NoFiguresRule(unittest.TestCase):
                 report = linter.lint(fh.read(), brief)
             hits = [f["matched_text"] for f in report["findings"] if f["rule_id"] == "FIG-001"]
             self.assertEqual(hits, [], "%s carries a figure: %s" % (page_id, hits))
+
+
+class FigureRegister(unittest.TestCase):
+    """FIG-002, from decision 006. A figure may be written and must be registered,
+    because the client has undertaken to check every one and the list has to be
+    generated rather than remembered."""
+
+    BRIEF = {"page_id": "2.9.9", "title": "Test Page", "page_type": "anatomy",
+             "tiers_required": ["medical_student"],
+             "governance": {"figures_allowed": True},
+             "output_requirements": {"target_word_count": {"min": 1, "max": 9000}}}
+
+    def page(self, sentence):
+        return ("# Test Page\n\nA summary line.\n\n## For Medical Students\n\n"
+                "### Structure and Location\n\n" + sentence + "\n\n"
+                "### Key Learning Points\n\n- One.\n- Two.\n- Three.\n\n"
+                "## Explore Further\n\n- [[2.1.1 | Gross Anatomy]]\n\n"
+                "## References\n\nNothing is cited.\n")
+
+    def run_with(self, sentence, register):
+        import tempfile
+        with tempfile.TemporaryDirectory() as d:
+            if register is not None:
+                with open(os.path.join(d, "2.9.9.json"), "w") as fh:
+                    json.dump({"page_id": "2.9.9", "figures": register}, fh)
+            os.environ["FIGURE_REGISTRY_DIR"] = d
+            try:
+                report = linter.lint(self.page(sentence), self.BRIEF)
+            finally:
+                os.environ.pop("FIGURE_REGISTRY_DIR", None)
+        return [f["description"] for f in report["findings"] if f["rule_id"] == "FIG-002"]
+
+    def entry(self, as_written, **kw):
+        e = {"as_written": as_written, "claim": "A sentence.",
+             "verification": "UNVERIFIED_FROM_MEMORY"}
+        e.update(kw)
+        return e
+
+    def test_a_registered_figure_passes(self):
+        self.assertEqual(
+            self.run_with("The footprint is 17 mm across.", [self.entry("17 mm")]), [])
+
+    def test_an_unregistered_figure_fails(self):
+        out = self.run_with("The footprint is 17 mm across.", [])
+        self.assertTrue(any("not in the page register" in m for m in out))
+
+    def test_a_page_with_figures_and_no_register_fails(self):
+        out = self.run_with("The footprint is 17 mm across.", None)
+        self.assertTrue(any("no register" in m for m in out))
+
+    def test_a_page_with_no_figures_needs_no_register(self):
+        self.assertEqual(self.run_with("Nothing is measured here.", None), [])
+
+    def test_spacing_does_not_matter(self):
+        self.assertEqual(
+            self.run_with("The footprint is 17 mm across.", [self.entry("17mm")]), [])
+
+    def test_an_entry_with_no_claim_fails(self):
+        out = self.run_with("The footprint is 17 mm across.",
+                            [self.entry("17 mm", claim="")])
+        self.assertTrue(any("no claim recorded" in m for m in out))
+
+    def test_an_unknown_verification_state_fails(self):
+        out = self.run_with("The footprint is 17 mm across.",
+                            [self.entry("17 mm", verification="probably fine")])
+        self.assertTrue(any("verification state" in m for m in out))
+
+    def test_a_register_entry_the_page_lost_fails_unless_marked_removed(self):
+        out = self.run_with("The footprint is 17 mm across.",
+                            [self.entry("17 mm"), self.entry("9 mm")])
+        self.assertTrue(any("does not carry it" in m for m in out))
+        self.assertEqual(
+            self.run_with("The footprint is 17 mm across.",
+                          [self.entry("17 mm"),
+                           self.entry("9 mm", verification="REMOVED")]), [])
+
+    def test_every_written_page_with_figures_has_a_complete_register(self):
+        import glob
+        checked = 0
+        for path in sorted(glob.glob(os.path.join(ROOT, "runs", "*", "styled_v1.md"))):
+            page_id = os.path.basename(os.path.dirname(path))
+            brief_path = os.path.join(ROOT, "config", "briefs", page_id + ".json")
+            if not os.path.exists(brief_path):
+                continue
+            with open(brief_path) as fh:
+                brief = json.load(fh)
+            if not (brief.get("governance") or {}).get("figures_allowed"):
+                continue
+            with open(path) as fh:
+                report = linter.lint(fh.read(), brief)
+            hits = [f["description"] for f in report["findings"] if f["rule_id"] == "FIG-002"]
+            self.assertEqual(hits, [], "%s: %s" % (page_id, hits))
+            checked += 1
+        self.assertTrue(checked, "no pages with figures allowed were found")

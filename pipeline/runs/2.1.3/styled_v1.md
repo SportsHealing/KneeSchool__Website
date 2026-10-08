@@ -12,8 +12,9 @@ further distally. Held at the end of a femur, it is the condyle that reaches
 the table first.
 
 Its articular surface is more curved than the lateral and narrower from side
-to side. The surface continues round onto the posterior aspect, and the most
-posterior part only articulates at deep flexion.
+to side, and the cartilage over it is of the order of 2 to 3 mm thick. The
+surface continues round onto the posterior aspect, and the most posterior part
+only articulates at deep flexion.
 
 On the outer wall are the medial epicondyle and, above it, the adductor
 tubercle. The lateral surface of the condyle forms the medial wall of the
@@ -36,8 +37,9 @@ posteromedial tibia.
 ### Function
 
 The medial condyle carries the greater share of load through most of the
-range, which follows from its position relative to the mechanical axis rather
-than from anything about its shape.
+range, conventionally taught as about 60 per cent in a normally aligned knee
+in stance. That follows from its position relative to the mechanical axis
+rather than from anything about its shape.
 
 Because it is longer front to back, the medial side of the joint translates
 less through flexion than the lateral. The medial condyle acts more as a pivot
@@ -197,8 +199,9 @@ No reference list is attached to this draft. Evidence verification has not
 run, because source retrieval was unavailable at generation time. Under the
 Operations Handbook a missing reference is acceptable and an invented one is a
 critical failure, so nothing has been cited and no citation marker appears in
-the text. Under decision 005 this page also carries no measurement, angle,
-dimension, distance, normal range or incidence figure. Anatomy is described in
-relative terms. A reviewer with sources can add the figures with a date
-against each one; the claims they would attach to are listed in the
-accompanying handoff block.
+the text. Every measurement on this page is written from standard teaching
+rather than from a retrieved paper, and none has been checked against a
+source. Under decision 006 each one is registered in pipeline/config/figures
+with the sentence it supports and a verification state of
+UNVERIFIED_FROM_MEMORY, so the whole list can be checked and corrected rather
+than hunted for.

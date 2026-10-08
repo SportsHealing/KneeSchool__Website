@@ -19,10 +19,10 @@
     "A tubercle osteotomy for exposure must heal in bone, unlike a proximal lengthening."
   ],
   "claims_note": "Listed above are the substantive claims, taken from the deepest tier's key learning points. Every anatomical statement in the page body requires the same verification against a standard text; these are the ones a reviewer should start with.",
-  "content_rule": "Decision 005: this page carries no measurement, angle, dimension, distance, normal range or incidence figure, because none could be verified. Every published description of this anatomy is quantitative, so the absence is visible and deliberate. A reviewer with sources should add the figures with a date against each one rather than treat their absence as an oversight.",
+  "content_rule": "Decision 006: this page may carry measurements and every one of them is written from standard teaching rather than from a retrieved paper. None has been checked against a source, because the build environment has none. Each figure is registered in pipeline/config/figures/<page_id>.json with the sentence it supports and a verification state, so the checking list is generated from the page rather than compiled by hand. Run tools/figures.py --report --unchecked for the outstanding list.",
   "gaps_or_uncertainties": [
-    "No measurement, angle, dimension or normal range appears anywhere on this page.",
-    "Anatomical relations are described in relative terms, which is adequate for orientation and inadequate for planning that depends on a dimension."
+    "No measurement appears on this page. Where one would normally sit the page gives the relationship instead, because the value is not one this environment can state with confidence.",
+    "Anatomical relations are otherwise described in relative terms, which is adequate for orientation and inadequate for planning that depends on a dimension."
   ],
   "duplication_risk_pages": [
     "3.13",

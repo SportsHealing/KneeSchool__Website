@@ -132,7 +132,8 @@ further.
 
 The transepicondylar axis is the rotational reference for the femoral
 component in arthroplasty, and the asymmetry of the condyles is why that axis
-is not parallel to the posterior condylar line.
+is not parallel to the posterior condylar line. The difference is
+conventionally taught as about 3 degrees of external rotation.
 
 The notch roof orients the femoral tunnel in cruciate reconstruction; 2.7.6
 owns the footprint itself.
@@ -174,7 +175,8 @@ bleeds.
 
 Femoral geometry is the fixed element in every alignment decision at the knee.
 The distal articular surface sits in valgus relative to the anatomical axis of
-the shaft, and the angle between them varies between people.
+the shaft, conventionally taught as 5 to 7 degrees, and the angle between them
+varies between people.
 
 That variation is why a single cutting angle does not reproduce the same
 alignment in every patient, and why the debate about mechanical, anatomical
@@ -220,8 +222,9 @@ No reference list is attached to this draft. Evidence verification has not
 run, because source retrieval was unavailable at generation time. Under the
 Operations Handbook a missing reference is acceptable and an invented one is a
 critical failure, so nothing has been cited and no citation marker appears in
-the text. Under decision 005 this page also carries no measurement, angle,
-dimension, distance, normal range or incidence figure. Anatomy is described in
-relative terms. A reviewer with sources can add the figures with a date
-against each one; the claims they would attach to are listed in the
-accompanying handoff block.
+the text. Every measurement on this page is written from standard teaching
+rather than from a retrieved paper, and none has been checked against a
+source. Under decision 006 each one is registered in pipeline/config/figures
+with the sentence it supports and a verification state of
+UNVERIFIED_FROM_MEMORY, so the whole list can be checked and corrected rather
+than hunted for.

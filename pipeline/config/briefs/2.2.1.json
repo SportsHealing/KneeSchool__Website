@@ -71,7 +71,7 @@
     "commercial_content_allowed": false,
     "clinical_advice_allowed": false,
     "junior_tier_present": false,
-    "figures_allowed": false
+    "figures_allowed": true
   },
   "pipeline": {
     "priority": "medium",

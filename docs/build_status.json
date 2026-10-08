@@ -47,6 +47,15 @@
           "state": "Blocked",
           "blocker": "Only Part 1, covering sections 0 to 3, has been received. Sections 4 to 15 are summarised in Part 1 but have no page level map, so no brief can be generated for them.",
           "needed": "Parts 2 to 6 of the Master Publishing Architecture from the chat that produced Part 1. Sections 0, 1 and 2 can proceed without them; Section 3 is the last one that can."
+        },
+        {
+          "ref": "EV-6",
+          "title": "12 measurements on the site are unchecked",
+          "area": "Content",
+          "state": "Live and flagged",
+          "blocker": "They are written from memory because no paper could be retrieved. Each page's references note says so and each figure is registered.",
+          "needed": "Source access, or a reviewer with a library. tools/figures.py --report --unchecked is the list.",
+          "pages": "2.1.1, 2.1.3, 2.1.5, 2.1.6, 2.2.1, 2.2.3"
         }
       ]
     },
@@ -166,12 +175,21 @@
         },
         {
           "ref": "D-005",
-          "title": "Section 2 depth, and why it carries no numbers",
+          "title": "Section 2 depth and tier pattern",
           "area": "Editorial",
-          "state": "Applied, awaiting confirmation",
+          "state": "Part 1 reversed by D-006; the rest applied",
           "blocker": "Anatomy at MRCS and FRCS depth normally carries measurements, and none could be verified. A plausible wrong dimension on an FRCS page is worse than no dimension. The handbook's anatomy word band also does not fit a page about a single bony landmark.",
-          "needed": "Confirmation of the no figures rule and of the tier pattern in docs/decisions/005. Reversing the no figures rule means adding dimensions with dated sources, which cannot be done from the build environment.",
+          "needed": "Confirmation of the tier pattern in docs/decisions/005. The no figures rule in it was reversed by the client on 8 October 2026.",
           "pages": "All 79 Section 2 pages"
+        },
+        {
+          "ref": "D-006",
+          "title": "Keep the measurements, and register every one",
+          "area": "Editorial",
+          "state": "Applied",
+          "blocker": "The client's instruction was to keep measurements provided they are based on current papers. That condition cannot be met here: there is no source access, so every figure is written from standard teaching and none is attributable to a paper.",
+          "needed": "Somebody with sources to work through the register. 12 figures are outstanding, all marked UNVERIFIED_FROM_MEMORY. The gate refuses an unregistered figure, so the list cannot fall behind the pages.",
+          "pages": "6 of the 15 written Section 2 pages carry figures"
         }
       ]
     },
@@ -209,7 +227,7 @@
           "area": "Content",
           "state": "15 of 79 written, style gate passed, awaiting review",
           "blocker": "None on the written pages. The remaining 64 are a matter of time.",
-          "needed": "Consultant review. These are the first pages on the site written entirely for professionals, and nothing on them has been verified. 2.2.3 and 2.1.6 are the pages where the missing dimensions cost the reader most.",
+          "needed": "Consultant review. These are the first pages on the site written entirely for professionals and nothing on them has been verified. They also carry the site's first 12 measurements, none of them checked: run tools/figures.py --report --unchecked for the list.",
           "pages": "2.1.1 to 2.1.9, 2.2.1 to 2.2.6"
         }
       ]

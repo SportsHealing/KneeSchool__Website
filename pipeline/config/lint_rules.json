@@ -224,7 +224,7 @@
     {
       "id": "FIG-001",
       "severity": "fail",
-      "description": "No measurement, angle, dimension or normal range where the brief forbids figures",
+      "description": "No measurement, angle, dimension or normal range where the brief forbids figures (Section 0: entry requirements, test scores, fees)",
       "conditional_on": "brief.governance.figures_allowed == false",
       "allowed_bare_integers": [
         1,
@@ -239,11 +239,43 @@
         10
       ],
       "scope": "body",
-      "source_of_truth": "docs/decisions/005-section-2-depth-and-figures.md",
+      "source_of_truth": "docs/decisions/003-section-0-page-templates.md",
       "notes": [
         "Page ids, section references and decision references are removed before the scan, because the prose on this site is full of them.",
         "A bare small integer is allowed so a list can be numbered in prose. Any digit carrying a unit, a decimal point, or a value above ten is a quantity.",
         "The reference list is outside the body scope, so a citation year never trips this rule."
+      ]
+    },
+    {
+      "id": "FIG-002",
+      "severity": "fail",
+      "description": "Every figure in the body is registered in the page's figure register with a claim and a verification state",
+      "conditional_on": "brief.governance.figures_allowed == true",
+      "allowed_bare_integers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "scope": "body",
+      "register_path": "pipeline/config/figures/<page_id>.json",
+      "verification_states": [
+        "UNVERIFIED_FROM_MEMORY",
+        "VERIFIED",
+        "CORRECTED",
+        "REMOVED"
+      ],
+      "source_of_truth": "docs/decisions/006-keep-the-measurements.md",
+      "notes": [
+        "The client's instruction was to keep the measurements and check them. The build environment has no source access, so every figure is written from memory and none can be attributed to a paper. This rule does not judge a figure; it refuses an unregistered one, so the checking list cannot fall behind the pages.",
+        "A figure the reviewer deletes or corrects is marked REMOVED in the register rather than deleted from it, so the register is a record of what was checked.",
+        "Same extractor as FIG-001, so the two rules cannot disagree about what a figure is."
       ]
     },
     {

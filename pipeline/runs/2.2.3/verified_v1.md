@@ -65,6 +65,10 @@ two tubercles. The posterior root of the lateral meniscus. The posterior root
 of the medial meniscus. The posterior cruciate, descending onto the posterior
 surface.
 
+The tibial footprint of the anterior cruciate is conventionally described as
+of the order of 17 mm front to back and 11 mm across, which is broader than
+its femoral attachment.
+
 The overlap between the anterior cruciate attachment and the anterior root of
 the lateral meniscus is the point that matters, because it means a tunnel
 placed on the cruciate footprint can involve the root.
@@ -75,8 +79,9 @@ The anterior cruciate attachment lies in front of and lateral to the medial
 tubercle, with the fibres fanning out onto the intercondylar area.
 
 The posterior cruciate attachment is not on the spine but behind and below it,
-in a depression on the posterior surface of the tibia, which is why it is
-approached from behind rather than from within the notch.
+in a depression on the posterior surface of the tibia, conventionally
+described as about 1 cm below the joint line. That is why it is approached
+from behind rather than from within the notch.
 
 The popliteal artery lies immediately behind the posterior cruciate
 attachment, separated from it by capsule only. That is the single most
@@ -194,8 +199,9 @@ No reference list is attached to this draft. Evidence verification has not
 run, because source retrieval was unavailable at generation time. Under the
 Operations Handbook a missing reference is acceptable and an invented one is a
 critical failure, so nothing has been cited and no citation marker appears in
-the text. Under decision 005 this page also carries no measurement, angle,
-dimension, distance, normal range or incidence figure. Anatomy is described in
-relative terms. A reviewer with sources can add the figures with a date
-against each one; the claims they would attach to are listed in the
-accompanying handoff block.
+the text. Every measurement on this page is written from standard teaching
+rather than from a retrieved paper, and none has been checked against a
+source. Under decision 006 each one is registered in pipeline/config/figures
+with the sentence it supports and a verification state of
+UNVERIFIED_FROM_MEMORY, so the whole list can be checked and corrected rather
+than hunted for.

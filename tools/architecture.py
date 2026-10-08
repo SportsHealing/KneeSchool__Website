@@ -62,13 +62,16 @@ FAQ_ALLOWANCE = 250
 OVERRIDES = os.path.join(ROOT, "pipeline", "config", "word_count_overrides.json")
 
 
-# Decisions 003 and 005 are the same ruling applied twice. Section 0 carries no
-# entry requirement, test score, fee or deadline, and Section 2 carries no
-# measurement, angle or dimension. In both cases the figures change, none could
-# be verified, and a plausible wrong one is worse than none. The gate enforces it
-# through brief.governance.figures_allowed, so the rule travels with the brief
-# rather than living in a drafting instruction nobody reads.
-NO_FIGURE_SECTIONS = {"0": "decision 003", "2": "decision 005"}
+# Section 0 carries no entry requirement, test score, fee or deadline. Those
+# change every year, none could be verified, and they are not in any paper, so
+# nobody can check them later either. Decision 003 forbids them and FIG-001
+# enforces it.
+#
+# Section 2 is the opposite case. Its figures are measurements, they are in the
+# literature, and the client has said to keep them and check them. Decision 006
+# reverses decision 005's blanket ban, and FIG-002 requires every figure to be
+# registered so the checking list is generated rather than compiled by hand.
+NO_FIGURE_SECTIONS = {"0": "decision 003"}
 
 
 def figures_allowed(page):

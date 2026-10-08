@@ -508,6 +508,17 @@ def rule_fig_001(doc, rule, brief):
     spelling out every enumeration. A quantity is not, and there is no way to
     write one without a digit.
     """
+    return [finding(rule["id"], rule["severity"], rule["description"] + " (body)",
+                    token, context(text, start, end), line_of(text, start))
+            for token, start, end, text in body_figures(doc, rule)]
+
+
+def body_figures(doc, rule):
+    """Every numeric quantity in the body, as written.
+
+    Shared by FIG-001 and FIG-002 so the two rules cannot disagree about what
+    counts as a figure.
+    """
     out = []
     allowed = set(str(n) for n in rule.get("allowed_bare_integers") or [])
     text = XREF.sub(" ", XREF_WORD.sub(" ", doc.body_text()))
@@ -515,11 +526,98 @@ def rule_fig_001(doc, rule, brief):
         token = m.group(0).strip()
         if m.group(1) in allowed and token == m.group(1):
             continue
-        out.append(finding(rule["id"], rule["severity"],
-                           rule["description"] + " (body)", token,
-                           context(text, m.start(), m.end()),
-                           line_of(text, m.start())))
+        out.append((token, m.start(), m.end(), text))
     return out
+
+
+def load_figure_registry(page_id, path=None):
+    """Decision 006: the per page register of every figure and its status.
+
+    A figure on a professional page is a claim somebody has to check. The
+    register is what makes checking a list rather than a hunt, and the gate
+    refuses a figure that is not on it.
+    """
+    here = os.path.dirname(os.path.abspath(__file__))
+    roots = [path, os.environ.get("FIGURE_REGISTRY_DIR"),
+             os.path.join(here, "figures"),
+             os.path.join(here, "..", "..", "config", "figures")]
+    for root in roots:
+        if not root:
+            continue
+        candidate = os.path.join(root, "%s.json" % page_id)
+        if os.path.exists(candidate):
+            with open(candidate) as fh:
+                return json.load(fh)
+    return None
+
+
+VERIFICATION_STATES = ("UNVERIFIED_FROM_MEMORY", "VERIFIED", "CORRECTED", "REMOVED")
+
+
+def rule_fig_002(doc, rule, brief):
+    """Decision 006: a figure may be written, and must be registered.
+
+    The client's instruction was to keep the measurements and check them. The
+    build environment has no source access, so every figure here is written from
+    memory and none can be attributed to a paper. The rule that makes that
+    survivable is traceability: each figure in the body has an entry in the
+    page's register recording its value, the claim it supports and its
+    verification state. A figure nobody registered is a figure nobody will check.
+    """
+    out = []
+    sev = rule["severity"]
+
+    def fail(msg, matched=""):
+        out.append(finding(rule["id"], sev, rule["description"] + ": " + msg, matched, ""))
+
+    figures = body_figures(doc, rule)
+    page_id = brief.get("page_id")
+    registry = load_figure_registry(page_id) if page_id else None
+
+    if not figures:
+        return out
+    if registry is None:
+        fail("the page carries %d figure(s) and has no register at "
+             "pipeline/config/figures/%s.json" % (len(figures), page_id),
+             figures[0][0])
+        return out
+
+    entries = registry.get("figures") or []
+    registered = {}
+    for e in entries:
+        registered.setdefault(normalise_figure(e.get("as_written", "")), e)
+
+    for token, start, end, text in figures:
+        key = normalise_figure(token)
+        entry = registered.get(key)
+        if entry is None:
+            out.append(finding(rule["id"], sev,
+                               rule["description"] + ": not in the page register",
+                               token, context(text, start, end), line_of(text, start)))
+            continue
+        state = entry.get("verification")
+        if state not in VERIFICATION_STATES:
+            fail("figure %r has verification state %r; allowed states are %s"
+                 % (token, state, ", ".join(VERIFICATION_STATES)), token)
+        if not entry.get("claim"):
+            fail("figure %r has no claim recorded, so a reviewer cannot tell what it "
+                 "is being used to say" % token, token)
+
+    written = set(normalise_figure(t) for t, a, b, c in figures)
+    for e in entries:
+        if e.get("verification") == "REMOVED":
+            continue
+        key = normalise_figure(e.get("as_written", ""))
+        if key not in written:
+            fail("the register lists %r but the page does not carry it. A corrected or "
+                 "deleted figure should be marked REMOVED rather than left in the register"
+                 % e.get("as_written"), str(e.get("as_written")))
+    return out
+
+
+def normalise_figure(token):
+    """'17 mm', '17mm' and '17  mm' are one figure."""
+    return re.sub(r"\s+", "", str(token)).lower().replace(",", ".")
 
 
 def rule_struct_001(doc, rule, brief, template):
@@ -829,6 +927,8 @@ def lint(text, brief=None, rules=None, template=None):
             findings += rule_cite_002(doc, rule)
         elif rid == "FIG-001":
             findings += rule_fig_001(doc, rule, brief)
+        elif rid == "FIG-002":
+            findings += rule_fig_002(doc, rule, brief)
         elif rid == "STRUCT-001":
             findings += rule_struct_001(doc, rule, brief, template)
         elif rule.get("banned_phrases"):

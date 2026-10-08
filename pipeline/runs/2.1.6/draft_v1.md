@@ -73,7 +73,8 @@ Work round the bone in a fixed order and nothing gets missed.
 Intercondylar notch, lateral wall: anterior cruciate ligament, on the
 posterior part of the wall near the articular margin, with the anteromedial
 bundle fibres proximal and the posterolateral bundle fibres distal when the
-knee is extended. 2.7.6 owns the footprint.
+knee is extended. The footprint is conventionally described as an oval of the
+order of 17 mm along its long axis and 9 mm across. 2.7.6 owns it in detail.
 
 Intercondylar notch, medial wall: posterior cruciate ligament, broader than
 the anterior cruciate's attachment and extending further anteriorly along the
@@ -227,8 +228,9 @@ No reference list is attached to this draft. Evidence verification has not
 run, because source retrieval was unavailable at generation time. Under the
 Operations Handbook a missing reference is acceptable and an invented one is a
 critical failure, so nothing has been cited and no citation marker appears in
-the text. Under decision 005 this page also carries no measurement, angle,
-dimension, distance, normal range or incidence figure. Anatomy is described in
-relative terms. A reviewer with sources can add the figures with a date
-against each one; the claims they would attach to are listed in the
-accompanying handoff block.
+the text. Every measurement on this page is written from standard teaching
+rather than from a retrieved paper, and none has been checked against a
+source. Under decision 006 each one is registered in pipeline/config/figures
+with the sentence it supports and a verification state of
+UNVERIFIED_FROM_MEMORY, so the whole list can be checked and corrected rather
+than hunted for.
