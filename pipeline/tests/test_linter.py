@@ -473,3 +473,102 @@ class RangesAndRepeats(unittest.TestCase):
     def test_a_repeated_figure_is_reported_at_each_occurrence(self):
         """The gate wants both line numbers; the register deduplicates."""
         self.assertEqual(self.extract("It is 17 mm. Again, 17 mm."), ["17 mm", "17 mm"])
+
+
+class PositionRegister(unittest.TestCase):
+    """POS-001, from decision 007. A sentence telling a clinician what to do is
+    registered for sign off. Warn severity, because the detector is a heuristic and
+    a false positive must not be able to block a page."""
+
+    def brief(self, tiers=("mrcs",)):
+        return {"page_id": "2.9.9", "title": "Test Page", "page_type": "anatomy",
+                "tiers_required": list(tiers),
+                "governance": {"figures_allowed": True},
+                "output_requirements": {"target_word_count": {"min": 1, "max": 9000}}}
+
+    def page(self, sentence, tier="MRCS Level"):
+        return ("# Test Page\n\nA summary.\n\n## %s\n\n"
+                "### Structure and Location\n\n" % tier + sentence + "\n\n"
+                "### Key Learning Points\n\n- One.\n- Two.\n- Three.\n\n"
+                "## Explore Further\n\n- [[2.1.1 | Gross Anatomy]]\n\n"
+                "## References\n\nNothing is cited.\n")
+
+    def fired(self, sentence, register=None, tiers=("mrcs",), tier="MRCS Level"):
+        import tempfile
+        with tempfile.TemporaryDirectory() as d:
+            if register is not None:
+                with open(os.path.join(d, "2.9.9.json"), "w") as fh:
+                    json.dump({"page_id": "2.9.9", "positions": register}, fh)
+            os.environ["POSITION_REGISTRY_DIR"] = d
+            try:
+                report = linter.lint(self.page(sentence, tier), self.brief(tiers))
+            finally:
+                os.environ.pop("POSITION_REGISTRY_DIR", None)
+        return [f for f in report["findings"] if f["rule_id"] == "POS-001"]
+
+    def test_an_unregistered_imperative_warns(self):
+        out = self.fired("Document dorsiflexion before and after any lateral procedure.")
+        self.assertEqual(len(out), 1)
+        self.assertEqual(out[0]["severity"], "warn")
+
+    def test_an_imperative_after_a_leading_clause_warns(self):
+        self.assertTrue(self.fired(
+            "In a young patient with instability, prefer the procedure that preserves bone."))
+
+    def test_a_directed_modal_warns(self):
+        self.assertTrue(self.fired(
+            "For posterolateral access the nerve should be identified, not estimated."))
+
+    def test_a_registered_position_does_not_warn(self):
+        sentence = "Document dorsiflexion before and after any lateral procedure."
+        self.assertEqual(self.fired(sentence, [{"as_written": sentence}]), [])
+
+    def test_whitespace_differences_do_not_matter(self):
+        sentence = "Document dorsiflexion before and after any lateral procedure."
+        self.assertEqual(
+            self.fired(sentence, [{"as_written": "Document  dorsiflexion before and after "
+                                                 "any lateral procedure."}]), [])
+
+    def test_plain_description_does_not_warn(self):
+        self.assertEqual(self.fired(
+            "The popliteal artery lies on the capsule behind the distal femur."), [])
+
+    def test_a_note_about_the_build_registers_does_not_warn(self):
+        self.assertEqual(self.fired(
+            "Decision 006 records why, and a reviewer should add them to the register."), [])
+
+    def test_a_page_with_no_professional_tier_is_out_of_scope(self):
+        """A junior page gives no clinical direction to a clinician."""
+        self.assertEqual(self.fired("Assess the knee before any sport.",
+                                    tiers=("junior",), tier="For Young Learners"), [])
+
+    def test_it_never_fails_a_page(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as d:
+            os.environ["POSITION_REGISTRY_DIR"] = d
+            try:
+                report = linter.lint(
+                    self.page("Document dorsiflexion before and after any procedure."),
+                    self.brief())
+            finally:
+                os.environ.pop("POSITION_REGISTRY_DIR", None)
+        self.assertTrue(report["pass"], "POS-001 must not be able to block a page")
+
+    def test_every_written_professional_page_is_fully_registered(self):
+        import glob
+        checked = 0
+        for path in sorted(glob.glob(os.path.join(ROOT, "runs", "*", "styled_v1.md"))):
+            page_id = os.path.basename(os.path.dirname(path))
+            brief_path = os.path.join(ROOT, "config", "briefs", page_id + ".json")
+            if not os.path.exists(brief_path):
+                continue
+            with open(brief_path) as fh:
+                brief = json.load(fh)
+            if not set(brief.get("tiers_required") or []) & set(linter.PROFESSIONAL_TIERS):
+                continue
+            with open(path) as fh:
+                report = linter.lint(fh.read(), brief)
+            hits = [f["matched_text"] for f in report["findings"] if f["rule_id"] == "POS-001"]
+            self.assertEqual(hits, [], "%s: unregistered position %s" % (page_id, hits))
+            checked += 1
+        self.assertTrue(checked, "no professional pages found")

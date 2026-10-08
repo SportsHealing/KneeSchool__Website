@@ -567,6 +567,14 @@ def load_figure_registry(page_id, path=None):
     return None
 
 
+def tier_by_heading(template=None):
+    """Handbook tier heading to tier key. Built on demand, because the template
+    loader is defined further down the file."""
+    template = load_article_template() if template is None else template
+    return dict((normalise_title(h), t)
+                for t, h in (template.get("tier_headings") or {}).items())
+
+
 VERIFICATION_STATES = ("UNVERIFIED_FROM_MEMORY", "VERIFIED", "CORRECTED", "REMOVED")
 
 
@@ -634,6 +642,86 @@ def rule_fig_002(doc, rule, brief):
 def normalise_figure(token):
     """'17 mm', '17mm' and '17  mm' are one figure."""
     return re.sub(r"\s+", "", str(token)).lower().replace(",", ".")
+
+
+# -- POS-001 ---------------------------------------------------------------
+
+# A page describing where the popliteal artery lies is anatomy. A page saying
+# "treat loss of foot pulses as arterial until proven otherwise" is clinical
+# advice, and on this site nobody has signed it. The detector finds the second
+# kind: a sentence in the imperative, or a directed modal aimed at the reader.
+#
+# It over collects on purpose. A false positive costs a reviewer one line in the
+# register; a false negative leaves unsigned advice on a professional page.
+POSITION_VERBS = (r"Assess|Document|Identify|Protect|Preserve|Avoid|Make|Plan|Use|Consider|"
+                  r"Discuss|Localise|Treat|Examine|Expect|Place|Check|Recognise|Address|"
+                  r"Restore|Measure|Count|Leave|Keep|Prefer|Report|Exclude|Follow|Probe|"
+                  r"Do not|Never|Always|Trace|Learn|Warn|Order|Repair|Resect|Release")
+# Case insensitive, because after a leading clause the verb is lower case: "In a
+# young patient with instability, prefer the procedure that preserves bone stock"
+# was missed while the pattern required a capital. Anchored at the start of the
+# sentence, so a verb used mid sentence is not caught.
+POSITION_OPENER = re.compile(
+    r"^(?:(?:In|For|At|Where|When|Before|After|During|With|On)\b[^,]{0,90},\s*)?"
+    r"(?:" + POSITION_VERBS + r")\b", re.IGNORECASE)
+POSITION_MODAL = re.compile(
+    r"\b(?:should|must)\b\s+(?:be\s+)?(?:\w+ed|\w+ate|identify|protect|document|assess|"
+    r"preserve|address|repair|avoid|carry|include|prompt|change|follow|pass|engage|not\b)",
+    re.IGNORECASE)
+# Notes about this build's own registers are not clinical direction.
+POSITION_NOISE = re.compile(r"reviewer should|decision 00|figure register|"
+                            r"the register is where|should be used as a number", re.IGNORECASE)
+PROFESSIONAL_TIERS = ("medical_student", "mrcs", "frcs", "fellowship", "consultant")
+
+
+def load_position_registry(page_id, path=None):
+    here = os.path.dirname(os.path.abspath(__file__))
+    for root in [path, os.environ.get("POSITION_REGISTRY_DIR"),
+                 os.path.join(here, "positions"),
+                 os.path.join(here, "..", "..", "config", "positions")]:
+        if not root:
+            continue
+        candidate = os.path.join(root, "%s.json" % page_id)
+        if os.path.exists(candidate):
+            with open(candidate) as fh:
+                return json.load(fh)
+    return None
+
+
+def rule_pos_001(doc, rule, brief):
+    """Decision 007: a clinical recommendation on a professional page is registered.
+
+    Warn rather than fail. The detector is a heuristic and a false positive must
+    not be able to block a page; what it must do is surface drift between the
+    pages and the list somebody is signing.
+    """
+    out = []
+    tiers = brief.get("tiers_required") or []
+    if not set(tiers) & set(PROFESSIONAL_TIERS):
+        return out
+    registry = load_position_registry(brief.get("page_id"))
+    known = set()
+    if registry:
+        known = set(re.sub(r"\s+", " ", (p.get("as_written") or "")).strip().lower()
+                    for p in registry.get("positions") or [])
+
+    text = doc.body_text().split("## References")[0]
+    for block in text.split("\n\n"):
+        if block.strip().startswith("#"):
+            continue
+        flat = re.sub(r"\s+", " ", block.lstrip("- ")).strip()
+        for sent in re.split(r"(?<=[.!?]) ", flat):
+            sent = sent.strip()
+            if len(sent.split()) < 6 or POSITION_NOISE.search(sent):
+                continue
+            if not (POSITION_OPENER.search(sent) or POSITION_MODAL.search(sent)):
+                continue
+            if re.sub(r"\s+", " ", sent).strip().lower() in known:
+                continue
+            out.append(finding(rule["id"], rule["severity"],
+                               rule["description"] + ": not in the page register",
+                               sent[:120], "", 0))
+    return out
 
 
 def rule_struct_001(doc, rule, brief, template):
@@ -945,6 +1033,8 @@ def lint(text, brief=None, rules=None, template=None):
             findings += rule_fig_001(doc, rule, brief)
         elif rid == "FIG-002":
             findings += rule_fig_002(doc, rule, brief)
+        elif rid == "POS-001":
+            findings += rule_pos_001(doc, rule, brief)
         elif rid == "STRUCT-001":
             findings += rule_struct_001(doc, rule, brief, template)
         elif rule.get("banned_phrases"):

@@ -3,8 +3,8 @@
 | Field | Value |
 |---|---|
 | Date | 7 October 2026 |
-| Decided by | Build team, applied and flagged for confirmation |
-| Status | Applied, awaiting editorial confirmation |
+| Decided by | Build team; confirmed by the client 8 October 2026 |
+| Status | Confirmed |
 | Applies to | Any brief generated from the architecture |
 
 ## The problem
@@ -54,10 +54,16 @@ the word count. That is correct when someone has deliberately overridden it, and
 wrong when the generator's own default has changed. Delete the brief first if
 you want the new default.
 
-## Open
+## Confirmed, 8 October 2026
 
-The Editor in Chief should confirm the bands, or replace them. Handbook open
-question 2 already flags the word count defaults as provisional.
+The client confirmed the bands and the FAQ allowance. Handbook open question 2
+flagged the word count defaults as provisional and this closes it for the single
+and two tier cases.
+
+Worth recording alongside: decision 005 tried to add a third band, 450 to 1100
+for pages about a single bony landmark, and it was wrong on all six pages it was
+applied to. The bands confirmed here are the ones that have survived contact
+with the pages. A further band should not be added without the same test.
 
 ## Amendment, 7 October 2026: the FAQ allowance
 

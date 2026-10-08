@@ -279,6 +279,26 @@
       ]
     },
     {
+      "id": "POS-001",
+      "severity": "warn",
+      "description": "Clinical recommendations on a professional page are registered for sign off",
+      "applies_when": "the brief requires any tier from medical_student upwards",
+      "register_path": "pipeline/config/positions/<page_id>.json",
+      "verification_states": [
+        "UNSIGNED",
+        "CONFIRMED",
+        "AMENDED",
+        "WITHDRAWN",
+        "NOT_CLINICAL"
+      ],
+      "source_of_truth": "docs/decisions/007-clinical-positions-need-signing.md",
+      "notes": [
+        "Warn rather than fail. The detector is a heuristic over imperative openers and directed modals, and a false positive must not be able to block a page. What it must do is surface drift between the pages and the list somebody is signing.",
+        "It over collects on purpose: a false positive costs a reviewer one line, a false negative leaves unsigned clinical advice on a professional page.",
+        "A sentence the reviewer judges to be teaching rather than clinical direction is marked NOT_CLINICAL in the register rather than deleted from it."
+      ]
+    },
+    {
       "id": "STRUCT-001",
       "severity": "fail",
       "description": "Required blocks present per brief: tier blocks, key learning points, FAQs where required, reference list",

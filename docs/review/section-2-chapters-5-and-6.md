@@ -46,10 +46,21 @@ more, because the lateral compartment has no concavity of its own.
 ## What you are being asked to confirm
 
 1. **The hoop framing.** Above.
-2. **The lateral preservation argument.** 2.6.1 and 2.6.6 both say the threshold
-   for difficult preservation surgery should be lower laterally than medially,
-   on anatomical rather than evidential grounds. That is a recommendation, and
-   it should carry your name or not appear.
+2. ~~The lateral preservation argument.~~ The client has said to keep it. That
+   decision generalised into decision 007, which is now the larger ask on this
+   pack: **seventy six sentences across twenty seven pages tell a clinician what
+   to do, and none of them is signed.** The lateral preservation sentence was
+   one of seventy six, not an exception.
+
+   The list is generated, not written out here:
+
+       python3 tools/positions.py --report --unsigned
+
+   Each entry carries the sentence verbatim, the tier it sits in, and a field
+   for your name. Mark each one `CONFIRMED`, `AMENDED`, `WITHDRAWN`, or
+   `NOT_CLINICAL` where it is a teaching instruction rather than clinical
+   direction. The gate warns if a page later carries a recommendation that is
+   not on the list, so it cannot drift.
 3. **Accuracy, on thirteen pages, by someone who operates on menisci.**
 
 ## Five pages to read first

@@ -3,8 +3,8 @@
 | Field | Value |
 |---|---|
 | Date | 7 October 2026 |
-| Decided by | Editor |
-| Status | Adopted |
+| Decided by | Client |
+| Status | Adopted; reconfirmed 8 October 2026 |
 | Applies to | Every page whose brief excludes "Region level anatomy detail" |
 
 ## The question

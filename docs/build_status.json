@@ -56,6 +56,15 @@
           "blocker": "They are written from memory because no paper could be retrieved. Each page's references note says so and each figure is registered.",
           "needed": "Source access, or a reviewer with a library. tools/figures.py --report --unchecked is the list, and the gate refuses any figure that is not on it.",
           "pages": "2.1.1, 2.1.3, 2.1.5, 2.1.6, 2.2.1, 2.2.3, 2.3.1, 2.4.1, 2.4.2, 2.4.3, 2.4.4, 2.5.1, 2.5.2, 2.5.3, 2.6.1"
+        },
+        {
+          "ref": "EV-7",
+          "title": "76 clinical recommendations on the site are unsigned",
+          "area": "Content",
+          "state": "Live and registered",
+          "blocker": "They are written by a process with no clinical qualification, on pages that state they have not been reviewed. The client has chosen to keep them, and decision 007 makes the set finite and listed.",
+          "needed": "A named consultant to confirm, amend, withdraw or reclassify each one. tools/positions.py --report --unsigned is the list.",
+          "pages": "27 pages across Sections 1, 2 and 6"
         }
       ]
     },
@@ -138,23 +147,23 @@
     },
     {
       "name": "Decisions taken",
-      "lede": "Each of these was a gap in the handbook or the architecture, or a call the client made during the build. Decisions 001 and 002 are applied and still need an editor's confirmation. 003 and 004 are confirmed.",
+      "lede": "Each of these was a gap in the handbook or the architecture, or a call the client made during the build. 001 to 004 and 006 to 007 are confirmed. 005 is partly reversed and partly withdrawn.",
       "items": [
         {
           "ref": "D-001",
           "title": "Where the Section 1 depth boundary sits",
           "area": "Editorial",
-          "state": "Applied, awaiting confirmation",
+          "state": "Confirmed",
           "blocker": "The architecture excludes region level anatomy detail from Fundamentals pages without saying where the line falls.",
-          "needed": "Confirmation of the tier split ruling in docs/decisions/001."
+          "needed": "Nothing. Adopted when the tier split ruling was chosen, and reconfirmed on 8 October 2026."
         },
         {
           "ref": "D-002",
           "title": "Word counts for a page that carries one tier",
           "area": "Editorial",
-          "state": "Applied, awaiting confirmation",
+          "state": "Confirmed",
           "blocker": "The handbook's word ranges assume a page carrying several tiers. Section 0 pages carry one. The amendment adds room for the patient tier's FAQ block.",
-          "needed": "Confirmation of the bands in docs/decisions/002."
+          "needed": "Nothing. The bands and the FAQ allowance were confirmed on 8 October 2026. Decision 005's attempt to add a third band was wrong on all six pages and has been withdrawn."
         },
         {
           "ref": "D-003",
@@ -190,6 +199,15 @@
           "blocker": "The client's instruction was to keep measurements provided they are based on current papers. That condition cannot be met here: there is no source access, so every figure is written from standard teaching and none is attributable to a paper.",
           "needed": "Somebody with sources to work through the register. 12 figures are outstanding, all marked UNVERIFIED_FROM_MEMORY. The gate refuses an unregistered figure, so the list cannot fall behind the pages.",
           "pages": "6 of the 15 written Section 2 pages carry figures"
+        },
+        {
+          "ref": "D-007",
+          "title": "A clinical recommendation needs a name against it",
+          "area": "Editorial",
+          "state": "Applied",
+          "blocker": "The review pack flagged one sentence that recommended when to operate rather than describing anatomy. The client said keep it. Acting on that exposed 76 such sentences across 27 pages, including Section 1 and the anterior cruciate page.",
+          "needed": "A consultant to work the register: 76 positions, all UNSIGNED. tools/positions.py --report --unsigned is the list, and POS-001 warns when a page carries one that is not on it.",
+          "pages": "27 pages carrying a tier from medical student upwards"
         }
       ]
     },
