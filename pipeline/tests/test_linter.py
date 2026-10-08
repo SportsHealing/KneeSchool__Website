@@ -238,3 +238,66 @@ class JuniorCloserByPageType(unittest.TestCase):
 
     def test_a_junior_explainer_still_needs_it(self):
         self.assertEqual(len(self.closer_findings("junior_explainer")), 1)
+
+
+class NoFiguresRule(unittest.TestCase):
+    """FIG-001, from decisions 003 and 005. The rule has to catch a measurement and
+    has to leave the cross references this site's prose is full of alone."""
+
+    def brief(self, allowed=False):
+        return {"title": "Distal Femur", "page_type": "anatomy",
+                "tiers_required": ["medical_student"],
+                "governance": {"figures_allowed": allowed},
+                "output_requirements": {"target_word_count": {"min": 1, "max": 9000}}}
+
+    def page(self, sentence):
+        return ("# Distal Femur\n\nA summary line.\n\n## For Medical Students\n\n"
+                "### Structure and Location\n\n" + sentence + "\n\n"
+                "### Key Learning Points\n\n- One.\n- Two.\n- Three.\n\n"
+                "## Explore Further\n\n- [[2.1.1 | Gross Anatomy]]\n\n"
+                "## References\n\nNothing is cited. Smith 2019 would be a reference.\n")
+
+    def fired(self, sentence, allowed=False):
+        report = linter.lint(self.page(sentence), self.brief(allowed))
+        return [f["matched_text"] for f in report["findings"] if f["rule_id"] == "FIG-001"]
+
+    def test_a_measurement_fails(self):
+        self.assertTrue(self.fired("The footprint is 17 mm across."))
+        self.assertTrue(self.fired("Slope averages 9 degrees."))
+        self.assertTrue(self.fired("Around 70% of load passes medially."))
+        self.assertTrue(self.fired("The angle is 5.5 degrees."))
+
+    def test_a_page_id_does_not_fail(self):
+        self.assertEqual(self.fired("3.13 takes that further, and 2.10.6 owns the nerve."), [])
+
+    def test_a_section_or_decision_reference_does_not_fail(self):
+        self.assertEqual(self.fired("Section 7 owns technique and decision 005 the figures."), [])
+        self.assertEqual(self.fired("Sections 6 and 7 own the argument."), [])
+
+    def test_prose_list_numbering_does_not_fail(self):
+        self.assertEqual(self.fired("Three features matter. 1 shape. 2 size. 3 position."), [])
+
+    def test_a_number_above_the_allowed_integers_fails(self):
+        self.assertTrue(self.fired("There are 17 named attachments."))
+
+    def test_a_reference_year_does_not_fail(self):
+        """The reference list is outside the body scope, so a citation year is safe."""
+        self.assertEqual(self.fired("No figure appears in this sentence."), [])
+
+    def test_the_rule_is_off_when_the_brief_allows_figures(self):
+        self.assertEqual(self.fired("The footprint is 17 mm across.", allowed=True), [])
+
+    def test_every_written_section_2_page_passes_it(self):
+        """The rule was added after the pages were written. If it disagrees with them,
+        one of the two is wrong and this says so."""
+        import glob
+        pages = sorted(glob.glob(os.path.join(ROOT, "runs", "2.*", "styled_v1.md")))
+        self.assertTrue(pages, "no Section 2 pages found")
+        for path in pages:
+            page_id = os.path.basename(os.path.dirname(path))
+            with open(os.path.join(ROOT, "config", "briefs", page_id + ".json")) as fh:
+                brief = json.load(fh)
+            with open(path) as fh:
+                report = linter.lint(fh.read(), brief)
+            hits = [f["matched_text"] for f in report["findings"] if f["rule_id"] == "FIG-001"]
+            self.assertEqual(hits, [], "%s carries a figure: %s" % (page_id, hits))

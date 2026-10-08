@@ -59,6 +59,38 @@ TIER_WORD_BANDS = {1: (350, 900), 2: (600, 1300)}
 FAQ_ALLOWANCE = 250
 
 
+OVERRIDES = os.path.join(ROOT, "pipeline", "config", "word_count_overrides.json")
+
+
+# Decisions 003 and 005 are the same ruling applied twice. Section 0 carries no
+# entry requirement, test score, fee or deadline, and Section 2 carries no
+# measurement, angle or dimension. In both cases the figures change, none could
+# be verified, and a plausible wrong one is worse than none. The gate enforces it
+# through brief.governance.figures_allowed, so the rule travels with the brief
+# rather than living in a drafting instruction nobody reads.
+NO_FIGURE_SECTIONS = {"0": "decision 003", "2": "decision 005"}
+
+
+def figures_allowed(page):
+    return str(page["section"]["id"]) not in NO_FIGURE_SECTIONS
+
+
+def band_override(page_id):
+    """Decision 005: a declared band for a page the page type band does not fit.
+
+    Returned in preference to the tier scaling, because the reason it exists is
+    the page's subject rather than how many tiers it carries.
+    """
+    if not os.path.exists(OVERRIDES):
+        return None
+    cfg = load(OVERRIDES)
+    entry = (cfg.get("pages") or {}).get(str(page_id))
+    if not entry:
+        return None
+    band = (cfg.get("bands") or {}).get(entry.get("band"))
+    return dict(band) if band else None
+
+
 def scale_for_tiers(defaults, tiers):
     band = TIER_WORD_BANDS.get(len(tiers))
     if not band or not defaults:
@@ -74,7 +106,8 @@ def build_brief(page, merge=None):
     type_map = load(TYPE_MAP)["page_types"]
     template_name = (type_map.get(page["page_type"]) or {}).get("template")
     defaults = (tpl["page_types"].get(template_name) or {}).get("word_count") or {}
-    defaults = scale_for_tiers(defaults, page["tiers_required"])
+    defaults = band_override(page["page_id"]) \
+        or scale_for_tiers(defaults, page["tiers_required"])
 
     brief = collections.OrderedDict()
     brief["brief_version"] = "1.1"
@@ -114,6 +147,7 @@ def build_brief(page, merge=None):
         ("commercial_content_allowed", False),
         ("clinical_advice_allowed", False),
         ("junior_tier_present", junior),
+        ("figures_allowed", figures_allowed(page)),
     ])
     brief["pipeline"] = collections.OrderedDict([
         ("priority", page["priority"]),

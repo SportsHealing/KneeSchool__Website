@@ -1,0 +1,33 @@
+{
+  "page_id": "2.1.2",
+  "prompt_version": "1.0",
+  "article_template_version": "1.0",
+  "page_type": "anatomy",
+  "article_template": "anatomy",
+  "tiers_covered": [
+    "medical_student",
+    "mrcs",
+    "frcs"
+  ],
+  "scope_statement": "Condylar geometry and bony landmarks.",
+  "sources": [],
+  "source_note": "No sources were retrieved. The generation environment had no access to PubMed, Cochrane, any journal or any textbook. The Tier 1 source minimum is NOT met and this draft would not pass Tier 1 in the deployed pipeline. This is the first section on the site written entirely for professionals, and it is unverified.",
+  "claims_needing_verification": [
+    "The notch is a fixed volume whose contents compete for space.",
+    "Condylar asymmetry means a symmetrical implant cannot reproduce both sides.",
+    "The changing radius of curvature is why ligament tension varies through range on the native knee.",
+    "The cartilage to artery distance behind the condyles is small and flexion does not reliably increase it."
+  ],
+  "claims_note": "Listed above are the substantive claims, taken from the deepest tier's key learning points. Every anatomical statement in the page body requires the same verification against a standard text; these are the ones a reviewer should start with.",
+  "content_rule": "Decision 005: this page carries no measurement, angle, dimension, distance, normal range or incidence figure, because none could be verified. Every published description of this anatomy is quantitative, so the absence is visible and deliberate. A reviewer with sources should add the figures with a date against each one rather than treat their absence as an oversight.",
+  "gaps_or_uncertainties": [
+    "No measurement, angle, dimension or normal range appears anywhere on this page.",
+    "Anatomical relations are described in relative terms, which is adequate for orientation and inadequate for planning that depends on a dimension."
+  ],
+  "duplication_risk_pages": [
+    "3.13",
+    "5.3.2"
+  ],
+  "architecture_check": "Written against the architecture's own brief for 2.1.2, including its must_not_cover list: Pathology of this structure (owned by 6.96 to 6.101); Operative technique (owned by Section 7); Imaging interpretation beyond normal anatomy (owned by Section 5); Biomechanics beyond orientation (owned by 3.13)",
+  "status": "AI_DRAFT_READY_FOR_VERIFICATION"
+}

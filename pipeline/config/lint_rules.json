@@ -222,6 +222,31 @@
       "pattern": "\\[\\d+\\]"
     },
     {
+      "id": "FIG-001",
+      "severity": "fail",
+      "description": "No measurement, angle, dimension or normal range where the brief forbids figures",
+      "conditional_on": "brief.governance.figures_allowed == false",
+      "allowed_bare_integers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "scope": "body",
+      "source_of_truth": "docs/decisions/005-section-2-depth-and-figures.md",
+      "notes": [
+        "Page ids, section references and decision references are removed before the scan, because the prose on this site is full of them.",
+        "A bare small integer is allowed so a list can be numbered in prose. Any digit carrying a unit, a decimal point, or a value above ten is a quantity.",
+        "The reference list is outside the body scope, so a citation year never trips this rule."
+      ]
+    },
+    {
       "id": "STRUCT-001",
       "severity": "fail",
       "description": "Required blocks present per brief: tier blocks, key learning points, FAQs where required, reference list",

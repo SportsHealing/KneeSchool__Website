@@ -46,7 +46,7 @@
           "area": "Content architecture",
           "state": "Blocked",
           "blocker": "Only Part 1, covering sections 0 to 3, has been received. Sections 4 to 15 are summarised in Part 1 but have no page level map, so no brief can be generated for them.",
-          "needed": "Parts 2 to 6 of the Master Publishing Architecture from the chat that produced Part 1."
+          "needed": "Parts 2 to 6 of the Master Publishing Architecture from the chat that produced Part 1. Sections 0, 1 and 2 can proceed without them; Section 3 is the last one that can."
         }
       ]
     },
@@ -163,6 +163,15 @@
           "blocker": "Three of the chapter's four pages describe features that do not exist. A chapter heading with one live page and three greyed out rows advertises what the site cannot do, on the page where a new reader is choosing what to read.",
           "needed": "Nothing. Reopening it needs the features in PG-4 and PG-5, then four steps listed in docs/decisions/004.",
           "pages": "0.6.1 moved into chapter 0.1; 0.6.2 to 0.6.4 held"
+        },
+        {
+          "ref": "D-005",
+          "title": "Section 2 depth, and why it carries no numbers",
+          "area": "Editorial",
+          "state": "Applied, awaiting confirmation",
+          "blocker": "Anatomy at MRCS and FRCS depth normally carries measurements, and none could be verified. A plausible wrong dimension on an FRCS page is worse than no dimension. The handbook's anatomy word band also does not fit a page about a single bony landmark.",
+          "needed": "Confirmation of the no figures rule and of the tier pattern in docs/decisions/005. Reversing the no figures rule means adding dimensions with dated sources, which cannot be done from the build environment.",
+          "pages": "All 79 Section 2 pages"
         }
       ]
     },
@@ -193,6 +202,15 @@
           "state": "With a consultant for review",
           "blocker": "None.",
           "needed": "A ruling on the pilot, which was left for the consultant to decide."
+        },
+        {
+          "ref": "W-4",
+          "title": "Section 2 Anatomy Academy, chapters 2.1 and 2.2",
+          "area": "Content",
+          "state": "15 of 79 written, style gate passed, awaiting review",
+          "blocker": "None on the written pages. The remaining 64 are a matter of time.",
+          "needed": "Consultant review. These are the first pages on the site written entirely for professionals, and nothing on them has been verified. 2.2.3 and 2.1.6 are the pages where the missing dimensions cost the reader most.",
+          "pages": "2.1.1 to 2.1.9, 2.2.1 to 2.2.6"
         }
       ]
     }

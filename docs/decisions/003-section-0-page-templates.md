@@ -136,8 +136,12 @@ names the body that publishes it and tells the reader to check it there. This
 also satisfies the architecture's own instruction on 0.4.3, which excludes test
 coaching content and asks for official sources to be signposted.
 
-This is a content rule, not a lint rule. It is listed in each page's handoff
-block.
+This started as a content rule rather than a lint rule, which meant it relied on
+whoever was drafting remembering it. Decision 005 needed the same rule for
+Section 2's measurements, so it is now enforced by the gate: FIG-001 fails any
+page whose brief carries `governance.figures_allowed: false`, and every page in
+Sections 0 and 2 carries that flag. It is also still listed in each page's
+handoff block.
 
 **Confirmed by the client on 7 October 2026.** The rule stands. No entry
 requirement, test score, fee, deadline or application statistic goes on a

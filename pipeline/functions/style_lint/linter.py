@@ -474,6 +474,54 @@ def is_ordered_subset(found, allowed):
     return True
 
 
+# -- FIG-001 ---------------------------------------------------------------
+
+# A pointer to another part of the site, not a quantity. These are written into
+# the prose constantly ("3.13 takes that further", "Section 7 owns the argument",
+# "decision 005 records why"), so they are removed before the scan rather than
+# listed as exceptions one at a time.
+UNIT = r"(?:mm|cm|%|per\s?cent|degrees?|mL|ml|kg|MPa|m|N)"
+# A page id and a decimal measurement look identical: 5.5 could be chapter 5.5 or
+# five and a half degrees. The unit decides, so an id is only stripped when no
+# unit follows it. A bare decimal with no unit is read as a page id, because on
+# this site that is what it almost always is. Write a unit and the rule fires.
+XREF = re.compile(r"\b\d+(?:\.\d+){1,2}\b(?!\s*" + UNIT + r"\b)")
+XREF_WORD = re.compile(r"\b(?:section|sections|chapter|chapters|decision|decisions|"
+                       r"figure|figures|table|tables)\s+\d+"
+                       r"(?:\s*(?:,|and|or|to)\s*\d+)*", re.IGNORECASE)
+# The trailing lookahead stops the pattern matching half of a decimal while
+# still allowing a quantity to end a sentence. "9 degrees." has to fire.
+QUANTITY = re.compile(r"(?<![A-Za-z])(\d+(?:[.,]\d+)?)"
+                      r"\s*" + UNIT + r"?"
+                      r"(?![A-Za-z0-9]|\.\d)")
+
+
+def rule_fig_001(doc, rule, brief):
+    """Decision 005: no measurement on a page in a section that forbids them.
+
+    Every published description of knee anatomy at this depth is quantitative,
+    and none of it could be verified here. A plausible wrong dimension on an FRCS
+    page is worse than no dimension, so the gate refuses the figure rather than
+    trusting review to catch it.
+
+    List numbering written into prose is allowed, because the alternative is
+    spelling out every enumeration. A quantity is not, and there is no way to
+    write one without a digit.
+    """
+    out = []
+    allowed = set(str(n) for n in rule.get("allowed_bare_integers") or [])
+    text = XREF.sub(" ", XREF_WORD.sub(" ", doc.body_text()))
+    for m in QUANTITY.finditer(text):
+        token = m.group(0).strip()
+        if m.group(1) in allowed and token == m.group(1):
+            continue
+        out.append(finding(rule["id"], rule["severity"],
+                           rule["description"] + " (body)", token,
+                           context(text, m.start(), m.end()),
+                           line_of(text, m.start())))
+    return out
+
+
 def rule_struct_001(doc, rule, brief, template):
     """Structure against the handbook template and the brief.
 
@@ -779,6 +827,8 @@ def lint(text, brief=None, rules=None, template=None):
             findings += rule_cite_001(doc, rule)
         elif rid == "CITE-002":
             findings += rule_cite_002(doc, rule)
+        elif rid == "FIG-001":
+            findings += rule_fig_001(doc, rule, brief)
         elif rid == "STRUCT-001":
             findings += rule_struct_001(doc, rule, brief, template)
         elif rule.get("banned_phrases"):

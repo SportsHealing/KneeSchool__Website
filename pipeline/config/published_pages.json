@@ -53,6 +53,21 @@
     "1.2.8": "encyclopaedia/synovium.html",
     "1.2.9": "encyclopaedia/bursa.html",
     "1.2.10": "encyclopaedia/growth-plates.html",
+    "2.1.1": "anatomy/femur-gross-anatomy.html",
+    "2.1.2": "anatomy/femur-distal-femur.html",
+    "2.1.3": "anatomy/femur-medial-femoral-condyle.html",
+    "2.1.4": "anatomy/femur-lateral-femoral-condyle.html",
+    "2.1.5": "anatomy/femur-trochlea.html",
+    "2.1.6": "anatomy/femur-femoral-attachments-of-ligaments.html",
+    "2.1.7": "anatomy/femur-surgical-anatomy.html",
+    "2.1.8": "anatomy/femur-imaging-anatomy.html",
+    "2.1.9": "anatomy/femur-biomechanical-relevance.html",
+    "2.2.1": "anatomy/tibia-proximal-tibia.html",
+    "2.2.2": "anatomy/tibia-tibial-plateau.html",
+    "2.2.3": "anatomy/tibia-tibial-spine.html",
+    "2.2.4": "anatomy/tibia-gerdys-tubercle.html",
+    "2.2.5": "anatomy/tibia-tibial-tubercle.html",
+    "2.2.6": "anatomy/tibia-surgical-anatomy.html",
     "6.1.1": "conditions/acl.html"
   }
 }

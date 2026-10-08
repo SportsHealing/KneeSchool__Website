@@ -1,0 +1,47 @@
+{
+  "overrides_version": "1.0",
+  "source_of_truth": "docs/decisions/005-section-2-depth-and-figures.md",
+  "note": "Word count bands for pages the handbook's page type band does not fit. Applied by tools/architecture.py when a brief is generated, after the tier scaling in decision 002. A declared list, not a heuristic: nothing mechanical separates a narrow structure from a narrow description of a wide one. An entry is a prediction about a page that is not yet written, so it is checked once the page exists and withdrawn if it was wrong. Withdrawn entries are kept below rather than deleted, because the wrong prediction is the useful part of the record.",
+  "bands": {
+    "narrow_structure": {
+      "min": 450,
+      "max": 1100
+    }
+  },
+  "pages": {
+    "2.3.1": {
+      "title": "Anatomy",
+      "band": "narrow_structure",
+      "reason": "Proximal fibular osteology alone. A small bone with one articulation and three attachments, and its pathology sits in 6.26."
+    },
+    "2.3.2": {
+      "title": "Attachments",
+      "band": "narrow_structure",
+      "reason": "The attachment list for one small bone. Each named structure has its own page in 2.10."
+    },
+    "2.3.3": {
+      "title": "Clinical Importance",
+      "band": "narrow_structure",
+      "reason": "One relation, the common peroneal nerve, which has its own page at 2.10.6. This page orients and hands over."
+    },
+    "2.4.2": {
+      "title": "Ossification",
+      "band": "narrow_structure",
+      "reason": "A developmental sequence and one named variant. Physeal injury and bipartite pathology are owned by Section 10."
+    }
+  },
+  "withdrawn": {
+    "2.2.3": {
+      "title": "Tibial Spine",
+      "band": "narrow_structure",
+      "reason": "A single bony eminence. Its attachments are the cruciate and meniscal roots, which 2.5, 2.6, 2.7 and 2.8 own, and tibial spine avulsion is pathology owned by 6.101 and 10.35.",
+      "withdrawn": "Predicted narrow before the page was written. It came out at 1219 words of substantive anatomy, not padding, so the prediction was wrong and the override was withdrawn rather than the prose cut. The handbook's own 800 to 1800 band applies."
+    },
+    "2.2.4": {
+      "title": "Gerdy's Tubercle",
+      "band": "narrow_structure",
+      "reason": "A single landmark with two attachments. Segond fracture is pathology and iliotibial band tenodesis is technique, so both are elsewhere.",
+      "withdrawn": "Predicted narrow before the page was written. It came out at 1133 words of substantive anatomy, not padding, so the prediction was wrong and the override was withdrawn rather than the prose cut. The handbook's own 800 to 1800 band applies."
+    }
+  }
+}

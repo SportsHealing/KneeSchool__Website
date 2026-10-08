@@ -60,6 +60,7 @@ RIBBON = [
 
     ("Reference", "encyclopaedia/index.html", [
         ("The knee encyclopaedia", "encyclopaedia/index.html"),
+        ("The Anatomy Academy", "anatomy/index.html"),
         ("Conditions library", "conditions/index.html"),
         ("Whole body factors", "encyclopaedia/whole-body.html"),
     ]),

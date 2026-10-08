@@ -308,6 +308,96 @@
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
     },
+    "2.1.1": {
+      "out": "anatomy/femur-gross-anatomy.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.1.2": {
+      "out": "anatomy/femur-distal-femur.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.1.3": {
+      "out": "anatomy/femur-medial-femoral-condyle.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.1.4": {
+      "out": "anatomy/femur-lateral-femoral-condyle.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.1.5": {
+      "out": "anatomy/femur-trochlea.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.1.6": {
+      "out": "anatomy/femur-femoral-attachments-of-ligaments.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.1.7": {
+      "out": "anatomy/femur-surgical-anatomy.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.1.8": {
+      "out": "anatomy/femur-imaging-anatomy.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.1.9": {
+      "out": "anatomy/femur-biomechanical-relevance.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.2.1": {
+      "out": "anatomy/tibia-proximal-tibia.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.2.2": {
+      "out": "anatomy/tibia-tibial-plateau.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.2.3": {
+      "out": "anatomy/tibia-tibial-spine.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.2.4": {
+      "out": "anatomy/tibia-gerdys-tubercle.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.2.5": {
+      "out": "anatomy/tibia-tibial-tubercle.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.2.6": {
+      "out": "anatomy/tibia-surgical-anatomy.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
     "6.1.1": {
       "out": "conditions/acl.html",
       "parent": "Conditions|index.html",
@@ -335,5 +425,6 @@
       "would_have_been": "junior/digital-badges.html"
     }
   },
-  "withheld_note": "Pages written and gated but deliberately not published. The draft and its handoffs stay in pipeline/runs so nothing is lost. Move an entry back into pages and run tools/render_site.py to publish it."
+  "withheld_note": "Pages written and gated but deliberately not published. The draft and its handoffs stay in pipeline/runs so nothing is lost. Move an entry back into pages and run tools/render_site.py to publish it.",
+  "naming_note": "Section 2 reuses page titles across chapters, so its published names carry the chapter: anatomy/<chapter>-<page>.html. Flat rather than nested, because the renderer builds one level of relative path."
 }
