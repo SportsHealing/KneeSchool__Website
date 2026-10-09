@@ -1,0 +1,682 @@
+
+KneeSchool Master Operations Handbook
+KneeSchool.com
+Master Operations Handbook
+A complete playbook for building the knee education platform, content engine, source
+
+repository, AI workflow, quality control system and commercial integration model.
+Prepared for: Project assistant, content lead, medical writer, editor, project manager and clinical reviewer
+
+KneeSchool Master Operations Handbook
+Contents
+This handbook is structured as a sequential operational manual. Use the heading navigation pane in Word for rapid
+movement through the document. A dynamic table of contents can be inserted or updated in Word before final
+publication.
+
+KneeSchool Master Operations Handbook
+1. Executive Summary
+Purpose
+KneeSchool.com is intended to become the definitive digital education platform for anyone who wants to understand the
+knee. The platform is not a clinic brochure. It is an encyclopaedia, learning pathway, case library, video academy,
+examination resource and research hub. It should serve patients, undergraduate medical students, postgraduate
+trainees, FRCS candidates, fellows and advanced knee consultants.
+Strategic Role
+The platform should educate first, build trust second, and support commercial conversion third. It will create authority for
+the founder, generate appropriate clinical referrals to Sportshealing, and provide contextual product pathways to
+OmKneeHealth.
+Operating Model
+The content engine will use curated source material, AI-assisted drafting, assistant-led organisation, evidence verification
+and consultant-level quality control. The assistant does not need to be a knee expert, but must follow strict source,
+prompt, editorial and verification procedures.
+Success Definition
+Success means creating a large, accurate, searchable and trusted knee knowledge platform that users return to
+repeatedly. It should feel closer to a specialist university and modern learning platform than a conventional healthcare
+website.
+
+KneeSchool Master Operations Handbook
+2. Vision, Mission and Strategic Positioning
+Vision
+To build the world’s most useful and authoritative online knee education ecosystem, from basic patient education to
+advanced fellowship and consultant-level knee knowledge.
+Mission
+To make knee knowledge clear, structured, evidence-based and accessible to every learner level while preserving clinical
+
+accuracy and academic credibility.
+Positioning Statement
+KneeSchool is the complete knee knowledge hub: an educational platform for patients, students, trainees, fellows,
+consultants, therapists and researchers.
+Brand Promise
+Learn the knee properly. Understand the science. Apply the knowledge safely.
+Tone
+Expert, concise, clear, educational, evidence-led, visually engaging and clinically responsible.
+Not the Brand
+Not a generic orthopaedic blog. Not a supplement sales site. Not a hospital marketing site. Not an unstructured archive of
+
+articles. Not a superficial patient leaflet library.
+
+KneeSchool Master Operations Handbook
+3. Complete Sitemap
+Top-Level Navigation
+Home; Learn by Level; Knee Encyclopaedia; Conditions; Surgery Academy; Rehabilitation Academy; Research
+Academy; Case Library; Question Bank; Video Library; Knee Score Centre; Products and Services; Community; About.
+Home Page Modules
+Hero search bar; choose your learning path; interactive knee model; topic cards; featured modules; latest research; case
+challenge; video spotlight; Sportshealing referral prompt; OmKneeHealth product prompt; newsletter capture.
+Learn by Level
+Patient Academy; Medical Student Academy; MRCS Academy; FRCS Orth Academy; Fellowship Academy; Consultant
+Masterclass.
+Knee Encyclopaedia
+Anatomy; Biomechanics; Clinical Examination; Imaging; Conditions; Surgery; Rehabilitation; Performance; Women’s
+Knee Health; Children’s Knee Health; Research; Outcomes; Glossary.
+Commercial Sections
+Sportshealing Clinic pathway; OmKneeHealth product pathway; online courses; webinars; conference links; educational
+downloads.
+Expanded Sitemap Table
+Area
+Included Modules
+Home
+Hero search, learning paths, interactive knee, featured content,
+latest research, case challenge, CTA
+Learn by Level
+Patient, Medical Student, MRCS, FRCS, Fellowship, Consultant
+Encyclopaedia
+Anatomy, biomechanics, examination, imaging, conditions,
+surgery, rehabilitation
+Research
+Methods, statistics, critical appraisal, landmark papers,
+controversies
+Commercial
+Sportshealing, OmKneeHealth, courses, webinars, events
+
+KneeSchool Master Operations Handbook
+4. Curriculum by Educational Level
+Patient Academy
+Clear explanation of knee anatomy, common symptoms, diagnosis, imaging, treatment options, rehabilitation, prevention
+and when to seek specialist help.
+Medical Student Academy
+Core anatomy, biomechanics, pathology, history, examination, imaging basics and common diagnoses.
+MRCS Academy
+Applied anatomy, examination technique, trauma principles, imaging interpretation, common pathology, viva preparation
+and SBA question practice.
+FRCS Orth Academy
+Advanced anatomy, surgical decision-making, evidence appraisal, complex cases, revision concepts, complications and
+viva-style reasoning.
+Fellowship Academy
+Advanced reconstruction, osteotomy, revision surgery, multi-ligament knee, cartilage restoration, patellofemoral surgery,
+arthroplasty nuance, research controversies and consultant-level judgment.
+Consultant Masterclass
+Expert debates, emerging technologies, complex decision-making, surgical pearls, failure analysis, literature updates and
+innovation.
+Curriculum Matrix
+Level
+Depth
+Primary Objective
+Patient
+Plain language
+Understand symptoms, diagnosis and
+options
+Medical Student
+Foundation
+Anatomy, pathology and clinical basics
+MRCS
+Applied core surgery
+Examination, imaging and principles
+FRCS
+Specialist reasoning
+Evidence, operations and complications
+Fellowship
+Advanced practice
+Complex surgery and controversies
+Consultant
+Masterclass
+Innovation, debates and expert judgement
+
+KneeSchool Master Operations Handbook
+5. Encyclopaedia Taxonomy
+Anatomy
+Bones, joints, cartilage, menisci, cruciate ligaments, collateral ligaments, posteromedial structures, posterolateral corner,
+anterolateral structures, extensor mechanism, tendons, bursae, synovium, neurovascular anatomy and surgical anatomy.
+Biomechanics
+Load transmission, contact pressure, kinematics, meniscal hoop stress, ligament restraint patterns, patellofemoral
+tracking, rotational stability, gait, sporting biomechanics and injury mechanisms.
+Clinical Examination
+History, inspection, palpation, range of motion, effusion, gait, ligament tests, meniscal tests, patellofemoral tests,
+paediatric assessment and complex knee examination.
+Imaging
+X-ray, ultrasound, MRI, CT, alignment imaging, advanced imaging, AI in imaging, weight-bearing imaging and Magic
+Angle MRI.
+Conditions
+Ligament injury, meniscal disorders, cartilage disorders, patellofemoral disorders, osteoarthritis, paediatric conditions,
+inflammatory disorders, tendon disorders, tumours and infection.
+Surgery
+Arthroscopy, meniscal repair and transplantation, ACL, PCL, MCL, PLC, ALL, osteotomy, cartilage restoration, MPFL,
+trochleoplasty, partial knee replacement, total knee replacement and revision surgery.
+Rehabilitation
+Principles, condition-specific rehabilitation, post-operative protocols, return to sport, return to work, strength, mobility, load
+
+management and recovery.
+
+KneeSchool Master Operations Handbook
+6. Website Style Aesthetic and User Experience
+Design Aim
+The website should combine the authority of a medical school, the usability of a learning platform and the visual appeal of
+
+a premium technology brand.
+Colour Direction
+Primary deep forest green, warm ivory background, restrained brushed gold accents, muted teal for learning highlights,
+soft grey for structure.
+Homepage Principle
+The homepage must be search-first. A user should instantly understand that this is where to learn anything about the
+knee.
+Core Interactive Features
+Large central search bar, learning pathway cards, interactive knee model, normal-versus-pathology imaging sliders, quiz
+widgets, case challenges and progress tracking.
+Page Design
+Short sections, collapsible advanced content, summary boxes, key learning points, images, diagrams, videos, self-
+assessment and related links. Avoid long unbroken textbook-style prose.
+Mobile-First Requirement
+Most users will access pages on mobile devices. Every page must be readable in short vertical sections, with clear
+headings, large images and minimal visual clutter.
+
+KneeSchool Master Operations Handbook
+7. Content Production SOP
+Operating Principle
+The assistant’s role is knowledge management, source organisation, prompt execution, editorial review and evidence
+verification. The consultant’s role is high-value clinical review.
+Sequential Workflow
+Understand site structure; select topic; gather sources; organise repository; upload to AI workspace; create content brief;
+generate draft; run editorial checks; verify factual claims; prepare consultant review pack; complete SEO; publish.
+Topic Selection
+Prioritise foundational and high-search topics first: ACL, meniscus, osteoarthritis, knee pain, MRI, anatomy, examination
+and rehabilitation.
+Drafting Rule
+AI output is a first draft only. It must never be published without structured quality control.
+Version Control
+Every article must have a draft version, checked version, consultant-reviewed version and published version.
+Production Status Fields
+Field
+Purpose
+Topic ID
+Unique page number or taxonomy code
+Priority
+High, medium or low
+Source status
+Not started, partial, complete
+Draft status
+Not started, AI draft, edited
+QA status
+Assistant checked, evidence checked, consultant reviewed
+Publication status
+Ready, scheduled, published, refresh due
+
+KneeSchool Master Operations Handbook
+8. Assistant Training Manual
+First Week Training
+Read the sitemap, understand the learner levels, review the article template, learn the folder structure, practise source
+collection and produce three supervised sample drafts.
+Core Responsibilities
+Maintain source repository, track topics, upload sources, run prompts, format output, check references, highlight
+uncertainty, prepare review packs and update publication tracker.
+Boundaries
+The assistant should not independently change clinical conclusions, invent missing references, rewrite complex surgical
+nuance without review, or publish unreviewed material.
+Daily Checklist
+Open content tracker; confirm topic priority; gather sources; update repository metadata; create draft; check citations; log
+uncertainties; prepare review package.
+Escalation Triggers
+Conflicting evidence, unclear surgical recommendation, unsupported statistic, patient safety issue, commercial claim,
+drug or supplement claim, or any statement that could be construed as personal medical advice.
+
+KneeSchool Master Operations Handbook
+9. Source Acquisition SOP
+Source Categories
+Textbooks, review articles, landmark papers, guidelines, consensus statements, society resources, lecture slides, surgical
+
+technique notes, internal research, imaging examples and video assets.
+Priority Sources
+Own publications and presentations; BASK resources; ESSKA resources; ISAKOS resources; PubMed papers; Cochrane
+
+reviews; major textbook chapters; high-quality imaging teaching material.
+Source Metadata
+Every source must be logged with title, author, year, source type, topic, file location, relevance, quality level and notes.
+Copyright Rule
+Sources are for internal knowledge generation and review. Do not reproduce copyrighted text, figures or tables without
+permission. Use paraphrasing and original diagrams where possible.
+Minimum Source Standard
+Each substantial article should have at least one textbook or review source, several peer-reviewed papers where relevant
+
+and clear identification of any expert opinion.
+
+KneeSchool Master Operations Handbook
+10. AI Knowledge Base and Upload Workflow
+Topic-Specific Uploads
+Do not upload the entire library at once. Build focused knowledge bases such as ACL, Meniscus, Patellofemoral,
+Osteotomy or Arthroplasty.
+Upload Pack
+For each topic, upload the source summary, key papers, textbook excerpts where licensed, internal slides, relevant
+images and the article brief.
+Context Discipline
+The AI engine should be instructed to use only uploaded or specified sources for technical claims and to identify
+uncertainty rather than invent missing details.
+Output Control
+Request structured output aligned to KneeSchool templates. Ask for citations and source mapping.
+Post-Generation
+Export the draft into the article tracker folder and mark it as AI draft, not final copy.
+
+KneeSchool Master Operations Handbook
+11. AI Prompt Library
+Prompt Philosophy
+Prompts should specify role, topic, audience, source constraints, structure, tone, output format, citations, safety
+boundaries and commercial restrictions.
+Universal Article Prompt
+Use for standard encyclopaedia pages covering a topic across all learner levels.
+Patient Page Prompt
+Use for plain-language patient education. Avoid jargon, avoid diagnosis certainty, avoid direct personal medical advice
+and include when to seek clinical assessment.
+Trainee Prompt
+Use for MRCS and FRCS content. Emphasise applied anatomy, examination, imaging, differential diagnosis,
+management options, evidence and viva reasoning.
+Fellowship Prompt
+Use for advanced surgical topics. Include indications, contraindications, technique options, pitfalls, complications, failure
+analysis, rehabilitation and controversies.
+Case Prompt
+Use for imaging or clinical cases. Include presentation, images to insert, questions, model answer, teaching points and
+level.
+Quiz Prompt
+Use for MCQs, SBAs and viva questions with answer explanation and references.
+SEO Prompt
+Use after clinical approval to generate title, meta description, FAQ, schema suggestions and internal links.
+Reusable Prompt Examples
+Universal encyclopaedia page prompt:
+You are an expert knee surgeon, anatomy teacher and medical education writer. Generate a
+KneeSchool page on [TOPIC] for Patient, Medical Student, MRCS, FRCS and Fellowship levels.
+Use UK English. Use only the provided sources for factual claims. Include overview, key
+learning points, anatomy, biomechanics, clinical relevance, imaging, management,
+rehabilitation, controversies, references, FAQs and related page suggestions. Identify
+uncertainty rather than inventing facts.
+Patient page prompt:
+Explain [TOPIC] to an educated patient. Use clear language, avoid unnecessary jargon, explain
+
+symptoms, diagnosis, treatment options, recovery, red flags and when to seek specialist
+assessment. Do not provide individual medical advice. Include FAQs and links to related
+KneeSchool pages.
+FRCS viva prompt:
+Create an FRCS viva preparation page on [TOPIC]. Include applied anatomy, classification,
+examination, imaging, management algorithm, operative options, complications, evidence
+controversies, common examiner questions and model answers.
+
+KneeSchool Master Operations Handbook
+12. Editorial Standards Manual
+Language
+Use UK English. Write in clear, direct prose. Avoid exaggerated claims. Avoid unsupported marketing language.
+Medical Safety
+Patient-facing pages must explain that information is educational and not a substitute for professional assessment.
+Terminology
+Use full terms on first use and abbreviations thereafter. Keep terminology consistent across the site.
+Structure
+Use predictable headings and short paragraphs. Each page should have overview, key learning points, main content,
+FAQs, references and related pages.
+References
+Do not allow fabricated references. Every named study, guideline or statistic must be checked.
+Commercial Tone
+Commercial links must be contextual and educational, not intrusive. Education must remain primary.
+
+KneeSchool Master Operations Handbook
+13. Quality Assurance Manual
+QA Tiers
+Tier 1 AI generation; Tier 2 assistant editorial review; Tier 3 source verification; Tier 4 consultant review; Tier 5 publication
+
+review.
+Assistant QA
+Checks structure, spelling, headings, references, internal links, duplication, clarity and formatting.
+Evidence QA
+Checks every factual claim that could affect clinical understanding. Statistics, surgical indications and treatment claims
+require source support.
+Consultant QA
+Focuses on accuracy, nuance, omissions, controversies, clinical judgement, surgical pearls and safety.
+Publication QA
+Checks formatting, SEO, links, images, alt text, disclaimers, metadata and page status.
+Red Flags
+Unsupported statistics, overconfident claims, non-evidence-based supplement claims, incorrect anatomy, wrong
+examination interpretation, outdated surgical recommendations or fabricated citations.
+QA Checklist
+
+Correct page template used☐
+
+All learner levels present where required☐
+
+References checked☐
+
+No fabricated citations☐
+
+Clinical claims supported☐
+
+Commercial claims compliant☐
+
+Images anonymised☐
+
+SEO fields complete☐
+
+Consultant review completed☐
+
+KneeSchool Master Operations Handbook
+14. SEO and Internal Linking Manual
+SEO Principle
+Search visibility should be achieved through depth, clarity, topic authority and structured internal linking rather than
+keyword stuffing.
+Topic Clusters
+Build clusters around ACL, meniscus, arthritis, patellofemoral pain, knee replacement, MRI, rehabilitation and paediatric
+knee.
+Each Page Requires
+SEO title, meta description, slug, H1, H2 structure, FAQs, related articles, internal links and image alt text.
+Internal Links
+Every page should link upwards to its parent category, sideways to related topics and downwards to more advanced
+pages.
+Commercial Links
+Only use commercial links where clinically relevant. For example, an osteoarthritis page may link to consultation, imaging,
+
+rehabilitation and supplement education.
+Content Refresh
+High-value clinical pages should be reviewed every 6-12 months, or sooner if guidelines or major evidence changes.
+
+KneeSchool Master Operations Handbook
+15. Image and Video Standards
+Visual Purpose
+Images and video should clarify anatomy, pathology, imaging, surgical principles and rehabilitation. They should not be
+decorative filler.
+Image Categories
+Anatomy diagrams, MRI examples, X-ray examples, ultrasound images, arthroscopy images, rehabilitation photographs,
+surgical illustrations and infographics.
+Video Categories
+Patient explanations, clinical examination, imaging interpretation, surgical technique, rehabilitation exercise, expert
+interviews and conference teaching.
+Image Rights
+Use original images where possible. For external figures, obtain permission or create original redrawn educational
+diagrams.
+Alt Text
+Every image requires descriptive alt text for accessibility and SEO.
+Quality Control
+All clinical images must be anonymised and checked before upload.
+
+KneeSchool Master Operations Handbook
+16. Sportshealing Integration Strategy
+Principle
+Sportshealing should be presented as the clinical pathway for users who need expert assessment, imaging, diagnosis,
+injections, surgery or rehabilitation.
+Appropriate Placement
+Condition pages, imaging pages, treatment pages, rehabilitation pages and complex case pages.
+Call-To-Action Examples
+Need a specialist knee assessment? Learn about Sportshealing consultations. Need imaging? Learn about MRI and
+ultrasound pathways. Considering surgery? Learn about specialist knee surgical assessment.
+Avoid
+Aggressive sales language, excessive pop-ups, unsupported claims or implying all users need private care.
+Conversion Assets
+Consultation pages, imaging pathway, knee score test, patient questionnaires, outcome measures and educational
+downloads.
+
+KneeSchool Master Operations Handbook
+17. OmKneeHealth Integration Strategy
+Principle
+OmKneeHealth should be integrated as a supportive musculoskeletal health and recovery product pathway, not as a
+replacement for diagnosis or treatment.
+Appropriate Placement
+Nutrition, collagen, vitamin D, osteoarthritis, recovery, strength, women’s knee health, ageing knee and prevention pages.
+Compliance Standard
+Avoid disease treatment claims unless supported and legally compliant. Use cautious educational language.
+Product Education
+Explain ingredients, rationale, evidence level, cautions and who should seek medical advice before use.
+Commercial Format
+Use subtle product cards, related resources and education-led links rather than banner advertising.
+
+KneeSchool Master Operations Handbook
+18. Technology Stack and AI Tools
+Website Platform
+Choose a scalable CMS or hybrid stack that supports structured content, search, taxonomy, membership, video, quizzes,
+SEO and future AI functionality.
+Core Requirements
+Fast search, content tagging, user levels, reusable templates, quiz functionality, media library, SEO metadata, analytics
+and secure admin roles.
+AI Workflow Tools
+A document-aware AI engine, citation-aware outputs, prompt templates, topic knowledge bases, version control and
+human review workflow.
+Content Management
+Use a master tracker in spreadsheet or project management software with status fields for source collection, drafting, QA,
+
+consultant review, SEO and publication.
+Future AI Tutor
+Ask KneeSchool should answer questions at the user’s selected educational level, with citations and safe boundaries.
+
+KneeSchool Master Operations Handbook
+19. KPIs and Reporting
+Production KPIs
+Sources collected, topics briefed, drafts generated, drafts checked, consultant-reviewed pages, published pages and
+pages refreshed.
+Quality KPIs
+Reference accuracy, number of flagged uncertainties, consultant revision burden, factual error rate and publication
+readiness.
+SEO KPIs
+Indexed pages, impressions, clicks, ranking keywords, topic cluster growth, internal link coverage and organic traffic.
+Engagement KPIs
+Search usage, time on page, quiz completion, video views, return users, newsletter sign-ups and learning pathway
+progress.
+Commercial KPIs
+Sportshealing enquiries, knee score completions, imaging enquiries, consultation bookings, OmKneeHealth click-
+throughs and product conversions.
+Reporting Frequency
+Weekly operational update, monthly content report, quarterly strategy review.
+
+KneeSchool Master Operations Handbook
+20. 18-Month Delivery Roadmap
+Months 1-3 Foundation
+Complete sitemap, brand direction, templates, source repository, article tracker, assistant workflow and first 100 pages.
+Months 4-6 Core Encyclopaedia
+Build anatomy, biomechanics, examination, imaging and high-search conditions. Target 250 total pages.
+Months 7-9 Conditions Library
+Expand ligament, meniscus, cartilage, patellofemoral, arthritis, paediatric and women’s knee health sections.
+Months 10-12 Surgery Academy
+Build procedure pages, surgical decision-making, complications, rehabilitation and advanced trainee content. Target 600
+pages.
+Months 13-15 Research Academy
+Build landmark paper summaries, journal club, methodology, controversies and evidence updates.
+Months 16-18 Video and Advanced Features
+Launch case library, video academy, quizzes, AI tutor beta, membership or course structure. Target 1000+ pages.
+Roadmap Summary Table
+Phase
+Months
+Primary Deliverable
+Target
+Foundation
+1-3
+Architecture, templates,
+repository
+100 pages
+Core Build
+4-6
+Anatomy, biomechanics,
+imaging
+250 pages
+Conditions
+7-9
+Major pathology libraries
+400 pages
+Surgery
+10-12
+Surgery academy
+600 pages
+Research
+13-15
+Landmark papers and
+controversy hub
+800 pages
+Advanced
+16-18
+Video, cases, AI tutor
+1000+ pages
+
+KneeSchool Master Operations Handbook
+21. Appendices and Templates
+Appendix A
+Master article tracker template.
+Appendix B
+Source metadata sheet.
+Appendix C
+Article brief template.
+Appendix D
+QA checklist.
+Appendix E
+Consultant review form.
+Appendix F
+SEO checklist.
+Appendix G
+Publication checklist.
+Appendix H
+Prompt library examples.
+Appendix I
+Weekly report template.
+Appendix J
+Risk register.
+
+KneeSchool Master Operations Handbook
+Appendix A - Master Article Tracker Template
+Topic
+ID
+Topic
+Categ
+ory
+Level
+Priorit
+y
+Sourc
+es
+gather
+ed
+AI
+draft
+Assist
+ant QA
+Eviden
+ce QA
+Consu
+ltant
+review
+SEO
+compl
+ete
+Publis
+hed
+Refres
+h date
+
+KneeSchool Master Operations Handbook
+Appendix B - Source Metadata Template
+Source
+ID
+Topic
+Title
+Author
+Year
+Source
+type
+Journal/
+book/
+society
+File path
+Quality
+rating
+Key
+points
+Usage
+notes
+
+KneeSchool Master Operations Handbook
+Appendix C - Article Brief Template
+Topic
+Audience
+
+levels
+Purpose
+Required
+sections
+Key
+sources
+Must
+include
+Must
+avoid
+Commerc
+ial
+relevance
+Images
+required
+Reviewer
+notes
+
+KneeSchool Master Operations Handbook
+Appendix D - Consultant Review Form
+Article
+Clinical
+accuracy
+Missing
+concepts
+Incorrect
+statements
+Evidence
+concerns
+Surgical
+nuance
+Commerci
+al
+appropriat
+eness
+Approved
+Required
+changes
+
+KneeSchool Master Operations Handbook
+Appendix E - SEO Checklist
+SEO title
+Meta
+descripti
+on
+Slug
+H1
+H2s
+FAQs
+Internal
+links
+Alt text
+Schema
+Related
+articles
+CTA
+
+KneeSchool Master Operations Handbook
+Appendix F - Weekly Report Template
+Week
+commenci
+ng
+Sources
+added
+Drafts
+generated
+Pages
+checked
+Pages
+approved
+Pages
+published
+Risks
+Questions
+for
+consultant
+Next week
+priorities
+
+KneeSchool Master Operations Handbook
+Appendix G - Risk Register Template
+Risk
+Likelihood
+Impact
+Owner
+Mitigation
+Status

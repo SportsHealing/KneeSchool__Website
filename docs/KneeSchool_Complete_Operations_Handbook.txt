@@ -1,0 +1,67 @@
+KneeSchool Complete Operations Handbook
+Executive Summary
+KneeSchool is designed as the world's leading knee education ecosystem. It serves patients,
+students, trainees, fellows and consultants while supporting Sportshealing and OmKneeHealth.
+Vision and Mission
+Create the definitive online encyclopaedia and curriculum for knee health, pathology, imaging,
+surgery, rehabilitation and research.
+Target Audiences
+Patients; Medical Students; MRCS; FRCS; Fellows; Consultants; Allied Health Professionals.
+Full Sitemap Framework
+Home; Learn by Level; Patient Academy; Medical Student Academy; MRCS Academy; FRCS
+Academy; Fellowship Academy; Anatomy; Biomechanics; Imaging; Conditions; Surgery;
+Rehabilitation; Women's Knee Health; Children's Knee Health; Performance; Research; Cases;
+Question Bank; Video Library; Products and Services; Community; About.
+Educational Pathways
+Each topic should be explained progressively from Patient level through Fellowship level.
+Content Categories
+Anatomy, Biomechanics, Examination, Imaging, Conditions, Surgery, Rehabilitation, Research,
+Women's Health, Paediatric Knee, Performance and Prevention.
+Website Design Standards
+Search-first homepage, interactive anatomy, MRI sliders, progress tracking, mobile-first design,
+premium academic appearance.
+Source Acquisition SOP
+Collect textbooks, society resources, landmark papers, guidelines, imaging examples,
+presentations and internal teaching materials.
+Repository Structure
+Topic folders for ACL, PCL, MCL, PLC, Meniscus, Cartilage, Patellofemoral, Osteotomy,
+Arthroplasty, Imaging, Rehabilitation and Research.
+Assistant Training Manual
+Learn sitemap; understand audience levels; collect sources; organise repositories; upload to AI;
+generate briefs; run prompts; quality control; prepare consultant review.
+Prompt Engineering Library
+Use standardised prompts requiring UK English, evidence-based content, multiple educational
+levels, references, FAQs, quizzes and internal links.
+
+
+Article Template
+Overview; Patient Section; Medical Student Section; MRCS Section; FRCS Section; Fellowship
+Section; Key Learning Points; Imaging; Treatment; Rehabilitation; Controversies; References.
+Editorial Standards
+No unsupported claims. No fabricated references. Use UK spelling. Consistent heading hierarchy.
+Quality Control SOP
+Editorial review, source verification, consultant review, SEO review and publication approval.
+SEO Framework
+Keyword research, meta descriptions, FAQs, schema markup, internal links and topic clusters.
+Sportshealing Integration
+Contextual links to consultations, imaging, injections, surgery and rehabilitation.
+OmKneeHealth Integration
+Contextual links to supplements, braces and recovery products where appropriate.
+Research Academy
+Landmark papers, journal clubs, methodology, statistics and critical appraisal.
+Case Library
+Patient cases, MRCS cases, FRCS viva cases and fellowship-level challenges.
+Video Academy
+Anatomy, examination, imaging, rehabilitation and surgical videos.
+KPIs
+Monthly content targets, repository growth, publication rates, SEO performance and learner
+engagement.
+18-Month Roadmap
+Foundation; Encyclopaedia Build; Surgical Academy; Research Academy; Video Academy; AI
+Tutor.
+
+
+Appendix A - Core Topic Inventory
+ACL, PCL, MCL, POL, PLC, Meniscus, Cartilage, Patellofemoral Disorders, Osteoarthritis,
+Paediatric Knee, Osteotomy, Arthroplasty, Rehabilitation and Research.
+

@@ -336,3 +336,82 @@ class SectionConventions(unittest.TestCase):
             for group in s.get("declared") or []:
                 self.assertTrue(group["trigger"].endswith(":"), sid)
                 self.assertTrue(group["items"], sid)
+
+
+class MedicalSafetyStatement(unittest.TestCase):
+    """Chapter 12 of the Master Operations Handbook requires patient-facing
+    pages to say the content is educational and not a substitute for
+    professional assessment. The site answers it in the footer on every page.
+    The site has no build step, so the footer is copied into each file and
+    nothing but a check stops it drifting out of one of them. See finding 002."""
+
+    def setUp(self):
+        sys.path.insert(0, os.path.join(REPO, "tools"))
+        import check_site
+        self.check_site = check_site
+
+    def test_the_required_sentence_is_the_one_the_chrome_writes(self):
+        import site_chrome
+        self.assertIn(self.check_site.MEDICAL_SAFETY.lower(),
+                      site_chrome.footer("").lower())
+
+    def test_a_page_missing_the_statement_fails_the_site_check(self):
+        """Run the real checker over a copy of the site with the statement
+        removed from one page, and require a failure naming that page."""
+        page = os.path.join(REPO, "about", "standards.html")
+        with open(page, encoding="utf-8") as fh:
+            original = fh.read()
+        self.assertIn("replace assessment by a clinician", original)
+        damaged = original.replace(
+            "It does not give individual medical advice and it does not "
+            "replace assessment by a clinician.", "")
+        self.assertNotEqual(original, damaged)
+        try:
+            with open(page, "w", encoding="utf-8") as fh:
+                fh.write(damaged)
+            out = subprocess.run(
+                [sys.executable, os.path.join(REPO, "tools", "check_site.py")],
+                capture_output=True, text=True, cwd=REPO)
+            self.assertEqual(out.returncode, 1, out.stdout)
+            self.assertIn("about/standards.html: no educational and not a "
+                          "substitute statement", out.stdout)
+        finally:
+            with open(page, "w", encoding="utf-8") as fh:
+                fh.write(original)
+
+
+class TrackerColumns(unittest.TestCase):
+    """Appendix A of the Master Operations Handbook sets thirteen tracker
+    columns. Finding 002 found three of them missing. These hold the join."""
+
+    def setUp(self):
+        with open(os.path.join(ROOT, "config", "architecture",
+                               "tracker_seed.json")) as fh:
+            self.seed = json.load(fh)
+
+    def test_every_appendix_a_column_has_a_field(self):
+        wanted = ("page_id", "title", "category", "tiers_required", "priority",
+                  "source_status", "draft_status", "qa_status",
+                  "publication_status", "seo_complete", "refresh_date")
+        for row in self.seed:
+            for field in wanted:
+                self.assertIn(field, row, row["page_id"])
+
+    def test_every_section_has_a_taxonomy_category(self):
+        for row in self.seed:
+            self.assertTrue(row["category"], row["page_id"])
+
+    def test_the_category_map_covers_every_section_in_the_outline(self):
+        with open(os.path.join(ROOT, "config", "architecture",
+                               "outline_1_to_15.json")) as fh:
+            outline = json.load(fh)
+        sections = set(str(p["section"]["id"]) for p in outline["pages"])
+        self.assertTrue(sections <= set(architecture.TAXONOMY_CATEGORY))
+
+    def test_sections_two_to_eight_match_the_handbook_taxonomy(self):
+        """Chapter 5 of the handbook names these seven categories; the
+        architecture's own section names are the same seven words."""
+        self.assertEqual(
+            [architecture.TAXONOMY_CATEGORY[str(n)] for n in range(2, 9)],
+            ["Anatomy", "Biomechanics", "Clinical Examination", "Imaging",
+             "Conditions", "Surgery", "Rehabilitation"])

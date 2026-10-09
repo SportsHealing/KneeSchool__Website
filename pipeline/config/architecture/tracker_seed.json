@@ -5,6 +5,7 @@
     "section": "0",
     "chapter": "0.1",
     "page_type": "junior_explainer",
+    "category": "Junior Academy",
     "tiers_required": [
       "junior"
     ],
@@ -14,6 +15,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -24,6 +27,7 @@
     "section": "0",
     "chapter": "0.3",
     "page_type": "careers",
+    "category": "Junior Academy",
     "tiers_required": [
       "junior"
     ],
@@ -33,6 +37,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -43,6 +49,7 @@
     "section": "1",
     "chapter": "1.1",
     "page_type": "foundations",
+    "category": "Foundations",
     "tiers_required": [
       "junior",
       "patient",
@@ -54,6 +61,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -64,6 +73,7 @@
     "section": "1",
     "chapter": "1.1",
     "page_type": "foundations",
+    "category": "Foundations",
     "tiers_required": [
       "junior",
       "patient",
@@ -75,6 +85,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -85,6 +97,7 @@
     "section": "1",
     "chapter": "1.1",
     "page_type": "foundations",
+    "category": "Foundations",
     "tiers_required": [
       "junior",
       "patient",
@@ -96,6 +109,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -106,6 +121,7 @@
     "section": "1",
     "chapter": "1.1",
     "page_type": "foundations",
+    "category": "Foundations",
     "tiers_required": [
       "junior",
       "patient",
@@ -117,6 +133,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -127,6 +145,7 @@
     "section": "1",
     "chapter": "1.1",
     "page_type": "foundations",
+    "category": "Foundations",
     "tiers_required": [
       "junior",
       "patient",
@@ -138,6 +157,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -148,6 +169,7 @@
     "section": "1",
     "chapter": "1.1",
     "page_type": "foundations",
+    "category": "Foundations",
     "tiers_required": [
       "junior",
       "patient",
@@ -159,6 +181,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -169,6 +193,7 @@
     "section": "1",
     "chapter": "1.2",
     "page_type": "anatomy",
+    "category": "Foundations",
     "tiers_required": [
       "junior",
       "patient",
@@ -180,6 +205,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -190,6 +217,7 @@
     "section": "1",
     "chapter": "1.2",
     "page_type": "anatomy",
+    "category": "Foundations",
     "tiers_required": [
       "junior",
       "patient",
@@ -201,6 +229,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -211,6 +241,7 @@
     "section": "1",
     "chapter": "1.2",
     "page_type": "anatomy",
+    "category": "Foundations",
     "tiers_required": [
       "junior",
       "patient",
@@ -222,6 +253,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -232,6 +265,7 @@
     "section": "1",
     "chapter": "1.2",
     "page_type": "anatomy",
+    "category": "Foundations",
     "tiers_required": [
       "junior",
       "patient",
@@ -243,6 +277,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -253,6 +289,7 @@
     "section": "1",
     "chapter": "1.2",
     "page_type": "anatomy",
+    "category": "Foundations",
     "tiers_required": [
       "junior",
       "patient",
@@ -264,6 +301,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -274,6 +313,7 @@
     "section": "1",
     "chapter": "1.2",
     "page_type": "anatomy",
+    "category": "Foundations",
     "tiers_required": [
       "junior",
       "patient",
@@ -285,6 +325,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -295,6 +337,7 @@
     "section": "1",
     "chapter": "1.2",
     "page_type": "anatomy",
+    "category": "Foundations",
     "tiers_required": [
       "junior",
       "patient",
@@ -306,6 +349,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -316,6 +361,7 @@
     "section": "1",
     "chapter": "1.2",
     "page_type": "anatomy",
+    "category": "Foundations",
     "tiers_required": [
       "junior",
       "patient",
@@ -327,6 +373,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -337,6 +385,7 @@
     "section": "1",
     "chapter": "1.2",
     "page_type": "anatomy",
+    "category": "Foundations",
     "tiers_required": [
       "junior",
       "patient",
@@ -348,6 +397,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -358,6 +409,7 @@
     "section": "1",
     "chapter": "1.2",
     "page_type": "anatomy",
+    "category": "Foundations",
     "tiers_required": [
       "junior",
       "patient",
@@ -369,6 +421,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -379,6 +433,7 @@
     "section": "2",
     "chapter": "2.5",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -390,6 +445,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -400,6 +457,7 @@
     "section": "2",
     "chapter": "2.5",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -411,6 +469,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -421,6 +481,7 @@
     "section": "2",
     "chapter": "2.5",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -432,6 +493,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -442,6 +505,7 @@
     "section": "2",
     "chapter": "2.5",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -453,6 +517,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -463,6 +529,7 @@
     "section": "2",
     "chapter": "2.5",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -474,6 +541,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -484,6 +553,7 @@
     "section": "2",
     "chapter": "2.5",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -496,6 +566,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -506,6 +578,7 @@
     "section": "2",
     "chapter": "2.5",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -518,6 +591,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -528,6 +603,7 @@
     "section": "2",
     "chapter": "2.6",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -539,6 +615,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -549,6 +627,7 @@
     "section": "2",
     "chapter": "2.6",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -561,6 +640,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -571,6 +652,7 @@
     "section": "2",
     "chapter": "2.6",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -582,6 +664,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -592,6 +676,7 @@
     "section": "2",
     "chapter": "2.6",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -604,6 +689,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -614,6 +701,7 @@
     "section": "2",
     "chapter": "2.6",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -625,6 +713,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -635,6 +725,7 @@
     "section": "2",
     "chapter": "2.6",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -647,6 +738,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -657,6 +750,7 @@
     "section": "2",
     "chapter": "2.7",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -668,6 +762,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -678,6 +774,7 @@
     "section": "2",
     "chapter": "2.7",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -689,6 +786,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -699,6 +798,7 @@
     "section": "2",
     "chapter": "2.7",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -710,6 +810,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -720,6 +822,7 @@
     "section": "2",
     "chapter": "2.7",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -731,6 +834,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -741,6 +846,7 @@
     "section": "2",
     "chapter": "2.7",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -752,6 +858,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -762,6 +870,7 @@
     "section": "2",
     "chapter": "2.7",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -774,6 +883,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -784,6 +895,7 @@
     "section": "2",
     "chapter": "2.7",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -796,6 +908,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -806,6 +920,7 @@
     "section": "2",
     "chapter": "2.7",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -817,6 +932,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -827,6 +944,7 @@
     "section": "2",
     "chapter": "2.7",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -838,6 +956,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -848,6 +968,7 @@
     "section": "2",
     "chapter": "2.7",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -859,6 +980,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -869,6 +992,7 @@
     "section": "2",
     "chapter": "2.7",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -880,6 +1004,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -890,6 +1016,7 @@
     "section": "2",
     "chapter": "2.7",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -902,6 +1029,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -912,6 +1041,7 @@
     "section": "2",
     "chapter": "2.9",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -923,6 +1053,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -933,6 +1065,7 @@
     "section": "2",
     "chapter": "2.9",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -944,6 +1077,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -954,6 +1089,7 @@
     "section": "2",
     "chapter": "2.9",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -965,6 +1101,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -975,6 +1113,7 @@
     "section": "2",
     "chapter": "2.9",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -987,6 +1126,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -997,6 +1138,7 @@
     "section": "2",
     "chapter": "2.9",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -1008,6 +1150,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -1018,6 +1162,7 @@
     "section": "2",
     "chapter": "2.9",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -1029,6 +1174,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -1039,6 +1186,7 @@
     "section": "2",
     "chapter": "2.9",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -1051,6 +1199,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -1061,6 +1211,7 @@
     "section": "2",
     "chapter": "2.12",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -1072,6 +1223,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -1082,6 +1235,7 @@
     "section": "2",
     "chapter": "2.12",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -1093,6 +1247,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -1103,6 +1259,7 @@
     "section": "2",
     "chapter": "2.12",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -1115,6 +1272,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -1125,6 +1284,7 @@
     "section": "2",
     "chapter": "2.12",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -1136,6 +1296,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -1146,6 +1308,7 @@
     "section": "2",
     "chapter": "2.12",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -1157,6 +1320,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -1167,6 +1332,7 @@
     "section": "2",
     "chapter": "2.12",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -1179,6 +1345,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -1189,6 +1357,7 @@
     "section": "3",
     "chapter": "3.6",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -1200,6 +1369,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -1210,6 +1381,7 @@
     "section": "3",
     "chapter": "3.6",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -1221,6 +1393,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -1231,6 +1405,7 @@
     "section": "3",
     "chapter": "3.6",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -1242,6 +1417,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -1252,6 +1429,7 @@
     "section": "3",
     "chapter": "3.6",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -1263,6 +1441,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -1273,6 +1453,7 @@
     "section": "3",
     "chapter": "3.6",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -1284,6 +1465,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -1294,6 +1477,7 @@
     "section": "3",
     "chapter": "3.6",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -1305,6 +1489,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -1315,6 +1501,7 @@
     "section": "3",
     "chapter": "3.6",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -1326,6 +1513,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -1336,6 +1525,7 @@
     "section": "3",
     "chapter": "3.6",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -1347,6 +1537,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -1357,6 +1549,7 @@
     "section": "3",
     "chapter": "3.6",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -1368,6 +1561,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -1378,6 +1573,7 @@
     "section": "3",
     "chapter": "3.6",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -1389,6 +1585,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -1399,6 +1597,7 @@
     "section": "3",
     "chapter": "3.6",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -1410,6 +1609,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -1420,6 +1621,7 @@
     "section": "3",
     "chapter": "3.6",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -1431,6 +1633,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -1441,6 +1645,7 @@
     "section": "3",
     "chapter": "3.6",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -1453,6 +1658,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -1463,6 +1670,7 @@
     "section": "3",
     "chapter": "3.6",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -1475,6 +1683,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -1485,6 +1695,7 @@
     "section": "3",
     "chapter": "3.7",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -1496,6 +1707,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -1506,6 +1719,7 @@
     "section": "3",
     "chapter": "3.7",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -1517,6 +1731,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -1527,6 +1743,7 @@
     "section": "3",
     "chapter": "3.7",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -1538,6 +1755,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -1548,6 +1767,7 @@
     "section": "3",
     "chapter": "3.7",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -1559,6 +1779,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -1569,6 +1791,7 @@
     "section": "3",
     "chapter": "3.7",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -1580,6 +1803,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -1590,6 +1815,7 @@
     "section": "3",
     "chapter": "3.7",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -1601,6 +1827,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -1611,6 +1839,7 @@
     "section": "3",
     "chapter": "3.7",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -1622,6 +1851,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -1632,6 +1863,7 @@
     "section": "3",
     "chapter": "3.7",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -1643,6 +1875,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -1653,6 +1887,7 @@
     "section": "3",
     "chapter": "3.7",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -1664,6 +1899,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -1674,6 +1911,7 @@
     "section": "3",
     "chapter": "3.7",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -1685,6 +1923,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -1695,6 +1935,7 @@
     "section": "3",
     "chapter": "3.7",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -1706,6 +1947,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -1716,6 +1959,7 @@
     "section": "3",
     "chapter": "3.7",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -1727,6 +1971,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -1737,6 +1983,7 @@
     "section": "3",
     "chapter": "3.7",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -1748,6 +1995,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -1758,6 +2007,7 @@
     "section": "3",
     "chapter": "3.7",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -1769,6 +2019,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -1779,6 +2031,7 @@
     "section": "3",
     "chapter": "3.7",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -1790,6 +2043,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -1800,6 +2055,7 @@
     "section": "3",
     "chapter": "3.7",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -1812,6 +2068,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -1822,6 +2080,7 @@
     "section": "3",
     "chapter": "3.7",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -1834,6 +2093,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -1844,6 +2105,7 @@
     "section": "3",
     "chapter": "3.7",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -1856,6 +2118,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -1866,6 +2130,7 @@
     "section": "3",
     "chapter": "3.7",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -1878,6 +2143,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -1888,6 +2155,7 @@
     "section": "3",
     "chapter": "3.7",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -1900,6 +2168,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -1910,6 +2180,7 @@
     "section": "0",
     "chapter": "0.1",
     "page_type": "junior_explainer",
+    "category": "Junior Academy",
     "tiers_required": [
       "junior"
     ],
@@ -1919,6 +2190,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -1929,6 +2202,7 @@
     "section": "0",
     "chapter": "0.1",
     "page_type": "junior_explainer",
+    "category": "Junior Academy",
     "tiers_required": [
       "junior"
     ],
@@ -1938,6 +2212,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -1948,6 +2224,7 @@
     "section": "0",
     "chapter": "0.1",
     "page_type": "junior_explainer",
+    "category": "Junior Academy",
     "tiers_required": [
       "junior"
     ],
@@ -1957,6 +2234,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -1967,6 +2246,7 @@
     "section": "0",
     "chapter": "0.1",
     "page_type": "junior_explainer",
+    "category": "Junior Academy",
     "tiers_required": [
       "junior"
     ],
@@ -1976,6 +2256,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -1986,6 +2268,7 @@
     "section": "0",
     "chapter": "0.1",
     "page_type": "teacher_resource",
+    "category": "Junior Academy",
     "tiers_required": [
       "junior"
     ],
@@ -1995,6 +2278,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2005,6 +2290,7 @@
     "section": "0",
     "chapter": "0.2",
     "page_type": "junior_explainer",
+    "category": "Junior Academy",
     "tiers_required": [
       "junior"
     ],
@@ -2014,6 +2300,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2024,6 +2312,7 @@
     "section": "0",
     "chapter": "0.2",
     "page_type": "junior_explainer",
+    "category": "Junior Academy",
     "tiers_required": [
       "junior"
     ],
@@ -2033,6 +2322,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2043,6 +2334,7 @@
     "section": "0",
     "chapter": "0.2",
     "page_type": "junior_explainer",
+    "category": "Junior Academy",
     "tiers_required": [
       "junior"
     ],
@@ -2052,6 +2344,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2062,6 +2356,7 @@
     "section": "0",
     "chapter": "0.2",
     "page_type": "junior_explainer",
+    "category": "Junior Academy",
     "tiers_required": [
       "junior"
     ],
@@ -2071,6 +2366,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2081,6 +2378,7 @@
     "section": "0",
     "chapter": "0.2",
     "page_type": "junior_explainer",
+    "category": "Junior Academy",
     "tiers_required": [
       "junior"
     ],
@@ -2090,6 +2388,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2100,6 +2400,7 @@
     "section": "0",
     "chapter": "0.2",
     "page_type": "junior_explainer",
+    "category": "Junior Academy",
     "tiers_required": [
       "junior"
     ],
@@ -2109,6 +2410,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2119,6 +2422,7 @@
     "section": "0",
     "chapter": "0.3",
     "page_type": "careers",
+    "category": "Junior Academy",
     "tiers_required": [
       "junior"
     ],
@@ -2128,6 +2432,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2138,6 +2444,7 @@
     "section": "0",
     "chapter": "0.3",
     "page_type": "careers",
+    "category": "Junior Academy",
     "tiers_required": [
       "junior"
     ],
@@ -2147,6 +2454,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2157,6 +2466,7 @@
     "section": "0",
     "chapter": "0.3",
     "page_type": "careers",
+    "category": "Junior Academy",
     "tiers_required": [
       "junior"
     ],
@@ -2166,6 +2476,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2176,6 +2488,7 @@
     "section": "0",
     "chapter": "0.3",
     "page_type": "careers",
+    "category": "Junior Academy",
     "tiers_required": [
       "junior"
     ],
@@ -2185,6 +2498,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2195,6 +2510,7 @@
     "section": "0",
     "chapter": "0.4",
     "page_type": "study_skills",
+    "category": "Junior Academy",
     "tiers_required": [
       "junior"
     ],
@@ -2204,6 +2520,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2214,6 +2532,7 @@
     "section": "0",
     "chapter": "0.4",
     "page_type": "study_skills",
+    "category": "Junior Academy",
     "tiers_required": [
       "junior"
     ],
@@ -2223,6 +2542,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2233,6 +2554,7 @@
     "section": "0",
     "chapter": "0.4",
     "page_type": "study_skills",
+    "category": "Junior Academy",
     "tiers_required": [
       "junior"
     ],
@@ -2242,6 +2564,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2252,6 +2576,7 @@
     "section": "0",
     "chapter": "0.4",
     "page_type": "study_skills",
+    "category": "Junior Academy",
     "tiers_required": [
       "junior"
     ],
@@ -2261,6 +2586,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2271,6 +2598,7 @@
     "section": "0",
     "chapter": "0.4",
     "page_type": "study_skills",
+    "category": "Junior Academy",
     "tiers_required": [
       "junior"
     ],
@@ -2280,6 +2608,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2290,6 +2620,7 @@
     "section": "0",
     "chapter": "0.4",
     "page_type": "study_skills",
+    "category": "Junior Academy",
     "tiers_required": [
       "junior"
     ],
@@ -2299,6 +2630,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2309,6 +2642,7 @@
     "section": "0",
     "chapter": "0.5",
     "page_type": "study_skills",
+    "category": "Junior Academy",
     "tiers_required": [
       "junior"
     ],
@@ -2318,6 +2652,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2328,6 +2664,7 @@
     "section": "0",
     "chapter": "0.5",
     "page_type": "study_skills",
+    "category": "Junior Academy",
     "tiers_required": [
       "junior"
     ],
@@ -2337,6 +2674,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2347,6 +2686,7 @@
     "section": "0",
     "chapter": "0.5",
     "page_type": "study_skills",
+    "category": "Junior Academy",
     "tiers_required": [
       "junior"
     ],
@@ -2356,6 +2696,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2366,6 +2708,7 @@
     "section": "0",
     "chapter": "0.5",
     "page_type": "study_skills",
+    "category": "Junior Academy",
     "tiers_required": [
       "junior"
     ],
@@ -2375,6 +2718,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2385,6 +2730,7 @@
     "section": "0",
     "chapter": "0.5",
     "page_type": "study_skills",
+    "category": "Junior Academy",
     "tiers_required": [
       "junior"
     ],
@@ -2394,6 +2740,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2404,6 +2752,7 @@
     "section": "2",
     "chapter": "2.1",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -2415,6 +2764,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2425,6 +2776,7 @@
     "section": "2",
     "chapter": "2.1",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -2436,6 +2788,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2446,6 +2800,7 @@
     "section": "2",
     "chapter": "2.1",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -2457,6 +2812,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2467,6 +2824,7 @@
     "section": "2",
     "chapter": "2.1",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -2478,6 +2836,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2488,6 +2848,7 @@
     "section": "2",
     "chapter": "2.1",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -2499,6 +2860,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2509,6 +2872,7 @@
     "section": "2",
     "chapter": "2.1",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -2520,6 +2884,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2530,6 +2896,7 @@
     "section": "2",
     "chapter": "2.1",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -2542,6 +2909,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2552,6 +2921,7 @@
     "section": "2",
     "chapter": "2.1",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -2563,6 +2933,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2573,6 +2945,7 @@
     "section": "2",
     "chapter": "2.1",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -2584,6 +2957,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2594,6 +2969,7 @@
     "section": "2",
     "chapter": "2.2",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -2605,6 +2981,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2615,6 +2993,7 @@
     "section": "2",
     "chapter": "2.2",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -2626,6 +3005,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2636,6 +3017,7 @@
     "section": "2",
     "chapter": "2.2",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -2647,6 +3029,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2657,6 +3041,7 @@
     "section": "2",
     "chapter": "2.2",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -2668,6 +3053,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2678,6 +3065,7 @@
     "section": "2",
     "chapter": "2.2",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -2689,6 +3077,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2699,6 +3089,7 @@
     "section": "2",
     "chapter": "2.2",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -2711,6 +3102,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2721,6 +3114,7 @@
     "section": "2",
     "chapter": "2.4",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -2732,6 +3126,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2742,6 +3138,7 @@
     "section": "2",
     "chapter": "2.4",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -2753,6 +3150,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2763,6 +3162,7 @@
     "section": "2",
     "chapter": "2.4",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -2774,6 +3174,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2784,6 +3186,7 @@
     "section": "2",
     "chapter": "2.4",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -2795,6 +3198,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2805,6 +3210,7 @@
     "section": "2",
     "chapter": "2.4",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -2817,6 +3223,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2827,6 +3235,7 @@
     "section": "2",
     "chapter": "2.8",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -2838,6 +3247,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2848,6 +3259,7 @@
     "section": "2",
     "chapter": "2.8",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -2859,6 +3271,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2869,6 +3283,7 @@
     "section": "2",
     "chapter": "2.8",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -2880,6 +3295,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2890,6 +3307,7 @@
     "section": "2",
     "chapter": "2.8",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -2901,6 +3319,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2911,6 +3331,7 @@
     "section": "2",
     "chapter": "2.8",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -2922,6 +3343,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2932,6 +3355,7 @@
     "section": "2",
     "chapter": "2.8",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -2944,6 +3368,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2954,6 +3380,7 @@
     "section": "2",
     "chapter": "2.10",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -2965,6 +3392,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2975,6 +3404,7 @@
     "section": "2",
     "chapter": "2.10",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -2986,6 +3416,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -2996,6 +3428,7 @@
     "section": "2",
     "chapter": "2.10",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -3007,6 +3440,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -3017,6 +3452,7 @@
     "section": "2",
     "chapter": "2.10",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -3029,6 +3465,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -3039,6 +3477,7 @@
     "section": "2",
     "chapter": "2.10",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -3050,6 +3489,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -3060,6 +3501,7 @@
     "section": "2",
     "chapter": "2.10",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -3071,6 +3513,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -3081,6 +3525,7 @@
     "section": "2",
     "chapter": "2.10",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -3093,6 +3538,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -3103,6 +3550,7 @@
     "section": "2",
     "chapter": "2.11",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -3114,6 +3562,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -3124,6 +3574,7 @@
     "section": "2",
     "chapter": "2.11",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -3136,6 +3587,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -3146,6 +3599,7 @@
     "section": "2",
     "chapter": "2.11",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -3158,6 +3612,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -3168,6 +3624,7 @@
     "section": "2",
     "chapter": "2.11",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -3179,6 +3636,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -3189,6 +3648,7 @@
     "section": "2",
     "chapter": "2.11",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -3201,6 +3661,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -3211,6 +3673,7 @@
     "section": "3",
     "chapter": "3.1",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "junior",
       "patient",
@@ -3223,6 +3686,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -3233,6 +3698,7 @@
     "section": "3",
     "chapter": "3.1",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "junior",
       "patient",
@@ -3245,6 +3711,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -3255,6 +3723,7 @@
     "section": "3",
     "chapter": "3.1",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "junior",
       "patient",
@@ -3267,6 +3736,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -3277,6 +3748,7 @@
     "section": "3",
     "chapter": "3.1",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "junior",
       "patient",
@@ -3289,6 +3761,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -3299,6 +3773,7 @@
     "section": "3",
     "chapter": "3.1",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "junior",
       "patient",
@@ -3311,6 +3786,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -3321,6 +3798,7 @@
     "section": "3",
     "chapter": "3.1",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -3332,6 +3810,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -3342,6 +3822,7 @@
     "section": "3",
     "chapter": "3.1",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "frcs",
       "fellowship",
@@ -3353,6 +3834,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -3363,6 +3846,7 @@
     "section": "3",
     "chapter": "3.1",
     "page_type": "landmark_papers",
+    "category": "Biomechanics",
     "tiers_required": [
       "frcs",
       "fellowship",
@@ -3374,6 +3858,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -3384,6 +3870,7 @@
     "section": "3",
     "chapter": "3.2",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -3395,6 +3882,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -3405,6 +3894,7 @@
     "section": "3",
     "chapter": "3.2",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -3416,6 +3906,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -3426,6 +3918,7 @@
     "section": "3",
     "chapter": "3.2",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -3437,6 +3930,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -3447,6 +3942,7 @@
     "section": "3",
     "chapter": "3.2",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -3458,6 +3954,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -3468,6 +3966,7 @@
     "section": "3",
     "chapter": "3.2",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -3479,6 +3978,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -3489,6 +3990,7 @@
     "section": "3",
     "chapter": "3.2",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -3500,6 +4002,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -3510,6 +4014,7 @@
     "section": "3",
     "chapter": "3.2",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -3521,6 +4026,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -3531,6 +4038,7 @@
     "section": "3",
     "chapter": "3.2",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -3542,6 +4050,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -3552,6 +4062,7 @@
     "section": "3",
     "chapter": "3.2",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -3563,6 +4074,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -3573,6 +4086,7 @@
     "section": "3",
     "chapter": "3.2",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -3584,6 +4098,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -3594,6 +4110,7 @@
     "section": "3",
     "chapter": "3.3",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -3605,6 +4122,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -3615,6 +4134,7 @@
     "section": "3",
     "chapter": "3.3",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -3626,6 +4146,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -3636,6 +4158,7 @@
     "section": "3",
     "chapter": "3.3",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -3647,6 +4170,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -3657,6 +4182,7 @@
     "section": "3",
     "chapter": "3.3",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -3668,6 +4194,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -3678,6 +4206,7 @@
     "section": "3",
     "chapter": "3.3",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -3689,6 +4218,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -3699,6 +4230,7 @@
     "section": "3",
     "chapter": "3.3",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -3710,6 +4242,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -3720,6 +4254,7 @@
     "section": "3",
     "chapter": "3.3",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -3731,6 +4266,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -3741,6 +4278,7 @@
     "section": "3",
     "chapter": "3.3",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -3752,6 +4290,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -3762,6 +4302,7 @@
     "section": "3",
     "chapter": "3.3",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -3773,6 +4314,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -3783,6 +4326,7 @@
     "section": "3",
     "chapter": "3.3",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -3794,6 +4338,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -3804,6 +4350,7 @@
     "section": "3",
     "chapter": "3.3",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -3815,6 +4362,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -3825,6 +4374,7 @@
     "section": "3",
     "chapter": "3.3",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -3836,6 +4386,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -3846,6 +4398,7 @@
     "section": "3",
     "chapter": "3.3",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -3857,6 +4410,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -3867,6 +4422,7 @@
     "section": "3",
     "chapter": "3.3",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -3878,6 +4434,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -3888,6 +4446,7 @@
     "section": "3",
     "chapter": "3.4",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -3899,6 +4458,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -3909,6 +4470,7 @@
     "section": "3",
     "chapter": "3.4",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -3920,6 +4482,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -3930,6 +4494,7 @@
     "section": "3",
     "chapter": "3.4",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -3941,6 +4506,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -3951,6 +4518,7 @@
     "section": "3",
     "chapter": "3.4",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -3962,6 +4530,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -3972,6 +4542,7 @@
     "section": "3",
     "chapter": "3.4",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -3983,6 +4554,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -3993,6 +4566,7 @@
     "section": "3",
     "chapter": "3.4",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4004,6 +4578,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -4014,6 +4590,7 @@
     "section": "3",
     "chapter": "3.4",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4025,6 +4602,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -4035,6 +4614,7 @@
     "section": "3",
     "chapter": "3.4",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4046,6 +4626,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -4056,6 +4638,7 @@
     "section": "3",
     "chapter": "3.4",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4067,6 +4650,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -4077,6 +4662,7 @@
     "section": "3",
     "chapter": "3.4",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4088,6 +4674,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -4098,6 +4686,7 @@
     "section": "3",
     "chapter": "3.5",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4109,6 +4698,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -4119,6 +4710,7 @@
     "section": "3",
     "chapter": "3.5",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4130,6 +4722,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -4140,6 +4734,7 @@
     "section": "3",
     "chapter": "3.5",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4151,6 +4746,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -4161,6 +4758,7 @@
     "section": "3",
     "chapter": "3.5",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4172,6 +4770,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -4182,6 +4782,7 @@
     "section": "3",
     "chapter": "3.5",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4193,6 +4794,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -4203,6 +4806,7 @@
     "section": "3",
     "chapter": "3.5",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4214,6 +4818,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -4224,6 +4830,7 @@
     "section": "3",
     "chapter": "3.5",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4235,6 +4842,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -4245,6 +4854,7 @@
     "section": "3",
     "chapter": "3.5",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4256,6 +4866,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -4266,6 +4878,7 @@
     "section": "3",
     "chapter": "3.5",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4277,6 +4890,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -4287,6 +4902,7 @@
     "section": "3",
     "chapter": "3.5",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4298,6 +4914,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -4308,6 +4926,7 @@
     "section": "3",
     "chapter": "3.8",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4319,6 +4938,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -4329,6 +4950,7 @@
     "section": "3",
     "chapter": "3.8",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4340,6 +4962,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -4350,6 +4974,7 @@
     "section": "3",
     "chapter": "3.8",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4361,6 +4986,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -4371,6 +4998,7 @@
     "section": "3",
     "chapter": "3.8",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4382,6 +5010,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -4392,6 +5022,7 @@
     "section": "3",
     "chapter": "3.8",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4403,6 +5034,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -4413,6 +5046,7 @@
     "section": "3",
     "chapter": "3.8",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4424,6 +5058,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -4434,6 +5070,7 @@
     "section": "3",
     "chapter": "3.8",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4445,6 +5082,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -4455,6 +5094,7 @@
     "section": "3",
     "chapter": "3.8",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4467,6 +5107,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -4477,6 +5119,7 @@
     "section": "3",
     "chapter": "3.8",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4489,6 +5132,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -4499,6 +5144,7 @@
     "section": "3",
     "chapter": "3.8",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4511,6 +5157,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -4521,6 +5169,7 @@
     "section": "3",
     "chapter": "3.9",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4532,6 +5181,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -4542,6 +5193,7 @@
     "section": "3",
     "chapter": "3.9",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4553,6 +5205,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -4563,6 +5217,7 @@
     "section": "3",
     "chapter": "3.9",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4574,6 +5229,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -4584,6 +5241,7 @@
     "section": "3",
     "chapter": "3.9",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4595,6 +5253,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -4605,6 +5265,7 @@
     "section": "3",
     "chapter": "3.9",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4616,6 +5277,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -4626,6 +5289,7 @@
     "section": "3",
     "chapter": "3.9",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4637,6 +5301,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -4647,6 +5313,7 @@
     "section": "3",
     "chapter": "3.9",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4658,6 +5325,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -4668,6 +5337,7 @@
     "section": "3",
     "chapter": "3.9",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4680,6 +5350,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -4690,6 +5362,7 @@
     "section": "3",
     "chapter": "3.9",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4701,6 +5374,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -4711,6 +5386,7 @@
     "section": "3",
     "chapter": "3.9",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4722,6 +5398,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -4732,6 +5410,7 @@
     "section": "3",
     "chapter": "3.10",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4743,6 +5422,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -4753,6 +5434,7 @@
     "section": "3",
     "chapter": "3.10",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4764,6 +5446,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -4774,6 +5458,7 @@
     "section": "3",
     "chapter": "3.10",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4785,6 +5470,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -4795,6 +5482,7 @@
     "section": "3",
     "chapter": "3.10",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4806,6 +5494,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -4816,6 +5506,7 @@
     "section": "3",
     "chapter": "3.10",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4827,6 +5518,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -4837,6 +5530,7 @@
     "section": "3",
     "chapter": "3.10",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4848,6 +5542,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -4858,6 +5554,7 @@
     "section": "3",
     "chapter": "3.10",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4869,6 +5566,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -4879,6 +5578,7 @@
     "section": "3",
     "chapter": "3.10",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4891,6 +5591,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -4901,6 +5603,7 @@
     "section": "3",
     "chapter": "3.10",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4912,6 +5615,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -4922,6 +5627,7 @@
     "section": "3",
     "chapter": "3.11",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4933,6 +5639,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -4943,6 +5651,7 @@
     "section": "3",
     "chapter": "3.11",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4955,6 +5664,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -4965,6 +5676,7 @@
     "section": "3",
     "chapter": "3.11",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4977,6 +5689,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -4987,6 +5701,7 @@
     "section": "3",
     "chapter": "3.11",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -4998,6 +5713,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -5008,6 +5725,7 @@
     "section": "3",
     "chapter": "3.11",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -5019,6 +5737,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -5029,6 +5749,7 @@
     "section": "3",
     "chapter": "3.11",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -5040,6 +5761,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -5050,6 +5773,7 @@
     "section": "3",
     "chapter": "3.11",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -5062,6 +5786,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -5072,6 +5798,7 @@
     "section": "3",
     "chapter": "3.11",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -5084,6 +5811,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -5094,6 +5823,7 @@
     "section": "3",
     "chapter": "3.11",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "frcs",
       "fellowship",
@@ -5105,6 +5835,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -5115,6 +5847,7 @@
     "section": "3",
     "chapter": "3.12",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -5126,6 +5859,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -5136,6 +5871,7 @@
     "section": "3",
     "chapter": "3.12",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -5147,6 +5883,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -5157,6 +5895,7 @@
     "section": "3",
     "chapter": "3.12",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -5168,6 +5907,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -5178,6 +5919,7 @@
     "section": "3",
     "chapter": "3.12",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -5189,6 +5931,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -5199,6 +5943,7 @@
     "section": "3",
     "chapter": "3.12",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -5210,6 +5955,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -5220,6 +5967,7 @@
     "section": "3",
     "chapter": "3.12",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -5231,6 +5979,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -5241,6 +5991,7 @@
     "section": "3",
     "chapter": "3.12",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -5252,6 +6003,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -5262,6 +6015,7 @@
     "section": "3",
     "chapter": "3.12",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -5273,6 +6027,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -5283,6 +6039,7 @@
     "section": "3",
     "chapter": "3.12",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -5294,6 +6051,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -5304,6 +6063,7 @@
     "section": "3",
     "chapter": "3.12",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -5315,6 +6075,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -5325,6 +6087,7 @@
     "section": "3",
     "chapter": "3.12",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -5336,6 +6099,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -5346,6 +6111,7 @@
     "section": "3",
     "chapter": "3.12",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -5357,6 +6123,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -5367,6 +6135,7 @@
     "section": "3",
     "chapter": "3.13",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -5378,6 +6147,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -5388,6 +6159,7 @@
     "section": "3",
     "chapter": "3.13",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -5399,6 +6171,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -5409,6 +6183,7 @@
     "section": "3",
     "chapter": "3.13",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -5420,6 +6195,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -5430,6 +6207,7 @@
     "section": "3",
     "chapter": "3.13",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -5441,6 +6219,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -5451,6 +6231,7 @@
     "section": "3",
     "chapter": "3.13",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -5462,6 +6243,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -5472,6 +6255,7 @@
     "section": "3",
     "chapter": "3.13",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -5483,6 +6267,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -5493,6 +6279,7 @@
     "section": "3",
     "chapter": "3.13",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -5504,6 +6291,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -5514,6 +6303,7 @@
     "section": "3",
     "chapter": "3.13",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -5525,6 +6315,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -5535,6 +6327,7 @@
     "section": "3",
     "chapter": "3.13",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -5547,6 +6340,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -5557,6 +6352,7 @@
     "section": "3",
     "chapter": "3.13",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -5569,6 +6365,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -5579,6 +6377,7 @@
     "section": "3",
     "chapter": "3.14",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -5591,6 +6390,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -5601,6 +6402,7 @@
     "section": "3",
     "chapter": "3.14",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -5612,6 +6414,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -5622,6 +6426,7 @@
     "section": "3",
     "chapter": "3.14",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -5633,6 +6438,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -5643,6 +6450,7 @@
     "section": "3",
     "chapter": "3.14",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -5654,6 +6462,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -5664,6 +6474,7 @@
     "section": "3",
     "chapter": "3.14",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -5675,6 +6486,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -5685,6 +6498,7 @@
     "section": "3",
     "chapter": "3.14",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -5696,6 +6510,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -5706,6 +6522,7 @@
     "section": "3",
     "chapter": "3.14",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -5717,6 +6534,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -5727,6 +6546,7 @@
     "section": "3",
     "chapter": "3.14",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -5738,6 +6558,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -5748,6 +6570,7 @@
     "section": "3",
     "chapter": "3.14",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -5759,6 +6582,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -5769,6 +6594,7 @@
     "section": "3",
     "chapter": "3.14",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -5780,6 +6606,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -5790,6 +6618,7 @@
     "section": "3",
     "chapter": "3.14",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -5801,6 +6630,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -5811,6 +6642,7 @@
     "section": "3",
     "chapter": "3.14",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -5822,6 +6654,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -5832,6 +6666,7 @@
     "section": "3",
     "chapter": "3.15",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "patient",
       "medical_student",
@@ -5843,6 +6678,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -5853,6 +6690,7 @@
     "section": "3",
     "chapter": "3.15",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "patient",
       "medical_student",
@@ -5864,6 +6702,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -5874,6 +6714,7 @@
     "section": "3",
     "chapter": "3.15",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "patient",
       "medical_student",
@@ -5885,6 +6726,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -5895,6 +6738,7 @@
     "section": "3",
     "chapter": "3.15",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "patient",
       "medical_student",
@@ -5906,6 +6750,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -5916,6 +6762,7 @@
     "section": "3",
     "chapter": "3.15",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "patient",
       "medical_student",
@@ -5927,6 +6774,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -5937,6 +6786,7 @@
     "section": "3",
     "chapter": "3.15",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "patient",
       "medical_student",
@@ -5948,6 +6798,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -5958,6 +6810,7 @@
     "section": "3",
     "chapter": "3.15",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "patient",
       "medical_student",
@@ -5969,6 +6822,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -5979,6 +6834,7 @@
     "section": "3",
     "chapter": "3.15",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "patient",
       "medical_student",
@@ -5990,6 +6846,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -6000,6 +6858,7 @@
     "section": "3",
     "chapter": "3.15",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "patient",
       "medical_student",
@@ -6011,6 +6870,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -6021,6 +6882,7 @@
     "section": "3",
     "chapter": "3.15",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "patient",
       "medical_student",
@@ -6032,6 +6894,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -6042,6 +6906,7 @@
     "section": "0",
     "chapter": "0.3",
     "page_type": "careers",
+    "category": "Junior Academy",
     "tiers_required": [
       "junior"
     ],
@@ -6051,6 +6916,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -6061,6 +6928,7 @@
     "section": "0",
     "chapter": "0.6",
     "page_type": "assessment",
+    "category": "Junior Academy",
     "tiers_required": [
       "junior"
     ],
@@ -6070,6 +6938,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -6080,6 +6950,7 @@
     "section": "0",
     "chapter": "0.6",
     "page_type": "assessment",
+    "category": "Junior Academy",
     "tiers_required": [
       "junior"
     ],
@@ -6089,6 +6960,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -6099,6 +6972,7 @@
     "section": "0",
     "chapter": "0.6",
     "page_type": "assessment",
+    "category": "Junior Academy",
     "tiers_required": [
       "junior"
     ],
@@ -6108,6 +6982,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -6118,6 +6994,7 @@
     "section": "0",
     "chapter": "0.6",
     "page_type": "assessment",
+    "category": "Junior Academy",
     "tiers_required": [
       "junior"
     ],
@@ -6127,6 +7004,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -6137,6 +7016,7 @@
     "section": "0",
     "chapter": "0.7",
     "page_type": "teacher_resource",
+    "category": "Junior Academy",
     "tiers_required": [
       "patient"
     ],
@@ -6146,6 +7026,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -6156,6 +7038,7 @@
     "section": "0",
     "chapter": "0.7",
     "page_type": "teacher_resource",
+    "category": "Junior Academy",
     "tiers_required": [
       "patient"
     ],
@@ -6165,6 +7048,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -6175,6 +7060,7 @@
     "section": "0",
     "chapter": "0.7",
     "page_type": "teacher_resource",
+    "category": "Junior Academy",
     "tiers_required": [
       "patient"
     ],
@@ -6184,6 +7070,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -6194,6 +7082,7 @@
     "section": "0",
     "chapter": "0.7",
     "page_type": "teacher_resource",
+    "category": "Junior Academy",
     "tiers_required": [
       "patient"
     ],
@@ -6203,6 +7092,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -6213,6 +7104,7 @@
     "section": "0",
     "chapter": "0.7",
     "page_type": "teacher_resource",
+    "category": "Junior Academy",
     "tiers_required": [
       "patient"
     ],
@@ -6222,6 +7114,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -6232,6 +7126,7 @@
     "section": "2",
     "chapter": "2.3",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -6243,6 +7138,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -6253,6 +7150,7 @@
     "section": "2",
     "chapter": "2.3",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -6264,6 +7162,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -6274,6 +7174,7 @@
     "section": "2",
     "chapter": "2.3",
     "page_type": "anatomy",
+    "category": "Anatomy",
     "tiers_required": [
       "medical_student",
       "mrcs",
@@ -6285,6 +7186,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -6295,6 +7198,7 @@
     "section": "3",
     "chapter": "3.16",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "frcs",
       "fellowship",
@@ -6306,6 +7210,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -6316,6 +7222,7 @@
     "section": "3",
     "chapter": "3.16",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "frcs",
       "fellowship",
@@ -6327,6 +7234,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -6337,6 +7246,7 @@
     "section": "3",
     "chapter": "3.16",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "frcs",
       "fellowship",
@@ -6348,6 +7258,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -6358,6 +7270,7 @@
     "section": "3",
     "chapter": "3.16",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "frcs",
       "fellowship",
@@ -6369,6 +7282,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -6379,6 +7294,7 @@
     "section": "3",
     "chapter": "3.16",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "frcs",
       "fellowship",
@@ -6390,6 +7306,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -6400,6 +7318,7 @@
     "section": "3",
     "chapter": "3.16",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "frcs",
       "fellowship",
@@ -6411,6 +7330,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -6421,6 +7342,7 @@
     "section": "3",
     "chapter": "3.16",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "frcs",
       "fellowship",
@@ -6432,6 +7354,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -6442,6 +7366,7 @@
     "section": "3",
     "chapter": "3.16",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "frcs",
       "fellowship",
@@ -6453,6 +7378,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -6463,6 +7390,7 @@
     "section": "3",
     "chapter": "3.16",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "frcs",
       "fellowship",
@@ -6474,6 +7402,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -6484,6 +7414,7 @@
     "section": "3",
     "chapter": "3.16",
     "page_type": "biomechanics",
+    "category": "Biomechanics",
     "tiers_required": [
       "frcs",
       "fellowship",
@@ -6495,6 +7426,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -6505,6 +7438,7 @@
     "section": "3",
     "chapter": "3.17",
     "page_type": "landmark_papers",
+    "category": "Biomechanics",
     "tiers_required": [
       "frcs",
       "fellowship",
@@ -6516,6 +7450,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -6526,6 +7462,7 @@
     "section": "3",
     "chapter": "3.17",
     "page_type": "landmark_papers",
+    "category": "Biomechanics",
     "tiers_required": [
       "frcs",
       "fellowship",
@@ -6537,6 +7474,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -6547,6 +7486,7 @@
     "section": "3",
     "chapter": "3.17",
     "page_type": "landmark_papers",
+    "category": "Biomechanics",
     "tiers_required": [
       "frcs",
       "fellowship",
@@ -6558,6 +7498,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -6568,6 +7510,7 @@
     "section": "3",
     "chapter": "3.17",
     "page_type": "landmark_papers",
+    "category": "Biomechanics",
     "tiers_required": [
       "frcs",
       "fellowship",
@@ -6579,6 +7522,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -6589,6 +7534,7 @@
     "section": "3",
     "chapter": "3.17",
     "page_type": "landmark_papers",
+    "category": "Biomechanics",
     "tiers_required": [
       "frcs",
       "fellowship",
@@ -6600,6 +7546,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -6610,6 +7558,7 @@
     "section": "3",
     "chapter": "3.17",
     "page_type": "landmark_papers",
+    "category": "Biomechanics",
     "tiers_required": [
       "frcs",
       "fellowship",
@@ -6621,6 +7570,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -6631,6 +7582,7 @@
     "section": "3",
     "chapter": "3.17",
     "page_type": "landmark_papers",
+    "category": "Biomechanics",
     "tiers_required": [
       "frcs",
       "fellowship",
@@ -6642,6 +7594,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -6652,6 +7606,7 @@
     "section": "3",
     "chapter": "3.17",
     "page_type": "landmark_papers",
+    "category": "Biomechanics",
     "tiers_required": [
       "frcs",
       "fellowship",
@@ -6663,6 +7618,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -6673,6 +7630,7 @@
     "section": "3",
     "chapter": "3.17",
     "page_type": "landmark_papers",
+    "category": "Biomechanics",
     "tiers_required": [
       "frcs",
       "fellowship",
@@ -6684,6 +7642,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0
@@ -6694,6 +7654,7 @@
     "section": "3",
     "chapter": "3.17",
     "page_type": "landmark_papers",
+    "category": "Biomechanics",
     "tiers_required": [
       "frcs",
       "fellowship",
@@ -6705,6 +7666,8 @@
     "draft_status": "not_started",
     "qa_status": "assistant_checked",
     "publication_status": "ready",
+    "seo_complete": false,
+    "refresh_date": null,
     "curriculum_tags": [],
     "regen_count": 0,
     "red_flag_count": 0

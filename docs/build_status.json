@@ -69,30 +69,48 @@
         },
         {
           "ref": "EV-8",
-          "title": "The Master Handbook itself has not been supplied",
+          "title": "The Master Handbook has been supplied and read",
           "area": "Documentation",
-          "state": "Blocked",
-          "blocker": "Only its table of contents arrived. Its chapter 19, Assistant Operations Manual, covers source collection and the publication workflow, and its chapter 22 covers the review process. Both would answer open questions here.",
-          "needed": "The Master Handbook document, or at least chapters 19 and 22.",
+          "state": "Resolved",
+          "blocker": "Supplied 9 October 2026 in Knee_school_2.zip and now in docs/KneeSchool_Master_Operations_Handbook.pdf with a text extraction beside it. Its text is stored as hex glyph ids from seven subset fonts, so it took a ToUnicode character map parser to read. 21 chapters, 10 appendices, 25,242 characters.",
+          "needed": "Nothing further. What it answers, what it adds and the three places it conflicts with the later Operations Handbook are in finding 002.",
           "pages": "Affects the pipeline and the review route, not any page"
         },
         {
           "ref": "EV-9",
-          "title": "Two numbering systems name the same academies",
+          "title": "Which numbering names the academies",
           "area": "Documentation",
-          "state": "Flagged, not acted on",
-          "blocker": "In the Master Handbook contents the Anatomy Academy is chapter 6 and the Conditions Library is chapter 9. In the publishing architecture they are Sections 2 and 6. Nothing in the repository uses the handbook numbering.",
-          "needed": "A decision on which numbering is canonical. Until then \"Section 6\" is ambiguous between documents, and the repository means the architecture's Section 6, the Conditions Library.",
-          "pages": "None yet"
+          "state": "Resolved",
+          "blocker": "In the Master Handbook the Anatomy Academy is chapter 6 and the Conditions Library is chapter 9. In the publishing architecture they are Sections 2 and 6.",
+          "needed": "Ruled on 9 October 2026: the architecture numbering is canonical. Nothing in the build changes, because the repository never used the other one. See decision 008.",
+          "pages": "None"
         },
         {
           "ref": "EV-10",
           "title": "Section 0 is absent from the new architecture",
           "area": "Content architecture",
           "state": "Flagged",
-          "blocker": "The compiled document covers Sections 1 to 15. The Junior Academy is not in it. The 38 pages written for it are governed by Part 1 and by decisions 002 and 003, and nothing in the new document contradicts them.",
+          "blocker": "The compiled architecture covers Sections 1 to 15. The Junior Academy is not in it. The Master Operations Handbook of 13 June 2026 omits it too: its curriculum matrix has six levels, Patient to Consultant. The Master Playbook omits both Junior and Consultant and lists five. The two documents that do specify Section 0, the Junior Academy architecture of 28 August and the Operations Handbook of 22 September, are the later ones, so the tier appears to have been added after the June planning round.",
           "needed": "Confirmation that Section 0 is still in the plan.",
           "pages": "38 published Junior Academy pages"
+        },
+        {
+          "ref": "EV-11",
+          "title": "Publication QA, the fifth gate, cannot be built yet",
+          "area": "Content pipeline",
+          "state": "Flagged",
+          "blocker": "Chapter 13 of the Master Operations Handbook names five QA tiers. The pipeline has four. The fifth, publication review, checks formatting, SEO, links, images, alt text, disclaimers, metadata and page status. Links, structure and the disclaimer are now checked by tools/check_site.py. The rest cannot be checked because no page carries an SEO title, a meta description, a slug or image alt text, and no image is on any page.",
+          "needed": "A decision on whether to add the SEO fields to the brief. Building the gate without them would check nothing. See question 2 of finding 002.",
+          "pages": "All 116 pages lack SEO fields"
+        },
+        {
+          "ref": "EV-12",
+          "title": "Which handbook has authority",
+          "area": "Documentation",
+          "state": "Flagged, assumption applied",
+          "blocker": "Three documents now set editorial rules. The Operations Handbook is version 1.0 of 22 September 2026 and claims authority over all other documents including prior playbook drafts. The Master Operations Handbook and both playbooks were written on 13 June 2026 and carry no version. On the dates, the June documents are the prior drafts that rule names.",
+          "needed": "Confirmation of the authority order. If the June handbook is senior instead, FAQs are required on every page rather than only where the Patient tier is present, and the tier count drops from seven to six. Roughly 60 pages would need rework. See question 1 of finding 002.",
+          "pages": "Potentially every page that carries a professional tier"
         }
       ]
     },
@@ -236,6 +254,15 @@
           "blocker": "The review pack flagged one sentence that recommended when to operate rather than describing anatomy. The client said keep it. Acting on that exposed 76 such sentences across 27 pages, including Section 1 and the anterior cruciate page.",
           "needed": "A consultant to work the register: 76 positions, all UNSIGNED. tools/positions.py --report --unsigned is the list, and POS-001 warns when a page carries one that is not on it.",
           "pages": "27 pages carrying a tier from medical student upwards"
+        },
+        {
+          "ref": "D-008",
+          "title": "The architecture numbering is canonical",
+          "area": "Content architecture",
+          "state": "Applied",
+          "blocker": "Two documents numbered the same academies differently. In the Master Operations Handbook the Anatomy Academy is chapter 6 and the Conditions Library is chapter 9. In the publishing architecture they are Sections 2 and 6, and the repository only ever used the architecture.",
+          "needed": "Nothing. Ruled on 9 October 2026 in favour of the architecture, so there is no migration: Section 2 means Anatomy and Section 6 means Conditions, which is what every config, brief, cross link and file path already assumed. A chapter number inside the handbook now means that document's own chapter, not a page id.",
+          "pages": "None; the ruling confirms the existing state"
         }
       ]
     },

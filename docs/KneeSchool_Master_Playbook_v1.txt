@@ -1,0 +1,62 @@
+KneeSchool Master Playbook v1
+Comprehensive strategic playbook created from the planning discussions prior to the academy architecture.
+Executive Vision
+KneeSchool will be a global digital university dedicated entirely to knee health. It will combine patient education, medical education, imaging, surgery, rehabilitation, performance science and research into a single ecosystem. The platform will support Sportshealing clinical services and OmKneeHealth products through education-led engagement.
+Detailed operational notes, workflows, standards and implementation guidance should be expanded under this heading during project execution.
+Target Audiences
+Patients, athletes, parents, coaches, medical students, physiotherapists, MRCS trainees, FRCS candidates, fellows, consultants, researchers and industry partners.
+Detailed operational notes, workflows, standards and implementation guidance should be expanded under this heading during project execution.
+Brand Positioning
+The definitive source of knee knowledge worldwide. Premium, evidence-based, academically rigorous, clinically practical and visually engaging.
+Detailed operational notes, workflows, standards and implementation guidance should be expanded under this heading during project execution.
+Educational Architecture
+Five learning tiers: Patient, Undergraduate, MRCS, FRCS, Fellowship. Each page should be layered so users can progressively deepen knowledge.
+Detailed operational notes, workflows, standards and implementation guidance should be expanded under this heading during project execution.
+Website Design
+Dark premium theme, elegant typography, interactive diagrams, learning pathways, search-first architecture, personalised dashboards and progress tracking.
+Detailed operational notes, workflows, standards and implementation guidance should be expanded under this heading during project execution.
+Content Production Workflow
+Define topic. Gather sources. Upload literature. Generate AI draft. Perform fact check. Consultant review. SEO optimisation. Publish. Annual review.
+Detailed operational notes, workflows, standards and implementation guidance should be expanded under this heading during project execution.
+Assistant SOP
+Catalogue references, maintain source library, prepare AI prompts, generate first drafts, verify citations, perform quality assurance, escalate clinical uncertainties.
+Detailed operational notes, workflows, standards and implementation guidance should be expanded under this heading during project execution.
+AI Prompt Framework
+Use structured prompts requiring anatomy, biomechanics, epidemiology, diagnosis, imaging, treatment, controversies, references and learning points.
+Detailed operational notes, workflows, standards and implementation guidance should be expanded under this heading during project execution.
+Quality Assurance
+Medical accuracy review, evidence verification, plagiarism check, readability assessment, SEO review, final consultant sign-off.
+Detailed operational notes, workflows, standards and implementation guidance should be expanded under this heading during project execution.
+Source Library
+Textbooks, landmark papers, BASK, ESSKA, ISAKOS, JBJS, AJSM, KSSTA, Bone & Joint Journal, imaging atlases, rehabilitation protocols and Sportshealing research.
+Detailed operational notes, workflows, standards and implementation guidance should be expanded under this heading during project execution.
+Commercial Model
+Freemium content, subscriptions, certification programmes, CPD, fellowship preparation, conference content, sponsorship, Sportshealing referrals and OmKneeHealth integration.
+Detailed operational notes, workflows, standards and implementation guidance should be expanded under this heading during project execution.
+Membership Structure
+Free, Professional, Fellowship and Institutional tiers.
+Detailed operational notes, workflows, standards and implementation guidance should be expanded under this heading during project execution.
+Certification Strategy
+Knee Foundations Certificate, Knee Imaging Certificate, Knee Rehabilitation Certificate, Sports Knee Diploma and Fellowship Pathway.
+Detailed operational notes, workflows, standards and implementation guidance should be expanded under this heading during project execution.
+Technology Stack
+CMS, AI-assisted content generation, video hosting, LMS, CRM, analytics, adaptive question bank and certification engine.
+Detailed operational notes, workflows, standards and implementation guidance should be expanded under this heading during project execution.
+SEO Strategy
+Own search intent around knee anatomy, ACL, meniscus, MRI, rehabilitation, osteoarthritis, women’s knee health and paediatric knee conditions.
+Detailed operational notes, workflows, standards and implementation guidance should be expanded under this heading during project execution.
+Video Strategy
+Short-form educational clips, masterclasses, surgical videos, imaging tutorials, podcasts and conference recordings.
+Detailed operational notes, workflows, standards and implementation guidance should be expanded under this heading during project execution.
+Research Strategy
+Research hubs, landmark papers, methodology academy, journal clubs and academic career guidance.
+Detailed operational notes, workflows, standards and implementation guidance should be expanded under this heading during project execution.
+Sportshealing Integration
+Consultation pathways, imaging services, surgery pathways, rehabilitation programmes and outcome tracking.
+Detailed operational notes, workflows, standards and implementation guidance should be expanded under this heading during project execution.
+OmKneeHealth Integration
+Evidence-based supplement education, recovery pathways, bone and joint health programmes and longevity content.
+Detailed operational notes, workflows, standards and implementation guidance should be expanded under this heading during project execution.
+Development Roadmap
+Phase 1 planning. Phase 2 source acquisition. Phase 3 content generation. Phase 4 QA. Phase 5 launch. Phase 6 certification. Phase 7 international expansion.
+Detailed operational notes, workflows, standards and implementation guidance should be expanded under this heading during project execution.

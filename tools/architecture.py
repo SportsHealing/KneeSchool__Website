@@ -203,6 +203,32 @@ def cmd_brief(args, pages):
         print(text)
 
 
+# Appendix A of the Master Operations Handbook sets the tracker columns. Category
+# is one of them, and the architecture's own section names supply it. Sections 2
+# to 8 match the handbook's chapter 5 taxonomy exactly. Sections 9 to 15 are not
+# in that taxonomy but are named as top level areas in its chapter 3 sitemap.
+# Sections 0 and 1 are in neither document, which is the Section 0 gap recorded
+# in finding 001 showing up again. See finding 002.
+TAXONOMY_CATEGORY = {
+    "0": "Junior Academy",
+    "1": "Foundations",
+    "2": "Anatomy",
+    "3": "Biomechanics",
+    "4": "Clinical Examination",
+    "5": "Imaging",
+    "6": "Conditions",
+    "7": "Surgery",
+    "8": "Rehabilitation",
+    "9": "Women's Knee Health",
+    "10": "Children's Knee Health",
+    "11": "Performance",
+    "12": "Research",
+    "13": "Case Library",
+    "14": "Question Bank",
+    "15": "Video Library",
+}
+
+
 def cmd_seed(args, pages):
     """Tracker seed, in the queue order the architecture specifies: high pages in
     section order, then medium, then low; lower page id first within a band."""
@@ -217,6 +243,7 @@ def cmd_seed(args, pages):
             ("section", p["section"]["id"]),
             ("chapter", p["chapter"]["id"]),
             ("page_type", p["page_type"]),
+            ("category", TAXONOMY_CATEGORY.get(str(p["section"]["id"]), "")),
             ("tiers_required", p["tiers_required"]),
             ("priority", p["priority"]),
             ("queue_position", n),
@@ -224,6 +251,8 @@ def cmd_seed(args, pages):
             ("draft_status", "not_started"),
             ("qa_status", "assistant_checked"),
             ("publication_status", "ready"),
+            ("seo_complete", False),
+            ("refresh_date", None),
             ("curriculum_tags", []),
             ("regen_count", 0),
             ("red_flag_count", 0),

@@ -104,6 +104,19 @@ EXEMPTIONS = [
 ]
 
 
+# Chapter 12 of the Master Operations Handbook, Medical Safety: "Patient-facing
+# pages must explain that information is educational and not a substitute for
+# professional assessment." The site answers this in the footer legal block, on
+# every page rather than only the patient-facing ones, because a reader arrives
+# at a professional page as easily as a patient one. The site has no build step,
+# so the footer is copied into each file and could be edited out of one page
+# without anyone noticing. This check makes that a build failure.
+MEDICAL_SAFETY = (
+    "It does not give individual medical advice and it does not "
+    "replace assessment by a clinician"
+)
+
+
 def exemption_for(rel, rule_id, phrase, context=""):
     for entry in EXEMPTIONS:
         path, rid, ph, reason = entry[:4]
@@ -167,6 +180,9 @@ def main():
         m = HYPHEN_DASH.search(body)
         if m:
             failures.append("%s: space hyphen space in prose near %r" % (rel, m.group(0)))
+        if MEDICAL_SAFETY.lower() not in re.sub(r"\s+", " ", body).lower():
+            failures.append("%s: no educational and not a substitute statement "
+                            "(handbook chapter 12, Medical Safety)" % rel)
 
         low = body.lower()
         for rule in phrase_rules():

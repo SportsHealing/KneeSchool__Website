@@ -1,0 +1,74 @@
+KneeSchool.com Master Development Playbook
+Vision
+KneeSchool is intended to become the world's leading educational platform dedicated to knee
+health, anatomy, biomechanics, imaging, pathology, surgery, rehabilitation and research. It serves
+patients, medical students, MRCS trainees, FRCS candidates, fellows and consultants. The
+platform acts as a knee encyclopaedia while supporting Sportshealing clinical services and
+OmKneeHealth products.
+Educational Levels
+Patient Academy; Medical Student Academy; MRCS Academy; FRCS (Tr & Orth) Academy;
+Fellowship Academy; Consultant Masterclass.
+Core Site Structure
+Learn by Level; Knee Encyclopaedia; Anatomy; Biomechanics; Clinical Examination; Imaging;
+Conditions; Surgery Academy; Rehabilitation Academy; Women's Knee Health; Children's Knee
+Health; Performance & Prevention; Research Academy; Case Library; Question Bank; Video
+Library; Knee Score Centre; Products & Services; Community; About.
+Homepage Concept
+Large search-first experience, learning pathways, interactive knee model, featured learning
+modules, topic exploration cards, progress tracking and AI-assisted search.
+Design Aesthetic
+University-grade authority combined with modern educational design. Deep green, ivory, gold
+accents and scientific visual identity. Mobile-first architecture. Interactive anatomy, imaging sliders,
+quizzes and learning pathways.
+Development Timeline
+Phase 1 Foundation (Months 1-3); Phase 2 Educational Build (Months 4-9); Phase 3 Advanced
+Content and Monetisation (Months 10-18). Create structure first, then core anatomy, biomechanics,
+examination, conditions, surgery, research and multimedia libraries.
+Content Production Targets
+Month 3: 100 articles. Month 6: 250 articles. Month 12: 600 articles. Month 18: 1000+ articles.
+Knowledge Sources
+Textbooks: Scott Surgery of the Knee, Insall & Scott, DeLee & Drez, Campbell, Miller, Netter,
+Gray's Anatomy, AAOS Basic Science, Nordin & Frankel. Societies: BASK, ESSKA, ISAKOS,
+AAOS, AOSSM. Databases: PubMed, Cochrane, Google Scholar. Imaging resources: Radiopaedia
+and institutional teaching files. Internal assets: publications, lectures, presentations, surgical notes,
+videos and research.
+Repository Structure
+Create topic folders for ACL, PCL, MCL, PLC, Meniscus, Cartilage, Patellofemoral, Osteotomy,
+Arthroplasty, Paediatric Knee, Rehabilitation, Women's Knee Health, Imaging and Research. Each
+
+
+folder contains textbooks, landmark papers, guidelines, presentations, videos, images and draft
+articles.
+Assistant Workflow
+1. Learn site map and educational levels. 2. Gather source material. 3. Organise repository. 4.
+Upload topic-specific sources to AI. 5. Create content brief. 6. Generate article with AI. 7. Editorial
+review. 8. Fact verification. 9. Consultant review. 10. SEO optimisation. 11. Publish.
+AI Prompt Framework
+Generate content for Patient, Medical Student, MRCS, FRCS and Fellowship levels. Include
+anatomy, biomechanics, pathology, imaging, treatment, rehabilitation, controversies, references,
+FAQs and key learning points. Use UK English and evidence-based language.
+Quality Control
+Tier 1 AI generation. Tier 2 assistant editorial review. Tier 3 evidence verification. Tier 4 consultant
+review. Tier 5 publication. No fabricated references. All factual claims checked against source
+material.
+Weekly Operating Schedule
+Monday: gather and organise sources. Tuesday: create briefs and AI drafts. Wednesday: editorial
+review and fact checking. Thursday: prepare review packs. Friday: consultant review and
+publication.
+Commercial Integration
+Educational content remains primary. Sportshealing consultations, imaging, injections, surgery and
+rehabilitation are linked contextually. OmKneeHealth supplements, braces and recovery products
+are suggested only where relevant.
+Long-Term Vision
+Develop the definitive global knee education ecosystem including encyclopaedia, learning
+academy, AI tutor, case library, examination preparation, consultant masterclasses, video
+academy, research hub and clinical referral pathways.
+
+
+Detailed Sitemap Summary
+Patient Academy; Medical Student Academy; MRCS Academy; FRCS Academy; Fellowship
+Academy. Encyclopaedia sections include Anatomy, Biomechanics, Clinical Examination, Imaging,
+Conditions, Surgery, Rehabilitation, Women's Health, Paediatric Knee, Research, Cases, Question
+Bank and Videos. Conditions include ACL, PCL, MCL, PLC, Meniscus, Cartilage, Patellofemoral
+disorders, Osteoarthritis, Inflammatory disease, Tumours and Infection.
+
