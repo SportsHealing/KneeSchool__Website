@@ -4,65 +4,64 @@
 |---|---|
 | Date | 9 October 2026 |
 | Decided by | Client, on 9 October 2026 |
-| Status | Wired, value pending |
+| Status | Declined. The palette is unchanged |
 | Source | Chapter 6 of the Master Operations Handbook |
+| Supersedes | The same decision's first version, which wired a separate token |
 
 ## The question put
 
 > The handbook asks for muted teal as a learning highlight. The stylesheet has
 > no teal. Add it, or leave the palette as green, ivory and gold?
 
-Answered: use the OmKneeHealth brand colours.
+The first answer was to use the OmKneeHealth brand colours. The second answer
+withdrew it:
 
-## What the handbook specifies
+> Sorry that's an old Omkneehealth website leave green, ivory and gold
 
-Chapter 6 gives five colour directions: deep forest green, warm ivory
-background, restrained brushed gold accents, muted teal for learning highlights,
-soft grey for structure. Four were already in the stylesheet. Teal was the
-missing one, and the ruling replaces it with the partner brand's colour rather
-than adding teal.
+## The ruling
 
-## What has been done
+Three colours. Deep forest green, warm ivory, brushed gold. No fourth.
 
-The learning highlight is now its own token rather than borrowed gold.
+The learning highlight keeps the gold it already used. Chapter 6's muted teal is
+declined, not forgotten: it is recorded here so that nobody adds it later
+thinking it was an oversight.
 
-```css
---learn:#C3A046;
---learn-dark:#8F701F;
-```
+## What the handbook asked for, and where that leaves it
 
-Everything that marks a learning highlight points at it: the key learning points
-rule on every article page, and the same rule inside each depth dial panel.
-Changing those two lines changes every learning highlight on the site.
+Chapter 6 gives five colour directions.
 
-## What has not been done
+| Direction | State |
+|---|---|
+| Primary deep forest green | In the stylesheet as `--green-900` to `--green-500` |
+| Warm ivory background | `--ivory` and `--ivory-2` |
+| Restrained brushed gold accents | `--gold` and `--gold-dark` |
+| Muted teal for learning highlights | Declined by this decision |
+| Soft grey for structure | `--rule` and `--rule-dark` |
 
-The two lines still hold the gold values. The OmKneeHealth brand hex codes have
-not been supplied, and this build environment cannot reach the brand's site to
-read them: the network policy refuses the host, so `omkneehealth.com` does not
-resolve from here.
+Four of five implemented, the fifth declined by the client. That is the whole of
+chapter 6's colour direction answered.
 
-A brand colour cannot be guessed. A near miss is worse than the current gold,
-because it reads as a mistake rather than as a choice. So the token is in place,
-the value is honest about being a placeholder, and the comment in the stylesheet
-says so at the point where someone would otherwise assume the gold was the
-brand.
+## What was done and then undone
 
-## What is needed
+The first version of this decision added a `--learn` token so that one line
+could set the learning highlight across the site, and left it holding the gold
+value because the brand's hex codes were not available. The ruling makes that
+indirection pointless: there is no second colour coming, so a token that always
+equals `--gold` is a hop with nothing at the end of it. The key learning points
+rules point at `--gold` again and the token is gone.
 
-The hex codes. Two values if the brand has a primary and a darker variant, one
-if it has a single colour.
+## On the source that was not reachable
 
-## One governance point to settle with them
+The build environment could not reach `omkneehealth.com`, and the site it could
+not reach turns out to have been the wrong one in any case. Both facts point the
+same way: a brand colour is not something to infer. Had a plausible teal or a
+guessed brand hex been written into the stylesheet, it would now be in 116 pages
+and would have had to be found and removed.
 
-Section 9 of the Operations Handbook is binding: no commercial content of any
-kind in any page carrying the Junior tier, no product placement, no supplements,
-no clinical service promotion. All 38 Section 0 pages carry that tier.
+## One governance point that no longer arises
 
-A colour is not content and no reasonable reading makes a border colour product
-placement. But using a commercial partner's brand colour as the site's learning
-highlight does put that brand's livery on pages written for school age readers.
-The safer form is to apply the brand colour everywhere except pages carrying the
-Junior tier, which the stylesheet can do in one rule because `--learn` is a
-token and Junior pages are identifiable. That is a question, not an assumption:
-nothing has been scoped away.
+The earlier version of this decision raised it: Section 9 of the Operations
+Handbook allows no commercial content of any kind on any page carrying the
+Junior tier, and all 38 Section 0 pages carry it. Putting a commercial partner's
+livery on pages written for school age readers needed a ruling. With the palette
+unchanged there is nothing to rule on.

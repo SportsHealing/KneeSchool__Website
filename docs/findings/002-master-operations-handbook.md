@@ -200,7 +200,7 @@ All three questions were answered the same day and are now decisions.
 |---|---|---|
 | The authority order | Confirmed as read. The Operations Handbook of 22 September is senior; the June handbook governs what it does not cover | 009 |
 | Publication QA as a fifth gate | Build it | 010 |
-| Muted teal for learning highlights | Use the OmKneeHealth brand colours instead | 011 |
+| Muted teal for learning highlights | Declined. The palette stays green, ivory and gold | 011 |
 
 The second answer changed this finding's own account of the work. It assumed the
 SEO fields would have to be written by hand for 116 pages. They did not: 97 of
@@ -210,8 +210,9 @@ disambiguated by computing the collision set from the work. Two pages needed
 fixing, and the gate found a defect nobody had reported: the renderer was
 truncating meta descriptions to 160 characters mid word.
 
-The third answer is wired but not valued. The learning highlight is now its own
-token, so one line sets it, but the brand's hex codes have not been supplied and
-this environment cannot reach `omkneehealth.com` to read them. Decision 011
-records what is still needed, and the governance point it raises: all 38 Section
-0 pages carry the Junior tier, which allows no commercial content of any kind.
+The third answer arrived in two parts. The first was to use the OmKneeHealth
+brand colours; the second withdrew it, because the site that holds them is an old
+one. The palette stays as it was and chapter 6's muted teal is declined. Four of
+its five colour directions are implemented and the fifth is now a recorded
+decision rather than an open gap, which also closes the Junior tier governance
+question the partner colour would have raised.

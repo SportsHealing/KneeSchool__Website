@@ -10,15 +10,6 @@
   --ink-soft:#41504A;
   --gold:#C3A046;
   --gold-dark:#8F701F;
-  /* Learning highlight. Chapter 6 of the Master Operations Handbook asks for a
-     separate colour here, distinct from the gold used for emphasis. The client
-     ruled on 9 October 2026 that it should be the OmKneeHealth brand colour.
-     That brand's hex values have not been supplied and the build environment
-     cannot reach the site to read them, so these two lines still hold the gold.
-     Changing them changes every learning highlight on the site. See decision
-     011. */
-  --learn:#C3A046;
-  --learn-dark:#8F701F;
   --rule:rgba(22,34,29,.18);
   --rule-dark:rgba(245,241,230,.22);
   --display:"Newsreader","Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
@@ -395,7 +386,7 @@ h1,h2,h3,p,li,a{overflow-wrap:break-word}
 .status-light b{color:var(--gold-dark)}
 
 /* ---------- key learning points ---------- */
-.klp{border-left:2px solid var(--learn);padding-left:1.2rem;max-width:var(--measure)}
+.klp{border-left:2px solid var(--gold);padding-left:1.2rem;max-width:var(--measure)}
 .klp ul{list-style:none;margin:0;padding:0}
 .klp li{margin:0 0 .7rem;color:var(--ink-soft);font-size:1rem}
 .klp li:last-child{margin-bottom:0}
@@ -430,7 +421,7 @@ h1,h2,h3,p,li,a{overflow-wrap:break-word}
 .dial-article .dial-panel p{margin-bottom:.9rem;max-width:64ch}
 .dial-article .dial-panel ul{margin:0 0 1rem;padding-left:1.15rem;max-width:64ch}
 .dial-article .dial-panel li{color:rgba(245,241,230,.85);margin-bottom:.4rem}
-.dial-article .dial-panel .klp{border-left:2px solid var(--learn);padding-left:1.1rem;margin:1.2rem 0}
+.dial-article .dial-panel .klp{border-left:2px solid var(--gold);padding-left:1.1rem;margin:1.2rem 0}
 .dial-article .dial-panel .klp ul{padding-left:0;list-style:none;margin-bottom:0}
 .dial-article .dial-panel .faq p{margin-bottom:.7rem}
 .dial-article .dial-panel .faq b{color:var(--ivory);font-weight:600}

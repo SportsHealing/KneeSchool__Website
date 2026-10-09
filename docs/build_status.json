@@ -284,12 +284,12 @@
         },
         {
           "ref": "D-011",
-          "title": "The learning highlight uses the OmKneeHealth brand colour",
+          "title": "The palette stays green, ivory and gold",
           "area": "Editorial",
-          "state": "Wired, value pending",
-          "blocker": "Chapter 6 of the handbook asks for a separate colour for learning highlights. The stylesheet was using the gold meant for emphasis.",
-          "needed": "The brand's hex codes. The highlight is now its own token, --learn, so one line changes every learning highlight on the site, but the value is still the gold: this environment cannot reach omkneehealth.com and a brand colour cannot be guessed. One governance point is open, because Section 0 pages carry the Junior tier and that tier allows no commercial content.",
-          "pages": "Every page with key learning points, once the value arrives"
+          "state": "Declined; palette unchanged",
+          "blocker": "Chapter 6 of the handbook asks for a separate colour for learning highlights, muted teal. The stylesheet had none and was using the gold meant for emphasis.",
+          "needed": "Nothing. Ruled on 9 October 2026: three colours, no fourth. The muted teal is declined and the learning highlight keeps the gold. A token added earlier that day to carry a partner brand colour has been removed, because the brand reference was withdrawn and a token that always equals the gold is a hop with nothing at the end of it. See decision 011.",
+          "pages": "None; the palette is unchanged"
         }
       ]
     },
