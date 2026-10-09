@@ -30,7 +30,7 @@ STYLES = re.compile(r'href="((?:\.\./)*assets/styles\.css)(?:\?v=[^"]*)?"')
 # rendered article pages get theirs from tools/render_article.py; the hand written
 # pages get theirs here, so one tool owns it for the whole site.
 CANONICAL = re.compile(r'<link rel="canonical" href="[^"]*">\n')
-THEME = re.compile(r'(<meta name="theme-color" content="[^"]*">\n)')
+THEME = re.compile(r'<meta name="theme-color" content="[^"]*">\n')
 
 
 def pages():
@@ -73,12 +73,19 @@ def main():
         updated = re.sub(r'(</footer>\n).*\Z', r'\1\n</body>\n</html>\n', updated,
                          flags=re.DOTALL)
 
+        # The theme colour is the one colour literal outside the stylesheet, so
+        # it is driven from pipeline/config/site.json and refreshed here rather
+        # than left to drift page by page.
+        theme = '<meta name="theme-color" content="%s">\n' % chrome.site_config()["theme_color"]
+        if THEME.search(updated):
+            updated = THEME.sub(theme, updated, count=1)
+
         want = '<link rel="canonical" href="%s">\n' % chrome.canonical_url(
             os.path.relpath(path, ROOT))
         if CANONICAL.search(updated):
             updated = CANONICAL.sub(want, updated, count=1)
         elif THEME.search(updated):
-            updated = THEME.sub(lambda m: m.group(1) + want, updated, count=1)
+            updated = THEME.sub(lambda m: m.group(0) + want, updated, count=1)
         else:
             missing_head.append(os.path.relpath(path, ROOT))
 

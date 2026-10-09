@@ -132,14 +132,14 @@ def head(title, description, rel, extra_meta="", canonical=None):
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>%s</title>
 <meta name="description" content="%s">
-<meta name="theme-color" content="#0E2A21">
+<meta name="theme-color" content="%s">
 %s%s<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="%sassets/styles.css?v=%s">
 </head>
 <body>
-""" % (title, description,
+""" % (title, description, site_config()["theme_color"],
        '<link rel="canonical" href="%s">\n' % canonical_url(canonical) if canonical else "",
        extra_meta, rel, stylesheet_version())
 
@@ -157,6 +157,11 @@ def header(rel):
 %s
           </ul>
         </li>""" % (_href(top_href, rel), label, lis))
+    # MyKneeScore ends its nav with a single filled pill, the one action it wants
+    # a visitor to take. Here that action is choosing a depth, because every page
+    # on this site is written seven times and the reader has to pick one.
+    groups.append('        <li><a class="start-link" href="%s">Find your level</a></li>'
+                  % _href("index.html#levels", rel))
     return """<header class="site-head">
   <div class="wrap head-in">
     <a class="brand" href="%s"><b>Knee</b><span>School</span></a>

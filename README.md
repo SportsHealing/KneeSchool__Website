@@ -16,6 +16,20 @@ pipeline/runs/      pipeline output, one folder per page
 docs/               the handbook, the architecture, the handover, the team pack
 ```
 
+## Design
+
+The design system is MyKneeScore's, ported from `SportsHealing/mykneescore` at
+commit `4ce92e0`: its tokens at their exact values, Cormorant Garamond and
+Hanken Grotesk, pill controls, card shapes and deep green chrome. One of its
+house rules came with it, and `tools/check_site.py` enforces it:
+
+> no colour literal outside the stylesheet's `:root` block
+
+The single exception is the `theme-color` meta tag, which an HTML attribute
+cannot express as a custom property. Its value lives in
+`pipeline/config/site.json` and `tools/apply_chrome.py` keeps every page in step
+with it. See `docs/decisions/012-mykneescore-design-system.md`.
+
 ## Branches
 
 ```
