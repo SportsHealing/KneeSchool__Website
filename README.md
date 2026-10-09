@@ -16,6 +16,19 @@ pipeline/runs/      pipeline output, one folder per page
 docs/               the handbook, the architecture, the handover, the team pack
 ```
 
+## Branches
+
+```
+main                            the stable copy, what the site is published from
+claude/great-meitner-kofr7g     the working branch, where changes are made first
+```
+
+`main` exists so there is always a known good version standing beside the work.
+Changes are made on the working branch, verified with the checks under
+Verification below, and only then brought across. The two were identical when
+`main` was created; after that `main` moves when a batch of work has passed its
+checks, not on every commit.
+
 ## The three documents that govern everything
 
 1. **Operations Handbook.** The article template, editorial standards and the QA
