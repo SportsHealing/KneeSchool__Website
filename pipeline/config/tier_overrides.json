@@ -1,0 +1,13 @@
+{
+  "overrides_version": "1.0",
+  "source_of_truth": "docs/decisions/013-peroneal-nerve-carries-a-fellowship-tier.md",
+  "note": "Tiers added to a page beyond the list the architecture gives it. Applied by tools/architecture.py when a brief is generated, before the word count scaling in decision 002. A tier is only ever added, never removed: the architecture's list is a floor. An entry needs a reason that is about the page's subject rather than about its length, and a decision record behind it.",
+  "pages": {
+    "2.10.6": {
+      "title": "Common Peroneal Nerve",
+      "add": ["fellowship"],
+      "reason": "The architecture's own scope for this page is the course and surgical proximity of the nerve, and its chapter 7.49 is Peroneal Nerve Management. Surgical proximity at fellowship depth is approach anatomy, which is what the fellowship tier carries everywhere else in Section 2. Without it, the one page on the structure most often injured by lateral knee surgery stops at FRCS while the page about the ligaments beside it does not.",
+      "requested_by": "Client, 9 October 2026"
+    }
+  }
+}

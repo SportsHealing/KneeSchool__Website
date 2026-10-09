@@ -6,9 +6,21 @@
     "narrow_structure": {
       "min": 450,
       "max": 1100
+    },
+    "expanded_section": {
+      "min": 800,
+      "max": 2400
     }
   },
-  "pages": {},
+  "pages": {
+    "2.10.6": {
+      "title": "Common Peroneal Nerve",
+      "band": "expanded_section",
+      "reason": "The client asked on 9 October 2026 for a section on the nerve at risk from lateral surgery, and decision 013 gave the page a fellowship tier to carry it. That tier is a single Clinical Relevance section of ten paragraphs, which is the deliverable rather than padding around one. The handbook's 800 to 1800 band is written for an anatomy page with the usual four or five body sections per tier, and this page has four tiers and an eleventh section on top.",
+      "requested_by": "Client, 9 October 2026",
+      "checked": "Written at 2227 words. The override is a prediction like every other entry here, and it was right: the page came in inside the band without prose being added to fill it."
+    }
+  },
   "withdrawn": {
     "2.2.3": {
       "title": "Tibial Spine",

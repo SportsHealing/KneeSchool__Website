@@ -51,21 +51,21 @@
         },
         {
           "ref": "EV-6",
-          "title": "93 measurements on the site are unchecked",
+          "title": "127 measurements on the site are unchecked",
           "area": "Content",
           "state": "Live and flagged",
           "blocker": "They are written from memory because no paper could be retrieved. Each page's references note says so and each figure is registered.",
-          "needed": "Someone with source access to work the register: 93 figures across 32 pages, all UNVERIFIED_FROM_MEMORY. tools/figures.py --report --unchecked is the list, and FIG-002 refuses any figure that is not on it.",
-          "pages": "32 pages in Sections 1, 2 and 6"
+          "needed": "Someone with source access to work the register: 127 figures across 39 pages, all UNVERIFIED_FROM_MEMORY. tools/figures.py --report --unchecked is the list, and FIG-002 refuses any figure that is not on it.",
+          "pages": "39 pages in Sections 1, 2 and 6"
         },
         {
           "ref": "EV-7",
-          "title": "204 clinical recommendations on the site are unsigned",
+          "title": "259 clinical recommendations on the site are unsigned",
           "area": "Content",
           "state": "Live and registered",
           "blocker": "They are written by a process with no clinical qualification, on pages that state they have not been reviewed. The client has chosen to keep them, and decision 007 makes the set finite and listed.",
-          "needed": "A consultant to work the register: 204 positions across 49 pages, all UNSIGNED. tools/positions.py --report --unsigned is the list, and POS-001 warns when a page carries one that is not on it.",
-          "pages": "49 pages carrying a tier from medical student upwards"
+          "needed": "A consultant to work the register: 259 positions across 56 pages, all UNSIGNED. tools/positions.py --report --unsigned is the list, and POS-001 warns when a page carries one that is not on it.",
+          "pages": "56 pages carrying a tier from medical student upwards"
         },
         {
           "ref": "EV-8",
@@ -299,6 +299,15 @@
           "blocker": "The site had its own palette and its own typography, built before the sister site's design system was available to read.",
           "needed": "Nothing. Ported from SportsHealing/mykneescore at commit 4ce92e0 on 9 October 2026: its twelve tokens at their exact values, Cormorant Garamond and Hanken Grotesk, pill controls, card shapes and deep green chrome. One of its house rules came too, that no colour literal appears outside the stylesheet's :root block, and the site check now enforces it. One colour differs: small gold labels on a light background use a darker gold, because theirs is below the contrast minimum for text that size and this site carries those labels on pages for school age readers. See decision 012.",
           "pages": "All 122 pages"
+        },
+        {
+          "ref": "D-013",
+          "title": "The peroneal nerve page carries a fellowship tier",
+          "area": "Content architecture",
+          "state": "Applied",
+          "blocker": "The architecture gives page 2.10.6 three tiers, and the client asked for a section on the nerve at risk from lateral surgery. That is approach anatomy, which is what the fellowship tier carries everywhere else in Section 2.",
+          "needed": "Nothing. A tier override mechanism was added, mirroring the word count overrides from decision 005: declared, additive only, each entry carrying a reason and a decision behind it. The page also has a declared 800 to 2400 band, because its fellowship tier is a single section of ten paragraphs. It came in at 2,227 words. See decision 013.",
+          "pages": "Page 2.10.6, Common Peroneal Nerve"
         }
       ]
     },
@@ -332,12 +341,12 @@
         },
         {
           "ref": "W-4",
-          "title": "Section 2 Anatomy Academy, chapters 2.1 to 2.9",
+          "title": "Section 2 Anatomy Academy, chapters 2.1 to 2.10",
           "area": "Content",
-          "state": "61 of 79 written, style gate passed, awaiting review",
+          "state": "68 of 79 written, style gate passed, awaiting review",
           "blocker": "None on the written pages. The remaining 31 are a matter of time.",
-          "needed": "Consultant review. Chapters 2.10 Lateral Structures, 2.11 Rotational Structures and 2.12 Patellofemoral Anatomy are the 18 pages still to write.",
-          "pages": "61 published pages, 85,021 body words as the style gate counts them"
+          "needed": "Consultant review, and the peroneal nerve page needs it more than most: its fellowship section is ten paragraphs of approach anatomy written without a source. Chapters 2.11 Rotational Structures and 2.12 Patellofemoral Anatomy are the 11 pages still to write.",
+          "pages": "68 published pages, 95,949 body words as the style gate counts them"
         },
         {
           "ref": "W-5",

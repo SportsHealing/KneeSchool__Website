@@ -415,3 +415,64 @@ class TrackerColumns(unittest.TestCase):
             [architecture.TAXONOMY_CATEGORY[str(n)] for n in range(2, 9)],
             ["Anatomy", "Biomechanics", "Clinical Examination", "Imaging",
              "Conditions", "Surgery", "Rehabilitation"])
+
+
+class TierOverrides(unittest.TestCase):
+    """Decision 013: a tier added to a page beyond the architecture's own list.
+    Additive only, in the template's order, and never silent."""
+
+    def setUp(self):
+        with open(os.path.join(ROOT, "config", "tier_overrides.json")) as fh:
+            self.cfg = json.load(fh)
+
+    def test_every_entry_adds_and_never_removes(self):
+        for pid, entry in self.cfg["pages"].items():
+            self.assertTrue(entry.get("add"), pid)
+            self.assertNotIn("remove", entry, pid)
+
+    def test_every_entry_carries_a_reason(self):
+        for pid, entry in self.cfg["pages"].items():
+            self.assertTrue(len(entry.get("reason", "")) > 40, pid)
+
+    def test_the_override_is_applied_in_template_tier_order(self):
+        order = load("article_template.json")["tier_order"]
+        got = architecture.tier_override("2.10.6", ["medical_student", "mrcs", "frcs"])
+        self.assertEqual(got, [t for t in order if t in set(got)])
+        self.assertIn("fellowship", got)
+
+    def test_a_page_with_no_entry_is_untouched(self):
+        tiers = ["medical_student", "mrcs"]
+        self.assertEqual(architecture.tier_override("2.10.1", tiers), tiers)
+
+    def test_the_brief_carries_the_added_tier(self):
+        with open(os.path.join(ROOT, "config", "briefs", "2.10.6.json")) as fh:
+            self.assertIn("fellowship", json.load(fh)["tiers_required"])
+
+
+class DeclaredBandWinsOverMerge(unittest.TestCase):
+    """A band in word_count_overrides.json is config, not a hand set value, so
+    regenerating a brief must not merge the old number back over it. That is how
+    decision 013's page kept failing a gate it was inside."""
+
+    def test_the_overridden_page_carries_its_declared_band(self):
+        with open(os.path.join(ROOT, "config", "word_count_overrides.json")) as fh:
+            cfg = json.load(fh)
+        entry = cfg["pages"]["2.10.6"]
+        band = cfg["bands"][entry["band"]]
+        with open(os.path.join(ROOT, "config", "briefs", "2.10.6.json")) as fh:
+            brief = json.load(fh)
+        self.assertEqual(brief["output_requirements"]["target_word_count"], band)
+
+    def test_regenerating_over_an_existing_brief_keeps_the_declared_band(self):
+        with open(os.path.join(ROOT, "config", "briefs", "2.10.6.json")) as fh:
+            before = fh.read()
+        out = subprocess.run(
+            [sys.executable, os.path.join(REPO, "tools", "architecture.py"), "brief",
+             "2.10.6", "--out", os.path.join(ROOT, "config", "briefs", "2.10.6.json")],
+            capture_output=True, text=True, cwd=REPO)
+        self.assertEqual(out.returncode, 0, out.stdout + out.stderr)
+        with open(os.path.join(ROOT, "config", "briefs", "2.10.6.json")) as fh:
+            after = json.load(fh)
+        self.assertEqual(after["output_requirements"]["target_word_count"]["max"], 2400)
+        with open(os.path.join(ROOT, "config", "briefs", "2.10.6.json"), "w") as fh:
+            fh.write(before)
