@@ -107,7 +107,7 @@ teacher, coach or doctor.
 - [[0.5.1 | How We Know What We Know]]
 - [[0.5.2 | EPQ and Science Fair Project Ideas]]
 - [[0.3.3 | Beyond Surgery]]
-- [[12.21 | Research groups and programmes]]
+- [[12.21 | Imperial Knee Biomechanics Programme]]
 
 ## References
 

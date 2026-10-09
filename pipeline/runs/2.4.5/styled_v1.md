@@ -228,8 +228,8 @@ What changes is that there is nothing spare.
 - [[2.4.3 | Biomechanics]]
 - [[2.4.4 | Patellar Tracking]]
 - [[2.1.5 | Trochlea]]
-- [[7.51 | Patellofemoral instability surgery]]
-- [[7.79 | Patellar revision]]
+- [[7.51 | MPFL Reconstruction]]
+- [[7.79 | Patellofemoral Arthroplasty]]
 
 ## References
 

@@ -200,7 +200,7 @@ describes appearances rather than thresholds.
 - [[2.5.3 | Vascular Supply]]
 - [[2.5.7 | Root Attachments]]
 - [[2.6.5 | MRI Anatomy]]
-- [[5.6 | Meniscal imaging]]
+- [[5.6 | Meniscal MRI]]
 
 ## References
 

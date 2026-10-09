@@ -235,8 +235,8 @@ how much of the mechanism is left to protect.
 - [[2.5.4 | Biomechanics]]
 - [[2.2.3 | Tibial Spine]]
 - [[2.6.4 | Root Attachments]]
-- [[6.34 | Meniscal root tears]]
-- [[7.14 | Root repair]]
+- [[6.34 | Root Tears]]
+- [[7.14 | Meniscal Root Repair]]
 
 ## References
 

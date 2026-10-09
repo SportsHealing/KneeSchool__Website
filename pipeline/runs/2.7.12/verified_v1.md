@@ -234,7 +234,7 @@ chapter. What changes is how much room there is in it.
 - [[2.7.1 | Gross Anatomy]]
 - [[2.1.2 | Distal Femur]]
 - [[2.5.6 | Surgical Anatomy]]
-- [[7.20 | Cruciate reconstruction]]
+- [[7.20 | ACL Reconstruction Fundamentals]]
 
 ## References
 

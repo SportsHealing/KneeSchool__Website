@@ -207,7 +207,7 @@ three implant ones.
 - [[2.1.5 | Trochlea]]
 - [[2.12.1 | Trochlea]]
 - [[3.12.1 | Patellar tracking mechanics]]
-- [[4.15.1 | Examining the patella]]
+- [[4.15.1 | Patellar Tracking]]
 
 ## References
 

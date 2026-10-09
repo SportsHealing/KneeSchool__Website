@@ -191,7 +191,7 @@ favour of repair for almost every tear, and Section 10 owns it.
 - [[2.5.1 | Gross Anatomy]]
 - [[2.5.2 | Histology]]
 - [[2.5.6 | Surgical Anatomy]]
-- [[6.27 | Meniscal tears]]
+- [[6.27 | Meniscal Anatomy Review]]
 
 ## References
 

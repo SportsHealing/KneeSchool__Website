@@ -193,7 +193,7 @@ page is conventional teaching and the series behind it disagree.
 - [[2.7.10 | Proprioception]]
 - [[2.7.3 | Histology]]
 - [[2.7.1 | Gross Anatomy]]
-- [[8.10 | Neuromuscular rehabilitation]]
+- [[8.10 | ACL rehabilitation Phase 2]]
 
 ## References
 

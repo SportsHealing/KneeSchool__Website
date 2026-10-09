@@ -192,7 +192,7 @@ by Section 11.
 - [[2.7.4 | Blood Supply]]
 - [[2.7.1 | Gross Anatomy]]
 - [[2.5.1 | Gross Anatomy]]
-- [[8.10 | Neuromuscular rehabilitation]]
+- [[8.10 | ACL rehabilitation Phase 2]]
 
 ## References
 

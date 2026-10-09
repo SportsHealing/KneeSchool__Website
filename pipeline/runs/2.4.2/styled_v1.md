@@ -186,8 +186,8 @@ of number that varies between populations and between studies.
 
 - [[2.4.1 | Anatomy]]
 - [[2.4.4 | Patellar Tracking]]
-- [[5.12 | Patellofemoral imaging]]
-- [[10.3.3 | The growing patella]]
+- [[5.12 | Patellofemoral MRI]]
+- [[10.3.3 | Normal Variants]]
 
 ## References
 

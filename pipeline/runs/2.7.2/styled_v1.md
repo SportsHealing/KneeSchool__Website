@@ -201,7 +201,7 @@ quoted.
 - [[2.7.3 | Histology]]
 - [[2.7.4 | Blood Supply]]
 - [[1.2.10 | Growth Plates]]
-- [[10.3.3 | The growing patella]]
+- [[10.3 | Development of the Knee]]
 
 ## References
 

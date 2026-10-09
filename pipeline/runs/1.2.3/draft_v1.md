@@ -184,8 +184,8 @@ the imaging and surgery sections.
 - [[1.2.1 | Bones of the knee]]
 - [[1.2.2 | Articular cartilage]]
 - [[1.2.4 | Ligaments]]
-- [[2.5 | Meniscal anatomy at surgical depth]]
-- [[2.6 | Meniscal biomechanics]]
+- [[2.5 | Medial Meniscus]]
+- [[2.6 | Lateral Meniscus]]
 - [[6.x | Meniscal tears]]
 - [[7.x | Meniscal surgery]]
 

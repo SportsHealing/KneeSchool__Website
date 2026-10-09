@@ -105,7 +105,7 @@ teacher, coach or doctor.
 
 - [[0.5.3 | Reading a Science Paper for the First Time]]
 - [[0.5.2 | EPQ and Science Fair Project Ideas]]
-- [[12.4 | Levels of evidence]]
+- [[12.4 | Levels of Evidence]]
 
 ## References
 

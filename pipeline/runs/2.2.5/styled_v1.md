@@ -214,7 +214,7 @@ and decision 005 excludes figures across the section.
 - [[2.4.4 | Patellar Tracking]]
 - [[2.1.5 | Trochlea]]
 - [[5.16.4 | Tubercle to groove measurement]]
-- [[7.53 | Tubercle osteotomy]]
+- [[7.53 | Tibial Tubercle Osteotomy]]
 
 ## References
 

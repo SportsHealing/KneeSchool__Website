@@ -99,7 +99,7 @@ teacher, coach or doctor.
 - [[0.6.1 | Knee Explorer Certificate]]
 - [[0.6.3 | School Leaderboards]]
 - [[0.1.1 | Meet Your Knee]]
-- [[14.51 | Adaptive question bank]]
+- [[14.51 | Adaptive Question Bank]]
 
 ## References
 

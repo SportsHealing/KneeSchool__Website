@@ -177,7 +177,7 @@ treat it as a starting point rather than a safe margin.
 - [[2.3.1 | Anatomy]]
 - [[2.3.2 | Attachments]]
 - [[2.10.6 | Common Peroneal Nerve]]
-- [[7.49 | Common peroneal nerve surgery]]
+- [[7.49 | Peroneal Nerve Management]]
 
 ## References
 

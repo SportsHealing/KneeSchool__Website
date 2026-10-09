@@ -287,9 +287,9 @@ whether anyone is checking.
 
 ## Explore Further
 
-- [[6.1.2 | PCL injury]]
-- [[6.1.3 | MCL injury]]
-- [[6.1.4 | Posterolateral corner injury]]
+- [[6.9 | Acute PCL Injury]]
+- [[6.14 | MCL Sprains]]
+- [[6.23 | PLC Injuries]]
 - [[2.7 | ACL anatomy at surgical depth]]
 - [[5.x | Imaging of the ACL]]
 - [[7.x | ACL reconstruction]]

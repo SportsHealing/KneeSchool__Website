@@ -215,7 +215,7 @@ an imaging construct, it has more than one competing system, and 5.12.1 and
 - [[2.12.1 | Trochlea]]
 - [[2.4.4 | Patellar Tracking]]
 - [[5.12.1 | Trochlear dysplasia on imaging]]
-- [[6.55 | Patellofemoral instability]]
+- [[6.55 | Trochlear Dysplasia]]
 
 ## References
 

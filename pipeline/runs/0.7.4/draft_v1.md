@@ -132,7 +132,7 @@ needs urgent assessment the same day.
 - [[0.2.1 | Common Knee Injuries in Young Athletes]]
 - [[0.2.6 | Athlete Stories]]
 - [[0.7.3 | Coaching Safely]]
-- [[10.62 | Parents education centre]]
+- [[10.62 | Understanding Knee Pain in Children]]
 
 ## References
 

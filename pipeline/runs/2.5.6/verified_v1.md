@@ -231,7 +231,7 @@ pathology.
 - [[2.5.5 | MRI Anatomy]]
 - [[2.6.6 | Surgical Anatomy]]
 - [[2.9.1 | Superficial MCL]]
-- [[7.8 | Meniscal surgery]]
+- [[7.8 | Partial Meniscectomy]]
 
 ## References
 

@@ -260,3 +260,79 @@ class RevisedOrders(unittest.TestCase):
         self.assertNotIn("what_this_is", tpl["page_types"]["careers"]["body_sections"])
         for name in self.EXPECTED:
             self.assertNotIn("why_it_matters", tpl["page_types"][name]["body_sections"], name)
+
+
+class OutlineIsNotABriefSource(unittest.TestCase):
+    """The Sections 1 to 15 outline carries titles and nothing else. A brief built
+    from it would have no tiers and no must_not_cover list, and the must_not_cover
+    list is what stops the same fact being written on three thousand pages. See
+    docs/findings/001."""
+
+    def setUp(self):
+        here = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        self.arch_dir = os.path.join(here, "config", "architecture")
+        with open(os.path.join(self.arch_dir, "outline_1_to_15.json")) as fh:
+            self.outline = json.load(fh)
+
+    def test_the_outline_is_not_matched_by_the_page_map_glob(self):
+        names = [n for n in os.listdir(self.arch_dir)
+                 if n.startswith("pages_") and n.endswith(".json")]
+        self.assertNotIn("outline_1_to_15.json", names)
+
+    def test_architecture_load_pages_does_not_see_it(self):
+        ids = set(str(p["page_id"]) for p in architecture.load_pages())
+        outline_only = [p["page_id"] for p in self.outline["pages"]
+                        if p["section"]["id"] not in ("1", "2", "3")]
+        self.assertTrue(outline_only)
+        self.assertEqual([p for p in outline_only if p in ids], [],
+                         "an outline only page reached the brief generator")
+
+    def test_sections_1_to_3_agree_with_the_page_map(self):
+        """The one known exception is 2.12.5, where the upload has a US spelling
+        and the page map has the British one. UK-001 bans the -ize form."""
+        mapped = dict((str(p["page_id"]), p) for p in architecture.load_pages())
+        mismatched = []
+        for p in self.outline["pages"]:
+            if p["section"]["id"] not in ("1", "2", "3"):
+                continue
+            other = mapped.get(p["page_id"])
+            self.assertIsNotNone(other, "%s missing from the page map" % p["page_id"])
+            if other["title"].strip() != p["title"].strip():
+                mismatched.append(p["page_id"])
+        self.assertEqual(mismatched, ["2.12.5"])
+
+    def test_every_chapter_is_carried_including_the_empty_ones(self):
+        """775 chapters have no enumerated pages. They are still link targets, so
+        crossrefs needs their names."""
+        chapters = self.outline["chapters"]
+        self.assertGreater(len(chapters), len(set(
+            p["chapter"]["id"] for p in self.outline["pages"])))
+        empty = [c for c in chapters if c["pages_enumerated"] == 0]
+        self.assertGreater(len(empty), 700)
+
+
+class SectionConventions(unittest.TestCase):
+    """Each later section's preamble declares its own tiers and subsections. That
+    is a client supplied page template, and it is what decisions 003 and 005 had
+    to invent in its absence."""
+
+    def setUp(self):
+        here = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        with open(os.path.join(here, "config", "section_conventions.json")) as fh:
+            self.conv = json.load(fh)["sections"]
+
+    def test_every_section_one_to_fifteen_is_present(self):
+        self.assertEqual(sorted(self.conv, key=int), [str(i) for i in range(1, 16)])
+
+    def test_the_conditions_library_declares_five_tiers_and_sixteen_sections(self):
+        s = self.conv["6"]
+        self.assertEqual(len(s["tiers_declared"]), 5)
+        self.assertEqual(len(s["required_sections_declared"]), 16)
+
+    def test_a_declared_list_keeps_its_trigger_sentence(self):
+        """Classification is a heuristic, so the sentence it was based on stays
+        in the file and can be checked."""
+        for sid, s in self.conv.items():
+            for group in s.get("declared") or []:
+                self.assertTrue(group["trigger"].endswith(":"), sid)
+                self.assertTrue(group["items"], sid)

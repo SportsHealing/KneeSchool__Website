@@ -102,8 +102,8 @@ teacher, coach or doctor.
 - [[0.3.3 | Beyond Surgery]]
 - [[0.3.4 | What MRCS and FRCS Actually Are]]
 - [[0.4.1 | Choosing Subjects]]
-- [[7.119 | Training pathways in full]]
-- [[14.69 | Careers and examinations hub]]
+- [[7.119 | Building a Knee Practice]]
+- [[14.69 | How to Pass Medical School Orthopaedics]]
 
 ## References
 

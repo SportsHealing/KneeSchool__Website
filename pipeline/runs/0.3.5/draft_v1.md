@@ -75,7 +75,7 @@ teacher, coach or doctor.
 - [[0.3.1 | The Road to Knee Surgeon]]
 - [[0.3.2 | A Day in the Life]]
 - [[0.4.5 | Widening Participation]]
-- [[15.68 | Representation in the specialty]]
+- [[15.68 | Women in Knee Surgery]]
 
 ## References
 

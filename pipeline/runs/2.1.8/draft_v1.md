@@ -194,7 +194,7 @@ terms rather than fixed ones.
 - [[2.1.5 | Trochlea]]
 - [[2.1.6 | Femoral Attachments of Ligaments]]
 - [[5.3.2 | Distal femoral imaging]]
-- [[5.5.2 | Magnetic resonance of the distal femur]]
+- [[5.5.2 | Normal MRI Anatomy]]
 
 ## References
 

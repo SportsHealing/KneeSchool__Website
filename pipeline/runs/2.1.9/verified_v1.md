@@ -209,7 +209,7 @@ from Section 2.
 - [[2.1.3 | Medial Femoral Condyle]]
 - [[2.1.4 | Lateral Femoral Condyle]]
 - [[2.1.5 | Trochlea]]
-- [[3.13 | Femoral geometry and knee function]]
+- [[3.13 | Alignment and Biomechanics]]
 
 ## References
 

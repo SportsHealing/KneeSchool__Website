@@ -191,7 +191,7 @@ group. Section 10 owns the paediatric decision.
 - [[2.1.6 | Femoral Attachments of Ligaments]]
 - [[2.9.1 | Superficial MCL]]
 - [[2.12.1 | Trochlea]]
-- [[3.13 | Femoral geometry and knee function]]
+- [[3.13 | Alignment and Biomechanics]]
 
 ## References
 

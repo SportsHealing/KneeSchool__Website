@@ -194,7 +194,7 @@ threshold is a measured value owned by Section 5.
 - [[2.6.1 | Gross Anatomy]]
 - [[2.6.2 | Popliteomeniscal Fascicles]]
 - [[2.6.3 | Meniscofemoral Ligaments]]
-- [[5.6 | Meniscal imaging]]
+- [[5.6 | Meniscal MRI]]
 
 ## References
 

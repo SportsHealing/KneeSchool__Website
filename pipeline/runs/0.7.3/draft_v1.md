@@ -124,7 +124,7 @@ week.
 - [[0.2.3 | Warm-Ups That Work]]
 - [[0.2.1 | Common Knee Injuries in Young Athletes]]
 - [[0.7.4 | Supporting an Injured Young Athlete]]
-- [[11.42 | Youth load management]]
+- [[11.42 | Training During Growth Spurts]]
 
 ## References
 

@@ -38,12 +38,38 @@ STOP = set("the a an and of or in to for on at is are be with your you it its as
 
 
 def titles():
+    """page_id to title, and chapter_id to chapter name.
+
+    Two sources. pages_*.json is the full page map for sections 0 to 3. The
+    outline added on 9 October 2026 covers sections 1 to 15 with titles only,
+    and it is loaded here precisely because it is titles: a forward link to
+    section 7 could not be checked against anything before it arrived.
+
+    Chapter ids go in the same map, because this site's prose links to a chapter
+    as often as to a page: "3.13 takes that further", "7.20 owns the technique".
+    """
     out = {}
     for name in sorted(os.listdir(ARCH_DIR)):
+        path = os.path.join(ARCH_DIR, name)
         if name.startswith("pages_") and name.endswith(".json"):
-            with open(os.path.join(ARCH_DIR, name)) as fh:
-                for page in json.load(fh):
-                    out[str(page["page_id"])] = page["title"]
+            with open(path) as fh:
+                pages = json.load(fh)
+        elif name.startswith("outline_") and name.endswith(".json"):
+            with open(path) as fh:
+                doc = json.load(fh)
+            pages = doc.get("pages") or []
+            # chapters are carried separately because 775 of them have no pages,
+            # and a link to one of those is still a link worth checking
+            for chapter in doc.get("chapters") or []:
+                out.setdefault(str(chapter["chapter_id"]), chapter["name"])
+        else:
+            continue
+        for page in pages:
+            # a page map entry wins over an outline entry, because it is richer
+            out.setdefault(str(page["page_id"]), page["title"])
+            chapter = page.get("chapter") or {}
+            if chapter.get("id") and chapter.get("name"):
+                out.setdefault(str(chapter["id"]), chapter["name"])
     return out
 
 

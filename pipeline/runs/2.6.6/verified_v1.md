@@ -224,7 +224,7 @@ student page. What changes is that the limiting factor is what can be reached.
 - [[2.6.4 | Root Attachments]]
 - [[2.5.6 | Surgical Anatomy]]
 - [[2.10.6 | Common Peroneal Nerve]]
-- [[7.8 | Meniscal surgery]]
+- [[7.8 | Partial Meniscectomy]]
 
 ## References
 

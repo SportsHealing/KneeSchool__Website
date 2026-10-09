@@ -205,7 +205,7 @@ revision setting in a way it does not in a primary one.
 - [[2.1.4 | Lateral Femoral Condyle]]
 - [[2.1.5 | Trochlea]]
 - [[2.7.6 | Femoral Footprint]]
-- [[3.13 | Femoral geometry and knee function]]
+- [[3.13 | Alignment and Biomechanics]]
 
 ## References
 

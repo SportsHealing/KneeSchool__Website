@@ -115,7 +115,7 @@ teacher, coach or doctor.
 
 - [[0.5.1 | How We Know What We Know]]
 - [[0.5.2 | EPQ and Science Fair Project Ideas]]
-- [[12.9 | Critical appraisal]]
+- [[12.9 | How to Read a Scientific Paper]]
 
 ## References
 

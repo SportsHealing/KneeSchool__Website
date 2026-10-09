@@ -190,8 +190,8 @@ that, and this is the page on which it costs the reader most.
 - [[2.7.7 | Tibial Footprint]]
 - [[2.5.7 | Root Attachments]]
 - [[2.6.4 | Root Attachments]]
-- [[6.101 | Tibial spine avulsion]]
-- [[10.35 | Paediatric tibial spine injury]]
+- [[6.101 | Tibial Spine Avulsion]]
+- [[10.35 | Tibial Spine Avulsion]]
 
 ## References
 

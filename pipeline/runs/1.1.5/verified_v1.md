@@ -145,7 +145,7 @@ before the picture is obscured.
 - [[1.2.3 | Menisci]]
 - [[1.2.4 | Ligaments]]
 - [[1.2.10 | Growth plates]]
-- [[6.27 | Meniscal tears]]
+- [[6.27 | Meniscal Anatomy Review]]
 
 ## References
 

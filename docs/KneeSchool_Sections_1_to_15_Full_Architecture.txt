@@ -1,0 +1,3482 @@
+KneeSchool Master Publishing Architecture
+Full compiled architecture for Sections 1 to 15
+KneeSchool Master Publishing Architecture
+SECTION 1: KNEE FUNDAMENTALS
+Chapter 1.1 Introduction to the Knee
+Page 1.1.1 What Is the Knee?
+Patient
+Medical Student
+Page 1.1.2 Why the Knee Is Important
+Page 1.1.3 Functions of the Knee
+Page 1.1.4 Evolution of the Human Knee
+Page 1.1.5 Common Knee Problems
+Page 1.1.6 Lifelong Knee Health
+Chapter 1.2 Basic Knee Anatomy
+Page 1.2.1 Bones of the Knee
+Page 1.2.2 Articular Cartilage
+Page 1.2.3 Menisci
+Page 1.2.4 Ligaments
+Page 1.2.5 Tendons
+Page 1.2.6 Muscles Around the Knee
+Page 1.2.7 Nerves and Blood Supply
+Page 1.2.8 Synovium
+Page 1.2.9 Bursa
+Page 1.2.10 Growth Plates
+SECTION 2: ANATOMY ACADEMY
+Chapter 2.1 Femur
+2.1.1 Gross Anatomy
+2.1.2 Distal Femur
+2.1.3 Medial Femoral Condyle
+2.1.4 Lateral Femoral Condyle
+2.1.5 Trochlea
+2.1.6 Femoral Attachments of Ligaments
+2.1.7 Surgical Anatomy
+2.1.8 Imaging Anatomy
+2.1.9 Biomechanical Relevance
+Chapter 2.2 Tibia
+2.2.1 Proximal Tibia
+2.2.2 Tibial Plateau
+2.2.3 Tibial Spine
+2.2.4 Gerdy's Tubercle
+2.2.5 Tibial Tubercle
+2.2.6 Surgical Anatomy
+Chapter 2.3 Fibula
+2.3.1 Anatomy
+2.3.2 Attachments
+2.3.3 Clinical Importance
+Chapter 2.4 Patella
+2.4.1 Anatomy
+2.4.2 Ossification
+2.4.3 Biomechanics
+2.4.4 Patellar Tracking
+2.4.5 Surgical Relevance
+Chapter 2.5 Medial Meniscus
+2.5.1 Gross Anatomy
+2.5.2 Histology
+2.5.3 Vascular Supply
+2.5.4 Biomechanics
+2.5.5 MRI Anatomy
+2.5.6 Surgical Anatomy
+2.5.7 Root Attachments
+Chapter 2.6 Lateral Meniscus
+2.6.1 Gross Anatomy
+2.6.2 Popliteomeniscal Fascicles
+2.6.3 Meniscofemoral Ligaments
+2.6.4 Root Attachments
+2.6.5 MRI Anatomy
+2.6.6 Surgical Anatomy
+Chapter 2.7 ACL
+2.7.1 Gross Anatomy
+2.7.2 Embryology
+2.7.3 Histology
+2.7.4 Blood Supply
+2.7.5 Innervation
+2.7.6 Femoral Footprint
+2.7.7 Tibial Footprint
+2.7.8 Anteromedial Bundle
+2.7.9 Posterolateral Bundle
+2.7.10 Proprioception
+2.7.11 MRI Anatomy
+2.7.12 Surgical Anatomy
+Chapter 2.8 PCL
+2.8.1 Gross Anatomy
+2.8.2 AL Bundle
+2.8.3 PM Bundle
+2.8.4 Blood Supply
+2.8.5 MRI Anatomy
+2.8.6 Surgical Anatomy
+Chapter 2.9 Medial Structures
+2.9.1 Superficial MCL
+2.9.2 Deep MCL
+2.9.3 Posterior Oblique Ligament
+2.9.4 Posteromedial Corner
+2.9.5 Semimembranosus
+2.9.6 Dynamic Stabilisation
+2.9.7 Surgical Anatomy
+Chapter 2.10 Lateral Structures
+2.10.1 LCL
+2.10.2 Popliteus Tendon
+2.10.3 Popliteofibular Ligament
+2.10.4 Posterolateral Corner
+2.10.5 Biceps Femoris
+2.10.6 Common Peroneal Nerve
+2.10.7 Surgical Anatomy
+Chapter 2.11 Rotational Structures
+2.11.1 Iliotibial Band
+2.11.2 Kaplan Fibres
+2.11.3 Anterolateral Ligament
+2.11.4 Segond Lesion
+2.11.5 Anterolateral Complex
+Chapter 2.12 Patellofemoral Anatomy
+2.12.1 Trochlea
+2.12.2 MPFL
+2.12.3 MQTFL
+2.12.4 Retinacula
+2.12.5 Dynamic Stabilizers
+2.12.6 Surgical Anatomy
+SECTION 3: BIOMECHANICS ACADEMY
+Chapter 3.1 Introduction to Knee Biomechanics
+3.1.1 What Is Biomechanics?
+3.1.2 Why Biomechanics Matters
+3.1.3 Biomechanics in Everyday Life
+3.1.4 Biomechanics in Sport
+3.1.5 Biomechanics and Injury Prevention
+3.1.6 Biomechanics and Surgical Reconstruction
+3.1.7 Historical Development of Knee Biomechanics
+3.1.8 Landmark Biomechanical Studies
+Chapter 3.2 Functional Anatomy and Motion
+3.2.1 Degrees of Freedom of the Knee
+3.2.2 Flexion and Extension
+3.2.3 Internal Rotation
+3.2.4 External Rotation
+3.2.5 Varus Motion
+3.2.6 Valgus Motion
+3.2.7 Anterior Translation
+3.2.8 Posterior Translation
+3.2.9 Coupled Motion
+3.2.10 Knee Stability During Motion
+Chapter 3.3 Knee Kinematics
+3.3.1 Introduction to Kinematics
+3.3.2 Roll and Glide Mechanisms
+3.3.3 Femoral Motion on Tibia
+3.3.4 Tibial Motion on Femur
+3.3.5 Screw Home Mechanism
+3.3.6 Reverse Screw Home Mechanism
+3.3.7 Instant Centre of Rotation
+3.3.8 Changes Throughout Flexion
+3.3.9 Kinematics During Walking
+3.3.10 Kinematics During Running
+3.3.11 Kinematics During Squatting
+3.3.12 Kinematics During Stair Climbing
+3.3.13 Kinematics During Landing
+3.3.14 Kinematics During Cutting
+Chapter 3.4 Knee Kinetics
+3.4.1 Introduction to Kinetics
+3.4.2 Ground Reaction Forces
+3.4.3 Joint Reaction Forces
+3.4.4 Lever Arms
+3.4.5 Moments About the Knee
+3.4.6 External Moments
+3.4.7 Internal Moments
+3.4.8 Energy Absorption
+3.4.9 Force Transmission
+3.4.10 Shock Absorption
+Chapter 3.5 Tibiofemoral Contact Mechanics
+3.5.1 Contact Areas
+3.5.2 Contact Pressures
+3.5.3 Load Distribution
+3.5.4 Effects of Flexion
+3.5.5 Effects of Meniscal Loss
+3.5.6 Effects of Malalignment
+3.5.7 Effects of Obesity
+3.5.8 Contact Mechanics After ACL Injury
+3.5.9 Contact Mechanics After Meniscectomy
+3.5.10 Contact Mechanics After Osteotomy
+Chapter 3.6 Meniscal Biomechanics
+3.6.1 Functions of the Meniscus
+3.6.2 Hoop Stress
+3.6.3 Circumferential Fibres
+3.6.4 Radial Fibres
+3.6.5 Load Sharing
+3.6.6 Shock Absorption
+3.6.7 Joint Lubrication
+3.6.8 Proprioception
+3.6.9 Root Biomechanics
+3.6.10 Meniscal Extrusion
+3.6.11 Effects of Root Tears
+3.6.12 Effects of Radial Tears
+3.6.13 Meniscal Repair Biomechanics
+3.6.14 Meniscal Transplantation Biomechanics
+Chapter 3.7 ACL Biomechanics
+3.7.1 Functions of the ACL
+3.7.2 Primary Restraints
+3.7.3 Secondary Restraints
+3.7.4 Bundle Function
+3.7.5 AM Bundle Function
+3.7.6 PL Bundle Function
+3.7.7 Rotational Stability
+3.7.8 Anterior Stability
+3.7.9 Pivot Shift Mechanics
+3.7.10 ACL Strain During Activity
+3.7.11 ACL Loading During Running
+3.7.12 ACL Loading During Landing
+3.7.13 ACL Loading During Cutting
+3.7.14 ACL Injury Mechanisms
+3.7.15 Female ACL Biomechanics
+3.7.16 Graft Biomechanics
+3.7.17 Hamstring Graft Biomechanics
+3.7.18 Patellar Tendon Graft Biomechanics
+3.7.19 Quadriceps Tendon Graft Biomechanics
+3.7.20 ACL Reconstruction Biomechanics
+Chapter 3.8 PCL Biomechanics
+3.8.1 Functions of the PCL
+3.8.2 Posterior Stability
+3.8.3 Bundle Function
+3.8.4 AL Bundle Mechanics
+3.8.5 PM Bundle Mechanics
+3.8.6 Posterior Drawer Mechanics
+3.8.7 Gait Following PCL Injury
+3.8.8 PCL Reconstruction Biomechanics
+3.8.9 Double Bundle Reconstruction
+3.8.10 Inlay Techniques
+Chapter 3.9 Medial Knee Biomechanics
+3.9.1 Valgus Stability
+3.9.2 Rotational Stability
+3.9.3 Superficial MCL Function
+3.9.4 Deep MCL Function
+3.9.5 POL Function
+3.9.6 Posteromedial Corner Function
+3.9.7 AMRI Biomechanics
+3.9.8 Medial Reconstruction Biomechanics
+3.9.9 Contributions at Different Flexion Angles
+3.9.10 Combined ACL and MCL Injury
+Chapter 3.10 Lateral Knee Biomechanics
+3.10.1 Varus Stability
+3.10.2 External Rotation Stability
+3.10.3 LCL Function
+3.10.4 Popliteus Function
+3.10.5 Popliteofibular Ligament Function
+3.10.6 Posterolateral Corner Function
+3.10.7 Dial Test Biomechanics
+3.10.8 PLC Reconstruction Biomechanics
+3.10.9 Combined PCL and PLC Injury
+Chapter 3.11 Anterolateral Complex Biomechanics
+3.11.1 Iliotibial Band Function
+3.11.2 Kaplan Fibre Function
+3.11.3 Anterolateral Ligament Function
+3.11.4 Pivot Shift Control
+3.11.5 Internal Rotation Control
+3.11.6 Segond Lesion Mechanics
+3.11.7 Lateral Extra-articular Tenodesis
+3.11.8 Combined ACL and ALL Reconstruction
+3.11.9 Contemporary Controversies
+Chapter 3.12 Patellofemoral Biomechanics
+3.12.1 Patellar Tracking
+3.12.2 Contact Areas
+3.12.3 Contact Pressures
+3.12.4 Trochlear Function
+3.12.5 MPFL Function
+3.12.6 Q Angle
+3.12.7 Dynamic Valgus
+3.12.8 Patellar Instability
+3.12.9 Patellofemoral Pain
+3.12.10 Patellofemoral Arthritis
+3.12.11 Effects of Malalignment
+3.12.12 Tibial Tubercle Position
+Chapter 3.13 Alignment and Biomechanics
+3.13.1 Mechanical Axis
+3.13.2 Anatomical Axis
+3.13.3 Varus Alignment
+3.13.4 Valgus Alignment
+3.13.5 Constitutional Varus
+3.13.6 Joint Line Obliquity
+3.13.7 Dynamic Alignment
+3.13.8 Alignment and OA
+3.13.9 Osteotomy Biomechanics
+3.13.10 Alignment Correction Principles
+Chapter 3.14 Gait Analysis
+3.14.1 Normal Gait
+3.14.2 Stance Phase
+3.14.3 Swing Phase
+3.14.4 Running Gait
+3.14.5 Sprinting
+3.14.6 Cutting Manoeuvres
+3.14.7 Jumping
+3.14.8 Landing
+3.14.9 ACL Deficient Gait
+3.14.10 PCL Deficient Gait
+3.14.11 Arthritic Gait
+3.14.12 Post-Arthroplasty Gait
+Chapter 3.15 Sports-Specific Knee Biomechanics
+3.15.1 Football
+3.15.2 Cricket
+3.15.3 Rugby
+3.15.4 Tennis
+3.15.5 Basketball
+3.15.6 Skiing
+3.15.7 Athletics
+3.15.8 Cycling
+3.15.9 Golf
+3.15.10 Dance
+Chapter 3.16 Advanced Biomechanics
+3.16.1 Cadaveric Testing
+3.16.2 Robotic Testing Systems
+3.16.3 Navigation Systems
+3.16.4 Finite Element Modelling
+3.16.5 Computational Biomechanics
+3.16.6 Artificial Intelligence
+3.16.7 Motion Capture
+3.16.8 Wearable Technology
+3.16.9 Digital Twins
+3.16.10 Future Directions
+Chapter 3.17 Landmark Biomechanics Papers
+3.17.1 ACL Landmark Studies
+3.17.2 PCL Landmark Studies
+3.17.3 Meniscal Landmark Studies
+3.17.4 Medial Knee Landmark Studies
+3.17.5 PLC Landmark Studies
+3.17.6 Patellofemoral Landmark Studies
+3.17.7 Osteotomy Landmark Studies
+3.17.8 Arthroplasty Landmark Studies
+3.17.9 Imperial Knee Biomechanics Contributions
+3.17.10 Future Research Priorities
+This section alone contains approximately 180-220 individual educational pages and would form one of the most important differentiators of KneeSchool, particularly given your own PhD, published biomechanical research, and expertise in medial knee stability, ACL reconstruction and meniscal function.
+SECTION 4: CLINICAL EXAMINATION ACADEMY
+Chapter 4.1 Introduction to Knee Examination
+4.1.1 Why Clinical Examination Matters
+4.1.2 Principles of Knee Assessment
+4.1.3 History Versus Imaging
+4.1.4 Structured Examination Approach
+4.1.5 Common Examination Pitfalls
+4.1.6 Examination in the Era of MRI
+4.1.7 Examination for Different Audiences
+4.1.8 Examination Documentation
+Chapter 4.2 History Taking
+Section 4.2.1 Presenting Complaint
+4.2.1.1 Pain
+4.2.1.2 Instability
+4.2.1.3 Swelling
+4.2.1.4 Stiffness
+4.2.1.5 Locking
+4.2.1.6 Giving Way
+4.2.1.7 Mechanical Symptoms
+Section 4.2.2 Pain Assessment
+4.2.2.1 Location of Pain
+4.2.2.2 Onset
+4.2.2.3 Severity
+4.2.2.4 Aggravating Factors
+4.2.2.5 Relieving Factors
+4.2.2.6 Night Pain
+4.2.2.7 Inflammatory Pain
+4.2.2.8 Referred Pain
+Section 4.2.3 Injury History
+4.2.3.1 Non-contact Injury
+4.2.3.2 Contact Injury
+4.2.3.3 Twisting Injury
+4.2.3.4 Hyperextension Injury
+4.2.3.5 Direct Blow
+4.2.3.6 Dashboard Injury
+4.2.3.7 Patellar Dislocation Event
+Section 4.2.4 Sports-Specific History
+4.2.4.1 Football
+4.2.4.2 Cricket
+4.2.4.3 Rugby
+4.2.4.4 Skiing
+4.2.4.5 Running
+4.2.4.6 Tennis
+4.2.4.7 Basketball
+Section 4.2.5 Previous Treatment History
+4.2.5.1 Previous Surgery
+4.2.5.2 Previous Injections
+4.2.5.3 Previous Physiotherapy
+4.2.5.4 Previous Imaging
+4.2.5.5 Previous Rehabilitation
+Chapter 4.3 General Inspection
+4.3.1 Observation from the Door
+4.3.2 Gait Observation
+4.3.3 Standing Alignment
+4.3.4 Sitting Assessment
+4.3.5 Supine Assessment
+4.3.6 Skin Changes
+4.3.7 Surgical Scars
+4.3.8 Swelling
+4.3.9 Muscle Wasting
+4.3.10 Deformity
+Chapter 4.4 Gait Examination
+4.4.1 Normal Gait
+4.4.2 Antalgic Gait
+4.4.3 Quadriceps Avoidance Gait
+4.4.4 PCL Deficient Gait
+4.4.5 Trendelenburg Gait
+4.4.6 Arthritic Gait
+4.4.7 Post-operative Gait
+4.4.8 Running Gait Assessment
+4.4.9 Single Leg Landing Assessment
+4.4.10 Functional Movement Screening
+Chapter 4.5 Alignment Assessment
+4.5.1 Mechanical Axis Assessment
+4.5.2 Varus Alignment
+4.5.3 Valgus Alignment
+4.5.4 Flexion Deformity
+4.5.5 Hyperextension
+4.5.6 Rotational Alignment
+4.5.7 Dynamic Alignment
+4.5.8 Limb Length Assessment
+Chapter 4.6 Palpation
+4.6.1 Systematic Palpation
+4.6.2 Temperature Assessment
+4.6.3 Effusion Assessment
+4.6.4 Joint Line Tenderness
+4.6.5 Patellar Tenderness
+4.6.6 Tendon Tenderness
+4.6.7 Tibial Tubercle Tenderness
+4.6.8 Fibular Head Tenderness
+4.6.9 Posterior Knee Palpation
+4.6.10 Popliteal Fossa Examination
+Chapter 4.7 Range of Motion
+4.7.1 Active Motion
+4.7.2 Passive Motion
+4.7.3 Hyperextension
+4.7.4 Flexion Assessment
+4.7.5 End Feel
+4.7.6 Painful Arc
+4.7.7 Contractures
+4.7.8 Extension Lag
+4.7.9 Functional Range
+4.7.10 Post-operative Range Assessment
+Chapter 4.8 Effusion Assessment
+4.8.1 Normal Fluid Physiology
+4.8.2 Clinical Significance
+4.8.3 Bulge Sign
+4.8.4 Patellar Tap
+4.8.5 Sweep Test
+4.8.6 Ballottement
+4.8.7 Acute Haemarthrosis
+4.8.8 Chronic Effusions
+4.8.9 Synovitis
+4.8.10 Crystal Arthropathy
+Chapter 4.9 Meniscal Examination
+4.9.1 Clinical Presentation
+4.9.2 Joint Line Tenderness
+4.9.3 McMurray Test
+4.9.4 Thessaly Test
+4.9.5 Apley Compression Test
+4.9.6 Childress Squat Test
+4.9.7 Ege Test
+4.9.8 Mechanical Locking
+4.9.9 Meniscal Root Tears
+4.9.10 Meniscal Deficiency
+4.9.11 Meniscal Examination in OA
+Chapter 4.10 ACL Examination
+4.10.1 History of ACL Injury
+4.10.2 Acute ACL Injury
+4.10.3 Chronic ACL Deficiency
+4.10.4 Lachman Test
+4.10.5 Anterior Drawer Test
+4.10.6 Pivot Shift Test
+4.10.7 Lever Sign Test
+4.10.8 Dynamic Assessment
+4.10.9 Rotational Instability
+4.10.10 Examination Under Anaesthesia
+4.10.11 Post-Reconstruction Assessment
+4.10.12 Revision ACL Assessment
+Chapter 4.11 PCL Examination
+4.11.1 Posterior Sag Sign
+4.11.2 Posterior Drawer Test
+4.11.3 Quadriceps Active Test
+4.11.4 Reverse Pivot Shift
+4.11.5 Dynamic PCL Examination
+4.11.6 Chronic PCL Deficiency
+4.11.7 Combined Ligament Injury Assessment
+Chapter 4.12 Medial Knee Examination
+4.12.1 Valgus Stress Testing
+4.12.2 Assessment at 0 Degrees
+4.12.3 Assessment at 30 Degrees
+4.12.4 Deep MCL Assessment
+4.12.5 POL Assessment
+4.12.6 AMRI Assessment
+4.12.7 Medial Meniscus Versus MCL Injury
+4.12.8 Post-Reconstruction Assessment
+Chapter 4.13 Lateral Knee Examination
+4.13.1 Varus Stress Test
+4.13.2 LCL Assessment
+4.13.3 Popliteus Assessment
+4.13.4 Posterolateral Corner Assessment
+4.13.5 Dial Test
+4.13.6 Reverse Pivot Shift
+4.13.7 External Rotation Recurvatum Test
+4.13.8 Combined PLC Injuries
+Chapter 4.14 Rotational Instability Examination
+4.14.1 Pivot Shift
+4.14.2 Slocum Test
+4.14.3 Anterolateral Rotatory Instability
+4.14.4 Anteromedial Rotatory Instability
+4.14.5 Combined Instability Patterns
+4.14.6 Examination Under Anaesthesia
+Chapter 4.15 Patellofemoral Examination
+4.15.1 Patellar Tracking
+4.15.2 J Sign
+4.15.3 Patellar Apprehension Test
+4.15.4 Patellar Glide
+4.15.5 Patellar Tilt
+4.15.6 Dynamic Tracking
+4.15.7 MPFL Assessment
+4.15.8 Trochlear Dysplasia Assessment
+4.15.9 Patellofemoral Pain Syndrome
+4.15.10 Patellofemoral Arthritis
+Chapter 4.16 Tendon Examination
+4.16.1 Quadriceps Tendon
+4.16.2 Patellar Tendon
+4.16.3 Jumper's Knee
+4.16.4 Osgood-Schlatter Disease
+4.16.5 Sinding-Larsen-Johansson Syndrome
+4.16.6 Hamstring Tendinopathy
+4.16.7 Pes Anserinus Pathology
+Chapter 4.17 Cartilage Examination
+4.17.1 Clinical Presentation
+4.17.2 Mechanical Symptoms
+4.17.3 Osteochondral Lesions
+4.17.4 Osteochondritis Dissecans
+4.17.5 Articular Cartilage Defects
+4.17.6 Functional Assessment
+Chapter 4.18 Osteoarthritis Examination
+4.18.1 Early OA
+4.18.2 Established OA
+4.18.3 Varus OA
+4.18.4 Valgus OA
+4.18.5 Patellofemoral OA
+4.18.6 Functional Limitation
+4.18.7 Arthroplasty Assessment
+Chapter 4.19 Paediatric Knee Examination
+4.19.1 Growth Plate Assessment
+4.19.2 Paediatric ACL Injury
+4.19.3 Discoid Meniscus
+4.19.4 Patellar Instability
+4.19.5 OCD
+4.19.6 Developmental Variants
+4.19.7 Torsional Assessment
+Chapter 4.20 Examination of the Post-operative Knee
+4.20.1 ACL Reconstruction
+4.20.2 Meniscal Repair
+4.20.3 Root Repair
+4.20.4 Osteotomy
+4.20.5 Cartilage Surgery
+4.20.6 MPFL Reconstruction
+4.20.7 Partial Knee Replacement
+4.20.8 Total Knee Replacement
+4.20.9 Revision Knee Surgery
+Chapter 4.21 Functional Testing
+4.21.1 Single Leg Squat
+4.21.2 Single Leg Hop
+4.21.3 Triple Hop
+4.21.4 Crossover Hop
+4.21.5 Y Balance Test
+4.21.6 Landing Error Scoring System
+4.21.7 Return to Sport Testing
+4.21.8 Return to Play Decision Making
+Chapter 4.22 Examination Scoring Systems
+4.22.1 IKDC
+4.22.2 KOOS
+4.22.3 Lysholm
+4.22.4 Tegner
+4.22.5 Oxford Knee Score
+4.22.6 ACL-RSI
+4.22.7 Sportshealing Knee Score
+4.22.8 PROMs in Clinical Practice
+Chapter 4.23 Special Situations
+4.23.1 Examination Under Anaesthesia
+4.23.2 Elite Athletes
+4.23.3 Hypermobile Patients
+4.23.4 Obese Patients
+4.23.5 Revision Surgery Patients
+4.23.6 Complex Multi-ligament Injuries
+4.23.7 Medico-legal Assessment
+Chapter 4.24 Landmark Examination Papers
+4.24.1 Lachman Literature
+4.24.2 Pivot Shift Literature
+4.24.3 Meniscal Test Literature
+4.24.4 Patellofemoral Literature
+4.24.5 Functional Testing Literature
+4.24.6 Future Directions in Knee Examination
+This section would generate approximately 150-200 pages and would become one of the most valuable educational areas of KneeSchool because examination is the bridge between anatomy, biomechanics, imaging and treatment. It also lends itself exceptionally well to video demonstrations, FRCS viva preparation, OSCE-style teaching and AI-assisted learning modules.
+SECTION 5: IMAGING ACADEMY
+Chapter 5.1 Introduction to Knee Imaging
+5.1.1 Why Imaging Matters
+5.1.2 Clinical Examination Versus Imaging
+5.1.3 Choosing the Correct Investigation
+5.1.4 Imaging Pathways
+5.1.5 Cost-effectiveness of Imaging
+5.1.6 Imaging Pitfalls
+5.1.7 Evidence-Based Imaging
+5.1.8 Future of Knee Imaging
+Chapter 5.2 Imaging Physics for Knee Specialists
+Section 5.2.1 X-ray Physics
+5.2.1.1 Generation of X-rays
+5.2.1.2 Image Formation
+5.2.1.3 Radiation Dose
+5.2.1.4 Scatter
+5.2.1.5 Magnification
+Section 5.2.2 Ultrasound Physics
+5.2.2.1 Sound Waves
+5.2.2.2 Frequency Selection
+5.2.2.3 Reflection
+5.2.2.4 Refraction
+5.2.2.5 Anisotropy
+5.2.2.6 Doppler Imaging
+Section 5.2.3 MRI Physics
+5.2.3.1 Basic Principles
+5.2.3.2 T1 Imaging
+5.2.3.3 T2 Imaging
+5.2.3.4 Proton Density Imaging
+5.2.3.5 Fat Suppression
+5.2.3.6 STIR Imaging
+5.2.3.7 Gradient Echo Imaging
+5.2.3.8 Artefacts
+5.2.3.9 Magic Angle Effect
+5.2.3.10 Advanced MRI Techniques
+Section 5.2.4 CT Physics
+5.2.4.1 CT Acquisition
+5.2.4.2 Reconstruction
+5.2.4.3 Radiation Dose
+5.2.4.4 3D Reconstruction
+Chapter 5.3 Plain Radiography
+Section 5.3.1 Standard Knee Radiographs
+5.3.1.1 AP View
+5.3.1.2 Lateral View
+5.3.1.3 Skyline View
+5.3.1.4 Tunnel View
+5.3.1.5 Rosenberg View
+Section 5.3.2 Alignment Imaging
+5.3.2.1 Long Leg Alignment Films
+5.3.2.2 Mechanical Axis
+5.3.2.3 Anatomical Axis
+5.3.2.4 Joint Line Obliquity
+5.3.2.5 Deformity Analysis
+Section 5.3.3 Fracture Imaging
+5.3.3.1 Tibial Plateau Fractures
+5.3.3.2 Patellar Fractures
+5.3.3.3 Femoral Condyle Fractures
+5.3.3.4 Avulsion Injuries
+5.3.3.5 Segond Fractures
+Section 5.3.4 Osteoarthritis Imaging
+5.3.4.1 Kellgren-Lawrence Grading
+5.3.4.2 Joint Space Narrowing
+5.3.4.3 Osteophytes
+5.3.4.4 Subchondral Sclerosis
+5.3.4.5 Alignment Changes
+Chapter 5.4 Ultrasound of the Knee
+Section 5.4.1 Normal Ultrasound Anatomy
+5.4.1.1 Anterior Knee
+5.4.1.2 Medial Knee
+5.4.1.3 Lateral Knee
+5.4.1.4 Posterior Knee
+Section 5.4.2 Tendon Imaging
+5.4.2.1 Quadriceps Tendon
+5.4.2.2 Patellar Tendon
+5.4.2.3 Hamstring Tendons
+5.4.2.4 Popliteus Tendon
+Section 5.4.3 Ligament Imaging
+5.4.3.1 MCL
+5.4.3.2 LCL
+5.4.3.3 MPFL
+5.4.3.4 PLC Structures
+Section 5.4.4 Dynamic Ultrasound
+5.4.4.1 Snapping Tendons
+5.4.4.2 Patellar Tracking
+5.4.4.3 Dynamic Instability
+Section 5.4.5 Interventional Ultrasound
+5.4.5.1 Knee Injection
+5.4.5.2 Aspiration
+5.4.5.3 Hydrodissection
+5.4.5.4 PRP Procedures
+5.4.5.5 Tendon Procedures
+Chapter 5.5 MRI of the Knee
+Section 5.5.1 MRI Protocols
+5.5.1.1 Standard Protocol
+5.5.1.2 Sports Knee Protocol
+5.5.1.3 Post-operative Protocol
+5.5.1.4 Paediatric Protocol
+5.5.1.5 Tumour Protocol
+Section 5.5.2 Normal MRI Anatomy
+5.5.2.1 Bones
+5.5.2.2 Cartilage
+5.5.2.3 Menisci
+5.5.2.4 Ligaments
+5.5.2.5 Tendons
+5.5.2.6 Synovium
+5.5.2.7 Bursa
+5.5.2.8 Neurovascular Structures
+Chapter 5.6 Meniscal MRI
+5.6.1 Normal Meniscus
+5.6.2 Meniscal Signal Grading
+5.6.3 Horizontal Tears
+5.6.4 Vertical Tears
+5.6.5 Radial Tears
+5.6.6 Bucket Handle Tears
+5.6.7 Flap Tears
+5.6.8 Complex Tears
+5.6.9 Root Tears
+5.6.10 Ramp Lesions
+5.6.11 Meniscal Extrusion
+5.6.12 Post-operative Meniscus
+5.6.13 Meniscal Repair Imaging
+5.6.14 Meniscal Transplantation Imaging
+Chapter 5.7 ACL MRI
+5.7.1 Normal ACL
+5.7.2 Partial Tears
+5.7.3 Complete Tears
+5.7.4 Acute ACL Injury
+5.7.5 Chronic ACL Injury
+5.7.6 Mucoid Degeneration
+5.7.7 Ganglion Cysts
+5.7.8 ACL Healing
+5.7.9 ACL Reconstruction
+5.7.10 Graft Maturation
+5.7.11 Graft Failure
+5.7.12 Tunnel Assessment
+5.7.13 Cyclops Lesions
+5.7.14 Revision ACL Imaging
+Chapter 5.8 PCL MRI
+5.8.1 Normal PCL
+5.8.2 Partial Tears
+5.8.3 Complete Tears
+5.8.4 Chronic PCL Injury
+5.8.5 PCL Reconstruction
+5.8.6 Graft Assessment
+Chapter 5.9 Medial Knee MRI
+5.9.1 MCL Anatomy
+5.9.2 MCL Sprains
+5.9.3 Deep MCL Injuries
+5.9.4 POL Injuries
+5.9.5 Posteromedial Corner Injuries
+5.9.6 AMRI Imaging
+5.9.7 Post-operative Medial Reconstructions
+Chapter 5.10 Lateral Knee MRI
+5.10.1 LCL Injuries
+5.10.2 Popliteus Injuries
+5.10.3 PLC Injuries
+5.10.4 Popliteofibular Ligament
+5.10.5 Common Peroneal Nerve
+5.10.6 Post-operative PLC Imaging
+Chapter 5.11 Cartilage MRI
+5.11.1 Normal Cartilage
+5.11.2 Chondral Defects
+5.11.3 Fissuring
+5.11.4 Delamination
+5.11.5 Osteochondral Lesions
+5.11.6 OCD
+5.11.7 Bone Marrow Lesions
+5.11.8 Cartilage Repair Procedures
+5.11.9 ACI Imaging
+5.11.10 MACI Imaging
+5.11.11 Osteochondral Grafts
+Chapter 5.12 Patellofemoral MRI
+5.12.1 Trochlear Dysplasia
+5.12.2 Patella Alta
+5.12.3 Patellar Tilt
+5.12.4 Patellar Subluxation
+5.12.5 MPFL Injury
+5.12.6 Cartilage Injury
+5.12.7 Patellofemoral Arthritis
+5.12.8 Post-operative Imaging
+Chapter 5.13 Bone and Marrow Imaging
+5.13.1 Bone Marrow Oedema
+5.13.2 Stress Reactions
+5.13.3 Stress Fractures
+5.13.4 Insufficiency Fractures
+5.13.5 Osteonecrosis
+5.13.6 Transient Osteoporosis
+5.13.7 Bone Tumours
+Chapter 5.14 Synovial and Inflammatory Disorders
+5.14.1 Synovitis
+5.14.2 Rheumatoid Arthritis
+5.14.3 Psoriatic Arthritis
+5.14.4 Crystal Arthropathy
+5.14.5 PVNS/TGCT
+5.14.6 Synovial Chondromatosis
+5.14.7 Septic Arthritis
+Chapter 5.15 Paediatric MRI
+5.15.1 Normal Paediatric Anatomy
+5.15.2 Growth Plates
+5.15.3 OCD
+5.15.4 Discoid Meniscus
+5.15.5 Paediatric ACL Injury
+5.15.6 Patellar Instability
+5.15.7 Developmental Variants
+Chapter 5.16 CT of the Knee
+5.16.1 Fracture Assessment
+5.16.2 Tibial Plateau Fractures
+5.16.3 Rotational Profiles
+5.16.4 TT-TG Measurement
+5.16.5 Osteotomy Planning
+5.16.6 Arthroplasty Planning
+5.16.7 Robotic Surgery Planning
+5.16.8 3D Reconstructions
+Chapter 5.17 Post-operative Imaging
+5.17.1 ACL Reconstruction
+5.17.2 Meniscal Repair
+5.17.3 Root Repair
+5.17.4 Osteotomy
+5.17.5 Cartilage Procedures
+5.17.6 MPFL Reconstruction
+5.17.7 Partial Knee Replacement
+5.17.8 Total Knee Replacement
+5.17.9 Revision Arthroplasty
+Chapter 5.18 Advanced Imaging
+5.18.1 Quantitative MRI
+5.18.2 T2 Mapping
+5.18.3 T1 Rho Imaging
+5.18.4 UTE Imaging
+5.18.5 Weight-Bearing MRI
+5.18.6 Dynamic MRI
+5.18.7 PET-MRI
+5.18.8 Artificial Intelligence in Imaging
+Chapter 5.19 Magic Angle MRI Academy
+5.19.1 Physics of Magic Angle Imaging
+5.19.2 Collagen Architecture
+5.19.3 Tendon Imaging
+5.19.4 Ligament Imaging
+5.19.5 Meniscal Imaging
+5.19.6 Cartilage Applications
+5.19.7 Current Research
+5.19.8 Imperial Magic Angle Programme
+5.19.9 Clinical Translation
+5.19.10 Future Applications
+Chapter 5.20 Imaging Reporting Academy
+5.20.1 Structured Reporting
+5.20.2 Reporting Meniscal Tears
+5.20.3 Reporting ACL Injuries
+5.20.4 Reporting MCL Injuries
+5.20.5 Reporting Cartilage Lesions
+5.20.6 Reporting OA
+5.20.7 Reporting Post-operative Knees
+5.20.8 Common Reporting Errors
+Chapter 5.21 Landmark Imaging Papers
+5.21.1 Meniscal Imaging Literature
+5.21.2 ACL Imaging Literature
+5.21.3 Cartilage Imaging Literature
+5.21.4 Patellofemoral Imaging Literature
+5.21.5 Osteoarthritis Imaging Literature
+5.21.6 Artificial Intelligence Literature
+5.21.7 ESSR Landmark Papers
+5.21.8 Future Directions
+Section 5 would likely generate 250-350 pages and should become one of the strongest differentiators of KneeSchool because of your partnership with Dr Cynthia Gupte, your MRI reporting expertise, Sportshealing imaging services, and the unique opportunity to develop a dedicated Magic Angle MRI Academy, which very few educational platforms could offer.
+SECTION 6: CONDITIONS LIBRARY
+Overview
+The Conditions Library is the largest and most commercially important section of KneeSchool.
+Every condition should be structured into:
+Patient Overview
+Medical Student Version
+MRCS Version
+FRCS Version
+Fellowship Version
+Each condition should contain:
+Anatomy
+Epidemiology
+Aetiology
+Pathophysiology
+Biomechanics
+Clinical Presentation
+Examination
+Imaging
+Differential Diagnosis
+Non-operative Treatment
+Operative Treatment
+Rehabilitation
+Outcomes
+Complications
+Controversies
+Landmark Papers
+PART A: ACL DISORDERS
+Chapter 6.1 ACL Fundamentals
+6.1.1 What is the ACL?
+6.1.2 Functions of the ACL
+6.1.3 Epidemiology
+6.1.4 Natural History
+6.1.5 Mechanisms of Injury
+Chapter 6.2 Acute ACL Injury
+6.2.1 Non-contact Injury
+6.2.2 Contact Injury
+6.2.3 Hyperextension Injury
+6.2.4 Combined Injuries
+6.2.5 Acute Haemarthrosis
+Chapter 6.3 ACL Tear Patterns
+6.3.1 Femoral Avulsion
+6.3.2 Mid-substance Tear
+6.3.3 Tibial Avulsion
+6.3.4 Partial Tears
+6.3.5 Complete Tears
+6.3.6 Healing ACL Tears
+Chapter 6.4 ACL Associated Injuries
+6.4.1 Bone Bruising
+6.4.2 Ramp Lesions
+6.4.3 Meniscal Root Tears
+6.4.4 ALL Injuries
+6.4.5 MCL Injuries
+6.4.6 Cartilage Injuries
+Chapter 6.5 Chronic ACL Deficiency
+6.5.1 Instability
+6.5.2 Meniscal Damage
+6.5.3 Cartilage Degeneration
+6.5.4 Osteoarthritis
+Chapter 6.6 Female ACL Injuries
+6.6.1 Epidemiology
+6.6.2 Hormonal Factors
+6.6.3 Neuromuscular Factors
+6.6.4 Prevention
+Chapter 6.7 Paediatric ACL Injuries
+6.7.1 Skeletally Immature Patients
+6.7.2 Physeal Injuries
+6.7.3 Reconstruction Strategies
+Chapter 6.8 Revision ACL Problems
+6.8.1 Graft Failure
+6.8.2 Tunnel Malposition
+6.8.3 Biological Failure
+6.8.4 Infection
+PART B: PCL DISORDERS
+Chapter 6.9 Acute PCL Injury
+Chapter 6.10 Chronic PCL Deficiency
+Chapter 6.11 Combined PCL Injuries
+Chapter 6.12 PCL in Athletes
+Chapter 6.13 PCL Revision Problems
+PART C: MEDIAL KNEE CONDITIONS
+Chapter 6.14 MCL Sprains
+Grade I
+Grade II
+Grade III
+Chapter 6.15 Deep MCL Injuries
+Chapter 6.16 Posterior Oblique Ligament Injuries
+Chapter 6.17 Posteromedial Corner Injuries
+Chapter 6.18 Anteromedial Rotatory Instability
+Chapter 6.19 Chronic Medial Instability
+Chapter 6.20 Combined ACL-MCL Injuries
+PART D: LATERAL KNEE CONDITIONS
+Chapter 6.21 LCL Injuries
+Chapter 6.22 Popliteus Injuries
+Chapter 6.23 PLC Injuries
+Chapter 6.24 Combined PLC Injuries
+Chapter 6.25 Chronic PLC Instability
+Chapter 6.26 Peroneal Nerve Injury
+PART E: MENISCAL DISORDERS
+Chapter 6.27 Meniscal Anatomy Review
+Chapter 6.28 Horizontal Tears
+Chapter 6.29 Vertical Longitudinal Tears
+Chapter 6.30 Bucket Handle Tears
+Chapter 6.31 Radial Tears
+Chapter 6.32 Flap Tears
+Chapter 6.33 Complex Tears
+Chapter 6.34 Root Tears
+Chapter 6.35 Ramp Lesions
+Chapter 6.36 Meniscal Extrusion
+Chapter 6.37 Meniscal Deficiency
+Chapter 6.38 Degenerative Meniscal Disease
+Chapter 6.39 Meniscal Cysts
+Chapter 6.40 Discoid Meniscus
+Chapter 6.41 Paediatric Meniscal Tears
+Chapter 6.42 Failed Meniscal Repair
+Chapter 6.43 Meniscal Transplantation Problems
+PART F: CARTILAGE DISORDERS
+Chapter 6.44 Chondral Lesions
+Chapter 6.45 Osteochondral Lesions
+Chapter 6.46 Osteochondritis Dissecans
+Chapter 6.47 Bone Marrow Lesions
+Chapter 6.48 Delamination Injuries
+Chapter 6.49 Kissing Lesions
+Chapter 6.50 Cartilage Degeneration
+Chapter 6.51 Post-traumatic Cartilage Disease
+Chapter 6.52 Failed Cartilage Repair
+PART G: PATELLOFEMORAL DISORDERS
+Chapter 6.53 First-Time Patellar Dislocation
+Chapter 6.54 Recurrent Patellar Instability
+Chapter 6.55 Trochlear Dysplasia
+Chapter 6.56 Patella Alta
+Chapter 6.57 Excessive TT-TG Distance
+Chapter 6.58 Patellar Tilt
+Chapter 6.59 MPFL Injury
+Chapter 6.60 Patellofemoral Pain Syndrome
+Chapter 6.61 Chondromalacia Patellae
+Chapter 6.62 Patellofemoral Osteoarthritis
+Chapter 6.63 Failed Instability Surgery
+PART H: TENDON DISORDERS
+Chapter 6.64 Patellar Tendinopathy
+Chapter 6.65 Quadriceps Tendinopathy
+Chapter 6.66 Tendon Ruptures
+Quadriceps Rupture
+Patellar Tendon Rupture
+Chapter 6.67 Osgood-Schlatter Disease
+Chapter 6.68 Sinding-Larsen-Johansson Syndrome
+Chapter 6.69 Hamstring Tendinopathy
+Chapter 6.70 Pes Anserinus Syndrome
+PART I: OSTEOARTHRITIS
+Chapter 6.71 Introduction to OA
+Chapter 6.72 Early OA
+Chapter 6.73 Medial Compartment OA
+Chapter 6.74 Lateral Compartment OA
+Chapter 6.75 Patellofemoral OA
+Chapter 6.76 Young Patient OA
+Chapter 6.77 Post-traumatic OA
+Chapter 6.78 Obesity and OA
+Chapter 6.79 Inflammatory OA
+Chapter 6.80 End-Stage OA
+PART J: INFLAMMATORY CONDITIONS
+Chapter 6.81 Rheumatoid Arthritis
+Chapter 6.82 Psoriatic Arthritis
+Chapter 6.83 Reactive Arthritis
+Chapter 6.84 Ankylosing Spondylitis
+Chapter 6.85 Crystal Arthropathy
+Gout
+CPPD
+Chapter 6.86 Synovitis
+Chapter 6.87 Chronic Effusions
+PART K: PAEDIATRIC KNEE CONDITIONS
+Chapter 6.88 Paediatric ACL Injury
+Chapter 6.89 Meniscal Tears
+Chapter 6.90 Discoid Meniscus
+Chapter 6.91 OCD
+Chapter 6.92 Patellar Instability
+Chapter 6.93 Osgood-Schlatter Disease
+Chapter 6.94 Sinding-Larsen-Johansson Syndrome
+Chapter 6.95 Alignment Disorders
+Genu Varum
+Genu Valgum
+Torsional Disorders
+PART L: FRACTURES AND TRAUMA
+Chapter 6.96 Tibial Plateau Fractures
+Chapter 6.97 Patellar Fractures
+Chapter 6.98 Distal Femoral Fractures
+Chapter 6.99 Avulsion Fractures
+Chapter 6.100 Segond Fracture
+Chapter 6.101 Tibial Spine Avulsion
+PART M: BONE AND MARROW CONDITIONS
+Chapter 6.102 Stress Fractures
+Chapter 6.103 Insufficiency Fractures
+Chapter 6.104 Spontaneous Osteonecrosis
+Chapter 6.105 Avascular Necrosis
+Chapter 6.106 Transient Osteoporosis
+Chapter 6.107 Bone Marrow Oedema Syndrome
+PART N: TUMOURS AND TUMOUR-LIKE LESIONS
+Chapter 6.108 Osteochondroma
+Chapter 6.109 Non-Ossifying Fibroma
+Chapter 6.110 Enchondroma
+Chapter 6.111 Osteoid Osteoma
+Chapter 6.112 Giant Cell Tumour
+Chapter 6.113 Chondroblastoma
+Chapter 6.114 Osteosarcoma
+Chapter 6.115 Ewing Sarcoma
+Chapter 6.116 Metastatic Disease
+PART O: SYNOVIAL DISORDERS
+Chapter 6.117 TGCT / PVNS
+Chapter 6.118 Synovial Chondromatosis
+Chapter 6.119 Lipoma Arborescens
+Chapter 6.120 Synovial Haemangioma
+PART P: INFECTION
+Chapter 6.121 Septic Arthritis
+Chapter 6.122 Osteomyelitis
+Chapter 6.123 Tuberculosis
+Chapter 6.124 Lyme Disease
+Chapter 6.125 Post-operative Infection
+Chapter 6.126 Periprosthetic Joint Infection
+PART Q: SPECIAL POPULATIONS
+Chapter 6.127 The Female Athlete
+Chapter 6.128 Pregnancy and the Knee
+Chapter 6.129 Perimenopause and the Knee
+Chapter 6.130 Menopause and the Knee
+Chapter 6.131 Hypermobile Patients
+Chapter 6.132 Elite Athletes
+Chapter 6.133 Military Personnel
+Chapter 6.134 Ageing Athletes
+PART R: COMPLEX KNEE CONDITIONS
+Chapter 6.135 Multi-ligament Knee Injuries
+Chapter 6.136 Knee Dislocation
+Chapter 6.137 Failed Knee Surgery
+Chapter 6.138 Arthrofibrosis
+Chapter 6.139 Complex Regional Pain Syndrome
+Chapter 6.140 Persistent Post-operative Pain
+PART S: CONDITIONS BY SYMPTOM
+Chapter 6.141 Painful Knee
+Chapter 6.142 Swollen Knee
+Chapter 6.143 Locked Knee
+Chapter 6.144 Unstable Knee
+Chapter 6.145 Stiff Knee
+Chapter 6.146 Clicking Knee
+Chapter 6.147 Giving-Way Knee
+Chapter 6.148 Hot Knee
+PART T: LANDMARK PAPERS AND CONTROVERSIES
+Chapter 6.149 ACL Controversies
+Chapter 6.150 Meniscal Controversies
+Chapter 6.151 MCL Controversies
+Chapter 6.152 Cartilage Controversies
+Chapter 6.153 Patellofemoral Controversies
+Chapter 6.154 Osteotomy Controversies
+Chapter 6.155 Arthroplasty Controversies
+Chapter 6.156 Future Directions
+Section 6 is the core of KneeSchool and would likely expand into 500-700 individual educational pages. Combined with the Anatomy, Biomechanics, Examination and Imaging Academies, KneeSchool would already contain well over 1,000 pages before moving into the next major section: Section 7 - Surgical Academy, which would become the flagship consultant and fellowship-level educational resource.
+SECTION 7: SURGICAL ACADEMY
+Overview
+The Surgical Academy is the flagship professional section of KneeSchool.
+It should become one of the world's most comprehensive online knee surgery resources, progressing from basic surgical principles through consultant-level and fellowship-level techniques.
+Every surgical chapter should contain:
+Indications
+Contraindications
+Relevant Anatomy
+Biomechanics
+Pre-operative Planning
+Equipment
+Surgical Technique
+Pearls and Pitfalls
+Complications
+Rehabilitation
+Outcomes
+Evidence Base
+Surgical Videos
+Expert Commentary
+Landmark Papers
+PART A: PRINCIPLES OF KNEE SURGERY
+Chapter 7.1 Introduction to Knee Surgery
+7.1.1 History of Knee Surgery
+7.1.2 Evolution of Arthroscopy
+7.1.3 Evolution of Reconstruction Surgery
+7.1.4 Evolution of Arthroplasty
+7.1.5 Future of Knee Surgery
+Chapter 7.2 Surgical Decision Making
+7.2.1 Patient Selection
+7.2.2 Shared Decision Making
+7.2.3 Risk Assessment
+7.2.4 Expectations Management
+7.2.5 Outcome Prediction
+Chapter 7.3 Surgical Planning
+7.3.1 History and Examination
+7.3.2 Imaging Review
+7.3.3 Alignment Assessment
+7.3.4 Graft Selection
+7.3.5 Implant Selection
+7.3.6 Surgical Checklists
+Chapter 7.4 Operating Theatre Principles
+7.4.1 Theatre Setup
+7.4.2 Patient Positioning
+7.4.3 Tourniquet Use
+7.4.4 Instrumentation
+7.4.5 Arthroscopy Towers
+7.4.6 Sterility
+PART B: ARTHROSCOPY ACADEMY
+Chapter 7.5 Principles of Arthroscopy
+7.5.1 Arthroscopic Equipment
+7.5.2 Camera Systems
+7.5.3 Fluid Management
+7.5.4 Portals
+7.5.5 Visualisation Techniques
+Chapter 7.6 Standard Knee Arthroscopy
+7.6.1 Diagnostic Arthroscopy
+7.6.2 Systematic Assessment
+7.6.3 Documentation
+7.6.4 Arthroscopic Photography
+Chapter 7.7 Advanced Arthroscopy
+7.7.1 Posteromedial Portals
+7.7.2 Posterolateral Portals
+7.7.3 Trans-septal Portals
+7.7.4 Accessing the Posterior Compartments
+PART C: MENISCAL SURGERY
+Chapter 7.8 Partial Meniscectomy
+7.8.1 Indications
+7.8.2 Technique
+7.8.3 Pitfalls
+7.8.4 Outcomes
+Chapter 7.9 Meniscal Repair Principles
+7.9.1 Biology of Healing
+7.9.2 Patient Selection
+7.9.3 Repair Strategies
+Chapter 7.10 All-Inside Meniscal Repair
+Chapter 7.11 Inside-Out Meniscal Repair
+Chapter 7.12 Outside-In Meniscal Repair
+Chapter 7.13 Hybrid Repair Techniques
+Chapter 7.14 Meniscal Root Repair
+Medial Root Repair
+Lateral Root Repair
+Transtibial Techniques
+Anchor Techniques
+Revision Root Repair
+Chapter 7.15 Ramp Lesion Repair
+Chapter 7.16 Radial Tear Repair
+Chapter 7.17 Complex Meniscal Reconstruction
+Chapter 7.18 Meniscal Transplantation
+Chapter 7.19 Revision Meniscal Surgery
+PART D: ACL SURGERY
+Chapter 7.20 ACL Reconstruction Fundamentals
+Indications
+Timing
+Graft Selection
+Tunnel Placement
+Rehabilitation
+Chapter 7.21 Hamstring ACL Reconstruction
+Chapter 7.22 Patellar Tendon ACL Reconstruction
+Chapter 7.23 Quadriceps Tendon ACL Reconstruction
+Chapter 7.24 All-Inside ACL Reconstruction
+Chapter 7.25 Double Bundle ACL Reconstruction
+Chapter 7.26 Paediatric ACL Reconstruction
+Chapter 7.27 ACL Repair
+Chapter 7.28 Bridge Enhanced ACL Repair
+Chapter 7.29 ACL Internal Brace Techniques
+Chapter 7.30 Lateral Extra-Articular Procedures
+LET Principles
+Modified Lemaire
+MacIntosh
+ALL Reconstruction
+Combined ACL + LET
+Chapter 7.31 Revision ACL Reconstruction
+Tunnel Management
+Bone Grafting
+Graft Selection
+Single-Stage Revision
+Two-Stage Revision
+PART E: PCL SURGERY
+Chapter 7.32 PCL Reconstruction Principles
+Chapter 7.33 Single Bundle PCL Reconstruction
+Chapter 7.34 Double Bundle PCL Reconstruction
+Chapter 7.35 Tibial Inlay Techniques
+Chapter 7.36 Combined PCL Reconstruction
+Chapter 7.37 Revision PCL Surgery
+PART F: MEDIAL KNEE SURGERY
+Chapter 7.38 MCL Repair
+Chapter 7.39 MCL Reconstruction
+Chapter 7.40 Deep MCL Reconstruction
+Chapter 7.41 POL Reconstruction
+Chapter 7.42 Posteromedial Corner Reconstruction
+Chapter 7.43 AMRI Reconstruction
+Chapter 7.44 Combined ACL-MCL Reconstruction
+PART G: LATERAL KNEE SURGERY
+Chapter 7.45 LCL Reconstruction
+Chapter 7.46 PLC Reconstruction
+Chapter 7.47 Popliteus Reconstruction
+Chapter 7.48 Combined PLC Reconstruction
+Chapter 7.49 Peroneal Nerve Management
+Chapter 7.50 Revision PLC Surgery
+PART H: PATELLOFEMORAL SURGERY
+Chapter 7.51 MPFL Reconstruction
+Chapter 7.52 MQTFL Reconstruction
+Chapter 7.53 Tibial Tubercle Osteotomy
+Chapter 7.54 Trochleoplasty
+Chapter 7.55 Lateral Release
+Chapter 7.56 Distal Realignment
+Chapter 7.57 Revision Instability Surgery
+PART I: CARTILAGE RESTORATION
+Chapter 7.58 Chondroplasty
+Chapter 7.59 Microfracture
+Chapter 7.60 Nanofracture
+Chapter 7.61 OATS
+Chapter 7.62 Mosaicplasty
+Chapter 7.63 Osteochondral Allografts
+Chapter 7.64 ACI
+Chapter 7.65 MACI
+Chapter 7.66 Biological Augmentation
+Chapter 7.67 Revision Cartilage Surgery
+PART J: OSTEOTOMY ACADEMY
+Chapter 7.68 Principles of Alignment Correction
+Chapter 7.69 High Tibial Osteotomy
+Opening Wedge
+Closing Wedge
+Hybrid Techniques
+Chapter 7.70 Distal Femoral Osteotomy
+Chapter 7.71 Tibial Tubercle Osteotomy
+Chapter 7.72 Combined Osteotomy Procedures
+Chapter 7.73 Osteotomy with Cartilage Surgery
+Chapter 7.74 Osteotomy with Ligament Reconstruction
+Chapter 7.75 Revision Osteotomy
+PART K: ARTHROPLASTY ACADEMY
+Chapter 7.76 Principles of Arthroplasty
+Patient Selection
+Implant Design
+Alignment Philosophy
+Chapter 7.77 Medial Unicompartmental Knee Replacement
+Chapter 7.78 Lateral Unicompartmental Knee Replacement
+Chapter 7.79 Patellofemoral Arthroplasty
+Chapter 7.80 Total Knee Replacement
+Chapter 7.81 Kinematic Alignment
+Chapter 7.82 Mechanical Alignment
+Chapter 7.83 Restricted Kinematic Alignment
+Chapter 7.84 Robotic Arthroplasty
+MAKO
+ROSA
+CORI
+Chapter 7.85 Complex Primary Arthroplasty
+Chapter 7.86 Revision Total Knee Replacement
+Chapter 7.87 Periprosthetic Fractures
+Chapter 7.88 Infection Revision Surgery
+PART L: PAEDIATRIC KNEE SURGERY
+Chapter 7.89 Physeal-Sparing ACL Reconstruction
+Chapter 7.90 All-Epiphyseal Techniques
+Chapter 7.91 Partial Transphyseal Techniques
+Chapter 7.92 Meniscal Surgery in Children
+Chapter 7.93 OCD Surgery
+Chapter 7.94 Patellar Stabilisation in Children
+PART M: MULTI-LIGAMENT KNEE SURGERY
+Chapter 7.95 Knee Dislocation Management
+Chapter 7.96 Acute Multi-Ligament Reconstruction
+Chapter 7.97 Staged Reconstruction
+Chapter 7.98 Vascular Injury Management
+Chapter 7.99 Nerve Injury Management
+Chapter 7.100 Rehabilitation of Multi-Ligament Injuries
+PART N: BIOLOGICS AND REGENERATIVE SURGERY
+Chapter 7.101 PRP
+Chapter 7.102 BMAC
+Chapter 7.103 Stem Cells
+Chapter 7.104 Growth Factors
+Chapter 7.105 Orthobiologics
+Chapter 7.106 Future Biological Therapies
+PART O: COMPLICATIONS
+Chapter 7.107 Arthrofibrosis
+Chapter 7.108 Infection
+Chapter 7.109 DVT and PE
+Chapter 7.110 Neurovascular Injury
+Chapter 7.111 Persistent Pain
+Chapter 7.112 Failure Analysis
+Chapter 7.113 Re-operation Strategies
+PART P: SURGICAL EDUCATION
+Chapter 7.114 Surgical Anatomy for Trainees
+Chapter 7.115 Cadaveric Training
+Chapter 7.116 Simulation Training
+Chapter 7.117 Arthroscopy Simulators
+Chapter 7.118 Fellowship Training
+Chapter 7.119 Building a Knee Practice
+Chapter 7.120 Becoming a Consultant Knee Surgeon
+PART Q: MASTERCLASSES
+Chapter 7.121 ACL Masterclass
+Chapter 7.122 Meniscal Preservation Masterclass
+Chapter 7.123 Medial Knee Masterclass
+Chapter 7.124 PLC Masterclass
+Chapter 7.125 Patellofemoral Masterclass
+Chapter 7.126 Osteotomy Masterclass
+Chapter 7.127 Arthroplasty Masterclass
+Chapter 7.128 Revision Surgery Masterclass
+PART R: LANDMARK SURGICAL PAPERS
+Chapter 7.129 ACL Landmark Papers
+Chapter 7.130 Meniscal Landmark Papers
+Chapter 7.131 MCL Landmark Papers
+Chapter 7.132 Cartilage Landmark Papers
+Chapter 7.133 Osteotomy Landmark Papers
+Chapter 7.134 Arthroplasty Landmark Papers
+Chapter 7.135 Surgical Controversies
+Chapter 7.136 Future Directions in Knee Surgery
+Strategic Note
+This section would likely generate 450-600 individual educational pages and become the core professional education component of KneeSchool.
+Combined with Section 2 Anatomy, Section 3 Biomechanics, Section 4 Clinical Examination, Section 5 Imaging, and Section 6 Conditions, you would already have a platform containing approximately 1,500-2,000 pages before adding Section 8 Rehabilitation Academy, Section 9 Women's Knee Health, Section 10 Children's Knee Health, Section 11 Performance & Prevention, Section 12 Research Academy, Section 13 Case Library, Section 14 Question Bank, and Section 15 Video Academy.
+These remaining sections will likely take the total KneeSchool architecture beyond 3,000 pages of educational content.
+SECTION 8: REHABILITATION ACADEMY
+Overview
+The Rehabilitation Academy should become one of the most visited areas of KneeSchool.
+Unlike most surgical education websites, KneeSchool should emphasise that surgery is only one part of the patient's journey. Successful outcomes depend upon:
+Rehabilitation
+Strength
+Neuromuscular Control
+Movement Quality
+Psychology
+Nutrition
+Sleep
+Return to Activity
+This section should serve:
+Patients
+Physiotherapists
+Sports Therapists
+Medical Students
+Orthopaedic Trainees
+Surgeons
+Every rehabilitation chapter should include:
+Pathophysiology
+Goals
+Progression Criteria
+Exercise Library
+Video Demonstrations
+Common Errors
+Outcome Measures
+Return to Activity Criteria
+PART A: REHABILITATION PRINCIPLES
+Chapter 8.1 Introduction to Rehabilitation
+8.1.1 What is Rehabilitation?
+8.1.2 Why Rehabilitation Matters
+8.1.3 Tissue Healing Principles
+8.1.4 Biological Healing Timelines
+8.1.5 Evidence-Based Rehabilitation
+8.1.6 Common Rehabilitation Mistakes
+Chapter 8.2 Tissue Healing
+8.2.1 Inflammatory Phase
+8.2.2 Proliferative Phase
+8.2.3 Remodelling Phase
+8.2.4 Ligament Healing
+8.2.5 Tendon Healing
+8.2.6 Bone Healing
+8.2.7 Cartilage Healing
+8.2.8 Meniscal Healing
+Chapter 8.3 Rehabilitation Assessment
+8.3.1 Baseline Assessment
+8.3.2 Goal Setting
+8.3.3 Outcome Measures
+8.3.4 Strength Testing
+8.3.5 Functional Testing
+8.3.6 Return-to-Sport Testing
+PART B: FOUNDATIONS OF REHABILITATION
+Chapter 8.4 Pain Management
+8.4.1 Understanding Pain
+8.4.2 Acute Pain
+8.4.3 Chronic Pain
+8.4.4 Central Sensitisation
+8.4.5 Pain Education
+Chapter 8.5 Swelling Management
+8.5.1 Causes of Swelling
+8.5.2 Cryotherapy
+8.5.3 Compression
+8.5.4 Elevation
+8.5.5 Movement Strategies
+Chapter 8.6 Range of Motion Recovery
+8.6.1 Extension Recovery
+8.6.2 Flexion Recovery
+8.6.3 Arthrofibrosis Prevention
+8.6.4 Stretching Principles
+Chapter 8.7 Strength Development
+8.7.1 Muscle Physiology
+8.7.2 Hypertrophy
+8.7.3 Strength Training Principles
+8.7.4 Progressive Overload
+8.7.5 Isometric Training
+8.7.6 Eccentric Training
+8.7.7 Plyometrics
+PART C: ACL REHABILITATION
+Chapter 8.8 ACL Rehabilitation Principles
+8.8.1 Healing Biology
+8.8.2 Graft Incorporation
+8.8.3 Rehabilitation Timelines
+8.8.4 Milestone-Based Progression
+Chapter 8.9 Phase 1
+8.9.1 Immediate Post-operative Care
+8.9.2 Swelling Control
+8.9.3 Extension Recovery
+8.9.4 Quadriceps Activation
+Chapter 8.10 Phase 2
+8.10.1 Strength Development
+8.10.2 Gait Restoration
+8.10.3 Proprioception
+8.10.4 Early Functional Exercises
+Chapter 8.11 Phase 3
+8.11.1 Running Progression
+8.11.2 Landing Mechanics
+8.11.3 Neuromuscular Training
+Chapter 8.12 Phase 4
+8.12.1 Agility Training
+8.12.2 Cutting Drills
+8.12.3 Sports-Specific Training
+Chapter 8.13 Return to Sport
+8.13.1 Strength Criteria
+8.13.2 Hop Testing
+8.13.3 Psychological Readiness
+8.13.4 ACL-RSI
+8.13.5 Decision Making
+PART D: MENISCAL REHABILITATION
+Chapter 8.14 Partial Meniscectomy
+Chapter 8.15 Meniscal Repair
+Chapter 8.16 Meniscal Root Repair
+Chapter 8.17 Ramp Lesion Repair
+Chapter 8.18 Meniscal Transplantation
+Chapter 8.19 Revision Meniscal Procedures
+PART E: PCL REHABILITATION
+Chapter 8.20 Conservative Management
+Chapter 8.21 Post-operative Rehabilitation
+Chapter 8.22 Protection Strategies
+Chapter 8.23 Strength Progressions
+Chapter 8.24 Return to Sport
+PART F: COLLATERAL LIGAMENT REHABILITATION
+Chapter 8.25 MCL Rehabilitation
+Chapter 8.26 POL Rehabilitation
+Chapter 8.27 PLC Rehabilitation
+Chapter 8.28 Combined Ligament Rehabilitation
+PART G: PATELLOFEMORAL REHABILITATION
+Chapter 8.29 Patellofemoral Pain Syndrome
+Chapter 8.30 Patellar Instability
+Chapter 8.31 MPFL Reconstruction
+Chapter 8.32 Trochleoplasty
+Chapter 8.33 Tibial Tubercle Osteotomy
+PART H: CARTILAGE REHABILITATION
+Chapter 8.34 Cartilage Biology
+Chapter 8.35 Microfracture Rehabilitation
+Chapter 8.36 OATS Rehabilitation
+Chapter 8.37 MACI Rehabilitation
+Chapter 8.38 Osteochondral Allograft Rehabilitation
+Chapter 8.39 Return to Impact Activities
+PART I: OSTEOTOMY REHABILITATION
+Chapter 8.40 High Tibial Osteotomy
+Chapter 8.41 Distal Femoral Osteotomy
+Chapter 8.42 Combined Osteotomy Procedures
+Chapter 8.43 Return to Sport After Osteotomy
+PART J: ARTHROPLASTY REHABILITATION
+Chapter 8.44 Partial Knee Replacement
+Chapter 8.45 Total Knee Replacement
+Chapter 8.46 Revision Arthroplasty
+Chapter 8.47 Enhanced Recovery Pathways
+Chapter 8.48 Long-Term Recovery
+PART K: SPORTS PERFORMANCE
+Chapter 8.49 Running Mechanics
+Chapter 8.50 Jumping Mechanics
+Chapter 8.51 Landing Mechanics
+Chapter 8.52 Cutting Mechanics
+Chapter 8.53 Change of Direction Training
+Chapter 8.54 Football Rehabilitation
+Chapter 8.55 Cricket Rehabilitation
+Chapter 8.56 Rugby Rehabilitation
+Chapter 8.57 Tennis Rehabilitation
+Chapter 8.58 Basketball Rehabilitation
+Chapter 8.59 Skiing Rehabilitation
+PART L: INJURY PREVENTION
+Chapter 8.60 ACL Prevention
+Chapter 8.61 FIFA 11+
+Chapter 8.62 Female Athlete Prevention Programmes
+Chapter 8.63 Landing Training
+Chapter 8.64 Strength-Based Prevention
+Chapter 8.65 Neuromuscular Prevention
+PART M: FUNCTIONAL TESTING
+Chapter 8.66 Single Leg Squat
+Chapter 8.67 Single Hop Test
+Chapter 8.68 Triple Hop Test
+Chapter 8.69 Crossover Hop
+Chapter 8.70 Y Balance Test
+Chapter 8.71 Isokinetic Testing
+Chapter 8.72 Force Plate Assessment
+Chapter 8.73 Motion Analysis
+PART N: REHABILITATION TECHNOLOGY
+Chapter 8.74 Blood Flow Restriction Training
+Chapter 8.75 Neuromuscular Electrical Stimulation
+Chapter 8.76 Wearable Sensors
+Chapter 8.77 Force Platforms
+Chapter 8.78 Motion Capture
+Chapter 8.79 AI-Assisted Rehabilitation
+Chapter 8.80 Remote Monitoring
+PART O: NUTRITION FOR RECOVERY
+Chapter 8.81 Protein and Healing
+Chapter 8.82 Collagen Supplementation
+Chapter 8.83 Vitamin D
+Chapter 8.84 Omega-3 Fatty Acids
+Chapter 8.85 Weight Management
+Chapter 8.86 Anti-inflammatory Nutrition
+Chapter 8.87 Hydration
+PART P: SLEEP AND RECOVERY
+Chapter 8.88 Sleep Physiology
+Chapter 8.89 Sleep and Healing
+Chapter 8.90 Sleep Optimisation
+Chapter 8.91 Recovery Monitoring
+PART Q: SPORTS PSYCHOLOGY
+Chapter 8.92 Fear of Reinjury
+Chapter 8.93 Psychological Readiness
+Chapter 8.94 Confidence Building
+Chapter 8.95 Goal Setting
+Chapter 8.96 Motivation
+Chapter 8.97 Return to Competition Psychology
+PART R: SPECIAL POPULATIONS
+Chapter 8.98 Paediatric Rehabilitation
+Chapter 8.99 Female Athlete Rehabilitation
+Chapter 8.100 Perimenopausal Athletes
+Chapter 8.101 Older Athletes
+Chapter 8.102 Elite Athletes
+Chapter 8.103 Military Personnel
+PART S: SPORTSHEALING REHABILITATION SYSTEM
+Chapter 8.104 Sportshealing Knee Score
+Chapter 8.105 Seven-Contributor Model
+Pain
+Sleep
+Swelling
+Stiffness
+Instability
+Stairs
+Function
+Chapter 8.106 Personalised Rehabilitation Pathways
+Chapter 8.107 Outcome Tracking
+Chapter 8.108 Digital Monitoring
+PART T: LANDMARK REHABILITATION PAPERS
+Chapter 8.109 ACL Rehabilitation Literature
+Chapter 8.110 Meniscal Rehabilitation Literature
+Chapter 8.111 Cartilage Rehabilitation Literature
+Chapter 8.112 Arthroplasty Rehabilitation Literature
+Chapter 8.113 Injury Prevention Literature
+Chapter 8.114 Return to Sport Literature
+Chapter 8.115 Future Directions in Rehabilitation
+Strategic Importance
+This section would likely expand into 300-450 educational pages plus:
+Exercise videos
+Rehabilitation protocols
+Downloadable programmes
+Return-to-sport calculators
+Sportshealing outcome tools
+Patient-facing rehabilitation pathways
+It also provides one of the strongest opportunities for integration with Sportshealing because rehabilitation represents the longest phase of the patient journey and generates substantial ongoing engagement.
+SECTION 9: WOMEN'S KNEE HEALTH ACADEMY
+Overview
+This section should become one of the defining features of KneeSchool.
+Few educational platforms currently provide a comprehensive, evidence-based approach to the interaction between:
+Female biology
+Hormones
+Sports participation
+ACL injury risk
+Pregnancy
+Perimenopause
+Menopause
+Bone health
+Muscle health
+Knee osteoarthritis
+This academy should serve:
+Patients
+Athletes
+Parents
+Physiotherapists
+Sports Physicians
+Surgeons
+Researchers
+It aligns closely with:
+Sportshealing
+OmKneeHealth
+Female Athlete Research
+Women's ACL Research Programmes
+PART A: FOUNDATIONS OF WOMEN'S KNEE HEALTH
+Chapter 9.1 Introduction to Women's Knee Health
+9.1.1 Why Women Are Different
+9.1.2 Historical Perspective
+9.1.3 Sex Versus Gender
+9.1.4 Importance of Female-Specific Research
+9.1.5 Future Directions
+Chapter 9.2 Female Knee Anatomy
+9.2.1 Pelvic Anatomy
+9.2.2 Femoral Morphology
+9.2.3 Tibial Morphology
+9.2.4 Q Angle
+9.2.5 Intercondylar Notch Width
+9.2.6 Ligament Characteristics
+9.2.7 Neuromuscular Differences
+Chapter 9.3 Female Knee Biomechanics
+9.3.1 Dynamic Valgus
+9.3.2 Landing Mechanics
+9.3.3 Cutting Mechanics
+9.3.4 Hip Control
+9.3.5 Trunk Control
+9.3.6 Neuromuscular Factors
+9.3.7 Biomechanics Across the Lifespan
+PART B: PUBERTY AND ADOLESCENCE
+Chapter 9.4 Growth and Development
+9.4.1 Growth Spurts
+9.4.2 Skeletal Maturation
+9.4.3 Growth Plate Development
+9.4.4 Muscle Development
+9.4.5 Coordination Changes
+Chapter 9.5 Female Adolescent Athletes
+9.5.1 Injury Epidemiology
+9.5.2 Training Load
+9.5.3 Recovery Requirements
+9.5.4 Nutrition
+9.5.5 Special Considerations
+PART C: MENSTRUAL CYCLE AND THE KNEE
+Chapter 9.6 Menstrual Cycle Physiology
+9.6.1 Hormonal Overview
+9.6.2 Oestrogen
+9.6.3 Progesterone
+9.6.4 Testosterone
+9.6.5 Relaxin
+Chapter 9.7 Menstrual Cycle and Performance
+9.7.1 Strength
+9.7.2 Power
+9.7.3 Endurance
+9.7.4 Recovery
+9.7.5 Injury Risk
+Chapter 9.8 Menstrual Cycle and ACL Risk
+9.8.1 Current Evidence
+9.8.2 Biomechanical Mechanisms
+9.8.3 Hormonal Influences
+9.8.4 Clinical Implications
+9.8.5 Research Controversies
+PART D: FEMALE ATHLETE ACL PROGRAMME
+Chapter 9.9 Epidemiology of Female ACL Injuries
+9.9.1 Incidence
+9.9.2 Sport-Specific Risks
+9.9.3 Age-Related Risks
+9.9.4 Elite Athletes
+Chapter 9.10 Why Female Athletes Tear ACLs
+9.10.1 Anatomical Factors
+9.10.2 Hormonal Factors
+9.10.3 Neuromuscular Factors
+9.10.4 Biomechanical Factors
+9.10.5 Psychological Factors
+Chapter 9.11 Prevention Programmes
+9.11.1 FIFA 11+
+9.11.2 PEP Programme
+9.11.3 Landing Training
+9.11.4 Strength Training
+9.11.5 Neuromuscular Training
+Chapter 9.12 Female ACL Rehabilitation
+9.12.1 Special Considerations
+9.12.2 Return to Sport
+9.12.3 Reinjury Risk
+9.12.4 Long-Term Outcomes
+PART E: RELATIVE ENERGY DEFICIENCY IN SPORT (RED-S)
+Chapter 9.13 Introduction to RED-S
+9.13.1 Definition
+9.13.2 Pathophysiology
+9.13.3 Epidemiology
+Chapter 9.14 RED-S and Musculoskeletal Health
+9.14.1 Bone Health
+9.14.2 Stress Fractures
+9.14.3 Ligament Health
+9.14.4 Cartilage Health
+9.14.5 Recovery
+Chapter 9.15 Management of RED-S
+9.15.1 Diagnosis
+9.15.2 Nutritional Management
+9.15.3 Return to Sport
+9.15.4 Long-Term Outcomes
+PART F: PREGNANCY AND THE KNEE
+Chapter 9.16 Musculoskeletal Changes in Pregnancy
+9.16.1 Weight Gain
+9.16.2 Hormonal Changes
+9.16.3 Ligament Laxity
+9.16.4 Gait Changes
+9.16.5 Postural Changes
+Chapter 9.17 Common Knee Problems During Pregnancy
+9.17.1 Patellofemoral Pain
+9.17.2 Tendinopathy
+9.17.3 Swelling
+9.17.4 Instability
+9.17.5 Osteoarthritis Symptoms
+Chapter 9.18 Exercise During Pregnancy
+9.18.1 Safety Principles
+9.18.2 Strength Training
+9.18.3 Running
+9.18.4 Rehabilitation
+9.18.5 Return to Activity
+PART G: POSTPARTUM KNEE HEALTH
+Chapter 9.19 Postpartum Recovery
+9.19.1 Hormonal Recovery
+9.19.2 Muscle Recovery
+9.19.3 Bone Recovery
+9.19.4 Return to Exercise
+Chapter 9.20 Return to Sport After Childbirth
+9.20.1 Recreational Athletes
+9.20.2 Elite Athletes
+9.20.3 Injury Prevention
+9.20.4 Rehabilitation Strategies
+PART H: PERIMENOPAUSE
+Chapter 9.21 Understanding Perimenopause
+9.21.1 Definition
+9.21.2 Hormonal Changes
+9.21.3 Symptoms
+9.21.4 Diagnosis
+Chapter 9.22 Perimenopause and the Knee
+9.22.1 Joint Pain
+9.22.2 Tendon Pain
+9.22.3 Reduced Recovery
+9.22.4 Muscle Loss
+9.22.5 Weight Gain
+9.22.6 Sleep Disturbance
+9.22.7 Inflammation
+Chapter 9.23 Exercise During Perimenopause
+9.23.1 Resistance Training
+9.23.2 Cardiovascular Training
+9.23.3 Mobility Training
+9.23.4 Recovery Strategies
+PART I: MENOPAUSE
+Chapter 9.24 Menopause and Musculoskeletal Health
+9.24.1 Oestrogen Deficiency
+9.24.2 Bone Loss
+9.24.3 Muscle Loss
+9.24.4 Tendon Changes
+9.24.5 Cartilage Changes
+Chapter 9.25 Menopause and Osteoarthritis
+9.25.1 Epidemiology
+9.25.2 Biological Mechanisms
+9.25.3 Imaging Findings
+9.25.4 Clinical Outcomes
+Chapter 9.26 Menopause and Arthroplasty
+9.26.1 Surgical Outcomes
+9.26.2 Recovery
+9.26.3 Rehabilitation
+9.26.4 Long-Term Function
+PART J: HORMONE REPLACEMENT THERAPY
+Chapter 9.27 Introduction to HRT
+9.27.1 Types of HRT
+9.27.2 Benefits
+9.27.3 Risks
+9.27.4 Guidelines
+Chapter 9.28 HRT and Knee Health
+9.28.1 Cartilage
+9.28.2 Bone
+9.28.3 Tendons
+9.28.4 Muscle
+9.28.5 Osteoarthritis
+Chapter 9.29 HRT and Athletic Performance
+9.29.1 Recovery
+9.29.2 Strength
+9.29.3 Injury Risk
+9.29.4 Return to Sport
+PART K: NUTRITION FOR WOMEN'S KNEE HEALTH
+Chapter 9.30 Protein Requirements
+Chapter 9.31 Collagen Supplementation
+Chapter 9.32 Vitamin D
+Chapter 9.33 Calcium
+Chapter 9.34 Magnesium
+Chapter 9.35 Omega-3 Fatty Acids
+Chapter 9.36 Weight Management
+Chapter 9.37 Anti-inflammatory Nutrition
+PART L: FEMALE-SPECIFIC CONDITIONS
+Chapter 9.38 Hypermobility
+Chapter 9.39 Ehlers-Danlos Syndrome
+Chapter 9.40 Osteoporosis
+Chapter 9.41 Stress Fractures
+Chapter 9.42 Connective Tissue Disorders
+Chapter 9.43 Autoimmune Conditions
+PART M: WOMEN'S SPORTS
+Chapter 9.44 Women's Football
+Chapter 9.45 Women's Rugby
+Chapter 9.46 Women's Cricket
+Chapter 9.47 Women's Tennis
+Chapter 9.48 Women's Athletics
+Chapter 9.49 Women's Basketball
+Chapter 9.50 Female Combat Sports
+PART N: ELITE FEMALE ATHLETE PROGRAMME
+Chapter 9.51 Screening Programmes
+Chapter 9.52 Monitoring Systems
+Chapter 9.53 Injury Prevention
+Chapter 9.54 Return to Sport
+Chapter 9.55 Return to Competition
+Chapter 9.56 Career Longevity
+PART O: WOMEN'S KNEE HEALTH CLINIC
+Chapter 9.57 Assessment Pathways
+Chapter 9.58 Imaging Pathways
+Chapter 9.59 Blood Testing
+Chapter 9.60 Bone Health Assessment
+Chapter 9.61 Hormonal Assessment
+Chapter 9.62 Personalised Treatment Plans
+PART P: RESEARCH ACADEMY
+Chapter 9.63 Landmark Female ACL Papers
+Chapter 9.64 Landmark Hormonal Research
+Chapter 9.65 Landmark Menopause Research
+Chapter 9.66 Landmark Osteoarthritis Research
+Chapter 9.67 Current Controversies
+Chapter 9.68 Future Directions
+PART Q: OMKNEEHEALTH WOMEN'S HUB
+Chapter 9.69 Supplements for Women's Joint Health
+Chapter 9.70 Collagen and Menopause
+Chapter 9.71 Bone Health Programmes
+Chapter 9.72 Recovery Strategies
+Chapter 9.73 Longevity and Musculoskeletal Health
+PART R: MASTERCLASSES
+Chapter 9.74 Female ACL Masterclass
+Chapter 9.75 Perimenopause Masterclass
+Chapter 9.76 Menopause and Osteoarthritis Masterclass
+Chapter 9.77 Women's Arthroplasty Masterclass
+Chapter 9.78 Female Athlete Masterclass
+Chapter 9.79 Future of Women's Knee Health
+Strategic Importance
+This section would likely expand into 250-400 educational pages and represents a major opportunity because it intersects directly with:
+Female ACL injury prevention
+Perimenopause and menopause
+Osteoarthritis
+Sportshealing clinical services
+OmKneeHealth products
+Women's health education
+It is also an area where your collaboration with Dr Cynthia Gupte could create genuinely distinctive content that is rarely available in a single integrated educational platform.
+SECTION 10: CHILDREN'S KNEE HEALTH ACADEMY
+Overview
+The Children's Knee Health Academy should become the leading online educational resource for:
+Parents
+Young Athletes
+Physiotherapists
+Paediatricians
+Sports Physicians
+Orthopaedic Trainees
+Paediatric Orthopaedic Surgeons
+Knee Surgeons
+This section should bridge the gap between simple patient information and advanced fellowship-level paediatric knee surgery.
+Particular emphasis should be placed upon:
+Growth plate preservation
+Early diagnosis
+Return to sport
+Injury prevention
+Long-term knee health
+Every chapter should contain:
+Parent Information
+Medical Student Section
+MRCS Section
+FRCS Section
+Fellowship Section
+PART A: UNDERSTANDING THE GROWING KNEE
+Chapter 10.1 Introduction to Children's Knee Health
+10.1.1 Why Children Are Different
+10.1.2 The Growing Skeleton
+10.1.3 Growth Plates
+10.1.4 Development Through Childhood
+10.1.5 Development Through Adolescence
+10.1.6 Long-Term Knee Health
+Chapter 10.2 Growth Plate Anatomy
+10.2.1 Physis Anatomy
+10.2.2 Blood Supply
+10.2.3 Growth Mechanisms
+10.2.4 Closure Patterns
+10.2.5 MRI Appearance
+10.2.6 Surgical Relevance
+Chapter 10.3 Development of the Knee
+10.3.1 Embryology
+10.3.2 Ossification Centres
+10.3.3 Normal Variants
+10.3.4 Developmental Changes
+10.3.5 Adolescent Knee Development
+PART B: PAEDIATRIC KNEE EXAMINATION
+Chapter 10.4 History Taking in Children
+10.4.1 Pain Assessment
+10.4.2 Sporting History
+10.4.3 Growth History
+10.4.4 Family History
+10.4.5 Red Flag Symptoms
+Chapter 10.5 Examination of the Child's Knee
+10.5.1 Inspection
+10.5.2 Gait Assessment
+10.5.3 Alignment
+10.5.4 Range of Motion
+10.5.5 Ligament Testing
+10.5.6 Functional Assessment
+PART C: PAEDIATRIC SPORTS INJURIES
+Chapter 10.6 Introduction to Sports Injuries
+10.6.1 Epidemiology
+10.6.2 Risk Factors
+10.6.3 Injury Prevention
+10.6.4 Return to Sport
+Chapter 10.7 Overuse Injuries
+10.7.1 Causes
+10.7.2 Diagnosis
+10.7.3 Management
+10.7.4 Prevention
+Chapter 10.8 Acute Sports Injuries
+10.8.1 Twisting Injuries
+10.8.2 Contact Injuries
+10.8.3 Hyperextension Injuries
+10.8.4 Combined Injuries
+PART D: PAEDIATRIC ACL PROGRAMME
+Chapter 10.9 Paediatric ACL Injuries
+10.9.1 Epidemiology
+10.9.2 Mechanisms of Injury
+10.9.3 Clinical Presentation
+10.9.4 Imaging
+10.9.5 Treatment Options
+Chapter 10.10 Skeletally Immature ACL Injuries
+10.10.1 Open Physes
+10.10.2 Growth Considerations
+10.10.3 Surgical Timing
+10.10.4 Risks of Delay
+Chapter 10.11 ACL Reconstruction in Children
+10.11.1 All-Epiphyseal Techniques
+10.11.2 Physeal-Sparing Techniques
+10.11.3 Partial Transphyseal Techniques
+10.11.4 Transphyseal Techniques
+10.11.5 Outcomes
+Chapter 10.12 Return to Sport After ACL Reconstruction
+10.12.1 Rehabilitation
+10.12.2 Functional Testing
+10.12.3 Reinjury Prevention
+10.12.4 Psychological Readiness
+PART E: MENISCAL DISORDERS
+Chapter 10.13 Meniscal Tears in Children
+10.13.1 Epidemiology
+10.13.2 Tear Patterns
+10.13.3 Diagnosis
+10.13.4 Treatment
+Chapter 10.14 Discoid Meniscus
+10.14.1 Anatomy
+10.14.2 Classification
+10.14.3 Clinical Presentation
+10.14.4 Imaging
+10.14.5 Saucerisation
+10.14.6 Repair
+10.14.7 Outcomes
+Chapter 10.15 Meniscal Preservation
+10.15.1 Repair Techniques
+10.15.2 Biological Healing
+10.15.3 Long-Term Outcomes
+PART F: OSTEOCHONDRITIS DISSECANS
+Chapter 10.16 Introduction to OCD
+10.16.1 Epidemiology
+10.16.2 Aetiology
+10.16.3 Pathophysiology
+10.16.4 Natural History
+Chapter 10.17 Stable OCD
+Chapter 10.18 Unstable OCD
+Chapter 10.19 Surgical Treatment of OCD
+Chapter 10.20 Return to Sport Following OCD
+PART G: PATELLOFEMORAL CONDITIONS
+Chapter 10.21 First-Time Patellar Dislocation
+10.21.1 Mechanism
+10.21.2 Imaging
+10.21.3 Management
+10.21.4 Outcomes
+Chapter 10.22 Recurrent Patellar Instability
+10.22.1 Risk Factors
+10.22.2 Trochlear Dysplasia
+10.22.3 Patella Alta
+10.22.4 Alignment Factors
+10.22.5 Surgical Management
+Chapter 10.23 MPFL Injuries
+Chapter 10.24 Patellofemoral Pain
+Chapter 10.25 Adolescent Anterior Knee Pain
+PART H: TRACTION APOPHYSITIS
+Chapter 10.26 Osgood-Schlatter Disease
+10.26.1 Epidemiology
+10.26.2 Clinical Presentation
+10.26.3 Imaging
+10.26.4 Treatment
+10.26.5 Return to Sport
+Chapter 10.27 Sinding-Larsen-Johansson Syndrome
+10.27.1 Epidemiology
+10.27.2 Imaging
+10.27.3 Treatment
+10.27.4 Outcomes
+PART I: ALIGNMENT DISORDERS
+Chapter 10.28 Genu Varum
+Chapter 10.29 Genu Valgum
+Chapter 10.30 Rotational Malalignment
+Chapter 10.31 Femoral Anteversion
+Chapter 10.32 Tibial Torsion
+Chapter 10.33 Limb Length Inequality
+Chapter 10.34 Growth Modulation
+PART J: FRACTURES AND TRAUMA
+Chapter 10.35 Tibial Spine Avulsion
+Chapter 10.36 Tibial Plateau Fractures
+Chapter 10.37 Patellar Fractures
+Chapter 10.38 Sleeve Fractures
+Chapter 10.39 Distal Femoral Physeal Injuries
+Chapter 10.40 Proximal Tibial Physeal Injuries
+PART K: PAEDIATRIC TUMOURS
+Chapter 10.41 Osteochondroma
+Chapter 10.42 Non-Ossifying Fibroma
+Chapter 10.43 Osteoid Osteoma
+Chapter 10.44 Chondroblastoma
+Chapter 10.45 Malignant Bone Tumours
+Osteosarcoma
+Ewing Sarcoma
+PART L: INFECTION AND INFLAMMATION
+Chapter 10.46 Septic Arthritis
+Chapter 10.47 Osteomyelitis
+Chapter 10.48 Reactive Arthritis
+Chapter 10.49 Juvenile Idiopathic Arthritis
+PART M: PAEDIATRIC REHABILITATION
+Chapter 10.50 Principles of Paediatric Rehabilitation
+Chapter 10.51 Rehabilitation Following ACL Reconstruction
+Chapter 10.52 Rehabilitation Following Meniscal Surgery
+Chapter 10.53 Rehabilitation Following OCD Surgery
+Chapter 10.54 Return to Sport Pathways
+PART N: YOUNG ATHLETE PROGRAMME
+Chapter 10.55 Football Academy Athletes
+Chapter 10.56 Cricket Academy Athletes
+Chapter 10.57 Rugby Academy Athletes
+Chapter 10.58 Tennis Academy Athletes
+Chapter 10.59 Gymnastics Athletes
+Chapter 10.60 Dance Athletes
+Chapter 10.61 Ski Athletes
+PART O: PARENTS' EDUCATION CENTRE
+Chapter 10.62 Understanding Knee Pain in Children
+Chapter 10.63 When to Seek Medical Advice
+Chapter 10.64 MRI Scans Explained
+Chapter 10.65 Surgery Explained
+Chapter 10.66 Recovery Expectations
+Chapter 10.67 Return to School
+Chapter 10.68 Return to Sport
+Chapter 10.69 Supporting Your Child
+PART P: INJURY PREVENTION
+Chapter 10.70 ACL Prevention in Young Athletes
+Chapter 10.71 Neuromuscular Training
+Chapter 10.72 Strength Development
+Chapter 10.73 Training Load Monitoring
+Chapter 10.74 Growth Spurts and Injury Risk
+Chapter 10.75 Female Adolescent Athletes
+PART Q: PAEDIATRIC KNEE CLINIC
+Chapter 10.76 Assessment Pathways
+Chapter 10.77 Imaging Pathways
+Chapter 10.78 Growth Monitoring
+Chapter 10.79 Surgical Decision Making
+Chapter 10.80 Long-Term Follow-Up
+PART R: RESEARCH ACADEMY
+Chapter 10.81 Landmark Paediatric ACL Papers
+Chapter 10.82 Landmark Meniscal Preservation Papers
+Chapter 10.83 Landmark OCD Papers
+Chapter 10.84 Landmark Patellar Instability Papers
+Chapter 10.85 Growth Plate Research
+Chapter 10.86 Current Controversies
+Chapter 10.87 Future Directions
+PART S: MASTERCLASSES
+Chapter 10.88 Paediatric ACL Masterclass
+Chapter 10.89 Discoid Meniscus Masterclass
+Chapter 10.90 OCD Masterclass
+Chapter 10.91 Patellar Instability Masterclass
+Chapter 10.92 Growth Plate Surgery Masterclass
+Chapter 10.93 Young Athlete Masterclass
+Chapter 10.94 Future of Paediatric Knee Surgery
+Strategic Importance
+This section would likely expand into 250-350 educational pages and provides a natural extension of your existing expertise in:
+Paediatric ACL injuries
+Growth-preserving reconstruction techniques
+Discoid meniscus surgery
+Young athlete care
+Return-to-sport pathways
+It also creates a strong parent-facing educational resource and referral pathway for Sportshealing.
+At this stage, KneeSchool would contain:
+Anatomy Academy
+Biomechanics Academy
+Clinical Examination Academy
+Imaging Academy
+Conditions Library
+Surgical Academy
+Rehabilitation Academy
+Women's Knee Health Academy
+Children's Knee Health Academy
+This would already represent approximately 2,500-3,000 individual educational pages before moving into Section 11: Performance & Injury Prevention Academy, which should be heavily athlete-focused and likely become one of the highest-traffic sections on the entire platform.
+SECTION 11: PERFORMANCE & INJURY PREVENTION ACADEMY
+Overview
+The Performance & Injury Prevention Academy should become one of the most visited sections of KneeSchool.
+This section bridges:
+Sports Science
+Strength and Conditioning
+Biomechanics
+Rehabilitation
+Injury Prevention
+Performance Optimisation
+Longevity
+Target audiences:
+Athletes
+Parents
+Coaches
+Physiotherapists
+Sports Therapists
+Strength and Conditioning Coaches
+Sports Physicians
+Orthopaedic Surgeons
+Unlike many sports medicine resources, the emphasis should not simply be avoiding injury.
+The objective is:
+Move Better. Perform Better. Stay Healthy Longer.
+PART A: FOUNDATIONS OF PERFORMANCE
+Chapter 11.1 Introduction to Performance
+11.1.1 What is Athletic Performance?
+11.1.2 Why Knees Matter
+11.1.3 Performance Versus Health
+11.1.4 Longevity in Sport
+11.1.5 Injury and Performance Relationships
+Chapter 11.2 Human Movement Fundamentals
+11.2.1 Mobility
+11.2.2 Stability
+11.2.3 Strength
+11.2.4 Power
+11.2.5 Speed
+11.2.6 Endurance
+11.2.7 Coordination
+11.2.8 Movement Efficiency
+Chapter 11.3 Athletic Development
+11.3.1 Long-Term Athletic Development
+11.3.2 Youth Development
+11.3.3 Elite Development
+11.3.4 Ageing Athletes
+PART B: MOVEMENT ASSESSMENT
+Chapter 11.4 Functional Movement Screening
+11.4.1 Principles
+11.4.2 Movement Patterns
+11.4.3 Screening Tools
+11.4.4 Limitations
+Chapter 11.5 Squat Assessment
+11.5.1 Bodyweight Squat
+11.5.2 Goblet Squat
+11.5.3 Single-Leg Squat
+11.5.4 Overhead Squat
+Chapter 11.6 Jump Assessment
+11.6.1 Countermovement Jump
+11.6.2 Drop Jump
+11.6.3 Single-Leg Jump
+11.6.4 Force Plate Analysis
+Chapter 11.7 Landing Assessment
+11.7.1 Landing Error Scoring System
+11.7.2 Dynamic Valgus
+11.7.3 Knee Loading
+11.7.4 Injury Risk Indicators
+PART C: STRENGTH DEVELOPMENT
+Chapter 11.8 Principles of Strength Training
+11.8.1 Adaptation
+11.8.2 Progressive Overload
+11.8.3 Recovery
+11.8.4 Periodisation
+Chapter 11.9 Lower Limb Strength
+11.9.1 Quadriceps Strength
+11.9.2 Hamstring Strength
+11.9.3 Gluteal Strength
+11.9.4 Calf Strength
+11.9.5 Core Strength
+Chapter 11.10 Compound Lifts
+11.10.1 Squat Variations
+11.10.2 Deadlift Variations
+11.10.3 Lunges
+11.10.4 Step-Ups
+11.10.5 Split Squats
+Chapter 11.11 Single-Leg Training
+11.11.1 Importance
+11.11.2 Exercise Progressions
+11.11.3 Sports Applications
+PART D: POWER DEVELOPMENT
+Chapter 11.12 Introduction to Power
+11.12.1 Strength-Speed Relationship
+11.12.2 Rate of Force Development
+11.12.3 Athletic Performance
+Chapter 11.13 Plyometric Training
+11.13.1 Principles
+11.13.2 Bilateral Plyometrics
+11.13.3 Unilateral Plyometrics
+11.13.4 Advanced Plyometrics
+Chapter 11.14 Reactive Strength
+11.14.1 Stretch Shortening Cycle
+11.14.2 Reactive Strength Index
+11.14.3 Assessment
+11.14.4 Training
+PART E: RUNNING ACADEMY
+Chapter 11.15 Running Biomechanics
+11.15.1 Running Gait
+11.15.2 Stride Length
+11.15.3 Cadence
+11.15.4 Ground Contact Time
+Chapter 11.16 Running Injuries
+11.16.1 Patellofemoral Pain
+11.16.2 ITB Syndrome
+11.16.3 Tendinopathy
+11.16.4 Stress Fractures
+Chapter 11.17 Return to Running
+11.17.1 Post-ACL
+11.17.2 Post-Meniscal Surgery
+11.17.3 Post-Arthroplasty
+PART F: AGILITY AND CHANGE OF DIRECTION
+Chapter 11.18 Agility Fundamentals
+11.18.1 Biomechanics
+11.18.2 Decision Making
+11.18.3 Sports Applications
+Chapter 11.19 Cutting Mechanics
+11.19.1 ACL Risk
+11.19.2 Technique Optimisation
+11.19.3 Coaching Strategies
+Chapter 11.20 Deceleration Training
+11.20.1 Braking Mechanics
+11.20.2 Injury Prevention
+11.20.3 Performance Benefits
+PART G: ACL INJURY PREVENTION
+Chapter 11.21 Why ACL Injuries Occur
+11.21.1 Biomechanics
+11.21.2 Neuromuscular Factors
+11.21.3 Anatomical Factors
+11.21.4 Hormonal Factors
+Chapter 11.22 FIFA 11+
+11.22.1 Evidence
+11.22.2 Implementation
+11.22.3 Modifications
+Chapter 11.23 PEP Programme
+Chapter 11.24 Sportsmetrics
+Chapter 11.25 Female Athlete Programmes
+Chapter 11.26 School-Based Programmes
+Chapter 11.27 Academy-Based Programmes
+PART H: SPORT-SPECIFIC PERFORMANCE
+Chapter 11.28 Football Performance
+11.28.1 Professional Football
+11.28.2 Youth Football
+11.28.3 Female Football
+Chapter 11.29 Cricket Performance
+11.29.1 Fast Bowlers
+11.29.2 Spin Bowlers
+11.29.3 Batters
+11.29.4 Wicketkeepers
+Chapter 11.30 Rugby Performance
+Chapter 11.31 Tennis Performance
+Chapter 11.32 Basketball Performance
+Chapter 11.33 Athletics Performance
+Chapter 11.34 Golf Performance
+Chapter 11.35 Ski Performance
+PART I: FEMALE ATHLETE PERFORMANCE
+Chapter 11.36 Menstrual Cycle Considerations
+Chapter 11.37 Female ACL Prevention
+Chapter 11.38 Strength Training for Female Athletes
+Chapter 11.39 RED-S
+Chapter 11.40 Return to Competition
+PART J: YOUTH ATHLETE DEVELOPMENT
+Chapter 11.41 Growth and Maturation
+Chapter 11.42 Training During Growth Spurts
+Chapter 11.43 Long-Term Athletic Development
+Chapter 11.44 Injury Prevention
+Chapter 11.45 Talent Development
+PART K: RECOVERY SCIENCE
+Chapter 11.46 Recovery Physiology
+Chapter 11.47 Sleep and Recovery
+Chapter 11.48 Nutrition and Recovery
+Chapter 11.49 Hydration
+Chapter 11.50 Monitoring Fatigue
+Chapter 11.51 Recovery Modalities
+11.51.1 Cryotherapy
+11.51.2 Compression
+11.51.3 Massage
+11.51.4 Active Recovery
+11.51.5 Contrast Therapy
+11.51.6 Recovery Boots
+PART L: SPORTS NUTRITION
+Chapter 11.52 Macronutrients
+11.52.1 Protein
+11.52.2 Carbohydrates
+11.52.3 Fats
+Chapter 11.53 Micronutrients
+11.53.1 Vitamin D
+11.53.2 Magnesium
+11.53.3 Iron
+11.53.4 Zinc
+11.53.5 Calcium
+Chapter 11.54 Supplements
+11.54.1 Creatine
+11.54.2 Collagen
+11.54.3 Protein Powders
+11.54.4 Omega-3
+11.54.5 Caffeine
+PART M: PERFORMANCE TECHNOLOGY
+Chapter 11.55 GPS Monitoring
+Chapter 11.56 Wearable Technology
+Chapter 11.57 Force Plates
+Chapter 11.58 Motion Capture
+Chapter 11.59 AI Performance Analysis
+Chapter 11.60 Digital Athlete Monitoring
+PART N: ELITE ATHLETE CENTRE
+Chapter 11.61 Performance Profiling
+Chapter 11.62 Return to Performance
+Chapter 11.63 Return to Competition
+Chapter 11.64 Return to Elite Sport
+Chapter 11.65 Career Longevity
+PART O: SPORTSHEALING PERFORMANCE CENTRE
+Chapter 11.66 Performance Assessment
+Chapter 11.67 Injury Risk Assessment
+Chapter 11.68 Movement Screening
+Chapter 11.69 Return-to-Sport Testing
+Chapter 11.70 Longitudinal Athlete Monitoring
+PART P: RESEARCH ACADEMY
+Chapter 11.71 ACL Prevention Research
+Chapter 11.72 Running Research
+Chapter 11.73 Strength Training Research
+Chapter 11.74 Female Athlete Research
+Chapter 11.75 Sports Science Research
+Chapter 11.76 Future Technologies
+PART Q: MASTERCLASSES
+Chapter 11.77 ACL Prevention Masterclass
+Chapter 11.78 Football Performance Masterclass
+Chapter 11.79 Cricket Performance Masterclass
+Chapter 11.80 Female Athlete Masterclass
+Chapter 11.81 Return-to-Sport Masterclass
+Chapter 11.82 Elite Athlete Masterclass
+Chapter 11.83 Future of Human Performance
+Strategic Importance
+This section would likely generate 300-500 pages and could become one of the highest-traffic areas of KneeSchool because it appeals to:
+Athletes
+Parents
+Coaches
+Sports clubs
+Academies
+Physiotherapists
+Sports scientists
+It also provides a natural bridge between:
+Prevention
+Performance
+Rehabilitation
+Sportshealing services
+OmKneeHealth products
+Particularly valuable is the opportunity to leverage your own background in elite cricket, ACL prevention, return-to-sport research, and sports knee surgery to create content that is both evidence-based and practically applicable.
+SECTION 12: RESEARCH ACADEMY
+Overview
+The Research Academy should establish KneeSchool as the world's leading educational and academic resource for knee research.
+Unlike traditional educational websites, this section should not simply summarise research. It should teach users how to:
+Read research
+Critically appraise research
+Conduct research
+Publish research
+Translate research into clinical practice
+Target audiences:
+Medical Students
+Academic Foundation Doctors
+Orthopaedic Trainees
+Fellows
+Consultants
+Physiotherapists
+Sports Scientists
+Researchers
+Industry Partners
+This section should become a major differentiator for KneeSchool and leverage your expertise in:
+Knee biomechanics
+ACL research
+Meniscal research
+Medial knee research
+Surgical education research
+Imaging research
+Magic Angle MRI research
+PART A: INTRODUCTION TO RESEARCH
+Chapter 12.1 Why Research Matters
+12.1.1 What is Research?
+12.1.2 Why Research Changes Practice
+12.1.3 Research and Patient Care
+12.1.4 Research and Career Development
+12.1.5 Becoming an Academic Clinician
+Chapter 12.2 History of Knee Research
+12.2.1 Early Knee Surgery Research
+12.2.2 Development of Arthroscopy
+12.2.3 Evolution of ACL Research
+12.2.4 Evolution of Meniscal Research
+12.2.5 Evolution of Arthroplasty Research
+12.2.6 Future Directions
+PART B: RESEARCH METHODOLOGY
+Chapter 12.3 Research Fundamentals
+12.3.1 Asking a Research Question
+12.3.2 Hypothesis Development
+12.3.3 PICO Framework
+12.3.4 Study Design Selection
+12.3.5 Translational Research
+Chapter 12.4 Levels of Evidence
+12.4.1 Level I Evidence
+12.4.2 Level II Evidence
+12.4.3 Level III Evidence
+12.4.4 Level IV Evidence
+12.4.5 Level V Evidence
+12.4.6 Limitations of Evidence Hierarchies
+Chapter 12.5 Study Designs
+12.5.1 Case Reports
+12.5.2 Case Series
+12.5.3 Cohort Studies
+12.5.4 Case-Control Studies
+12.5.5 Randomised Controlled Trials
+12.5.6 Registry Studies
+12.5.7 Diagnostic Accuracy Studies
+12.5.8 Economic Studies
+PART C: BIOSTATISTICS ACADEMY
+Chapter 12.6 Statistics for Beginners
+12.6.1 Mean
+12.6.2 Median
+12.6.3 Mode
+12.6.4 Standard Deviation
+12.6.5 Confidence Intervals
+12.6.6 P Values
+Chapter 12.7 Advanced Statistics
+12.7.1 Power Calculations
+12.7.2 Sample Size
+12.7.3 Regression Analysis
+12.7.4 Logistic Regression
+12.7.5 Survival Analysis
+12.7.6 Meta-analysis Statistics
+Chapter 12.8 Practical Statistics
+12.8.1 SPSS
+12.8.2 R
+12.8.3 GraphPad Prism
+12.8.4 Excel
+12.8.5 Artificial Intelligence Tools
+PART D: CRITICAL APPRAISAL
+Chapter 12.9 How to Read a Scientific Paper
+12.9.1 Abstract
+12.9.2 Introduction
+12.9.3 Methods
+12.9.4 Results
+12.9.5 Discussion
+12.9.6 Conclusions
+Chapter 12.10 Critical Appraisal Skills
+12.10.1 Internal Validity
+12.10.2 External Validity
+12.10.3 Bias
+12.10.4 Confounding
+12.10.5 Clinical Relevance
+Chapter 12.11 Journal Clubs
+12.11.1 How to Run a Journal Club
+12.11.2 Journal Club Templates
+12.11.3 Critical Appraisal Checklists
+PART E: SYSTEMATIC REVIEWS
+Chapter 12.12 Introduction to Systematic Reviews
+12.12.1 Principles
+12.12.2 Protocol Development
+12.12.3 Registration
+12.12.4 Literature Searching
+Chapter 12.13 PRISMA Guidelines
+12.13.1 PRISMA 2020
+12.13.2 Flow Diagrams
+12.13.3 Risk of Bias
+12.13.4 Data Extraction
+Chapter 12.14 Meta-analysis
+12.14.1 Forest Plots
+12.14.2 Heterogeneity
+12.14.3 Funnel Plots
+12.14.4 Interpretation
+PART F: CLINICAL RESEARCH
+Chapter 12.15 Outcome Measures
+12.15.1 IKDC
+12.15.2 KOOS
+12.15.3 Lysholm
+12.15.4 Tegner
+12.15.5 Oxford Knee Score
+12.15.6 PROMIS
+12.15.7 Sportshealing Knee Score
+Chapter 12.16 Registries
+12.16.1 National Joint Registry
+12.16.2 Ligament Registries
+12.16.3 International Registries
+12.16.4 Registry-Based Research
+Chapter 12.17 Clinical Trials
+12.17.1 Trial Design
+12.17.2 CONSORT Guidelines
+12.17.3 Ethics
+12.17.4 Trial Management
+PART G: BIOMECHANICS RESEARCH
+Chapter 12.18 Introduction to Biomechanics Research
+12.18.1 Cadaveric Research
+12.18.2 Laboratory Testing
+12.18.3 Robotic Testing
+12.18.4 Motion Analysis
+Chapter 12.19 Knee Biomechanics Methodology
+12.19.1 ACL Studies
+12.19.2 Meniscal Studies
+12.19.3 Medial Knee Studies
+12.19.4 Patellofemoral Studies
+Chapter 12.20 Finite Element Modelling
+12.20.1 Principles
+12.20.2 Applications
+12.20.3 Limitations
+Chapter 12.21 Imperial Knee Biomechanics Programme
+12.21.1 Meniscal Research
+12.21.2 Medial Knee Research
+12.21.3 ACL Research
+12.21.4 Surgical Simulation Research
+PART H: IMAGING RESEARCH
+Chapter 12.22 Imaging Methodology
+12.22.1 MRI Research
+12.22.2 Ultrasound Research
+12.22.3 CT Research
+12.22.4 Artificial Intelligence
+Chapter 12.23 Quantitative Imaging
+12.23.1 T2 Mapping
+12.23.2 T1 Rho
+12.23.3 UTE Imaging
+12.23.4 Cartilage Imaging
+Chapter 12.24 Magic Angle MRI Programme
+12.24.1 Origins
+12.24.2 Scientific Principles
+12.24.3 Current Studies
+12.24.4 Clinical Translation
+12.24.5 Future Applications
+PART I: SURGICAL EDUCATION RESEARCH
+Chapter 12.25 How Surgeons Learn
+12.25.1 Apprenticeship Model
+12.25.2 Modern Training
+12.25.3 Simulation
+12.25.4 Competency-Based Education
+Chapter 12.26 Simulation Research
+12.26.1 Arthroscopy Simulators
+12.26.2 Virtual Reality
+12.26.3 Cadaveric Training
+12.26.4 Validation Studies
+Chapter 12.27 Future Surgical Education
+12.27.1 AI Tutors
+12.27.2 Digital Learning
+12.27.3 Remote Education
+PART J: WRITING AND PUBLISHING
+Chapter 12.28 Writing a Scientific Paper
+12.28.1 Choosing a Journal
+12.28.2 Writing the Introduction
+12.28.3 Writing the Methods
+12.28.4 Writing the Results
+12.28.5 Writing the Discussion
+Chapter 12.29 Publishing Successfully
+12.29.1 Peer Review
+12.29.2 Responding to Reviewers
+12.29.3 Common Reasons for Rejection
+12.29.4 Publication Ethics
+Chapter 12.30 Presenting Research
+12.30.1 Abstract Submission
+12.30.2 Poster Presentations
+12.30.3 Podium Presentations
+12.30.4 International Meetings
+PART K: GRANTS AND ACADEMIC CAREERS
+Chapter 12.31 Research Funding
+12.31.1 Charities
+12.31.2 Government Grants
+12.31.3 Industry Funding
+12.31.4 Academic Grants
+Chapter 12.32 Academic Career Pathways
+12.32.1 Academic Foundation Programme
+12.32.2 Academic Clinical Fellowship
+12.32.3 PhD
+12.32.4 Clinical Lectureship
+12.32.5 Professorship
+PART L: ACL RESEARCH HUB
+Chapter 12.33 Landmark ACL Papers
+12.33.1 Anatomy
+12.33.2 Biomechanics
+12.33.3 Reconstruction
+12.33.4 Return to Sport
+12.33.5 Female ACL Research
+PART M: MENISCUS RESEARCH HUB
+Chapter 12.34 Landmark Meniscal Papers
+12.34.1 Meniscal Function
+12.34.2 Repair
+12.34.3 Root Tears
+12.34.4 Transplantation
+PART N: MEDIAL KNEE RESEARCH HUB
+Chapter 12.35 Landmark MCL Papers
+Chapter 12.36 Deep MCL Research
+Chapter 12.37 POL Research
+Chapter 12.38 Anteromedial Rotatory Instability Research
+PART O: ARTHROPLASTY RESEARCH HUB
+Chapter 12.39 UKA Research
+Chapter 12.40 TKA Research
+Chapter 12.41 Robotic Surgery Research
+Chapter 12.42 Alignment Research
+PART P: RESEARCH DATABASE
+Chapter 12.43 Landmark Papers Library
+Chapter 12.44 Historical Papers Archive
+Chapter 12.45 BASK Papers Collection
+Chapter 12.46 ESSKA Papers Collection
+Chapter 12.47 ISAKOS Papers Collection
+Chapter 12.48 KneeSchool Recommended Reading
+PART Q: AI AND FUTURE RESEARCH
+Chapter 12.49 Artificial Intelligence in Research
+Chapter 12.50 Machine Learning
+Chapter 12.51 Large Language Models
+Chapter 12.52 Automated Literature Reviews
+Chapter 12.53 Digital Twins
+Chapter 12.54 Precision Medicine
+Chapter 12.55 Future of Knee Research
+PART R: MASTERCLASSES
+Chapter 12.56 How to Read a Paper
+Chapter 12.57 How to Publish a Paper
+Chapter 12.58 How to Perform a Systematic Review
+Chapter 12.59 How to Conduct a Biomechanics Study
+Chapter 12.60 How to Build an Academic Career
+Chapter 12.61 Landmark Knee Research Masterclass
+Chapter 12.62 Future of Knee Science
+Strategic Importance
+This section would likely expand into 250-400 educational pages and could become one of the strongest differentiators of KneeSchool.
+For you specifically, this section has the potential to become a signature feature because it can incorporate:
+Your PhD work
+Imperial College research
+Meniscal biomechanics research
+Medial knee and ALL research
+Surgical simulation studies
+Magic Angle MRI programme
+BASK educational initiatives
+This also creates opportunities for:
+Fellowship recruitment
+Research collaborations
+Industry partnerships
+Sponsored educational content
+International academic visibility
+SECTION 13: CASE LIBRARY
+Overview
+The Case Library should become one of the most powerful educational components of KneeSchool.
+Research consistently demonstrates that clinicians learn most effectively through:
+Real cases
+Pattern recognition
+Clinical reasoning
+Decision making
+Reflection
+The Case Library should function as a virtual fellowship.
+Users should be able to search cases by:
+Diagnosis
+Symptom
+Age
+Sport
+Imaging finding
+Surgical procedure
+Complication
+Educational level
+Every case should include:
+Clinical Presentation
+History
+Examination Findings
+Imaging
+Differential Diagnosis
+Treatment Options
+Decision Making
+Outcome
+Learning Points
+References
+Cases should be presented at:
+Patient Level
+Medical Student Level
+MRCS Level
+FRCS Level
+Fellowship Level
+Consultant Challenge Level
+PART A: INTRODUCTION TO CLINICAL REASONING
+Chapter 13.1 How Experts Think
+13.1.1 Pattern Recognition
+13.1.2 Analytical Reasoning
+13.1.3 Avoiding Cognitive Bias
+13.1.4 Diagnostic Accuracy
+13.1.5 Decision Making Under Uncertainty
+Chapter 13.2 Building a Differential Diagnosis
+13.2.1 Acute Knee Pain
+13.2.2 Chronic Knee Pain
+13.2.3 Swollen Knee
+13.2.4 Unstable Knee
+13.2.5 Locked Knee
+PART B: ACL CASE LIBRARY
+Chapter 13.3 Acute ACL Injuries
+Case 13.3.1 Non-contact Football Injury
+Case 13.3.2 Skiing Injury
+Case 13.3.3 Rugby Injury
+Case 13.3.4 Female Athlete ACL Injury
+Case 13.3.5 Hyperextension ACL Injury
+Chapter 13.4 ACL Associated Injuries
+Case 13.4.1 ACL with Ramp Lesion
+Case 13.4.2 ACL with Meniscal Root Tear
+Case 13.4.3 ACL with MCL Injury
+Case 13.4.4 ACL with Cartilage Injury
+Case 13.4.5 ACL with ALL Injury
+Chapter 13.5 Complex ACL Cases
+Case 13.5.1 Revision ACL
+Case 13.5.2 Failed ACL Reconstruction
+Case 13.5.3 Multi-ligament Injury
+Case 13.5.4 Paediatric ACL
+Case 13.5.5 Elite Athlete ACL
+PART C: MENISCAL CASE LIBRARY
+Chapter 13.6 Common Meniscal Cases
+Case 13.6.1 Horizontal Tear
+Case 13.6.2 Vertical Tear
+Case 13.6.3 Bucket Handle Tear
+Case 13.6.4 Radial Tear
+Case 13.6.5 Flap Tear
+Chapter 13.7 Advanced Meniscal Cases
+Case 13.7.1 Root Tear
+Case 13.7.2 Ramp Lesion
+Case 13.7.3 Discoid Meniscus
+Case 13.7.4 Meniscal Cyst
+Case 13.7.5 Failed Meniscal Repair
+PART D: MEDIAL KNEE CASE LIBRARY
+Chapter 13.8 MCL Injuries
+Case 13.8.1 Grade I Injury
+Case 13.8.2 Grade II Injury
+Case 13.8.3 Grade III Injury
+Case 13.8.4 Deep MCL Injury
+Case 13.8.5 Combined ACL-MCL Injury
+Chapter 13.9 Complex Medial Knee Cases
+Case 13.9.1 POL Injury
+Case 13.9.2 Posteromedial Corner Injury
+Case 13.9.3 AMRI
+Case 13.9.4 Chronic Medial Instability
+Case 13.9.5 Revision Medial Reconstruction
+PART E: LATERAL KNEE CASE LIBRARY
+Chapter 13.10 PLC Injuries
+Case 13.10.1 Acute PLC Injury
+Case 13.10.2 Chronic PLC Instability
+Case 13.10.3 Combined PCL-PLC Injury
+Case 13.10.4 Peroneal Nerve Injury
+Case 13.10.5 Revision PLC Surgery
+PART F: PCL CASE LIBRARY
+Chapter 13.11 PCL Cases
+Case 13.11.1 Dashboard Injury
+Case 13.11.2 Sporting PCL Injury
+Case 13.11.3 Combined PCL Injury
+Case 13.11.4 Chronic PCL Deficiency
+Case 13.11.5 Revision PCL Reconstruction
+PART G: CARTILAGE CASE LIBRARY
+Chapter 13.12 Chondral Lesions
+Case 13.12.1 Isolated Chondral Defect
+Case 13.12.2 Osteochondral Lesion
+Case 13.12.3 Delamination Injury
+Case 13.12.4 Kissing Lesion
+Case 13.12.5 Failed Cartilage Repair
+Chapter 13.13 OCD Cases
+Case 13.13.1 Stable OCD
+Case 13.13.2 Unstable OCD
+Case 13.13.3 Surgical OCD
+Case 13.13.4 Elite Athlete OCD
+PART H: PATELLOFEMORAL CASE LIBRARY
+Chapter 13.14 Instability Cases
+Case 13.14.1 First-Time Dislocation
+Case 13.14.2 Recurrent Instability
+Case 13.14.3 Trochlear Dysplasia
+Case 13.14.4 Patella Alta
+Case 13.14.5 Failed MPFL Reconstruction
+Chapter 13.15 Patellofemoral Pain Cases
+Case 13.15.1 Adolescent Athlete
+Case 13.15.2 Runner
+Case 13.15.3 Perimenopausal Patient
+Case 13.15.4 Arthritic Patient
+PART I: OSTEOARTHRITIS CASE LIBRARY
+Chapter 13.16 Early OA
+Case 13.16.1 Young Athlete
+Case 13.16.2 Meniscal Deficiency
+Case 13.16.3 Post-traumatic OA
+Chapter 13.17 Established OA
+Case 13.17.1 Medial OA
+Case 13.17.2 Lateral OA
+Case 13.17.3 Patellofemoral OA
+Case 13.17.4 Valgus OA
+Case 13.17.5 Varus OA
+Chapter 13.18 Arthroplasty Cases
+Case 13.18.1 UKA Candidate
+Case 13.18.2 TKA Candidate
+Case 13.18.3 Revision Arthroplasty
+Case 13.18.4 Infection
+Case 13.18.5 Periprosthetic Fracture
+PART J: PAEDIATRIC CASE LIBRARY
+Chapter 13.19 Paediatric ACL
+Case 13.19.1 Skeletally Immature Athlete
+Case 13.19.2 Growth Plate Considerations
+Chapter 13.20 Discoid Meniscus
+Case 13.20.1 Incidental Finding
+Case 13.20.2 Symptomatic Discoid Meniscus
+Chapter 13.21 OCD Cases
+Case 13.21.1 Stable OCD
+Case 13.21.2 Surgical OCD
+PART K: SPORTS-SPECIFIC CASES
+Chapter 13.22 Football Cases
+ACL Injury
+Meniscal Injury
+Cartilage Injury
+Return to Play
+Chapter 13.23 Cricket Cases
+Fast Bowler
+Spin Bowler
+Batter
+Wicketkeeper
+Chapter 13.24 Rugby Cases
+Chapter 13.25 Tennis Cases
+Chapter 13.26 Basketball Cases
+Chapter 13.27 Skiing Cases
+PART L: IMAGING CHALLENGE LIBRARY
+Chapter 13.28 Beginner MRI Cases
+Case-Based Interpretation
+Normal Versus Abnormal
+Chapter 13.29 Intermediate MRI Cases
+ACL
+Meniscus
+Cartilage
+Patellofemoral
+Chapter 13.30 Advanced MRI Cases
+Subtle Findings
+Post-operative Cases
+Failed Surgery Cases
+Fellowship-Level Cases
+Chapter 13.31 Ultrasound Cases
+Tendon Pathology
+MCL Injury
+Dynamic Assessment
+Injection Planning
+Chapter 13.32 X-ray Cases
+Osteoarthritis
+Alignment
+Fractures
+Tumours
+PART M: SURGICAL DECISION-MAKING CASES
+Chapter 13.33 Operate or Not?
+Meniscal Tears
+ACL Tears
+MCL Injuries
+Osteoarthritis
+Chapter 13.34 Procedure Selection
+Repair Versus Reconstruction
+Osteotomy Versus Arthroplasty
+Biological Versus Surgical Solutions
+PART N: COMPLICATION LIBRARY
+Chapter 13.35 Failed ACL Reconstruction
+Chapter 13.36 Failed Meniscal Repair
+Chapter 13.37 Arthrofibrosis
+Chapter 13.38 Infection
+Chapter 13.39 Persistent Pain
+Chapter 13.40 Complex Revision Cases
+PART O: FRCS VIVA CASES
+Chapter 13.41 Short Cases
+Chapter 13.42 Intermediate Cases
+Chapter 13.43 Complex Cases
+Chapter 13.44 Imaging Viva Cases
+Chapter 13.45 Surgical Planning Cases
+Chapter 13.46 Revision Surgery Cases
+PART P: FELLOWSHIP CHALLENGE CASES
+Chapter 13.47 Multi-ligament Injuries
+Chapter 13.48 Failed Osteotomy
+Chapter 13.49 Failed Cartilage Procedures
+Chapter 13.50 Complex Instability
+Chapter 13.51 Salvage Procedures
+PART Q: CONSULTANT MASTERCASES
+Chapter 13.52 Cases That Changed Practice
+Chapter 13.53 Difficult Decisions
+Chapter 13.54 Unexpected Findings
+Chapter 13.55 Rare Conditions
+Chapter 13.56 Lessons Learned
+PART R: SPORTSHEALING GRAND ROUNDS
+Chapter 13.57 Case of the Month
+Chapter 13.58 MRI of the Month
+Chapter 13.59 Surgical Case of the Month
+Chapter 13.60 Rehabilitation Case of the Month
+Chapter 13.61 Diagnostic Challenge of the Month
+PART S: GLOBAL CASE REGISTRY
+Chapter 13.62 User Submitted Cases
+Chapter 13.63 International Case Discussions
+Chapter 13.64 Rare Case Archive
+Chapter 13.65 Consensus Cases
+Chapter 13.66 Future Directions
+Strategic Importance
+This section has the potential to become the highest-engagement educational area on the entire platform.
+A mature Case Library could contain:
+1,000+ curated cases
+MRI teaching files
+Surgical videos
+Interactive decision trees
+FRCS viva simulations
+Consultant challenge cases
+This is also where your clinical practice, Sportshealing imaging, surgical experience, and Dr Cynthia Gupte's radiology expertise can be integrated most naturally.
+SECTION 14: QUESTION BANK & EXAMINATION ACADEMY
+Overview
+The Question Bank & Examination Academy transforms KneeSchool from a reference resource into a complete learning platform.
+This section should support:
+Patients
+Medical Students
+Foundation Doctors
+Core Surgical Trainees
+MRCS Candidates
+ST3-ST8 Orthopaedic Trainees
+FRCS (Tr & Orth) Candidates
+Knee Fellows
+Consultant Surgeons
+Physiotherapists
+Sports Physicians
+The academy should provide:
+Knowledge testing
+Progress tracking
+Certification
+Examination preparation
+Continuing Professional Development (CPD)
+Every question should include:
+Correct answer
+Detailed explanation
+Learning points
+References
+Links to related KneeSchool content
+PART A: PATIENT KNOWLEDGE ACADEMY
+Chapter 14.1 Understanding Your Knee
+Quiz 14.1.1 Basic Knee Anatomy
+Quiz 14.1.2 Meniscus Injuries
+Quiz 14.1.3 ACL Injuries
+Quiz 14.1.4 Osteoarthritis
+Quiz 14.1.5 Knee Replacement
+Chapter 14.2 Recovery Knowledge
+Quiz 14.2.1 Rehabilitation
+Quiz 14.2.2 Return to Sport
+Quiz 14.2.3 Recovery Expectations
+Quiz 14.2.4 Injury Prevention
+PART B: MEDICAL STUDENT ACADEMY
+Chapter 14.3 Basic Sciences
+14.3.1 Anatomy MCQs
+14.3.2 Biomechanics MCQs
+14.3.3 Physiology MCQs
+14.3.4 Histology MCQs
+14.3.5 Embryology MCQs
+Chapter 14.4 Clinical Sciences
+14.4.1 Examination MCQs
+14.4.2 Imaging MCQs
+14.4.3 Trauma MCQs
+14.4.4 Orthopaedic Principles MCQs
+Chapter 14.5 Medical Student OSCE Station Bank
+Knee Examination Station
+ACL Injury Station
+Meniscal Injury Station
+Osteoarthritis Station
+Imaging Interpretation Station
+PART C: MRCS ACADEMY
+Chapter 14.6 MRCS Basic Sciences
+Surgical Anatomy
+Biomechanics
+Tissue Healing
+Surgical Principles
+Statistics
+Chapter 14.7 MRCS SBA Bank
+Anatomy Questions
+Trauma Questions
+Imaging Questions
+Sports Injury Questions
+Arthroplasty Questions
+Chapter 14.8 MRCS EMQ Bank
+Knee Trauma
+Sports Injuries
+Rehabilitation
+Imaging
+Chapter 14.9 MRCS Clinical Scenarios
+Acute Knee Injury
+Locked Knee
+Swollen Knee
+Osteoarthritis
+Infection
+PART D: FRCS (TR & ORTH) ACADEMY
+Chapter 14.10 FRCS Written Examination
+Single Best Answer Bank
+Extended Matching Questions
+Data Interpretation Questions
+Evidence-Based Practice Questions
+Chapter 14.11 Adult Knee Reconstruction
+ACL Questions
+Meniscal Questions
+MCL Questions
+PLC Questions
+Cartilage Questions
+Chapter 14.12 Arthroplasty Questions
+UKA
+TKA
+Revision Arthroplasty
+Infection
+Robotics
+Chapter 14.13 Paediatric Knee Questions
+ACL
+OCD
+Discoid Meniscus
+Patellar Instability
+Chapter 14.14 Imaging Questions
+MRI Interpretation
+X-ray Interpretation
+CT Interpretation
+Ultrasound Interpretation
+PART E: FRCS VIVA ACADEMY
+Chapter 14.15 Clinical Examination Vivas
+ACL Injury
+Meniscal Tear
+MCL Injury
+Patellar Instability
+Osteoarthritis
+Chapter 14.16 Imaging Viva Cases
+ACL MRI
+Meniscal MRI
+Cartilage MRI
+Osteoarthritis Imaging
+Post-operative Imaging
+Chapter 14.17 Surgical Planning Viva
+ACL Reconstruction
+Meniscal Repair
+Root Repair
+Osteotomy
+Arthroplasty
+Chapter 14.18 Revision Surgery Viva
+Failed ACL
+Failed Meniscus
+Failed Osteotomy
+Failed Arthroplasty
+PART F: FELLOWSHIP EXAMINATION ACADEMY
+Chapter 14.19 Fellowship-Level Cases
+Complex Instability
+Multi-Ligament Injuries
+Revision ACL
+Complex Osteotomy
+Salvage Procedures
+Chapter 14.20 Consultant Challenge Questions
+Rare Cases
+Difficult Decision Making
+Surgical Complications
+Controversies
+PART G: KNEE ANATOMY QUESTION BANK
+Chapter 14.21 Bones
+100 Questions
+Chapter 14.22 Menisci
+100 Questions
+Chapter 14.23 ACL
+100 Questions
+Chapter 14.24 PCL
+100 Questions
+Chapter 14.25 Medial Structures
+100 Questions
+Chapter 14.26 Lateral Structures
+100 Questions
+Chapter 14.27 Patellofemoral Anatomy
+100 Questions
+PART H: BIOMECHANICS QUESTION BANK
+Chapter 14.28 Knee Kinematics
+Beginner Questions
+Intermediate Questions
+Advanced Questions
+Chapter 14.29 ACL Biomechanics
+Basic
+Advanced
+Fellowship Level
+Chapter 14.30 Meniscal Biomechanics
+Chapter 14.31 Medial Knee Biomechanics
+Chapter 14.32 Patellofemoral Biomechanics
+Chapter 14.33 Arthroplasty Biomechanics
+PART I: IMAGING QUESTION BANK
+Chapter 14.34 MRI Academy
+Normal MRI
+ACL MRI
+Meniscal MRI
+Cartilage MRI
+Patellofemoral MRI
+Chapter 14.35 MRI Reporting Challenges
+Beginner
+Intermediate
+Advanced
+Fellowship
+Chapter 14.36 Ultrasound Interpretation
+Tendons
+Ligaments
+Dynamic Assessment
+Interventions
+Chapter 14.37 X-ray Interpretation
+OA
+Alignment
+Trauma
+Tumours
+PART J: SURGICAL DECISION-MAKING ACADEMY
+Chapter 14.38 Operate or Not?
+ACL
+Meniscus
+Cartilage
+OA
+Chapter 14.39 Procedure Selection
+Repair versus Reconstruction
+Preservation versus Replacement
+Osteotomy versus Arthroplasty
+Chapter 14.40 Complication Management
+Infection
+Arthrofibrosis
+Graft Failure
+Persistent Pain
+PART K: RAPID REVIEW BANKS
+Chapter 14.41 Anatomy in 100 Questions
+Chapter 14.42 ACL in 100 Questions
+Chapter 14.43 Meniscus in 100 Questions
+Chapter 14.44 Osteoarthritis in 100 Questions
+Chapter 14.45 Arthroplasty in 100 Questions
+Chapter 14.46 FRCS Knee Revision Course
+PART L: BOARD REVIEW COURSES
+Chapter 14.47 Medical Student Revision Course
+Chapter 14.48 MRCS Revision Course
+Chapter 14.49 FRCS Revision Course
+Chapter 14.50 Fellowship Examination Course
+PART M: INTERACTIVE LEARNING
+Chapter 14.51 Adaptive Question Bank
+Beginner Pathway
+Intermediate Pathway
+Advanced Pathway
+Chapter 14.52 AI Tutor
+Personal Learning Plans
+Weakness Identification
+Progress Tracking
+Mock Examinations
+Chapter 14.53 Flashcard Academy
+Anatomy Flashcards
+Imaging Flashcards
+Surgical Flashcards
+Research Flashcards
+PART N: CONTINUING PROFESSIONAL DEVELOPMENT
+Chapter 14.54 Consultant CPD Questions
+Chapter 14.55 New Literature Updates
+Chapter 14.56 Monthly Knowledge Challenges
+Chapter 14.57 Journal Club Questions
+Chapter 14.58 Annual Competency Review
+PART O: SPORTSHEALING CERTIFICATION PROGRAMMES
+Chapter 14.59 Knee Foundations Certificate
+Patient Level
+Coach Level
+Therapist Level
+Chapter 14.60 Sports Knee Certificate
+Beginner
+Intermediate
+Advanced
+Chapter 14.61 Knee Imaging Certificate
+MRI
+Ultrasound
+X-ray
+Chapter 14.62 Knee Rehabilitation Certificate
+Fundamentals
+Advanced Rehabilitation
+Return-to-Sport
+PART P: KNEESCHOOL DIPLOMA PROGRAMME
+Chapter 14.63 Diploma in Knee Science
+Chapter 14.64 Diploma in Sports Knee Surgery
+Chapter 14.65 Diploma in Knee Imaging
+Chapter 14.66 Diploma in Knee Rehabilitation
+Chapter 14.67 Diploma in Women's Knee Health
+Chapter 14.68 Diploma in Paediatric Knee Health
+PART Q: EXAMINATION MASTERCLASSES
+Chapter 14.69 How to Pass Medical School Orthopaedics
+Chapter 14.70 How to Pass MRCS
+Chapter 14.71 How to Pass FRCS (Tr & Orth)
+Chapter 14.72 How to Secure a Fellowship
+Chapter 14.73 How to Become a Knee Consultant
+Chapter 14.74 Lifelong Learning in Knee Surgery
+PART R: GLOBAL LEADERBOARD & LEARNING ANALYTICS
+Chapter 14.75 Individual Progress Dashboard
+Chapter 14.76 Training Programme Dashboard
+Chapter 14.77 Fellowship Dashboard
+Chapter 14.78 Institutional Dashboard
+Chapter 14.79 Global Rankings
+Chapter 14.80 Future Development
+Strategic Importance
+This section has the potential to become the highest-value monetisable component of KneeSchool.
+A mature platform could contain:
+20,000-50,000 questions
+FRCS viva simulations
+MRI interpretation examinations
+AI-powered adaptive learning
+Sportshealing certification courses
+KneeSchool diplomas
+Fellowship preparation programmes
+From a business perspective, this is likely one of the strongest subscription opportunities on the entire platform, alongside the Case Library and Video Academy.
+SECTION 15: VIDEO ACADEMY
+Overview
+The Video Academy should become the most engaging and commercially valuable educational component of KneeSchool.
+Most users prefer watching before reading. Therefore, every major topic throughout KneeSchool should eventually have:
+Short-form video (2-5 minutes)
+Standard teaching video (10-20 minutes)
+Masterclass video (30-60 minutes)
+Fellowship-level teaching session (60-120 minutes)
+The Video Academy should serve:
+Patients
+Medical Students
+MRCS Trainees
+FRCS Candidates
+Fellows
+Consultants
+Physiotherapists
+Coaches
+Sports Scientists
+Every video should contain:
+Learning objectives
+Key take-home messages
+Downloadable notes
+References
+Quiz questions
+Links to related content
+PART A: KNEESCHOOL INTRODUCTION SERIES
+Chapter 15.1 Welcome to KneeSchool
+Video 15.1.1 What is KneeSchool?
+Video 15.1.2 How to Navigate the Platform
+Video 15.1.3 Learning Pathways
+Video 15.1.4 Certification Pathways
+Video 15.1.5 Becoming a Knee Expert
+PART B: PATIENT EDUCATION VIDEOS
+Chapter 15.2 Understanding Your Knee
+Video 15.2.1 Knee Anatomy Explained
+Video 15.2.2 Why Knees Hurt
+Video 15.2.3 Common Knee Conditions
+Video 15.2.4 Understanding MRI Reports
+Video 15.2.5 Understanding X-rays
+Chapter 15.3 ACL Patient Series
+Video 15.3.1 What is an ACL Tear?
+Video 15.3.2 Do I Need Surgery?
+Video 15.3.3 ACL Rehabilitation
+Video 15.3.4 Return to Sport
+Video 15.3.5 Preventing Reinjury
+Chapter 15.4 Meniscal Patient Series
+Video 15.4.1 What is a Meniscal Tear?
+Video 15.4.2 Meniscal Surgery Explained
+Video 15.4.3 Meniscal Rehabilitation
+Video 15.4.4 Meniscal Preservation
+Chapter 15.5 Osteoarthritis Series
+Video 15.5.1 What is Osteoarthritis?
+Video 15.5.2 Non-operative Treatments
+Video 15.5.3 Injections
+Video 15.5.4 Partial Knee Replacement
+Video 15.5.5 Total Knee Replacement
+PART C: ANATOMY VIDEO ACADEMY
+Chapter 15.6 Bones of the Knee
+Video 15.6.1 Distal Femur
+Video 15.6.2 Proximal Tibia
+Video 15.6.3 Fibula
+Video 15.6.4 Patella
+Chapter 15.7 Meniscal Anatomy
+Video 15.7.1 Medial Meniscus
+Video 15.7.2 Lateral Meniscus
+Video 15.7.3 Meniscal Roots
+Video 15.7.4 Meniscal Vascularity
+Chapter 15.8 Ligament Anatomy
+Video 15.8.1 ACL
+Video 15.8.2 PCL
+Video 15.8.3 MCL
+Video 15.8.4 POL
+Video 15.8.5 PLC
+Video 15.8.6 ALL
+Chapter 15.9 Patellofemoral Anatomy
+Video 15.9.1 Trochlea
+Video 15.9.2 MPFL
+Video 15.9.3 Patellar Tracking
+PART D: BIOMECHANICS VIDEO ACADEMY
+Chapter 15.10 Knee Kinematics
+Video 15.10.1 Roll and Glide
+Video 15.10.2 Screw Home Mechanism
+Video 15.10.3 Rotational Stability
+Chapter 15.11 ACL Biomechanics
+Video 15.11.1 ACL Function
+Video 15.11.2 Pivot Shift
+Video 15.11.3 Injury Mechanisms
+Video 15.11.4 Graft Biomechanics
+Chapter 15.12 Meniscal Biomechanics
+Video 15.12.1 Hoop Stress
+Video 15.12.2 Root Function
+Video 15.12.3 Load Distribution
+Chapter 15.13 Medial Knee Biomechanics
+Video 15.13.1 MCL Function
+Video 15.13.2 Deep MCL Function
+Video 15.13.3 POL Function
+Video 15.13.4 AMRI
+PART E: CLINICAL EXAMINATION VIDEOS
+Chapter 15.14 Basic Knee Examination
+Video 15.14.1 Inspection
+Video 15.14.2 Palpation
+Video 15.14.3 Range of Motion
+Video 15.14.4 Effusion Assessment
+Chapter 15.15 Meniscal Examination
+Video 15.15.1 McMurray Test
+Video 15.15.2 Thessaly Test
+Video 15.15.3 Joint Line Tenderness
+Chapter 15.16 ACL Examination
+Video 15.16.1 Lachman Test
+Video 15.16.2 Pivot Shift Test
+Video 15.16.3 Lever Sign
+Video 15.16.4 Dynamic Assessment
+Chapter 15.17 Medial and Lateral Examination
+Video 15.17.1 Valgus Stress Test
+Video 15.17.2 Varus Stress Test
+Video 15.17.3 Dial Test
+Video 15.17.4 AMRI Examination
+PART F: IMAGING VIDEO ACADEMY
+Chapter 15.18 X-ray Interpretation
+Video 15.18.1 Normal Knee X-rays
+Video 15.18.2 Osteoarthritis
+Video 15.18.3 Alignment Films
+Video 15.18.4 Trauma
+Chapter 15.19 MRI Fundamentals
+Video 15.19.1 MRI Sequences
+Video 15.19.2 Reading MRI Systematically
+Video 15.19.3 Reporting MRI
+Chapter 15.20 Meniscal MRI
+Video 15.20.1 Tear Patterns
+Video 15.20.2 Root Tears
+Video 15.20.3 Ramp Lesions
+Chapter 15.21 ACL MRI
+Video 15.21.1 Partial Tears
+Video 15.21.2 Complete Tears
+Video 15.21.3 ACL Reconstruction MRI
+Chapter 15.22 Magic Angle MRI Academy
+Video 15.22.1 Introduction
+Video 15.22.2 Physics
+Video 15.22.3 Clinical Applications
+Video 15.22.4 Future Potential
+PART G: SURGICAL VIDEO ACADEMY
+Chapter 15.23 Arthroscopy Fundamentals
+Video 15.23.1 Equipment
+Video 15.23.2 Portal Placement
+Video 15.23.3 Diagnostic Arthroscopy
+Chapter 15.24 Meniscal Surgery
+Video 15.24.1 Partial Meniscectomy
+Video 15.24.2 All-Inside Repair
+Video 15.24.3 Inside-Out Repair
+Video 15.24.4 Root Repair
+Chapter 15.25 ACL Surgery
+Video 15.25.1 Hamstring ACL
+Video 15.25.2 Patellar Tendon ACL
+Video 15.25.3 Quadriceps Tendon ACL
+Video 15.25.4 LET
+Video 15.25.5 Revision ACL
+Chapter 15.26 Medial Knee Surgery
+Video 15.26.1 MCL Reconstruction
+Video 15.26.2 Deep MCL Reconstruction
+Video 15.26.3 POL Reconstruction
+Video 15.26.4 AMRI Reconstruction
+Chapter 15.27 Patellofemoral Surgery
+Video 15.27.1 MPFL Reconstruction
+Video 15.27.2 Tibial Tubercle Osteotomy
+Video 15.27.3 Trochleoplasty
+Chapter 15.28 Osteotomy Academy
+Video 15.28.1 HTO
+Video 15.28.2 DFO
+Video 15.28.3 Planning Osteotomies
+Chapter 15.29 Arthroplasty Academy
+Video 15.29.1 UKA
+Video 15.29.2 TKA
+Video 15.29.3 MAKO Robotic Surgery
+Video 15.29.4 Revision Arthroplasty
+PART H: REHABILITATION VIDEO ACADEMY
+Chapter 15.30 ACL Rehabilitation
+Video 15.30.1 Early Phase
+Video 15.30.2 Strength Phase
+Video 15.30.3 Running Phase
+Video 15.30.4 Return to Sport
+Chapter 15.31 Meniscal Rehabilitation
+Chapter 15.32 Cartilage Rehabilitation
+Chapter 15.33 Osteotomy Rehabilitation
+Chapter 15.34 Arthroplasty Rehabilitation
+PART I: WOMEN'S KNEE HEALTH VIDEO ACADEMY
+Chapter 15.35 Female ACL Injuries
+Chapter 15.36 Female Athlete Programme
+Chapter 15.37 Perimenopause and the Knee
+Chapter 15.38 Menopause and Osteoarthritis
+Chapter 15.39 HRT and Musculoskeletal Health
+PART J: CHILDREN'S KNEE HEALTH VIDEO ACADEMY
+Chapter 15.40 Paediatric ACL Injuries
+Chapter 15.41 Discoid Meniscus
+Chapter 15.42 OCD
+Chapter 15.43 Patellar Instability
+Chapter 15.44 Growth Plate Surgery
+PART K: PERFORMANCE ACADEMY
+Chapter 15.45 ACL Prevention
+Chapter 15.46 Running Mechanics
+Chapter 15.47 Landing Mechanics
+Chapter 15.48 Change of Direction
+Chapter 15.49 Female Athlete Prevention
+PART L: CASE VIDEO LIBRARY
+Chapter 15.50 Case of the Week
+Chapter 15.51 MRI Challenge Cases
+Chapter 15.52 Surgical Planning Cases
+Chapter 15.53 Complication Cases
+Chapter 15.54 Consultant Challenge Cases
+PART M: FELLOWSHIP MASTERCLASSES
+Chapter 15.55 ACL Masterclass
+10-Part Series
+Chapter 15.56 Meniscal Preservation Masterclass
+10-Part Series
+Chapter 15.57 Medial Knee Masterclass
+10-Part Series
+Chapter 15.58 PLC Masterclass
+10-Part Series
+Chapter 15.59 Patellofemoral Masterclass
+10-Part Series
+Chapter 15.60 Osteotomy Masterclass
+10-Part Series
+Chapter 15.61 Arthroplasty Masterclass
+10-Part Series
+PART N: RESEARCH VIDEO ACADEMY
+Chapter 15.62 How to Read a Paper
+Chapter 15.63 How to Perform a Systematic Review
+Chapter 15.64 How to Conduct a Biomechanics Study
+Chapter 15.65 How to Publish
+Chapter 15.66 Magic Angle MRI Research
+PART O: PODCAST & INTERVIEW SERIES
+Chapter 15.67 Legends of Knee Surgery
+Interviews with Global Experts
+Chapter 15.68 Women in Knee Surgery
+Chapter 15.69 Rising Stars of Sports Medicine
+Chapter 15.70 Future Technologies
+Chapter 15.71 Elite Athlete Stories
+PART P: SPORTSHEALING CHANNEL
+Chapter 15.72 Patient Journey Videos
+Chapter 15.73 MRI Explained
+Chapter 15.74 Surgical Journey Series
+Chapter 15.75 Rehabilitation Journey Series
+Chapter 15.76 Success Stories
+PART Q: KNEESCHOOL TV
+Chapter 15.77 Weekly Round-Up
+Chapter 15.78 Monthly Journal Club
+Chapter 15.79 Grand Rounds
+Chapter 15.80 International Conference Highlights
+Chapter 15.81 Knee News Update
+PART R: PREMIUM CONTENT LIBRARY
+Chapter 15.82 Fellowship Vault
+Chapter 15.83 Surgical Technique Vault
+Chapter 15.84 Conference Lecture Vault
+Chapter 15.85 Exclusive Expert Interviews
+Chapter 15.86 Annual Knee Summit Recordings
+PART S: VIDEO CERTIFICATION PROGRAMMES
+Chapter 15.87 Knee Foundations Course
+Chapter 15.88 Knee Imaging Course
+Chapter 15.89 Knee Rehabilitation Course
+Chapter 15.90 Sports Knee Surgery Course
+Chapter 15.91 Women's Knee Health Course
+Chapter 15.92 Paediatric Knee Course
+Chapter 15.93 Diploma Video Curriculum
+PART T: FUTURE VIDEO DEVELOPMENT
+Chapter 15.94 Interactive 3D Anatomy
+Chapter 15.95 Virtual Reality Surgery
+Chapter 15.96 Augmented Reality Learning
+Chapter 15.97 AI Video Tutor
+Chapter 15.98 Personalised Learning Paths
+Chapter 15.99 Digital Fellowship
+Chapter 15.100 Future of Knee Education
+Strategic Importance
+The Video Academy is likely to become the single most powerful growth engine for KneeSchool.
+At maturity it could contain:
+1,000-2,000 educational videos
+Surgical technique library
+MRI interpretation academy
+Fellowship masterclasses
+Patient education series
+Global expert interviews
+Sportshealing TV
+KneeSchool TV
+From a business perspective, this section supports:
+Free user acquisition
+Membership subscriptions
+Certification programmes
+Fellowship preparation
+CPD accreditation
+Conference promotion
+Sportshealing referrals
+OmKneeHealth product education
+With Sections 2-15 completed, KneeSchool has evolved from an educational website into a complete digital university dedicated to knee health. The next sections should focus on monetisation, community, certification, membership, and integration with Sportshealing and OmKneeHealth.

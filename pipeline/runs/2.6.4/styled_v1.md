@@ -226,8 +226,8 @@ intercondylar area is still available.
 - [[2.5.7 | Root Attachments]]
 - [[2.2.3 | Tibial Spine]]
 - [[2.7.7 | Tibial Footprint]]
-- [[6.34 | Meniscal root tears]]
-- [[7.14 | Root repair]]
+- [[6.34 | Root Tears]]
+- [[7.14 | Meniscal Root Repair]]
 
 ## References
 

@@ -123,7 +123,7 @@ teacher, coach or doctor.
 - [[0.5.1 | How We Know What We Know]]
 - [[0.5.4 | Simple Biomechanics Experiments]]
 - [[0.2.4 | Girls, Boys and Knees]]
-- [[12.1 | Research foundations]]
+- [[12.1 | Why Research Matters]]
 
 ## References
 

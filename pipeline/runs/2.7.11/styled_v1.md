@@ -194,7 +194,7 @@ In the paediatric knee, assess the physes as well as the ligament, and Section
 - [[2.7.6 | Femoral Footprint]]
 - [[2.7.7 | Tibial Footprint]]
 - [[2.1.8 | Imaging Anatomy]]
-- [[5.7 | Cruciate imaging]]
+- [[5.7 | ACL MRI]]
 
 ## References
 
