@@ -512,3 +512,50 @@ class ProseReferences(unittest.TestCase):
         text = self.report()
         self.assertIn("2.10.6", text)
         self.assertIn("Peroneal Nerve", text)
+
+
+class BiomechanicsTemplate(unittest.TestCase):
+    """Decision 014 defined the two Section 3 page types. These hold the join
+    between the template, the page type map and the pages built on it."""
+
+    def setUp(self):
+        self.tpl = load("article_template.json")
+        self.map = load("page_type_map.json")
+
+    def test_both_new_types_have_a_template_of_their_own(self):
+        for name in ("biomechanics", "landmark_papers"):
+            entry = self.map["page_types"][name]
+            self.assertEqual(entry["template"], name)
+            self.assertFalse(entry["variant_pending"], name)
+            self.assertIn(name, self.tpl["page_types"])
+
+    def test_the_biomechanics_sections_are_the_declared_five(self):
+        self.assertEqual(
+            self.tpl["page_types"]["biomechanics"]["body_sections"],
+            ["the_principle", "at_the_knee", "what_changes_it",
+             "how_it_is_measured", "clinical_relevance"])
+
+    def test_every_body_section_slug_has_a_heading(self):
+        """A heading derived by guesswork from a slug is how a template drifts."""
+        headings = self.tpl["body_section_headings"]
+        for name, spec in self.tpl["page_types"].items():
+            for slug in spec["body_sections"]:
+                self.assertIn(slug, headings, "%s: %s" % (name, slug))
+
+    def test_the_faq_allowance_applies_to_any_band(self):
+        """A four tier page with a patient block carries an FAQ block the
+        handbook's 800 to 1800 band was not written for."""
+        four = ["junior", "patient", "medical_student", "mrcs"]
+        got = architecture.scale_for_tiers({"min": 800, "max": 1800}, four)
+        self.assertEqual(got["max"], 1800 + architecture.FAQ_ALLOWANCE)
+        no_patient = ["medical_student", "mrcs", "frcs"]
+        self.assertEqual(
+            architecture.scale_for_tiers({"min": 800, "max": 1800}, no_patient)["max"], 1800)
+
+    def test_the_built_chapter_uses_the_new_headings(self):
+        with open(os.path.join(ROOT, "runs", "3.1.1", "styled_v1.md"),
+                  encoding="utf-8") as fh:
+            body = fh.read()
+        for heading in ("### The Principle", "### At the Knee", "### How It Is Measured"):
+            self.assertIn(heading, body)
+        self.assertNotIn("Blood Supply and Innervation", body)

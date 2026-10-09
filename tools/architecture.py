@@ -95,8 +95,24 @@ def band_override(page_id):
 
 
 def scale_for_tiers(defaults, tiers):
+    """Decision 002's bands, with the FAQ allowance applied wherever the patient
+    tier appears.
+
+    The allowance started as part of the one and two tier bands. It belongs to
+    the FAQ block rather than to the tier count: a page carrying the patient tier
+    carries three to five question and answer pairs that the handbook requires
+    and the band was not written for. The first four tier page with a patient
+    block came out at 2,034 words against a ceiling of 1,800, and the block was
+    the difference. See decision 014.
+    """
     band = TIER_WORD_BANDS.get(len(tiers))
-    if not band or not defaults:
+    if not defaults:
+        return defaults
+    if not band:
+        if "patient" in tiers:
+            out = dict(defaults)
+            out["max"] = out["max"] + FAQ_ALLOWANCE
+            return out
         return defaults
     lo, hi = band
     if "patient" in tiers:
@@ -129,7 +145,13 @@ def build_brief(page, merge=None):
     type_map = load(TYPE_MAP)["page_types"]
     template_name = (type_map.get(page["page_type"]) or {}).get("template")
     defaults = (tpl["page_types"].get(template_name) or {}).get("word_count") or {}
+    # Tier order is normalised against the template every time, not only when an
+    # override applies. One page in the architecture lists its tiers out of
+    # sequence, and a brief that carries that order produces an article whose
+    # depth dial runs backwards.
     tiers = tier_override(page["page_id"], page["tiers_required"])
+    order = load(TEMPLATE)["tier_order"]
+    tiers = [t for t in order if t in set(tiers)]
     defaults = band_override(page["page_id"]) \
         or scale_for_tiers(defaults, tiers)
 

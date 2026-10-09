@@ -51,21 +51,21 @@
         },
         {
           "ref": "EV-6",
-          "title": "168 measurements on the site are unchecked",
+          "title": "171 measurements on the site are unchecked",
           "area": "Content",
           "state": "Live and flagged",
           "blocker": "They are written from memory because no paper could be retrieved. Each page's references note says so and each figure is registered.",
-          "needed": "Someone with source access to work the register: 168 figures across 50 pages, all UNVERIFIED_FROM_MEMORY. tools/figures.py --report --unchecked is the list, and FIG-002 refuses any figure that is not on it.",
-          "pages": "50 pages in Sections 1, 2 and 6"
+          "needed": "Someone with source access to work the register: 171 figures across 53 pages, all UNVERIFIED_FROM_MEMORY. tools/figures.py --report --unchecked is the list.",
+          "pages": "53 pages in Sections 1, 2, 3 and 6"
         },
         {
           "ref": "EV-7",
-          "title": "345 clinical recommendations on the site are unsigned",
+          "title": "382 clinical recommendations on the site are unsigned",
           "area": "Content",
           "state": "Live and registered",
           "blocker": "They are written by a process with no clinical qualification, on pages that state they have not been reviewed. The client has chosen to keep them, and decision 007 makes the set finite and listed.",
-          "needed": "A consultant to work the register: 345 positions across 67 pages, all UNSIGNED. tools/positions.py --report --unsigned is the list, and POS-001 warns when a page carries one that is not on it.",
-          "pages": "67 pages carrying a tier from medical student upwards"
+          "needed": "A consultant to work the register: 382 positions across 74 pages, all UNSIGNED. tools/positions.py --report --unsigned is the list.",
+          "pages": "74 pages carrying a tier from medical student upwards"
         },
         {
           "ref": "EV-8",
@@ -120,6 +120,15 @@
           "blocker": "A bare reference in prose can name a real chapter and still be the wrong one. Seven pages across chapters 2.8, 2.9 and 2.10 sent the reader to Meniscal Examination, ACL Examination and PCL Examination for the posterior drawer, the medial side and the dial test. Every id was valid, so nothing caught it.",
           "needed": "Nothing. All seven corrected to 4.11, 4.12 and 4.13. tools/crossrefs.py --prose-report now lists every bare reference on every page with the title it resolves to: 479 of them across 88 pages, none pointing at an id the architecture lacks. A machine cannot know what a writer meant, so the report makes the list readable rather than claiming to check it.",
           "pages": "7 pages corrected; 88 pages carry bare references"
+        },
+        {
+          "ref": "EV-14",
+          "title": "Eleven Landmark Papers pages cannot be written here",
+          "area": "Content pipeline",
+          "state": "Held, template defined",
+          "blocker": "Section 3 ends each chapter with a Landmark Papers page whose subject is named studies. This environment cannot retrieve a paper, and the Operations Handbook names an invented citation as its one critical failure. A page about specific papers written without access to one would carry citations from memory or carry no paper at all.",
+          "needed": "Source access, the same thing EV-1 needs. The landmark_papers template is defined under decision 014 so the pages can be written the day it exists. Held: 3.1.8, 3.2.11, 3.3.15, 3.4.12, 3.5.11, 3.6.12, 3.7.12, 3.8.11, 3.9.11, 3.10.10 and 3.11.9.",
+          "pages": "11 pages in Section 3, none published"
         }
       ]
     },
@@ -317,6 +326,15 @@
           "blocker": "The architecture gives page 2.10.6 three tiers, and the client asked for a section on the nerve at risk from lateral surgery. That is approach anatomy, which is what the fellowship tier carries everywhere else in Section 2.",
           "needed": "Nothing. A tier override mechanism was added, mirroring the word count overrides from decision 005: declared, additive only, each entry carrying a reason and a decision behind it. The page also has a declared 800 to 2400 band, because its fellowship tier is a single section of ten paragraphs. It came in at 2,227 words. See decision 013.",
           "pages": "Page 2.10.6, Common Peroneal Nerve"
+        },
+        {
+          "ref": "D-014",
+          "title": "The biomechanics and landmark papers templates",
+          "area": "Content architecture",
+          "state": "Applied, open to revision",
+          "blocker": "Section 3's 188 pages had no template. Both its page types borrowed the anatomy one, which gave a page called What Is Biomechanics? a heading for Blood Supply and Innervation.",
+          "needed": "Client confirmation of the section order, as decision 003 received for Section 0. The biomechanics template is The Principle, At the Knee, What Changes It, How It Is Measured, Clinical Relevance. Two open questions in decision 014: whether biomechanics pages should be exempt from the junior closing message, and whether the landmark papers pages are worth attempting from memory.",
+          "pages": "Chapter 3.1 built on it, 7 pages published"
         }
       ]
     },
@@ -365,6 +383,15 @@
           "blocker": "None.",
           "needed": "Nothing. The ids came from Part 1's deeper_pages lists and were right; the labels were invented because the target sections had no architecture. Three were worse: the anterior cruciate page linked to PCL, MCL and posterolateral corner injury using page ids inside the ACL chapter. crossrefs now checks every forward link against the outline, including chapter level targets.",
           "pages": "36 pages across Sections 0, 1, 2 and 6"
+        },
+        {
+          "ref": "W-6",
+          "title": "Section 3 Biomechanics Academy, chapter 3.1",
+          "area": "Content",
+          "state": "7 of 8 written, style gate passed, awaiting review",
+          "blocker": "The first chapter of the largest remaining section. It carries all five tier shapes Section 3 uses, from junior to consultant, which is why it was built first: whatever template serves it serves the section.",
+          "needed": "Consultant review. Page 3.1.8 is held under decision 014 and EV-14. Chapters 3.2 to 3.17 are the 180 pages still to write.",
+          "pages": "7 published pages, 10,697 body words as the style gate counts them"
         }
       ]
     }

@@ -195,6 +195,36 @@
         "max": 1000
       },
       "source_of_truth": "decision 003, orders revised 7 October 2026"
+    },
+    "biomechanics": {
+      "body_sections": [
+        "the_principle",
+        "at_the_knee",
+        "what_changes_it",
+        "how_it_is_measured",
+        "clinical_relevance"
+      ],
+      "body_sections_rule": "ordered_subset_per_tier; how_it_is_measured medical_student_and_above",
+      "word_count": {
+        "min": 800,
+        "max": 1800
+      },
+      "source_of_truth": "decision 014"
+    },
+    "landmark_papers": {
+      "body_sections": [
+        "what_the_question_was",
+        "what_was_done",
+        "what_it_showed",
+        "what_it_changed",
+        "what_to_read_now"
+      ],
+      "body_sections_rule": "ordered_subset_per_tier; frcs_and_above_only",
+      "word_count": {
+        "min": 800,
+        "max": 1800
+      },
+      "source_of_truth": "decision 014"
     }
   },
   "word_count_override": "brief.output_requirements.target_word_count overrides page_type default when present",
@@ -215,23 +245,56 @@
   ],
   "local_additions_note": "page_types careers, study_skills, teacher_resource and assessment are not in Handbook v1.0. The handbook defines three templates and leaves Section 0 chapters 0.3 to 0.7 without one, which is handbook open question 5 and architecture open question 6. Decision 003 defines them locally. The section orders below are the revised orders confirmed by the client on 7 October 2026. They are candidates for Handbook v1.1.",
   "body_section_headings": {
+    "after_the_operation_and_rehabilitation": "After the Operation and Rehabilitation",
+    "at_the_knee": "At the Knee",
+    "before_the_operation": "Before the Operation",
+    "blood_supply_and_innervation": "Blood Supply and Innervation",
+    "causes_and_risk_factors": "Causes and Risk Factors",
+    "clinical_relevance": "Clinical Relevance",
     "common_mistakes": "Common Mistakes",
+    "complications_and_prognosis": "Complications and Prognosis",
+    "contraindications": "Contraindications",
+    "controversies_and_evidence": "Controversies and Evidence",
     "curriculum_links": "Curriculum Links",
+    "definition": "Definition",
+    "epidemiology": "Who Gets It",
+    "examination": "Examination",
+    "function": "Function",
+    "how_it_is_measured": "How It Is Measured",
     "how_it_works": "How It Works",
     "how_to_earn_it": "How to Earn It",
     "how_to_prepare": "How to Prepare",
     "how_to_use_it": "How to Use It",
+    "indications": "Indications",
+    "investigations_and_imaging": "Investigations and Imaging",
+    "management_overview": "Management Overview",
+    "outcomes_and_evidence": "Outcomes and Evidence",
+    "presentation": "How It Presents",
+    "rehabilitation_outline": "Rehabilitation Outline",
+    "relations": "Relations",
+    "risks_and_complications": "Risks and Complications",
     "rules_and_fair_play": "Rules and Fair Play",
+    "structure_and_location": "Structure and Location",
+    "the_operation": "The Operation",
     "the_people_who_do_it": "The People Who Do It",
+    "the_principle": "The Principle",
     "the_route": "The Route",
+    "variations_and_controversies": "Variations and Controversies",
+    "what_changes_it": "What Changes It",
+    "what_it_changed": "What It Changed",
     "what_it_covers": "What It Covers",
+    "what_it_showed": "What It Showed",
     "what_it_takes": "What It Takes",
+    "what_the_operation_is": "What the Operation Is",
+    "what_the_question_was": "What the Question Was",
     "what_the_work_involves": "What the Work Involves",
     "what_this_covers": "What This Covers",
     "what_this_is": "What This Is",
+    "what_to_read_now": "What to Read Now",
     "what_to_watch_for": "What to Watch For",
+    "what_was_done": "What Was Done",
     "where_to_find_out_more": "Where to Find Out More",
     "why_it_matters": "Why It Matters"
   },
-  "body_section_headings_note": "The heading a body section slug is written as. Supplied for the decision 003 page types so a heading is never derived by guesswork from the slug."
+  "body_section_headings_note": "The heading a body section slug is written as. Supplied for every slug the site uses, so a heading is never derived by guesswork. Decision 003 added the Section 0 page types and decision 014 the biomechanics and landmark papers types."
 }
