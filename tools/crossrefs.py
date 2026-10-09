@@ -77,11 +77,58 @@ def words(text):
     return set(w for w in re.findall(r"[a-z0-9]+", text.lower()) if w not in STOP)
 
 
+# A bare reference in prose, outside a cross link block. Its id can be perfectly
+# valid and still point at the wrong chapter: "4.9 covers the examination" on a
+# posterior cruciate page named a real chapter, Meniscal Examination, and nothing
+# caught it because nothing was broken. Seven such references were wrong across
+# three chapters before this report existed. A machine cannot know what a writer
+# meant, so this prints what each reference actually resolves to and leaves the
+# judgement to a reader. Generated from the pages, like every other register here.
+BARE_REF = re.compile(r"(?<![\w.])(\d{1,2}(?:\.\d{1,3}){1,2})(?![\w.])")
+
+
+def report(runs, known):
+    rows = []
+    for page_id in sorted(os.listdir(runs), key=page_sort_key):
+        draft = os.path.join(runs, page_id, "draft_v1.md")
+        if not os.path.exists(draft):
+            continue
+        with open(draft) as fh:
+            text = LINK.sub("", fh.read())
+        for m in BARE_REF.finditer(text):
+            ref = m.group(1)
+            context = re.sub(r"\s+", " ", text[m.start():m.end() + 60]).strip()
+            rows.append((page_id, ref, known.get(ref, "NOT IN THE ARCHITECTURE"), context))
+    current = None
+    for page_id, ref, title, context in rows:
+        if page_id != current:
+            print("")
+            print(page_id)
+            current = page_id
+        print("  %-8s %-34s %s" % (ref, title[:34], context[:58]))
+    print("")
+    print("%d bare references in prose across %d pages"
+          % (len(rows), len(set(r[0] for r in rows))))
+    missing = [r for r in rows if r[2] == "NOT IN THE ARCHITECTURE"]
+    print("%d point at an id the architecture does not have" % len(missing))
+
+
+def page_sort_key(page_id):
+    try:
+        return tuple(int(n) for n in page_id.split("."))
+    except ValueError:
+        return (999,)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--check", action="store_true",
                     help="exit non zero if any cross link is wrong")
     ap.add_argument("--runs", default=RUNS)
+    ap.add_argument("--prose-report", action="store_true",
+                    help="list every bare chapter or page reference in prose with the title "
+                         "it resolves to, so a valid id pointing at the wrong chapter is "
+                         "visible rather than hunted for")
     args = ap.parse_args()
 
     known = titles()
@@ -130,6 +177,10 @@ def main():
             if words(phrase) & words(real):
                 continue
             problems.append((page_id, pid, phrase, "prose names %r for this id" % real))
+
+    if args.prose_report:
+        report(args.runs, known)
+        return
 
     for src, pid, label, why in problems:
         print("%-7s -> [[%s | %s]]  %s" % (src, pid, label, why))

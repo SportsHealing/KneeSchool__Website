@@ -135,7 +135,7 @@ predicts. 2.9.6 covers that.
 ### Clinical Relevance
 
 Test valgus at 0 degrees and at 20 degrees and compare. The pair of findings
-separates this ligament from the collateral, and 4.10 covers the examination.
+separates this ligament from the collateral, and 4.12 covers the examination.
 
 Expect a knee with an injury here to feel unstable going into extension rather
 than in mid flexion, because that is when the structure should be tight.

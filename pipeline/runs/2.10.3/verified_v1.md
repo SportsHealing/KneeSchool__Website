@@ -52,7 +52,7 @@ contribution.
 ### Clinical Relevance
 
 Rotational laxity with a competent collateral ligament points here. The dial
-test is the examination and 4.11 covers it.
+test is the examination and 4.13 covers it.
 
 It is the structure most often missed on imaging and at operation, because it
 is short, deep and oblique.

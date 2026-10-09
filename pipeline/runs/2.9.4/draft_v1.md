@@ -139,7 +139,7 @@ muscle as well as intact tissue.
 ### Clinical Relevance
 
 Test valgus at 0 and at 20 degrees, and test rotation in extension. Three
-findings separate corner from collateral, and 4.10 covers the examination.
+findings separate corner from collateral, and 4.12 covers the examination.
 
 Suspect a corner injury whenever valgus laxity is present in full extension,
 whatever the finding at 20 degrees.

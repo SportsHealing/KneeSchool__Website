@@ -143,7 +143,7 @@ millimetres, and much more when the other two primary structures go with it.
 
 Test varus at 0 and at 30 degrees. Opening at 30 degrees alone suggests this
 ligament; opening at 0 degrees as well suggests the corner and the cruciates.
-4.11 covers the examination.
+4.13 covers the examination.
 
 Palpate in the figure of four position before deciding a lateral structure is
 intact. The ligament is superficial and a gap is felt as well as seen.

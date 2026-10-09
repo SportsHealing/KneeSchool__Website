@@ -132,7 +132,7 @@ changes where the lateral meniscus sits under load.
 ### Clinical Relevance
 
 Read the dial test as a test of this complex rather than of a single
-structure. 3.10.7 covers the biomechanics and 4.11 the examination.
+structure. 3.10.7 covers the biomechanics and 4.13 the examination.
 
 Expect lateral meniscal mobility to be the normal finding at arthroscopy. The
 hiatus is anatomy, not pathology.

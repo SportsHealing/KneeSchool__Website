@@ -160,7 +160,7 @@ changes the path of the joint as well as its laxity.
 
 A posterior drawer at 90 degrees is the test, with the resting step off
 between the medial plateau and the femoral condyle read first. A reduced step
-off is the finding that gives the grade, and 4.9 covers the examination.
+off is the finding that gives the grade, and 4.11 covers the examination.
 
 Grading rests on anatomy. A plateau still in front of the condyle means the
 ligament is partly intact; a plateau level with it means the restraint has

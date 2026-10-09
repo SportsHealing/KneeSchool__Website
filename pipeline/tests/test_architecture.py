@@ -4,6 +4,7 @@ arrived after the pipeline was built. These tests hold the join between them.
 
 import json
 import os
+import re
 import subprocess
 import sys
 import tempfile
@@ -476,3 +477,38 @@ class DeclaredBandWinsOverMerge(unittest.TestCase):
         self.assertEqual(after["output_requirements"]["target_word_count"]["max"], 2400)
         with open(os.path.join(ROOT, "config", "briefs", "2.10.6.json"), "w") as fh:
             fh.write(before)
+
+
+class ProseReferences(unittest.TestCase):
+    """A bare reference in prose can name a real chapter and still be the wrong
+    one. Seven were wrong across chapters 2.8 to 2.10 before anyone looked, and
+    nothing caught them because every id was valid. The report makes the list
+    readable; these tests hold the report and the seven corrections."""
+
+    def report(self):
+        out = subprocess.run(
+            [sys.executable, os.path.join(REPO, "tools", "crossrefs.py"), "--prose-report"],
+            capture_output=True, text=True, cwd=REPO)
+        self.assertEqual(out.returncode, 0, out.stderr)
+        return out.stdout
+
+    def test_no_prose_reference_points_at_a_missing_id(self):
+        self.assertIn("0 point at an id the architecture does not have", self.report())
+
+    def test_the_examination_references_name_the_right_chapters(self):
+        """Posterior cruciate to PCL Examination, medial to Medial Knee
+        Examination, lateral to Lateral Knee Examination."""
+        wanted = {"2.8.1": "4.11", "2.9.1": "4.12", "2.9.3": "4.12", "2.9.4": "4.12",
+                  "2.10.1": "4.13", "2.10.2": "4.13", "2.10.3": "4.13"}
+        for page_id, ref in wanted.items():
+            path = os.path.join(ROOT, "runs", page_id, "styled_v1.md")
+            with open(path, encoding="utf-8") as fh:
+                body = fh.read()
+            found = re.findall(r"(?<![\w.])(4\.\d{1,2})(?![\w.])", body)
+            self.assertTrue(found, "%s has no section 4 reference" % page_id)
+            self.assertEqual(set(found), {ref}, page_id)
+
+    def test_the_report_names_a_page_and_its_references(self):
+        text = self.report()
+        self.assertIn("2.10.6", text)
+        self.assertIn("Peroneal Nerve", text)

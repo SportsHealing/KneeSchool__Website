@@ -71,7 +71,7 @@ def main():
         "Section 2: regional anatomy of the knee for medical students, MRCS, FRCS and "
         "fellowship, structure by structure.", REL)
     page += chrome.header(REL)
-    page += """
+    main = """
 <main id="top">
 
   <section class="page-hero">
@@ -82,8 +82,7 @@ def main():
           <h1>The Anatomy Academy</h1>
           <p class="who">Section 2 &middot; Regional anatomy, structure by structure</p>
           <p class="lede">Twelve chapters covering the knee one structure at a time, written
-          for medical students, MRCS and FRCS candidates, and fellows. %d of %d pages are
-          published; the rest are written in syllabus order.</p>
+          for medical students, MRCS and FRCS candidates, and fellows. %s</p>
         </div>
         <div></div>
       </div>
@@ -101,10 +100,10 @@ def main():
         <ul>
           <li><b>Four tiers, not seven.</b> Medical student, MRCS, FRCS and, on the surgical
           anatomy pages, fellowship. There is no junior or patient tier in this section.</li>
-          <li><b>No numbers.</b> These pages carry no measurement, angle, dimension or normal
-          range. Nothing could be verified against a source, and a plausible wrong figure at
-          this depth is worse than no figure. The anatomy is described in relative terms and
-          every page says so.</li>
+          <li><b>Every number is listed.</b> These pages carry measurements, and not one has
+          been checked against a source, because this build has no access to any. Each one is
+          registered with the sentence it supports and a verification state, so the whole list
+          can be worked through rather than hunted for.</li>
           <li><b>Pathology, technique and imaging interpretation are elsewhere.</b> This
           section is anatomy. What goes wrong is Section 6, what is done about it is
           Section 7, and how it is imaged is Section 5.</li>
@@ -119,8 +118,7 @@ def main():
     <div class="wrap">
       <div class="sec-head">
         <h2>The twelve chapters</h2>
-        <p class="lede">Pages marked as coming soon are written and reviewed in syllabus
-        order.</p>
+        <p class="lede">%s</p>
       </div>
       <div class="topics">
 %s
@@ -135,9 +133,22 @@ def main():
 
 </main>
 
-""" % (chrome.crumb([("KneeSchool", REL + "index.html"), ("Reference", None),
-                     ("The Anatomy Academy", None)]),
-       live, total, "\n".join(cards))
+"""
+    # The section is either finished or it is not, and the page should say which
+    # without anyone editing it. Both lines are generated from the published
+    # index, so the day the last page lands the copy changes with it.
+    if live >= total:
+        lede = ("All %d pages are published and awaiting review." % total)
+        note = ("Every chapter is written. No page in this section has been through "
+                "evidence verification or consultant review, and each one says so at "
+                "the top.")
+    else:
+        lede = ("%d of %d pages are published; the rest are written in syllabus order."
+                % (live, total))
+        note = "Pages marked as coming soon are written and reviewed in syllabus order."
+    page += main % (chrome.crumb([("KneeSchool", REL + "index.html"), ("Reference", None),
+                                  ("The Anatomy Academy", None)]),
+                    lede, note, "\n".join(cards))
     page += chrome.footer(REL)
     with open(OUT, "w") as fh:
         fh.write(page)

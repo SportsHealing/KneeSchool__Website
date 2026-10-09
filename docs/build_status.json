@@ -51,21 +51,21 @@
         },
         {
           "ref": "EV-6",
-          "title": "127 measurements on the site are unchecked",
+          "title": "168 measurements on the site are unchecked",
           "area": "Content",
           "state": "Live and flagged",
           "blocker": "They are written from memory because no paper could be retrieved. Each page's references note says so and each figure is registered.",
-          "needed": "Someone with source access to work the register: 127 figures across 39 pages, all UNVERIFIED_FROM_MEMORY. tools/figures.py --report --unchecked is the list, and FIG-002 refuses any figure that is not on it.",
-          "pages": "39 pages in Sections 1, 2 and 6"
+          "needed": "Someone with source access to work the register: 168 figures across 50 pages, all UNVERIFIED_FROM_MEMORY. tools/figures.py --report --unchecked is the list, and FIG-002 refuses any figure that is not on it.",
+          "pages": "50 pages in Sections 1, 2 and 6"
         },
         {
           "ref": "EV-7",
-          "title": "259 clinical recommendations on the site are unsigned",
+          "title": "345 clinical recommendations on the site are unsigned",
           "area": "Content",
           "state": "Live and registered",
           "blocker": "They are written by a process with no clinical qualification, on pages that state they have not been reviewed. The client has chosen to keep them, and decision 007 makes the set finite and listed.",
-          "needed": "A consultant to work the register: 259 positions across 56 pages, all UNSIGNED. tools/positions.py --report --unsigned is the list, and POS-001 warns when a page carries one that is not on it.",
-          "pages": "56 pages carrying a tier from medical student upwards"
+          "needed": "A consultant to work the register: 345 positions across 67 pages, all UNSIGNED. tools/positions.py --report --unsigned is the list, and POS-001 warns when a page carries one that is not on it.",
+          "pages": "67 pages carrying a tier from medical student upwards"
         },
         {
           "ref": "EV-8",
@@ -111,6 +111,15 @@
           "blocker": "Three documents now set editorial rules. The Operations Handbook is version 1.0 of 22 September 2026 and claims authority over all other documents including prior playbook drafts. The Master Operations Handbook and both playbooks were written on 13 June 2026 and carry no version. On the dates, the June documents are the prior drafts that rule names.",
           "needed": "Confirmed on 9 October 2026. The Operations Handbook of 22 September 2026 is senior on any disagreement; the Master Operations Handbook governs what it does not cover; both playbooks are historical. FAQs stay on the patient tier only and the spiral keeps seven tiers, so nothing is reworked. See decision 009.",
           "pages": "None; the ruling confirms the existing state"
+        },
+        {
+          "ref": "EV-13",
+          "title": "Seven prose references pointed at the wrong chapter",
+          "area": "Content architecture",
+          "state": "Fixed, and a report added",
+          "blocker": "A bare reference in prose can name a real chapter and still be the wrong one. Seven pages across chapters 2.8, 2.9 and 2.10 sent the reader to Meniscal Examination, ACL Examination and PCL Examination for the posterior drawer, the medial side and the dial test. Every id was valid, so nothing caught it.",
+          "needed": "Nothing. All seven corrected to 4.11, 4.12 and 4.13. tools/crossrefs.py --prose-report now lists every bare reference on every page with the title it resolves to: 479 of them across 88 pages, none pointing at an id the architecture lacks. A machine cannot know what a writer meant, so the report makes the list readable rather than claiming to check it.",
+          "pages": "7 pages corrected; 88 pages carry bare references"
         }
       ]
     },
@@ -341,12 +350,12 @@
         },
         {
           "ref": "W-4",
-          "title": "Section 2 Anatomy Academy, chapters 2.1 to 2.10",
+          "title": "Section 2 Anatomy Academy, complete",
           "area": "Content",
-          "state": "68 of 79 written, style gate passed, awaiting review",
+          "state": "All 79 pages written, style gate passed, awaiting review",
           "blocker": "None on the written pages. The remaining 31 are a matter of time.",
-          "needed": "Consultant review, and the peroneal nerve page needs it more than most: its fellowship section is ten paragraphs of approach anatomy written without a source. Chapters 2.11 Rotational Structures and 2.12 Patellofemoral Anatomy are the 11 pages still to write.",
-          "pages": "68 published pages, 95,949 body words as the style gate counts them"
+          "needed": "Consultant review of the whole section. It is the largest body of professional content on the site and none of it has been verified or reviewed. The fellowship sections on 2.10.6 and 2.12.6 are approach anatomy written without a source and should be read first.",
+          "pages": "79 published pages, 111,493 body words as the style gate counts them"
         },
         {
           "ref": "W-5",

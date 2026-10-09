@@ -147,7 +147,7 @@ as well as by position, so it is partly a dynamic restraint.
 ### Clinical Relevance
 
 Examine at 20 to 30 degrees for this ligament and at 0 degrees for the
-posteromedial corner. Reading the two together localises the injury, and 4.10
+posteromedial corner. Reading the two together localises the injury, and 4.12
 covers the examination.
 
 Grade by the opening and the endpoint rather than by the pain, because an
