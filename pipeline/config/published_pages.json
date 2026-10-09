@@ -101,6 +101,12 @@
     "2.7.10": "anatomy/acl-proprioception.html",
     "2.7.11": "anatomy/acl-mri-anatomy.html",
     "2.7.12": "anatomy/acl-surgical-anatomy.html",
+    "2.8.1": "anatomy/pcl-gross-anatomy.html",
+    "2.8.2": "anatomy/pcl-al-bundle.html",
+    "2.8.3": "anatomy/pcl-pm-bundle.html",
+    "2.8.4": "anatomy/pcl-blood-supply.html",
+    "2.8.5": "anatomy/pcl-mri-anatomy.html",
+    "2.8.6": "anatomy/pcl-surgical-anatomy.html",
     "6.1.1": "conditions/acl.html"
   }
 }

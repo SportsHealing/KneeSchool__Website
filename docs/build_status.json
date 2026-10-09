@@ -51,21 +51,21 @@
         },
         {
           "ref": "EV-6",
-          "title": "32 measurements on the site are unchecked",
+          "title": "58 measurements on the site are unchecked",
           "area": "Content",
           "state": "Live and flagged",
           "blocker": "They are written from memory because no paper could be retrieved. Each page's references note says so and each figure is registered.",
-          "needed": "Source access, or a reviewer with a library. tools/figures.py --report --unchecked is the list, and the gate refuses any figure that is not on it.",
-          "pages": "19 pages across Section 2"
+          "needed": "Someone with source access to work the register: 58 figures across 25 pages, all UNVERIFIED_FROM_MEMORY. tools/figures.py --report --unchecked is the list, and FIG-002 refuses any figure that is not on it.",
+          "pages": "25 pages in Sections 1, 2 and 6"
         },
         {
           "ref": "EV-7",
-          "title": "100 clinical recommendations on the site are unsigned",
+          "title": "144 clinical recommendations on the site are unsigned",
           "area": "Content",
           "state": "Live and registered",
           "blocker": "They are written by a process with no clinical qualification, on pages that state they have not been reviewed. The client has chosen to keep them, and decision 007 makes the set finite and listed.",
-          "needed": "A named consultant to confirm, amend, withdraw or reclassify each one. tools/positions.py --report --unsigned is the list. It grew from 76 to 100 with chapter 2.7, which is the pattern: a surgical chapter adds positions faster than it adds pages.",
-          "pages": "36 pages across Sections 1, 2 and 6"
+          "needed": "A consultant to work the register: 144 positions across 42 pages, all UNSIGNED. tools/positions.py --report --unsigned is the list, and POS-001 warns when a page carries one that is not on it.",
+          "pages": "42 pages carrying a tier from medical student upwards"
         },
         {
           "ref": "EV-8",
@@ -323,12 +323,12 @@
         },
         {
           "ref": "W-4",
-          "title": "Section 2 Anatomy Academy, chapters 2.1 to 2.7",
+          "title": "Section 2 Anatomy Academy, chapters 2.1 to 2.8",
           "area": "Content",
-          "state": "48 of 79 written, style gate passed, awaiting review",
+          "state": "54 of 79 written, style gate passed, awaiting review",
           "blocker": "None on the written pages. The remaining 31 are a matter of time.",
-          "needed": "Consultant review. 72,389 words of professional only content, none of it verified. It carries 32 unchecked measurements and contributes most of the 100 unsigned clinical positions.",
-          "pages": "2.1.1 to 2.1.9, 2.2.1 to 2.2.6, 2.3.1 to 2.3.3, 2.4.1 to 2.4.5, 2.5.1 to 2.5.7, 2.6.1 to 2.6.6, 2.7.1 to 2.7.12"
+          "needed": "Consultant review. Chapters 2.9 Medial Structures, 2.10 Lateral Structures, 2.11 Rotational Structures and 2.12 Patellofemoral Anatomy are the 25 pages still to write.",
+          "pages": "54 published pages, 74,576 body words as the style gate counts them"
         },
         {
           "ref": "W-5",
