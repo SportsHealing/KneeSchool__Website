@@ -640,6 +640,48 @@
       "parent": "Anatomy Academy|index.html",
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
+    },
+    "2.9.1": {
+      "out": "anatomy/medial-superficial-mcl.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.9.2": {
+      "out": "anatomy/medial-deep-mcl.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.9.3": {
+      "out": "anatomy/medial-posterior-oblique-ligament.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.9.4": {
+      "out": "anatomy/medial-posteromedial-corner.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.9.5": {
+      "out": "anatomy/medial-semimembranosus.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.9.6": {
+      "out": "anatomy/medial-dynamic-stabilisation.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.9.7": {
+      "out": "anatomy/medial-surgical-anatomy.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
     }
   },
   "withheld": {
