@@ -96,21 +96,21 @@
         },
         {
           "ref": "EV-11",
-          "title": "Publication QA, the fifth gate, cannot be built yet",
+          "title": "Publication QA, the fifth gate, is built",
           "area": "Content pipeline",
-          "state": "Flagged",
-          "blocker": "Chapter 13 of the Master Operations Handbook names five QA tiers. The pipeline has four. The fifth, publication review, checks formatting, SEO, links, images, alt text, disclaimers, metadata and page status. Links, structure and the disclaimer are now checked by tools/check_site.py. The rest cannot be checked because no page carries an SEO title, a meta description, a slug or image alt text, and no image is on any page.",
-          "needed": "A decision on whether to add the SEO fields to the brief. Building the gate without them would check nothing. See question 2 of finding 002.",
-          "pages": "All 116 pages lack SEO fields"
+          "state": "Resolved",
+          "blocker": "Chapter 13 of the Master Operations Handbook names five QA tiers. The pipeline had four. The fifth, publication review, checks formatting, SEO, links, images, alt text, disclaimers, metadata and page status.",
+          "needed": "Nothing. Built on 9 October 2026 as tools/publication_qa.py, nine rules, 116 pages, 0 findings. The fields it checks did not have to be written by hand: 97 of 100 article summaries already fitted the meta description bounds, no title exceeded 60 characters, and the 20 pages that shared a title now carry their chapter in the title tag. See decision 010.",
+          "pages": "All 116 pages pass"
         },
         {
           "ref": "EV-12",
           "title": "Which handbook has authority",
           "area": "Documentation",
-          "state": "Flagged, assumption applied",
+          "state": "Resolved",
           "blocker": "Three documents now set editorial rules. The Operations Handbook is version 1.0 of 22 September 2026 and claims authority over all other documents including prior playbook drafts. The Master Operations Handbook and both playbooks were written on 13 June 2026 and carry no version. On the dates, the June documents are the prior drafts that rule names.",
-          "needed": "Confirmation of the authority order. If the June handbook is senior instead, FAQs are required on every page rather than only where the Patient tier is present, and the tier count drops from seven to six. Roughly 60 pages would need rework. See question 1 of finding 002.",
-          "pages": "Potentially every page that carries a professional tier"
+          "needed": "Confirmed on 9 October 2026. The Operations Handbook of 22 September 2026 is senior on any disagreement; the Master Operations Handbook governs what it does not cover; both playbooks are historical. FAQs stay on the patient tier only and the spiral keeps seven tiers, so nothing is reworked. See decision 009.",
+          "pages": "None; the ruling confirms the existing state"
         }
       ]
     },
@@ -263,6 +263,33 @@
           "blocker": "Two documents numbered the same academies differently. In the Master Operations Handbook the Anatomy Academy is chapter 6 and the Conditions Library is chapter 9. In the publishing architecture they are Sections 2 and 6, and the repository only ever used the architecture.",
           "needed": "Nothing. Ruled on 9 October 2026 in favour of the architecture, so there is no migration: Section 2 means Anatomy and Section 6 means Conditions, which is what every config, brief, cross link and file path already assumed. A chapter number inside the handbook now means that document's own chapter, not a page id.",
           "pages": "None; the ruling confirms the existing state"
+        },
+        {
+          "ref": "D-009",
+          "title": "The authority order between the handbooks",
+          "area": "Editorial",
+          "state": "Applied",
+          "blocker": "Three documents set editorial rules and two of them disagree about FAQs and about how many tiers the spiral has.",
+          "needed": "Nothing. The Operations Handbook of 22 September 2026 is senior, the Master Operations Handbook governs what it does not cover, and both playbooks are historical. FAQs stay on the patient tier only; the spiral keeps seven tiers. Roughly 60 pages avoided rework.",
+          "pages": "None; the ruling confirms the existing state"
+        },
+        {
+          "ref": "D-010",
+          "title": "Publication QA is built as the fifth gate",
+          "area": "Editorial",
+          "state": "Applied",
+          "blocker": "The handbook names five QA tiers and the pipeline had four. Nothing checked the metadata a search engine or a screen reader reads.",
+          "needed": "Nothing. Nine rules in tools/publication_qa.py: SEO title, meta description, slug and canonical, heading ladder, image alt text, the disclaimer, internal linking, metadata and site wide uniqueness. It also fixed a real defect: the renderer had been truncating descriptions to 160 characters mid word.",
+          "pages": "All 116 pages, 0 findings"
+        },
+        {
+          "ref": "D-011",
+          "title": "The learning highlight uses the OmKneeHealth brand colour",
+          "area": "Editorial",
+          "state": "Wired, value pending",
+          "blocker": "Chapter 6 of the handbook asks for a separate colour for learning highlights. The stylesheet was using the gold meant for emphasis.",
+          "needed": "The brand's hex codes. The highlight is now its own token, --learn, so one line changes every learning highlight on the site, but the value is still the gold: this environment cannot reach omkneehealth.com and a brand colour cannot be guessed. One governance point is open, because Section 0 pages carry the Junior tier and that tier allows no commercial content.",
+          "pages": "Every page with key learning points, once the value arrives"
         }
       ]
     },

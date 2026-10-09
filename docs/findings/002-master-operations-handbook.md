@@ -192,15 +192,26 @@ anatomy, biomechanics and imaging as the month 4 to 6 deliverable. The site has
 116 pages and is working through anatomy. The build is at the start of the
 second phase on the handbook's own schedule.
 
-## Questions
+## Answered, 9 October 2026
 
-1. Confirm the authority order: the Operations Handbook of 22 September 2026
-   wins on any point of disagreement, and the Master Operations Handbook governs
-   everything it does not cover. If the June handbook is meant to be the senior
-   document instead, the FAQ rule and the tier count both change and roughly 60
-   pages need rework.
-2. Should publication QA be built as a fifth gate now, checking SEO title, meta
-   description, slug and image alt text? No page carries those fields yet, so
-   building the gate means adding the fields to the brief first.
-3. The handbook asks for muted teal as a learning highlight. The stylesheet has
-   no teal. Add it, or leave the palette as green, ivory and gold?
+All three questions were answered the same day and are now decisions.
+
+| Question | Answer | Decision |
+|---|---|---|
+| The authority order | Confirmed as read. The Operations Handbook of 22 September is senior; the June handbook governs what it does not cover | 009 |
+| Publication QA as a fifth gate | Build it | 010 |
+| Muted teal for learning highlights | Use the OmKneeHealth brand colours instead | 011 |
+
+The second answer changed this finding's own account of the work. It assumed the
+SEO fields would have to be written by hand for 116 pages. They did not: 97 of
+100 article summaries already fitted the meta description bounds untouched, no
+page title exceeded 60 characters, and the 20 pages that shared a title were
+disambiguated by computing the collision set from the work. Two pages needed
+fixing, and the gate found a defect nobody had reported: the renderer was
+truncating meta descriptions to 160 characters mid word.
+
+The third answer is wired but not valued. The learning highlight is now its own
+token, so one line sets it, but the brand's hex codes have not been supplied and
+this environment cannot reach `omkneehealth.com` to read them. Decision 011
+records what is still needed, and the governance point it raises: all 38 Section
+0 pages carry the Junior tier, which allows no commercial content of any kind.

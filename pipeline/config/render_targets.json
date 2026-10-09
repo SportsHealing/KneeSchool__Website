@@ -1,6 +1,6 @@
 {
   "targets_version": "1.0",
-  "note": "Where each page is published, which breadcrumb parent it carries and which status note sits at the top. tools/render_site.py renders every entry. Keeping this in the repository is what makes the site reproducible without the build scripts that first produced it.",
+  "note": "Where each page is published, which breadcrumb parent it carries and which status note sits at the top. tools/render_site.py renders every entry. Keeping this in the repository is what makes the site reproducible without the build scripts that first produced it. A page whose own summary falls outside the meta description bounds in site.json carries a written one here; every other page uses its summary whole.",
   "pages": {
     "0.1.1": {
       "out": "junior/meet-your-knee.html",
@@ -12,7 +12,8 @@
       "out": "junior/bones-ligaments-menisci-and-muscles.html",
       "parent": "Junior Academy|../levels/junior.html",
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
+      "source": "styled_v1.md",
+      "meta_description": "Bones, ligaments, menisci and muscles: the four building blocks of the knee, what each one is made of and what each one does."
     },
     "0.1.3": {
       "out": "junior/how-the-knee-moves.html",
@@ -150,7 +151,8 @@
       "out": "junior/how-we-know-what-we-know.html",
       "parent": "Junior Academy|../levels/junior.html",
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
+      "source": "styled_v1.md",
+      "meta_description": "How a treatment comes to be accepted, why that process takes so long, and how to tell a strong claim from a weak one."
     },
     "0.5.2": {
       "out": "junior/epq-and-science-fair-project-ideas.html",
@@ -312,7 +314,8 @@
       "out": "anatomy/femur-gross-anatomy.html",
       "parent": "Anatomy Academy|index.html",
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
+      "source": "styled_v1.md",
+      "meta_description": "The distal femur in overview: how the shaft becomes two condyles and a trochlea, and which landmarks orient the rest of this chapter."
     },
     "2.1.2": {
       "out": "anatomy/femur-distal-femur.html",

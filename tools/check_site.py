@@ -111,10 +111,13 @@ EXEMPTIONS = [
 # at a professional page as easily as a patient one. The site has no build step,
 # so the footer is copied into each file and could be edited out of one page
 # without anyone noticing. This check makes that a build failure.
-MEDICAL_SAFETY = (
-    "It does not give individual medical advice and it does not "
-    "replace assessment by a clinician"
-)
+def _medical_safety():
+    with open(os.path.join(ROOT, "pipeline", "config", "site.json"),
+              encoding="utf-8") as fh:
+        return json.load(fh)["medical_safety"]["required_sentence"]
+
+
+MEDICAL_SAFETY = _medical_safety()
 
 
 def exemption_for(rel, rule_id, phrase, context=""):

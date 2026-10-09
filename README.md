@@ -9,7 +9,7 @@ assets/styles.css   one shared stylesheet, no build step, no JavaScript
 levels/             seven level landing pages, one per tier
 conditions/         the conditions library and the ACL article
 encyclopaedia/      reference pages, starting with 1.2.3 Menisci
-tools/              check_site.py, architecture.py, render_article.py
+tools/              check_site.py, publication_qa.py, architecture.py, render_article.py
 pipeline/           the three agent content pipeline: prompts, config,
                     Lambdas, Step Functions definition, SAM template, tests
 pipeline/runs/      pipeline output, one folder per page
@@ -61,8 +61,21 @@ python3 tools/check_site.py
 ```
 
 That covers tag balance, `lang`, em and en dashes, space hyphen space, the
-banned phrase and UK spelling rules from the pipeline config, and whether every
+banned phrase and UK spelling rules from the pipeline config, the educational
+and not a substitute statement required by the handbook, and whether every
 relative link and in-page anchor actually resolves. Exit code 1 on any failure.
+
+Then publication QA, the fifth gate:
+
+```bash
+python3 tools/publication_qa.py            # failures only
+python3 tools/publication_qa.py --report   # every rule on every page
+```
+
+Nine rules covering the SEO title, the meta description, the slug and canonical
+link, the heading ladder, image alt text, the disclaimer, internal linking,
+head metadata, and whether any two pages share a title or a description. Bounds
+live in `pipeline/config/site.json`. See `docs/decisions/010-publication-qa-the-fifth-gate.md`.
 
 Then check by eye at 375px, 768px and 1440px. Single page structure check:
 

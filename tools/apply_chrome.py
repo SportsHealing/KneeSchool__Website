@@ -25,6 +25,12 @@ FOOTER = re.compile(r'<footer class="site-foot"[^>]*>.*?</footer>\n', re.DOTALL)
 # The stylesheet link lives in <head>, which the header replacement does not
 # reach, so its cache busting version is rewritten separately.
 STYLES = re.compile(r'href="((?:\.\./)*assets/styles\.css)(?:\?v=[^"]*)?"')
+# Chapter 14 of the Master Operations Handbook requires a slug on every page, and
+# the publication gate checks the canonical link against where the file sits. The
+# rendered article pages get theirs from tools/render_article.py; the hand written
+# pages get theirs here, so one tool owns it for the whole site.
+CANONICAL = re.compile(r'<link rel="canonical" href="[^"]*">\n')
+THEME = re.compile(r'(<meta name="theme-color" content="[^"]*">\n)')
 
 
 def pages():
@@ -49,7 +55,7 @@ def main():
                     help="report pages whose chrome has drifted, and change nothing")
     args = ap.parse_args()
 
-    changed, drifted, skipped = [], [], []
+    changed, drifted, skipped, missing_head = [], [], [], []
     for path in pages():
         rel = rel_for(path)
         with open(path, encoding="utf-8") as fh:
@@ -67,6 +73,15 @@ def main():
         updated = re.sub(r'(</footer>\n).*\Z', r'\1\n</body>\n</html>\n', updated,
                          flags=re.DOTALL)
 
+        want = '<link rel="canonical" href="%s">\n' % chrome.canonical_url(
+            os.path.relpath(path, ROOT))
+        if CANONICAL.search(updated):
+            updated = CANONICAL.sub(want, updated, count=1)
+        elif THEME.search(updated):
+            updated = THEME.sub(lambda m: m.group(1) + want, updated, count=1)
+        else:
+            missing_head.append(os.path.relpath(path, ROOT))
+
         if updated == original:
             continue
         if args.check:
@@ -78,6 +93,8 @@ def main():
 
     for name in skipped:
         print("  skipped (no header or footer to replace): %s" % name)
+    for name in missing_head:
+        print("  no theme-color meta to anchor the canonical link: %s" % name)
     if args.check:
         for name in drifted:
             print("  DRIFTED  %s" % name)

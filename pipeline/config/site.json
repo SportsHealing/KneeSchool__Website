@@ -1,0 +1,26 @@
+{
+  "site_version": "1.0",
+  "source_of_truth": "Chapters 12, 13, 14 and 15 of KneeSchool_Master_Operations_Handbook.pdf, under the authority order confirmed by decision 009.",
+  "base_url": "https://kneeschool.com/",
+  "base_url_note": "Chapter 1 of the Master Operations Handbook names the platform KneeSchool.com. The canonical link is built from this value, so if the live domain differs this is the one line to change.",
+  "title_suffix": " | KneeSchool",
+  "seo": {
+    "title_min": 15,
+    "title_max": 60,
+    "description_min": 70,
+    "description_max": 160,
+    "note": "Chapter 14 requires an SEO title, a meta description, a slug, an H1, an H2 structure, related articles, internal links and image alt text on every page. The bounds are the ordinary search engine display limits; the handbook does not state numbers."
+  },
+  "medical_safety": {
+    "required_sentence": "It does not give individual medical advice and it does not replace assessment by a clinician",
+    "source": "Chapter 12, Medical Safety: patient-facing pages must explain that information is educational and not a substitute for professional assessment.",
+    "applies_to": "every page, not only the patient facing ones, because a reader arrives at a professional page as easily as a patient one"
+  },
+  "required_metadata": [
+    "charset",
+    "viewport",
+    "description",
+    "canonical",
+    "theme-color"
+  ]
+}

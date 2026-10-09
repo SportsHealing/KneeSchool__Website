@@ -176,6 +176,12 @@ def main():
                     help="record this page in the published page index, so other pages' "
                          "cross links to it resolve on their next render")
     ap.add_argument("--parent", help='breadcrumb parent as "Label|href"; defaults to the brief section pointing at the homepage encyclopaedia')
+    ap.add_argument("--seo-title", dest="seo_title",
+                    help="page title for the <title> tag, where the architecture "
+                         "title alone is not unique across the site")
+    ap.add_argument("--meta-description", dest="meta_description",
+                    help="meta description, where the page summary falls outside "
+                         "the length bounds in pipeline/config/site.json")
     args = ap.parse_args()
 
     with open(args.markdown) as fh:
@@ -233,7 +239,17 @@ def main():
         items.append('        <li><span class="pid">%s</span>%s</li>' % (esc(pid), body))
     refs = doc["sections"].get("References", [])
 
-    page = chrome.head("%s | KneeSchool" % doc["title"], doc["summary"][:160], rel)
+    seo = chrome.site_config()["seo"]
+    title = (args.seo_title or doc["title"]) + chrome.site_config()["title_suffix"]
+    # Chapter 14 of the Master Operations Handbook requires a meta description
+    # on every page. The page's own summary is written for the reader and is
+    # usually the right length, so it is used whole. Truncating it to fit was the
+    # earlier behaviour and it cut sentences mid word, which is worse than no
+    # description at all. Where the summary does not fit, the render target
+    # carries a written one and the publication gate checks the bounds.
+    description = args.meta_description or doc["summary"]
+    page = chrome.head(title, description, rel,
+                       canonical=os.path.relpath(os.path.abspath(args.out), ROOT))
     page += dial_css + "\n"
     page += chrome.header(rel)
     page += """

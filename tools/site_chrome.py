@@ -14,9 +14,32 @@ expands into one list behind the Menu checkbox.
 """
 
 import hashlib
+import json
 import os
 
 _ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+_SITE = os.path.join(_ROOT, "pipeline", "config", "site.json")
+
+
+def site_config():
+    with open(_SITE, encoding="utf-8") as fh:
+        return json.load(fh)
+
+
+def canonical_url(published_path):
+    """The absolute URL of a page, from its path under the repository root.
+
+    Chapter 14 of the Master Operations Handbook requires a slug on every page
+    and the publication gate checks that the canonical link agrees with where
+    the file actually sits. Every other path in the chrome is relative, so this
+    is the one place the site needs to know its own domain, and the domain comes
+    from pipeline/config/site.json rather than from here.
+    """
+    base = site_config()["base_url"].rstrip("/") + "/"
+    path = published_path.replace(os.sep, "/").lstrip("./")
+    if path == "index.html":
+        return base
+    return base + path
 
 
 def stylesheet_version():
@@ -101,7 +124,7 @@ def _href(target, rel):
     return rel + target
 
 
-def head(title, description, rel, extra_meta=""):
+def head(title, description, rel, extra_meta="", canonical=None):
     return """<!DOCTYPE html>
 <html lang="en-GB">
 <head>
@@ -110,13 +133,15 @@ def head(title, description, rel, extra_meta=""):
 <title>%s</title>
 <meta name="description" content="%s">
 <meta name="theme-color" content="#0E2A21">
-%s<link rel="preconnect" href="https://fonts.googleapis.com">
+%s%s<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="%sassets/styles.css?v=%s">
 </head>
 <body>
-""" % (title, description, extra_meta, rel, stylesheet_version())
+""" % (title, description,
+       '<link rel="canonical" href="%s">\n' % canonical_url(canonical) if canonical else "",
+       extra_meta, rel, stylesheet_version())
 
 
 def header(rel):
