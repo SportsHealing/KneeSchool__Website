@@ -2,7 +2,7 @@
   "site_version": "1.0",
   "source_of_truth": "Chapters 12, 13, 14 and 15 of KneeSchool_Master_Operations_Handbook.pdf, under the authority order confirmed by decision 009.",
   "base_url": "https://kneeschool.com/",
-  "base_url_note": "Chapter 1 of the Master Operations Handbook names the platform KneeSchool.com. The canonical link is built from this value, so if the live domain differs this is the one line to change.",
+  "base_url_note": "Confirmed by the client on 9 October 2026 as the live domain, and named as KneeSchool.com in chapter 1 of the Master Operations Handbook. Every canonical link is built from this value, so if the domain ever changes this is the one line to change.",
   "title_suffix": " | KneeSchool",
   "seo": {
     "title_min": 15,
