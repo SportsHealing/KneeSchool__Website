@@ -50,21 +50,21 @@
         },
         {
           "ref": "EV-6",
-          "title": "24 measurements on the site are unchecked",
+          "title": "32 measurements on the site are unchecked",
           "area": "Content",
           "state": "Live and flagged",
           "blocker": "They are written from memory because no paper could be retrieved. Each page's references note says so and each figure is registered.",
           "needed": "Source access, or a reviewer with a library. tools/figures.py --report --unchecked is the list, and the gate refuses any figure that is not on it.",
-          "pages": "2.1.1, 2.1.3, 2.1.5, 2.1.6, 2.2.1, 2.2.3, 2.3.1, 2.4.1, 2.4.2, 2.4.3, 2.4.4, 2.5.1, 2.5.2, 2.5.3, 2.6.1"
+          "pages": "19 pages across Section 2"
         },
         {
           "ref": "EV-7",
-          "title": "76 clinical recommendations on the site are unsigned",
+          "title": "100 clinical recommendations on the site are unsigned",
           "area": "Content",
           "state": "Live and registered",
           "blocker": "They are written by a process with no clinical qualification, on pages that state they have not been reviewed. The client has chosen to keep them, and decision 007 makes the set finite and listed.",
-          "needed": "A named consultant to confirm, amend, withdraw or reclassify each one. tools/positions.py --report --unsigned is the list.",
-          "pages": "27 pages across Sections 1, 2 and 6"
+          "needed": "A named consultant to confirm, amend, withdraw or reclassify each one. tools/positions.py --report --unsigned is the list. It grew from 76 to 100 with chapter 2.7, which is the pattern: a surgical chapter adds positions faster than it adds pages.",
+          "pages": "36 pages across Sections 1, 2 and 6"
         }
       ]
     },
@@ -241,12 +241,12 @@
         },
         {
           "ref": "W-4",
-          "title": "Section 2 Anatomy Academy, chapters 2.1 to 2.6",
+          "title": "Section 2 Anatomy Academy, chapters 2.1 to 2.7",
           "area": "Content",
-          "state": "36 of 79 written, style gate passed, awaiting review",
-          "blocker": "None on the written pages. The remaining 43 are a matter of time.",
-          "needed": "Consultant review. 54,930 words of professional only content, none of it verified. It also carries 24 measurements, none checked: run tools/figures.py --report --unchecked.",
-          "pages": "2.1.1 to 2.1.9, 2.2.1 to 2.2.6, 2.3.1 to 2.3.3, 2.4.1 to 2.4.5, 2.5.1 to 2.5.7, 2.6.1 to 2.6.6"
+          "state": "48 of 79 written, style gate passed, awaiting review",
+          "blocker": "None on the written pages. The remaining 31 are a matter of time.",
+          "needed": "Consultant review. 72,389 words of professional only content, none of it verified. It carries 32 unchecked measurements and contributes most of the 100 unsigned clinical positions.",
+          "pages": "2.1.1 to 2.1.9, 2.2.1 to 2.2.6, 2.3.1 to 2.3.3, 2.4.1 to 2.4.5, 2.5.1 to 2.5.7, 2.6.1 to 2.6.6, 2.7.1 to 2.7.12"
         }
       ]
     }

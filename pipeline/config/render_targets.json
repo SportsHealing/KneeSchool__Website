@@ -524,6 +524,78 @@
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
     },
+    "2.7.1": {
+      "out": "anatomy/acl-gross-anatomy.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.7.2": {
+      "out": "anatomy/acl-embryology.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.7.3": {
+      "out": "anatomy/acl-histology.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.7.4": {
+      "out": "anatomy/acl-blood-supply.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.7.5": {
+      "out": "anatomy/acl-innervation.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.7.6": {
+      "out": "anatomy/acl-femoral-footprint.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.7.7": {
+      "out": "anatomy/acl-tibial-footprint.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.7.8": {
+      "out": "anatomy/acl-anteromedial-bundle.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.7.9": {
+      "out": "anatomy/acl-posterolateral-bundle.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.7.10": {
+      "out": "anatomy/acl-proprioception.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.7.11": {
+      "out": "anatomy/acl-mri-anatomy.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.7.12": {
+      "out": "anatomy/acl-surgical-anatomy.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
     "6.1.1": {
       "out": "conditions/acl.html",
       "parent": "Conditions|index.html",

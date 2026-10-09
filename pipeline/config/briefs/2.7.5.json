@@ -1,0 +1,90 @@
+{
+  "brief_version": "1.1",
+  "page_id": "2.7.5",
+  "title": "Innervation",
+  "section": {
+    "id": "2",
+    "name": "Anatomy Academy"
+  },
+  "chapter": {
+    "id": "2.7",
+    "name": "ACL"
+  },
+  "page_type": "anatomy",
+  "article_template": "anatomy",
+  "generated_from": "Master Publishing Architecture, pages_0_to_3.json",
+  "tiers_required": [
+    "medical_student",
+    "mrcs",
+    "frcs"
+  ],
+  "scope": {
+    "must_cover": [
+      "Nerve supply and mechanoreceptors."
+    ],
+    "must_not_cover": [
+      "Pathology of this structure (owned by 6.1 to 6.8)",
+      "Operative technique (owned by 7.20 to 7.31)",
+      "Imaging interpretation beyond normal anatomy (owned by 5.7)",
+      "Biomechanics beyond orientation (owned by 3.7)"
+    ],
+    "sibling_pages": [
+      "2.7.1",
+      "2.7.2",
+      "2.7.3",
+      "2.7.4",
+      "2.7.6",
+      "2.7.7",
+      "2.7.8",
+      "2.7.9",
+      "2.7.10",
+      "2.7.11",
+      "2.7.12"
+    ],
+    "deeper_spiral_pages": [
+      "3.7",
+      "5.7",
+      "6.1",
+      "7.20"
+    ]
+  },
+  "curriculum_tags": [],
+  "source_requirements": {
+    "kb_topic_filter": "innervation",
+    "minimum": {
+      "textbook_or_review": 1,
+      "peer_reviewed_for_clinical_claims": true
+    },
+    "preferred_recency_years": 10,
+    "guidelines_expected": []
+  },
+  "output_requirements": {
+    "language": "en-GB",
+    "format": "markdown",
+    "key_learning_points_per_tier": {
+      "min": 3,
+      "max": 5
+    },
+    "faqs_patient_level": {
+      "min": 3,
+      "max": 5
+    },
+    "target_word_count": {
+      "min": 800,
+      "max": 1800
+    },
+    "internal_link_placeholders": true
+  },
+  "governance": {
+    "commercial_content_allowed": false,
+    "clinical_advice_allowed": false,
+    "junior_tier_present": false,
+    "figures_allowed": true
+  },
+  "pipeline": {
+    "priority": "high",
+    "requested_by": "architecture",
+    "regen_count": 0,
+    "consultant_assigned": null
+  }
+}
