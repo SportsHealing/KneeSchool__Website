@@ -13,7 +13,25 @@
   ],
   "positions": [
     {
+      "as_written": "State the method and the loading condition with any kinematic figure, because the same knee gives different numbers under different methods.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Treat a non weight bearing measurement as describing a different task from the weight bearing one, not a more convenient version of it.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Read a small rotational difference with the measurement error in mind before calling it a finding.",
       "tier": "mrcs",
       "section": "Clinical Relevance",
       "detected_as": "imperative",

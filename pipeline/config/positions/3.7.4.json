@@ -65,6 +65,15 @@
       "kind": "CLINICAL_RECOMMENDATION",
       "verification": "UNSIGNED",
       "signed_off_by": ""
+    },
+    {
+      "as_written": "State the gap between cadaveric and clinical evidence when the double bundle question arises.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
     }
   ]
 }

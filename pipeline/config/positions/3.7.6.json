@@ -31,6 +31,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Compare bundles by strain rather than by force, given their different dimensions.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Treat isolated injury to this bundle as uncommon and the sectioning evidence as the main source.",
       "tier": "mrcs",
       "section": "Clinical Relevance",

@@ -49,7 +49,25 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Correct alignment before or with any cartilage or meniscal procedure in a malaligned limb.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Assess slope separately, since it acts on a different mechanism from compartment share.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Confirm the correction radiographically rather than assuming the plan was achieved.",
       "tier": "frcs",
       "section": "Clinical Relevance",
       "detected_as": "imperative",

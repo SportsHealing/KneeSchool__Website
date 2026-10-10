@@ -31,6 +31,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Read a rollback figure with its loading condition attached, since unloaded and loaded measurements differ.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Treat rollback as a design requirement rather than a description.",
       "tier": "frcs",
       "section": "At the Knee",
@@ -50,6 +59,15 @@
     },
     {
       "as_written": "Address slope where it is shifting the contact path rather than treating it as an incidental measurement.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Read a design comparison by the task its kinematics were measured in.",
       "tier": "frcs",
       "section": "Clinical Relevance",
       "detected_as": "imperative",

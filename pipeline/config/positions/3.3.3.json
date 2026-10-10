@@ -67,6 +67,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "State the chain whenever a range or a translation is recorded.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "- Non weight bearing data describes open chain and should not be read across.",
       "tier": "mrcs",
       "section": "Key Learning Points",
@@ -104,6 +113,15 @@
     },
     {
       "as_written": "Consider adjacent joint pathology as a cause of knee overload rather than only as a comorbidity.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Set rehabilitation goals in the chain the patient's symptoms occur in.",
       "tier": "frcs",
       "section": "Clinical Relevance",
       "detected_as": "imperative",

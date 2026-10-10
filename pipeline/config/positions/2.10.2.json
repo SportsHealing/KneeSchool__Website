@@ -13,6 +13,15 @@
   ],
   "positions": [
     {
+      "as_written": "Read the dial test as a test of this complex rather than of a single structure.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Expect lateral meniscal mobility to be the normal finding at arthroscopy.",
       "tier": "mrcs",
       "section": "Clinical Relevance",

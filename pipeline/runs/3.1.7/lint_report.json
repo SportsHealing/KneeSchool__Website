@@ -6,14 +6,14 @@
   "findings": [],
   "article_template_version": "1.0",
   "document": {
-    "word_count": 941,
+    "word_count": 1009,
     "tiers_present": [
       "consultant",
       "fellowship",
       "frcs"
     ],
     "has_reference_list": true,
-    "sentence_count": 59,
+    "sentence_count": 63,
     "page_type": "biomechanics"
   }
 }

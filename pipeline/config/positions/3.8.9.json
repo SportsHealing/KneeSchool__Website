@@ -31,6 +31,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Decide selectively rather than adopting either technique as a default.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Prefer two bundles where the capsule and corner are deficient and graft allows.",
       "tier": "frcs",
       "section": "Clinical Relevance",
@@ -59,6 +68,15 @@
     },
     {
       "as_written": "Consider staging where graft and time are both short.",
+      "tier": "fellowship",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Accept that the trade off point is not established.",
       "tier": "fellowship",
       "section": "Clinical Relevance",
       "detected_as": "imperative",

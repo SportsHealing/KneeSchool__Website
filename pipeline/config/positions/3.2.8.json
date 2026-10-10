@@ -13,7 +13,25 @@
   ],
   "positions": [
     {
+      "as_written": "Read the resting step off before pushing.",
+      "tier": "medical_student",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Examine the posterolateral corner in every posterior cruciate injury, since the combination changes the treatment.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Read an intact posterior cruciate on imaging as compatible with laxity, because healing in continuity at length is common.",
       "tier": "mrcs",
       "section": "Clinical Relevance",
       "detected_as": "imperative",

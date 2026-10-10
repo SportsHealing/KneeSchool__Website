@@ -49,6 +49,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "State the rationale regionally rather than anatomically when discussing the structure.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Prefer a tenodesis where tibial tunnel crowding is a constraint.",
       "tier": "fellowship",
       "section": "Clinical Relevance",
@@ -59,6 +68,15 @@
     },
     {
       "as_written": "Plan femoral fixation positions together when several are needed.",
+      "tier": "fellowship",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Accept that no measurement matches construct to knee.",
       "tier": "fellowship",
       "section": "Clinical Relevance",
       "detected_as": "imperative",

@@ -31,9 +31,27 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Read a published centrode with its angular increment and its method attached.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Treat the centrode as the design variable that single radius and multi radius implants disagree about.",
       "tier": "frcs",
       "section": "At the Knee",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Set a hinged external fixator's axis to the epicondylar line, since an off axis hinge translates the joint through range.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
       "detected_as": "imperative",
       "kind": "CLINICAL_RECOMMENDATION",
       "verification": "UNSIGNED",

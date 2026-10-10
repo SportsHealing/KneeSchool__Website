@@ -49,6 +49,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Read the compartment load division as an average over a cycle, not a constant.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Treat intraoperative balance measurement as informative about an anaesthetised knee.",
       "tier": "frcs",
       "section": "Clinical Relevance",

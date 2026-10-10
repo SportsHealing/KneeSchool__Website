@@ -22,6 +22,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Read it as indicating anterolateral and cruciate injury rather than as a fracture to treat.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Expect a higher grade pivot shift where it is present.",
       "tier": "mrcs",
       "section": "Clinical Relevance",
@@ -59,6 +68,15 @@
     },
     {
       "as_written": "Leave the fragment unfixed unless it is large and displaced.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Grade the pivot shift under anaesthetic, which the lesion predicts will be higher.",
       "tier": "frcs",
       "section": "Clinical Relevance",
       "detected_as": "imperative",

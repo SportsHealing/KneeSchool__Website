@@ -296,5 +296,31 @@
     "where_to_find_out_more": "Where to Find Out More",
     "why_it_matters": "Why It Matters"
   },
-  "body_section_headings_note": "The heading a body section slug is written as. Supplied for every slug the site uses, so a heading is never derived by guesswork. Decision 003 added the Section 0 page types and decision 014 the biomechanics and landmark papers types."
+  "body_section_headings_note": "The heading a body section slug is written as. Supplied for every slug the site uses, so a heading is never derived by guesswork. Decision 003 added the Section 0 page types and decision 014 the biomechanics and landmark papers types.",
+  "tier_intent": {
+    "source": "The handbook's Curriculum Matrix sets the depth and the primary objective for each tier. The consultant entry is expanded locally by decision 018, because 'expert judgement' was read on 3.11.9 as licence to pick a side and that was corrected by the client on 10 October 2026.",
+    "junior": "Plain language. Understand the body and the sport.",
+    "patient": "Plain language. Understand symptoms, diagnosis and options.",
+    "medical_student": "Foundation. Anatomy, pathology and clinical basics.",
+    "mrcs": "Applied core surgery. Examination, imaging and principles.",
+    "frcs": "Specialist reasoning. Evidence, operations and complications.",
+    "fellowship": "Advanced practice. Complex surgery and controversies.",
+    "consultant": {
+      "depth": "Masterclass.",
+      "objective": "How the decision gets made when the evidence does not make it. A balance argument, not a verdict.",
+      "required": [
+        "Name the decision, which is rarely the same as the controversy.",
+        "Set out what sits on each side of it, benefit and cost, in the reader's own terms.",
+        "Say what moves the weight, and distinguish the variables that look decisive from the ones that are.",
+        "Say what the measurements can and cannot settle, including which side is measured worse.",
+        "Leave the reader able to decide, and able to say why a colleague decided otherwise."
+      ],
+      "forbidden": [
+        "Declaring the question settled when it is not.",
+        "Advocating one position as correct where the evidence does not reach it.",
+        "A survey of disputes with no decision attached, which is the fellowship tier's job."
+      ],
+      "permitted": "Naming a move as indefensible, where the objection does not bear on the decision at all. That is still weighing, not advocacy."
+    }
+  }
 }

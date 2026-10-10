@@ -22,6 +22,24 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Add it in the groups the trial evidence covers rather than universally.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "State that the stiffness objection has not been borne out at current tensions.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Plan it alongside the cruciate graft rather than as an afterthought.",
       "tier": "frcs",
       "section": "Clinical Relevance",
@@ -41,6 +59,15 @@
     },
     {
       "as_written": "Consider slope correction as an alternative or an addition in the right knee.",
+      "tier": "fellowship",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "State that no measurement identifies the individual who needs one.",
       "tier": "fellowship",
       "section": "Clinical Relevance",
       "detected_as": "imperative",

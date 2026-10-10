@@ -49,6 +49,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Add a lateral procedure in the high risk groups the trials cover.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Consider slope correction as an alternative in the right knee.",
       "tier": "frcs",
       "section": "Clinical Relevance",
@@ -67,6 +76,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "State that routine against selective use is unsettled.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Plan tunnel geometry and slope correction together in a revision.",
       "tier": "fellowship",
       "section": "Clinical Relevance",
@@ -77,6 +95,15 @@
     },
     {
       "as_written": "Prefer a tenodesis, which adds no tibial tunnel.",
+      "tier": "fellowship",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Stage where tunnels, graft or soft tissues will not allow one sitting.",
       "tier": "fellowship",
       "section": "Clinical Relevance",
       "detected_as": "imperative",

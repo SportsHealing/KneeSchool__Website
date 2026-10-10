@@ -13,6 +13,15 @@
   ],
   "positions": [
     {
+      "as_written": "Grade the pivot shift and record the grade, because it is the only routine measure of this motion.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Expect a combined anterior cruciate and anterolateral injury to produce more rotation than either alone.",
       "tier": "mrcs",
       "section": "Clinical Relevance",
@@ -31,7 +40,25 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Grade and document rotation at every assessment, since the absence of an instrument makes the serial record the only comparison available.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Consider an anterolateral procedure where rotational laxity is high, and understand it as restoring a distributed restraint rather than replacing a structure.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Set expectations in terms of rotation rather than translation, because that is what patients describe.",
       "tier": "frcs",
       "section": "Clinical Relevance",
       "detected_as": "imperative",

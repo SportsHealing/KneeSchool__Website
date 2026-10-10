@@ -31,9 +31,27 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Confirm the achieved axis radiographically, since the plan and the result can differ.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Treat osteotomy as the mechanical foundation that other procedures are built on, rather than as an alternative to them.",
       "tier": "frcs",
       "section": "At the Knee",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Correct alignment as the foundation for cartilage and meniscal work rather than as an alternative.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
       "detected_as": "imperative",
       "kind": "CLINICAL_RECOMMENDATION",
       "verification": "UNSIGNED",

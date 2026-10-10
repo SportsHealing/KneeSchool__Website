@@ -13,6 +13,15 @@
   ],
   "positions": [
     {
+      "as_written": "Monitor extrusion postoperatively as the proxy for function.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Expect contact mechanics to improve towards normal rather than reach it.",
       "tier": "mrcs",
       "section": "Clinical Relevance",
@@ -25,6 +34,24 @@
       "as_written": "Treat transplantation as an area restoring operation with a partial tension restoring effect, and judge it on that rather than on being a meniscus replacement.",
       "tier": "frcs",
       "section": "At the Knee",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Correct alignment and instability before or with a transplant.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Set the indication by compartment specific symptoms in a deficient compartment.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
       "detected_as": "imperative",
       "kind": "CLINICAL_RECOMMENDATION",
       "verification": "UNSIGNED",

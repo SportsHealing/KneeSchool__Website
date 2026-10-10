@@ -22,6 +22,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Advise on technique as a mechanical intervention.",
+      "tier": "medical_student",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Expect patellofemoral symptoms to present on stairs, slopes and after prolonged sitting, and tibiofemoral symptoms with walking distance and standing.",
       "tier": "medical_student",
       "section": "Clinical Relevance",

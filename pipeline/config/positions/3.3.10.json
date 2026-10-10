@@ -40,6 +40,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Read two dimensional video coronal measurements cautiously, since rotation confounds them.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Consider fatigue when symptoms appear late in an activity rather than at the start.",
       "tier": "mrcs",
       "section": "Clinical Relevance",
@@ -52,6 +61,33 @@
       "as_written": "Treat return to running as a mechanical decision rather than a time based one.",
       "tier": "frcs",
       "section": "At the Knee",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Stage return to running by criteria rather than by time after surgery.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Correct alignment where repeated single compartment loading is the problem.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "State the uncertainty about individual tolerance rather than offering a figure.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
       "detected_as": "imperative",
       "kind": "CLINICAL_RECOMMENDATION",
       "verification": "UNSIGNED",

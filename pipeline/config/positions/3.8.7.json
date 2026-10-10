@@ -13,6 +13,15 @@
   ],
   "positions": [
     {
+      "as_written": "Grade of laxity and whether the corner is involved.",
+      "tier": "mrcs",
+      "section": "What Changes It",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Expect the strategy to work near extension and less in deeper flexion.",
       "tier": "mrcs",
       "section": "Clinical Relevance",
@@ -31,7 +40,25 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Grade and corner involvement, which decide whether non operative management is viable.",
+      "tier": "frcs",
+      "section": "What Changes It",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Address alignment in a varus limb with posterolateral laxity.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "State that no measurement predicts which knee will degenerate.",
       "tier": "frcs",
       "section": "Clinical Relevance",
       "detected_as": "imperative",

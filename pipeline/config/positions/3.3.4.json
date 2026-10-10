@@ -67,6 +67,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Stage rehabilitation by the range at which each chain loads the graft rather than by time alone.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Avoid treating a small arthrometer difference as a finding without the instrument's limit of agreement in mind.",
       "tier": "frcs",
       "section": "Clinical Relevance",

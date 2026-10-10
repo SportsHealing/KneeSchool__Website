@@ -31,9 +31,45 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Read apportionment variation as reflecting different sectioning of the complex.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Treat the complex as the structure that makes anatomic corner reconstruction a three component operation: the lateral collateral, the popliteus tendon and the popliteofibular ligament.",
       "tier": "frcs",
       "section": "At the Knee",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "State that the muscle's active roles are not restored by a graft.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Confirm tunnel positions on imaging, since the femoral origins are close together.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Correct alignment, since the construct cannot carry a varus limb's load.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
       "detected_as": "imperative",
       "kind": "CLINICAL_RECOMMENDATION",
       "verification": "UNSIGNED",

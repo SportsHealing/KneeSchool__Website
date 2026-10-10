@@ -56,6 +56,15 @@
       "kind": "CLINICAL_RECOMMENDATION",
       "verification": "UNSIGNED",
       "signed_off_by": ""
+    },
+    {
+      "as_written": "State that no assessment reproduces an unanticipated cut when discussing return to sport.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
     }
   ]
 }

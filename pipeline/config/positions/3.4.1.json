@@ -13,6 +13,15 @@
   ],
   "positions": [
     {
+      "as_written": "Read a joint moment as a net quantity rather than as a muscle force.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Expect inverse dynamics to underestimate joint load where co-contraction is likely, which includes most symptomatic knees.",
       "tier": "mrcs",
       "section": "Clinical Relevance",
@@ -31,6 +40,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "State the activity and the method with any kinetic figure, since both change it by more than most clinical variables do.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Treat the kinetic account as the one that explains disease progression, since cartilage responds to load rather than to motion.",
       "tier": "frcs",
       "section": "At the Knee",
@@ -40,7 +58,25 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Correct alignment where compartment load is the problem, because it is the largest modifiable term.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Address muscle capacity alongside any mechanical correction, since co-contraction and weakness both raise load.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Read a modelled muscle force with the model's assumptions in mind rather than as a measurement.",
       "tier": "frcs",
       "section": "Clinical Relevance",
       "detected_as": "imperative",

@@ -13,6 +13,15 @@
   ],
   "positions": [
     {
+      "as_written": "State a direction with any mechanical property of the meniscus.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Treat tear orientation relative to the circumferential fibres as the mechanical question.",
       "tier": "mrcs",
       "section": "Clinical Relevance",
@@ -31,9 +40,27 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Read tensile data with the species and age of the tissue in mind.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Treat the fibre architecture as the thing a repair either reconstitutes or does not.",
       "tier": "frcs",
       "section": "At the Knee",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Read a construct study's failure mode as well as its failure load.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
       "detected_as": "imperative",
       "kind": "CLINICAL_RECOMMENDATION",
       "verification": "UNSIGNED",

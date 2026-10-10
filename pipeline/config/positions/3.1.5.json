@@ -31,6 +31,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "State the causal chain being assumed: training changes movement, changed movement changes joint loading, changed loading changes injury rate.",
+      "tier": "mrcs",
+      "section": "The Principle",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Expect a relative risk reduction rather than elimination, and set that expectation with the athlete.",
       "tier": "mrcs",
       "section": "Clinical Relevance",

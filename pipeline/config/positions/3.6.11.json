@@ -22,6 +22,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Compare a root tear against total meniscectomy rather than against partial resection.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Expect a medial posterior root tear to behave worse than a lateral one.",
       "tier": "mrcs",
       "section": "Clinical Relevance",

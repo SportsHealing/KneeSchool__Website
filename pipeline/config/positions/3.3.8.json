@@ -40,6 +40,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Read a graft's behaviour as angle dependent, since the bundles tighten at different angles.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Consider deep flexion loading in a patient whose symptoms appear only at the end of range.",
       "tier": "mrcs",
       "section": "Clinical Relevance",

@@ -13,6 +13,15 @@
   ],
   "positions": [
     {
+      "as_written": "State it as a load path.",
+      "tier": "mrcs",
+      "section": "The Principle",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Preserve the peripheral third preferentially, since it carries most of the tension.",
       "tier": "mrcs",
       "section": "Clinical Relevance",
@@ -23,6 +32,15 @@
     },
     {
       "as_written": "Treat a radial tear's depth as the mechanical variable rather than its length.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Read a root avulsion as a complete failure of the tension path.",
       "tier": "mrcs",
       "section": "Clinical Relevance",
       "detected_as": "imperative",
@@ -62,6 +80,15 @@
       "tier": "frcs",
       "section": "What Changes It",
       "detected_as": "directed modal",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Decide repairability from whether the tension path can be restored.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
       "kind": "CLINICAL_RECOMMENDATION",
       "verification": "UNSIGNED",
       "signed_off_by": ""

@@ -13,6 +13,15 @@
   ],
   "positions": [
     {
+      "as_written": "Read a reduced knee contribution in a power curve as a strategy change rather than necessarily as weakness.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Use loading rate as the practical measure of whether a landing is being absorbed.",
       "tier": "mrcs",
       "section": "Clinical Relevance",
@@ -50,6 +59,15 @@
     },
     {
       "as_written": "Prefer graded exposure to avoidance, since cumulative cycles rather than peaks drive the cartilage consequence.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "State the uncertainty about individual tolerance rather than offering a figure.",
       "tier": "frcs",
       "section": "Clinical Relevance",
       "detected_as": "imperative",

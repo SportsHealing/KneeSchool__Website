@@ -13,6 +13,15 @@
   ],
   "positions": [
     {
+      "as_written": "Compare activities by peak strain and by direction rather than by force.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Expect downhill running to load the ligament more than level running.",
       "tier": "mrcs",
       "section": "Clinical Relevance",
@@ -31,6 +40,24 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Read running loading estimates as modelled rather than measured.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Compare activities by peak strain, not peak force.",
+      "tier": "mrcs",
+      "section": "Key Learning Points",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Treat running as the benchmark the other activities are read against, and as the milestone whose safety is mechanically defensible rather than conventional.",
       "tier": "frcs",
       "section": "At the Knee",
@@ -40,7 +67,34 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Stage return to running by criteria rather than by interval.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Delay for a concurrent meniscal repair on its own grounds rather than the graft's.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Treat gradient and surface as part of the prescription.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "State that graft load during running is not measured in patients.",
       "tier": "frcs",
       "section": "Clinical Relevance",
       "detected_as": "imperative",

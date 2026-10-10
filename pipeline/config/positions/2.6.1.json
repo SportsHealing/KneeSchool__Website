@@ -13,6 +13,15 @@
   ],
   "positions": [
     {
+      "as_written": "Compare it to the medial meniscus feature by feature.",
+      "tier": "mrcs",
+      "section": "Structure and Location",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "That asymmetry should change the threshold for resection on this side.",
       "tier": "mrcs",
       "section": "Clinical Relevance",

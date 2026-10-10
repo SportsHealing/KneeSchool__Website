@@ -40,6 +40,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Correct varus alignment before or with a chronic corner reconstruction.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Document peroneal nerve function before surgery and after.",
       "tier": "frcs",
       "section": "Clinical Relevance",
@@ -59,6 +68,15 @@
     },
     {
       "as_written": "Plan tunnel trajectories before theatre in a multiligament corner reconstruction.",
+      "tier": "fellowship",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Correct the deformity that is driving the failure first.",
       "tier": "fellowship",
       "section": "Clinical Relevance",
       "detected_as": "imperative",

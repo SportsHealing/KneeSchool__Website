@@ -40,6 +40,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Read an insole or accelerometer figure as a proxy rather than as a ground reaction force.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Treat the ground reaction force as the input that alignment surgery works on.",
       "tier": "frcs",
       "section": "At the Knee",

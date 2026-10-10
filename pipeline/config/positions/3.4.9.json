@@ -22,6 +22,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Read extrusion as a functional loss rather than an incidental measurement.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Expect subchondral change to mark where load concentrated, and look for the cause.",
       "tier": "mrcs",
       "section": "Clinical Relevance",
@@ -43,6 +52,15 @@
       "as_written": "Treat every reconstructive decision as a load path decision.",
       "tier": "frcs",
       "section": "At the Knee",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Correct alignment before or with a cartilage or meniscal procedure.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
       "detected_as": "imperative",
       "kind": "CLINICAL_RECOMMENDATION",
       "verification": "UNSIGNED",

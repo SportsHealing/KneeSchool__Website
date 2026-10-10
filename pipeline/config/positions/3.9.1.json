@@ -13,6 +13,15 @@
   ],
   "positions": [
     {
+      "as_written": "Read opening in full extension as implicating the posteromedial structures.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Use valgus stress radiography where the grade decides the treatment.",
       "tier": "mrcs",
       "section": "Clinical Relevance",

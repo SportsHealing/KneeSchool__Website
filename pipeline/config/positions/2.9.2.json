@@ -13,7 +13,25 @@
   ],
   "positions": [
     {
+      "as_written": "Compare the lateral side, where the popliteus tendon interrupts the attachment and the meniscus is free over that segment.",
+      "tier": "mrcs",
+      "section": "Relations",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Expect an effusion with a deep injury and not necessarily with a superficial one.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Read a meniscotibial detachment as a separation rather than a tear, because the treatment follows the anatomy: peripheral tissue in a vascular zone reattaches.",
       "tier": "mrcs",
       "section": "Clinical Relevance",
       "detected_as": "imperative",

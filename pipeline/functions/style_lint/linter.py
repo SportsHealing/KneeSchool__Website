@@ -656,7 +656,19 @@ def normalise_figure(token):
 POSITION_VERBS = (r"Assess|Document|Identify|Protect|Preserve|Avoid|Make|Plan|Use|Consider|"
                   r"Discuss|Localise|Treat|Examine|Expect|Place|Check|Recognise|Address|"
                   r"Restore|Measure|Count|Leave|Keep|Prefer|Report|Exclude|Follow|Probe|"
-                  r"Do not|Never|Always|Trace|Learn|Warn|Order|Repair|Resect|Release")
+                  r"Do not|Never|Always|Trace|Learn|Warn|Order|Repair|Resect|Release|"
+                  # The second group was added on 10 October 2026 after the consultant tier
+                  # was redefined as a balance argument (decision 018). Weighing language
+                  # opens with a different verb, and the first group caught almost none of
+                  # it: the dry run found 163 clinical directions on 101 professional pages
+                  # that had never reached the register, among them "Stage the corner before
+                  # any cruciate reconstruction" and "Correct varus alignment where it would
+                  # load a corner reconstruction". The gap predates the consultant tier; the
+                  # rewrite only exposed it.
+                  r"Weigh|Balance|Decide|Offer|Reserve|Withhold|Stage|Limit|Grade|Compare|"
+                  r"Quantify|Confirm|Accept|State|Price|Defer|Escalate|Monitor|Refer|Advise|"
+                  r"Reassure|Correct|Convert|Delay|Abandon|Proceed|Repeat|Request|Aim|Add|"
+                  r"Set|Read|Start|Stop|Review")
 # Case insensitive, because after a leading clause the verb is lower case: "In a
 # young patient with instability, prefer the procedure that preserves bone stock"
 # was missed while the pattern required a capital. Anchored at the start of the

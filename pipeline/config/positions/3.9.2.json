@@ -58,7 +58,25 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Decide the operative question on rotational rather than coronal laxity.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Examine under anaesthetic, since no instrument substitutes.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Correct alignment where it would load the reconstruction.",
       "tier": "frcs",
       "section": "Clinical Relevance",
       "detected_as": "imperative",

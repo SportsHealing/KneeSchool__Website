@@ -22,6 +22,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Read a video frontal plane angle as a screening measure rather than a measurement of valgus.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Use landing tasks in return to sport assessment because they reproduce the injury loading.",
       "tier": "mrcs",
       "section": "Clinical Relevance",
@@ -41,6 +50,15 @@
     },
     {
       "as_written": "Expect asymmetrical landing kinematics to persist after reconstruction with normal laxity.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "State that screening does not identify the individual at risk, while the population association stands.",
       "tier": "frcs",
       "section": "Clinical Relevance",
       "detected_as": "imperative",

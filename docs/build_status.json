@@ -21,7 +21,7 @@
           "area": "Content pipeline",
           "state": "Mechanism built, nothing signed",
           "blocker": "The client confirmed on 10 October 2026 that consultants are lined up, so the people exist. The mechanism existed only as prose packs in docs/review/ with no way for an answer to come back. tools/review_pack.py now generates one pack per chapter from the work and reads a filled pack back into the registers, so the route exists. What is missing is a reviewer's time.",
-          "needed": "A consultant to work through a chapter. 1,026 clinical recommendations across 190 pages and 336 measurements across 113 are outstanding, none signed. python3 tools/review_pack.py --status prints the breakdown by chapter; the largest is 3.7 with 108 and the median is nearer 20.",
+          "needed": "A consultant to work through a chapter. 1,250 clinical recommendations across 190 pages and 336 measurements across 113 are outstanding, none signed. python3 tools/review_pack.py --status prints the breakdown by chapter; the largest is 3.7 with 142 and the median is 26.",
           "pages": "Every page on the site is an unreviewed editorial draft"
         },
         {
@@ -60,11 +60,11 @@
         },
         {
           "ref": "EV-7",
-          "title": "1,026 clinical recommendations on the site are unsigned",
+          "title": "1,250 clinical recommendations on the site are unsigned",
           "area": "Content",
-          "state": "Live and registered",
-          "blocker": "They are written by a process with no clinical qualification, on pages that state they have not been reviewed. The client has chosen to keep them, and decision 007 makes the set finite and listed.",
-          "needed": "A consultant to work the register: 1,026 positions across 190 pages, all UNSIGNED. tools/positions.py --report --unsigned is the list.",
+          "state": "Live and registered, and the count rose on 10 October 2026",
+          "blocker": "They are written by a process with no clinical qualification, on pages that state they have not been reviewed. The client has chosen to keep them, and decision 007 makes the set finite and listed. The total rose from 976 to 1,250 on 10 October 2026, not because advice was added but because the detector was found to be missing it. POS-001 read clinical direction off a list of imperative openers built from directive prose, and 163 directions opening with a weighing verb had never reached the register. See decision 018.",
+          "needed": "A consultant to work the register: 1,250 positions across 190 pages, all UNSIGNED. tools/positions.py --report --unsigned is the list.",
           "pages": "190 pages carry at least one recommendation"
         },
         {
@@ -147,6 +147,15 @@
           "blocker": "A render target is a page id mapped to an output path. Nothing checked that two ids did not map to the same path. One would have published and the other would have been lost, with every gate still passing: the file exists, it is valid, the links resolve, and nothing knows a second page was meant to be there. Chapter 3.6 came within one slug of it, because its Load Sharing, Shock Absorption and Proprioception pages share their titles with chapters 3.4 and 2.7.",
           "needed": "Nothing. tools/render_site.py refuses the whole run and names both pages when two targets collide. Two tests hold it, one of which introduces a collision and checks the renderer refuses it. The titles stay as the architecture gives them and the three slugs carry a meniscal prefix.",
           "pages": "No page was lost; the collision was caught before it was written"
+        },
+        {
+          "ref": "EV-17",
+          "title": "163 clinical directions were never registered",
+          "area": "Content pipeline",
+          "state": "Fixed, re-extracted and tested",
+          "blocker": "POS-001 detects clinical direction from a list of imperative openers. The list was built from directive prose, so Assess, Avoid and Prefer were in it and Weigh, Stage, Correct, Offer and Confirm were not. A dry run across every professional page found 163 directions on 101 pages that had never reached the position register, among them 'Stage the corner before any cruciate reconstruction in a knee with lateral findings' and 'Correct varus alignment where it would load a corner reconstruction'. Both are clinical direction and both had been live for days.",
+          "needed": "Nothing in the tool. The verb list was extended, the register re-extracted and 7 tests added. The unsigned total rose from 976 to 1,250, which is a correction to the count rather than new exposure: the advice was always on the page and simply not on the list anybody is asked to sign. Found only because the consultant tier rewrite under decision 018 moved into weighing language the detector could not see.",
+          "pages": "101 pages carried at least one unregistered direction"
         }
       ]
     },
@@ -380,6 +389,15 @@
           "blocker": "A consultant filling eighty five cells wants a column to tab down, not a markdown table, and a printed pack for a meeting wants to be a document.",
           "needed": "Nothing. Every pack generates as markdown, a spreadsheet and a Word file from the same data, all carrying the same row references, and --ingest reads any of them. Two faults were found while verifying: python-docx writes a schema-invalid settings.xml, now corrected, and LibreOffice does not work in this container, so the workbook sets fullCalcOnLoad and the Word file is verified structurally rather than rendered. See decision 017.",
           "pages": "docs/review/packs/, markdown for all 32 chapters and both binaries for 3.2 to 3.10"
+        },
+        {
+          "ref": "D-018",
+          "title": "What the consultant tier is for",
+          "area": "Editorial",
+          "state": "Applied",
+          "blocker": "3.11.9 set out two positions on lateral augmentation and called both defensible. The client's correction on 10 October 2026 is that the consultant tier is about how a decision gets made when the evidence does not make it, not about arbitrating between camps. The rule is now in article_template.json under tier_intent.consultant: name the decision, set out both sides, say what moves the weight, say what the measurements cannot settle, and leave the reader able to say why a colleague decided otherwise.",
+          "needed": "Nothing. All three consultant blocks on the site were rewritten: 3.11.9, 3.1.7 and 6.1.1. Whether the fellowship tier needs the same treatment is left open deliberately.",
+          "pages": "3 pages rewritten, 1 template changed, 101 position registers re-extracted"
         }
       ]
     },

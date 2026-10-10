@@ -49,6 +49,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Confirm the femoral point radiographically whichever anterior attachment is used, because that is where the error lives.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Consider a tendon fixation in a patella that has already been drilled, since a second tunnel in a small bone is a fracture risk.",
       "tier": "frcs",
       "section": "Clinical Relevance",

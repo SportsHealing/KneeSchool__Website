@@ -13,6 +13,24 @@
   ],
   "positions": [
     {
+      "as_written": "State the flexion angle whenever a laxity figure is recorded, because the same knee gives different answers at different angles.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Compare with the other side rather than with a published range, since individual variation exceeds most injury effects in the smaller degrees of freedom.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Expect a test to load more than one degree of freedom, and read a combination of findings rather than one.",
       "tier": "mrcs",
       "section": "Clinical Relevance",

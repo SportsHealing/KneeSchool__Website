@@ -22,6 +22,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Offer a cane in the opposite hand for medial compartment pain, on mechanical grounds.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Prefer impulse over peak when the question is cumulative exposure rather than a single step.",
       "tier": "mrcs",
       "section": "Clinical Relevance",
@@ -41,6 +50,15 @@
     },
     {
       "as_written": "Address body mass alongside correction, since it can exceed the surgical effect.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "State the observational nature of the progression association when counselling.",
       "tier": "frcs",
       "section": "Clinical Relevance",
       "detected_as": "imperative",

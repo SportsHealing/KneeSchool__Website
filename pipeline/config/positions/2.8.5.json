@@ -22,6 +22,33 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Confirm a round low signal structure by following it across slices before calling it a loose body.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Compare thickness with the contralateral knee where a study is available, rather than against a single quoted figure.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Read the posterior capsule on the same slices.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Leave tear description to 5.8.2 and 5.8.3.",
       "tier": "mrcs",
       "section": "Clinical Relevance",
@@ -32,6 +59,15 @@
     },
     {
       "as_written": "Use the normal study as the reference for the contralateral comparison rather than as a set of absolute values.",
+      "tier": "frcs",
+      "section": "Function",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Read continuity, uniformity and calibre as three separate observations.",
       "tier": "frcs",
       "section": "Function",
       "detected_as": "imperative",

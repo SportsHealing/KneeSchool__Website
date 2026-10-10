@@ -40,6 +40,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Correct alignment before or with a lateral reconstruction in a varus limb, and say so in the plan rather than treating it as optional.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Measure on weight bearing films, since a supine measurement describes an unloaded knee.",
       "tier": "frcs",
       "section": "Clinical Relevance",

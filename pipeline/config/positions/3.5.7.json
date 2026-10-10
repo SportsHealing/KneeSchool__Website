@@ -31,6 +31,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "State that mechanical and metabolic effects both operate and cannot be separated in an individual.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Treat mass as a mechanical variable with the largest achievable effect size and the lowest achievement rate, which is an uncomfortable combination rather than a reason to leave it out.",
       "tier": "frcs",
       "section": "At the Knee",
@@ -41,6 +50,15 @@
     },
     {
       "as_written": "Discuss mass as a mechanical factor in construct survival, with the registry evidence named.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Correct alignment in a heavier patient, since the amplified load needs directing.",
       "tier": "frcs",
       "section": "Clinical Relevance",
       "detected_as": "imperative",

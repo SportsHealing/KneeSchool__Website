@@ -40,6 +40,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Read apportionment figures within the corner as less settled than those between corner and superficial ligament.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Treat the corner as the structure that decides the medial side's management.",
       "tier": "frcs",
       "section": "At the Knee",

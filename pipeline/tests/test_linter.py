@@ -572,3 +572,73 @@ class PositionRegister(unittest.TestCase):
             self.assertEqual(hits, [], "%s: unregistered position %s" % (page_id, hits))
             checked += 1
         self.assertTrue(checked, "no professional pages found")
+
+
+class BalanceVerbs(unittest.TestCase):
+    """Decision 018. The consultant tier is a balance argument, and a balance
+    argument opens with a different verb from a directive one. POS-001's opener
+    list was built from directive prose and caught almost none of it. A dry run
+    across every professional page found 163 clinical directions that had never
+    reached the register, so the gap was not specific to the consultant tier."""
+
+    def opens(self, sentence):
+        return bool(linter.POSITION_OPENER.search(sentence))
+
+    def test_weighing_verbs_are_detected(self):
+        for sentence in [
+                "Weigh the stiffness risk of early combined surgery against the laxity risk.",
+                "Stage the corner before any cruciate reconstruction in a knee with lateral findings.",
+                "Correct varus alignment where it would load a corner reconstruction.",
+                "Offer a cane in the opposite hand for medial compartment pain.",
+                "Confirm the femoral point radiographically whichever attachment is used.",
+                "Grade by the opening and the endpoint rather than by the pain.",
+                "Compare thickness with the contralateral knee where a study is available.",
+                "Decide repairability from whether the tension path can be restored.",
+                "Add a lateral procedure where the grade or the population indicates it.",
+                "Reserve the osteotomy for the knee that has already failed once.",
+                "Defer the decision until the slope has been measured.",
+                "Limit the construct to what the tunnels will take.",
+        ]:
+            self.assertTrue(self.opens(sentence), sentence)
+
+    def test_a_leading_clause_still_works_with_the_new_verbs(self):
+        self.assertTrue(self.opens(
+            "In revision, grade the tibial bone and the tunnel position preoperatively."))
+
+    def test_the_verb_must_open_the_sentence(self):
+        # Anchored, as before: a weighing verb used mid sentence is description.
+        self.assertFalse(self.opens(
+            "The surgeon will weigh the stiffness risk against the laxity risk."))
+        self.assertFalse(self.opens(
+            "Most departments correct alignment at the same sitting."))
+
+
+class ConsultantTierIntent(unittest.TestCase):
+    """Decision 018 put the tier intents in the template so the generator reads
+    them instead of remembering them. The template is the source of truth, so the
+    test is against the file and not against a copy of the rule."""
+
+    def setUp(self):
+        with open(os.path.join(ROOT, "config", "article_template.json")) as fh:
+            self.template = json.load(fh)
+
+    def test_every_tier_has_an_intent(self):
+        intent = self.template["tier_intent"]
+        for tier in self.template["tier_order"]:
+            self.assertIn(tier, intent, tier)
+
+    def test_the_intent_block_adds_no_tier_of_its_own(self):
+        extra = set(self.template["tier_intent"]) - set(self.template["tier_order"]) - {"source"}
+        self.assertEqual(extra, set())
+
+    def test_the_consultant_intent_carries_the_rule(self):
+        c = self.template["tier_intent"]["consultant"]
+        self.assertEqual(len(c["required"]), 5)
+        self.assertEqual(len(c["forbidden"]), 3)
+        self.assertIn("balance argument", c["objective"])
+        self.assertIn("permitted", c)
+
+    def test_the_decision_is_recorded(self):
+        path = os.path.join(os.path.dirname(ROOT), "docs", "decisions",
+                            "018-what-the-consultant-tier-is-for.md")
+        self.assertTrue(os.path.exists(path), path)

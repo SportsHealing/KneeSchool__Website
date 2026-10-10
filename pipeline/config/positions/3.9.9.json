@@ -31,6 +31,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Read differences between published figures as protocol differences.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Expect order dependence to be worse where the structures are adjacent capsular layers.",
       "tier": "mrcs",
       "section": "Clinical Relevance",
@@ -59,6 +68,15 @@
     },
     {
       "as_written": "Expect a single limb construct to leave one angle less controlled.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Accept that a residual laxity cannot be attributed to a specific limb.",
       "tier": "frcs",
       "section": "Clinical Relevance",
       "detected_as": "imperative",

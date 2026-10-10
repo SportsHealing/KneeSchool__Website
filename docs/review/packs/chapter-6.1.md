@@ -70,8 +70,8 @@ Each sentence below tells a clinician what to do, on a page that carries no name
 | 6.1.1-P1 | 6.1.1 | mrcs | Examine the whole knee, because the associated injuries change the management. |  |  |
 | 6.1.1-P2 | 6.1.1 | mrcs | Assess the collaterals, the posterolateral corner and the extensor mechanism. |  |  |
 | 6.1.1-P3 | 6.1.1 | fellowship | Treat the knee rather than the ligament. |  |  |
-| 6.1.1-P4 | 6.1.1 | consultant | Repair has returned to the conversation for proximal avulsion tears with good tissue quality, helped by better patient selection and augmentation. |  |  |
-| 6.1.1-P5 | 6.1.1 | consultant | Repair in proximal avulsion is promising and unproven over the medium term. |  |  |
+| 6.1.1-P4 | 6.1.1 | consultant | Repair offers a native ligament with its innervation and no graft harvest. |  |  |
+| 6.1.1-P5 | 6.1.1 | consultant | Repair offers a native ligament and risks a second operation in a pivoting athlete. |  |  |
 
 Allowed decisions: `CONFIRMED`, `AMENDED`, `WITHDRAWN`, `NOT_CLINICAL`.
 

@@ -22,6 +22,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Read a horizontal cleavage tear as a cohesion failure, typically in degenerate tissue.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Treat loss of shape under load as a radial fibre problem as well as a hoop problem.",
       "tier": "mrcs",
       "section": "Clinical Relevance",
@@ -59,6 +68,15 @@
     },
     {
       "as_written": "Protect load after a radial repair, on the ground that the construct is the tension path.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Read healing rates by tear pattern rather than in aggregate.",
       "tier": "frcs",
       "section": "Clinical Relevance",
       "detected_as": "imperative",

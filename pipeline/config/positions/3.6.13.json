@@ -22,6 +22,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Read the failure mode to know whether the tissue or the construct was the limit.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Treat biological augmentation as addressing healing rather than fixation.",
       "tier": "mrcs",
       "section": "Clinical Relevance",
@@ -40,7 +49,34 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Correct alignment where it would load the repair excessively.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Read reported healing rates with pattern, location and concurrent procedure attached.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Identify which requirement is failing before deciding whether to repair at all.",
+      "tier": "fellowship",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Set the aim by cartilage state rather than by tear repairability alone.",
       "tier": "fellowship",
       "section": "Clinical Relevance",
       "detected_as": "imperative",

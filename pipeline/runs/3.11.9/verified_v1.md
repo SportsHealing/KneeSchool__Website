@@ -130,63 +130,76 @@ State that no trial compares them directly.
 
 ### At the Knee
 
-The consultant level question is what to do while the evidence accumulates,
-which is the position most of this debate has occupied for a decade.
+The consultant decision is not which account of the anatomy is right. It is
+how much extra surgery to add to a reconstruction when the benefit is clear in
+a population and uncertain in the patient in front of you.
 
-Two defensible positions exist. One adds augmentation to the high risk groups
-the trials identify and waits for the subgroup data. The other treats
-rotational laxity and bony morphology as the indication and augments by
-measurement rather than by group.
+On the benefit side sit a reinjury rate that augmentation lowers in the groups
+the trials studied, a failure that costs the patient a second reconstruction,
+and a construct that adds little operative time in trained hands. 3.11.8
+covers the construct.
 
-Both are consistent with the mechanics. They differ in how much weight they
-place on trial subgroups against individual assessment, which is a question
-about evidence rather than about the knee. 3.11.8 covers the construct.
+On the cost side sit an additional incision and fixation, a small but real
+stiffness and lateral pain burden, and an over-constraint concern that is
+demonstrable in cadavers and unproven in patients. 3.11.5 covers internal
+rotation control.
 
-What is not defensible is citing the anatomical dispute as a reason not to
-augment, because the mechanical case does not depend on it. 3.11.3 covers the
-structure.
+The weight on each side moves with the patient rather than with the surgeon.
+Two consultants reading the same literature can operate differently and both
+be reasoning well.
+
+One move is still indefensible. Citing the anatomical dispute as a reason not
+to augment weighs nothing, because the mechanical case never rested on it.
+3.11.3 covers the structure.
 
 ### What Changes It
 
-Accumulating trial and registry data, particularly subgroup analyses.
+Age and pivoting demand, which is where the measured benefit concentrates.
 
-Developing slope correction practice, which competes for the same indication.
+Bony morphology, particularly slope, which decides whether a soft tissue
+addition is the right lever at all. 3.13 covers alignment.
 
-Local case mix, which decides how often the high risk groups present.
+Primary against revision, which changes what a further failure costs.
 
-Surgeon experience with each construct, which affects the cost side.
+Surgeon volume with the construct, which moves the cost side rather than the
+benefit side.
 
 ### How It Is Measured
 
-Registry reinjury rates by construct and by age group are the most informative
-accumulating data.
+Registry reinjury rates by construct and by age group carry the benefit side
+and are the most informative accumulating data.
 
-Randomised trial subgroup analyses are limited by sample size and should be
-read as such.
+Trial subgroup analyses are underpowered for the groups that most need them,
+and read better as weak evidence about a subgroup than as strong evidence
+about a trial.
 
-Instrumented rotatory measurement remains without a clinical threshold, which
-limits individualised assessment.
+Instrumented rotatory measurement has no clinical threshold, so the laxity
+that would individualise the decision cannot yet be graded.
 
-No measurement resolves the choice between the two defensible positions.
+The cost side is measured worst of all, because stiffness and lateral pain are
+reported inconsistently and rarely as primary outcomes.
 
 ### Clinical Relevance
 
-Hold a defensible position and state which it is, rather than treating the
-question as settled.
+Set the question out as a balance and name what sits on each side of it.
 
-Follow registry and subgroup data as it accumulates.
+Weigh age and pivoting demand first, because the benefit concentrates there.
 
-Do not cite the anatomical dispute as a reason against augmentation.
+Measure slope before treating augmentation as the only available lever.
 
-Expect slope correction to continue competing for the same indication.
+Price a second failure into the revision decision rather than into the primary
+one.
+
+Accept that the same evidence can be weighed differently without either
+consultant being wrong.
 
 ### Key Learning Points
 
-- The question is what to do while the evidence accumulates.
-- Two defensible positions: augment by group, or augment by measurement.
-- Both are consistent with the mechanics and differ on how to weigh evidence.
-- Citing the anatomical dispute against augmentation is not defensible.
-- No measurement resolves the choice between the two positions.
+- The decision is how much to add, not which anatomical account is right.
+- Benefit sits with reinjury reduction in high demand groups; cost sits with added fixation and a poorly measured harm side.
+- Slope decides whether a soft tissue addition is the right lever at all.
+- Subgroup analyses are underpowered for the groups that most need them.
+- The same evidence can be weighed differently without either consultant being wrong.
 
 ## Explore Further
 

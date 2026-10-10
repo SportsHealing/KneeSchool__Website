@@ -67,6 +67,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Correct alignment where it is loading a reconstruction, on mechanical grounds rather than on appearance.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Preserve meniscal tissue in an unstable knee, because it carries both restraint and load distribution.",
       "tier": "frcs",
       "section": "Clinical Relevance",

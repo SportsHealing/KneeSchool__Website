@@ -31,6 +31,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Accept that no clinical test isolates this layer.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Treat the meniscotibial attachment as the structure that links medial ligament injury to meniscal extrusion, and treat extrusion as the imaging sign that it has failed.",
       "tier": "frcs",
       "section": "At the Knee",

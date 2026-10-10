@@ -49,6 +49,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Correct varus alignment where it would load the reconstruction.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Measure the result with stress radiography rather than by hand.",
       "tier": "frcs",
       "section": "Clinical Relevance",
@@ -68,6 +77,15 @@
     },
     {
       "as_written": "Consider inlay fixation where a tibial tunnel would converge with another.",
+      "tier": "fellowship",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "State that the optimal sequence for a given combination is not established.",
       "tier": "fellowship",
       "section": "Clinical Relevance",
       "detected_as": "imperative",

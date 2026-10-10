@@ -13,6 +13,15 @@
   ],
   "positions": [
     {
+      "as_written": "Read a rotatory test as the more informative one when anterior cruciate function is in question, since it loads the coupled pair.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Expect a knee with a meniscal and a ligament injury to behave worse than either alone, because both act on the same path.",
       "tier": "mrcs",
       "section": "Clinical Relevance",

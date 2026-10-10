@@ -58,6 +58,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Correct varus alignment where it would load the construct.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Expect a chronic lateral laxity not to improve with time.",
       "tier": "frcs",
       "section": "Clinical Relevance",

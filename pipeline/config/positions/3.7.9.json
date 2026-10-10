@@ -13,6 +13,24 @@
   ],
   "positions": [
     {
+      "as_written": "Grade under anaesthetic where the grade will change the operation.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Read a high grade as suggesting injury beyond the cruciate alone.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Treat instrumented measures as research tools without a clinical threshold.",
       "tier": "mrcs",
       "section": "Clinical Relevance",
@@ -40,7 +58,25 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Add a lateral procedure where a residual shift is anticipated or demonstrated.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Address slope and lateral meniscal pathology as part of abolishing the sign.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "State the sign's reliability limits when it is used to compare treatments.",
       "tier": "frcs",
       "section": "Clinical Relevance",
       "detected_as": "imperative",

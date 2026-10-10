@@ -257,33 +257,39 @@ operation is not agreed.
 
 ### Controversies and Evidence
 
-Repair has returned to the conversation for proximal avulsion tears with good
-tissue quality, helped by better patient selection and augmentation. Whether it
-holds against reconstruction in young pivoting athletes over the medium term is
-open, and the early series are not yet long enough to answer it.
+Four decisions sit in front of a consultant here, and the literature settles
+none of them.
 
-Slope is the argument that has moved furthest in the last decade. There is broad
-agreement that increased posterior tibial slope loads the graft. There is no
-agreement on the threshold at which correction becomes worth the additional
-operation, nor on whether it belongs in a primary reconstruction for a high risk
-patient.
+The first is whether to repair a proximal avulsion rather than reconstruct it.
+Repair offers a native ligament with its innervation and no graft harvest. It
+risks a second operation in a young pivoting athlete, where reconstruction has a
+known medium term result. Tissue quality and age move the weight. The early
+series are not long enough to move it for anybody.
 
-Criterion based return to sport testing is widely used and weakly evidenced. The
-batteries are intuitively right and their effect on re rupture rates in
-adolescents is not established. Time based clearance alone is inadequate, which
-is the part everyone agrees on.
+The second is when an increased posterior tibial slope justifies correcting it.
+Correction reduces the load the graft carries. It adds an osteotomy, its recovery
+and its complications to an operation the patient already needs. Previous failure
+moves the weight further than slope magnitude does, which is the part most often
+reversed.
 
-Registry data has become good enough to shape graft choice across a population
-while remaining a blunt instrument for the individual in clinic. The useful
-question for a department is whether its own outcomes match the registry, and
-whether anyone is checking.
+The third is what clears a patient to return to sport. Criterion based batteries
+test what looks relevant, and their effect on re rupture in adolescents is not
+established. Time based clearance alone is inadequate, which is the only part
+everyone agrees on. What moves the weight is the sport, and whether anyone will
+see the patient again.
+
+The fourth is how far registry data should reach into an individual decision. It
+is good enough to shape graft choice across a population and stays blunt for the
+person in clinic. The question a department can actually answer is narrower:
+whether its own outcomes match the registry, and whether anyone is checking.
 
 ### Key Learning Points
 
-- Repair in proximal avulsion is promising and unproven over the medium term.
-- Slope is agreed to matter and the correction threshold is not agreed.
-- Return to sport batteries are widely used and weakly evidenced.
-- Registry data guides populations better than it guides individuals.
+- Repair offers a native ligament and risks a second operation in a pivoting athlete.
+- Slope correction reduces graft load and adds an osteotomy to an operation already needed.
+- Previous failure moves the slope decision further than slope magnitude does.
+- Return to sport batteries test what looks relevant and are not shown to change re rupture rates.
+- Registry data shapes populations and stays blunt for the individual.
 
 ## Explore Further
 

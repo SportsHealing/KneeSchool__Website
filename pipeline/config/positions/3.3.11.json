@@ -40,6 +40,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Read patellofemoral symptoms in squatting as a loading consequence of flexion angle.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Treat the thinness of the deep flexion literature as a limit on confidence rather than as absence of a problem.",
       "tier": "mrcs",
       "section": "Clinical Relevance",
@@ -52,6 +61,15 @@
       "as_written": "Treat deep flexion as a stated goal with a stated cost.",
       "tier": "frcs",
       "section": "At the Knee",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Set the deep flexion goal from the patient's needs rather than from the implant's claim.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
       "detected_as": "imperative",
       "kind": "CLINICAL_RECOMMENDATION",
       "verification": "UNSIGNED",

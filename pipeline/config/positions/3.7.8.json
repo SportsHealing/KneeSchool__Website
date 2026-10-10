@@ -22,7 +22,25 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "State load, angle and the instrument's limit of agreement with any figure.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Treat the 3 millimetre threshold as a convention rather than a boundary.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Read the curve shape and the endpoint rather than the number alone.",
       "tier": "mrcs",
       "section": "Clinical Relevance",
       "detected_as": "imperative",

@@ -76,6 +76,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Set tension at the angle each structure is tight, not at a single angle for the construct.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Warn about the saphenous branch before operating.",
       "tier": "frcs",
       "section": "Clinical Relevance",

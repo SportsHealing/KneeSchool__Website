@@ -13,6 +13,15 @@
   ],
   "positions": [
     {
+      "as_written": "Set the medial side out by layer: layer one fascia, layer two carrying the patellofemoral ligaments, layer three the capsule.",
+      "tier": "mrcs",
+      "section": "Structure and Location",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Expect a lateral release to divide vessels and a ligament, and record what was divided.",
       "tier": "mrcs",
       "section": "Clinical Relevance",

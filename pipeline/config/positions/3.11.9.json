@@ -40,13 +40,68 @@
       "signed_off_by": ""
     },
     {
-      "as_written": "Follow registry and subgroup data as it accumulates.",
+      "as_written": "State that no trial compares them directly.",
+      "tier": "fellowship",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Set the question out as a balance and name what sits on each side of it.",
       "tier": "consultant",
       "section": "Clinical Relevance",
       "detected_as": "imperative",
       "kind": "CLINICAL_RECOMMENDATION",
       "verification": "UNSIGNED",
       "signed_off_by": ""
+    },
+    {
+      "as_written": "Weigh age and pivoting demand first, because the benefit concentrates there.",
+      "tier": "consultant",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Measure slope before treating augmentation as the only available lever.",
+      "tier": "consultant",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Price a second failure into the revision decision rather than into the primary one.",
+      "tier": "consultant",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Accept that the same evidence can be weighed differently without either consultant being wrong.",
+      "tier": "consultant",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Follow registry and subgroup data as it accumulates.",
+      "tier": "consultant",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "WITHDRAWN",
+      "signed_off_by": "",
+      "note": "No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives."
     },
     {
       "as_written": "Do not cite the anatomical dispute as a reason against augmentation.",
@@ -54,8 +109,9 @@
       "section": "Clinical Relevance",
       "detected_as": "imperative",
       "kind": "CLINICAL_RECOMMENDATION",
-      "verification": "UNSIGNED",
-      "signed_off_by": ""
+      "verification": "WITHDRAWN",
+      "signed_off_by": "",
+      "note": "No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives."
     },
     {
       "as_written": "Expect slope correction to continue competing for the same indication.",
@@ -63,8 +119,9 @@
       "section": "Clinical Relevance",
       "detected_as": "imperative",
       "kind": "CLINICAL_RECOMMENDATION",
-      "verification": "UNSIGNED",
-      "signed_off_by": ""
+      "verification": "WITHDRAWN",
+      "signed_off_by": "",
+      "note": "No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives."
     }
   ]
 }

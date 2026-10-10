@@ -22,6 +22,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Read a quoted moment as external unless the paper says otherwise, since that is the convention.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Treat a net internal moment as unable to separate co-contraction from a single strong agonist.",
       "tier": "mrcs",
       "section": "Clinical Relevance",
@@ -67,6 +76,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Compare unlike treatments by the moment change each produces.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Plan osteotomy to a target that changes the moment rather than to an angle alone.",
       "tier": "frcs",
       "section": "Clinical Relevance",
@@ -77,6 +95,15 @@
     },
     {
       "as_written": "Address body mass alongside any mechanical correction, since it scales every moment.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "State that no moment threshold defines the indication, and decide clinically.",
       "tier": "frcs",
       "section": "Clinical Relevance",
       "detected_as": "imperative",

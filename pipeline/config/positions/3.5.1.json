@@ -13,6 +13,15 @@
   ],
   "positions": [
     {
+      "as_written": "Read a contact area figure with its load, flexion angle and method attached, since all three change it.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Treat the lateral compartment as the more meniscus dependent one, on the ground that it has no bony concavity.",
       "tier": "mrcs",
       "section": "Clinical Relevance",
@@ -50,6 +59,24 @@
     },
     {
       "as_written": "Repair rather than resect where the ring can be restored, on area grounds.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Correct alignment alongside any area restoring procedure, since malalignment concentrates load regardless.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "State that contact area cannot be measured clinically when explaining why a procedure's mechanical case rests on cadaveric work.",
       "tier": "frcs",
       "section": "Clinical Relevance",
       "detected_as": "imperative",

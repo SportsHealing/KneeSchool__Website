@@ -31,6 +31,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Read an in vivo stress figure as a model output rather than a measurement.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Treat peak contact stress as the common currency of every mechanical argument in the knee.",
       "tier": "frcs",
       "section": "At the Knee",
@@ -41,6 +50,15 @@
     },
     {
       "as_written": "Expect a cartilage repair of different stiffness to distribute load differently from the original.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "State that no in vivo stress threshold is established when a patient asks how much load is safe.",
       "tier": "frcs",
       "section": "Clinical Relevance",
       "detected_as": "imperative",

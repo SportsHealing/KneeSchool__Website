@@ -22,6 +22,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Read the share as a subtraction from a paired specimen rather than a direct measurement.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Treat extrusion as removing the meniscus from the share without removing tissue.",
       "tier": "mrcs",
       "section": "Clinical Relevance",
@@ -41,6 +50,15 @@
     },
     {
       "as_written": "Repair posterior roots on load path grounds rather than on symptoms alone.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Advise on deep flexion activity by what it loads, in a knee with posterior horn pathology.",
       "tier": "frcs",
       "section": "Clinical Relevance",
       "detected_as": "imperative",

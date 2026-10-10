@@ -31,6 +31,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Confirm the step down on the posterior tibia before accepting a tibial landmark.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Treat a knee with posterior capsular injury as having lost the plane that protects the vessels, and plan from the injured anatomy rather than the textbook anatomy.",
       "tier": "mrcs",
       "section": "Clinical Relevance",

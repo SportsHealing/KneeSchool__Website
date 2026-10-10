@@ -58,6 +58,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Stage the corner before any cruciate reconstruction in a knee with lateral findings, because an unrecognised corner injury is the commonest cause of graft failure.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Identify the peroneal nerve before working in the corner.",
       "tier": "frcs",
       "section": "Clinical Relevance",

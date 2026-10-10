@@ -22,6 +22,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Read landing ligament loading as modelled rather than measured.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Treat landing mechanics as modifiable risk with modest predictive value for an individual, which is the honest position the prevention literature supports.",
       "tier": "frcs",
       "section": "At the Knee",

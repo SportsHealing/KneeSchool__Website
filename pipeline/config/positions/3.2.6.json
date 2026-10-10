@@ -40,6 +40,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Delay the decision in an isolated medial injury where the anatomy says healing is likely, and re-examine rather than operating on the first finding.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Assess alignment before reconstructing chronic medial laxity, since a valgus limb protects a medial reconstruction and a varus one does not.",
       "tier": "frcs",
       "section": "Clinical Relevance",

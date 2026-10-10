@@ -31,6 +31,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Decide whether to augment by asking which share is not being restored.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Assess the secondary restraints before relying on a single graft to carry rotation.",
       "tier": "frcs",
       "section": "Clinical Relevance",
@@ -41,6 +50,15 @@
     },
     {
       "as_written": "Measure slope where the restraint is meeting an excessive load.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Read construct comparisons with the sectioning order limitation in mind.",
       "tier": "frcs",
       "section": "Clinical Relevance",
       "detected_as": "imperative",

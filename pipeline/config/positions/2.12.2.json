@@ -67,6 +67,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Confirm the femoral point radiographically rather than by feel, and 2.12.6 covers the landmarks.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Assess trochlear geometry and tubercle position before reconstructing this ligament, because a thin check cannot correct bone.",
       "tier": "frcs",
       "section": "Clinical Relevance",

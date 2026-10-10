@@ -13,6 +13,15 @@
   ],
   "positions": [
     {
+      "as_written": "State a direction and a flexion angle with any claim about what the ligament does.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Expect a complete tear to change several examination findings, through the secondary roles.",
       "tier": "mrcs",
       "section": "Clinical Relevance",
@@ -31,6 +40,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Read an apportionment figure with its sectioning order in mind.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Treat the four functions as unequally restorable.",
       "tier": "frcs",
       "section": "At the Knee",
@@ -41,6 +59,15 @@
     },
     {
       "as_written": "Address the secondary restraints where they are also injured, rather than relying on the graft.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Read a construct study by which of the four functions it measured.",
       "tier": "frcs",
       "section": "Clinical Relevance",
       "detected_as": "imperative",

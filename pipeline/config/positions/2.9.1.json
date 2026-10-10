@@ -22,6 +22,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Grade by the opening and the endpoint rather than by the pain, because an acute injury is painful whatever its grade.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Expect healing in most isolated injuries.",
       "tier": "mrcs",
       "section": "Clinical Relevance",

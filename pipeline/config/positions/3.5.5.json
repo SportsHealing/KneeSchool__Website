@@ -40,6 +40,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Read extrusion as a functional loss even where the meniscus is continuous.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Treat the contact studies as the mechanical case for preservation and the cohorts as the clinical one, and note that they agree.",
       "tier": "frcs",
       "section": "At the Knee",
@@ -59,6 +68,15 @@
     },
     {
       "as_written": "Repair rather than resect wherever the hoop mechanism can be restored.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Correct alignment alongside preservation or transplantation, or the restored area is overloaded.",
       "tier": "frcs",
       "section": "Clinical Relevance",
       "detected_as": "imperative",

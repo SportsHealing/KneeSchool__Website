@@ -13,6 +13,24 @@
   ],
   "positions": [
     {
+      "as_written": "Grade one is a reduced but present step off, grade two is a flush plateau, and grade three is a plateau posterior to the condyle.",
+      "tier": "mrcs",
+      "section": "At the Knee",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Grade by step off and record the flexion angle and the limb support used.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Use stress radiography where the grade decides the treatment.",
       "tier": "mrcs",
       "section": "Clinical Relevance",
@@ -34,6 +52,15 @@
       "as_written": "Treat the grade as the decision variable and the method of obtaining it as the weak point.",
       "tier": "frcs",
       "section": "At the Knee",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Read a large side to side difference as suggesting a combined injury.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
       "detected_as": "imperative",
       "kind": "CLINICAL_RECOMMENDATION",
       "verification": "UNSIGNED",

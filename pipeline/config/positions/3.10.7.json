@@ -13,6 +13,24 @@
   ],
   "positions": [
     {
+      "as_written": "Compare with the uninjured side rather than against an absolute figure.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Repeat under anaesthetic where the finding will change the operation.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Expect interpretation to be harder when both structures are badly injured.",
       "tier": "mrcs",
       "section": "Clinical Relevance",

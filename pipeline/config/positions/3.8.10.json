@@ -67,7 +67,25 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Set up the position and approach for the technique chosen rather than deciding in theatre.",
+      "tier": "fellowship",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Use the inlay where the tibia is compromised and a tunnel is unattractive.",
+      "tier": "fellowship",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Accept that the choice rests on judgement about the particular tibia.",
       "tier": "fellowship",
       "section": "Clinical Relevance",
       "detected_as": "imperative",

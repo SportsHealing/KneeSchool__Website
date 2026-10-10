@@ -13,6 +13,15 @@
   ],
   "positions": [
     {
+      "as_written": "Set out the components and what each contributes.",
+      "tier": "mrcs",
+      "section": "Structure and Location",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Assess the pivot shift grade rather than anterior translation alone when the anterolateral side is in question, because that is the movement this complex controls.",
       "tier": "mrcs",
       "section": "Clinical Relevance",
@@ -61,6 +70,15 @@
       "as_written": "Treat the complex as the secondary rotational restraint whose role is revealed by cruciate failure.",
       "tier": "frcs",
       "section": "Function",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Grade the pivot shift and record the grade, because it is the one examination finding that reflects this region.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
       "detected_as": "imperative",
       "kind": "CLINICAL_RECOMMENDATION",
       "verification": "UNSIGNED",

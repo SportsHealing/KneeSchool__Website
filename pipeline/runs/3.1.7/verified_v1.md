@@ -121,30 +121,35 @@ could not have measured what the figure claims.
 
 ### Clinical Relevance
 
-The teaching problem is that the field's corrections have not reached the
-teaching. Trainees are still taught figures from the cadaveric era alongside
-in vivo figures that contradict them, usually without either being dated.
+The decision a department faces here is not whether the old figures are wrong.
+It is how much caveat to attach to a number before the caveat becomes the
+lesson.
 
-A department that wants this right can do one cheap thing: require the method
-and the era alongside any biomechanical figure used in teaching. It changes
-what trainees absorb at no cost.
+On one side, dating every biomechanical figure by method and era costs nothing
+and changes what a trainee absorbs. A trainee who knows that inverse dynamics
+and instrumented implants give different numbers for the same activity has
+something more durable than either number.
 
-The second cheap thing is to teach the disagreement itself. A trainee who
-knows that inverse dynamics and instrumented implants give different numbers
-for the same activity has learned something more durable than either number.
+On the other side, a curriculum that qualifies everything teaches that nothing
+is known. Trainees sit examinations that ask for figures, and a candidate who
+answers every question with the history of the measurement fails it.
 
-This section of the site will carry that habit: every figure on every page is
-registered with the sentence it supports and a verification state, because
-none of them has been checked against a source. The register is the mechanism
-and the habit is the point.
+What moves the weight is whether the figure is load bearing. A number that
+decides an operation earns its provenance. A number that sets the scale of a
+problem does not, and dating it spends attention that the first kind needs.
+
+This site sits at one end of that balance on purpose, because its figures are
+unverified rather than merely dated. Every one is registered with the sentence
+it supports and a verification state. That is a position about this build and
+not a recommendation for a teaching programme.
 
 ### Key Learning Points
 
-- The field's corrections have not reached the teaching.
-- Requiring method and era alongside a figure costs nothing and changes what trainees absorb.
-- Teaching the disagreement is more durable than teaching either number.
-- Trainees are taught cadaveric era figures alongside contradicting in vivo ones.
-- Every figure on this site is registered because none has been checked.
+- The decision is how much caveat to attach before the caveat becomes the lesson.
+- Dating a figure by method and era costs nothing and changes what a trainee absorbs.
+- A curriculum that qualifies everything teaches that nothing is known.
+- A figure that decides an operation earns its provenance; one that sets a scale does not.
+- This site registers every figure because none has been checked, which is a position about this build.
 
 ## Explore Further
 

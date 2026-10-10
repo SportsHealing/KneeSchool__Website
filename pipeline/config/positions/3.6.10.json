@@ -22,6 +22,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Read extrusion as a sign of hoop failure and look for the cause.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Expect supine imaging to underestimate it, and consider loaded imaging where it matters.",
       "tier": "mrcs",
       "section": "Clinical Relevance",
@@ -59,6 +68,24 @@
     },
     {
       "as_written": "Measure extrusion before and after meniscal surgery as the available proxy for function.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Read persisting extrusion after root repair as the hoop not having been restored.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Correct alignment, or a restored meniscus will extrude again.",
       "tier": "frcs",
       "section": "Clinical Relevance",
       "detected_as": "imperative",

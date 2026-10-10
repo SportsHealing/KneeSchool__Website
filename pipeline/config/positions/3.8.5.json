@@ -22,6 +22,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Read the double bundle gain as real, measurable and small in an otherwise intact knee.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Treat this bundle as the content of the double bundle question and treat that question as settled in the same unsatisfying way as its anterior counterpart: a cadaveric advantage without a demonstrated clinical one.",
       "tier": "frcs",
       "section": "At the Knee",
@@ -41,6 +50,15 @@
     },
     {
       "as_written": "Treat it as selected rather than default, on the current evidence.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "State that the subgroup with the strongest mechanical case has no trial evidence.",
       "tier": "frcs",
       "section": "Clinical Relevance",
       "detected_as": "imperative",

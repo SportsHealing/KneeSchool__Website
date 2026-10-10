@@ -49,6 +49,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Accept that an isolated injury to this bundle is a diagnosis made on imaging rather than on examination, because the restraint it provides is shared.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Preserve the posterior meniscofemoral ligament where it is intact.",
       "tier": "frcs",
       "section": "Clinical Relevance",

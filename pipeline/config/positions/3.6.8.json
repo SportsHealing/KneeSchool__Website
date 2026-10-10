@@ -31,6 +31,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Read joint position sense measurements with their poor reproducibility in mind.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Treat the sensory function as an argument for preserving horns specifically, which coincides with the load bearing argument for the same tissue.",
       "tier": "frcs",
       "section": "At the Knee",

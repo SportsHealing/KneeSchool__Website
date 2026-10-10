@@ -22,6 +22,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Compare sides rather than using an absolute threshold, since baseline rotation varies between people.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Treat increased external rotation as a localising sign rather than a severity measure.",
       "tier": "frcs",
       "section": "At the Knee",
@@ -32,6 +41,15 @@
     },
     {
       "as_written": "Assess alignment in any knee with a posterolateral finding, before planning a soft tissue procedure.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Read continuity on imaging as insufficient to exclude a corner injury, since tissue heals long.",
       "tier": "frcs",
       "section": "Clinical Relevance",
       "detected_as": "imperative",

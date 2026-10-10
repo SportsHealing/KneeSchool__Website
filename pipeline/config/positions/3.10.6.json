@@ -22,6 +22,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Read a large posterior laxity as suggesting corner involvement.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Examine under anaesthetic, since the findings are subtle and the imaging inconsistent.",
       "tier": "mrcs",
       "section": "Clinical Relevance",
@@ -50,6 +59,15 @@
     },
     {
       "as_written": "Assess the corner under anaesthetic in every cruciate reconstruction.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Correct varus alignment where a corner reconstruction would otherwise be loaded.",
       "tier": "frcs",
       "section": "Clinical Relevance",
       "detected_as": "imperative",

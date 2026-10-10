@@ -22,6 +22,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Read coronal and transverse gait quantities with the measurement error in mind.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Treat gait kinematics as the task most patients judge an operation by, and as a weak discriminator between constructs, since walking demands little of the knee.",
       "tier": "frcs",
       "section": "At the Knee",

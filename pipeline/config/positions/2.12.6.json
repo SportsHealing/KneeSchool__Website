@@ -22,6 +22,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Confirm the femoral point on a true lateral image before fixing anything.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Count the holes in the patella across all operations a patient has had, since each one reduces the bone's strength.",
       "tier": "mrcs",
       "section": "Clinical Relevance",

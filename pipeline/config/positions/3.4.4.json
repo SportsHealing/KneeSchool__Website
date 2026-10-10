@@ -31,6 +31,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Read the shape of a moment arm curve rather than a single published value.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Treat the extensor lever arm as a surgical variable in every operation that touches the extensor mechanism, the joint line or the tubercle.",
       "tier": "frcs",
       "section": "At the Knee",
