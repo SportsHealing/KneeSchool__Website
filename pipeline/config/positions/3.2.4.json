@@ -58,6 +58,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Record both dial angles and the side difference at every assessment, since this is the one rotation with a serial number available.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Avoid treating the 10 degree threshold as a boundary rather than a convention.",
       "tier": "frcs",
       "section": "Clinical Relevance",

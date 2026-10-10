@@ -13,6 +13,15 @@
   ],
   "positions": [
     {
+      "as_written": "Ask for peak rather than average contact stress when reading a comparative study.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Treat a halved contact area as a doubled stress, which is the arithmetic behind the meniscectomy literature.",
       "tier": "mrcs",
       "section": "Clinical Relevance",

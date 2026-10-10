@@ -668,7 +668,10 @@ POSITION_VERBS = (r"Assess|Document|Identify|Protect|Preserve|Avoid|Make|Plan|Us
                   r"Weigh|Balance|Decide|Offer|Reserve|Withhold|Stage|Limit|Grade|Compare|"
                   r"Quantify|Confirm|Accept|State|Price|Defer|Escalate|Monitor|Refer|Advise|"
                   r"Reassure|Correct|Convert|Delay|Abandon|Proceed|Repeat|Request|Aim|Add|"
-                  r"Set|Read|Start|Stop|Review")
+                  r"Set|Read|Start|Stop|Review|"
+                  # Decision 019 added the five patient factors, and eliciting
+                  # them is itself clinical direction.
+                  r"Take|Factor|Elicit|Explore|Counsel|Ask|Involve|Record|Share|Agree")
 # Case insensitive, because after a leading clause the verb is lower case: "In a
 # young patient with instability, prefer the procedure that preserves bone stock"
 # was missed while the pattern required a capital. Anchored at the start of the
@@ -733,6 +736,62 @@ def rule_pos_001(doc, rule, brief):
             out.append(finding(rule["id"], rule["severity"],
                                rule["description"] + ": not in the page register",
                                sent[:120], "", 0))
+    return out
+
+
+def rule_dec_001(doc, rule, brief, template):
+    """Decision 019: a consultant block that frames a clinical decision names the
+    five patient factors.
+
+    Scoped to a block that tells a clinician what to do. A consultant block about
+    a departmental or teaching decision has no patient in it, and 3.1.7 is
+    deliberately out of scope rather than exempted by hand.
+
+    Warn, for POS-001's reason: this is keyword matching and a passing mention
+    satisfies it. The rule surfaces an absent factor; it cannot certify a present
+    one. The factor list and its keywords come from the template so the gate and
+    the editorial standard cannot drift apart.
+    """
+    out = []
+    if "consultant" not in (brief.get("tiers_required") or []):
+        return out
+    cfg = (template or {}).get("decision_factors") or {}
+    factors = cfg.get("factors") or []
+    if not factors:
+        return out
+    text = doc.tier_text("consultant") or ""
+    if not text.strip():
+        return out
+
+    # Heading lines are dropped first. Collapsing the block whole glues the
+    # heading to the sentence after it, and POSITION_OPENER is anchored, so
+    # "## Consultant Perspective ... Weigh the construct" matched nothing. The
+    # real pages hid it: they carry enough prose that a later sentence starts
+    # clean, and only the fixture had a single directive sentence to find.
+    directive = False
+    for block in text.split("\n\n"):
+        if block.strip().startswith("#"):
+            continue
+        flat = re.sub(r"\s+", " ", block.lstrip("- ")).strip()
+        for sent in re.split(r"(?<=[.!?]) ", flat):
+            sent = sent.strip().lstrip("- ")
+            if len(sent.split()) < 6 or POSITION_NOISE.search(sent):
+                continue
+            if POSITION_OPENER.search(sent) or POSITION_MODAL.search(sent):
+                directive = True
+                break
+        if directive:
+            break
+    if not directive:
+        return out
+
+    low = text.lower()
+    for factor in factors:
+        if any(k.lower() in low for k in factor.get("keywords") or []):
+            continue
+        out.append(finding(rule["id"], rule["severity"],
+                           rule["description"] + ": " + factor["name"] + " is not named",
+                           factor["key"], "", 0))
     return out
 
 
@@ -1047,6 +1106,8 @@ def lint(text, brief=None, rules=None, template=None):
             findings += rule_fig_002(doc, rule, brief)
         elif rid == "POS-001":
             findings += rule_pos_001(doc, rule, brief)
+        elif rid == "DEC-001":
+            findings += rule_dec_001(doc, rule, brief, template)
         elif rid == "STRUCT-001":
             findings += rule_struct_001(doc, rule, brief, template)
         elif rule.get("banned_phrases"):

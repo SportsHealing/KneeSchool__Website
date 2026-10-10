@@ -67,7 +67,25 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Record patellar height, since it affects later arthroplasty.",
+      "tier": "fellowship",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Consider bone plugs where a tunnel defect will not hold a soft tissue graft.",
+      "tier": "fellowship",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Counsel that a reharvested tendon is feasible and less predictable.",
       "tier": "fellowship",
       "section": "Clinical Relevance",
       "detected_as": "imperative",

@@ -299,6 +299,19 @@
       ]
     },
     {
+      "id": "DEC-001",
+      "severity": "warn",
+      "description": "A consultant block that frames a clinical decision names the five patient factors",
+      "applies_when": "the brief requires the consultant tier and the consultant block carries clinical direction",
+      "factors_path": "pipeline/config/article_template.json -> decision_factors",
+      "source_of_truth": "docs/decisions/019-the-five-patient-factors.md",
+      "notes": [
+        "Warn, for the same reason POS-001 warns: the detector is keyword matching over the block's text and a passing mention satisfies it. It surfaces an absent factor; it cannot certify a present one.",
+        "Scoped to a block that tells a clinician what to do. A consultant block about a teaching or departmental decision has no patient in it, and 3.1.7 is deliberately out of scope.",
+        "The factor list and its keywords live in the template, not here, so the rule and the editorial standard cannot drift apart."
+      ]
+    },
+    {
       "id": "STRUCT-001",
       "severity": "fail",
       "description": "Required blocks present per brief: tier blocks, key learning points, FAQs where required, reference list",

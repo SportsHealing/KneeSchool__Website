@@ -22,6 +22,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Record dorsiflexion, eversion and first web space sensation separately.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Examine the nerve before any lateral operation and again afterwards.",
       "tier": "mrcs",
       "section": "Clinical Relevance",
@@ -87,6 +96,15 @@
     {
       "as_written": "Avoid long mobilisation when a short one will do, because each centimetre takes segmental supply with it.",
       "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Record the examination as three findings and not one: dorsiflexion, eversion and first web space sensation, before and after.",
+      "tier": "fellowship",
       "section": "Clinical Relevance",
       "detected_as": "imperative",
       "kind": "CLINICAL_RECOMMENDATION",

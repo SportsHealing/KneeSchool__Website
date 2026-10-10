@@ -58,6 +58,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Counsel that revision outcomes are worse than primary.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Plan single or two stage revision from tunnel imaging rather than from preference.",
       "tier": "fellowship",
       "section": "Clinical Relevance",
@@ -68,6 +77,15 @@
     },
     {
       "as_written": "Correct slope in a knee that has failed a conventional revision.",
+      "tier": "fellowship",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Share the uncertainty, since no measurement predicts a compromised construct's result.",
       "tier": "fellowship",
       "section": "Clinical Relevance",
       "detected_as": "imperative",

@@ -283,13 +283,27 @@ is good enough to shape graft choice across a population and stays blunt for the
 person in clinic. The question a department can actually answer is narrower:
 whether its own outcomes match the registry, and whether anyone is checking.
 
+All four turn on the same five things, and a trial population carries none of
+them. The patient's age and physiology, which set healing and tissue quality.
+Their medical comorbidities, because smoking, diabetes and body mass change
+operative risk and graft healing without changing the mechanics. The demands
+they put on the knee, which is occupation and sport rather than age. Their
+psychological state, because fear of reinjury governs what the reconstructed
+knee is actually used for. And their own ideas, concerns and expectations, which
+decide whether the operation that is statistically right is the one this patient
+should have.
+
+Take all five explicitly rather than by impression, and counsel against them.
+A graft choice that is right for a cohort can be wrong for the person in front
+of you on any one of them.
+
 ### Key Learning Points
 
 - Repair offers a native ligament and risks a second operation in a pivoting athlete.
 - Slope correction reduces graft load and adds an osteotomy to an operation already needed.
-- Previous failure moves the slope decision further than slope magnitude does.
 - Return to sport batteries test what looks relevant and are not shown to change re rupture rates.
 - Registry data shapes populations and stays blunt for the individual.
+- Age and physiology, comorbidities, knee demand, psychological state and the patient's own ideas, concerns and expectations move every one of these decisions.
 
 ## Explore Further
 

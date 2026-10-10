@@ -633,7 +633,7 @@ class ConsultantTierIntent(unittest.TestCase):
 
     def test_the_consultant_intent_carries_the_rule(self):
         c = self.template["tier_intent"]["consultant"]
-        self.assertEqual(len(c["required"]), 5)
+        self.assertEqual(len(c["required"]), 6)
         self.assertEqual(len(c["forbidden"]), 3)
         self.assertIn("balance argument", c["objective"])
         self.assertIn("permitted", c)
@@ -642,3 +642,115 @@ class ConsultantTierIntent(unittest.TestCase):
         path = os.path.join(os.path.dirname(ROOT), "docs", "decisions",
                             "018-what-the-consultant-tier-is-for.md")
         self.assertTrue(os.path.exists(path), path)
+
+
+class PatientFactors(unittest.TestCase):
+    """DEC-001, from decision 019. A consultant block that frames a clinical
+    decision names all five patient factors. Warn severity, because keyword
+    matching can be satisfied by a passing mention: the rule catches the
+    omission, not the treatment."""
+
+    FIVE = ("Age and physiology, where healing and tissue quality sit. "
+            "Medical comorbidities, because diabetes and smoking change operative risk. "
+            "The demands the patient puts on the knee, which is occupation and sport. "
+            "Psychological state, because fear of reinjury governs what the knee is used for. "
+            "The patient's own ideas, concerns and expectations.")
+
+    def brief(self, tiers=("frcs", "consultant")):
+        return {"page_id": "9.9.9", "title": "Test Page", "page_type": "biomechanics",
+                "tiers_required": list(tiers),
+                "governance": {"figures_allowed": True},
+                "output_requirements": {"target_word_count": {"min": 1, "max": 9000}}}
+
+    def page(self, consultant_body):
+        return ("# Test Page\n\nA summary.\n\n"
+                "## FRCS Level\n\n### The Principle\n\nSomething mechanical happens here.\n\n"
+                "### Key Learning Points\n\n- One.\n- Two.\n- Three.\n\n"
+                "## Consultant Perspective\n\n### Clinical Relevance\n\n"
+                + consultant_body + "\n\n"
+                "### Key Learning Points\n\n- One.\n- Two.\n- Three.\n\n"
+                "## Explore Further\n\n- [[2.1.1 | Gross Anatomy]]\n\n"
+                "## References\n\nNothing is cited.\n")
+
+    def missing(self, consultant_body, tiers=("frcs", "consultant")):
+        report = linter.lint(self.page(consultant_body), self.brief(tiers))
+        return sorted(f["matched_text"] for f in report["findings"]
+                      if f["rule_id"] == "DEC-001")
+
+    def test_a_directive_block_naming_none_of_them_warns_five_times(self):
+        out = self.missing("Weigh the construct against the osteotomy in every revision knee.")
+        self.assertEqual(len(out), 5)
+
+    def test_the_findings_warn_rather_than_fail(self):
+        report = linter.lint(
+            self.page("Weigh the construct against the osteotomy in every revision knee."),
+            self.brief())
+        sev = {f["severity"] for f in report["findings"] if f["rule_id"] == "DEC-001"}
+        self.assertEqual(sev, {"warn"})
+        self.assertTrue(report["pass"])
+
+    def test_a_block_naming_all_five_is_clean(self):
+        body = "Weigh the construct against the osteotomy. " + self.FIVE
+        self.assertEqual(self.missing(body), [])
+
+    def test_one_absent_factor_is_named(self):
+        body = ("Weigh the construct against the osteotomy. "
+                "Age and physiology, where healing sits. "
+                "The demands the patient puts on the knee, which is occupation and sport. "
+                "Psychological state, because fear of reinjury governs use. "
+                "The patient's own ideas, concerns and expectations.")
+        self.assertEqual(self.missing(body), ["comorbidities"])
+
+    def test_a_block_with_no_clinical_direction_is_out_of_scope(self):
+        # 3.1.7's consultant block weighs a teaching decision. There is no patient
+        # in it, and the rule leaves it alone without an exemption list.
+        body = ("The decision a department faces is how much caveat to attach to a number "
+                "before the caveat becomes the lesson. What moves the weight is whether the "
+                "figure is load bearing.")
+        self.assertEqual(self.missing(body), [])
+
+    def test_a_page_without_a_consultant_tier_is_out_of_scope(self):
+        body = "Weigh the construct against the osteotomy in every revision knee."
+        self.assertEqual(self.missing(body, tiers=("frcs", "fellowship")), [])
+
+    def test_the_factors_come_from_the_template(self):
+        with open(os.path.join(ROOT, "config", "article_template.json")) as fh:
+            cfg = json.load(fh)["decision_factors"]
+        keys = [f["key"] for f in cfg["factors"]]
+        self.assertEqual(keys, ["age_and_physiology", "comorbidities", "knee_demand",
+                                "psychological_state", "ideas_concerns_expectations"])
+        for factor in cfg["factors"]:
+            self.assertTrue(factor["keywords"], factor["key"])
+
+    def test_consultation_verbs_are_clinical_direction(self):
+        for sentence in [
+                "Take all five explicitly rather than by impression, and counsel against them.",
+                "Counsel honestly about what the operation will and will not deliver.",
+                "Elicit the patient's expectations before offering the augmentation.",
+                "Record the demands the patient puts on the knee before choosing.",
+        ]:
+            self.assertTrue(linter.POSITION_OPENER.search(sentence), sentence)
+
+
+class EveryConsultantBlockOnTheSite(unittest.TestCase):
+    """Decisions 018 and 019 against the real pages rather than fixtures. There
+    are three consultant blocks on the site and all three are checked."""
+
+    def test_no_consultant_block_is_missing_a_patient_factor(self):
+        checked = 0
+        for page_id in sorted(os.listdir(os.path.join(ROOT, "runs"))):
+            brief_path = os.path.join(ROOT, "config", "briefs", "%s.json" % page_id)
+            page_path = os.path.join(ROOT, "runs", page_id, "styled_v1.md")
+            if not (os.path.exists(brief_path) and os.path.exists(page_path)):
+                continue
+            with open(brief_path) as fh:
+                brief = json.load(fh)
+            if "consultant" not in (brief.get("tiers_required") or []):
+                continue
+            with open(page_path) as fh:
+                report = linter.lint(fh.read(), brief)
+            absent = [f["matched_text"] for f in report["findings"]
+                      if f["rule_id"] == "DEC-001"]
+            self.assertEqual(absent, [], "%s: %s" % (page_id, absent))
+            checked += 1
+        self.assertTrue(checked, "no consultant blocks found")

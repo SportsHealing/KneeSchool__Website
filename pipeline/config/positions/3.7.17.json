@@ -58,6 +58,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Counsel younger patients on the diameter association with failure.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Treat a regenerated tendon as unreliable graft material.",
       "tier": "fellowship",
       "section": "Clinical Relevance",

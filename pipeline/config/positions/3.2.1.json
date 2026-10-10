@@ -67,6 +67,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Record laxity with its flexion angle and its comparison side, so a later assessment can be read against it.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Avoid describing a knee as stable on the basis of the degree of freedom that happens to have an instrument.",
       "tier": "frcs",
       "section": "Clinical Relevance",

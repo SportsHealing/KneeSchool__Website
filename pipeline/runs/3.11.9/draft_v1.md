@@ -154,7 +154,24 @@ to augment weighs nothing, because the mechanical case never rested on it.
 
 ### What Changes It
 
-Age and pivoting demand, which is where the measured benefit concentrates.
+Age and physiology. The measured benefit concentrates in the young, and tissue
+quality and skeletal maturity decide what a construct can be fixed to.
+
+Medical comorbidities. An added construct adds fixation and operative time to
+a patient whose healing may not carry it, and smoking and diabetes move the
+cost side without touching the benefit side.
+
+The demands the patient puts on the knee, which is a question about occupation
+and sport rather than about age.
+
+Psychological state. Fear of reinjury governs whether the restraint is ever
+used. A knee the patient will not trust does not need the augmentation that a
+knee returning to cutting sport does.
+
+The patient's own ideas, concerns and expectations. A reinjury rate reduced
+from one figure to another is a conversation rather than a calculation, and
+how the patient weighs a second operation against a second rupture belongs
+inside the balance.
 
 Bony morphology, particularly slope, which decides whether a soft tissue
 addition is the right lever at all. 3.13 covers alignment.
@@ -190,6 +207,10 @@ Measure slope before treating augmentation as the only available lever.
 Price a second failure into the revision decision rather than into the primary
 one.
 
+Take age and physiology, comorbidities, knee demand, psychological state and
+the patient's own ideas, concerns and expectations into the decision
+explicitly, because a trial population carries none of them.
+
 Accept that the same evidence can be weighed differently without either
 consultant being wrong.
 
@@ -198,7 +219,7 @@ consultant being wrong.
 - The decision is how much to add, not which anatomical account is right.
 - Benefit sits with reinjury reduction in high demand groups; cost sits with added fixation and a poorly measured harm side.
 - Slope decides whether a soft tissue addition is the right lever at all.
-- Subgroup analyses are underpowered for the groups that most need them.
+- Age and physiology, comorbidities, knee demand, psychological state and the patient's own ideas, concerns and expectations all move the weight, and a trial population carries none of them.
 - The same evidence can be weighed differently without either consultant being wrong.
 
 ## Explore Further

@@ -31,6 +31,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Ask about descending tasks specifically, since they demand most.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Treat the adaptation as the reason non operative management succeeds here more often than anteriorly, and as the reason the natural history is still unfavourable in the long term.",
       "tier": "frcs",
       "section": "At the Knee",
@@ -50,6 +59,15 @@
     },
     {
       "as_written": "Address alignment in a varus limb with posterolateral laxity.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Counsel that reconstruction improves laxity without a clear effect on the natural history.",
       "tier": "frcs",
       "section": "Clinical Relevance",
       "detected_as": "imperative",

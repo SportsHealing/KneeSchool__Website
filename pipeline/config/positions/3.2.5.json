@@ -58,6 +58,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Record thrust explicitly, because it predicts the mechanical environment a construct will live in.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Avoid reconstructing laxity in a limb whose alignment caused it.",
       "tier": "frcs",
       "section": "Clinical Relevance",

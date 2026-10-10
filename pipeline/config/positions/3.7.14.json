@@ -13,6 +13,15 @@
   ],
   "positions": [
     {
+      "as_written": "Take the mechanism from the history, since it is usually diagnostic.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Expect the associated injuries the mechanism predicts and look for them.",
       "tier": "mrcs",
       "section": "Clinical Relevance",

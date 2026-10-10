@@ -58,6 +58,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Counsel that stability and normality are different outcomes, and name which the operation restores.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Address the secondary restraints where they are also injured, rather than relying on the graft.",
       "tier": "frcs",
       "section": "Clinical Relevance",

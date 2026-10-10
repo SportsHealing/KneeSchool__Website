@@ -13,6 +13,24 @@
   ],
   "positions": [
     {
+      "as_written": "Ask about stairs separately in each direction, because the two directions test different things.",
+      "tier": "medical_student",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Record the direction, the step height and whether a handrail was used when documenting stair ability.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Expect patellofemoral pathology to present on stairs, given the simultaneous rise in angle and quadriceps force.",
       "tier": "mrcs",
       "section": "Clinical Relevance",

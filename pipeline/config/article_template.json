@@ -313,14 +313,121 @@
         "Set out what sits on each side of it, benefit and cost, in the reader's own terms.",
         "Say what moves the weight, and distinguish the variables that look decisive from the ones that are.",
         "Say what the measurements can and cannot settle, including which side is measured worse.",
-        "Leave the reader able to decide, and able to say why a colleague decided otherwise."
+        "Leave the reader able to decide, and able to say why a colleague decided otherwise.",
+        "Say which patient factors move the weight, and name all five: age and physiology, medical comorbidities, demands on the knee, psychological state, and the patient's own ideas, concerns and expectations. See decision_factors."
       ],
       "forbidden": [
         "Declaring the question settled when it is not.",
         "Advocating one position as correct where the evidence does not reach it.",
         "A survey of disputes with no decision attached, which is the fellowship tier's job."
       ],
-      "permitted": "Naming a move as indefensible, where the objection does not bear on the decision at all. That is still weighing, not advocacy."
+      "permitted": "Naming a move as indefensible, where the objection does not bear on the decision at all. That is still weighing, not advocacy.",
+      "patient_factors": "Required where the block frames a clinical decision. A consultant block about a teaching or departmental decision has no patient in it and DEC-001 does not apply to it."
     }
+  },
+  "decision_factors": {
+    "source": "Client instruction, 10 October 2026: decision-making should always take into account the patient's age and physiology, medical comorbidities, demands on their knee, their psychological state, and their own ideas, concerns and expectations. Recorded as decision 019.",
+    "applies_to": "Any block that frames a clinical decision. Enforced by DEC-001 on a consultant block that carries clinical direction. A consultant block about a departmental or teaching decision has no patient in it and is out of scope.",
+    "factors": [
+      {
+        "key": "age_and_physiology",
+        "name": "Age and physiology",
+        "means": "Chronological age, skeletal maturity, tissue and bone quality, healing capacity.",
+        "keywords": [
+          "age",
+          "aged",
+          "older",
+          "younger",
+          "adolescen",
+          "skeletal matur",
+          "physiolog",
+          "growth plate",
+          "bone quality",
+          "tissue quality",
+          "healing"
+        ]
+      },
+      {
+        "key": "comorbidities",
+        "name": "Medical comorbidities",
+        "means": "What the patient's medical state does to operative risk, healing and rehabilitation.",
+        "keywords": [
+          "comorbid",
+          "co-morbid",
+          "diabet",
+          "smoking",
+          "smoker",
+          "obes",
+          "body mass",
+          "inflammatory",
+          "anticoagul",
+          "anaesthetic risk",
+          "medical fitness",
+          "cardiac",
+          "respiratory",
+          "renal",
+          "immunosupress",
+          "immunosuppress"
+        ]
+      },
+      {
+        "key": "knee_demand",
+        "name": "Demands on the knee",
+        "means": "Occupation, sport, level and the loads the patient will actually impose.",
+        "keywords": [
+          "demand",
+          "occupation",
+          "manual work",
+          "sport",
+          "pivoting",
+          "cutting",
+          "activity level",
+          "kneeling",
+          "returning to"
+        ]
+      },
+      {
+        "key": "psychological_state",
+        "name": "Psychological state",
+        "means": "Fear of reinjury, motivation, confidence, mental health and what the patient will do with the result.",
+        "keywords": [
+          "psycholog",
+          "kinesiophobia",
+          "fear of reinjury",
+          "fear of re-injury",
+          "fear of",
+          "motivation",
+          "motivated",
+          "confidence",
+          "mental health",
+          "anxiet",
+          "depress",
+          "resilience",
+          "trust the knee",
+          "never trusted"
+        ]
+      },
+      {
+        "key": "ideas_concerns_expectations",
+        "name": "Ideas, concerns and expectations",
+        "means": "What the patient believes is wrong, what they are afraid of, and what they expect the operation to deliver.",
+        "keywords": [
+          "expectation",
+          "expects",
+          "concern",
+          "what the patient wants",
+          "what matters to",
+          "priorit",
+          "the patient's own",
+          "ideas, concerns",
+          "counsel",
+          "shared decision",
+          "informed",
+          "what they are afraid of",
+          "fears"
+        ]
+      }
+    ],
+    "detector_note": "Keyword matching, case insensitive, over the tier block's text. A heuristic like POS-001's: it can be satisfied by a passing mention, so the gate surfaces an absent factor rather than certifying a present one. Severity warn for that reason."
   }
 }

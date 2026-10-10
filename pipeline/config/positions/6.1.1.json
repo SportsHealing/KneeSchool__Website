@@ -40,7 +40,25 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Counsel the patient before the operation rather than after it.",
+      "tier": "fellowship",
+      "section": "Complications and Prognosis",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Repair offers a native ligament with its innervation and no graft harvest.",
+      "tier": "consultant",
+      "section": "Controversies and Evidence",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Take all five explicitly rather than by impression, and counsel against them.",
       "tier": "consultant",
       "section": "Controversies and Evidence",
       "detected_as": "imperative",
@@ -65,7 +83,7 @@
       "kind": "CLINICAL_RECOMMENDATION",
       "verification": "WITHDRAWN",
       "signed_off_by": "",
-      "note": "No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives."
+      "note": "No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives."
     },
     {
       "as_written": "Repair in proximal avulsion is promising and unproven over the medium term.",
@@ -75,7 +93,7 @@
       "kind": "CLINICAL_RECOMMENDATION",
       "verification": "WITHDRAWN",
       "signed_off_by": "",
-      "note": "No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives."
+      "note": "No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives."
     }
   ]
 }

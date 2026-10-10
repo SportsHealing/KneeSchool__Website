@@ -67,6 +67,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Counsel on lower healing rates for this pattern, with the mechanical reason.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Correct alignment where the construct would otherwise carry an excessive tension.",
       "tier": "frcs",
       "section": "Clinical Relevance",

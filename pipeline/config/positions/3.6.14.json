@@ -58,6 +58,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Counsel on symptom relief separately from cartilage protection.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Address alignment and instability first or simultaneously rather than afterwards.",
       "tier": "fellowship",
       "section": "Clinical Relevance",

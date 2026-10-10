@@ -49,6 +49,15 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Counsel that its long term comparative evidence is still accumulating.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Expect harvest quality to depend on familiarity more than for a simpler harvest.",
       "tier": "frcs",
       "section": "Clinical Relevance",

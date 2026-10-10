@@ -13,6 +13,15 @@
   ],
   "positions": [
     {
+      "as_written": "Record two numbers and name the deficit, because an arc alone conceals fixed flexion.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Expect effusion to limit flexion early, and reassess range once it has settled rather than recording a limited range as fixed.",
       "tier": "mrcs",
       "section": "Clinical Relevance",
@@ -32,6 +41,15 @@
     },
     {
       "as_written": "Measure extension deliberately rather than as part of a sweep, since small deficits are both the hardest to measure and the most disabling.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
+      "as_written": "Record passive and active range separately when assessing a stiff knee, because the difference localises the cause.",
       "tier": "frcs",
       "section": "Clinical Relevance",
       "detected_as": "imperative",

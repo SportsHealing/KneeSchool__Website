@@ -13,6 +13,15 @@
   ],
   "positions": [
     {
+      "as_written": "Record the hip position when measuring open chain range or strength, since the two joint muscles change the answer.",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
+    },
+    {
       "as_written": "Expect guarding to reduce the measured laxity, and plan around the larger figure from examination under anaesthetic.",
       "tier": "mrcs",
       "section": "Clinical Relevance",
