@@ -240,17 +240,16 @@ leaving them is a common route to a second failure.
 Revision outcomes sit below primary outcomes for return to sport and for patient
 reported scores. Counsel the patient before the operation rather than after it.
 
-### Controversies and Evidence
-
-Slope reducing anterior closing wedge osteotomy has a place in the revision knee
-with a markedly increased slope. The threshold that justifies the additional
-operation is not agreed.
+Where slope is the factor being addressed, the operation that reduces it is an
+anterior closing wedge osteotomy. Whether the additional operation is justified
+is weighed in the consultant block rather than here.
 
 ### Key Learning Points
 
 - Establish the mode of failure before planning a revision.
 - Tunnel position and diameter decide single stage against staged revision.
 - Address meniscal deficiency, alignment and slope, or expect a second failure.
+- An anterior closing wedge osteotomy is the operation that reduces slope.
 - Revision outcomes are poorer than primary outcomes, and patients should hear that first.
 
 ## Consultant Perspective
@@ -267,8 +266,9 @@ known medium term result. Tissue quality and age move the weight. The early
 series are not long enough to move it for anybody.
 
 The second is when an increased posterior tibial slope justifies correcting it.
-Correction reduces the load the graft carries. It adds an osteotomy, its recovery
-and its complications to an operation the patient already needs. Previous failure
+Correction reduces the load the graft carries. An anterior closing wedge
+osteotomy adds its own recovery and its own complications to an operation the
+patient already needs. Previous failure
 moves the weight further than slope magnitude does, which is the part most often
 reversed.
 

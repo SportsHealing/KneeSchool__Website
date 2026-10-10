@@ -150,7 +150,11 @@ class StructureRule(unittest.TestCase):
                "**Q.** C?\nYes.\n\nSeek advice if it gives way.\n\n"
                "## Explore Further\n\n- [[6.1.2 | PCL]]\n")
         found = " ".join(f["description"] for f in linter.lint(doc, brief)["findings"])
-        self.assertIn("restricts to frcs and above", found)
+        # Decision 020 turned the floor into an allow list, so the message names
+        # the tiers rather than a floor. The rule still fires on the patient tier,
+        # which is what this test is for.
+        self.assertIn("carries 'controversies_and_evidence'", found)
+        self.assertIn("restricted to frcs and consultant", found)
 
 
 class TrackerSeed(unittest.TestCase):

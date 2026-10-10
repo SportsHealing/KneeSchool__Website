@@ -112,7 +112,7 @@
         "complications_and_prognosis",
         "controversies_and_evidence"
       ],
-      "body_sections_rule": "ordered_subset_per_tier; controversies_and_evidence frcs_and_above_only",
+      "body_sections_rule": "ordered_subset_per_tier; per section tier limits are in section_tier_rules, which restricts controversies_and_evidence to frcs and consultant. See decision 020.",
       "word_count": {
         "min": 1200,
         "max": 2500
@@ -429,5 +429,20 @@
       }
     ],
     "detector_note": "Keyword matching, case insensitive, over the tier block's text. A heuristic like POS-001's: it can be satisfied by a passing mention, so the gate surfaces an absent factor rather than certifying a present one. Severity warn for that reason."
+  },
+  "section_tier_rules": {
+    "source": "The handbook restricts Controversies and Evidence to FRCS and above. The client narrowed it on 10 October 2026 after reading 6.1.1, where FRCS, fellowship and consultant each carried a controversies section and the three overlapped. Recorded as decision 020.",
+    "form": "Either 'tiers', an explicit allow list, or 'from', a floor that the named tier and everything above it satisfies.",
+    "controversies_and_evidence": {
+      "tiers": [
+        "frcs",
+        "consultant"
+      ],
+      "reason": "FRCS frames a controversy as evidence appraisal, which is what the examination asks for. The consultant tier frames it as a decision, under decision 018. Fellowship is advanced practice, so its controversies belong inside its management and complications sections where the operation is, not in a survey that repeats the tier below and pre-empts the tier above."
+    },
+    "variations_and_controversies": {
+      "from": "fellowship",
+      "reason": "Unchanged from the handbook."
+    }
   }
 }

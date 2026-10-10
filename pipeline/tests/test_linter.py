@@ -754,3 +754,41 @@ class EveryConsultantBlockOnTheSite(unittest.TestCase):
             self.assertEqual(absent, [], "%s: %s" % (page_id, absent))
             checked += 1
         self.assertTrue(checked, "no consultant blocks found")
+
+
+class SectionTierRules(unittest.TestCase):
+    """Decision 020. Which tiers may carry a body section now comes from the
+    template, as either an explicit allow list or a floor. It was a dict
+    hardcoded in linter.py holding only floors, and a floor cannot express
+    'FRCS and consultant but not fellowship'."""
+
+    def setUp(self):
+        with open(os.path.join(ROOT, "config", "article_template.json")) as fh:
+            self.template = json.load(fh)
+        self.order = self.template["tier_order"]
+
+    def allowed(self, slug):
+        return linter.section_tiers_allowed(slug, self.template, self.order)
+
+    def test_controversies_skip_fellowship(self):
+        self.assertEqual(self.allowed("controversies_and_evidence"),
+                         {"frcs", "consultant"})
+
+    def test_a_floor_still_expands_upwards(self):
+        self.assertEqual(self.allowed("variations_and_controversies"),
+                         {"fellowship", "consultant"})
+
+    def test_an_unlisted_section_has_no_limit(self):
+        self.assertIsNone(self.allowed("management_overview"))
+
+    def test_the_fallback_holds_without_the_template_block(self):
+        # If the template ever loses section_tier_rules the gate must not go
+        # quiet. The fallback is the handbook's original floor.
+        bare = {"tier_order": self.order}
+        self.assertEqual(
+            linter.section_tiers_allowed("controversies_and_evidence", bare, self.order),
+            {"frcs", "fellowship", "consultant"})
+
+    def test_the_condition_page_rule_points_at_the_config(self):
+        rule = self.template["page_types"]["condition"]["body_sections_rule"]
+        self.assertIn("section_tier_rules", rule)

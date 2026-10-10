@@ -54,10 +54,35 @@ SECTION_ALIASES = {
 }
 
 # Sections the handbook restricts to the deeper tiers.
+# Fallback only. The live rules are in article_template.json under
+# section_tier_rules, so an editorial decision changes one file rather than this
+# one. Decision 020 narrowed controversies_and_evidence from a floor at FRCS to
+# an explicit pair, FRCS and consultant, which a floor cannot express.
 SECTION_TIER_FLOOR = {
     "controversies_and_evidence": "frcs",
     "variations_and_controversies": "fellowship",
 }
+
+
+def section_tiers_allowed(slug, template, tier_order):
+    """Which tiers may carry a body section, as a set, or None for no limit.
+
+    Reads article_template.json's section_tier_rules first, which takes either an
+    explicit 'tiers' allow list or a 'from' floor. Falls back to
+    SECTION_TIER_FLOOR so the gate still holds if the template loses the block.
+    """
+    rules = (template or {}).get("section_tier_rules") or {}
+    spec = rules.get(slug)
+    if isinstance(spec, dict):
+        if spec.get("tiers"):
+            return set(spec["tiers"])
+        floor = spec.get("from")
+        if floor and floor in tier_order:
+            return set(tier_order[tier_order.index(floor):])
+    floor = SECTION_TIER_FLOOR.get(slug)
+    if floor and floor in tier_order:
+        return set(tier_order[tier_order.index(floor):])
+    return None
 KLP_HEADINGS = ["key learning points", "key learning point"]
 FAQ_HEADINGS = ["frequently asked questions", "faqs", "faq", "common questions"]
 
@@ -910,10 +935,11 @@ def rule_struct_001(doc, rule, brief, template):
                 fail("tier '%s' body sections are out of the order the %s template fixes"
                      % (tier, template_name), tier)
             for slug in body:
-                floor = SECTION_TIER_FLOOR.get(slug)
-                if floor and rank.get(tier, 0) < rank.get(floor, 0):
-                    fail("tier '%s' carries '%s', which the handbook restricts to %s and "
-                         "above" % (tier, slug, floor), tier)
+                allowed = section_tiers_allowed(slug, template, tier_order)
+                if allowed is not None and tier not in allowed:
+                    fail("tier '%s' carries '%s', which is restricted to %s"
+                         % (tier, slug,
+                            " and ".join(t for t in tier_order if t in allowed)), tier)
 
         # tier closers
         closer = closers.get(tier) or {}

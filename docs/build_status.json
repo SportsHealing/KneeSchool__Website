@@ -416,6 +416,15 @@
           "blocker": "Client instruction, 10 October 2026, given straight after decision 018: decision-making should always take into account the patient's age and physiology, medical comorbidities, demands on their knee, their psychological state, and their own ideas, concerns and expectations. Decision 018 said the consultant tier is a balance argument. This says what goes on the scale.",
           "needed": "Nothing outstanding. The five factors and their keywords are in article_template.json, the new gate DEC-001 reads them from there, and 3.11.9 and 6.1.1 now carry all five. 3.1.7 is correctly out of scope because its consultant block weighs a teaching decision with no patient in it. Open: whether the five factors should reach the FRCS and fellowship blocks, which also frame choices.",
           "pages": "2 pages extended, 1 new lint rule, 10 tests"
+        },
+        {
+          "ref": "D-020",
+          "title": "Controversies skip the fellowship tier",
+          "area": "Editorial",
+          "state": "Applied",
+          "blocker": "6.1.1 carried a Controversies and Evidence section at FRCS, fellowship and consultant, and the three repeated each other rather than pitching the same material three ways. The client cut fellowship on 10 October 2026. FRCS appraises the evidence, which is what the examination asks for, and the consultant block weighs the decision under decision 018. Fellowship is advanced practice, so its controversies belong inside its management and complications sections where the operation is.",
+          "needed": "Nothing. Section tier limits moved from a hardcoded dict in linter.py into article_template.json under section_tier_rules, which takes an explicit allow list as well as a floor, because a floor cannot express 'FRCS and consultant but not fellowship'. STRUCT-001 reads it, so the limit is checked rather than described: the condition template said frcs_and_above_only in prose and nothing read that string. The cut paragraph's one substantive detail, the name of the operation, moved into the fellowship complications section rather than going.",
+          "pages": "1 page edited, 1 template changed, 1 linter dict demoted to a fallback, 5 tests. Applies to the 100 or so Section 6 condition pages not yet written."
         }
       ]
     },
