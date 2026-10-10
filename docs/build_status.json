@@ -21,7 +21,7 @@
           "area": "Content pipeline",
           "state": "Mechanism built, nothing signed",
           "blocker": "The client confirmed on 10 October 2026 that consultants are lined up, so the people exist. The mechanism existed only as prose packs in docs/review/ with no way for an answer to come back. tools/review_pack.py now generates one pack per chapter from the work and reads a filled pack back into the registers, so the route exists. What is missing is a reviewer's time.",
-          "needed": "A consultant to work through a chapter. 1,295 clinical recommendations across 190 pages and 336 measurements across 113 are outstanding, none signed. python3 tools/review_pack.py --status prints the breakdown by chapter; the largest is 3.7 with 142 and the median is 26.",
+          "needed": "A consultant to work through a chapter. 1,388 clinical recommendations across 202 pages and 348 measurements across 119 are outstanding, none signed. python3 tools/review_pack.py --status prints the breakdown by chapter; the largest is 3.7 with 152 and the median is 29.",
           "pages": "Every page on the site is an unreviewed editorial draft"
         },
         {
@@ -51,21 +51,21 @@
         },
         {
           "ref": "EV-6",
-          "title": "336 measurements on the site are unchecked",
+          "title": "348 measurements on the site are unchecked",
           "area": "Content",
           "state": "Live and flagged",
           "blocker": "They are written from memory because no paper could be retrieved. Each page's references note says so and each figure is registered.",
-          "needed": "Someone with source access to work the register: 336 figures across 113 pages, all UNVERIFIED_FROM_MEMORY. tools/figures.py --report --unchecked is the list.",
-          "pages": "113 pages carry at least one measurement"
+          "needed": "Someone with source access to work the register: 348 figures across 119 pages, all UNVERIFIED_FROM_MEMORY. tools/figures.py --report --unchecked is the list.",
+          "pages": "119 pages carry at least one measurement"
         },
         {
           "ref": "EV-7",
-          "title": "1,295 clinical recommendations on the site are unsigned",
+          "title": "1,388 clinical recommendations on the site are unsigned",
           "area": "Content",
           "state": "Live and registered, and the count rose on 10 October 2026",
-          "blocker": "They are written by a process with no clinical qualification, on pages that state they have not been reviewed. The client has chosen to keep them, and decision 007 makes the set finite and listed. The total rose from 976 to 1,295 on 10 October 2026, not because advice was added but because the detector was found to be missing it. POS-001 read clinical direction off a list of imperative openers built from directive prose, and the directions opening with a weighing or a consultation verb had never reached the register. Two extensions of the verb list, decisions 018 and 019, added 319 between them.",
-          "needed": "A consultant to work the register: 1,295 positions across 190 pages, all UNSIGNED. tools/positions.py --report --unsigned is the list.",
-          "pages": "190 pages carry at least one recommendation"
+          "blocker": "They are written by a process with no clinical qualification, on pages that state they have not been reviewed. The client has chosen to keep them, and decision 007 makes the set finite and listed. The total rose from 976 to 1,295 on 10 October 2026, and chapter 3.12 added 93 more, not because advice was added but because the detector was found to be missing it. POS-001 read clinical direction off a list of imperative openers built from directive prose, and the directions opening with a weighing or a consultation verb had never reached the register. Two extensions of the verb list, decisions 018 and 019, added 319 between them.",
+          "needed": "A consultant to work the register: 1,388 positions across 202 pages, all UNSIGNED. tools/positions.py --report --unsigned is the list.",
+          "pages": "202 pages carry at least one recommendation"
         },
         {
           "ref": "EV-8",
@@ -165,6 +165,15 @@
           "blocker": "POS-001 detects clinical direction from a list of imperative openers. Decision 018 extended it for weighing verbs and decision 019 extended it again for consultation verbs, both times because prose in a register the list had never seen went undetected. A list that needs extending whenever the writing changes register is keeping pace rather than leading, and the next new register will find the same gap.",
           "needed": "No replacement is proposed, because the obvious alternatives are worse. A general imperative parser over-collects far more than the list does, and a model-based detector is not deterministic and cannot sit in a gate that has to give the same answer twice. Flagged so the next person does not assume it went unnoticed.",
           "pages": "Affects every professional page, 190 of them"
+        },
+        {
+          "ref": "EV-19",
+          "title": "Two QA rules could contradict each other, and chapter 3.12 made them",
+          "area": "Content pipeline",
+          "state": "Fixed, and tested",
+          "blocker": "Chapter 14 requires a unique SEO title per page, so render_site.py appends a colliding page's chapter name to its title tag. Chapter 13 bounds the title at 60 characters. The suffix had no length budget, so the fix for one rule could break the other, and it did as soon as a long chapter name collided: 'Effects of Malalignment, Tibiofemoral Contact Mechanics | KneeSchool' is 68 characters. Three existing pages in chapter 3.5 failed PUB-001 the moment chapter 3.12 was rendered, having passed for days.",
+          "needed": "Nothing. The suffix now has a budget read from site.json and trailing words are dropped from the chapter name until it fits, which keeps the distinguishing word and loses the generic one. A chapter name whose first word alone will not fit is left whole, so the finding is reported rather than the renderer shipping a mangled title. Seven tests, two of which check every published page's title for length and for uniqueness rather than checking the helper.",
+          "pages": "6 pages carry a disambiguated title; every published page is now checked"
         }
       ]
     },
@@ -572,6 +581,15 @@
           "blocker": "Anterolateral Complex Biomechanics, the chapter where the anatomy is still argued over. Three pages on the structures, two on what they control, one on the Segond lesion as evidence of an attachment, one on the tenodesis, one on the combined reconstruction and one on the controversies. Four pages carry a fellowship tier and 3.11.9 is the first page in Section 3 to carry a consultant tier.",
           "needed": "Consultant review by an ACL surgeon who uses lateral augmentation. The pages that carry the most weight are 3.11.3, which separates the naming question from the functional one, 3.11.7, where the clinical evidence is strongest and the anatomical rationale weakest, and 3.11.9, which sets out two defensible consultant positions rather than one answer. The indication threshold for augmentation is the single statement most likely to be contested.",
           "pages": "9 published pages, 10,546 body words as the style gate counts them"
+        },
+        {
+          "ref": "W-17",
+          "title": "Section 3 Biomechanics Academy, chapter 3.12",
+          "area": "Content",
+          "state": "All 12 pages written, style gate passed, awaiting review",
+          "blocker": "Patellofemoral Biomechanics. The organising idea is that the patella is a sesamoid held in a groove by three things, bone shape, soft tissue and the line of pull, and almost every clinical problem here is one of the three failing. 3.12.6 exists to say why the Q angle, the historical attempt to reduce all three to one number, predicts poorly. Chapter 3.5 is the tibiofemoral equivalent and already owns Contact Areas, Contact Pressures and Effects of Malalignment, so this chapter's three namesakes each say which joint they are about in the first line and link the other. Twelve pages, three tiers each, no fellowship or consultant tier.",
+          "needed": "Consultant review by a surgeon who does patellofemoral work. The statements carrying most weight are 3.12.9's, that patellofemoral pain has mechanical contributors and is not a mechanical diagnosis, and 3.12.11's, that femoral version is under measured and no soft tissue or tubercle procedure addresses it. 3.12.8's four factor account and the claim that two mild factors are better addressed than one severe one is the other statement likely to be contested.",
+          "pages": "12 published pages, 16,455 body words as the style gate counts them"
         }
       ]
     }

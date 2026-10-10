@@ -648,5 +648,92 @@ class RenderTargetCollisions(unittest.TestCase):
                 fh.write(original)
 
 
+class SeoTitleBudget(unittest.TestCase):
+    """A colliding page carries its chapter name in the title tag so chapter 14's
+    uniqueness rule is satisfied. The suffix had no length budget, so chapter 13's
+    length rule could be broken by the fix for chapter 14's. Chapter 3.12 found
+    it: "Effects of Malalignment, Tibiofemoral Contact Mechanics | KneeSchool" is
+    68 characters against a bound of 60."""
+
+    def setUp(self):
+        sys.path.insert(0, os.path.join(os.path.dirname(ROOT), "tools"))
+        import render_site
+        self.render_site = render_site
+        with open(os.path.join(ROOT, "config", "site.json")) as fh:
+            self.site = json.load(fh)
+
+    def test_the_budget_leaves_room_for_the_site_suffix(self):
+        self.assertEqual(
+            self.render_site.title_budget(),
+            self.site["seo"]["title_max"] - len(self.site["title_suffix"]))
+
+    def test_a_long_chapter_name_is_trimmed_to_fit(self):
+        out = self.render_site.disambiguate(
+            "Effects of Malalignment", "Tibiofemoral Contact Mechanics", 47)
+        self.assertLessEqual(len(out), 47)
+        self.assertEqual(out, "Effects of Malalignment, Tibiofemoral Contact")
+
+    def test_trimming_keeps_the_distinguishing_word(self):
+        # The point of the suffix is to separate the two pages. "Tibiofemoral"
+        # and "Patellofemoral" are the words that do that, and both survive.
+        a = self.render_site.disambiguate(
+            "Contact Pressures", "Tibiofemoral Contact Mechanics", 47)
+        b = self.render_site.disambiguate(
+            "Contact Pressures", "Patellofemoral Biomechanics", 47)
+        self.assertIn("Tibiofemoral", a)
+        self.assertIn("Patellofemoral", b)
+        self.assertNotEqual(a, b)
+
+    def test_a_short_chapter_name_is_left_alone(self):
+        self.assertEqual(
+            self.render_site.disambiguate("Trochlea", "Patellofemoral Anatomy", 47),
+            "Trochlea, Patellofemoral Anatomy")
+
+    def test_a_first_word_that_cannot_fit_is_left_whole(self):
+        # Better a reported finding than a mangled title.
+        out = self.render_site.disambiguate("A Very Long Page Title Indeed",
+                                            "Incompressible", 20)
+        self.assertEqual(out, "A Very Long Page Title Indeed, Incompressible")
+
+    def test_every_published_title_is_within_bounds(self):
+        import re
+        root = os.path.dirname(ROOT)
+        lo, hi = self.site["seo"]["title_min"], self.site["seo"]["title_max"]
+        with open(os.path.join(ROOT, "config", "render_targets.json")) as fh:
+            pages = json.load(fh)["pages"]
+        checked = 0
+        for page_id, target in sorted(pages.items()):
+            path = os.path.join(root, target["out"])
+            if not os.path.exists(path):
+                continue
+            with open(path, encoding="utf-8") as fh:
+                m = re.search(r"<title>(.*?)</title>", fh.read(), re.S)
+            self.assertTrue(m, target["out"])
+            title = m.group(1).strip()
+            self.assertTrue(lo <= len(title) <= hi,
+                            "%s: title is %d characters: %r"
+                            % (page_id, len(title), title))
+            checked += 1
+        self.assertTrue(checked, "no rendered pages found")
+
+    def test_no_two_published_pages_share_a_title(self):
+        import re
+        root = os.path.dirname(ROOT)
+        with open(os.path.join(ROOT, "config", "render_targets.json")) as fh:
+            pages = json.load(fh)["pages"]
+        seen = {}
+        for page_id, target in sorted(pages.items()):
+            path = os.path.join(root, target["out"])
+            if not os.path.exists(path):
+                continue
+            with open(path, encoding="utf-8") as fh:
+                m = re.search(r"<title>(.*?)</title>", fh.read(), re.S)
+            title = m.group(1).strip()
+            self.assertNotIn(title, seen,
+                             "%s and %s share the title %r"
+                             % (seen.get(title), page_id, title))
+            seen[title] = page_id
+
+
 if __name__ == "__main__":
     unittest.main()
