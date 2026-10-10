@@ -139,6 +139,16 @@
     "3.1.5": "biomechanics/biomechanics-and-injury-prevention.html",
     "3.1.6": "biomechanics/biomechanics-and-surgical-reconstruction.html",
     "3.1.7": "biomechanics/historical-development-of-knee-biomechanics.html",
+    "3.2.1": "biomechanics/degrees-of-freedom.html",
+    "3.2.2": "biomechanics/flexion-and-extension.html",
+    "3.2.3": "biomechanics/internal-rotation.html",
+    "3.2.4": "biomechanics/external-rotation.html",
+    "3.2.5": "biomechanics/varus-motion.html",
+    "3.2.6": "biomechanics/valgus-motion.html",
+    "3.2.7": "biomechanics/anterior-translation.html",
+    "3.2.8": "biomechanics/posterior-translation.html",
+    "3.2.9": "biomechanics/coupled-motion.html",
+    "3.2.10": "biomechanics/knee-stability-during-motion.html",
     "6.1.1": "conditions/acl.html"
   }
 }
