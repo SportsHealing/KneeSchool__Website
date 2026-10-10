@@ -237,6 +237,15 @@
     "3.9.8": "biomechanics/medial-reconstruction-biomechanics.html",
     "3.9.9": "biomechanics/medial-contributions-by-flexion-angle.html",
     "3.9.10": "biomechanics/combined-acl-and-mcl-injury.html",
+    "3.10.1": "biomechanics/varus-stability.html",
+    "3.10.2": "biomechanics/external-rotation-stability.html",
+    "3.10.3": "biomechanics/lcl-function.html",
+    "3.10.4": "biomechanics/popliteus-function.html",
+    "3.10.5": "biomechanics/popliteofibular-ligament-function.html",
+    "3.10.6": "biomechanics/posterolateral-corner-function.html",
+    "3.10.7": "biomechanics/dial-test-biomechanics.html",
+    "3.10.8": "biomechanics/plc-reconstruction-biomechanics.html",
+    "3.10.9": "biomechanics/combined-pcl-and-plc-injury.html",
     "6.1.1": "conditions/acl.html"
   }
 }

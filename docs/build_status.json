@@ -13,7 +13,7 @@
           "state": "Blocked",
           "blocker": "The build environment has no access to PubMed, Cochrane, NICE, any journal or any textbook. Agent 2 of the three agent pipeline is the fact checker and it cannot retrieve a single source.",
           "needed": "Source access, or a human verifier. Until then no page on this site carries a reference, every verified handoff is marked NOT_RUN_TOOLS_UNAVAILABLE, and no citation has been invented to fill the gap.",
-          "pages": "All 236 published article pages"
+          "pages": "All 245 published article pages"
         },
         {
           "ref": "EV-2",
@@ -21,7 +21,7 @@
           "area": "Content pipeline",
           "state": "Mechanism built, nothing signed",
           "blocker": "The client confirmed on 10 October 2026 that consultants are lined up, so the people exist. The mechanism existed only as prose packs in docs/review/ with no way for an answer to come back. tools/review_pack.py now generates one pack per chapter from the work and reads a filled pack back into the registers, so the route exists. What is missing is a reviewer's time.",
-          "needed": "A consultant to work through a chapter. 933 clinical recommendations across 172 pages and 319 measurements across 107 are outstanding, none signed. python3 tools/review_pack.py --status prints the breakdown by chapter; the largest is 3.3 with 85 and the median is nearer 20.",
+          "needed": "A consultant to work through a chapter. 976 clinical recommendations across 181 pages and 335 measurements across 112 are outstanding, none signed. python3 tools/review_pack.py --status prints the breakdown by chapter; the largest is 3.3 with 85 and the median is nearer 20.",
           "pages": "Every page on the site is an unreviewed editorial draft"
         },
         {
@@ -51,21 +51,21 @@
         },
         {
           "ref": "EV-6",
-          "title": "319 measurements on the site are unchecked",
+          "title": "335 measurements on the site are unchecked",
           "area": "Content",
           "state": "Live and flagged",
           "blocker": "They are written from memory because no paper could be retrieved. Each page's references note says so and each figure is registered.",
-          "needed": "Someone with source access to work the register: 319 figures across 107 pages, all UNVERIFIED_FROM_MEMORY. tools/figures.py --report --unchecked is the list.",
-          "pages": "107 pages carry at least one measurement"
+          "needed": "Someone with source access to work the register: 335 figures across 112 pages, all UNVERIFIED_FROM_MEMORY. tools/figures.py --report --unchecked is the list.",
+          "pages": "112 pages carry at least one measurement"
         },
         {
           "ref": "EV-7",
-          "title": "933 clinical recommendations on the site are unsigned",
+          "title": "976 clinical recommendations on the site are unsigned",
           "area": "Content",
           "state": "Live and registered",
           "blocker": "They are written by a process with no clinical qualification, on pages that state they have not been reviewed. The client has chosen to keep them, and decision 007 makes the set finite and listed.",
-          "needed": "A consultant to work the register: 933 positions across 172 pages, all UNSIGNED. tools/positions.py --report --unsigned is the list.",
-          "pages": "172 pages carry at least one recommendation"
+          "needed": "A consultant to work the register: 976 positions across 181 pages, all UNSIGNED. tools/positions.py --report --unsigned is the list.",
+          "pages": "181 pages carry at least one recommendation"
         },
         {
           "ref": "EV-8",
@@ -118,7 +118,7 @@
           "area": "Content architecture",
           "state": "Fixed twice, and tested",
           "blocker": "A bare reference in prose can name a real chapter and still be the wrong one. Seven pages across chapters 2.8, 2.9 and 2.10 sent the reader to Meniscal Examination, ACL Examination and PCL Examination for the posterior drawer, the medial side and the dial test. Every id was valid, so nothing caught it.",
-          "needed": "Nothing. 1,414 bare references across 193 pages, none pointing at an id the architecture lacks. The detector has itself been corrected twice: chapter 3.4's bare decimals were read as chapter references, one of which resolved to a real page, and fixing that uncovered a pre-existing miss where any reference ending a sentence was never checked. There were 56 of those. Six tests hold both fixes.",
+          "needed": "Nothing. 1,558 bare references across 202 pages, none pointing at an id the architecture lacks. The detector has itself been corrected twice: chapter 3.4's bare decimals were read as chapter references, one of which resolved to a real page, and fixing that uncovered a pre-existing miss where any reference ending a sentence was never checked. There were 56 of those. Six tests hold both fixes.",
           "pages": "7 pages corrected; 88 pages carry bare references"
         },
         {
@@ -360,8 +360,8 @@
           "area": "Governance",
           "state": "Applied",
           "blocker": "The site can go live and will not be promoted until it is verified. Nothing on the site distinguished those two states, so a crawler finding it would have publicised it, and indexing is not cleanly reversible because pages stay cached after removal.",
-          "needed": "Nothing now. One value in site.json drives a noindex directive on all 253 pages and a robots.txt that disallows every crawler. Flipping it is one line and one command when verification is done. PUB-010 refuses the half flip, where the config says one thing and the pages say another. See decision 015.",
-          "pages": "All 253 pages carry the directive"
+          "needed": "Nothing now. One value in site.json drives a noindex directive on all 262 pages and a robots.txt that disallows every crawler. Flipping it is one line and one command when verification is done. PUB-010 refuses the half flip, where the config says one thing and the pages say another. See decision 015.",
+          "pages": "All 262 pages carry the directive"
         },
         {
           "ref": "D-016",
@@ -379,7 +379,7 @@
           "state": "Applied",
           "blocker": "A consultant filling eighty five cells wants a column to tab down, not a markdown table, and a printed pack for a meeting wants to be a document.",
           "needed": "Nothing. Every pack generates as markdown, a spreadsheet and a Word file from the same data, all carrying the same row references, and --ingest reads any of them. Two faults were found while verifying: python-docx writes a schema-invalid settings.xml, now corrected, and LibreOffice does not work in this container, so the workbook sets fullCalcOnLoad and the Word file is verified structurally rather than rendered. See decision 017.",
-          "pages": "docs/review/packs/, markdown for all 31 chapters and both binaries for 3.2 to 3.9"
+          "pages": "docs/review/packs/, markdown for all 32 chapters and both binaries for 3.2 to 3.10"
         }
       ]
     },
@@ -435,7 +435,7 @@
           "area": "Content",
           "state": "7 of 8 written, style gate passed, awaiting review",
           "blocker": "The first chapter of the largest remaining section. It carries all five tier shapes Section 3 uses, from junior to consultant, which is why it was built first: whatever template serves it serves the section.",
-          "needed": "Consultant review. Page 3.1.8 is held under decision 014 and EV-14. Chapters 3.10 to 3.17 are the 90 pages still to write.",
+          "needed": "Consultant review. Page 3.1.8 is held under decision 014 and EV-14. Chapters 3.11 to 3.17 are the 81 pages still to write.",
           "pages": "7 published pages, 10,697 body words as the style gate counts them"
         },
         {
@@ -509,6 +509,15 @@
           "blocker": "Medial Knee Biomechanics. Two pages on what the side does, four on the individual structures, one on the corner as a unit, one on the rotatory instability pattern, one on the reconstruction and one on the combined injury. 3.9.8 carries a fellowship tier.",
           "needed": "Consultant review. The chapter's organising claim is that the medial side divides its work by flexion angle, with the superficial ligament primary at 20 to 30 degrees and the posteromedial corner taking over near extension. Two practical claims most worth confirming: the two tibial attachments of the superficial ligament behaving differently, and the tensioning angles given for the two limbs of a medial reconstruction.",
           "pages": "10 published pages, 10,966 body words as the style gate counts them"
+        },
+        {
+          "ref": "W-15",
+          "title": "Section 3 Biomechanics Academy, chapter 3.10",
+          "area": "Content",
+          "state": "All 9 pages written, style gate passed, awaiting review",
+          "blocker": "Lateral Knee Biomechanics, the mirror of 3.9 and not a symmetrical one. Two pages on what the side does, three on the structures, one on the corner as a unit, one on the mechanics behind the dial test, one on reconstruction and one on the combined injury. 3.10.8 carries a fellowship tier.",
+          "needed": "Consultant review by someone who reconstructs corners. The three component reconstruction, the tensioning position, and the claim that a missed corner injury is a leading cause of graft failure on both cruciates are the statements that carry the most weight. The dial test page states the mechanics and hands the technique to 4.13, which is worth checking for the boundary as well as the content.",
+          "pages": "9 published pages, 9,865 body words as the style gate counts them"
         }
       ]
     }
