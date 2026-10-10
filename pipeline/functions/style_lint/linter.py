@@ -1013,8 +1013,22 @@ def rule_struct_001(doc, rule, brief, template):
     return out
 
 
+# Sentinel for a key the brief does not have, which is not the same as a key set
+# to false. The two were conflated, so FIG-001's "figures_allowed == false"
+# matched seventeen briefs that had never said anything about figures: they were
+# generated before the generator set the key and were never regenerated. One of
+# them, 1.1.3, carries flexion angles, and it sat published with eight failures
+# that no per chapter run ever looked at. A conditional rule now applies only
+# when the brief states the condition. See decision 021.
+ABSENT = object()
+
+
 def condition_met(expr, brief):
-    """Evaluate the small set of conditional_on expressions the config uses."""
+    """Evaluate the small set of conditional_on expressions the config uses.
+
+    A rule whose condition names a key the brief does not carry does not apply.
+    Silence in a brief is not an answer, and a gate must not supply one.
+    """
     if not expr:
         return True
     m = re.match(r"^\s*brief\.([A-Za-z0-9_.]+)\s*==\s*(true|false)\s*$", expr)
@@ -1022,9 +1036,11 @@ def condition_met(expr, brief):
         return True
     node = brief
     for part in m.group(1).split("."):
-        if not isinstance(node, dict):
+        if not isinstance(node, dict) or part not in node:
             return False
-        node = node.get(part)
+        node = node[part]
+    if node is None:
+        return False
     return bool(node) is (m.group(2) == "true")
 
 

@@ -792,3 +792,71 @@ class SectionTierRules(unittest.TestCase):
     def test_the_condition_page_rule_points_at_the_config(self):
         rule = self.template["page_types"]["condition"]["body_sections_rule"]
         self.assertIn("section_tier_rules", rule)
+
+
+class AbsentIsNotFalse(unittest.TestCase):
+    """A conditional rule applies only when the brief states the condition.
+
+    FIG-001 is conditional on `figures_allowed == false`, and the evaluator read
+    a missing key as false. Seventeen briefs had never said anything about
+    figures, having been generated before the generator set the key, so they
+    silently acquired a rule written for Section 0's fees and entry
+    requirements. One of them, 1.1.3, carries flexion angles and sat published
+    with eight failures that no per chapter run ever looked at. Worse, FIG-002 is
+    conditional on the same key being true, so those measurements were in
+    neither gate and in no register. Decision 021."""
+
+    def brief(self, governance):
+        return {"page_id": "9.9.9", "title": "T", "page_type": "anatomy",
+                "tiers_required": ["mrcs"], "governance": governance,
+                "output_requirements": {"target_word_count": {"min": 1, "max": 9000}}}
+
+    def test_an_absent_key_satisfies_neither_polarity(self):
+        b = self.brief({})
+        self.assertFalse(linter.condition_met("brief.governance.figures_allowed == false", b))
+        self.assertFalse(linter.condition_met("brief.governance.figures_allowed == true", b))
+
+    def test_an_explicit_false_still_matches(self):
+        b = self.brief({"figures_allowed": False})
+        self.assertTrue(linter.condition_met("brief.governance.figures_allowed == false", b))
+        self.assertFalse(linter.condition_met("brief.governance.figures_allowed == true", b))
+
+    def test_an_explicit_true_still_matches(self):
+        b = self.brief({"figures_allowed": True})
+        self.assertTrue(linter.condition_met("brief.governance.figures_allowed == true", b))
+        self.assertFalse(linter.condition_met("brief.governance.figures_allowed == false", b))
+
+    def test_a_null_is_treated_as_absent(self):
+        b = self.brief({"figures_allowed": None})
+        self.assertFalse(linter.condition_met("brief.governance.figures_allowed == false", b))
+        self.assertFalse(linter.condition_met("brief.governance.figures_allowed == true", b))
+
+    def test_a_missing_parent_does_not_match(self):
+        self.assertFalse(linter.condition_met(
+            "brief.governance.figures_allowed == false", {"page_id": "9.9.9"}))
+
+    def test_no_condition_always_applies(self):
+        self.assertTrue(linter.condition_met(None, {}))
+        self.assertTrue(linter.condition_met("", {}))
+
+
+class EveryBriefDeclaresItsGovernance(unittest.TestCase):
+    """The fix above stops a silent brief acquiring a rule. This stops a brief
+    being silent, which is the fault one layer down: the seventeen were stale
+    rather than deliberate, and nothing noticed for days."""
+
+    REQUIRED = ("commercial_content_allowed", "clinical_advice_allowed",
+                "junior_tier_present", "figures_allowed")
+
+    def test_every_brief_states_every_governance_key(self):
+        briefs = os.path.join(ROOT, "config", "briefs")
+        missing = []
+        for name in sorted(os.listdir(briefs)):
+            if not name.endswith(".json"):
+                continue
+            with open(os.path.join(briefs, name)) as fh:
+                gov = json.load(fh).get("governance") or {}
+            for key in self.REQUIRED:
+                if key not in gov or gov[key] is None:
+                    missing.append("%s: %s" % (name[:-5], key))
+        self.assertEqual(missing, [])

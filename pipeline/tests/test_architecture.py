@@ -737,3 +737,55 @@ class SeoTitleBudget(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class VerifyTargetIsTheOnlyList(unittest.TestCase):
+    """The gates are one command, and the one command is what CI runs.
+
+    They used to be five separate invocations held in one person's head, so a
+    contributor could not know the list and CI could not run it. Two commands
+    meant to agree and written out separately drift, so the workflow runs
+    `make verify` rather than restating the steps. Decision 021."""
+
+    def setUp(self):
+        self.root = os.path.dirname(ROOT)
+        with open(os.path.join(self.root, "Makefile"), encoding="utf-8") as fh:
+            self.makefile = fh.read()
+        path = os.path.join(self.root, ".github", "workflows", "verify.yml")
+        self.assertTrue(os.path.exists(path), "no CI workflow")
+        with open(path, encoding="utf-8") as fh:
+            self.workflow = fh.read()
+
+    def test_the_workflow_runs_the_make_target(self):
+        self.assertIn("make verify", self.workflow)
+
+    def test_the_workflow_does_not_restate_the_gates(self):
+        # If a gate is run from the workflow it can fall out of step with the
+        # Makefile. Comments may name one, and the status line at the end may
+        # run review_pack and figures, because neither is a gate.
+        live = "\n".join(line for line in self.workflow.splitlines()
+                         if not line.lstrip().startswith("#"))
+        for tool in ("lint_site.py", "check_site.py", "publication_qa.py",
+                     "crossrefs.py", "check_clean.py"):
+            self.assertNotIn(tool, live, tool)
+
+    def test_verify_ends_by_checking_the_tree(self):
+        self.assertIn("check_clean.py --baseline", self.makefile)
+
+    def test_every_gate_in_the_target_exists(self):
+        import re
+        for match in re.finditer(r"tools/(\w+\.py)", self.makefile):
+            path = os.path.join(self.root, "tools", match.group(1))
+            self.assertTrue(os.path.exists(path), match.group(1))
+
+    def test_the_readme_names_the_one_command(self):
+        with open(os.path.join(self.root, "README.md"), encoding="utf-8") as fh:
+            readme = fh.read()
+        self.assertIn("make verify", readme)
+        # The count the README quoted went stale for days. If it names a number
+        # of tests, it has to be this suite's number.
+        match = __import__("re").search(r"(\d+) tests", readme)
+        if match:
+            loader = unittest.TestLoader()
+            suite = loader.discover(os.path.join(ROOT, "tests"))
+            self.assertEqual(int(match.group(1)), suite.countTestCases())

@@ -132,7 +132,14 @@ def reference_spans(text):
     return out
 
 
-def report(runs, known):
+def report(runs, known, listing=True):
+    """List every bare prose reference, or with listing=False count only.
+
+    Returns the number pointing at an id the architecture does not have, so the
+    caller can make it an exit code. It used to print that number and exit zero,
+    which meant the one check that catches a reference to a page that does not
+    exist could not fail a build. See decision 021.
+    """
     rows = []
     for page_id in sorted(os.listdir(runs), key=page_sort_key):
         draft = os.path.join(runs, page_id, "draft_v1.md")
@@ -143,18 +150,23 @@ def report(runs, known):
         for begin, finish, ref in reference_spans(text):
             context = re.sub(r"\s+", " ", text[begin:finish + 60]).strip()
             rows.append((page_id, ref, known.get(ref, "NOT IN THE ARCHITECTURE"), context))
-    current = None
-    for page_id, ref, title, context in rows:
-        if page_id != current:
-            print("")
-            print(page_id)
-            current = page_id
-        print("  %-8s %-34s %s" % (ref, title[:34], context[:58]))
-    print("")
+    missing = [r for r in rows if r[2] == "NOT IN THE ARCHITECTURE"]
+    if listing:
+        current = None
+        for page_id, ref, title, context in rows:
+            if page_id != current:
+                print("")
+                print(page_id)
+                current = page_id
+            print("  %-8s %-34s %s" % (ref, title[:34], context[:58]))
+        print("")
+    else:
+        for page_id, ref, title, context in missing:
+            print("%-9s -> %-9s %s" % (page_id, ref, context[:58]))
     print("%d bare references in prose across %d pages"
           % (len(rows), len(set(r[0] for r in rows))))
-    missing = [r for r in rows if r[2] == "NOT IN THE ARCHITECTURE"]
     print("%d point at an id the architecture does not have" % len(missing))
+    return len(missing)
 
 
 def page_sort_key(page_id):
@@ -173,6 +185,9 @@ def main():
                     help="list every bare chapter or page reference in prose with the title "
                          "it resolves to, so a valid id pointing at the wrong chapter is "
                          "visible rather than hunted for")
+    ap.add_argument("--prose-check", action="store_true",
+                    help="count the same references and exit non zero if any points at an "
+                         "id the architecture does not have, without the full listing")
     args = ap.parse_args()
 
     known = titles()
@@ -222,8 +237,10 @@ def main():
                 continue
             problems.append((page_id, pid, phrase, "prose names %r for this id" % real))
 
-    if args.prose_report:
-        report(args.runs, known)
+    if args.prose_report or args.prose_check:
+        missing = report(args.runs, known, listing=args.prose_report)
+        if args.prose_check and missing:
+            sys.exit(1)
         return
 
     for src, pid, label, why in problems:

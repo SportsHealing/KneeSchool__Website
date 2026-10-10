@@ -6,6 +6,7 @@ The round trip is the part worth testing. A pack that cannot be ingested is a
 document, and a document is what the build already had.
 """
 
+import glob
 import io
 import json
 import os
@@ -74,14 +75,31 @@ class Generation(unittest.TestCase):
 
 
 class Ingest(unittest.TestCase):
-    """The registers are real files, so each test restores what it touched."""
+    """The registers are real files, so each test restores what it touched.
+
+    One test runs the extractor, which writes every register rather than the one
+    the test asserts on. Restoring only the named file left the others dirty, so
+    a clean checkout went dirty whenever the suite ran. The whole register
+    directory is snapshotted now, and keep() stays for the explicitness of
+    naming the file a test means to change."""
 
     def setUp(self):
         self.touched = {}
         self.tmp = tempfile.mkdtemp()
+        self.registers = {}
+        pattern = os.path.join(REPO, "pipeline", "config", "positions", "*.json")
+        for path in glob.glob(pattern):
+            with open(path, encoding="utf-8") as fh:
+                self.registers[path] = fh.read()
 
     def tearDown(self):
         for path, original in self.touched.items():
+            with io.open(path, "w", encoding="utf-8") as fh:
+                fh.write(original)
+        for path, original in self.registers.items():
+            with open(path, encoding="utf-8") as fh:
+                if fh.read() == original:
+                    continue
             with io.open(path, "w", encoding="utf-8") as fh:
                 fh.write(original)
         shutil.rmtree(self.tmp, ignore_errors=True)
@@ -344,3 +362,68 @@ class Formats(unittest.TestCase):
         import openpyxl
         wb = openpyxl.load_workbook(self.xlsx)
         self.assertTrue(wb.calculation.fullCalcOnLoad)
+
+
+class ExtractionIsIdempotent(unittest.TestCase):
+    """Running the extractor twice must leave the registers byte identical.
+
+    It did not. A withdrawn position's note was concatenated rather than set, so
+    every extraction added another copy of the same sentence; 3.11.9 had reached
+    twenty four copies. The extractor runs on every chapter build, so the fault
+    also meant a clean checkout went dirty whenever the registers were
+    re-extracted, which is how it was found: a stop hook reported uncommitted
+    changes after a commit that had left the tree clean."""
+
+    REGISTERS = os.path.join(REPO, "pipeline", "config", "positions")
+
+    def snapshot(self):
+        out = {}
+        for path in sorted(glob.glob(os.path.join(self.REGISTERS, "*.json"))):
+            with open(path, encoding="utf-8") as fh:
+                out[path] = fh.read()
+        return out
+
+    def extract(self):
+        subprocess.check_call(
+            [sys.executable, os.path.join(REPO, "tools", "positions.py"), "--extract"],
+            cwd=REPO, stdout=subprocess.DEVNULL)
+
+    def setUp(self):
+        self.before = self.snapshot()
+        self.assertTrue(self.before, "no position registers found")
+
+    def tearDown(self):
+        for path, original in self.before.items():
+            with open(path, encoding="utf-8") as fh:
+                if fh.read() == original:
+                    continue
+            with io.open(path, "w", encoding="utf-8") as fh:
+                fh.write(original)
+
+    def test_a_second_extraction_changes_nothing(self):
+        self.extract()
+        first = self.snapshot()
+        self.extract()
+        second = self.snapshot()
+        drifted = [os.path.basename(p) for p in first if first[p] != second.get(p)]
+        self.assertEqual(drifted, [])
+
+    def test_extraction_leaves_a_clean_checkout_clean(self):
+        # The condition the stop hook actually checks.
+        self.extract()
+        after = self.snapshot()
+        drifted = [os.path.basename(p) for p in self.before
+                   if self.before[p] != after.get(p)]
+        self.assertEqual(drifted, [])
+
+    def test_a_withdrawal_note_is_never_repeated(self):
+        sys.path.insert(0, os.path.join(REPO, "tools"))
+        import positions
+        self.extract()
+        for path in glob.glob(os.path.join(self.REGISTERS, "*.json")):
+            with open(path, encoding="utf-8") as fh:
+                entries = json.load(fh).get("positions") or []
+            for entry in entries:
+                note = entry.get("note") or ""
+                self.assertLessEqual(note.count(positions.WITHDRAWN_NOTE), 1,
+                                     "%s: %r" % (os.path.basename(path), note[:80]))
