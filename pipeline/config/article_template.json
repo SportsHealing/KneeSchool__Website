@@ -78,7 +78,7 @@
         "teacher_resource",
         "assessment"
       ],
-      "not_required_note": "The handbook requires the speak to an adult message when symptom or injury content is present. Chapters 0.3 to 0.7 carry none: a page about choosing A levels has nothing for the reader to report to an adult, and the message reads as a non sequitur there. The gate drives the condition off page type, which the architecture owns, rather than guessing from the prose. See decision 003."
+      "not_required_note": "The handbook requires the speak to an adult message when symptom or injury content is present. Chapters 0.3 to 0.7 carry none: a page about choosing A levels has nothing for the reader to report to an adult, and the message reads as a non sequitur there. The gate drives the condition off page type, which the architecture owns, rather than guessing from the prose. See decision 003. The biomechanics page type was put forward as a fifth exemption, because the message follows a paragraph about levers on 3.1.1. The client settled it on 10 October 2026: it stays as it is, and biomechanics is deliberately absent from the list above. See decision 014."
     },
     "patient": {
       "when_to_seek_help_message_required": true

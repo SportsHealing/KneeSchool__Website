@@ -17,11 +17,11 @@
         },
         {
           "ref": "EV-2",
-          "title": "Consultant review has reviewers but no return path",
+          "title": "Consultant review has reviewers and a return path, and nothing signed",
           "area": "Content pipeline",
-          "state": "Partly resolved",
-          "blocker": "The client confirmed on 10 October 2026 that consultants are lined up, so the people exist. The mechanism does not: review packs are written to docs/review/ and there is no route for a decision to come back into the pipeline. The deployed design uses a Step Functions task token and the pipeline is not deployed.",
-          "needed": "An agreed manual route for returning review decisions, or the pipeline deployed. Waiting on it: 523 clinical recommendations across 98 pages and 254 measurements across 71, none signed.",
+          "state": "Mechanism built, nothing signed",
+          "blocker": "The client confirmed on 10 October 2026 that consultants are lined up, so the people exist. The mechanism existed only as prose packs in docs/review/ with no way for an answer to come back. tools/review_pack.py now generates one pack per chapter from the work and reads a filled pack back into the registers, so the route exists. What is missing is a reviewer's time.",
+          "needed": "A consultant to work through a chapter. 523 clinical recommendations across 98 pages and 254 measurements across 71 are outstanding, none signed. python3 tools/review_pack.py --status prints the breakdown by chapter; the largest is 3.3 with 85 and the median is nearer 20.",
           "pages": "Every page on the site is an unreviewed editorial draft"
         },
         {
@@ -353,6 +353,15 @@
           "blocker": "The site can go live and will not be promoted until it is verified. Nothing on the site distinguished those two states, so a crawler finding it would have publicised it, and indexing is not cleanly reversible because pages stay cached after removal.",
           "needed": "Nothing now. One value in site.json drives a noindex directive on all 179 pages and a robots.txt that disallows every crawler. Flipping it is one line and one command when verification is done. PUB-010 refuses the half flip, where the config says one thing and the pages say another. See decision 015.",
           "pages": "All 179 pages carry the directive"
+        },
+        {
+          "ref": "D-016",
+          "title": "The review pack is the return path",
+          "area": "Governance",
+          "state": "Applied",
+          "blocker": "Eight hand written review packs covered batches that made sense on the day, went stale silently, and could only be answered in prose. A reviewer's decision had nowhere to go.",
+          "needed": "Nothing. tools/review_pack.py generates one pack per chapter from the chapter's own files and ingests a filled pack back into the figure and position registers. A blank row stays outstanding, one bad row writes nothing at all, and an amendment carries the reviewer's wording into the register. Twelve tests hold both directions, including that a signature survives the next extraction. See decision 016.",
+          "pages": "25 generated packs in docs/review/packs/"
         }
       ]
     },

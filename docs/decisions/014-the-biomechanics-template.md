@@ -115,14 +115,19 @@ the message "if any of this sounds like something happening to you, speak to a
 parent, teacher, coach or doctor" follows a paragraph about levers.
 
 It is included anyway. Adding a fifth page type to a client rule's exemption list
-is not a call to make quietly, and the cost of including it is one sentence. It
-is put as a question below.
+is not a call to make quietly, and the cost of including it is one sentence.
+
+**Settled on 10 October 2026.** The client's answer is to leave it as is, so
+`biomechanics` does not join the exemption list and the message stays. In
+practice it appears on chapter 3.1 alone, since no page in 3.2 or 3.3 carries a
+junior tier, and the architecture gives the rest of Section 3 three professional
+tiers. The oddity is therefore confined to the five junior blocks in 3.1, and it
+reads correctly on two of them.
 
 ## Questions
 
-1. Should `biomechanics` join the page types exempt from the junior closing
-   message, or does it stay as it is? It reads oddly on the pure physics pages
-   and correctly on 3.1.4 and 3.1.5, which are about injury.
+1. ~~Should `biomechanics` join the page types exempt from the junior closing
+   message?~~ Answered on 10 October 2026: it stays as it is. See above.
 2. Are the eleven Landmark Papers pages worth attempting from memory with every
    claim registered as unverified, or do they wait for source access like the
    evidence verification stage itself? Held is the current answer.
