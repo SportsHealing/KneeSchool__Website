@@ -97,6 +97,31 @@ been for days. The site total went from 352 to 357.
 Written into the README, because an arrangement held only in a conversation is
 the thing that failed this morning.
 
+## Found afterwards, and it changes rule 1
+
+Reading the Actions history to confirm the first `verify` run turned up a second
+workflow that had been running all along: GitHub Pages has been building and
+publishing this repository on every push since late September, 61 successful
+runs, with a `CNAME` in the root pointing kneeschool.com at it.
+
+Every one of those runs was on `claude/great-meitner-kofr7g`. The site publishes
+from the working branch, so each push goes live immediately and unreviewed. The
+README said `main` is "the stable copy, what the site is published from", and
+that was describing an intention rather than a configuration.
+
+The safeguard held. `discoverable` is false, so robots.txt disallows every
+crawler and every page carries a noindex directive. Decision 015 has been doing
+real work rather than sitting ready.
+
+Rule 1 above is therefore incomplete as written. `main` moving only through a
+pull request achieves nothing while the live site is served from somewhere else.
+The Pages source has to point at `main`, and that is a setting in the
+repository's own interface which cannot be reached from here: the Pages API is
+refused through this session's proxy. Recorded as EV-21 for the client to change.
+
+Until it changes, the rules above govern what is reviewed and the working branch
+governs what is live, which is exactly backwards.
+
 ## What was considered and not done
 
 **Branch protection on `main`.** It would enforce rule 1 rather than stating it.

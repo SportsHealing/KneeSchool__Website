@@ -34,11 +34,11 @@
         },
         {
           "ref": "EV-4",
-          "title": "The pipeline has never been deployed",
+          "title": "The Bedrock pipeline has never been deployed; the static site has",
           "area": "Infrastructure",
           "state": "Blocked",
-          "blocker": "No AWS account, region or budget has been named. The SAM template, the state machine and the Lambda handlers exist and their tests pass locally.",
-          "needed": "An AWS account to deploy into and a monthly budget ceiling for Bedrock."
+          "blocker": "No AWS account, region or budget has been named, so the three agent pipeline has never run anywhere. That part is unchanged. What was wrong until 10 October 2026 is the claim that nothing is deployed: GitHub Pages has been building and publishing this repository on every push since late September, 61 successful runs, and a CNAME file in the repository root points kneeschool.com at it. See EV-21.",
+          "needed": "For the pipeline: an AWS account to deploy into and a monthly budget ceiling for Bedrock. For the static site: nothing, because it is already live."
         },
         {
           "ref": "EV-5",
@@ -183,6 +183,15 @@
           "blocker": "FIG-001 forbids figures where a brief says figures_allowed is false, and FIG-002 requires every figure to be registered where it says true. Seventeen briefs said neither, having been generated before the generator set the key. The condition evaluator read a missing key as false, so those pages silently acquired a rule written for Section 0's fees, and 1.1.3 sat published with eight style failures. The deeper consequence was the opposite rule: FIG-002 never applied, so the measurements on all seventeen were registered nowhere and a consultant checking the register would never have seen them.",
           "needed": "Nothing. A conditional rule now applies only when the brief states the condition, the seventeen briefs carry the key, and 1.1.3's five flexion angles are registered as UNVERIFIED_FROM_MEMORY like every other measurement on the site. Found by running the style gate over the whole site for the first time, which is decision 021's main change.",
           "pages": "17 briefs completed, 5 measurements newly registered, total 352 to 357"
+        },
+        {
+          "ref": "EV-21",
+          "title": "The site is live, and it publishes from the working branch",
+          "area": "Infrastructure",
+          "state": "Found 10 October 2026; one half is safe, the other needs a setting changed",
+          "blocker": "GitHub Pages deploys this repository on every push and has done since late September. A CNAME file in the root holds kneeschool.com. Every run has been on claude/great-meitner-kofr7g, the working branch, so each push goes live immediately and unreviewed. That is the opposite of the arrangement in the README, where main is the stable copy the site is published from. It was found by reading the Actions history after the first verify run, not by anything in the build, and the session had been reporting the site as never deployed.",
+          "needed": "The safeguard held: discoverable is false, so robots.txt disallows every crawler and every page carries noindex. Decision 015 has been load bearing rather than theoretical. What needs changing is the Pages source: point it at main, in the repository's Settings under Pages, so the live site is the reviewed copy. That is a setting in the GitHub interface and it cannot be done from here, because the Pages API is not reachable through this session's proxy. Until it changes, every push to the working branch publishes.",
+          "pages": "Every page on the site is live at kneeschool.com, noindexed"
         }
       ]
     },
