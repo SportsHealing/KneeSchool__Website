@@ -149,6 +149,20 @@
     "3.2.8": "biomechanics/posterior-translation.html",
     "3.2.9": "biomechanics/coupled-motion.html",
     "3.2.10": "biomechanics/knee-stability-during-motion.html",
+    "3.3.1": "biomechanics/introduction-to-kinematics.html",
+    "3.3.2": "biomechanics/roll-and-glide-mechanisms.html",
+    "3.3.3": "biomechanics/femoral-motion-on-tibia.html",
+    "3.3.4": "biomechanics/tibial-motion-on-femur.html",
+    "3.3.5": "biomechanics/screw-home-mechanism.html",
+    "3.3.6": "biomechanics/reverse-screw-home-mechanism.html",
+    "3.3.7": "biomechanics/instant-centre-of-rotation.html",
+    "3.3.8": "biomechanics/changes-throughout-flexion.html",
+    "3.3.9": "biomechanics/kinematics-during-walking.html",
+    "3.3.10": "biomechanics/kinematics-during-running.html",
+    "3.3.11": "biomechanics/kinematics-during-squatting.html",
+    "3.3.12": "biomechanics/kinematics-during-stair-climbing.html",
+    "3.3.13": "biomechanics/kinematics-during-landing.html",
+    "3.3.14": "biomechanics/kinematics-during-cutting.html",
     "6.1.1": "conditions/acl.html"
   }
 }

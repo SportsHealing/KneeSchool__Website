@@ -13,7 +13,7 @@
           "state": "Blocked",
           "blocker": "The build environment has no access to PubMed, Cochrane, NICE, any journal or any textbook. Agent 2 of the three agent pipeline is the fact checker and it cannot retrieve a single source.",
           "needed": "Source access, or a human verifier. Until then no page on this site carries a reference, every verified handoff is marked NOT_RUN_TOOLS_UNAVAILABLE, and no citation has been invented to fill the gap.",
-          "pages": "All 148 published article pages"
+          "pages": "All 162 published article pages"
         },
         {
           "ref": "EV-2",
@@ -21,7 +21,7 @@
           "area": "Content pipeline",
           "state": "Partly resolved",
           "blocker": "The client confirmed on 10 October 2026 that consultants are lined up, so the people exist. The mechanism does not: review packs are written to docs/review/ and there is no route for a decision to come back into the pipeline. The deployed design uses a Step Functions task token and the pipeline is not deployed.",
-          "needed": "An agreed manual route for returning review decisions, or the pipeline deployed. Waiting on it: 438 clinical recommendations across 84 pages and 223 measurements across 62, none signed.",
+          "needed": "An agreed manual route for returning review decisions, or the pipeline deployed. Waiting on it: 523 clinical recommendations across 98 pages and 254 measurements across 71, none signed.",
           "pages": "Every page on the site is an unreviewed editorial draft"
         },
         {
@@ -51,21 +51,21 @@
         },
         {
           "ref": "EV-6",
-          "title": "223 measurements on the site are unchecked",
+          "title": "254 measurements on the site are unchecked",
           "area": "Content",
           "state": "Live and flagged",
           "blocker": "They are written from memory because no paper could be retrieved. Each page's references note says so and each figure is registered.",
-          "needed": "Someone with source access to work the register: 223 figures across 62 pages, all UNVERIFIED_FROM_MEMORY. tools/figures.py --report --unchecked is the list.",
-          "pages": "62 pages carry at least one measurement"
+          "needed": "Someone with source access to work the register: 254 figures across 71 pages, all UNVERIFIED_FROM_MEMORY. tools/figures.py --report --unchecked is the list.",
+          "pages": "71 pages carry at least one measurement"
         },
         {
           "ref": "EV-7",
-          "title": "438 clinical recommendations on the site are unsigned",
+          "title": "523 clinical recommendations on the site are unsigned",
           "area": "Content",
           "state": "Live and registered",
           "blocker": "They are written by a process with no clinical qualification, on pages that state they have not been reviewed. The client has chosen to keep them, and decision 007 makes the set finite and listed.",
-          "needed": "A consultant to work the register: 438 positions across 84 pages, all UNSIGNED. tools/positions.py --report --unsigned is the list.",
-          "pages": "84 pages carry at least one recommendation"
+          "needed": "A consultant to work the register: 523 positions across 98 pages, all UNSIGNED. tools/positions.py --report --unsigned is the list.",
+          "pages": "98 pages carry at least one recommendation"
         },
         {
           "ref": "EV-8",
@@ -118,7 +118,7 @@
           "area": "Content architecture",
           "state": "Fixed, and a report added",
           "blocker": "A bare reference in prose can name a real chapter and still be the wrong one. Seven pages across chapters 2.8, 2.9 and 2.10 sent the reader to Meniscal Examination, ACL Examination and PCL Examination for the posterior drawer, the medial side and the dial test. Every id was valid, so nothing caught it.",
-          "needed": "Nothing. All seven corrected to 4.11, 4.12 and 4.13. tools/crossrefs.py --prose-report now lists every bare reference on every page with the title it resolves to: 573 of them across 105 pages, none pointing at an id the architecture lacks. A machine check replaced a manual read.",
+          "needed": "Nothing. All seven corrected to 4.11, 4.12 and 4.13. tools/crossrefs.py --prose-report now lists every bare reference on every page with the title it resolves to: 654 of them across 119 pages, none pointing at an id the architecture lacks. A machine check replaced a manual read, and it has since caught four references that pointed at a real page about the wrong subject.",
           "pages": "7 pages corrected; 88 pages carry bare references"
         },
         {
@@ -126,8 +126,8 @@
           "title": "Eleven Landmark Papers pages cannot be written here",
           "area": "Content pipeline",
           "state": "Held, template defined",
-          "blocker": "Section 3 ends each chapter with a Landmark Papers page whose subject is named studies. This environment cannot retrieve a paper, and the Operations Handbook names an invented citation as its one critical failure. A page about specific papers written without access to one would carry citations from memory or carry no paper at all.",
-          "needed": "Source access, the same thing EV-1 needs. The landmark_papers template is defined under decision 014 so the pages can be written the day it exists. Held: 3.1.8, 3.2.11, 3.3.15, 3.4.12, 3.5.11, 3.6.12, 3.7.12, 3.8.11, 3.9.11, 3.10.10 and 3.11.9.",
+          "blocker": "Section 3 carries eleven pages whose subject is named studies: 3.1.8 Landmark Biomechanical Studies, and the whole of chapter 3.17, which collects them by subject. This environment cannot retrieve a paper, and the Operations Handbook names an invented citation as its one critical failure. A page about specific papers written from memory would either carry a recalled citation, which is that failure, or carry no paper, which is not the page the architecture asked for.",
+          "needed": "Source access, the same thing EV-1 needs. The landmark_papers template is defined under decision 014 so the pages can be written the day it exists. Held: 3.1.8 and 3.17.1 to 3.17.10. Corrected on 10 October 2026: this entry previously named 3.2.11, 3.3.15, 3.4.12, 3.5.11, 3.6.12, 3.7.12, 3.8.11, 3.9.11, 3.10.10 and 3.11.9, on an unchecked assumption that every chapter ends with one. None of those ids exists, so chapters 3.2 to 3.16 hold nothing back.",
           "pages": "11 pages in Section 3, none published"
         },
         {
@@ -351,8 +351,8 @@
           "area": "Governance",
           "state": "Applied",
           "blocker": "The site can go live and will not be promoted until it is verified. Nothing on the site distinguished those two states, so a crawler finding it would have publicised it, and indexing is not cleanly reversible because pages stay cached after removal.",
-          "needed": "Nothing now. One value in site.json drives a noindex directive on all 165 pages and a robots.txt that disallows every crawler. Flipping it is one line and one command when verification is done. PUB-010 refuses the half flip, where the config says one thing and the pages say another. See decision 015.",
-          "pages": "All 165 pages carry the directive"
+          "needed": "Nothing now. One value in site.json drives a noindex directive on all 179 pages and a robots.txt that disallows every crawler. Flipping it is one line and one command when verification is done. PUB-010 refuses the half flip, where the config says one thing and the pages say another. See decision 015.",
+          "pages": "All 179 pages carry the directive"
         }
       ]
     },
@@ -408,7 +408,7 @@
           "area": "Content",
           "state": "7 of 8 written, style gate passed, awaiting review",
           "blocker": "The first chapter of the largest remaining section. It carries all five tier shapes Section 3 uses, from junior to consultant, which is why it was built first: whatever template serves it serves the section.",
-          "needed": "Consultant review. Page 3.1.8 is held under decision 014 and EV-14. Chapters 3.3 to 3.17 are the 178 pages still to write.",
+          "needed": "Consultant review. Page 3.1.8 is held under decision 014 and EV-14. Chapters 3.4 to 3.17 are the 164 pages still to write.",
           "pages": "7 published pages, 10,697 body words as the style gate counts them"
         },
         {
@@ -417,8 +417,17 @@
           "area": "Content",
           "state": "All 10 pages written, style gate passed, awaiting review",
           "blocker": "Functional Anatomy and Motion. Ten pages on the six degrees of freedom, the six motions taken one at a time, how they couple, and stability through the arc. Three tiers on every page, medical student to FRCS, and no junior or patient tier: the architecture does not ask for one here. The chapter orients rather than apportions, because per ligament restraint belongs to chapters 3.7 to 3.11 and surface motion to 3.3.",
-          "needed": "Consultant review. The chapter has no Landmark Papers page of its own held back, because 3.2.11 is one of the eleven listed under EV-14.",
+          "needed": "Consultant review. Nothing in the chapter is held: the chapter's ten pages are its whole plan.",
           "pages": "10 published pages, 12,889 body words as the style gate counts them"
+        },
+        {
+          "ref": "W-8",
+          "title": "Section 3 Biomechanics Academy, chapter 3.3",
+          "area": "Content",
+          "state": "All 14 pages written, style gate passed, awaiting review",
+          "blocker": "Knee Kinematics, the largest chapter in Section 3 so far. Eight pages on the mechanics: how motion is described, roll and glide, the two chains, the screw home mechanism and its reverse, the instant centre of rotation, and how all of it changes through flexion. Six more on the activities: walking, running, squatting, stairs, landing and cutting. Three tiers on every page, medical student to FRCS.",
+          "needed": "Consultant review. Kinetics is handed to chapter 3.4, gait pathology to 3.14 and 4.4, and sport specific application to 3.15, all by the architecture's own must_not_cover list rather than by choice.",
+          "pages": "14 published pages, 17,774 body words as the style gate counts them"
         }
       ]
     }

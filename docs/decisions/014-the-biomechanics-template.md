@@ -69,9 +69,21 @@ So the template exists and the pages wait. The same treatment as the three
 Section 0 pages held under decisions 003 and 004: written where they can be
 written, held where they cannot, and recorded rather than quietly dropped.
 
-The other ten are 3.2.11, 3.3.15, 3.4.12, 3.5.11, 3.6.12, 3.7.12, 3.8.11, 3.9.11,
-3.10.10 and 3.11.9 by the same architecture convention, each the last page of its
-chapter.
+The other ten are 3.17.1 to 3.17.10, the whole of chapter 3.17 Landmark
+Biomechanics Papers.
+
+**Corrected on 10 October 2026.** This decision originally named the other ten as
+3.2.11, 3.3.15, 3.4.12, 3.5.11, 3.6.12, 3.7.12, 3.8.11, 3.9.11, 3.10.10 and
+3.11.9, on the assumption that every chapter closes with a landmark papers page.
+That assumption was not checked against the architecture and it is wrong. None of
+those ten ids exists. The architecture puts one landmark papers page at the end of
+chapter 3.1 and collects the rest into chapter 3.17, by subject rather than by
+chapter: ACL, PCL, meniscal, medial, posterolateral, patellofemoral, osteotomy,
+arthroplasty, the Imperial contributions, and future research priorities.
+
+The practical effect is that chapters 3.2 to 3.16 hold nothing back. Chapter 3.2
+is complete at ten pages and chapter 3.3 at fourteen, rather than complete except
+for a held page that was never in the plan.
 
 ## Three changes the chapter forced
 
