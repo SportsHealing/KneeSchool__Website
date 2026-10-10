@@ -21,7 +21,7 @@
           "area": "Content pipeline",
           "state": "Mechanism built, nothing signed",
           "blocker": "The client confirmed on 10 October 2026 that consultants are lined up, so the people exist. The mechanism existed only as prose packs in docs/review/ with no way for an answer to come back. tools/review_pack.py now generates one pack per chapter from the work and reads a filled pack back into the registers, so the route exists. What is missing is a reviewer's time.",
-          "needed": "A consultant to work through a chapter. 1,569 clinical recommendations across 224 pages and 376 measurements across 132 are outstanding, none signed. python3 tools/review_pack.py --status prints the breakdown by chapter; the largest is 3.7 with 152 and the median is 32.",
+          "needed": "A consultant to work through a chapter. 1,641 clinical recommendations across 234 pages and 380 measurements across 135 are outstanding, none signed. python3 tools/review_pack.py --status prints the breakdown by chapter; the largest is 3.7 with 152 and the median is 32.",
           "pages": "Every page on the site is an unreviewed editorial draft"
         },
         {
@@ -51,21 +51,21 @@
         },
         {
           "ref": "EV-6",
-          "title": "376 measurements on the site are unchecked",
+          "title": "380 measurements on the site are unchecked",
           "area": "Content",
           "state": "Live and flagged",
           "blocker": "They are written from memory because no paper could be retrieved. Each page's references note says so and each figure is registered.",
-          "needed": "Someone with source access to work the register: 376 figures across 132 pages, all UNVERIFIED_FROM_MEMORY. tools/figures.py --report --unchecked is the list.",
-          "pages": "132 pages carry at least one measurement"
+          "needed": "Someone with source access to work the register: 380 figures across 135 pages, all UNVERIFIED_FROM_MEMORY. tools/figures.py --report --unchecked is the list.",
+          "pages": "135 pages carry at least one measurement"
         },
         {
           "ref": "EV-7",
-          "title": "1,569 clinical recommendations on the site are unsigned",
+          "title": "1,641 clinical recommendations on the site are unsigned",
           "area": "Content",
           "state": "Live and registered, and the count rose on 10 October 2026",
           "blocker": "They are written by a process with no clinical qualification, on pages that state they have not been reviewed. The client has chosen to keep them, and decision 007 makes the set finite and listed. The total rose from 976 to 1,295 on 10 October 2026, and chapter 3.12 added 93 more, not because advice was added but because the detector was found to be missing it. POS-001 read clinical direction off a list of imperative openers built from directive prose, and the directions opening with a weighing or a consultation verb had never reached the register. Two extensions of the verb list, decisions 018 and 019, added 319 between them.",
-          "needed": "A consultant to work the register: 1,569 positions across 224 pages, all UNSIGNED. tools/positions.py --report --unsigned is the list.",
-          "pages": "224 pages carry at least one recommendation"
+          "needed": "A consultant to work the register: 1,641 positions across 234 pages, all UNSIGNED. tools/positions.py --report --unsigned is the list.",
+          "pages": "234 pages carry at least one recommendation"
         },
         {
           "ref": "EV-8",
@@ -635,6 +635,15 @@
           "blocker": "Gait Analysis. The organising idea is that gait is the one place the whole knee is measured doing its actual job, and what it measures best is adaptation: every disease page here is about a compensation the patient makes without being told to and usually without knowing. The recurring honest point is that this is the most mechanically complete measurement available and it is almost never available in a clinic. Two overlaps are handled on the page rather than left to the reader: chapter 3.3 owns kinematics during walking, running, landing and cutting, and 3.8.7 owns the PCL deficient knee from the ligament's side. 3.14.1 carries a patient tier, which brings the FAQ block and the when to seek help message.",
           "needed": "Consultant review by someone who reads gait literature. The statements carrying most weight are 3.14.9's, that quadriceps avoidance is the best known finding and not the commonest, and that altered kinematics persist after reconstruction; 3.14.11's, that the adduction moment predicts progression better than the static angle surgery is planned from; and 3.14.12's, that a successful knee replacement does not restore normal knee mechanics. 3.14.8's claim that the landing screen has underperformed while the training has held up is the fourth.",
           "pages": "12 published pages, 15,507 body words as the style gate counts them"
+        },
+        {
+          "ref": "W-20",
+          "title": "Section 3 Biomechanics Academy, chapter 3.15",
+          "area": "Content",
+          "state": "All 10 pages written, style gate passed, awaiting review",
+          "blocker": "Sports-Specific Knee Biomechanics, ten sports. The organising idea is that each sport asks a different question of the same joint and its characteristic injury is the answer: football asks for a direction change on a planted foot, skiing asks the knee to be the weak link in a long lever, cycling asks for a million low load repetitions, golf asks a fixed foot to absorb a rotating body, dance asks for control at the end of range. Every page carries patient, medical student and MRCS and none goes to FRCS, which the architecture sets. That makes these the most public facing pages in Section 3 and the shallowest, so each carries a real when to seek help message rather than a formality.",
+          "needed": "Consultant review by someone with sports medicine exposure, and ideally by more than one person, since no single reviewer will know ten sports. One discipline runs through the chapter and should be checked: no injury rates are quoted anywhere, because epidemiology needs sources and none has been retrieved. Each page says so where a reader would expect a percentage. The statements carrying most weight are 3.15.6's, that modern ski boots moved the injury from the tibia to the knee, and 3.15.7's, that recreational running is not established as a cause of knee osteoarthritis.",
+          "pages": "10 published pages, 13,105 body words as the style gate counts them"
         }
       ]
     }

@@ -289,6 +289,16 @@
     "3.14.10": "biomechanics/pcl-deficient-gait.html",
     "3.14.11": "biomechanics/arthritic-gait.html",
     "3.14.12": "biomechanics/post-arthroplasty-gait.html",
+    "3.15.1": "biomechanics/football-biomechanics.html",
+    "3.15.2": "biomechanics/cricket-biomechanics.html",
+    "3.15.3": "biomechanics/rugby-biomechanics.html",
+    "3.15.4": "biomechanics/tennis-biomechanics.html",
+    "3.15.5": "biomechanics/basketball-biomechanics.html",
+    "3.15.6": "biomechanics/skiing-biomechanics.html",
+    "3.15.7": "biomechanics/athletics-biomechanics.html",
+    "3.15.8": "biomechanics/cycling-biomechanics.html",
+    "3.15.9": "biomechanics/golf-biomechanics.html",
+    "3.15.10": "biomechanics/dance-biomechanics.html",
     "6.1.1": "conditions/acl.html"
   }
 }
