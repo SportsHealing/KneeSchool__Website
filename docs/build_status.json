@@ -21,7 +21,7 @@
           "area": "Content pipeline",
           "state": "Mechanism built, nothing signed",
           "blocker": "The client confirmed on 10 October 2026 that consultants are lined up, so the people exist. The mechanism existed only as prose packs in docs/review/ with no way for an answer to come back. tools/review_pack.py now generates one pack per chapter from the work and reads a filled pack back into the registers, so the route exists. What is missing is a reviewer's time.",
-          "needed": "A consultant to work through a chapter. 1,471 clinical recommendations across 212 pages and 352 measurements across 123 are outstanding, none signed. python3 tools/review_pack.py --status prints the breakdown by chapter; the largest is 3.7 with 152 and the median is 32.",
+          "needed": "A consultant to work through a chapter. 1,569 clinical recommendations across 224 pages and 376 measurements across 132 are outstanding, none signed. python3 tools/review_pack.py --status prints the breakdown by chapter; the largest is 3.7 with 152 and the median is 32.",
           "pages": "Every page on the site is an unreviewed editorial draft"
         },
         {
@@ -51,21 +51,21 @@
         },
         {
           "ref": "EV-6",
-          "title": "357 measurements on the site are unchecked",
+          "title": "376 measurements on the site are unchecked",
           "area": "Content",
           "state": "Live and flagged",
           "blocker": "They are written from memory because no paper could be retrieved. Each page's references note says so and each figure is registered.",
-          "needed": "Someone with source access to work the register: 357 figures across 124 pages, all UNVERIFIED_FROM_MEMORY. tools/figures.py --report --unchecked is the list.",
-          "pages": "124 pages carry at least one measurement"
+          "needed": "Someone with source access to work the register: 376 figures across 132 pages, all UNVERIFIED_FROM_MEMORY. tools/figures.py --report --unchecked is the list.",
+          "pages": "132 pages carry at least one measurement"
         },
         {
           "ref": "EV-7",
-          "title": "1,471 clinical recommendations on the site are unsigned",
+          "title": "1,569 clinical recommendations on the site are unsigned",
           "area": "Content",
           "state": "Live and registered, and the count rose on 10 October 2026",
           "blocker": "They are written by a process with no clinical qualification, on pages that state they have not been reviewed. The client has chosen to keep them, and decision 007 makes the set finite and listed. The total rose from 976 to 1,295 on 10 October 2026, and chapter 3.12 added 93 more, not because advice was added but because the detector was found to be missing it. POS-001 read clinical direction off a list of imperative openers built from directive prose, and the directions opening with a weighing or a consultation verb had never reached the register. Two extensions of the verb list, decisions 018 and 019, added 319 between them.",
-          "needed": "A consultant to work the register: 1,471 positions across 212 pages, all UNSIGNED. tools/positions.py --report --unsigned is the list.",
-          "pages": "212 pages carry at least one recommendation"
+          "needed": "A consultant to work the register: 1,569 positions across 224 pages, all UNSIGNED. tools/positions.py --report --unsigned is the list.",
+          "pages": "224 pages carry at least one recommendation"
         },
         {
           "ref": "EV-8",
@@ -626,6 +626,15 @@
           "blocker": "Alignment and Biomechanics. The chapter is about one number nobody can measure in the state that matters: the static angle is taken standing still, the load it governs is applied during movement, and corrections are planned to a target no trial has tested. 3.13.5 and 3.13.7 are where that lands, with constitutional varus saying neutral is not normal for everyone and dynamic alignment saying the adduction moment predicts where the angle does not. Ten pages. 3.13.9 and 3.13.10 carry a fellowship tier.",
           "needed": "Consultant review by a surgeon who does osteotomy. The statements carrying most weight are 3.13.10's, that the classical overcorrection target came from a single 1980s series and has never been compared with an alternative, and 3.13.7's, that the variable which predicts is neither the one measured nor the one surgery corrects. 3.13.6's claim that the accepted joint line obliquity limit is a convention with no outcome study behind it is the third.",
           "pages": "10 published pages, 14,532 body words as the style gate counts them"
+        },
+        {
+          "ref": "W-19",
+          "title": "Section 3 Biomechanics Academy, chapter 3.14",
+          "area": "Content",
+          "state": "All 12 pages written, style gate passed, awaiting review",
+          "blocker": "Gait Analysis. The organising idea is that gait is the one place the whole knee is measured doing its actual job, and what it measures best is adaptation: every disease page here is about a compensation the patient makes without being told to and usually without knowing. The recurring honest point is that this is the most mechanically complete measurement available and it is almost never available in a clinic. Two overlaps are handled on the page rather than left to the reader: chapter 3.3 owns kinematics during walking, running, landing and cutting, and 3.8.7 owns the PCL deficient knee from the ligament's side. 3.14.1 carries a patient tier, which brings the FAQ block and the when to seek help message.",
+          "needed": "Consultant review by someone who reads gait literature. The statements carrying most weight are 3.14.9's, that quadriceps avoidance is the best known finding and not the commonest, and that altered kinematics persist after reconstruction; 3.14.11's, that the adduction moment predicts progression better than the static angle surgery is planned from; and 3.14.12's, that a successful knee replacement does not restore normal knee mechanics. 3.14.8's claim that the landing screen has underperformed while the training has held up is the fourth.",
+          "pages": "12 published pages, 15,507 body words as the style gate counts them"
         }
       ]
     }
