@@ -17,12 +17,12 @@
         },
         {
           "ref": "EV-2",
-          "title": "Consultant review has no return path",
+          "title": "Consultant review has reviewers but no return path",
           "area": "Content pipeline",
-          "state": "Blocked",
-          "blocker": "Review packs are written to docs/review/ and there is no mechanism for a consultant to return a decision into the pipeline. The deployed design uses a Step Functions task token, and the pipeline is not deployed.",
-          "needed": "Either the pipeline deployed to an AWS account, or an agreed manual route for returning review decisions.",
-          "pages": "55 pages awaiting review"
+          "state": "Partly resolved",
+          "blocker": "The client confirmed on 10 October 2026 that consultants are lined up, so the people exist. The mechanism does not: review packs are written to docs/review/ and there is no route for a decision to come back into the pipeline. The deployed design uses a Step Functions task token and the pipeline is not deployed.",
+          "needed": "An agreed manual route for returning review decisions, or the pipeline deployed. Waiting on it: 382 clinical recommendations across 74 pages and 171 measurements across 53, none signed.",
+          "pages": "Every page on the site is an unreviewed editorial draft"
         },
         {
           "ref": "EV-3",
@@ -335,6 +335,15 @@
           "blocker": "Section 3's 188 pages had no template. Both its page types borrowed the anatomy one, which gave a page called What Is Biomechanics? a heading for Blood Supply and Innervation.",
           "needed": "Client confirmation of the section order, as decision 003 received for Section 0. The biomechanics template is The Principle, At the Knee, What Changes It, How It Is Measured, Clinical Relevance. Two open questions in decision 014: whether biomechanics pages should be exempt from the junior closing message, and whether the landmark papers pages are worth attempting from memory.",
           "pages": "Chapter 3.1 built on it, 7 pages published"
+        },
+        {
+          "ref": "D-015",
+          "title": "Published, not publicised",
+          "area": "Governance",
+          "state": "Applied",
+          "blocker": "The site can go live and will not be promoted until it is verified. Nothing on the site distinguished those two states, so a crawler finding it would have publicised it, and indexing is not cleanly reversible because pages stay cached after removal.",
+          "needed": "Nothing now. One value in site.json drives a noindex directive on all 155 pages and a robots.txt that disallows every crawler. Flipping it is one line and one command when verification is done. PUB-010 refuses the half flip, where the config says one thing and the pages say another. See decision 015.",
+          "pages": "All 155 pages carry the directive"
         }
       ]
     },

@@ -30,11 +30,16 @@ def page(**over):
                  % cfg["medical_safety"]["required_sentence"]),
     }
     fields.update(over)
+    # A page that claims to pass every rule has to carry the publication posture
+    # too, whichever way site.json has it set.
+    fields["robots"] = ("" if cfg.get("discoverable")
+                        else '<meta name="robots" content="noindex, nofollow">')
     html = ('<!DOCTYPE html><html lang="en-GB"><head><meta charset="utf-8">'
             '<meta name="viewport" content="width=device-width">'
             '<title>%(title)s</title>'
             '<meta name="description" content="%(description)s">'
-            '<meta name="theme-color" content="#0E2A21">'
+            '<meta name="theme-color" content="#0e2b22">'
+            '%(robots)s'
             '<link rel="canonical" href="%(canonical)s">'
             '</head><body>%(body)s</body></html>') % fields
     p = pq.Head()
@@ -138,3 +143,66 @@ class LiveSite(unittest.TestCase):
     def test_the_canonical_url_of_the_homepage_is_the_bare_domain(self):
         self.assertEqual(chrome.canonical_url("index.html"),
                          chrome.site_config()["base_url"])
+
+
+class PublicationPosture(unittest.TestCase):
+    """Decision 015: the site is published and not publicised. One value in
+    site.json drives the page directive and robots.txt, and PUB-010 refuses a
+    half flip, because a site where some pages are indexable has no posture."""
+
+    def setUp(self):
+        self.cfg = chrome.site_config()
+        self.rel = "levels/junior.html"
+
+    def test_the_site_is_currently_not_publicised(self):
+        self.assertFalse(self.cfg.get("discoverable"))
+
+    def test_every_page_carries_the_directive(self):
+        out = subprocess.run(
+            [sys.executable, os.path.join(REPO, "tools", "publication_qa.py")],
+            capture_output=True, text=True, cwd=REPO)
+        self.assertEqual(out.returncode, 0, out.stdout)
+        with open(os.path.join(REPO, "index.html"), encoding="utf-8") as fh:
+            self.assertIn('name="robots" content="noindex, nofollow"', fh.read())
+
+    def test_robots_txt_agrees_with_the_switch(self):
+        with open(os.path.join(REPO, "robots.txt"), encoding="utf-8") as fh:
+            body = fh.read()
+        if self.cfg.get("discoverable"):
+            self.assertIn("Allow: /", body)
+        else:
+            self.assertIn("Disallow: /", body)
+
+    def test_the_rule_catches_a_page_missing_the_directive(self):
+        pg = page()
+        pg.meta.pop("robots", None)
+        out = pq.pub_010(self.rel, pg, self.cfg, {})
+        self.assertTrue(out and out[0].startswith("no robots noindex"), out)
+
+    def test_the_rule_catches_a_stray_directive_once_discoverable(self):
+        pg = page()
+        pg.meta["robots"] = "noindex, nofollow"
+        cfg = dict(self.cfg)
+        cfg["discoverable"] = True
+        out = pq.pub_010(self.rel, pg, cfg, {})
+        self.assertTrue(out and "but site.json says the site is discoverable" in out[0])
+
+    def test_flipping_the_switch_without_applying_chrome_fails_the_gate(self):
+        """The half flip is the failure worth catching: a config that says
+        discoverable and 155 pages that still say noindex."""
+        path = os.path.join(ROOT, "config", "site.json")
+        with open(path, encoding="utf-8") as fh:
+            original = fh.read()
+        cfg = json.loads(original)
+        cfg["discoverable"] = True
+        try:
+            with open(path, "w", encoding="utf-8") as fh:
+                json.dump(cfg, fh, indent=2)
+            out = subprocess.run(
+                [sys.executable, os.path.join(REPO, "tools", "publication_qa.py")],
+                capture_output=True, text=True, cwd=REPO)
+            self.assertEqual(out.returncode, 1, out.stdout)
+            self.assertIn("PUB-010", out.stdout)
+        finally:
+            with open(path, "w", encoding="utf-8") as fh:
+                fh.write(original)

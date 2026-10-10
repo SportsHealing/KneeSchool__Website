@@ -30,6 +30,21 @@ cannot express as a custom property. Its value lives in
 `pipeline/config/site.json` and `tools/apply_chrome.py` keeps every page in step
 with it. See `docs/decisions/012-mykneescore-design-system.md`.
 
+## Published, not publicised
+
+The site may go live; it will not be promoted until it is verified. Those are
+different states and `pipeline/config/site.json` holds the difference:
+
+```json
+"discoverable": false
+```
+
+While that is false, every page carries a `robots` noindex directive and
+`robots.txt` disallows every crawler. To change it, set the value to true and
+run `python3 tools/apply_chrome.py`; all pages and `robots.txt` move together.
+`PUB-010` in the publication gate refuses a half flip. See
+`docs/decisions/015-published-not-publicised.md`.
+
 ## Branches
 
 ```

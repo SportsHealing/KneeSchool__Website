@@ -125,6 +125,19 @@ def _href(target, rel):
     return rel + target
 
 
+def robots_meta():
+    """The noindex directive, while the site is published and not publicised.
+
+    A live site that search engines index is publicised, whatever anyone intended,
+    and indexing is not cleanly reversible because a page can stay cached after it
+    is removed. The switch is one value in pipeline/config/site.json and
+    tools/apply_chrome.py applies it everywhere. See decision 015.
+    """
+    if site_config().get("discoverable"):
+        return ""
+    return '<meta name="robots" content="noindex, nofollow">'
+
+
 def head(title, description, rel, extra_meta="", canonical=None):
     return """<!DOCTYPE html>
 <html lang="en-GB">
@@ -134,13 +147,14 @@ def head(title, description, rel, extra_meta="", canonical=None):
 <title>%s</title>
 <meta name="description" content="%s">
 <meta name="theme-color" content="%s">
+%s
 %s%s<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="%sassets/styles.css?v=%s">
 </head>
 <body>
-""" % (title, description, site_config()["theme_color"],
+""" % (title, description, site_config()["theme_color"], robots_meta(),
        '<link rel="canonical" href="%s">\n' % canonical_url(canonical) if canonical else "",
        extra_meta, rel, stylesheet_version())
 
