@@ -605,5 +605,44 @@ class ProseReferenceDetector(unittest.TestCase):
         self.assertIn("0 point at an id the architecture does not have", out.stdout)
 
 
+class RenderTargetCollisions(unittest.TestCase):
+    """Two page ids pointing at the same output file would publish one page and
+    silently lose the other, with every gate still passing. Chapter 3.6 came
+    within one slug of it, because three of its titles are shared with chapters
+    3.4 and 2.7."""
+
+    TARGETS = os.path.join(REPO, "pipeline", "config", "render_targets.json")
+
+    def targets(self):
+        with open(self.TARGETS, encoding="utf-8") as fh:
+            return json.load(fh)
+
+    def test_no_two_pages_render_to_the_same_file(self):
+        seen = {}
+        for page_id, t in sorted(self.targets()["pages"].items()):
+            out = t["out"]
+            self.assertNotIn(out, seen,
+                             "%s and %s both render to %s" % (seen.get(out), page_id, out))
+            seen[out] = page_id
+
+    def test_the_renderer_refuses_a_collision(self):
+        with open(self.TARGETS, encoding="utf-8") as fh:
+            original = fh.read()
+        cfg = json.loads(original)
+        ids = sorted(cfg["pages"])
+        cfg["pages"][ids[1]]["out"] = cfg["pages"][ids[0]]["out"]
+        try:
+            with open(self.TARGETS, "w", encoding="utf-8") as fh:
+                json.dump(cfg, fh, indent=2)
+            out = subprocess.run(
+                [sys.executable, os.path.join(REPO, "tools", "render_site.py")],
+                capture_output=True, text=True, cwd=REPO)
+            self.assertEqual(out.returncode, 1, out.stdout)
+            self.assertIn("render targets collide", out.stdout + out.stderr)
+        finally:
+            with open(self.TARGETS, "w", encoding="utf-8") as fh:
+                fh.write(original)
+
+
 if __name__ == "__main__":
     unittest.main()

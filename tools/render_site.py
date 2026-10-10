@@ -30,6 +30,26 @@ def main():
 
     with open(TARGETS) as fh:
         targets = json.load(fh)["pages"]
+
+    # Two page ids pointing at the same output file would publish one page and
+    # silently lose the other, with every gate still passing: the file exists,
+    # it is valid, and nothing knows a second page was meant to be there.
+    # Chapter 3.6 came within one slug of this, because its Load Sharing, Shock
+    # Absorption and Proprioception pages share their titles with chapter 3.4's
+    # and chapter 2.7's. The titles are the architecture's and cannot change,
+    # so the slugs carry a prefix and this refuses the mistake rather than
+    # trusting it was noticed.
+    out_paths = {}
+    clashes = []
+    for page_id, t in sorted(targets.items()):
+        out = t["out"]
+        if out in out_paths:
+            clashes.append("%s and %s both render to %s"
+                           % (out_paths[out], page_id, out))
+        out_paths[out] = page_id
+    if clashes:
+        sys.exit("render targets collide:\n  " + "\n  ".join(clashes))
+
     if args.only:
         unknown = [p for p in args.only if p not in targets]
         if unknown:
