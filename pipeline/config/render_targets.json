@@ -599,12 +599,6 @@
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
     },
-    "6.1.1": {
-      "out": "conditions/acl.html",
-      "parent": "Conditions|index.html",
-      "status": "Editorial draft. Evidence verification did not run. With a consultant for review. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
     "2.8.1": {
       "out": "anatomy/pcl-gross-anatomy.html",
       "parent": "Anatomy Academy|index.html",
@@ -1473,6 +1467,66 @@
       "out": "biomechanics/combined-pcl-and-plc-injury.html",
       "parent": "Biomechanics Academy|../encyclopaedia/index.html",
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.11.1": {
+      "out": "biomechanics/iliotibial-band-function.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.11.2": {
+      "out": "biomechanics/kaplan-fibre-function.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.11.3": {
+      "out": "biomechanics/anterolateral-ligament-function.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.11.4": {
+      "out": "biomechanics/pivot-shift-control.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.11.5": {
+      "out": "biomechanics/internal-rotation-control.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.11.6": {
+      "out": "biomechanics/segond-lesion-mechanics.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.11.7": {
+      "out": "biomechanics/lateral-extra-articular-tenodesis.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.11.8": {
+      "out": "biomechanics/combined-acl-and-all-reconstruction.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.11.9": {
+      "out": "biomechanics/anterolateral-complex-controversies.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.1.1": {
+      "out": "conditions/acl.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. With a consultant for review. Not for clinical use.",
       "source": "styled_v1.md"
     }
   },

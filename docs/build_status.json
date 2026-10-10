@@ -21,7 +21,7 @@
           "area": "Content pipeline",
           "state": "Mechanism built, nothing signed",
           "blocker": "The client confirmed on 10 October 2026 that consultants are lined up, so the people exist. The mechanism existed only as prose packs in docs/review/ with no way for an answer to come back. tools/review_pack.py now generates one pack per chapter from the work and reads a filled pack back into the registers, so the route exists. What is missing is a reviewer's time.",
-          "needed": "A consultant to work through a chapter. 976 clinical recommendations across 181 pages and 335 measurements across 112 are outstanding, none signed. python3 tools/review_pack.py --status prints the breakdown by chapter; the largest is 3.3 with 85 and the median is nearer 20.",
+          "needed": "A consultant to work through a chapter. 1,026 clinical recommendations across 190 pages and 336 measurements across 113 are outstanding, none signed. python3 tools/review_pack.py --status prints the breakdown by chapter; the largest is 3.7 with 108 and the median is nearer 20.",
           "pages": "Every page on the site is an unreviewed editorial draft"
         },
         {
@@ -51,21 +51,21 @@
         },
         {
           "ref": "EV-6",
-          "title": "335 measurements on the site are unchecked",
+          "title": "336 measurements on the site are unchecked",
           "area": "Content",
           "state": "Live and flagged",
           "blocker": "They are written from memory because no paper could be retrieved. Each page's references note says so and each figure is registered.",
-          "needed": "Someone with source access to work the register: 335 figures across 112 pages, all UNVERIFIED_FROM_MEMORY. tools/figures.py --report --unchecked is the list.",
-          "pages": "112 pages carry at least one measurement"
+          "needed": "Someone with source access to work the register: 336 figures across 113 pages, all UNVERIFIED_FROM_MEMORY. tools/figures.py --report --unchecked is the list.",
+          "pages": "113 pages carry at least one measurement"
         },
         {
           "ref": "EV-7",
-          "title": "976 clinical recommendations on the site are unsigned",
+          "title": "1,026 clinical recommendations on the site are unsigned",
           "area": "Content",
           "state": "Live and registered",
           "blocker": "They are written by a process with no clinical qualification, on pages that state they have not been reviewed. The client has chosen to keep them, and decision 007 makes the set finite and listed.",
-          "needed": "A consultant to work the register: 976 positions across 181 pages, all UNSIGNED. tools/positions.py --report --unsigned is the list.",
-          "pages": "181 pages carry at least one recommendation"
+          "needed": "A consultant to work the register: 1,026 positions across 190 pages, all UNSIGNED. tools/positions.py --report --unsigned is the list.",
+          "pages": "190 pages carry at least one recommendation"
         },
         {
           "ref": "EV-8",
@@ -518,6 +518,15 @@
           "blocker": "Lateral Knee Biomechanics, the mirror of 3.9 and not a symmetrical one. Two pages on what the side does, three on the structures, one on the corner as a unit, one on the mechanics behind the dial test, one on reconstruction and one on the combined injury. 3.10.8 carries a fellowship tier.",
           "needed": "Consultant review by someone who reconstructs corners. The three component reconstruction, the tensioning position, and the claim that a missed corner injury is a leading cause of graft failure on both cruciates are the statements that carry the most weight. The dial test page states the mechanics and hands the technique to 4.13, which is worth checking for the boundary as well as the content.",
           "pages": "9 published pages, 9,865 body words as the style gate counts them"
+        },
+        {
+          "ref": "W-16",
+          "title": "Section 3 Biomechanics Academy, chapter 3.11",
+          "area": "Content",
+          "state": "All 9 pages written, style gate passed, awaiting review",
+          "blocker": "Anterolateral Complex Biomechanics, the chapter where the anatomy is still argued over. Three pages on the structures, two on what they control, one on the Segond lesion as evidence of an attachment, one on the tenodesis, one on the combined reconstruction and one on the controversies. Four pages carry a fellowship tier and 3.11.9 is the first page in Section 3 to carry a consultant tier.",
+          "needed": "Consultant review by an ACL surgeon who uses lateral augmentation. The pages that carry the most weight are 3.11.3, which separates the naming question from the functional one, 3.11.7, where the clinical evidence is strongest and the anatomical rationale weakest, and 3.11.9, which sets out two defensible consultant positions rather than one answer. The indication threshold for augmentation is the single statement most likely to be contested.",
+          "pages": "9 published pages, 10,546 body words as the style gate counts them"
         }
       ]
     }

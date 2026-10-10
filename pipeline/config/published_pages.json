@@ -246,6 +246,15 @@
     "3.10.7": "biomechanics/dial-test-biomechanics.html",
     "3.10.8": "biomechanics/plc-reconstruction-biomechanics.html",
     "3.10.9": "biomechanics/combined-pcl-and-plc-injury.html",
+    "3.11.1": "biomechanics/iliotibial-band-function.html",
+    "3.11.2": "biomechanics/kaplan-fibre-function.html",
+    "3.11.3": "biomechanics/anterolateral-ligament-function.html",
+    "3.11.4": "biomechanics/pivot-shift-control.html",
+    "3.11.5": "biomechanics/internal-rotation-control.html",
+    "3.11.6": "biomechanics/segond-lesion-mechanics.html",
+    "3.11.7": "biomechanics/lateral-extra-articular-tenodesis.html",
+    "3.11.8": "biomechanics/combined-acl-and-all-reconstruction.html",
+    "3.11.9": "biomechanics/anterolateral-complex-controversies.html",
     "6.1.1": "conditions/acl.html"
   }
 }
