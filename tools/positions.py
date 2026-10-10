@@ -71,6 +71,10 @@ def detect(sent):
     return None
 
 
+WITHDRAWN_NOTE = ("No longer on the page; kept so the record of what was signed "
+                  "survives.")
+
+
 def merge(page_id, found):
     path = os.path.join(REGISTRY, "%s.json" % page_id)
     prior = {}
@@ -94,9 +98,15 @@ def merge(page_id, found):
         if key in seen:
             continue
         was["verification"] = "WITHDRAWN"
-        was["note"] = ((was.get("note", "") + " ").strip() +
-                       " No longer on the page; kept so the record of what was signed "
-                       "survives.").strip()
+        # Appended only once. This used to concatenate on every extraction, so a
+        # withdrawn position's note grew by one copy of the sentence per run and
+        # had reached twenty four copies on 3.11.9 before anyone read it. The
+        # extractor runs on every chapter build, so a non idempotent write here
+        # also meant a clean checkout went dirty whenever the registers were
+        # re-extracted, which is how it was found.
+        note = (was.get("note") or "").strip()
+        if WITHDRAWN_NOTE not in note:
+            was["note"] = (note + " " + WITHDRAWN_NOTE).strip()
         out.append(was)
     return out
 
