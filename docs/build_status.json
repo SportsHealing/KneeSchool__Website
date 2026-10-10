@@ -13,7 +13,7 @@
           "state": "Blocked",
           "blocker": "The build environment has no access to PubMed, Cochrane, NICE, any journal or any textbook. Agent 2 of the three agent pipeline is the fact checker and it cannot retrieve a single source.",
           "needed": "Source access, or a human verifier. Until then no page on this site carries a reference, every verified handoff is marked NOT_RUN_TOOLS_UNAVAILABLE, and no citation has been invented to fill the gap.",
-          "pages": "All 172 published article pages"
+          "pages": "All 182 published article pages"
         },
         {
           "ref": "EV-2",
@@ -21,7 +21,7 @@
           "area": "Content pipeline",
           "state": "Mechanism built, nothing signed",
           "blocker": "The client confirmed on 10 October 2026 that consultants are lined up, so the people exist. The mechanism existed only as prose packs in docs/review/ with no way for an answer to come back. tools/review_pack.py now generates one pack per chapter from the work and reads a filled pack back into the registers, so the route exists. What is missing is a reviewer's time.",
-          "needed": "A consultant to work through a chapter. 580 clinical recommendations across 108 pages and 259 measurements across 74 are outstanding, none signed. python3 tools/review_pack.py --status prints the breakdown by chapter; the largest is 3.3 with 85 and the median is nearer 20.",
+          "needed": "A consultant to work through a chapter. 636 clinical recommendations across 118 pages and 267 measurements across 79 are outstanding, none signed. python3 tools/review_pack.py --status prints the breakdown by chapter; the largest is 3.3 with 85 and the median is nearer 20.",
           "pages": "Every page on the site is an unreviewed editorial draft"
         },
         {
@@ -51,21 +51,21 @@
         },
         {
           "ref": "EV-6",
-          "title": "259 measurements on the site are unchecked",
+          "title": "267 measurements on the site are unchecked",
           "area": "Content",
           "state": "Live and flagged",
           "blocker": "They are written from memory because no paper could be retrieved. Each page's references note says so and each figure is registered.",
-          "needed": "Someone with source access to work the register: 259 figures across 74 pages, all UNVERIFIED_FROM_MEMORY. tools/figures.py --report --unchecked is the list.",
-          "pages": "74 pages carry at least one measurement"
+          "needed": "Someone with source access to work the register: 267 figures across 79 pages, all UNVERIFIED_FROM_MEMORY. tools/figures.py --report --unchecked is the list.",
+          "pages": "79 pages carry at least one measurement"
         },
         {
           "ref": "EV-7",
-          "title": "580 clinical recommendations on the site are unsigned",
+          "title": "636 clinical recommendations on the site are unsigned",
           "area": "Content",
           "state": "Live and registered",
           "blocker": "They are written by a process with no clinical qualification, on pages that state they have not been reviewed. The client has chosen to keep them, and decision 007 makes the set finite and listed.",
-          "needed": "A consultant to work the register: 580 positions across 108 pages, all UNSIGNED. tools/positions.py --report --unsigned is the list.",
-          "pages": "108 pages carry at least one recommendation"
+          "needed": "A consultant to work the register: 636 positions across 118 pages, all UNSIGNED. tools/positions.py --report --unsigned is the list.",
+          "pages": "118 pages carry at least one recommendation"
         },
         {
           "ref": "EV-8",
@@ -118,7 +118,7 @@
           "area": "Content architecture",
           "state": "Fixed twice, and tested",
           "blocker": "A bare reference in prose can name a real chapter and still be the wrong one. Seven pages across chapters 2.8, 2.9 and 2.10 sent the reader to Meniscal Examination, ACL Examination and PCL Examination for the posterior drawer, the medial side and the dial test. Every id was valid, so nothing caught it.",
-          "needed": "Nothing. 766 bare references across 129 pages, none pointing at an id the architecture lacks. The detector has itself been corrected twice: chapter 3.4's bare decimals were read as chapter references, one of which resolved to a real page, and fixing that uncovered a pre-existing miss where any reference ending a sentence was never checked. There were 56 of those. Six tests hold both fixes.",
+          "needed": "Nothing. 856 bare references across 139 pages, none pointing at an id the architecture lacks. The detector has itself been corrected twice: chapter 3.4's bare decimals were read as chapter references, one of which resolved to a real page, and fixing that uncovered a pre-existing miss where any reference ending a sentence was never checked. There were 56 of those. Six tests hold both fixes.",
           "pages": "7 pages corrected; 88 pages carry bare references"
         },
         {
@@ -351,8 +351,8 @@
           "area": "Governance",
           "state": "Applied",
           "blocker": "The site can go live and will not be promoted until it is verified. Nothing on the site distinguished those two states, so a crawler finding it would have publicised it, and indexing is not cleanly reversible because pages stay cached after removal.",
-          "needed": "Nothing now. One value in site.json drives a noindex directive on all 189 pages and a robots.txt that disallows every crawler. Flipping it is one line and one command when verification is done. PUB-010 refuses the half flip, where the config says one thing and the pages say another. See decision 015.",
-          "pages": "All 189 pages carry the directive"
+          "needed": "Nothing now. One value in site.json drives a noindex directive on all 199 pages and a robots.txt that disallows every crawler. Flipping it is one line and one command when verification is done. PUB-010 refuses the half flip, where the config says one thing and the pages say another. See decision 015.",
+          "pages": "All 199 pages carry the directive"
         },
         {
           "ref": "D-016",
@@ -370,7 +370,7 @@
           "state": "Applied",
           "blocker": "A consultant filling eighty five cells wants a column to tab down, not a markdown table, and a printed pack for a meeting wants to be a document.",
           "needed": "Nothing. Every pack generates as markdown, a spreadsheet and a Word file from the same data, all carrying the same row references, and --ingest reads any of them. Two faults were found while verifying: python-docx writes a schema-invalid settings.xml, now corrected, and LibreOffice does not work in this container, so the workbook sets fullCalcOnLoad and the Word file is verified structurally rather than rendered. See decision 017.",
-          "pages": "docs/review/packs/, markdown for all 26 chapters and both binaries for 3.2, 3.3 and 3.4"
+          "pages": "docs/review/packs/, markdown for all 27 chapters and both binaries for 3.2 to 3.5"
         }
       ]
     },
@@ -426,7 +426,7 @@
           "area": "Content",
           "state": "7 of 8 written, style gate passed, awaiting review",
           "blocker": "The first chapter of the largest remaining section. It carries all five tier shapes Section 3 uses, from junior to consultant, which is why it was built first: whatever template serves it serves the section.",
-          "needed": "Consultant review. Page 3.1.8 is held under decision 014 and EV-14. Chapters 3.5 to 3.17 are the 154 pages still to write.",
+          "needed": "Consultant review. Page 3.1.8 is held under decision 014 and EV-14. Chapters 3.6 to 3.17 are the 144 pages still to write.",
           "pages": "7 published pages, 10,697 body words as the style gate counts them"
         },
         {
@@ -455,6 +455,15 @@
           "blocker": "Knee Kinetics, the other half of chapter 3.3. Ten pages on forces and moments: what kinetics is, the ground reaction force, joint reaction forces, lever arms, moments and their external and internal halves, energy absorption, force transmission and shock absorption. Three tiers on every page, medical student to FRCS.",
           "needed": "Consultant review. The chapter carries more measurements than any other in Section 3, because a kinetic claim without a magnitude says nothing, and every one of them is written from standard teaching. Contact area and stress are handed to 3.5.",
           "pages": "10 published pages, 12,196 body words as the style gate counts them"
+        },
+        {
+          "ref": "W-10",
+          "title": "Section 3 Biomechanics Academy, chapter 3.5",
+          "area": "Content",
+          "state": "All 10 pages written, style gate passed, awaiting review",
+          "blocker": "Tibiofemoral Contact Mechanics, where chapters 3.3 and 3.4 arrive. Four pages on the normal state: contact areas, contact pressures, load distribution and the effect of flexion. Three on what changes it: meniscal loss, malalignment and body mass. Three on the knee after an event: cruciate injury, meniscectomy and osteotomy. Three tiers on every page.",
+          "needed": "Consultant review, and this chapter needs it most. Every page turns on the distinction between force and stress, and almost every figure in it is a cadaveric contact measurement quoted from memory. If the area and pressure numbers are wrong, the mechanical argument of three chapters is wrong with them.",
+          "pages": "10 published pages, 11,859 body words as the style gate counts them"
         }
       ]
     }
