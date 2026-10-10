@@ -104,3 +104,11 @@ That writes each decision into the page's own register. The style gate then enfo
 
 Amending a sentence or correcting a figure needs the page edited as well as the register. Put the replacement wording in the Decision cell after `AMENDED:` or `CORRECTED:` and it is carried into the register's note field for whoever makes the edit.
 
+## The same pack in two other formats
+
+A spreadsheet, which is easier to fill, and a Word file, which is easier to print:
+
+       python3 tools/review_pack.py --chapter 0.2 --format all
+
+All three carry the same rows and the same references, and `--ingest` reads any of them.
+

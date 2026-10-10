@@ -175,10 +175,6 @@ class TrackerSeed(unittest.TestCase):
             self.assertEqual(i["draft_status"], "not_started")
 
 
-if __name__ == "__main__":
-    unittest.main()
-
-
 class DecisionZeroZeroThreeTemplates(unittest.TestCase):
     """The four Section 0 templates added by decision 003."""
 
@@ -559,3 +555,55 @@ class BiomechanicsTemplate(unittest.TestCase):
         for heading in ("### The Principle", "### At the Knee", "### How It Is Measured"):
             self.assertIn(heading, body)
         self.assertNotIn("Blood Supply and Innervation", body)
+
+
+class ProseReferenceDetector(unittest.TestCase):
+    """The prose reference report is what caught four references that pointed at
+    a real page about the wrong subject. Chapter 3.4 then quoted a bare decimal
+    and the detector read "1.0 to 1.2 times body weight" as two chapter
+    references, one of which resolved to a real page. These tests hold the fix
+    and the pre-existing miss it uncovered."""
+
+    def setUp(self):
+        sys.path.insert(0, os.path.join(REPO, "tools"))
+        import crossrefs
+        self.refs = lambda t: [r for _, _, r in crossrefs.reference_spans(t)]
+
+    def test_a_measurement_is_not_a_reference(self):
+        for text in ("roughly 1.0 to 1.2 times body weight",
+                     "about 1.5 times body weight",
+                     "a 2.5 mm step off",
+                     "1.0 to 1.2 body weight walking",
+                     "roughly 25.5 degrees of rotation"):
+            self.assertEqual(self.refs(text), [], text)
+
+    def test_a_list_of_references_keeps_every_member(self):
+        """The first attempt at the fix dropped the second id in a pair, because
+        it looks exactly like the second number in a range. It suppressed 156
+        real references."""
+        self.assertEqual(self.refs("3.7 and 3.8 cover the cruciates"), ["3.7", "3.8"])
+        self.assertEqual(self.refs("3.4.6 and 3.13 cover it"), ["3.4.6", "3.13"])
+        self.assertEqual(self.refs("2.5.7 and 2.6.4 cover the roots"), ["2.5.7", "2.6.4"])
+
+    def test_a_reference_ending_a_sentence_is_found(self):
+        """The old pattern refused a reference followed by a full stop, so every
+        reference that closed a sentence went unchecked. There were 56."""
+        self.assertEqual(self.refs("chapters 0.1 and 0.2."), ["0.1", "0.2"])
+        self.assertEqual(self.refs("the subject of 2.7.6."), ["2.7.6"])
+
+    def test_a_four_part_id_is_not_reported_as_its_first_three(self):
+        self.assertEqual(self.refs("see 5.3.1.1 AP View"), [])
+
+    def test_an_ordinary_reference_still_resolves(self):
+        self.assertEqual(self.refs("3.3.9 covers walking"), ["3.3.9"])
+        self.assertEqual(self.refs("3.5 covers contact mechanics"), ["3.5"])
+
+    def test_the_site_has_no_reference_to_a_missing_id(self):
+        out = subprocess.run([sys.executable, os.path.join(REPO, "tools", "crossrefs.py"),
+                              "--prose-report"], capture_output=True, text=True, cwd=REPO)
+        self.assertEqual(out.returncode, 0, out.stdout)
+        self.assertIn("0 point at an id the architecture does not have", out.stdout)
+
+
+if __name__ == "__main__":
+    unittest.main()

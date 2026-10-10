@@ -86,6 +86,51 @@ def words(text):
 # judgement to a reader. Generated from the pages, like every other register here.
 BARE_REF = re.compile(r"(?<![\w.])(\d{1,2}(?:\.\d{1,3}){1,2})(?![\w.])")
 
+# Chapter 3.4 was the first chapter to quote a bare decimal in prose, and the
+# detector read "roughly 1.0 to 1.2 times body weight" as references to chapter
+# 1.0 and chapter 1.2. One of those does not exist and the other is a real page,
+# which is the worse case: a silent false match on a number that was never a
+# reference.
+#
+# What separates the two is the unit, not the decimal point. "1.0 to 1.2 times
+# body weight" ends in a unit; "3.7 and 3.8 cover the cruciates" ends in prose.
+# Both are chains of numbers joined by "to" or "and", so a chain is classified
+# once as a whole and every number in it is kept or dropped together. Testing
+# each number on its own was tried first and suppressed 156 real references,
+# because the second id in "3.7 and 3.8" looks exactly like the second number in
+# a range.
+NUMBER_RUN = re.compile(
+    r"(?<![\w.])\d{1,2}(?:\.\d{1,3}){0,2}"
+    r"(?:\s*(?:to|and|or|,)\s*\d{1,2}(?:\.\d{1,3}){0,2})*")
+UNIT_AFTER = re.compile(
+    r"^\s*(?:times|x|mm|cm|metres|m|kg|N|Nm|degrees?|per\s+cent|%|body\s+weight"
+    r"|seconds?|ms|minutes?|hours?|years?|months?|weeks?|days?|fold)\b", re.I)
+
+
+DEEPER_ID = re.compile(r"^\.\d")
+
+
+def reference_spans(text):
+    """Every bare reference in the prose, with the measurements left out.
+
+    Scanning inside the run rather than across the whole text also fixed a
+    pre-existing miss: the old pattern refused a reference followed by a full
+    stop, so every reference that ended a sentence went unchecked. There were 56
+    of them. The one thing that lookahead did protect against is kept here, which
+    is a four part id such as 5.3.1.1 being reported as its first three parts.
+    """
+    out = []
+    for run in NUMBER_RUN.finditer(text):
+        if UNIT_AFTER.match(text[run.end():run.end() + 40]):
+            continue
+        for m in BARE_REF.finditer(run.group(0)):
+            begin = run.start() + m.start()
+            finish = run.start() + m.end()
+            if DEEPER_ID.match(text[finish:finish + 2]):
+                continue
+            out.append((begin, finish, m.group(1)))
+    return out
+
 
 def report(runs, known):
     rows = []
@@ -95,9 +140,8 @@ def report(runs, known):
             continue
         with open(draft) as fh:
             text = LINK.sub("", fh.read())
-        for m in BARE_REF.finditer(text):
-            ref = m.group(1)
-            context = re.sub(r"\s+", " ", text[m.start():m.end() + 60]).strip()
+        for begin, finish, ref in reference_spans(text):
+            context = re.sub(r"\s+", " ", text[begin:finish + 60]).strip()
             rows.append((page_id, ref, known.get(ref, "NOT IN THE ARCHITECTURE"), context))
     current = None
     for page_id, ref, title, context in rows:
