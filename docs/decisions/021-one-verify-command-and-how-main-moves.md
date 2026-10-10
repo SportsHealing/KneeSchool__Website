@@ -119,8 +119,14 @@ The Pages source has to point at `main`, and that is a setting in the
 repository's own interface which cannot be reached from here: the Pages API is
 refused through this session's proxy. Recorded as EV-21 for the client to change.
 
-Until it changes, the rules above govern what is reviewed and the working branch
-governs what is live, which is exactly backwards.
+**Changed at 20:26 the same day.** The client switched the Pages source to
+`main`, and run 63 built the merge of pull request 2 in 47 seconds. The live
+site is now `main`'s tip, which is the copy that passed a green `verify` and
+went through a pull request. Rule 1 above is complete rather than aspirational.
+
+The safeguard held for the whole period it was wrong: `discoverable` stayed
+false, so every page carried a noindex directive and robots.txt disallowed every
+crawler. Nothing unreviewed was ever findable, only reachable by a link.
 
 ## What was considered and not done
 

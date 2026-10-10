@@ -186,12 +186,12 @@
         },
         {
           "ref": "EV-21",
-          "title": "The site is live, and it publishes from the working branch",
+          "title": "The site is live, and it now publishes from main",
           "area": "Infrastructure",
-          "state": "Found 10 October 2026; one half is safe, the other needs a setting changed",
-          "blocker": "GitHub Pages deploys this repository on every push and has done since late September. A CNAME file in the root holds kneeschool.com. Every run has been on claude/great-meitner-kofr7g, the working branch, so each push goes live immediately and unreviewed. That is the opposite of the arrangement in the README, where main is the stable copy the site is published from. It was found by reading the Actions history after the first verify run, not by anything in the build, and the session had been reporting the site as never deployed.",
-          "needed": "The safeguard held: discoverable is false, so robots.txt disallows every crawler and every page carries noindex. Decision 015 has been load bearing rather than theoretical. What needs changing is the Pages source: point it at main, in the repository's Settings under Pages, so the live site is the reviewed copy. That is a setting in the GitHub interface and it cannot be done from here, because the Pages API is not reachable through this session's proxy. Until it changes, every push to the working branch publishes.",
-          "pages": "Every page on the site is live at kneeschool.com, noindexed"
+          "state": "Resolved 10 October 2026",
+          "blocker": "GitHub Pages deploys this repository and has done since late September. A CNAME in the root holds kneeschool.com. Until 20:26 on 10 October every one of 62 runs was on claude/great-meitner-kofr7g, the working branch, so each push went live immediately and unreviewed. That was the opposite of the README's arrangement and it was found by reading the Actions history rather than by anything in the build.",
+          "needed": "Nothing. The client changed the Pages source to main, and run 63 built 15a6ee5, the merge of pull request 2, in 47 seconds. The live site is now main's tip, so it is the copy that passed a green verify and went through a pull request. Decision 021's first rule is complete rather than aspirational. The safeguard held throughout: discoverable is false, so every page carried a noindex directive and robots.txt disallowed every crawler for the whole period.",
+          "pages": "293 pages live at kneeschool.com, served from main, all noindexed"
         }
       ]
     },
