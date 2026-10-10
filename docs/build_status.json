@@ -21,7 +21,7 @@
           "area": "Content pipeline",
           "state": "Mechanism built, nothing signed",
           "blocker": "The client confirmed on 10 October 2026 that consultants are lined up, so the people exist. The mechanism existed only as prose packs in docs/review/ with no way for an answer to come back. tools/review_pack.py now generates one pack per chapter from the work and reads a filled pack back into the registers, so the route exists. What is missing is a reviewer's time.",
-          "needed": "A consultant to work through a chapter. 1,388 clinical recommendations across 202 pages and 348 measurements across 119 are outstanding, none signed. python3 tools/review_pack.py --status prints the breakdown by chapter; the largest is 3.7 with 152 and the median is 29.",
+          "needed": "A consultant to work through a chapter. 1,471 clinical recommendations across 212 pages and 352 measurements across 123 are outstanding, none signed. python3 tools/review_pack.py --status prints the breakdown by chapter; the largest is 3.7 with 152 and the median is 32.",
           "pages": "Every page on the site is an unreviewed editorial draft"
         },
         {
@@ -51,21 +51,21 @@
         },
         {
           "ref": "EV-6",
-          "title": "348 measurements on the site are unchecked",
+          "title": "352 measurements on the site are unchecked",
           "area": "Content",
           "state": "Live and flagged",
           "blocker": "They are written from memory because no paper could be retrieved. Each page's references note says so and each figure is registered.",
-          "needed": "Someone with source access to work the register: 348 figures across 119 pages, all UNVERIFIED_FROM_MEMORY. tools/figures.py --report --unchecked is the list.",
-          "pages": "119 pages carry at least one measurement"
+          "needed": "Someone with source access to work the register: 352 figures across 123 pages, all UNVERIFIED_FROM_MEMORY. tools/figures.py --report --unchecked is the list.",
+          "pages": "123 pages carry at least one measurement"
         },
         {
           "ref": "EV-7",
-          "title": "1,388 clinical recommendations on the site are unsigned",
+          "title": "1,471 clinical recommendations on the site are unsigned",
           "area": "Content",
           "state": "Live and registered, and the count rose on 10 October 2026",
           "blocker": "They are written by a process with no clinical qualification, on pages that state they have not been reviewed. The client has chosen to keep them, and decision 007 makes the set finite and listed. The total rose from 976 to 1,295 on 10 October 2026, and chapter 3.12 added 93 more, not because advice was added but because the detector was found to be missing it. POS-001 read clinical direction off a list of imperative openers built from directive prose, and the directions opening with a weighing or a consultation verb had never reached the register. Two extensions of the verb list, decisions 018 and 019, added 319 between them.",
-          "needed": "A consultant to work the register: 1,388 positions across 202 pages, all UNSIGNED. tools/positions.py --report --unsigned is the list.",
-          "pages": "202 pages carry at least one recommendation"
+          "needed": "A consultant to work the register: 1,471 positions across 212 pages, all UNSIGNED. tools/positions.py --report --unsigned is the list.",
+          "pages": "212 pages carry at least one recommendation"
         },
         {
           "ref": "EV-8",
@@ -590,6 +590,15 @@
           "blocker": "Patellofemoral Biomechanics. The organising idea is that the patella is a sesamoid held in a groove by three things, bone shape, soft tissue and the line of pull, and almost every clinical problem here is one of the three failing. 3.12.6 exists to say why the Q angle, the historical attempt to reduce all three to one number, predicts poorly. Chapter 3.5 is the tibiofemoral equivalent and already owns Contact Areas, Contact Pressures and Effects of Malalignment, so this chapter's three namesakes each say which joint they are about in the first line and link the other. Twelve pages, three tiers each, no fellowship or consultant tier.",
           "needed": "Consultant review by a surgeon who does patellofemoral work. The statements carrying most weight are 3.12.9's, that patellofemoral pain has mechanical contributors and is not a mechanical diagnosis, and 3.12.11's, that femoral version is under measured and no soft tissue or tubercle procedure addresses it. 3.12.8's four factor account and the claim that two mild factors are better addressed than one severe one is the other statement likely to be contested.",
           "pages": "12 published pages, 16,455 body words as the style gate counts them"
+        },
+        {
+          "ref": "W-18",
+          "title": "Section 3 Biomechanics Academy, chapter 3.13",
+          "area": "Content",
+          "state": "All 10 pages written, style gate passed, awaiting review",
+          "blocker": "Alignment and Biomechanics. The chapter is about one number nobody can measure in the state that matters: the static angle is taken standing still, the load it governs is applied during movement, and corrections are planned to a target no trial has tested. 3.13.5 and 3.13.7 are where that lands, with constitutional varus saying neutral is not normal for everyone and dynamic alignment saying the adduction moment predicts where the angle does not. Ten pages. 3.13.9 and 3.13.10 carry a fellowship tier.",
+          "needed": "Consultant review by a surgeon who does osteotomy. The statements carrying most weight are 3.13.10's, that the classical overcorrection target came from a single 1980s series and has never been compared with an alternative, and 3.13.7's, that the variable which predicts is neither the one measured nor the one surgery corrects. 3.13.6's claim that the accepted joint line obliquity limit is a convention with no outcome study behind it is the third.",
+          "pages": "10 published pages, 14,532 body words as the style gate counts them"
         }
       ]
     }
