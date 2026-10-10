@@ -21,7 +21,7 @@
           "area": "Content pipeline",
           "state": "Mechanism built, nothing signed",
           "blocker": "The client confirmed on 10 October 2026 that consultants are lined up, so the people exist. The mechanism existed only as prose packs in docs/review/ with no way for an answer to come back. tools/review_pack.py now generates one pack per chapter from the work and reads a filled pack back into the registers, so the route exists. What is missing is a reviewer's time.",
-          "needed": "A consultant to work through a chapter. 1,641 clinical recommendations across 234 pages and 380 measurements across 135 are outstanding, none signed. python3 tools/review_pack.py --status prints the breakdown by chapter; the largest is 3.7 with 152 and the median is 32.",
+          "needed": "A consultant to work through a chapter. 1,746 clinical recommendations across 244 pages and 381 measurements across 136 are outstanding, none signed. python3 tools/review_pack.py --status prints the breakdown by chapter; 31 chapters carry recommendations, the largest is 3.7 with 152 and the median is 61.",
           "pages": "Every page on the site is an unreviewed editorial draft"
         },
         {
@@ -51,21 +51,21 @@
         },
         {
           "ref": "EV-6",
-          "title": "380 measurements on the site are unchecked",
+          "title": "381 measurements on the site are unchecked",
           "area": "Content",
           "state": "Live and flagged",
           "blocker": "They are written from memory because no paper could be retrieved. Each page's references note says so and each figure is registered.",
-          "needed": "Someone with source access to work the register: 380 figures across 135 pages, all UNVERIFIED_FROM_MEMORY. tools/figures.py --report --unchecked is the list.",
-          "pages": "135 pages carry at least one measurement"
+          "needed": "Someone with source access to work the register: 381 figures across 136 pages, all UNVERIFIED_FROM_MEMORY. tools/figures.py --report --unchecked is the list.",
+          "pages": "136 pages carry at least one measurement"
         },
         {
           "ref": "EV-7",
-          "title": "1,641 clinical recommendations on the site are unsigned",
+          "title": "1,746 clinical recommendations on the site are unsigned",
           "area": "Content",
           "state": "Live and registered, and the count rose on 10 October 2026",
           "blocker": "They are written by a process with no clinical qualification, on pages that state they have not been reviewed. The client has chosen to keep them, and decision 007 makes the set finite and listed. The total rose from 976 to 1,295 on 10 October 2026, and chapter 3.12 added 93 more, not because advice was added but because the detector was found to be missing it. POS-001 read clinical direction off a list of imperative openers built from directive prose, and the directions opening with a weighing or a consultation verb had never reached the register. Two extensions of the verb list, decisions 018 and 019, added 319 between them.",
-          "needed": "A consultant to work the register: 1,641 positions across 234 pages, all UNSIGNED. tools/positions.py --report --unsigned is the list.",
-          "pages": "234 pages carry at least one recommendation"
+          "needed": "A consultant to work the register: 1,746 positions across 244 pages, all UNSIGNED. tools/positions.py --report --unsigned is the list.",
+          "pages": "244 pages carry at least one recommendation"
         },
         {
           "ref": "EV-8",
@@ -644,6 +644,15 @@
           "blocker": "Sports-Specific Knee Biomechanics, ten sports. The organising idea is that each sport asks a different question of the same joint and its characteristic injury is the answer: football asks for a direction change on a planted foot, skiing asks the knee to be the weak link in a long lever, cycling asks for a million low load repetitions, golf asks a fixed foot to absorb a rotating body, dance asks for control at the end of range. Every page carries patient, medical student and MRCS and none goes to FRCS, which the architecture sets. That makes these the most public facing pages in Section 3 and the shallowest, so each carries a real when to seek help message rather than a formality.",
           "needed": "Consultant review by someone with sports medicine exposure, and ideally by more than one person, since no single reviewer will know ten sports. One discipline runs through the chapter and should be checked: no injury rates are quoted anywhere, because epidemiology needs sources and none has been retrieved. Each page says so where a reader would expect a percentage. The statements carrying most weight are 3.15.6's, that modern ski boots moved the injury from the tibia to the knee, and 3.15.7's, that recreational running is not established as a cause of knee osteoarthritis.",
           "pages": "10 published pages, 13,105 body words as the style gate counts them"
+        },
+        {
+          "ref": "W-21",
+          "title": "Section 3 Biomechanics Academy, chapter 3.16",
+          "area": "Content",
+          "state": "All 10 pages written, style gate passed, awaiting review",
+          "blocker": "Advanced Biomechanics, ten measurement methods. The organising idea is that every number in Section 3 came from one of these methods, and each buys its precision by giving something up. Cadavers give control and lose life. Robots give repeatability and lose physiology. Models give a continuous field and inherit their assumptions. Motion capture gives the living knee and loses precision. Wearables give volume and lose accuracy. This is the chapter that audits the other sixteen. It is also the first chapter where every page carries a consultant tier, so decision 018 and the DEC-001 gate apply on all ten: each consultant block is a balance argument that names the five patient factors rather than a verdict. 3.16.1 is where that was tested, because the obvious consultant line on cadaveric work is a preference between two study designs, and the gate was answered rather than suppressed. 3.16.10 turns the chapter's argument on this site: every measurement here was written from standard teaching, is registered as unverified, and an unverified number spoken aloud to a patient becomes a fact to them.",
+          "needed": "Consultant review, ideally split, since no one reviewer will know cadaveric rigs, finite element practice, machine learning method and wearable validation. Two things to check hardest. First, the accuracy figures: the chapter quotes marker-based and model-based error bands from standard teaching and they are the kind of number that dates, so all ten pages are in the figure register as unverified. Second, 3.16.6 on artificial intelligence and 3.16.9 on digital twins describe what the methods can do today rather than what is claimed for them, which is a judgement a reviewer should either back or correct.",
+          "pages": "10 published pages, 12,530 body words as the style gate counts them"
         }
       ]
     }

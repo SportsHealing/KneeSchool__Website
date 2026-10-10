@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Computational Biomechanics | KneeSchool</title>
+<meta name="description" content="Modelling the whole limb rather than the joint. Where muscle forces come from, and why there is no single right answer.">
+<meta name="theme-color" content="#0e2b22">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://kneeschool.com/biomechanics/computational-biomechanics.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css?v=c2cccbcd">
+</head>
+<body>
+<style>
+.dial-tabs{grid-template-columns:repeat(3,1fr)}
+#t0:checked ~ .dial-tabs label[for=t0]{background:var(--gold-pale);border-color:var(--gold-pale);color:var(--green-deep);font-weight:600}
+#t0:checked ~ .dial-body .p0{display:block}
+#t0:focus-visible ~ .dial-tabs label[for=t0]{outline:3px solid var(--gold);outline-offset:2px}
+#t1:checked ~ .dial-tabs label[for=t1]{background:var(--gold-pale);border-color:var(--gold-pale);color:var(--green-deep);font-weight:600}
+#t1:checked ~ .dial-body .p1{display:block}
+#t1:focus-visible ~ .dial-tabs label[for=t1]{outline:3px solid var(--gold);outline-offset:2px}
+#t2:checked ~ .dial-tabs label[for=t2]{background:var(--gold-pale);border-color:var(--gold-pale);color:var(--green-deep);font-weight:600}
+#t2:checked ~ .dial-body .p2{display:block}
+#t2:focus-visible ~ .dial-tabs label[for=t2]{outline:3px solid var(--gold);outline-offset:2px}
+</style>
+<header class="site-head">
+  <div class="wrap head-in">
+    <a class="brand" href="../index.html"><b>Knee</b><span>School</span></a>
+    <input class="nav-toggle" type="checkbox" id="navtoggle" aria-label="Show navigation">
+    <label class="burger" for="navtoggle">Menu</label>
+    <nav class="nav" aria-label="Main">
+      <ul>
+        <li class="has-menu">
+          <a class="top" href="../index.html#levels">Learn<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../index.html#levels">Find your level</a></li>
+            <li><a href="../levels/junior.html">Junior Academy</a></li>
+            <li><a href="../levels/patient.html">Patient Academy</a></li>
+            <li><a href="../levels/student.html">Student Academy</a></li>
+            <li><a href="../levels/mrcs.html">MRCS Academy</a></li>
+            <li><a href="../levels/frcs.html">FRCS (Tr and Orth) Academy</a></li>
+            <li><a href="../levels/fellowship.html">Fellowship Academy</a></li>
+            <li><a href="../levels/consultant.html">Consultant Masterclass</a></li>
+            <li><a href="../junior/ready-made-lesson-plans.html">For teachers and coaches</a></li>
+          </ul>
+        </li>
+        <li class="has-menu">
+          <a class="top" href="../encyclopaedia/index.html">Reference<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../encyclopaedia/index.html">The knee encyclopaedia</a></li>
+            <li><a href="../anatomy/index.html">The Anatomy Academy</a></li>
+            <li><a href="../biomechanics/index.html">The Biomechanics Academy</a></li>
+            <li><a href="../conditions/index.html">Conditions library</a></li>
+            <li><a href="../encyclopaedia/whole-body.html">Whole body factors</a></li>
+          </ul>
+        </li>
+        <li class="has-menu">
+          <a class="top" href="../practise/index.html">Practise<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../practise/index.html#questions">Question bank</a></li>
+            <li><a href="../practise/index.html#cases">Case library</a></li>
+            <li><a href="../practise/index.html#video">Video academy</a></li>
+            <li><a href="../practise/index.html#scores">Knee score centre</a></li>
+          </ul>
+        </li>
+        <li class="has-menu">
+          <a class="top" href="../about/standards.html">About<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../about/standards.html">How a page reaches this site</a></li>
+            <li><a href="../about/curriculum.html">Mapped to the UK training pathway</a></li>
+            <li><a href="../about/status.html">Build status</a></li>
+            <li><a href="#">Authors and reviewers</a></li>
+            <li><a href="#">References and sources</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </li>
+        <li><a class="start-link" href="../index.html#levels">Find your level</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumb"><a href="../index.html">KneeSchool</a><span>/</span><a href="../encyclopaedia/index.html">Biomechanics Academy</a><span>/</span>Computational Biomechanics</p>
+      <div class="hero-split">
+        <div>
+          <h1>Computational Biomechanics</h1>
+          <p class="who">Page 3.16.5 &middot; Advanced Biomechanics &middot; biomechanics page</p>
+          <p class="lede">Modelling the whole limb rather than the joint. Where muscle forces come from, and why there is no single right answer.</p>
+        </div>
+        <div>
+          <div class="status"><b>Pipeline status.</b> Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band dark">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>The same topic at 3 depths</h2>
+        <p class="lede">Each tier deepens the one below it and never repeats it. Choose the level you want.</p>
+      </div>
+      <div class="dial dial-article">
+        <div class="dial-head">
+          <h2>Computational Biomechanics</h2>
+          <small>Choose a depth</small>
+        </div>
+        <input type="radio" name="depth" id="t0" checked>
+        <input type="radio" name="depth" id="t1">
+        <input type="radio" name="depth" id="t2">
+        <div class="dial-tabs">
+          <label for="t0">FRCS</label>
+          <label for="t1">Fellow</label>
+          <label for="t2">Consultant</label>
+        </div>
+        <div class="dial-body">
+          <div class="dial-panel p0">
+            <h3>FRCS Level</h3>
+            <h4>The Principle</h4>
+            <p>A joint cannot be modelled in isolation, because the forces crossing it come from muscles attached elsewhere.</p>
+            <p>The body has more muscles than it has degrees of freedom, so any required movement can be produced by many different muscle combinations.</p>
+            <p>That is the muscle redundancy problem, and it means muscle forces cannot be calculated. They have to be estimated by assuming what the body is trying to do.</p>
+            <h4>At the Knee</h4>
+            <p>A musculoskeletal model represents bones as segments, joints as constraints and muscles as lines of action with force capacity.</p>
+            <p>Inverse dynamics works backwards from measured motion and ground reaction force to the net moment at each joint. 3.4.3 covers those forces.</p>
+            <p>Static optimisation then distributes that net moment among muscles by minimising something, usually the sum of squared activations.</p>
+            <p>The assumption that the body minimises muscle effort is a modelling convenience with partial physiological support.</p>
+            <p>The output is where every knee contact force figure in gait literature comes from. 3.14.1 covers gait.</p>
+            <h4>What Changes It</h4>
+            <p>The generic model scaled to the subject, since most models start from one cadaver's anatomy.</p>
+            <p>Muscle moment arms, which drive the force estimates and vary between models.</p>
+            <p>The optimisation criterion, which is an assumption about the nervous system.</p>
+            <p>Whether co-contraction is permitted, since minimising effort tends to eliminate it. 3.14.11 covers co-contraction in arthritis.</p>
+            <p>The motion data quality feeding the inverse dynamics. 3.16.7 covers motion capture.</p>
+            <h4>Clinical Relevance</h4>
+            <p>Read a knee contact force figure as the output of an optimisation rather than a measurement.</p>
+            <p>Expect models to underestimate co-contraction and therefore joint compression.</p>
+            <p>Compare contact force figures within a modelling framework rather than between them.</p>
+            <p>State the model and the optimisation criterion with any contact force number.</p>
+            <div class="klp">
+              <h4>Key Learning Points</h4>
+              <ul><li>Muscle forces cannot be calculated, only estimated by assuming an objective.</li><li>There are more muscles than degrees of freedom, which is muscle redundancy.</li><li>Inverse dynamics gives the net moment; optimisation distributes it among muscles.</li><li>Minimising muscle effort is a convenience with partial physiological support.</li><li>Every knee contact force figure in gait literature comes from this chain.</li></ul>
+            </div>
+          </div>
+          <div class="dial-panel p1">
+            <h3>Fellowship Level</h3>
+            <h4>At the Knee</h4>
+            <p>Electromyography driven models replace the optimisation assumption with measured muscle activity, which changes the answer where co-contraction matters.</p>
+            <p>In the arthritic knee that difference is large, because co-contraction is raised and optimisation models do not predict it. 3.14.11 covers the gait.</p>
+            <p>Instrumented implant data has been used to test these models, and the comparison is the field's best validation. 3.14.12 covers that source.</p>
+            <p>Those comparisons found that no single model predicted contact force accurately across all subjects and activities, which was reported openly by the field.</p>
+            <p>Generic models scaled by height and mass carry the original specimen's muscle geometry, so subject specificity is limited to segment lengths.</p>
+            <h4>What Changes It</h4>
+            <p>Whether the model is optimisation driven or electromyography driven.</p>
+            <p>Whether subject specific geometry was used or a scaled generic model.</p>
+            <p>The activity modelled, since accuracy differs between walking and more demanding tasks.</p>
+            <p>Soft tissue artefact in the input kinematics, which propagates through everything. 3.16.7 covers it.</p>
+            <p>Joint model complexity, since a hinge knee and a six degree of freedom knee give different moment arms.</p>
+            <h4>How It Is Measured</h4>
+            <p>Comparison against instrumented implant measurements, which is the only direct in vivo check available.</p>
+            <p>Grand challenge competitions in which groups predicted the same subject's contact forces blind, which is unusually good practice.</p>
+            <p>Agreement between models on the same data, which is moderate and rarely reported.</p>
+            <p>Sensitivity analysis on moment arms and optimisation criteria.</p>
+            <p>The best available validation comes from replaced knees, so the native knee's contact forces remain unvalidated.</p>
+            <h4>Clinical Relevance</h4>
+            <p>Prefer electromyography driven estimates where co-contraction is part of the question.</p>
+            <p>Treat contact force figures for the native knee as unvalidated, since the validation data comes from implants.</p>
+            <p>Note whether the model was subject specific in geometry or only in scaling.</p>
+            <p>Expect models to agree moderately with each other and to be reported as if they agree well.</p>
+            <div class="klp">
+              <h4>Key Learning Points</h4>
+              <ul><li>Electromyography driven models replace the optimisation assumption with measurement.</li><li>That matters most in the arthritic knee, where co-contraction is raised.</li><li>Blind prediction competitions found no single model accurate across subjects and activities.</li><li>Scaled generic models carry the original specimen's muscle geometry.</li><li>The native knee's contact forces remain unvalidated, because validation comes from implants.</li></ul>
+            </div>
+          </div>
+          <div class="dial-panel p2">
+            <h3>Consultant Perspective</h3>
+            <h4>At the Knee</h4>
+            <p>This page sits behind a large share of the quantitative claims in Section 3, so the decision it forces is how much weight to take off a chapter.</p>
+            <p>On one side, the estimates are physically constrained, internally consistent and the only route to a number for a loaded living knee. 3.4.3 covers what they produce.</p>
+            <p>On the other, the one assumption that most affects them, what the nervous system is minimising, is a convenience, and the field's own blind competitions showed the consequences.</p>
+            <p>The weight moves with how the number is used. For ranking activities by knee load the estimates are serviceable. For a threshold a patient should stay below they are not.</p>
+            <p>The field's openness about its own limits is a point in its favour and is rarely carried across when its figures are quoted elsewhere.</p>
+            <h4>What Changes It</h4>
+            <p>Whether the use is ranking or thresholding, which is the dividing line.</p>
+            <p>Whether the question concerns a native or a replaced knee.</p>
+            <p>Whether co-contraction is central, in which case optimisation models are the wrong tool.</p>
+            <p>Whether a figure is being quoted as a number or as a direction of change.</p>
+            <p>The purpose, since a research hypothesis tolerates uncertainty a patient conversation does not.</p>
+            <h4>How It Is Measured</h4>
+            <p>Blind prediction against instrumented implant data, which is the field's reference and covers replaced knees.</p>
+            <p>Between model agreement, which is moderate.</p>
+            <p>Reproducibility, which is improving because several major models are open source.</p>
+            <p>Sensitivity analyses, which quantify the dependence on the assumption.</p>
+            <p>There is no validation of native knee contact force, and there is no obvious route to one that does not involve instrumenting a healthy joint.</p>
+            <h4>Clinical Relevance</h4>
+            <p>Use these estimates for ranking and direction and not for patient specific thresholds.</p>
+            <p>State that native knee contact forces are unvalidated when quoting one.</p>
+            <p>Prefer electromyography driven work for arthritic and co-contracting knees.</p>
+            <p>Carry the field's own stated uncertainty across when quoting its figures, since it is usually dropped.</p>
+            <p>Weigh the patient's age and physiology, comorbidities, knee demand, psychological state and their own ideas, concerns and expectations before converting a modelled load into advice, since advice derived from an estimate is still advice.</p>
+            <div class="klp">
+              <h4>Key Learning Points</h4>
+              <ul><li>A large share of Section 3's quantitative claims sit behind this method.</li><li>The estimates are serviceable for ranking activities and not for patient thresholds.</li><li>The assumption that most affects them is a modelling convenience.</li><li>The field's openness about its limits is rarely carried across when its figures are quoted.</li><li>There is no validation of native knee contact force and no obvious route to one.</li></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band wrap">
+    <div class="sec-head">
+      <h2>Explore Further</h2>
+      <p class="lede">Where this topic came from and where it goes next in the spiral.</p>
+    </div>
+    <ul class="explore">
+        <li><span class="pid">3.16.4</span><a href="finite-element-modelling.html">Finite Element Modelling</a></li>
+        <li><span class="pid">3.16.7</span><a href="motion-capture.html">Motion Capture</a></li>
+        <li><span class="pid">3.16.6</span><a href="artificial-intelligence-in-biomechanics.html">Artificial Intelligence</a></li>
+        <li><span class="pid">3.4.3</span><a href="joint-reaction-forces.html">Joint Reaction Forces</a></li>
+        <li><span class="pid">3.14.11</span><a href="arthritic-gait.html">Arthritic Gait</a></li>
+    </ul>
+  </section>
+
+  <section class="band wrap" style="padding-top:0">
+    <div class="sec-head">
+      <h2>References</h2>
+    </div>
+    <div class="prose refs">
+      <p>No reference list is attached to this draft. Evidence verification has not run, because source retrieval was unavailable at generation time. Under the Operations Handbook a missing reference is acceptable and an invented one is a critical failure, so nothing has been cited and no citation marker appears in the text. Every measurement on this page is written from standard teaching rather than from a retrieved paper, and none has been checked against a source. Under decision 006 each one is registered in pipeline/config/figures with the sentence it supports and a verification state of UNVERIFIED_FROM_MEMORY, so the whole list can be checked and corrected rather than hunted for.</p>
+    </div>
+    <p class="safety"><b>Safety.</b> KneeSchool is educational and does not give individual medical advice. Seek urgent assessment for a knee that cannot bear weight after an injury, a hot swollen knee with a fever, or new numbness, weakness or coldness in the leg or foot.</p>
+  </section>
+
+</main>
+
+<footer class="site-foot" id="about">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h3>Learn</h3>
+        <ul>
+          <li><a href="../levels/junior.html">Junior Academy</a></li>
+          <li><a href="../levels/patient.html">Patient Academy</a></li>
+          <li><a href="../levels/student.html">Student Academy</a></li>
+          <li><a href="../levels/mrcs.html">MRCS Academy</a></li>
+          <li><a href="../levels/frcs.html">FRCS (Tr and Orth) Academy</a></li>
+          <li><a href="../levels/fellowship.html">Fellowship Academy</a></li>
+          <li><a href="../levels/consultant.html">Consultant Masterclass</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Reference</h3>
+        <ul>
+          <li><a href="../encyclopaedia/index.html">The knee encyclopaedia</a></li>
+          <li><a href="../conditions/index.html">Conditions library</a></li>
+          <li><a href="../encyclopaedia/whole-body.html">Whole body factors</a></li>
+          <li><a href="../practise/index.html">Practise and test</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Clinical care</h3>
+        <ul>
+          <li><a href="https://www.chinmaygupte.com/">Consultant clinic</a></li>
+          <li><a href="#">Imaging and injections</a></li>
+          <li><a href="#">Rehabilitation programmes</a></li>
+          <li><a href="#">Braces and recovery products</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>About</h3>
+        <ul>
+          <li><a href="../about/standards.html">How a page reaches this site</a></li>
+          <li><a href="../about/curriculum.html">Mapped to the UK training pathway</a></li>
+          <li><a href="../levels/junior.html">For teachers and coaches</a></li>
+          <li><a href="#">Authors and reviewers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <p>KneeSchool is educational. It does not give individual medical advice and it does not replace assessment by a clinician. Seek urgent care for a hot, swollen knee with fever, a knee that cannot bear weight after injury, or new numbness in the leg.</p>
+      <p>Content written for school age learners carries no advertising and no product placement.</p>
+      <p>&copy; 2026 KneeSchool. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
