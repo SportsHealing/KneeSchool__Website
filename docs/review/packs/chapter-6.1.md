@@ -72,7 +72,7 @@ Each sentence below tells a clinician what to do, on a page that carries no name
 | 6.1.1-P3 | 6.1.1 | fellowship | Treat the knee rather than the ligament. |  |  |
 | 6.1.1-P4 | 6.1.1 | fellowship | Counsel the patient before the operation rather than after it. |  |  |
 | 6.1.1-P5 | 6.1.1 | consultant | Repair offers a native ligament with its innervation and no graft harvest. |  |  |
-| 6.1.1-P6 | 6.1.1 | consultant | Take all five explicitly rather than by impression, and counsel against them. |  |  |
+| 6.1.1-P6 | 6.1.1 | consultant | Take all five explicitly rather than by impression, and counsel the patient with them in view. |  |  |
 | 6.1.1-P7 | 6.1.1 | consultant | Repair offers a native ligament and risks a second operation in a pivoting athlete. |  |  |
 
 Allowed decisions: `CONFIRMED`, `AMENDED`, `WITHDRAWN`, `NOT_CLINICAL`.

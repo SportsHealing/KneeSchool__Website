@@ -58,7 +58,7 @@
       "signed_off_by": ""
     },
     {
-      "as_written": "Take all five explicitly rather than by impression, and counsel against them.",
+      "as_written": "Take all five explicitly rather than by impression, and counsel the patient with them in view.",
       "tier": "consultant",
       "section": "Controversies and Evidence",
       "detected_as": "imperative",
@@ -76,6 +76,16 @@
       "signed_off_by": ""
     },
     {
+      "as_written": "Take all five explicitly rather than by impression, and counsel against them.",
+      "tier": "consultant",
+      "section": "Controversies and Evidence",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "WITHDRAWN",
+      "signed_off_by": "",
+      "note": "No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives."
+    },
+    {
       "as_written": "Repair has returned to the conversation for proximal avulsion tears with good tissue quality, helped by better patient selection and augmentation.",
       "tier": "consultant",
       "section": "Controversies and Evidence",
@@ -83,7 +93,7 @@
       "kind": "CLINICAL_RECOMMENDATION",
       "verification": "WITHDRAWN",
       "signed_off_by": "",
-      "note": "No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives."
+      "note": "No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives."
     },
     {
       "as_written": "Repair in proximal avulsion is promising and unproven over the medium term.",
@@ -93,7 +103,7 @@
       "kind": "CLINICAL_RECOMMENDATION",
       "verification": "WITHDRAWN",
       "signed_off_by": "",
-      "note": "No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives."
+      "note": "No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives. No longer on the page; kept so the record of what was signed survives."
     }
   ]
 }

@@ -293,8 +293,8 @@ knee is actually used for. And their own ideas, concerns and expectations, which
 decide whether the operation that is statistically right is the one this patient
 should have.
 
-Take all five explicitly rather than by impression, and counsel against them.
-A graft choice that is right for a cohort can be wrong for the person in front
+Take all five explicitly rather than by impression, and counsel the patient
+with them in view. A graft choice that is right for a cohort can be wrong for the person in front
 of you on any one of them.
 
 ### Key Learning Points
