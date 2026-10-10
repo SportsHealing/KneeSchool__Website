@@ -227,6 +227,16 @@
     "3.8.8": "biomechanics/pcl-reconstruction-biomechanics.html",
     "3.8.9": "biomechanics/pcl-double-bundle-reconstruction.html",
     "3.8.10": "biomechanics/pcl-inlay-techniques.html",
+    "3.9.1": "biomechanics/valgus-stability.html",
+    "3.9.2": "biomechanics/medial-rotational-stability.html",
+    "3.9.3": "biomechanics/superficial-mcl-function.html",
+    "3.9.4": "biomechanics/deep-mcl-function.html",
+    "3.9.5": "biomechanics/pol-function.html",
+    "3.9.6": "biomechanics/posteromedial-corner-function.html",
+    "3.9.7": "biomechanics/amri-biomechanics.html",
+    "3.9.8": "biomechanics/medial-reconstruction-biomechanics.html",
+    "3.9.9": "biomechanics/medial-contributions-by-flexion-angle.html",
+    "3.9.10": "biomechanics/combined-acl-and-mcl-injury.html",
     "6.1.1": "conditions/acl.html"
   }
 }

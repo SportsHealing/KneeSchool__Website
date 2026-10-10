@@ -1360,6 +1360,66 @@
       "parent": "Biomechanics Academy|../encyclopaedia/index.html",
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
+    },
+    "3.9.1": {
+      "out": "biomechanics/valgus-stability.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.9.2": {
+      "out": "biomechanics/medial-rotational-stability.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.9.3": {
+      "out": "biomechanics/superficial-mcl-function.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.9.4": {
+      "out": "biomechanics/deep-mcl-function.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.9.5": {
+      "out": "biomechanics/pol-function.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.9.6": {
+      "out": "biomechanics/posteromedial-corner-function.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.9.7": {
+      "out": "biomechanics/amri-biomechanics.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.9.8": {
+      "out": "biomechanics/medial-reconstruction-biomechanics.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.9.9": {
+      "out": "biomechanics/medial-contributions-by-flexion-angle.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.9.10": {
+      "out": "biomechanics/combined-acl-and-mcl-injury.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
     }
   },
   "withheld": {
