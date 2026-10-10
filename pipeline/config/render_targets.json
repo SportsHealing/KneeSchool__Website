@@ -1096,6 +1096,90 @@
       "parent": "Biomechanics Academy|../encyclopaedia/index.html",
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
+    },
+    "3.6.1": {
+      "out": "biomechanics/functions-of-the-meniscus.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.6.2": {
+      "out": "biomechanics/hoop-stress.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.6.3": {
+      "out": "biomechanics/circumferential-fibres.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.6.4": {
+      "out": "biomechanics/radial-fibres.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.6.5": {
+      "out": "biomechanics/meniscal-load-sharing.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.6.6": {
+      "out": "biomechanics/meniscal-shock-absorption.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.6.7": {
+      "out": "biomechanics/joint-lubrication.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.6.8": {
+      "out": "biomechanics/meniscal-proprioception.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.6.9": {
+      "out": "biomechanics/root-biomechanics.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.6.10": {
+      "out": "biomechanics/meniscal-extrusion.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.6.11": {
+      "out": "biomechanics/effects-of-root-tears.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.6.12": {
+      "out": "biomechanics/effects-of-radial-tears.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.6.13": {
+      "out": "biomechanics/meniscal-repair-biomechanics.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.6.14": {
+      "out": "biomechanics/meniscal-transplantation-biomechanics.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
     }
   },
   "withheld": {
