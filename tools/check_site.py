@@ -17,6 +17,8 @@ from html.parser import HTMLParser
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "pipeline", "functions", "style_lint"))
 import linter  # noqa: E402
+sys.path.insert(0, os.path.join(ROOT, "tools"))
+import site_chrome as chrome  # noqa: E402
 
 VOID = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link",
         "meta", "source", "track", "wbr"}
@@ -156,6 +158,30 @@ def colour_literals():
     return out
 
 
+def web_fonts():
+    """Every page has to fetch the two families the stylesheet actually names.
+
+    The design port changed --display and --body and left fourteen hand written
+    pages fetching the previous pair, so those pages silently rendered in the
+    Georgia and Helvetica fallbacks while the rest rendered as designed. Nothing
+    was broken enough to fail, which is why it survived a full verification run.
+    tools/site_chrome.py holds the one definition and this refuses any page that
+    disagrees with it.
+    """
+    out = []
+    want = chrome.FONT_LINKS.strip()
+    families = sorted(set(re.findall(r"family=([A-Za-z+]+)", want)))
+    for path in html_files():
+        rel = os.path.relpath(path, ROOT)
+        with open(path, encoding="utf-8") as fh:
+            raw = fh.read()
+        got = sorted(set(re.findall(r"family=([A-Za-z+]+)", raw)))
+        if got != families:
+            out.append("%s: fetches web fonts %s, the stylesheet names %s"
+                       % (rel, ", ".join(got) or "none", ", ".join(families)))
+    return out
+
+
 def exemption_for(rel, rule_id, phrase, context=""):
     for entry in EXEMPTIONS:
         path, rid, ph, reason = entry[:4]
@@ -266,6 +292,7 @@ def main():
     drift = chrome_drift()
     failures.extend(drift)
     failures.extend(colour_literals())
+    failures.extend(web_fonts())
 
     print("checked %d pages" % len(pages))
     for e in exempt:

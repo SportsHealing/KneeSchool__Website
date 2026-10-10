@@ -138,6 +138,20 @@ def robots_meta():
     return '<meta name="robots" content="noindex, nofollow">'
 
 
+# The stylesheet names Cormorant Garamond and Hanken Grotesk in --display and
+# --body, so the pages have to fetch those two and no others. This block was
+# duplicated into the hand written pages before the design system changed, which
+# left fourteen of them loading the previous pair and rendering in the fallbacks.
+# One definition now, read by tools/apply_chrome.py and checked by
+# tools/check_site.py.
+FONT_LINKS = (
+    '<link rel="preconnect" href="https://fonts.googleapis.com">\n'
+    '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
+    '<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond'
+    ':ital,wght@0,400;0,500;0,600;1,400&family=Hanken+Grotesk:wght@400;500;600;700'
+    '&display=swap" rel="stylesheet">\n')
+
+
 def head(title, description, rel, extra_meta="", canonical=None):
     return """<!DOCTYPE html>
 <html lang="en-GB">
@@ -148,15 +162,12 @@ def head(title, description, rel, extra_meta="", canonical=None):
 <meta name="description" content="%s">
 <meta name="theme-color" content="%s">
 %s
-%s%s<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="%sassets/styles.css?v=%s">
+%s%s%s<link rel="stylesheet" href="%sassets/styles.css?v=%s">
 </head>
 <body>
 """ % (title, description, site_config()["theme_color"], robots_meta(),
        '<link rel="canonical" href="%s">\n' % canonical_url(canonical) if canonical else "",
-       extra_meta, rel, stylesheet_version())
+       extra_meta, FONT_LINKS, rel, stylesheet_version())
 
 
 def header(rel):

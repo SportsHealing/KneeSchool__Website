@@ -129,6 +129,15 @@
           "blocker": "Section 3 ends each chapter with a Landmark Papers page whose subject is named studies. This environment cannot retrieve a paper, and the Operations Handbook names an invented citation as its one critical failure. A page about specific papers written without access to one would carry citations from memory or carry no paper at all.",
           "needed": "Source access, the same thing EV-1 needs. The landmark_papers template is defined under decision 014 so the pages can be written the day it exists. Held: 3.1.8, 3.2.11, 3.3.15, 3.4.12, 3.5.11, 3.6.12, 3.7.12, 3.8.11, 3.9.11, 3.10.10 and 3.11.9.",
           "pages": "11 pages in Section 3, none published"
+        },
+        {
+          "ref": "EV-15",
+          "title": "Fourteen pages fetched the wrong two typefaces",
+          "area": "Design system",
+          "state": "Fixed, and a check added",
+          "blocker": "The MyKneeScore port changed the stylesheet to Cormorant Garamond and Hanken Grotesk. The 151 rendered article pages took the new font block from tools/site_chrome.py. The 14 hand written pages, the homepage and all seven level pages among them, kept the previous Newsreader and Source Serif block, so they asked for fonts the stylesheet never names and rendered in the Georgia and Helvetica fallbacks. A page that cannot load a font falls back silently, so the site verified clean for three days while its most visited pages looked wrong.",
+          "needed": "Nothing. The font block has one definition in tools/site_chrome.py, tools/apply_chrome.py rewrites it on every page, and tools/check_site.py fails any page that fetches a family the stylesheet does not name. Four tests hold it.",
+          "pages": "14 pages corrected, all 165 now fetch the same two"
         }
       ]
     },

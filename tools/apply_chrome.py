@@ -32,6 +32,14 @@ STYLES = re.compile(r'href="((?:\.\./)*assets/styles\.css)(?:\?v=[^"]*)?"')
 CANONICAL = re.compile(r'<link rel="canonical" href="[^"]*">\n')
 THEME = re.compile(r'<meta name="theme-color" content="[^"]*">\n')
 ROBOTS = re.compile(r'<meta name="robots" content="[^"]*">\n')
+# The web font block drifted once already: the design system changed the pair the
+# stylesheet asks for and the hand written pages kept fetching the old one, so
+# fourteen pages rendered in Georgia and Helvetica while the rest rendered as
+# designed. One tool owns it now.
+FONTS = re.compile(
+    r'<link rel="preconnect" href="https://fonts\.googleapis\.com">\n'
+    r'<link rel="preconnect" href="https://fonts\.gstatic\.com" crossorigin>\n'
+    r'<link href="https://fonts\.googleapis\.com/css2\?[^"]*" rel="stylesheet">\n')
 
 
 def pages():
@@ -103,6 +111,7 @@ def main():
 
         version = chrome.stylesheet_version()
         updated = STYLES.sub(lambda m: 'href="%s?v=%s"' % (m.group(1), version), original)
+        updated = FONTS.sub(lambda m: chrome.FONT_LINKS, updated, count=1)
         updated = HEADER.sub(lambda m: chrome.header(rel), updated, count=1)
         # the footer template closes the document, so anything after it goes
         updated = FOOTER.sub(lambda m: chrome.footer(rel), updated, count=1)
