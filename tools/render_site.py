@@ -22,6 +22,33 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TARGETS = os.path.join(ROOT, "pipeline", "config", "render_targets.json")
 
 
+def title_budget():
+    """Characters available before the site suffix is appended."""
+    with open(os.path.join(ROOT, "pipeline", "config", "site.json")) as fh:
+        site = json.load(fh)
+    return site["seo"]["title_max"] - len(site["title_suffix"])
+
+
+def disambiguate(title, chapter, budget):
+    """A colliding page's title tag, with the chapter name trimmed to fit.
+
+    The suffix has a length budget because PUB-001 bounds the whole title tag
+    and the renderer appends the site suffix after this, so the fix for chapter
+    14's uniqueness rule could break chapter 13's length rule. Chapter 3.12
+    found it: "Effects of Malalignment, Tibiofemoral Contact Mechanics |
+    KneeSchool" is 68 characters against a bound of 60.
+
+    Trailing words are dropped from the chapter name until it fits, which keeps
+    the distinguishing word and loses the generic one. A chapter name whose
+    first word alone does not fit is left whole, so PUB-001 reports it rather
+    than the renderer shipping a mangled title.
+    """
+    words = chapter.split()
+    while len(words) > 1 and len("%s, %s" % (title, " ".join(words))) > budget:
+        words.pop()
+    return "%s, %s" % (title, " ".join(words))
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--only", nargs="*", help="render just these page ids")
@@ -30,6 +57,26 @@ def main():
 
     with open(TARGETS) as fh:
         targets = json.load(fh)["pages"]
+
+    # Two page ids pointing at the same output file would publish one page and
+    # silently lose the other, with every gate still passing: the file exists,
+    # it is valid, and nothing knows a second page was meant to be there.
+    # Chapter 3.6 came within one slug of this, because its Load Sharing, Shock
+    # Absorption and Proprioception pages share their titles with chapter 3.4's
+    # and chapter 2.7's. The titles are the architecture's and cannot change,
+    # so the slugs carry a prefix and this refuses the mistake rather than
+    # trusting it was noticed.
+    out_paths = {}
+    clashes = []
+    for page_id, t in sorted(targets.items()):
+        out = t["out"]
+        if out in out_paths:
+            clashes.append("%s and %s both render to %s"
+                           % (out_paths[out], page_id, out))
+        out_paths[out] = page_id
+    if clashes:
+        sys.exit("render targets collide:\n  " + "\n  ".join(clashes))
+
     if args.only:
         unknown = [p for p in args.only if p not in targets]
         if unknown:
@@ -59,11 +106,21 @@ def main():
         if os.path.exists(brief):
             with open(brief) as fh:
                 chapters[page_id] = json.load(fh)["chapter"]["name"]
+    # The suffix has a length budget. PUB-001 bounds the whole title tag, and the
+    # renderer adds the site suffix after this, so a long chapter name can make
+    # the fix for chapter 14's uniqueness rule break chapter 13's length rule.
+    # Chapter 3.12 found it: "Effects of Malalignment, Tibiofemoral Contact
+    # Mechanics | KneeSchool" is 68 characters against a bound of 60. Trailing
+    # words are dropped from the chapter name until it fits, which keeps the
+    # distinguishing word and loses the generic one. A chapter name whose first
+    # word alone does not fit is left whole, so PUB-001 reports it rather than
+    # the renderer shipping a mangled title.
     counts = collections.Counter(h1.values())
     seo_titles = {}
     for page_id, title in h1.items():
         if counts[title] > 1 and chapters.get(page_id):
-            seo_titles[page_id] = "%s, %s" % (title, chapters[page_id])
+            seo_titles[page_id] = disambiguate(title, chapters[page_id],
+                                               title_budget())
 
     missing = []
     for page_id, t in targets.items():

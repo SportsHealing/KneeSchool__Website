@@ -599,6 +599,1062 @@
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
     },
+    "2.8.1": {
+      "out": "anatomy/pcl-gross-anatomy.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.8.2": {
+      "out": "anatomy/pcl-al-bundle.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.8.3": {
+      "out": "anatomy/pcl-pm-bundle.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.8.4": {
+      "out": "anatomy/pcl-blood-supply.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.8.5": {
+      "out": "anatomy/pcl-mri-anatomy.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.8.6": {
+      "out": "anatomy/pcl-surgical-anatomy.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.9.1": {
+      "out": "anatomy/medial-superficial-mcl.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.9.2": {
+      "out": "anatomy/medial-deep-mcl.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.9.3": {
+      "out": "anatomy/medial-posterior-oblique-ligament.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.9.4": {
+      "out": "anatomy/medial-posteromedial-corner.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.9.5": {
+      "out": "anatomy/medial-semimembranosus.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.9.6": {
+      "out": "anatomy/medial-dynamic-stabilisation.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.9.7": {
+      "out": "anatomy/medial-surgical-anatomy.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.10.1": {
+      "out": "anatomy/lateral-lcl.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.10.2": {
+      "out": "anatomy/lateral-popliteus-tendon.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.10.3": {
+      "out": "anatomy/lateral-popliteofibular-ligament.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.10.4": {
+      "out": "anatomy/lateral-posterolateral-corner.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.10.5": {
+      "out": "anatomy/lateral-biceps-femoris.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.10.6": {
+      "out": "anatomy/lateral-common-peroneal-nerve.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.10.7": {
+      "out": "anatomy/lateral-surgical-anatomy.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.11.1": {
+      "out": "anatomy/rotational-iliotibial-band.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.11.2": {
+      "out": "anatomy/rotational-kaplan-fibres.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.11.3": {
+      "out": "anatomy/rotational-anterolateral-ligament.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.11.4": {
+      "out": "anatomy/rotational-segond-lesion.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.11.5": {
+      "out": "anatomy/rotational-anterolateral-complex.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.12.1": {
+      "out": "anatomy/patellofemoral-trochlea.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.12.2": {
+      "out": "anatomy/patellofemoral-mpfl.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.12.3": {
+      "out": "anatomy/patellofemoral-mqtfl.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.12.4": {
+      "out": "anatomy/patellofemoral-retinacula.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.12.5": {
+      "out": "anatomy/patellofemoral-dynamic-stabilisers.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "2.12.6": {
+      "out": "anatomy/patellofemoral-surgical-anatomy.html",
+      "parent": "Anatomy Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.1.1": {
+      "out": "biomechanics/what-is-biomechanics.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.1.2": {
+      "out": "biomechanics/why-biomechanics-matters.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.1.3": {
+      "out": "biomechanics/biomechanics-in-everyday-life.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.1.4": {
+      "out": "biomechanics/biomechanics-in-sport.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.1.5": {
+      "out": "biomechanics/biomechanics-and-injury-prevention.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.1.6": {
+      "out": "biomechanics/biomechanics-and-surgical-reconstruction.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.1.7": {
+      "out": "biomechanics/historical-development-of-knee-biomechanics.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.2.1": {
+      "out": "biomechanics/degrees-of-freedom.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.2.2": {
+      "out": "biomechanics/flexion-and-extension.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.2.3": {
+      "out": "biomechanics/internal-rotation.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.2.4": {
+      "out": "biomechanics/external-rotation.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.2.5": {
+      "out": "biomechanics/varus-motion.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.2.6": {
+      "out": "biomechanics/valgus-motion.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.2.7": {
+      "out": "biomechanics/anterior-translation.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.2.8": {
+      "out": "biomechanics/posterior-translation.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.2.9": {
+      "out": "biomechanics/coupled-motion.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.2.10": {
+      "out": "biomechanics/knee-stability-during-motion.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.3.1": {
+      "out": "biomechanics/introduction-to-kinematics.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.3.2": {
+      "out": "biomechanics/roll-and-glide-mechanisms.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.3.3": {
+      "out": "biomechanics/femoral-motion-on-tibia.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.3.4": {
+      "out": "biomechanics/tibial-motion-on-femur.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.3.5": {
+      "out": "biomechanics/screw-home-mechanism.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.3.6": {
+      "out": "biomechanics/reverse-screw-home-mechanism.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.3.7": {
+      "out": "biomechanics/instant-centre-of-rotation.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.3.8": {
+      "out": "biomechanics/changes-throughout-flexion.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.3.9": {
+      "out": "biomechanics/kinematics-during-walking.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.3.10": {
+      "out": "biomechanics/kinematics-during-running.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.3.11": {
+      "out": "biomechanics/kinematics-during-squatting.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.3.12": {
+      "out": "biomechanics/kinematics-during-stair-climbing.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.3.13": {
+      "out": "biomechanics/kinematics-during-landing.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.3.14": {
+      "out": "biomechanics/kinematics-during-cutting.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.4.1": {
+      "out": "biomechanics/introduction-to-kinetics.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.4.2": {
+      "out": "biomechanics/ground-reaction-forces.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.4.3": {
+      "out": "biomechanics/joint-reaction-forces.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.4.4": {
+      "out": "biomechanics/lever-arms.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.4.5": {
+      "out": "biomechanics/moments-about-the-knee.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.4.6": {
+      "out": "biomechanics/external-moments.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.4.7": {
+      "out": "biomechanics/internal-moments.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.4.8": {
+      "out": "biomechanics/energy-absorption.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.4.9": {
+      "out": "biomechanics/force-transmission.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.4.10": {
+      "out": "biomechanics/shock-absorption.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.5.1": {
+      "out": "biomechanics/contact-areas.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.5.2": {
+      "out": "biomechanics/contact-pressures.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.5.3": {
+      "out": "biomechanics/load-distribution.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.5.4": {
+      "out": "biomechanics/effects-of-flexion.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.5.5": {
+      "out": "biomechanics/effects-of-meniscal-loss.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.5.6": {
+      "out": "biomechanics/effects-of-malalignment.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.5.7": {
+      "out": "biomechanics/effects-of-obesity.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.5.8": {
+      "out": "biomechanics/contact-mechanics-after-acl-injury.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.5.9": {
+      "out": "biomechanics/contact-mechanics-after-meniscectomy.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.5.10": {
+      "out": "biomechanics/contact-mechanics-after-osteotomy.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.6.1": {
+      "out": "biomechanics/functions-of-the-meniscus.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.6.2": {
+      "out": "biomechanics/hoop-stress.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.6.3": {
+      "out": "biomechanics/circumferential-fibres.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.6.4": {
+      "out": "biomechanics/radial-fibres.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.6.5": {
+      "out": "biomechanics/meniscal-load-sharing.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.6.6": {
+      "out": "biomechanics/meniscal-shock-absorption.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.6.7": {
+      "out": "biomechanics/joint-lubrication.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.6.8": {
+      "out": "biomechanics/meniscal-proprioception.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.6.9": {
+      "out": "biomechanics/root-biomechanics.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.6.10": {
+      "out": "biomechanics/meniscal-extrusion.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.6.11": {
+      "out": "biomechanics/effects-of-root-tears.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.6.12": {
+      "out": "biomechanics/effects-of-radial-tears.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.6.13": {
+      "out": "biomechanics/meniscal-repair-biomechanics.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.6.14": {
+      "out": "biomechanics/meniscal-transplantation-biomechanics.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.7.1": {
+      "out": "biomechanics/functions-of-the-acl.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.7.2": {
+      "out": "biomechanics/acl-primary-restraints.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.7.3": {
+      "out": "biomechanics/acl-secondary-restraints.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.7.4": {
+      "out": "biomechanics/acl-bundle-function.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.7.5": {
+      "out": "biomechanics/acl-am-bundle-function.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.7.6": {
+      "out": "biomechanics/acl-pl-bundle-function.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.7.7": {
+      "out": "biomechanics/acl-rotational-stability.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.7.8": {
+      "out": "biomechanics/acl-anterior-stability.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.7.9": {
+      "out": "biomechanics/pivot-shift-mechanics.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.7.10": {
+      "out": "biomechanics/acl-strain-during-activity.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.7.11": {
+      "out": "biomechanics/acl-loading-during-running.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.7.12": {
+      "out": "biomechanics/acl-loading-during-landing.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.7.13": {
+      "out": "biomechanics/acl-loading-during-cutting.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.7.14": {
+      "out": "biomechanics/acl-injury-mechanisms.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.7.15": {
+      "out": "biomechanics/female-acl-biomechanics.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.7.16": {
+      "out": "biomechanics/acl-graft-biomechanics.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.7.17": {
+      "out": "biomechanics/hamstring-graft-biomechanics.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.7.18": {
+      "out": "biomechanics/patellar-tendon-graft-biomechanics.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.7.19": {
+      "out": "biomechanics/quadriceps-tendon-graft-biomechanics.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.7.20": {
+      "out": "biomechanics/acl-reconstruction-biomechanics.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.8.1": {
+      "out": "biomechanics/functions-of-the-pcl.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.8.2": {
+      "out": "biomechanics/posterior-stability.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.8.3": {
+      "out": "biomechanics/pcl-bundle-function.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.8.4": {
+      "out": "biomechanics/pcl-al-bundle-mechanics.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.8.5": {
+      "out": "biomechanics/pcl-pm-bundle-mechanics.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.8.6": {
+      "out": "biomechanics/posterior-drawer-mechanics.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.8.7": {
+      "out": "biomechanics/gait-following-pcl-injury.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.8.8": {
+      "out": "biomechanics/pcl-reconstruction-biomechanics.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.8.9": {
+      "out": "biomechanics/pcl-double-bundle-reconstruction.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.8.10": {
+      "out": "biomechanics/pcl-inlay-techniques.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.9.1": {
+      "out": "biomechanics/valgus-stability.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.9.2": {
+      "out": "biomechanics/medial-rotational-stability.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.9.3": {
+      "out": "biomechanics/superficial-mcl-function.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.9.4": {
+      "out": "biomechanics/deep-mcl-function.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.9.5": {
+      "out": "biomechanics/pol-function.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.9.6": {
+      "out": "biomechanics/posteromedial-corner-function.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.9.7": {
+      "out": "biomechanics/amri-biomechanics.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.9.8": {
+      "out": "biomechanics/medial-reconstruction-biomechanics.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.9.9": {
+      "out": "biomechanics/medial-contributions-by-flexion-angle.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.9.10": {
+      "out": "biomechanics/combined-acl-and-mcl-injury.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.10.1": {
+      "out": "biomechanics/varus-stability.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.10.2": {
+      "out": "biomechanics/external-rotation-stability.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.10.3": {
+      "out": "biomechanics/lcl-function.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.10.4": {
+      "out": "biomechanics/popliteus-function.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.10.5": {
+      "out": "biomechanics/popliteofibular-ligament-function.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.10.6": {
+      "out": "biomechanics/posterolateral-corner-function.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.10.7": {
+      "out": "biomechanics/dial-test-biomechanics.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.10.8": {
+      "out": "biomechanics/plc-reconstruction-biomechanics.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.10.9": {
+      "out": "biomechanics/combined-pcl-and-plc-injury.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.11.1": {
+      "out": "biomechanics/iliotibial-band-function.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.11.2": {
+      "out": "biomechanics/kaplan-fibre-function.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.11.3": {
+      "out": "biomechanics/anterolateral-ligament-function.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.11.4": {
+      "out": "biomechanics/pivot-shift-control.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.11.5": {
+      "out": "biomechanics/internal-rotation-control.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.11.6": {
+      "out": "biomechanics/segond-lesion-mechanics.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.11.7": {
+      "out": "biomechanics/lateral-extra-articular-tenodesis.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.11.8": {
+      "out": "biomechanics/combined-acl-and-all-reconstruction.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.11.9": {
+      "out": "biomechanics/anterolateral-complex-controversies.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.12.1": {
+      "out": "biomechanics/patellar-tracking.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.12.2": {
+      "out": "biomechanics/patellofemoral-contact-areas.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.12.3": {
+      "out": "biomechanics/patellofemoral-contact-pressures.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.12.4": {
+      "out": "biomechanics/trochlear-function.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.12.5": {
+      "out": "biomechanics/mpfl-function.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.12.6": {
+      "out": "biomechanics/q-angle.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.12.7": {
+      "out": "biomechanics/dynamic-valgus.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.12.8": {
+      "out": "biomechanics/patellar-instability.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.12.9": {
+      "out": "biomechanics/patellofemoral-pain.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.12.10": {
+      "out": "biomechanics/patellofemoral-arthritis.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.12.11": {
+      "out": "biomechanics/patellofemoral-effects-of-malalignment.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.12.12": {
+      "out": "biomechanics/tibial-tubercle-position.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.13.1": {
+      "out": "biomechanics/mechanical-axis.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.13.2": {
+      "out": "biomechanics/anatomical-axis.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.13.3": {
+      "out": "biomechanics/varus-alignment.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.13.4": {
+      "out": "biomechanics/valgus-alignment.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.13.5": {
+      "out": "biomechanics/constitutional-varus.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.13.6": {
+      "out": "biomechanics/joint-line-obliquity.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.13.7": {
+      "out": "biomechanics/dynamic-alignment.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.13.8": {
+      "out": "biomechanics/alignment-and-osteoarthritis.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.13.9": {
+      "out": "biomechanics/osteotomy-biomechanics.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.13.10": {
+      "out": "biomechanics/alignment-correction-principles.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
     "6.1.1": {
       "out": "conditions/acl.html",
       "parent": "Conditions|index.html",

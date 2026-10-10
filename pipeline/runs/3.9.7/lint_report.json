@@ -1,0 +1,19 @@
+{
+  "lint_version": "1.0",
+  "pass": true,
+  "fail_count": 0,
+  "warn_count": 0,
+  "findings": [],
+  "article_template_version": "1.0",
+  "document": {
+    "word_count": 1051,
+    "tiers_present": [
+      "frcs",
+      "medical_student",
+      "mrcs"
+    ],
+    "has_reference_list": true,
+    "sentence_count": 80,
+    "page_type": "biomechanics"
+  }
+}

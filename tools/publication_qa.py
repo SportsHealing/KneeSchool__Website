@@ -244,6 +244,22 @@ def pub_009(rel, page, cfg, all_pages):
     return out
 
 
+def pub_010(rel, page, cfg, _all):
+    """The publication posture. While the site is published and not publicised,
+    every page carries the noindex directive; when that changes, no page does.
+    A site where some pages are indexable and some are not has no posture, and
+    the half that is indexable is the half that publicises it."""
+    want = not cfg.get("discoverable")
+    got = page.meta.get("robots", "")
+    if want and "noindex" not in got.lower():
+        return ["no robots noindex directive, but site.json says the site is "
+                "published and not publicised"]
+    if not want and "noindex" in got.lower():
+        return ["carries a robots noindex directive, but site.json says the site "
+                "is discoverable"]
+    return []
+
+
 RULES = [
     ("PUB-001", "SEO title", pub_001),
     ("PUB-002", "Meta description", pub_002),
@@ -254,6 +270,7 @@ RULES = [
     ("PUB-007", "Internal linking", pub_007),
     ("PUB-008", "Metadata", pub_008),
     ("PUB-009", "Uniqueness", pub_009),
+    ("PUB-010", "Publication posture", pub_010),
 ]
 
 

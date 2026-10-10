@@ -95,8 +95,24 @@ def band_override(page_id):
 
 
 def scale_for_tiers(defaults, tiers):
+    """Decision 002's bands, with the FAQ allowance applied wherever the patient
+    tier appears.
+
+    The allowance started as part of the one and two tier bands. It belongs to
+    the FAQ block rather than to the tier count: a page carrying the patient tier
+    carries three to five question and answer pairs that the handbook requires
+    and the band was not written for. The first four tier page with a patient
+    block came out at 2,034 words against a ceiling of 1,800, and the block was
+    the difference. See decision 014.
+    """
     band = TIER_WORD_BANDS.get(len(tiers))
-    if not band or not defaults:
+    if not defaults:
+        return defaults
+    if not band:
+        if "patient" in tiers:
+            out = dict(defaults)
+            out["max"] = out["max"] + FAQ_ALLOWANCE
+            return out
         return defaults
     lo, hi = band
     if "patient" in tiers:
@@ -104,13 +120,40 @@ def scale_for_tiers(defaults, tiers):
     return {"min": lo, "max": hi}
 
 
+TIER_OVERRIDES = os.path.join(ROOT, "pipeline", "config", "tier_overrides.json")
+
+
+def tier_override(page_id, tiers):
+    """Tiers added beyond the architecture's own list for a page.
+
+    Only ever additive, and only in the order the template declares, so a brief
+    cannot end up with its tiers out of sequence. See decision 013.
+    """
+    try:
+        entry = load(TIER_OVERRIDES)["pages"].get(page_id)
+    except IOError:
+        return tiers
+    if not entry:
+        return tiers
+    order = load(TEMPLATE)["tier_order"]
+    wanted = set(tiers) | set(entry.get("add") or [])
+    return [t for t in order if t in wanted]
+
+
 def build_brief(page, merge=None):
     tpl = load(TEMPLATE)
     type_map = load(TYPE_MAP)["page_types"]
     template_name = (type_map.get(page["page_type"]) or {}).get("template")
     defaults = (tpl["page_types"].get(template_name) or {}).get("word_count") or {}
+    # Tier order is normalised against the template every time, not only when an
+    # override applies. One page in the architecture lists its tiers out of
+    # sequence, and a brief that carries that order produces an article whose
+    # depth dial runs backwards.
+    tiers = tier_override(page["page_id"], page["tiers_required"])
+    order = load(TEMPLATE)["tier_order"]
+    tiers = [t for t in order if t in set(tiers)]
     defaults = band_override(page["page_id"]) \
-        or scale_for_tiers(defaults, page["tiers_required"])
+        or scale_for_tiers(defaults, tiers)
 
     brief = collections.OrderedDict()
     brief["brief_version"] = "1.1"
@@ -121,7 +164,7 @@ def build_brief(page, merge=None):
     brief["page_type"] = page["page_type"]
     brief["article_template"] = template_name
     brief["generated_from"] = "Master Publishing Architecture, pages_0_to_3.json"
-    brief["tiers_required"] = page["tiers_required"]
+    brief["tiers_required"] = tiers
     brief["scope"] = collections.OrderedDict([
         ("must_cover", [page["scope"]]),
         ("must_not_cover", page["must_not_cover"]),
@@ -145,7 +188,7 @@ def build_brief(page, merge=None):
         ("target_word_count", dict(defaults)),
         ("internal_link_placeholders", True),
     ])
-    junior = "junior" in page["tiers_required"]
+    junior = "junior" in tiers
     brief["governance"] = collections.OrderedDict([
         ("commercial_content_allowed", False),
         ("clinical_advice_allowed", False),
@@ -168,10 +211,16 @@ def build_brief(page, merge=None):
             # generate the brief. Fall back to the architecture's values.
             prior = None
     if prior:
-        # Hand set values that the architecture does not own are preserved.
-        for path in (("output_requirements", "target_word_count"),
-                     ("curriculum_tags",), ("tier_notes",),
-                     ("source_requirements", "kb_topic_filter")):
+        # Hand set values that the architecture does not own are preserved. A
+        # word count band declared in word_count_overrides.json is config rather
+        # than a hand set value, so it is not among them: an override added after
+        # a brief exists has to reach that brief, and merging the old number back
+        # over it was how this went wrong once. See decision 013.
+        preserve = [("curriculum_tags",), ("tier_notes",),
+                    ("source_requirements", "kb_topic_filter")]
+        if not band_override(page["page_id"]):
+            preserve.insert(0, ("output_requirements", "target_word_count"))
+        for path in preserve:
             node, target = prior, brief
             ok = True
             for key in path[:-1]:

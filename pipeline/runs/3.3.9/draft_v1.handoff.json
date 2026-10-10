@@ -1,0 +1,33 @@
+{
+  "page_id": "3.3.9",
+  "prompt_version": "1.0",
+  "article_template_version": "1.0",
+  "page_type": "biomechanics",
+  "article_template": "biomechanics",
+  "tiers_covered": [
+    "medical_student",
+    "mrcs",
+    "frcs"
+  ],
+  "scope_statement": "Knee motion in gait.",
+  "sources": [],
+  "source_note": "No sources were retrieved. The generation environment had no access to PubMed, Cochrane, any journal or any textbook. The Tier 1 source minimum is NOT met and this draft would not pass Tier 1 in the deployed pipeline. This is the first section on the site written entirely for professionals, and it is unverified.",
+  "claims_needing_verification": [
+    "Walking is the patient's benchmark and a weak discriminator between constructs.",
+    "The adduction moment discriminates, and it is kinetic rather than kinematic.",
+    "Stiff knee gait has several causes; separating them is the clinical work.",
+    "Wearable monitoring answers the real world question that laboratory gait does not.",
+    "No kinematic measure substitutes for whether walking is acceptable to the patient."
+  ],
+  "claims_note": "Listed above are the substantive claims, taken from the deepest tier's key learning points. Every anatomical statement in the page body requires the same verification against a standard text; these are the ones a reviewer should start with.",
+  "content_rule": "Decision 006: this page may carry measurements and every one of them is written from standard teaching rather than from a retrieved paper. None has been checked against a source, because the build environment has none. Each figure is registered in pipeline/config/figures/<page_id>.json with the sentence it supports and a verification state, so the checking list is generated from the page rather than compiled by hand. Run tools/figures.py --report --unchecked for the outstanding list.",
+  "gaps_or_uncertainties": [
+    "6 figure(s) on this page, all written from standard teaching and none checked against a source. They are listed in pipeline/config/figures/3.3.9.json with the sentence each one supports.",
+    "Anatomical relations are otherwise described in relative terms, which is adequate for orientation and inadequate for planning that depends on a dimension."
+  ],
+  "duplication_risk_pages": [
+    "3.14"
+  ],
+  "architecture_check": "Written against the architecture's own brief for 3.3.9, including its must_not_cover list: Examination technique (owned by Section 4); Imaging interpretation (owned by Section 5); Clinical management (owned by Section 6); Operative technique (owned by Section 7); Gait pathology (owned by 3.14 and 4.4); Sport specific application (owned by 3.15)",
+  "status": "AI_DRAFT_READY_FOR_VERIFICATION"
+}

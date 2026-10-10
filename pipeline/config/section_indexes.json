@@ -1,0 +1,38 @@
+{
+  "indexes_version": "1.0",
+  "note": "One entry per section that has a chapter index page. Everything a section index needs that cannot be derived from the architecture or the published page index lives here: the directory, the title, the standing note, and the panel explaining how the section differs from its neighbours. The chapter list, the page list, the live count and the two lines of progress copy are generated, so a batch of new pages changes the page without anyone editing it. tools/build_section_index.py reads this file.",
+  "sections": {
+    "2": {
+      "dir": "anatomy",
+      "title": "The Anatomy Academy",
+      "who": "Section 2 &middot; Regional anatomy, structure by structure",
+      "description": "Section 2: regional anatomy of the knee for medical students, MRCS, FRCS and fellowship, structure by structure.",
+      "lede_prefix": "Twelve chapters covering the knee one structure at a time, written for medical students, MRCS and FRCS candidates, and fellows.",
+      "panel_heading": "How these pages differ from the Fundamentals",
+      "panel_lede": "Section 1 explains what the knee is. Section 2 is the dissection, and it starts at medical student level rather than ending there.",
+      "panel_points": [
+        ["Four tiers, not seven.", "Medical student, MRCS, FRCS and, on the surgical anatomy pages, fellowship. There is no junior or patient tier in this section."],
+        ["Every number is listed.", "These pages carry measurements, and not one has been checked against a source, because this build has no access to any. Each one is registered with the sentence it supports and a verification state, so the whole list can be worked through rather than hunted for."],
+        ["Pathology, technique and imaging interpretation are elsewhere.", "This section is anatomy. What goes wrong is Section 6, what is done about it is Section 7, and how it is imaged is Section 5."],
+        ["Not yet reviewed.", "No page in this section has been through evidence verification or consultant review, and each page states that at the top."]
+      ],
+      "note": "Nothing in this section is clinical advice or operative instruction. It describes normal anatomy for people who already have a clinical qualification or are working towards one."
+    },
+    "3": {
+      "dir": "biomechanics",
+      "title": "The Biomechanics Academy",
+      "who": "Section 3 &middot; Forces, movement and what they explain",
+      "description": "Section 3: the mechanics of the knee, from a school science lesson to consultant level, with every figure registered.",
+      "lede_prefix": "Seventeen chapters on how the knee moves and what loads it, written from school age to consultant level.",
+      "panel_heading": "How to read a number on these pages",
+      "panel_lede": "Biomechanics is a field where three credible methods give three different answers to the same question, and the difference is usually the method rather than the knee.",
+      "panel_points": [
+        ["Every figure carries its method.", "A cadaver figure, a laboratory figure and an in vivo figure are three different kinds of number. Each page says which it is quoting, because a figure without its method attached cannot be used."],
+        ["Every figure is unchecked.", "No measurement on this site has been verified against a source. Each is registered with the sentence it supports and a verification state, so the list can be worked through."],
+        ["How It Is Measured is a section, not an aside.", "Each page has a heading for the methods and their limits, because a template with nowhere to say so produces pages that quote figures as settled. See decision 014."],
+        ["The landmark papers pages are held.", "Every chapter ends with a page about named studies. This build cannot retrieve a paper and will not invent a citation, so those eleven pages wait. See decision 014."]
+      ],
+      "note": "Nothing in this section is clinical advice. It describes mechanics, and the figures in it are written from standard teaching rather than from retrieved sources."
+    }
+  }
+}

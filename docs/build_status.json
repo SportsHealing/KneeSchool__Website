@@ -13,16 +13,16 @@
           "state": "Blocked",
           "blocker": "The build environment has no access to PubMed, Cochrane, NICE, any journal or any textbook. Agent 2 of the three agent pipeline is the fact checker and it cannot retrieve a single source.",
           "needed": "Source access, or a human verifier. Until then no page on this site carries a reference, every verified handoff is marked NOT_RUN_TOOLS_UNAVAILABLE, and no citation has been invented to fill the gap.",
-          "pages": "All 55 published article pages"
+          "pages": "All 245 published article pages"
         },
         {
           "ref": "EV-2",
-          "title": "Consultant review has no return path",
+          "title": "Consultant review has reviewers and a return path, and nothing signed",
           "area": "Content pipeline",
-          "state": "Blocked",
-          "blocker": "Review packs are written to docs/review/ and there is no mechanism for a consultant to return a decision into the pipeline. The deployed design uses a Step Functions task token, and the pipeline is not deployed.",
-          "needed": "Either the pipeline deployed to an AWS account, or an agreed manual route for returning review decisions.",
-          "pages": "55 pages awaiting review"
+          "state": "Mechanism built, nothing signed",
+          "blocker": "The client confirmed on 10 October 2026 that consultants are lined up, so the people exist. The mechanism existed only as prose packs in docs/review/ with no way for an answer to come back. tools/review_pack.py now generates one pack per chapter from the work and reads a filled pack back into the registers, so the route exists. What is missing is a reviewer's time.",
+          "needed": "A consultant to work through a chapter. 1,471 clinical recommendations across 212 pages and 352 measurements across 123 are outstanding, none signed. python3 tools/review_pack.py --status prints the breakdown by chapter; the largest is 3.7 with 152 and the median is 32.",
+          "pages": "Every page on the site is an unreviewed editorial draft"
         },
         {
           "ref": "EV-3",
@@ -51,21 +51,21 @@
         },
         {
           "ref": "EV-6",
-          "title": "32 measurements on the site are unchecked",
+          "title": "352 measurements on the site are unchecked",
           "area": "Content",
           "state": "Live and flagged",
           "blocker": "They are written from memory because no paper could be retrieved. Each page's references note says so and each figure is registered.",
-          "needed": "Source access, or a reviewer with a library. tools/figures.py --report --unchecked is the list, and the gate refuses any figure that is not on it.",
-          "pages": "19 pages across Section 2"
+          "needed": "Someone with source access to work the register: 352 figures across 123 pages, all UNVERIFIED_FROM_MEMORY. tools/figures.py --report --unchecked is the list.",
+          "pages": "123 pages carry at least one measurement"
         },
         {
           "ref": "EV-7",
-          "title": "100 clinical recommendations on the site are unsigned",
+          "title": "1,471 clinical recommendations on the site are unsigned",
           "area": "Content",
-          "state": "Live and registered",
-          "blocker": "They are written by a process with no clinical qualification, on pages that state they have not been reviewed. The client has chosen to keep them, and decision 007 makes the set finite and listed.",
-          "needed": "A named consultant to confirm, amend, withdraw or reclassify each one. tools/positions.py --report --unsigned is the list. It grew from 76 to 100 with chapter 2.7, which is the pattern: a surgical chapter adds positions faster than it adds pages.",
-          "pages": "36 pages across Sections 1, 2 and 6"
+          "state": "Live and registered, and the count rose on 10 October 2026",
+          "blocker": "They are written by a process with no clinical qualification, on pages that state they have not been reviewed. The client has chosen to keep them, and decision 007 makes the set finite and listed. The total rose from 976 to 1,295 on 10 October 2026, and chapter 3.12 added 93 more, not because advice was added but because the detector was found to be missing it. POS-001 read clinical direction off a list of imperative openers built from directive prose, and the directions opening with a weighing or a consultation verb had never reached the register. Two extensions of the verb list, decisions 018 and 019, added 319 between them.",
+          "needed": "A consultant to work the register: 1,471 positions across 212 pages, all UNSIGNED. tools/positions.py --report --unsigned is the list.",
+          "pages": "212 pages carry at least one recommendation"
         },
         {
           "ref": "EV-8",
@@ -111,6 +111,69 @@
           "blocker": "Three documents now set editorial rules. The Operations Handbook is version 1.0 of 22 September 2026 and claims authority over all other documents including prior playbook drafts. The Master Operations Handbook and both playbooks were written on 13 June 2026 and carry no version. On the dates, the June documents are the prior drafts that rule names.",
           "needed": "Confirmed on 9 October 2026. The Operations Handbook of 22 September 2026 is senior on any disagreement; the Master Operations Handbook governs what it does not cover; both playbooks are historical. FAQs stay on the patient tier only and the spiral keeps seven tiers, so nothing is reworked. See decision 009.",
           "pages": "None; the ruling confirms the existing state"
+        },
+        {
+          "ref": "EV-13",
+          "title": "The prose reference report, and two faults it has found",
+          "area": "Content architecture",
+          "state": "Fixed twice, and tested",
+          "blocker": "A bare reference in prose can name a real chapter and still be the wrong one. Seven pages across chapters 2.8, 2.9 and 2.10 sent the reader to Meniscal Examination, ACL Examination and PCL Examination for the posterior drawer, the medial side and the dial test. Every id was valid, so nothing caught it.",
+          "needed": "Nothing. 1,558 bare references across 202 pages, none pointing at an id the architecture lacks. The detector has itself been corrected twice: chapter 3.4's bare decimals were read as chapter references, one of which resolved to a real page, and fixing that uncovered a pre-existing miss where any reference ending a sentence was never checked. There were 56 of those. Six tests hold both fixes.",
+          "pages": "7 pages corrected; 88 pages carry bare references"
+        },
+        {
+          "ref": "EV-14",
+          "title": "Eleven Landmark Papers pages cannot be written here",
+          "area": "Content pipeline",
+          "state": "Held, template defined",
+          "blocker": "Section 3 carries eleven pages whose subject is named studies: 3.1.8 Landmark Biomechanical Studies, and the whole of chapter 3.17, which collects them by subject. This environment cannot retrieve a paper, and the Operations Handbook names an invented citation as its one critical failure. A page about specific papers written from memory would either carry a recalled citation, which is that failure, or carry no paper, which is not the page the architecture asked for.",
+          "needed": "Source access, the same thing EV-1 needs. The landmark_papers template is defined under decision 014 so the pages can be written the day it exists. Held: 3.1.8 and 3.17.1 to 3.17.10. Corrected on 10 October 2026: this entry previously named 3.2.11, 3.3.15, 3.4.12, 3.5.11, 3.6.12, 3.7.12, 3.8.11, 3.9.11, 3.10.10 and 3.11.9, on an unchecked assumption that every chapter ends with one. None of those ids exists, so chapters 3.2 to 3.16 hold nothing back.",
+          "pages": "11 pages in Section 3, none published"
+        },
+        {
+          "ref": "EV-15",
+          "title": "Fourteen pages fetched the wrong two typefaces",
+          "area": "Design system",
+          "state": "Fixed, and a check added",
+          "blocker": "The MyKneeScore port changed the stylesheet to Cormorant Garamond and Hanken Grotesk. The 151 rendered article pages took the new font block from tools/site_chrome.py. The 14 hand written pages, the homepage and all seven level pages among them, kept the previous Newsreader and Source Serif block, so they asked for fonts the stylesheet never names and rendered in the Georgia and Helvetica fallbacks. A page that cannot load a font falls back silently, so the site verified clean for three days while its most visited pages looked wrong.",
+          "needed": "Nothing. The font block has one definition in tools/site_chrome.py, tools/apply_chrome.py rewrites it on every page, and tools/check_site.py fails any page that fetches a family the stylesheet does not name. Four tests hold it.",
+          "pages": "14 pages corrected, all 165 now fetch the same two"
+        },
+        {
+          "ref": "EV-16",
+          "title": "Two pages could have rendered to the same file in silence",
+          "area": "Content pipeline",
+          "state": "Guard added, and tested",
+          "blocker": "A render target is a page id mapped to an output path. Nothing checked that two ids did not map to the same path. One would have published and the other would have been lost, with every gate still passing: the file exists, it is valid, the links resolve, and nothing knows a second page was meant to be there. Chapter 3.6 came within one slug of it, because its Load Sharing, Shock Absorption and Proprioception pages share their titles with chapters 3.4 and 2.7.",
+          "needed": "Nothing. tools/render_site.py refuses the whole run and names both pages when two targets collide. Two tests hold it, one of which introduces a collision and checks the renderer refuses it. The titles stay as the architecture gives them and the three slugs carry a meniscal prefix.",
+          "pages": "No page was lost; the collision was caught before it was written"
+        },
+        {
+          "ref": "EV-17",
+          "title": "163 clinical directions were never registered",
+          "area": "Content pipeline",
+          "state": "Fixed, re-extracted and tested",
+          "blocker": "POS-001 detects clinical direction from a list of imperative openers. The list was built from directive prose, so Assess, Avoid and Prefer were in it and Weigh, Stage, Correct, Offer and Confirm were not. A dry run across every professional page found 163 directions on 101 pages that had never reached the position register, among them 'Stage the corner before any cruciate reconstruction in a knee with lateral findings' and 'Correct varus alignment where it would load a corner reconstruction'. Both are clinical direction and both had been live for days.",
+          "needed": "Nothing in the tool. The verb list was extended, the register re-extracted and 7 tests added. With decision 019's consultation verbs the unsigned total rose from 976 to 1,295, which is a correction to the count rather than new exposure: the advice was always on the page and simply not on the list anybody is asked to sign. Found only because the consultant tier rewrite under decision 018 moved into weighing language the detector could not see.",
+          "pages": "101 pages carried at least one unregistered direction"
+        },
+        {
+          "ref": "EV-18",
+          "title": "POSITION_VERBS is a verb list, and it was extended twice in one day",
+          "area": "Content pipeline",
+          "state": "Flagged, not fixed",
+          "blocker": "POS-001 detects clinical direction from a list of imperative openers. Decision 018 extended it for weighing verbs and decision 019 extended it again for consultation verbs, both times because prose in a register the list had never seen went undetected. A list that needs extending whenever the writing changes register is keeping pace rather than leading, and the next new register will find the same gap.",
+          "needed": "No replacement is proposed, because the obvious alternatives are worse. A general imperative parser over-collects far more than the list does, and a model-based detector is not deterministic and cannot sit in a gate that has to give the same answer twice. Flagged so the next person does not assume it went unnoticed.",
+          "pages": "Affects every professional page, 190 of them"
+        },
+        {
+          "ref": "EV-19",
+          "title": "Two QA rules could contradict each other, and chapter 3.12 made them",
+          "area": "Content pipeline",
+          "state": "Fixed, and tested",
+          "blocker": "Chapter 14 requires a unique SEO title per page, so render_site.py appends a colliding page's chapter name to its title tag. Chapter 13 bounds the title at 60 characters. The suffix had no length budget, so the fix for one rule could break the other, and it did as soon as a long chapter name collided: 'Effects of Malalignment, Tibiofemoral Contact Mechanics | KneeSchool' is 68 characters. Three existing pages in chapter 3.5 failed PUB-001 the moment chapter 3.12 was rendered, having passed for days.",
+          "needed": "Nothing. The suffix now has a budget read from site.json and trailing words are dropped from the chapter name until it fits, which keeps the distinguishing word and loses the generic one. A chapter name whose first word alone will not fit is left whole, so the finding is reported rather than the renderer shipping a mangled title. Seven tests, two of which check every published page's title for length and for uniqueness rather than checking the helper.",
+          "pages": "6 pages carry a disambiguated title; every published page is now checked"
         }
       ]
     },
@@ -290,6 +353,87 @@
           "blocker": "Chapter 6 of the handbook asks for a separate colour for learning highlights, muted teal. The stylesheet had none and was using the gold meant for emphasis.",
           "needed": "Nothing. Ruled on 9 October 2026: three colours, no fourth. The muted teal is declined and the learning highlight keeps the gold. A token added earlier that day to carry a partner brand colour has been removed, because the brand reference was withdrawn and a token that always equals the gold is a hop with nothing at the end of it. See decision 011.",
           "pages": "None; the palette is unchanged"
+        },
+        {
+          "ref": "D-012",
+          "title": "The design system is MyKneeScore's",
+          "area": "Design",
+          "state": "Applied",
+          "blocker": "The site had its own palette and its own typography, built before the sister site's design system was available to read.",
+          "needed": "Nothing. Ported from SportsHealing/mykneescore at commit 4ce92e0 on 9 October 2026: its twelve tokens at their exact values, Cormorant Garamond and Hanken Grotesk, pill controls, card shapes and deep green chrome. One of its house rules came too, that no colour literal appears outside the stylesheet's :root block, and the site check now enforces it. One colour differs: small gold labels on a light background use a darker gold, because theirs is below the contrast minimum for text that size and this site carries those labels on pages for school age readers. See decision 012.",
+          "pages": "All 122 pages"
+        },
+        {
+          "ref": "D-013",
+          "title": "The peroneal nerve page carries a fellowship tier",
+          "area": "Content architecture",
+          "state": "Applied",
+          "blocker": "The architecture gives page 2.10.6 three tiers, and the client asked for a section on the nerve at risk from lateral surgery. That is approach anatomy, which is what the fellowship tier carries everywhere else in Section 2.",
+          "needed": "Nothing. A tier override mechanism was added, mirroring the word count overrides from decision 005: declared, additive only, each entry carrying a reason and a decision behind it. The page also has a declared 800 to 2400 band, because its fellowship tier is a single section of ten paragraphs. It came in at 2,227 words. See decision 013.",
+          "pages": "Page 2.10.6, Common Peroneal Nerve"
+        },
+        {
+          "ref": "D-014",
+          "title": "The biomechanics and landmark papers templates",
+          "area": "Content architecture",
+          "state": "Applied, open to revision",
+          "blocker": "Section 3's 188 pages had no template. Both its page types borrowed the anatomy one, which gave a page called What Is Biomechanics? a heading for Blood Supply and Innervation.",
+          "needed": "Client confirmation of the section order, as decision 003 received for Section 0. The biomechanics template is The Principle, At the Knee, What Changes It, How It Is Measured, Clinical Relevance. Two open questions in decision 014: whether biomechanics pages should be exempt from the junior closing message, and whether the landmark papers pages are worth attempting from memory.",
+          "pages": "Chapter 3.1 built on it, 7 pages published"
+        },
+        {
+          "ref": "D-015",
+          "title": "Published, not publicised",
+          "area": "Governance",
+          "state": "Applied",
+          "blocker": "The site can go live and will not be promoted until it is verified. Nothing on the site distinguished those two states, so a crawler finding it would have publicised it, and indexing is not cleanly reversible because pages stay cached after removal.",
+          "needed": "Nothing now. One value in site.json drives a noindex directive on all 262 pages and a robots.txt that disallows every crawler. Flipping it is one line and one command when verification is done. PUB-010 refuses the half flip, where the config says one thing and the pages say another. See decision 015.",
+          "pages": "All 262 pages carry the directive"
+        },
+        {
+          "ref": "D-016",
+          "title": "The review pack is the return path",
+          "area": "Governance",
+          "state": "Applied",
+          "blocker": "Eight hand written review packs covered batches that made sense on the day, went stale silently, and could only be answered in prose. A reviewer's decision had nowhere to go.",
+          "needed": "Nothing. tools/review_pack.py generates one pack per chapter from the chapter's own files and ingests a filled pack back into the figure and position registers. A blank row stays outstanding, one bad row writes nothing at all, and an amendment carries the reviewer's wording into the register. Twelve tests hold both directions, including that a signature survives the next extraction. See decision 016.",
+          "pages": "25 generated packs in docs/review/packs/"
+        },
+        {
+          "ref": "D-017",
+          "title": "The review pack in three formats",
+          "area": "Governance",
+          "state": "Applied",
+          "blocker": "A consultant filling eighty five cells wants a column to tab down, not a markdown table, and a printed pack for a meeting wants to be a document.",
+          "needed": "Nothing. Every pack generates as markdown, a spreadsheet and a Word file from the same data, all carrying the same row references, and --ingest reads any of them. Two faults were found while verifying: python-docx writes a schema-invalid settings.xml, now corrected, and LibreOffice does not work in this container, so the workbook sets fullCalcOnLoad and the Word file is verified structurally rather than rendered. See decision 017.",
+          "pages": "docs/review/packs/, markdown for all 32 chapters and both binaries for 3.2 to 3.10"
+        },
+        {
+          "ref": "D-018",
+          "title": "What the consultant tier is for",
+          "area": "Editorial",
+          "state": "Applied",
+          "blocker": "3.11.9 set out two positions on lateral augmentation and called both defensible. The client's correction on 10 October 2026 is that the consultant tier is about how a decision gets made when the evidence does not make it, not about arbitrating between camps. The rule is now in article_template.json under tier_intent.consultant: name the decision, set out both sides, say what moves the weight, say what the measurements cannot settle, and leave the reader able to say why a colleague decided otherwise.",
+          "needed": "Nothing. All three consultant blocks on the site were rewritten: 3.11.9, 3.1.7 and 6.1.1. Whether the fellowship tier needs the same treatment is left open deliberately.",
+          "pages": "3 pages rewritten, 1 template changed, 101 position registers re-extracted"
+        },
+        {
+          "ref": "D-019",
+          "title": "The five patient factors",
+          "area": "Editorial",
+          "state": "Applied",
+          "blocker": "Client instruction, 10 October 2026, given straight after decision 018: decision-making should always take into account the patient's age and physiology, medical comorbidities, demands on their knee, their psychological state, and their own ideas, concerns and expectations. Decision 018 said the consultant tier is a balance argument. This says what goes on the scale.",
+          "needed": "Nothing outstanding. The five factors and their keywords are in article_template.json, the new gate DEC-001 reads them from there, and 3.11.9 and 6.1.1 now carry all five. 3.1.7 is correctly out of scope because its consultant block weighs a teaching decision with no patient in it. Open: whether the five factors should reach the FRCS and fellowship blocks, which also frame choices.",
+          "pages": "2 pages extended, 1 new lint rule, 10 tests"
+        },
+        {
+          "ref": "D-020",
+          "title": "Controversies skip the fellowship tier",
+          "area": "Editorial",
+          "state": "Applied",
+          "blocker": "6.1.1 carried a Controversies and Evidence section at FRCS, fellowship and consultant, and the three repeated each other rather than pitching the same material three ways. The client cut fellowship on 10 October 2026. FRCS appraises the evidence, which is what the examination asks for, and the consultant block weighs the decision under decision 018. Fellowship is advanced practice, so its controversies belong inside its management and complications sections where the operation is.",
+          "needed": "Nothing. Section tier limits moved from a hardcoded dict in linter.py into article_template.json under section_tier_rules, which takes an explicit allow list as well as a floor, because a floor cannot express 'FRCS and consultant but not fellowship'. STRUCT-001 reads it, so the limit is checked rather than described: the condition template said frcs_and_above_only in prose and nothing read that string. The cut paragraph's one substantive detail, the name of the operation, moved into the fellowship complications section rather than going.",
+          "pages": "1 page edited, 1 template changed, 1 linter dict demoted to a fallback, 5 tests. Applies to the 100 or so Section 6 condition pages not yet written."
         }
       ]
     },
@@ -323,12 +467,12 @@
         },
         {
           "ref": "W-4",
-          "title": "Section 2 Anatomy Academy, chapters 2.1 to 2.7",
+          "title": "Section 2 Anatomy Academy, complete",
           "area": "Content",
-          "state": "48 of 79 written, style gate passed, awaiting review",
+          "state": "All 79 pages written, style gate passed, awaiting review",
           "blocker": "None on the written pages. The remaining 31 are a matter of time.",
-          "needed": "Consultant review. 72,389 words of professional only content, none of it verified. It carries 32 unchecked measurements and contributes most of the 100 unsigned clinical positions.",
-          "pages": "2.1.1 to 2.1.9, 2.2.1 to 2.2.6, 2.3.1 to 2.3.3, 2.4.1 to 2.4.5, 2.5.1 to 2.5.7, 2.6.1 to 2.6.6, 2.7.1 to 2.7.12"
+          "needed": "Consultant review of the whole section. It is the largest body of professional content on the site and none of it has been verified or reviewed. The fellowship sections on 2.10.6 and 2.12.6 are approach anatomy written without a source and should be read first.",
+          "pages": "79 published pages, 111,493 body words as the style gate counts them"
         },
         {
           "ref": "W-5",
@@ -338,6 +482,123 @@
           "blocker": "None.",
           "needed": "Nothing. The ids came from Part 1's deeper_pages lists and were right; the labels were invented because the target sections had no architecture. Three were worse: the anterior cruciate page linked to PCL, MCL and posterolateral corner injury using page ids inside the ACL chapter. crossrefs now checks every forward link against the outline, including chapter level targets.",
           "pages": "36 pages across Sections 0, 1, 2 and 6"
+        },
+        {
+          "ref": "W-6",
+          "title": "Section 3 Biomechanics Academy, chapter 3.1",
+          "area": "Content",
+          "state": "7 of 8 written, style gate passed, awaiting review",
+          "blocker": "The first chapter of the largest remaining section. It carries all five tier shapes Section 3 uses, from junior to consultant, which is why it was built first: whatever template serves it serves the section.",
+          "needed": "Consultant review. Page 3.1.8 is held under decision 014 and EV-14. Chapters 3.11 to 3.17 are the 81 pages still to write.",
+          "pages": "7 published pages, 10,697 body words as the style gate counts them"
+        },
+        {
+          "ref": "W-7",
+          "title": "Section 3 Biomechanics Academy, chapter 3.2",
+          "area": "Content",
+          "state": "All 10 pages written, style gate passed, awaiting review",
+          "blocker": "Functional Anatomy and Motion. Ten pages on the six degrees of freedom, the six motions taken one at a time, how they couple, and stability through the arc. Three tiers on every page, medical student to FRCS, and no junior or patient tier: the architecture does not ask for one here. The chapter orients rather than apportions, because per ligament restraint belongs to chapters 3.7 to 3.11 and surface motion to 3.3.",
+          "needed": "Consultant review. Nothing in the chapter is held: the chapter's ten pages are its whole plan.",
+          "pages": "10 published pages, 12,889 body words as the style gate counts them"
+        },
+        {
+          "ref": "W-8",
+          "title": "Section 3 Biomechanics Academy, chapter 3.3",
+          "area": "Content",
+          "state": "All 14 pages written, style gate passed, awaiting review",
+          "blocker": "Knee Kinematics, the largest chapter in Section 3 so far. Eight pages on the mechanics: how motion is described, roll and glide, the two chains, the screw home mechanism and its reverse, the instant centre of rotation, and how all of it changes through flexion. Six more on the activities: walking, running, squatting, stairs, landing and cutting. Three tiers on every page, medical student to FRCS.",
+          "needed": "Consultant review. Kinetics is handed to chapter 3.4, gait pathology to 3.14 and 4.4, and sport specific application to 3.15, all by the architecture's own must_not_cover list rather than by choice.",
+          "pages": "14 published pages, 17,774 body words as the style gate counts them"
+        },
+        {
+          "ref": "W-9",
+          "title": "Section 3 Biomechanics Academy, chapter 3.4",
+          "area": "Content",
+          "state": "All 10 pages written, style gate passed, awaiting review",
+          "blocker": "Knee Kinetics, the other half of chapter 3.3. Ten pages on forces and moments: what kinetics is, the ground reaction force, joint reaction forces, lever arms, moments and their external and internal halves, energy absorption, force transmission and shock absorption. Three tiers on every page, medical student to FRCS.",
+          "needed": "Consultant review. The chapter carries more measurements than any other in Section 3, because a kinetic claim without a magnitude says nothing, and every one of them is written from standard teaching. Contact area and stress are handed to 3.5.",
+          "pages": "10 published pages, 12,196 body words as the style gate counts them"
+        },
+        {
+          "ref": "W-10",
+          "title": "Section 3 Biomechanics Academy, chapter 3.5",
+          "area": "Content",
+          "state": "All 10 pages written, style gate passed, awaiting review",
+          "blocker": "Tibiofemoral Contact Mechanics, where chapters 3.3 and 3.4 arrive. Four pages on the normal state: contact areas, contact pressures, load distribution and the effect of flexion. Three on what changes it: meniscal loss, malalignment and body mass. Three on the knee after an event: cruciate injury, meniscectomy and osteotomy. Three tiers on every page.",
+          "needed": "Consultant review, and this chapter needs it most. Every page turns on the distinction between force and stress, and almost every figure in it is a cadaveric contact measurement quoted from memory. If the area and pressure numbers are wrong, the mechanical argument of three chapters is wrong with them.",
+          "pages": "10 published pages, 11,859 body words as the style gate counts them"
+        },
+        {
+          "ref": "W-11",
+          "title": "Section 3 Biomechanics Academy, chapter 3.6",
+          "area": "Content",
+          "state": "All 14 pages written, style gate passed, awaiting review",
+          "blocker": "Meniscal Biomechanics, where four chapters arrive. Eight pages on the structure and its functions: the five roles, hoop stress, the two fibre systems, load sharing, damping, lubrication and proprioception. Three on the roots and what fails: root biomechanics, extrusion, root tears. Three on the rest: radial tears, repair constructs and transplantation. The last two carry a fellowship tier, which the architecture asks for and no other page in Section 3 has.",
+          "needed": "Consultant review by someone who repairs menisci. Every mechanical statement in the chapter rests on hoop tension, and the chapter says so on its first substantive page. If that framing is overstated anywhere, fourteen pages are wrong together. Tear classification is handed to chapters 6.28 to 6.43 and MRI appearances to 5.6.",
+          "pages": "14 published pages, 16,295 body words as the style gate counts them"
+        },
+        {
+          "ref": "W-12",
+          "title": "Section 3 Biomechanics Academy, chapter 3.7",
+          "area": "Content",
+          "state": "All 20 pages written, style gate passed, awaiting review",
+          "blocker": "ACL Biomechanics, the largest chapter in Section 3 and the most referenced from elsewhere in it. Eight pages on what the ligament does, two on how the knee behaves without it, four on what loads it, one on injury mechanism, one on sex differences, and five on grafts and the reconstructed construct. The last five carry a fellowship tier.",
+          "needed": "Consultant review by a knee surgeon who reconstructs. The chapter carries the graft property figures, the strain figures and the apportionment percentages, all from memory, and they are the numbers trainees will quote. 3.7.15 on sex differences needs reading for tone as well as accuracy: it states a rate difference, separates group level findings from individual prediction, and says the modifiable factors are the trainable ones.",
+          "pages": "20 published pages, 23,062 body words as the style gate counts them"
+        },
+        {
+          "ref": "W-13",
+          "title": "Section 3 Biomechanics Academy, chapter 3.8",
+          "area": "Content",
+          "state": "All 10 pages written, style gate passed, awaiting review",
+          "blocker": "PCL Biomechanics. Six pages on function and behaviour, one on gait, three on reconstruction, the last three with a fellowship tier. The chapter is shaped differently from the anterior cruciate's because the ligament is: stronger, injured less often, partly healing, and reconstructed less successfully, and each of those four facts is mechanical.",
+          "needed": "Consultant review. Two things in it need checking by someone who does these operations: the bundle arrangement is the reverse of the anterior cruciate's and the chapter says so repeatedly, and the step off figures and grading thresholds are quoted from memory. The tensioning angle and the instruction to reduce the sag before fixation are the practical claims most worth confirming.",
+          "pages": "10 published pages, 11,423 body words as the style gate counts them"
+        },
+        {
+          "ref": "W-14",
+          "title": "Section 3 Biomechanics Academy, chapter 3.9",
+          "area": "Content",
+          "state": "All 10 pages written, style gate passed, awaiting review",
+          "blocker": "Medial Knee Biomechanics. Two pages on what the side does, four on the individual structures, one on the corner as a unit, one on the rotatory instability pattern, one on the reconstruction and one on the combined injury. 3.9.8 carries a fellowship tier.",
+          "needed": "Consultant review. The chapter's organising claim is that the medial side divides its work by flexion angle, with the superficial ligament primary at 20 to 30 degrees and the posteromedial corner taking over near extension. Two practical claims most worth confirming: the two tibial attachments of the superficial ligament behaving differently, and the tensioning angles given for the two limbs of a medial reconstruction.",
+          "pages": "10 published pages, 10,966 body words as the style gate counts them"
+        },
+        {
+          "ref": "W-15",
+          "title": "Section 3 Biomechanics Academy, chapter 3.10",
+          "area": "Content",
+          "state": "All 9 pages written, style gate passed, awaiting review",
+          "blocker": "Lateral Knee Biomechanics, the mirror of 3.9 and not a symmetrical one. Two pages on what the side does, three on the structures, one on the corner as a unit, one on the mechanics behind the dial test, one on reconstruction and one on the combined injury. 3.10.8 carries a fellowship tier.",
+          "needed": "Consultant review by someone who reconstructs corners. The three component reconstruction, the tensioning position, and the claim that a missed corner injury is a leading cause of graft failure on both cruciates are the statements that carry the most weight. The dial test page states the mechanics and hands the technique to 4.13, which is worth checking for the boundary as well as the content.",
+          "pages": "9 published pages, 9,865 body words as the style gate counts them"
+        },
+        {
+          "ref": "W-16",
+          "title": "Section 3 Biomechanics Academy, chapter 3.11",
+          "area": "Content",
+          "state": "All 9 pages written, style gate passed, awaiting review",
+          "blocker": "Anterolateral Complex Biomechanics, the chapter where the anatomy is still argued over. Three pages on the structures, two on what they control, one on the Segond lesion as evidence of an attachment, one on the tenodesis, one on the combined reconstruction and one on the controversies. Four pages carry a fellowship tier and 3.11.9 is the first page in Section 3 to carry a consultant tier.",
+          "needed": "Consultant review by an ACL surgeon who uses lateral augmentation. The pages that carry the most weight are 3.11.3, which separates the naming question from the functional one, 3.11.7, where the clinical evidence is strongest and the anatomical rationale weakest, and 3.11.9, which sets out two defensible consultant positions rather than one answer. The indication threshold for augmentation is the single statement most likely to be contested.",
+          "pages": "9 published pages, 10,546 body words as the style gate counts them"
+        },
+        {
+          "ref": "W-17",
+          "title": "Section 3 Biomechanics Academy, chapter 3.12",
+          "area": "Content",
+          "state": "All 12 pages written, style gate passed, awaiting review",
+          "blocker": "Patellofemoral Biomechanics. The organising idea is that the patella is a sesamoid held in a groove by three things, bone shape, soft tissue and the line of pull, and almost every clinical problem here is one of the three failing. 3.12.6 exists to say why the Q angle, the historical attempt to reduce all three to one number, predicts poorly. Chapter 3.5 is the tibiofemoral equivalent and already owns Contact Areas, Contact Pressures and Effects of Malalignment, so this chapter's three namesakes each say which joint they are about in the first line and link the other. Twelve pages, three tiers each, no fellowship or consultant tier.",
+          "needed": "Consultant review by a surgeon who does patellofemoral work. The statements carrying most weight are 3.12.9's, that patellofemoral pain has mechanical contributors and is not a mechanical diagnosis, and 3.12.11's, that femoral version is under measured and no soft tissue or tubercle procedure addresses it. 3.12.8's four factor account and the claim that two mild factors are better addressed than one severe one is the other statement likely to be contested.",
+          "pages": "12 published pages, 16,455 body words as the style gate counts them"
+        },
+        {
+          "ref": "W-18",
+          "title": "Section 3 Biomechanics Academy, chapter 3.13",
+          "area": "Content",
+          "state": "All 10 pages written, style gate passed, awaiting review",
+          "blocker": "Alignment and Biomechanics. The chapter is about one number nobody can measure in the state that matters: the static angle is taken standing still, the load it governs is applied during movement, and corrections are planned to a target no trial has tested. 3.13.5 and 3.13.7 are where that lands, with constitutional varus saying neutral is not normal for everyone and dynamic alignment saying the adduction moment predicts where the angle does not. Ten pages. 3.13.9 and 3.13.10 carry a fellowship tier.",
+          "needed": "Consultant review by a surgeon who does osteotomy. The statements carrying most weight are 3.13.10's, that the classical overcorrection target came from a single 1980s series and has never been compared with an alternative, and 3.13.7's, that the variable which predicts is neither the one measured nor the one surgery corrects. 3.13.6's claim that the accepted joint line obliquity limit is a convention with no outcome study behind it is the third.",
+          "pages": "10 published pages, 14,532 body words as the style gate counts them"
         }
       ]
     }

@@ -4,6 +4,7 @@ arrived after the pipeline was built. These tests hold the join between them.
 
 import json
 import os
+import re
 import subprocess
 import sys
 import tempfile
@@ -149,7 +150,11 @@ class StructureRule(unittest.TestCase):
                "**Q.** C?\nYes.\n\nSeek advice if it gives way.\n\n"
                "## Explore Further\n\n- [[6.1.2 | PCL]]\n")
         found = " ".join(f["description"] for f in linter.lint(doc, brief)["findings"])
-        self.assertIn("restricts to frcs and above", found)
+        # Decision 020 turned the floor into an allow list, so the message names
+        # the tiers rather than a floor. The rule still fires on the patient tier,
+        # which is what this test is for.
+        self.assertIn("carries 'controversies_and_evidence'", found)
+        self.assertIn("restricted to frcs and consultant", found)
 
 
 class TrackerSeed(unittest.TestCase):
@@ -172,10 +177,6 @@ class TrackerSeed(unittest.TestCase):
     def test_every_row_starts_unbuilt(self):
         for i in self.items:
             self.assertEqual(i["draft_status"], "not_started")
-
-
-if __name__ == "__main__":
-    unittest.main()
 
 
 class DecisionZeroZeroThreeTemplates(unittest.TestCase):
@@ -415,3 +416,324 @@ class TrackerColumns(unittest.TestCase):
             [architecture.TAXONOMY_CATEGORY[str(n)] for n in range(2, 9)],
             ["Anatomy", "Biomechanics", "Clinical Examination", "Imaging",
              "Conditions", "Surgery", "Rehabilitation"])
+
+
+class TierOverrides(unittest.TestCase):
+    """Decision 013: a tier added to a page beyond the architecture's own list.
+    Additive only, in the template's order, and never silent."""
+
+    def setUp(self):
+        with open(os.path.join(ROOT, "config", "tier_overrides.json")) as fh:
+            self.cfg = json.load(fh)
+
+    def test_every_entry_adds_and_never_removes(self):
+        for pid, entry in self.cfg["pages"].items():
+            self.assertTrue(entry.get("add"), pid)
+            self.assertNotIn("remove", entry, pid)
+
+    def test_every_entry_carries_a_reason(self):
+        for pid, entry in self.cfg["pages"].items():
+            self.assertTrue(len(entry.get("reason", "")) > 40, pid)
+
+    def test_the_override_is_applied_in_template_tier_order(self):
+        order = load("article_template.json")["tier_order"]
+        got = architecture.tier_override("2.10.6", ["medical_student", "mrcs", "frcs"])
+        self.assertEqual(got, [t for t in order if t in set(got)])
+        self.assertIn("fellowship", got)
+
+    def test_a_page_with_no_entry_is_untouched(self):
+        tiers = ["medical_student", "mrcs"]
+        self.assertEqual(architecture.tier_override("2.10.1", tiers), tiers)
+
+    def test_the_brief_carries_the_added_tier(self):
+        with open(os.path.join(ROOT, "config", "briefs", "2.10.6.json")) as fh:
+            self.assertIn("fellowship", json.load(fh)["tiers_required"])
+
+
+class DeclaredBandWinsOverMerge(unittest.TestCase):
+    """A band in word_count_overrides.json is config, not a hand set value, so
+    regenerating a brief must not merge the old number back over it. That is how
+    decision 013's page kept failing a gate it was inside."""
+
+    def test_the_overridden_page_carries_its_declared_band(self):
+        with open(os.path.join(ROOT, "config", "word_count_overrides.json")) as fh:
+            cfg = json.load(fh)
+        entry = cfg["pages"]["2.10.6"]
+        band = cfg["bands"][entry["band"]]
+        with open(os.path.join(ROOT, "config", "briefs", "2.10.6.json")) as fh:
+            brief = json.load(fh)
+        self.assertEqual(brief["output_requirements"]["target_word_count"], band)
+
+    def test_regenerating_over_an_existing_brief_keeps_the_declared_band(self):
+        with open(os.path.join(ROOT, "config", "briefs", "2.10.6.json")) as fh:
+            before = fh.read()
+        out = subprocess.run(
+            [sys.executable, os.path.join(REPO, "tools", "architecture.py"), "brief",
+             "2.10.6", "--out", os.path.join(ROOT, "config", "briefs", "2.10.6.json")],
+            capture_output=True, text=True, cwd=REPO)
+        self.assertEqual(out.returncode, 0, out.stdout + out.stderr)
+        with open(os.path.join(ROOT, "config", "briefs", "2.10.6.json")) as fh:
+            after = json.load(fh)
+        self.assertEqual(after["output_requirements"]["target_word_count"]["max"], 2400)
+        with open(os.path.join(ROOT, "config", "briefs", "2.10.6.json"), "w") as fh:
+            fh.write(before)
+
+
+class ProseReferences(unittest.TestCase):
+    """A bare reference in prose can name a real chapter and still be the wrong
+    one. Seven were wrong across chapters 2.8 to 2.10 before anyone looked, and
+    nothing caught them because every id was valid. The report makes the list
+    readable; these tests hold the report and the seven corrections."""
+
+    def report(self):
+        out = subprocess.run(
+            [sys.executable, os.path.join(REPO, "tools", "crossrefs.py"), "--prose-report"],
+            capture_output=True, text=True, cwd=REPO)
+        self.assertEqual(out.returncode, 0, out.stderr)
+        return out.stdout
+
+    def test_no_prose_reference_points_at_a_missing_id(self):
+        self.assertIn("0 point at an id the architecture does not have", self.report())
+
+    def test_the_examination_references_name_the_right_chapters(self):
+        """Posterior cruciate to PCL Examination, medial to Medial Knee
+        Examination, lateral to Lateral Knee Examination."""
+        wanted = {"2.8.1": "4.11", "2.9.1": "4.12", "2.9.3": "4.12", "2.9.4": "4.12",
+                  "2.10.1": "4.13", "2.10.2": "4.13", "2.10.3": "4.13"}
+        for page_id, ref in wanted.items():
+            path = os.path.join(ROOT, "runs", page_id, "styled_v1.md")
+            with open(path, encoding="utf-8") as fh:
+                body = fh.read()
+            found = re.findall(r"(?<![\w.])(4\.\d{1,2})(?![\w.])", body)
+            self.assertTrue(found, "%s has no section 4 reference" % page_id)
+            self.assertEqual(set(found), {ref}, page_id)
+
+    def test_the_report_names_a_page_and_its_references(self):
+        text = self.report()
+        self.assertIn("2.10.6", text)
+        self.assertIn("Peroneal Nerve", text)
+
+
+class BiomechanicsTemplate(unittest.TestCase):
+    """Decision 014 defined the two Section 3 page types. These hold the join
+    between the template, the page type map and the pages built on it."""
+
+    def setUp(self):
+        self.tpl = load("article_template.json")
+        self.map = load("page_type_map.json")
+
+    def test_both_new_types_have_a_template_of_their_own(self):
+        for name in ("biomechanics", "landmark_papers"):
+            entry = self.map["page_types"][name]
+            self.assertEqual(entry["template"], name)
+            self.assertFalse(entry["variant_pending"], name)
+            self.assertIn(name, self.tpl["page_types"])
+
+    def test_the_biomechanics_sections_are_the_declared_five(self):
+        self.assertEqual(
+            self.tpl["page_types"]["biomechanics"]["body_sections"],
+            ["the_principle", "at_the_knee", "what_changes_it",
+             "how_it_is_measured", "clinical_relevance"])
+
+    def test_every_body_section_slug_has_a_heading(self):
+        """A heading derived by guesswork from a slug is how a template drifts."""
+        headings = self.tpl["body_section_headings"]
+        for name, spec in self.tpl["page_types"].items():
+            for slug in spec["body_sections"]:
+                self.assertIn(slug, headings, "%s: %s" % (name, slug))
+
+    def test_the_faq_allowance_applies_to_any_band(self):
+        """A four tier page with a patient block carries an FAQ block the
+        handbook's 800 to 1800 band was not written for."""
+        four = ["junior", "patient", "medical_student", "mrcs"]
+        got = architecture.scale_for_tiers({"min": 800, "max": 1800}, four)
+        self.assertEqual(got["max"], 1800 + architecture.FAQ_ALLOWANCE)
+        no_patient = ["medical_student", "mrcs", "frcs"]
+        self.assertEqual(
+            architecture.scale_for_tiers({"min": 800, "max": 1800}, no_patient)["max"], 1800)
+
+    def test_the_built_chapter_uses_the_new_headings(self):
+        with open(os.path.join(ROOT, "runs", "3.1.1", "styled_v1.md"),
+                  encoding="utf-8") as fh:
+            body = fh.read()
+        for heading in ("### The Principle", "### At the Knee", "### How It Is Measured"):
+            self.assertIn(heading, body)
+        self.assertNotIn("Blood Supply and Innervation", body)
+
+
+class ProseReferenceDetector(unittest.TestCase):
+    """The prose reference report is what caught four references that pointed at
+    a real page about the wrong subject. Chapter 3.4 then quoted a bare decimal
+    and the detector read "1.0 to 1.2 times body weight" as two chapter
+    references, one of which resolved to a real page. These tests hold the fix
+    and the pre-existing miss it uncovered."""
+
+    def setUp(self):
+        sys.path.insert(0, os.path.join(REPO, "tools"))
+        import crossrefs
+        self.refs = lambda t: [r for _, _, r in crossrefs.reference_spans(t)]
+
+    def test_a_measurement_is_not_a_reference(self):
+        for text in ("roughly 1.0 to 1.2 times body weight",
+                     "about 1.5 times body weight",
+                     "a 2.5 mm step off",
+                     "1.0 to 1.2 body weight walking",
+                     "roughly 25.5 degrees of rotation"):
+            self.assertEqual(self.refs(text), [], text)
+
+    def test_a_list_of_references_keeps_every_member(self):
+        """The first attempt at the fix dropped the second id in a pair, because
+        it looks exactly like the second number in a range. It suppressed 156
+        real references."""
+        self.assertEqual(self.refs("3.7 and 3.8 cover the cruciates"), ["3.7", "3.8"])
+        self.assertEqual(self.refs("3.4.6 and 3.13 cover it"), ["3.4.6", "3.13"])
+        self.assertEqual(self.refs("2.5.7 and 2.6.4 cover the roots"), ["2.5.7", "2.6.4"])
+
+    def test_a_reference_ending_a_sentence_is_found(self):
+        """The old pattern refused a reference followed by a full stop, so every
+        reference that closed a sentence went unchecked. There were 56."""
+        self.assertEqual(self.refs("chapters 0.1 and 0.2."), ["0.1", "0.2"])
+        self.assertEqual(self.refs("the subject of 2.7.6."), ["2.7.6"])
+
+    def test_a_four_part_id_is_not_reported_as_its_first_three(self):
+        self.assertEqual(self.refs("see 5.3.1.1 AP View"), [])
+
+    def test_an_ordinary_reference_still_resolves(self):
+        self.assertEqual(self.refs("3.3.9 covers walking"), ["3.3.9"])
+        self.assertEqual(self.refs("3.5 covers contact mechanics"), ["3.5"])
+
+    def test_the_site_has_no_reference_to_a_missing_id(self):
+        out = subprocess.run([sys.executable, os.path.join(REPO, "tools", "crossrefs.py"),
+                              "--prose-report"], capture_output=True, text=True, cwd=REPO)
+        self.assertEqual(out.returncode, 0, out.stdout)
+        self.assertIn("0 point at an id the architecture does not have", out.stdout)
+
+
+class RenderTargetCollisions(unittest.TestCase):
+    """Two page ids pointing at the same output file would publish one page and
+    silently lose the other, with every gate still passing. Chapter 3.6 came
+    within one slug of it, because three of its titles are shared with chapters
+    3.4 and 2.7."""
+
+    TARGETS = os.path.join(REPO, "pipeline", "config", "render_targets.json")
+
+    def targets(self):
+        with open(self.TARGETS, encoding="utf-8") as fh:
+            return json.load(fh)
+
+    def test_no_two_pages_render_to_the_same_file(self):
+        seen = {}
+        for page_id, t in sorted(self.targets()["pages"].items()):
+            out = t["out"]
+            self.assertNotIn(out, seen,
+                             "%s and %s both render to %s" % (seen.get(out), page_id, out))
+            seen[out] = page_id
+
+    def test_the_renderer_refuses_a_collision(self):
+        with open(self.TARGETS, encoding="utf-8") as fh:
+            original = fh.read()
+        cfg = json.loads(original)
+        ids = sorted(cfg["pages"])
+        cfg["pages"][ids[1]]["out"] = cfg["pages"][ids[0]]["out"]
+        try:
+            with open(self.TARGETS, "w", encoding="utf-8") as fh:
+                json.dump(cfg, fh, indent=2)
+            out = subprocess.run(
+                [sys.executable, os.path.join(REPO, "tools", "render_site.py")],
+                capture_output=True, text=True, cwd=REPO)
+            self.assertEqual(out.returncode, 1, out.stdout)
+            self.assertIn("render targets collide", out.stdout + out.stderr)
+        finally:
+            with open(self.TARGETS, "w", encoding="utf-8") as fh:
+                fh.write(original)
+
+
+class SeoTitleBudget(unittest.TestCase):
+    """A colliding page carries its chapter name in the title tag so chapter 14's
+    uniqueness rule is satisfied. The suffix had no length budget, so chapter 13's
+    length rule could be broken by the fix for chapter 14's. Chapter 3.12 found
+    it: "Effects of Malalignment, Tibiofemoral Contact Mechanics | KneeSchool" is
+    68 characters against a bound of 60."""
+
+    def setUp(self):
+        sys.path.insert(0, os.path.join(os.path.dirname(ROOT), "tools"))
+        import render_site
+        self.render_site = render_site
+        with open(os.path.join(ROOT, "config", "site.json")) as fh:
+            self.site = json.load(fh)
+
+    def test_the_budget_leaves_room_for_the_site_suffix(self):
+        self.assertEqual(
+            self.render_site.title_budget(),
+            self.site["seo"]["title_max"] - len(self.site["title_suffix"]))
+
+    def test_a_long_chapter_name_is_trimmed_to_fit(self):
+        out = self.render_site.disambiguate(
+            "Effects of Malalignment", "Tibiofemoral Contact Mechanics", 47)
+        self.assertLessEqual(len(out), 47)
+        self.assertEqual(out, "Effects of Malalignment, Tibiofemoral Contact")
+
+    def test_trimming_keeps_the_distinguishing_word(self):
+        # The point of the suffix is to separate the two pages. "Tibiofemoral"
+        # and "Patellofemoral" are the words that do that, and both survive.
+        a = self.render_site.disambiguate(
+            "Contact Pressures", "Tibiofemoral Contact Mechanics", 47)
+        b = self.render_site.disambiguate(
+            "Contact Pressures", "Patellofemoral Biomechanics", 47)
+        self.assertIn("Tibiofemoral", a)
+        self.assertIn("Patellofemoral", b)
+        self.assertNotEqual(a, b)
+
+    def test_a_short_chapter_name_is_left_alone(self):
+        self.assertEqual(
+            self.render_site.disambiguate("Trochlea", "Patellofemoral Anatomy", 47),
+            "Trochlea, Patellofemoral Anatomy")
+
+    def test_a_first_word_that_cannot_fit_is_left_whole(self):
+        # Better a reported finding than a mangled title.
+        out = self.render_site.disambiguate("A Very Long Page Title Indeed",
+                                            "Incompressible", 20)
+        self.assertEqual(out, "A Very Long Page Title Indeed, Incompressible")
+
+    def test_every_published_title_is_within_bounds(self):
+        import re
+        root = os.path.dirname(ROOT)
+        lo, hi = self.site["seo"]["title_min"], self.site["seo"]["title_max"]
+        with open(os.path.join(ROOT, "config", "render_targets.json")) as fh:
+            pages = json.load(fh)["pages"]
+        checked = 0
+        for page_id, target in sorted(pages.items()):
+            path = os.path.join(root, target["out"])
+            if not os.path.exists(path):
+                continue
+            with open(path, encoding="utf-8") as fh:
+                m = re.search(r"<title>(.*?)</title>", fh.read(), re.S)
+            self.assertTrue(m, target["out"])
+            title = m.group(1).strip()
+            self.assertTrue(lo <= len(title) <= hi,
+                            "%s: title is %d characters: %r"
+                            % (page_id, len(title), title))
+            checked += 1
+        self.assertTrue(checked, "no rendered pages found")
+
+    def test_no_two_published_pages_share_a_title(self):
+        import re
+        root = os.path.dirname(ROOT)
+        with open(os.path.join(ROOT, "config", "render_targets.json")) as fh:
+            pages = json.load(fh)["pages"]
+        seen = {}
+        for page_id, target in sorted(pages.items()):
+            path = os.path.join(root, target["out"])
+            if not os.path.exists(path):
+                continue
+            with open(path, encoding="utf-8") as fh:
+                m = re.search(r"<title>(.*?)</title>", fh.read(), re.S)
+            title = m.group(1).strip()
+            self.assertNotIn(title, seen,
+                             "%s and %s share the title %r"
+                             % (seen.get(title), page_id, title))
+            seen[title] = page_id
+
+
+if __name__ == "__main__":
+    unittest.main()

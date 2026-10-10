@@ -22,5 +22,9 @@
     "description",
     "canonical",
     "theme-color"
-  ]
+  ],
+  "theme_color": "#0e2b22",
+  "theme_color_note": "The browser tab and mobile address bar colour. It is --green-deep from the design system, repeated here because an HTML meta tag cannot read a CSS custom property. It is the only colour literal the site check allows outside the stylesheet's :root block.",
+  "discoverable": false,
+  "discoverable_note": "Whether search engines may index the site. The client's position on 10 October 2026 is that the site can be published but will not be publicised until it is verified. A live site that search engines index is publicised, so while this is false every page carries a robots noindex directive and robots.txt disallows every crawler. Set it true when verification is done and run tools/apply_chrome.py: that is the whole of the change. Indexing is not fully reversible, because a page can stay cached after it is removed, which is why the default here is the cautious one. See decision 015."
 }

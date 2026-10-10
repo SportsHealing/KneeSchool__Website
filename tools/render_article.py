@@ -206,9 +206,10 @@ def main():
     # dial selectors are generated because the tier count varies by page
     css = []
     for i in range(len(tiers)):
-        css.append("#t%d:checked ~ .dial-tabs label[for=t%d]{color:var(--ivory);border-top-color:var(--gold)}" % (i, i))
+        css.append("#t%d:checked ~ .dial-tabs label[for=t%d]{background:var(--gold-pale);"
+                   "border-color:var(--gold-pale);color:var(--green-deep);font-weight:600}" % (i, i))
         css.append("#t%d:checked ~ .dial-body .p%d{display:block}" % (i, i))
-        css.append("#t%d:focus-visible ~ .dial-tabs label[for=t%d]{outline:2px solid var(--gold);outline-offset:2px}" % (i, i))
+        css.append("#t%d:focus-visible ~ .dial-tabs label[for=t%d]{outline:3px solid var(--gold);outline-offset:2px}" % (i, i))
     dial_css = "<style>\n.dial-tabs{grid-template-columns:repeat(%d,1fr)}\n%s\n</style>" % (
         len(tiers), "\n".join(css))
 

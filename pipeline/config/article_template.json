@@ -78,7 +78,7 @@
         "teacher_resource",
         "assessment"
       ],
-      "not_required_note": "The handbook requires the speak to an adult message when symptom or injury content is present. Chapters 0.3 to 0.7 carry none: a page about choosing A levels has nothing for the reader to report to an adult, and the message reads as a non sequitur there. The gate drives the condition off page type, which the architecture owns, rather than guessing from the prose. See decision 003."
+      "not_required_note": "The handbook requires the speak to an adult message when symptom or injury content is present. Chapters 0.3 to 0.7 carry none: a page about choosing A levels has nothing for the reader to report to an adult, and the message reads as a non sequitur there. The gate drives the condition off page type, which the architecture owns, rather than guessing from the prose. See decision 003. The biomechanics page type was put forward as a fifth exemption, because the message follows a paragraph about levers on 3.1.1. The client settled it on 10 October 2026: it stays as it is, and biomechanics is deliberately absent from the list above. See decision 014."
     },
     "patient": {
       "when_to_seek_help_message_required": true
@@ -112,7 +112,7 @@
         "complications_and_prognosis",
         "controversies_and_evidence"
       ],
-      "body_sections_rule": "ordered_subset_per_tier; controversies_and_evidence frcs_and_above_only",
+      "body_sections_rule": "ordered_subset_per_tier; per section tier limits are in section_tier_rules, which restricts controversies_and_evidence to frcs and consultant. See decision 020.",
       "word_count": {
         "min": 1200,
         "max": 2500
@@ -195,6 +195,36 @@
         "max": 1000
       },
       "source_of_truth": "decision 003, orders revised 7 October 2026"
+    },
+    "biomechanics": {
+      "body_sections": [
+        "the_principle",
+        "at_the_knee",
+        "what_changes_it",
+        "how_it_is_measured",
+        "clinical_relevance"
+      ],
+      "body_sections_rule": "ordered_subset_per_tier; how_it_is_measured medical_student_and_above",
+      "word_count": {
+        "min": 800,
+        "max": 1800
+      },
+      "source_of_truth": "decision 014"
+    },
+    "landmark_papers": {
+      "body_sections": [
+        "what_the_question_was",
+        "what_was_done",
+        "what_it_showed",
+        "what_it_changed",
+        "what_to_read_now"
+      ],
+      "body_sections_rule": "ordered_subset_per_tier; frcs_and_above_only",
+      "word_count": {
+        "min": 800,
+        "max": 1800
+      },
+      "source_of_truth": "decision 014"
     }
   },
   "word_count_override": "brief.output_requirements.target_word_count overrides page_type default when present",
@@ -215,23 +245,204 @@
   ],
   "local_additions_note": "page_types careers, study_skills, teacher_resource and assessment are not in Handbook v1.0. The handbook defines three templates and leaves Section 0 chapters 0.3 to 0.7 without one, which is handbook open question 5 and architecture open question 6. Decision 003 defines them locally. The section orders below are the revised orders confirmed by the client on 7 October 2026. They are candidates for Handbook v1.1.",
   "body_section_headings": {
+    "after_the_operation_and_rehabilitation": "After the Operation and Rehabilitation",
+    "at_the_knee": "At the Knee",
+    "before_the_operation": "Before the Operation",
+    "blood_supply_and_innervation": "Blood Supply and Innervation",
+    "causes_and_risk_factors": "Causes and Risk Factors",
+    "clinical_relevance": "Clinical Relevance",
     "common_mistakes": "Common Mistakes",
+    "complications_and_prognosis": "Complications and Prognosis",
+    "contraindications": "Contraindications",
+    "controversies_and_evidence": "Controversies and Evidence",
     "curriculum_links": "Curriculum Links",
+    "definition": "Definition",
+    "epidemiology": "Who Gets It",
+    "examination": "Examination",
+    "function": "Function",
+    "how_it_is_measured": "How It Is Measured",
     "how_it_works": "How It Works",
     "how_to_earn_it": "How to Earn It",
     "how_to_prepare": "How to Prepare",
     "how_to_use_it": "How to Use It",
+    "indications": "Indications",
+    "investigations_and_imaging": "Investigations and Imaging",
+    "management_overview": "Management Overview",
+    "outcomes_and_evidence": "Outcomes and Evidence",
+    "presentation": "How It Presents",
+    "rehabilitation_outline": "Rehabilitation Outline",
+    "relations": "Relations",
+    "risks_and_complications": "Risks and Complications",
     "rules_and_fair_play": "Rules and Fair Play",
+    "structure_and_location": "Structure and Location",
+    "the_operation": "The Operation",
     "the_people_who_do_it": "The People Who Do It",
+    "the_principle": "The Principle",
     "the_route": "The Route",
+    "variations_and_controversies": "Variations and Controversies",
+    "what_changes_it": "What Changes It",
+    "what_it_changed": "What It Changed",
     "what_it_covers": "What It Covers",
+    "what_it_showed": "What It Showed",
     "what_it_takes": "What It Takes",
+    "what_the_operation_is": "What the Operation Is",
+    "what_the_question_was": "What the Question Was",
     "what_the_work_involves": "What the Work Involves",
     "what_this_covers": "What This Covers",
     "what_this_is": "What This Is",
+    "what_to_read_now": "What to Read Now",
     "what_to_watch_for": "What to Watch For",
+    "what_was_done": "What Was Done",
     "where_to_find_out_more": "Where to Find Out More",
     "why_it_matters": "Why It Matters"
   },
-  "body_section_headings_note": "The heading a body section slug is written as. Supplied for the decision 003 page types so a heading is never derived by guesswork from the slug."
+  "body_section_headings_note": "The heading a body section slug is written as. Supplied for every slug the site uses, so a heading is never derived by guesswork. Decision 003 added the Section 0 page types and decision 014 the biomechanics and landmark papers types.",
+  "tier_intent": {
+    "source": "The handbook's Curriculum Matrix sets the depth and the primary objective for each tier. The consultant entry is expanded locally by decision 018, because 'expert judgement' was read on 3.11.9 as licence to pick a side and that was corrected by the client on 10 October 2026.",
+    "junior": "Plain language. Understand the body and the sport.",
+    "patient": "Plain language. Understand symptoms, diagnosis and options.",
+    "medical_student": "Foundation. Anatomy, pathology and clinical basics.",
+    "mrcs": "Applied core surgery. Examination, imaging and principles.",
+    "frcs": "Specialist reasoning. Evidence, operations and complications.",
+    "fellowship": "Advanced practice. Complex surgery and controversies.",
+    "consultant": {
+      "depth": "Masterclass.",
+      "objective": "How the decision gets made when the evidence does not make it. A balance argument, not a verdict.",
+      "required": [
+        "Name the decision, which is rarely the same as the controversy.",
+        "Set out what sits on each side of it, benefit and cost, in the reader's own terms.",
+        "Say what moves the weight, and distinguish the variables that look decisive from the ones that are.",
+        "Say what the measurements can and cannot settle, including which side is measured worse.",
+        "Leave the reader able to decide, and able to say why a colleague decided otherwise.",
+        "Say which patient factors move the weight, and name all five: age and physiology, medical comorbidities, demands on the knee, psychological state, and the patient's own ideas, concerns and expectations. See decision_factors."
+      ],
+      "forbidden": [
+        "Declaring the question settled when it is not.",
+        "Advocating one position as correct where the evidence does not reach it.",
+        "A survey of disputes with no decision attached, which is the fellowship tier's job."
+      ],
+      "permitted": "Naming a move as indefensible, where the objection does not bear on the decision at all. That is still weighing, not advocacy.",
+      "patient_factors": "Required where the block frames a clinical decision. A consultant block about a teaching or departmental decision has no patient in it and DEC-001 does not apply to it."
+    }
+  },
+  "decision_factors": {
+    "source": "Client instruction, 10 October 2026: decision-making should always take into account the patient's age and physiology, medical comorbidities, demands on their knee, their psychological state, and their own ideas, concerns and expectations. Recorded as decision 019.",
+    "applies_to": "Any block that frames a clinical decision. Enforced by DEC-001 on a consultant block that carries clinical direction. A consultant block about a departmental or teaching decision has no patient in it and is out of scope.",
+    "factors": [
+      {
+        "key": "age_and_physiology",
+        "name": "Age and physiology",
+        "means": "Chronological age, skeletal maturity, tissue and bone quality, healing capacity.",
+        "keywords": [
+          "age",
+          "aged",
+          "older",
+          "younger",
+          "adolescen",
+          "skeletal matur",
+          "physiolog",
+          "growth plate",
+          "bone quality",
+          "tissue quality",
+          "healing"
+        ]
+      },
+      {
+        "key": "comorbidities",
+        "name": "Medical comorbidities",
+        "means": "What the patient's medical state does to operative risk, healing and rehabilitation.",
+        "keywords": [
+          "comorbid",
+          "co-morbid",
+          "diabet",
+          "smoking",
+          "smoker",
+          "obes",
+          "body mass",
+          "inflammatory",
+          "anticoagul",
+          "anaesthetic risk",
+          "medical fitness",
+          "cardiac",
+          "respiratory",
+          "renal",
+          "immunosupress",
+          "immunosuppress"
+        ]
+      },
+      {
+        "key": "knee_demand",
+        "name": "Demands on the knee",
+        "means": "Occupation, sport, level and the loads the patient will actually impose.",
+        "keywords": [
+          "demand",
+          "occupation",
+          "manual work",
+          "sport",
+          "pivoting",
+          "cutting",
+          "activity level",
+          "kneeling",
+          "returning to"
+        ]
+      },
+      {
+        "key": "psychological_state",
+        "name": "Psychological state",
+        "means": "Fear of reinjury, motivation, confidence, mental health and what the patient will do with the result.",
+        "keywords": [
+          "psycholog",
+          "kinesiophobia",
+          "fear of reinjury",
+          "fear of re-injury",
+          "fear of",
+          "motivation",
+          "motivated",
+          "confidence",
+          "mental health",
+          "anxiet",
+          "depress",
+          "resilience",
+          "trust the knee",
+          "never trusted"
+        ]
+      },
+      {
+        "key": "ideas_concerns_expectations",
+        "name": "Ideas, concerns and expectations",
+        "means": "What the patient believes is wrong, what they are afraid of, and what they expect the operation to deliver.",
+        "keywords": [
+          "expectation",
+          "expects",
+          "concern",
+          "what the patient wants",
+          "what matters to",
+          "priorit",
+          "the patient's own",
+          "ideas, concerns",
+          "counsel",
+          "shared decision",
+          "informed",
+          "what they are afraid of",
+          "fears"
+        ]
+      }
+    ],
+    "detector_note": "Keyword matching, case insensitive, over the tier block's text. A heuristic like POS-001's: it can be satisfied by a passing mention, so the gate surfaces an absent factor rather than certifying a present one. Severity warn for that reason."
+  },
+  "section_tier_rules": {
+    "source": "The handbook restricts Controversies and Evidence to FRCS and above. The client narrowed it on 10 October 2026 after reading 6.1.1, where FRCS, fellowship and consultant each carried a controversies section and the three overlapped. Recorded as decision 020.",
+    "form": "Either 'tiers', an explicit allow list, or 'from', a floor that the named tier and everything above it satisfies.",
+    "controversies_and_evidence": {
+      "tiers": [
+        "frcs",
+        "consultant"
+      ],
+      "reason": "FRCS frames a controversy as evidence appraisal, which is what the examination asks for. The consultant tier frames it as a decision, under decision 018. Fellowship is advanced practice, so its controversies belong inside its management and complications sections where the operation is, not in a survey that repeats the tier below and pre-empts the tier above."
+    },
+    "variations_and_controversies": {
+      "from": "fellowship",
+      "reason": "Unchanged from the handbook."
+    }
+  }
 }

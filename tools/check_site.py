@@ -17,6 +17,8 @@ from html.parser import HTMLParser
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "pipeline", "functions", "style_lint"))
 import linter  # noqa: E402
+sys.path.insert(0, os.path.join(ROOT, "tools"))
+import site_chrome as chrome  # noqa: E402
 
 VOID = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link",
         "meta", "source", "track", "wbr"}
@@ -118,6 +120,66 @@ def _medical_safety():
 
 
 MEDICAL_SAFETY = _medical_safety()
+
+# MyKneeScore's house style check calls this its highest value CSS rule: no
+# colour literal outside the :root token block. A literal is how a palette drifts
+# one page at a time, and this site has no build step to catch it. The one
+# exception is the theme colour meta, because an HTML attribute cannot read a
+# custom property; it is driven from site.json and applied by apply_chrome.py.
+# See docs/decisions/012-mykneescore-design-system.md.
+COLOUR_LITERAL = re.compile(r'#[0-9a-fA-F]{3,8}\b|rgba?\([0-9][^)]*\)')
+ROOT_BLOCK = re.compile(r':root\s*\{.*?\n\s*\}', re.DOTALL)
+
+
+def _theme_colour():
+    with open(os.path.join(ROOT, "pipeline", "config", "site.json"),
+              encoding="utf-8") as fh:
+        return json.load(fh)["theme_color"]
+
+
+def colour_literals():
+    """Every literal outside the stylesheet's :root, across the CSS and the HTML."""
+    out = []
+    theme = _theme_colour().lower()
+    css_path = os.path.join(ROOT, "assets", "styles.css")
+    with open(css_path, encoding="utf-8") as fh:
+        css = fh.read()
+    stripped = ROOT_BLOCK.sub("", css)
+    for hit in COLOUR_LITERAL.findall(stripped):
+        out.append("assets/styles.css: colour literal %r outside :root" % hit)
+    for path in html_files():
+        rel = os.path.relpath(path, ROOT)
+        with open(path, encoding="utf-8") as fh:
+            raw = fh.read()
+        for hit in COLOUR_LITERAL.findall(raw):
+            if hit.lower() == theme:
+                continue
+            out.append("%s: colour literal %r in the page" % (rel, hit))
+    return out
+
+
+def web_fonts():
+    """Every page has to fetch the two families the stylesheet actually names.
+
+    The design port changed --display and --body and left fourteen hand written
+    pages fetching the previous pair, so those pages silently rendered in the
+    Georgia and Helvetica fallbacks while the rest rendered as designed. Nothing
+    was broken enough to fail, which is why it survived a full verification run.
+    tools/site_chrome.py holds the one definition and this refuses any page that
+    disagrees with it.
+    """
+    out = []
+    want = chrome.FONT_LINKS.strip()
+    families = sorted(set(re.findall(r"family=([A-Za-z+]+)", want)))
+    for path in html_files():
+        rel = os.path.relpath(path, ROOT)
+        with open(path, encoding="utf-8") as fh:
+            raw = fh.read()
+        got = sorted(set(re.findall(r"family=([A-Za-z+]+)", raw)))
+        if got != families:
+            out.append("%s: fetches web fonts %s, the stylesheet names %s"
+                       % (rel, ", ".join(got) or "none", ", ".join(families)))
+    return out
 
 
 def exemption_for(rel, rule_id, phrase, context=""):
@@ -229,6 +291,8 @@ def main():
 
     drift = chrome_drift()
     failures.extend(drift)
+    failures.extend(colour_literals())
+    failures.extend(web_fonts())
 
     print("checked %d pages" % len(pages))
     for e in exempt:

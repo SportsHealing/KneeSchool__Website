@@ -47,6 +47,15 @@
       "kind": "CLINICAL_RECOMMENDATION",
       "verification": "UNSIGNED",
       "signed_off_by": ""
+    },
+    {
+      "as_written": "Where hardware obstructs the trajectory, decide in advance whether it is removed, worked around, or the procedure staged.",
+      "tier": "frcs",
+      "section": "Clinical Relevance",
+      "detected_as": "imperative",
+      "kind": "CLINICAL_RECOMMENDATION",
+      "verification": "UNSIGNED",
+      "signed_off_by": ""
     }
   ]
 }

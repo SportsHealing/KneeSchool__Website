@@ -240,50 +240,70 @@ leaving them is a common route to a second failure.
 Revision outcomes sit below primary outcomes for return to sport and for patient
 reported scores. Counsel the patient before the operation rather than after it.
 
-### Controversies and Evidence
-
-Slope reducing anterior closing wedge osteotomy has a place in the revision knee
-with a markedly increased slope. The threshold that justifies the additional
-operation is not agreed.
+Where slope is the factor being addressed, the operation that reduces it is an
+anterior closing wedge osteotomy. Whether the additional operation is justified
+is weighed in the consultant block rather than here.
 
 ### Key Learning Points
 
 - Establish the mode of failure before planning a revision.
 - Tunnel position and diameter decide single stage against staged revision.
 - Address meniscal deficiency, alignment and slope, or expect a second failure.
+- An anterior closing wedge osteotomy is the operation that reduces slope.
 - Revision outcomes are poorer than primary outcomes, and patients should hear that first.
 
 ## Consultant Perspective
 
 ### Controversies and Evidence
 
-Repair has returned to the conversation for proximal avulsion tears with good
-tissue quality, helped by better patient selection and augmentation. Whether it
-holds against reconstruction in young pivoting athletes over the medium term is
-open, and the early series are not yet long enough to answer it.
+Four decisions sit in front of a consultant here, and the literature settles
+none of them.
 
-Slope is the argument that has moved furthest in the last decade. There is broad
-agreement that increased posterior tibial slope loads the graft. There is no
-agreement on the threshold at which correction becomes worth the additional
-operation, nor on whether it belongs in a primary reconstruction for a high risk
-patient.
+The first is whether to repair a proximal avulsion rather than reconstruct it.
+Repair offers a native ligament with its innervation and no graft harvest. It
+risks a second operation in a young pivoting athlete, where reconstruction has a
+known medium term result. Tissue quality and age move the weight. The early
+series are not long enough to move it for anybody.
 
-Criterion based return to sport testing is widely used and weakly evidenced. The
-batteries are intuitively right and their effect on re rupture rates in
-adolescents is not established. Time based clearance alone is inadequate, which
-is the part everyone agrees on.
+The second is when an increased posterior tibial slope justifies correcting it.
+Correction reduces the load the graft carries. An anterior closing wedge
+osteotomy adds its own recovery and its own complications to an operation the
+patient already needs. Previous failure
+moves the weight further than slope magnitude does, which is the part most often
+reversed.
 
-Registry data has become good enough to shape graft choice across a population
-while remaining a blunt instrument for the individual in clinic. The useful
-question for a department is whether its own outcomes match the registry, and
-whether anyone is checking.
+The third is what clears a patient to return to sport. Criterion based batteries
+test what looks relevant, and their effect on re rupture in adolescents is not
+established. Time based clearance alone is inadequate, which is the only part
+everyone agrees on. What moves the weight is the sport, and whether anyone will
+see the patient again.
+
+The fourth is how far registry data should reach into an individual decision. It
+is good enough to shape graft choice across a population and stays blunt for the
+person in clinic. The question a department can actually answer is narrower:
+whether its own outcomes match the registry, and whether anyone is checking.
+
+All four turn on the same five things, and a trial population carries none of
+them. The patient's age and physiology, which set healing and tissue quality.
+Their medical comorbidities, because smoking, diabetes and body mass change
+operative risk and graft healing without changing the mechanics. The demands
+they put on the knee, which is occupation and sport rather than age. Their
+psychological state, because fear of reinjury governs what the reconstructed
+knee is actually used for. And their own ideas, concerns and expectations, which
+decide whether the operation that is statistically right is the one this patient
+should have.
+
+Take all five explicitly rather than by impression, and counsel the patient
+with them in view. A graft choice that is right for a cohort can be wrong for the person in front
+of you on any one of them.
 
 ### Key Learning Points
 
-- Repair in proximal avulsion is promising and unproven over the medium term.
-- Slope is agreed to matter and the correction threshold is not agreed.
-- Return to sport batteries are widely used and weakly evidenced.
-- Registry data guides populations better than it guides individuals.
+- Repair offers a native ligament and risks a second operation in a pivoting athlete.
+- Slope correction reduces graft load and adds an osteotomy to an operation already needed.
+- Return to sport batteries test what looks relevant and are not shown to change re rupture rates.
+- Registry data shapes populations and stays blunt for the individual.
+- Age and physiology, comorbidities, knee demand, psychological state and the patient's own ideas, concerns and expectations move every one of these decisions.
 
 ## Explore Further
 

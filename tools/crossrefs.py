@@ -77,11 +77,102 @@ def words(text):
     return set(w for w in re.findall(r"[a-z0-9]+", text.lower()) if w not in STOP)
 
 
+# A bare reference in prose, outside a cross link block. Its id can be perfectly
+# valid and still point at the wrong chapter: "4.9 covers the examination" on a
+# posterior cruciate page named a real chapter, Meniscal Examination, and nothing
+# caught it because nothing was broken. Seven such references were wrong across
+# three chapters before this report existed. A machine cannot know what a writer
+# meant, so this prints what each reference actually resolves to and leaves the
+# judgement to a reader. Generated from the pages, like every other register here.
+BARE_REF = re.compile(r"(?<![\w.])(\d{1,2}(?:\.\d{1,3}){1,2})(?![\w.])")
+
+# Chapter 3.4 was the first chapter to quote a bare decimal in prose, and the
+# detector read "roughly 1.0 to 1.2 times body weight" as references to chapter
+# 1.0 and chapter 1.2. One of those does not exist and the other is a real page,
+# which is the worse case: a silent false match on a number that was never a
+# reference.
+#
+# What separates the two is the unit, not the decimal point. "1.0 to 1.2 times
+# body weight" ends in a unit; "3.7 and 3.8 cover the cruciates" ends in prose.
+# Both are chains of numbers joined by "to" or "and", so a chain is classified
+# once as a whole and every number in it is kept or dropped together. Testing
+# each number on its own was tried first and suppressed 156 real references,
+# because the second id in "3.7 and 3.8" looks exactly like the second number in
+# a range.
+NUMBER_RUN = re.compile(
+    r"(?<![\w.])\d{1,2}(?:\.\d{1,3}){0,2}"
+    r"(?:\s*(?:to|and|or|,)\s*\d{1,2}(?:\.\d{1,3}){0,2})*")
+UNIT_AFTER = re.compile(
+    r"^\s*(?:times|x|mm|cm|metres|m|kg|N|Nm|degrees?|per\s+cent|%|body\s+weight"
+    r"|seconds?|ms|minutes?|hours?|years?|months?|weeks?|days?|fold)\b", re.I)
+
+
+DEEPER_ID = re.compile(r"^\.\d")
+
+
+def reference_spans(text):
+    """Every bare reference in the prose, with the measurements left out.
+
+    Scanning inside the run rather than across the whole text also fixed a
+    pre-existing miss: the old pattern refused a reference followed by a full
+    stop, so every reference that ended a sentence went unchecked. There were 56
+    of them. The one thing that lookahead did protect against is kept here, which
+    is a four part id such as 5.3.1.1 being reported as its first three parts.
+    """
+    out = []
+    for run in NUMBER_RUN.finditer(text):
+        if UNIT_AFTER.match(text[run.end():run.end() + 40]):
+            continue
+        for m in BARE_REF.finditer(run.group(0)):
+            begin = run.start() + m.start()
+            finish = run.start() + m.end()
+            if DEEPER_ID.match(text[finish:finish + 2]):
+                continue
+            out.append((begin, finish, m.group(1)))
+    return out
+
+
+def report(runs, known):
+    rows = []
+    for page_id in sorted(os.listdir(runs), key=page_sort_key):
+        draft = os.path.join(runs, page_id, "draft_v1.md")
+        if not os.path.exists(draft):
+            continue
+        with open(draft) as fh:
+            text = LINK.sub("", fh.read())
+        for begin, finish, ref in reference_spans(text):
+            context = re.sub(r"\s+", " ", text[begin:finish + 60]).strip()
+            rows.append((page_id, ref, known.get(ref, "NOT IN THE ARCHITECTURE"), context))
+    current = None
+    for page_id, ref, title, context in rows:
+        if page_id != current:
+            print("")
+            print(page_id)
+            current = page_id
+        print("  %-8s %-34s %s" % (ref, title[:34], context[:58]))
+    print("")
+    print("%d bare references in prose across %d pages"
+          % (len(rows), len(set(r[0] for r in rows))))
+    missing = [r for r in rows if r[2] == "NOT IN THE ARCHITECTURE"]
+    print("%d point at an id the architecture does not have" % len(missing))
+
+
+def page_sort_key(page_id):
+    try:
+        return tuple(int(n) for n in page_id.split("."))
+    except ValueError:
+        return (999,)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--check", action="store_true",
                     help="exit non zero if any cross link is wrong")
     ap.add_argument("--runs", default=RUNS)
+    ap.add_argument("--prose-report", action="store_true",
+                    help="list every bare chapter or page reference in prose with the title "
+                         "it resolves to, so a valid id pointing at the wrong chapter is "
+                         "visible rather than hunted for")
     args = ap.parse_args()
 
     known = titles()
@@ -130,6 +221,10 @@ def main():
             if words(phrase) & words(real):
                 continue
             problems.append((page_id, pid, phrase, "prose names %r for this id" % real))
+
+    if args.prose_report:
+        report(args.runs, known)
+        return
 
     for src, pid, label, why in problems:
         print("%-7s -> [[%s | %s]]  %s" % (src, pid, label, why))
