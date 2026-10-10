@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Double Bundle Reconstruction | KneeSchool</title>
+<meta name="description" content="Reproducing both bundles instead of one. The rig shows a gain, the clinic has not, and the gap between them is the whole argument.">
+<meta name="theme-color" content="#0e2b22">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://kneeschool.com/biomechanics/pcl-double-bundle-reconstruction.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css?v=c2cccbcd">
+</head>
+<body>
+<style>
+.dial-tabs{grid-template-columns:repeat(4,1fr)}
+#t0:checked ~ .dial-tabs label[for=t0]{background:var(--gold-pale);border-color:var(--gold-pale);color:var(--green-deep);font-weight:600}
+#t0:checked ~ .dial-body .p0{display:block}
+#t0:focus-visible ~ .dial-tabs label[for=t0]{outline:3px solid var(--gold);outline-offset:2px}
+#t1:checked ~ .dial-tabs label[for=t1]{background:var(--gold-pale);border-color:var(--gold-pale);color:var(--green-deep);font-weight:600}
+#t1:checked ~ .dial-body .p1{display:block}
+#t1:focus-visible ~ .dial-tabs label[for=t1]{outline:3px solid var(--gold);outline-offset:2px}
+#t2:checked ~ .dial-tabs label[for=t2]{background:var(--gold-pale);border-color:var(--gold-pale);color:var(--green-deep);font-weight:600}
+#t2:checked ~ .dial-body .p2{display:block}
+#t2:focus-visible ~ .dial-tabs label[for=t2]{outline:3px solid var(--gold);outline-offset:2px}
+#t3:checked ~ .dial-tabs label[for=t3]{background:var(--gold-pale);border-color:var(--gold-pale);color:var(--green-deep);font-weight:600}
+#t3:checked ~ .dial-body .p3{display:block}
+#t3:focus-visible ~ .dial-tabs label[for=t3]{outline:3px solid var(--gold);outline-offset:2px}
+</style>
+<header class="site-head">
+  <div class="wrap head-in">
+    <a class="brand" href="../index.html"><b>Knee</b><span>School</span></a>
+    <input class="nav-toggle" type="checkbox" id="navtoggle" aria-label="Show navigation">
+    <label class="burger" for="navtoggle">Menu</label>
+    <nav class="nav" aria-label="Main">
+      <ul>
+        <li class="has-menu">
+          <a class="top" href="../index.html#levels">Learn<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../index.html#levels">Find your level</a></li>
+            <li><a href="../levels/junior.html">Junior Academy</a></li>
+            <li><a href="../levels/patient.html">Patient Academy</a></li>
+            <li><a href="../levels/student.html">Student Academy</a></li>
+            <li><a href="../levels/mrcs.html">MRCS Academy</a></li>
+            <li><a href="../levels/frcs.html">FRCS (Tr and Orth) Academy</a></li>
+            <li><a href="../levels/fellowship.html">Fellowship Academy</a></li>
+            <li><a href="../levels/consultant.html">Consultant Masterclass</a></li>
+            <li><a href="../junior/ready-made-lesson-plans.html">For teachers and coaches</a></li>
+          </ul>
+        </li>
+        <li class="has-menu">
+          <a class="top" href="../encyclopaedia/index.html">Reference<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../encyclopaedia/index.html">The knee encyclopaedia</a></li>
+            <li><a href="../anatomy/index.html">The Anatomy Academy</a></li>
+            <li><a href="../biomechanics/index.html">The Biomechanics Academy</a></li>
+            <li><a href="../conditions/index.html">Conditions library</a></li>
+            <li><a href="../encyclopaedia/whole-body.html">Whole body factors</a></li>
+          </ul>
+        </li>
+        <li class="has-menu">
+          <a class="top" href="../practise/index.html">Practise<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../practise/index.html#questions">Question bank</a></li>
+            <li><a href="../practise/index.html#cases">Case library</a></li>
+            <li><a href="../practise/index.html#video">Video academy</a></li>
+            <li><a href="../practise/index.html#scores">Knee score centre</a></li>
+          </ul>
+        </li>
+        <li class="has-menu">
+          <a class="top" href="../about/standards.html">About<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../about/standards.html">How a page reaches this site</a></li>
+            <li><a href="../about/curriculum.html">Mapped to the UK training pathway</a></li>
+            <li><a href="../about/status.html">Build status</a></li>
+            <li><a href="#">Authors and reviewers</a></li>
+            <li><a href="#">References and sources</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </li>
+        <li><a class="start-link" href="../index.html#levels">Find your level</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumb"><a href="../index.html">KneeSchool</a><span>/</span><a href="../encyclopaedia/index.html">Biomechanics Academy</a><span>/</span>Double Bundle Reconstruction</p>
+      <div class="hero-split">
+        <div>
+          <h1>Double Bundle Reconstruction</h1>
+          <p class="who">Page 3.8.9 &middot; PCL Biomechanics &middot; biomechanics page</p>
+          <p class="lede">Reproducing both bundles instead of one. The rig shows a gain, the clinic has not, and the gap between them is the whole argument.</p>
+        </div>
+        <div>
+          <div class="status"><b>Pipeline status.</b> Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band dark">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>The same topic at 4 depths</h2>
+        <p class="lede">Each tier deepens the one below it and never repeats it. Choose the level you want.</p>
+      </div>
+      <div class="dial dial-article">
+        <div class="dial-head">
+          <h2>Double Bundle Reconstruction</h2>
+          <small>Choose a depth</small>
+        </div>
+        <input type="radio" name="depth" id="t0" checked>
+        <input type="radio" name="depth" id="t1">
+        <input type="radio" name="depth" id="t2">
+        <input type="radio" name="depth" id="t3">
+        <div class="dial-tabs">
+          <label for="t0">Student</label>
+          <label for="t1">MRCS</label>
+          <label for="t2">FRCS</label>
+          <label for="t3">Fellow</label>
+        </div>
+        <div class="dial-body">
+          <div class="dial-panel p0">
+            <h3>For Medical Students</h3>
+            <h4>The Principle</h4>
+            <p>If a structure has two parts working at different angles, replacing both should control the joint across more of its range than replacing one.</p>
+            <p>Whether the extra control is worth the extra operation is a separate question, and it is answered by outcome rather than by mechanics.</p>
+            <p>A gain that is measurable in a laboratory and invisible in patients is a real result, not a contradiction.</p>
+            <h4>At the Knee</h4>
+            <p>The posterior cruciate has an anterolateral bundle tight in flexion and a posteromedial bundle tight near extension. 3.8.3 covers the pair.</p>
+            <p>A single bundle reconstruction reproduces the anterolateral bundle, which is the dominant one. 3.8.4 covers it.</p>
+            <p>A double bundle reconstruction adds a second graft for the posteromedial bundle, which controls the knee nearer extension. 3.8.5 covers that bundle.</p>
+            <p>Conventional teaching reports better restoration of posterior translation in cadaveric testing with two bundles, and comparable clinical outcomes.</p>
+            <h4>What Changes It</h4>
+            <p>Whether the capsule and corner are intact, since they cover the same range near extension.</p>
+            <p>Graft availability, since two bundles need more tissue.</p>
+            <p>Femoral tunnel space, which constrains two tunnels.</p>
+            <p>Surgical time and complexity.</p>
+            <h4>Clinical Relevance</h4>
+            <p>The mechanical case is strongest where the corner and capsule are also deficient, because then nothing else covers the near extension range. 2.10.4 covers the corner.</p>
+            <p>Conventional teaching reserves it for selected cases rather than using it as a default. Section 6 covers management.</p>
+            <p>The same shape of argument occurs in anterior cruciate reconstruction, and the resolution has been similar. 3.7.4 covers that chapter's bundles.</p>
+            <p>Describing the gain honestly, as measurable and unproven clinically, is better than arguing it either way.</p>
+            <div class="klp">
+              <h4>Key Learning Points</h4>
+              <ul><li>Replacing both bundles should control more of the range.</li><li>Whether it is worth it is answered by outcome, not mechanics.</li><li>A single bundle reconstruction reproduces the dominant anterolateral bundle.</li><li>Conventional teaching: better cadaveric restoration, comparable clinical outcomes.</li><li>The case is strongest where the corner and capsule are also deficient.</li></ul>
+            </div>
+          </div>
+          <div class="dial-panel p1">
+            <h3>MRCS Level</h3>
+            <h4>The Principle</h4>
+            <p>The argument has three parts and they are usually run together: whether the second bundle does something, whether a graft can reproduce it, and whether reproducing it changes the patient's result. The answers are yes, yes, and not demonstrated.</p>
+            <p>Keeping them apart is what makes the discussion tractable. A cadaveric study answers the second and a trial answers the third.</p>
+            <p>The marginal gain is small because the capsule covers much of the same range in an otherwise intact knee. 3.8.5 covers that point.</p>
+            <h4>At the Knee</h4>
+            <p>Conventional teaching reports that double bundle reconstruction restores posterior translation closer to the intact state across the flexion range in robotic testing, with the difference largest near extension.</p>
+            <p>Clinical series and the available trials report comparable laxity and outcome scores between single and double bundle, in small numbers.</p>
+            <p>Two femoral tunnels in the medial femoral condyle wall risk convergence and weaken the bone between them, which is a specific technical cost. 3.8.8 covers the construct.</p>
+            <p>Graft quantity is a real constraint, particularly where a corner reconstruction is also needed.</p>
+            <h4>What Changes It</h4>
+            <p>Capsular and corner integrity, which determine the marginal gain.</p>
+            <p>Femoral condyle size and tunnel spacing.</p>
+            <p>Graft availability and diameter.</p>
+            <p>Whether other reconstructions are being performed at the same sitting.</p>
+            <h4>How It Is Measured</h4>
+            <p>Robotic testing compares constructs against the intact knee at several flexion angles.</p>
+            <p>Stress radiography measures the clinical laxity result reproducibly.</p>
+            <p>Randomised and comparative clinical studies are small, which limits what can be concluded.</p>
+            <p>No study has isolated the combined injury subgroup where the mechanical case is strongest.</p>
+            <h4>Clinical Relevance</h4>
+            <p>Separate the three questions when discussing this with a colleague or a patient.</p>
+            <p>Expect the cadaveric difference to be largest near extension.</p>
+            <p>Account for femoral tunnel convergence and bone bridge when planning two tunnels.</p>
+            <p>Note that the strongest mechanical subgroup has no trial evidence.</p>
+            <div class="klp">
+              <h4>Key Learning Points</h4>
+              <ul><li>Three questions: does the bundle do something, can a graft reproduce it, does it change outcome.</li><li>The answers are yes, yes, and not demonstrated.</li><li>The cadaveric difference is largest near extension.</li><li>Two femoral tunnels risk convergence and weaken the bone bridge.</li><li>No study has isolated the combined injury subgroup.</li></ul>
+            </div>
+          </div>
+          <div class="dial-panel p2">
+            <h3>FRCS Level</h3>
+            <h4>At the Knee</h4>
+            <p>Treat this as a decision about marginal mechanical gain against definite added complexity, in an operation whose results are already less reliable than its anterior counterpart. 3.8.8 covers the construct.</p>
+            <p>That framing argues for selectivity rather than for either default. A knee with an intact capsule and corner gains least; a multiligament knee gains most and can least afford the graft and the tunnel space.</p>
+            <p>Conventional teaching has not settled it, and the honest account to a trainee is that the mechanics favour two bundles and the evidence does not require them.</p>
+            <h4>What Changes It</h4>
+            <p>Corner and capsular status.</p>
+            <p>Graft quantity available, especially in a multiligament reconstruction.</p>
+            <p>Femoral tunnel space and bone quality.</p>
+            <p>Surgeon familiarity, which affects the added complexity's cost.</p>
+            <h4>How It Is Measured</h4>
+            <p>Robotic testing gives the mechanical difference.</p>
+            <p>Comparative clinical studies give the outcome equivalence, in small numbers.</p>
+            <p>Stress radiography is the reproducible clinical measure of the result.</p>
+            <p>Registry data for this ligament is far thinner than for the anterior cruciate.</p>
+            <h4>Clinical Relevance</h4>
+            <p>Decide selectively rather than adopting either technique as a default.</p>
+            <p>Prefer two bundles where the capsule and corner are deficient and graft allows.</p>
+            <p>Account for graft quantity in a multiligament knee before committing.</p>
+            <p>Tell a trainee that the mechanics favour two bundles and the evidence does not require them.</p>
+            <div class="klp">
+              <h4>Key Learning Points</h4>
+              <ul><li>A marginal mechanical gain against definite added complexity.</li><li>An intact capsule and corner gains least; a multiligament knee gains most.</li><li>The multiligament knee can least afford the graft and tunnel space.</li><li>The mechanics favour two bundles and the evidence does not require them.</li><li>Registry data for this ligament is far thinner than for the anterior cruciate.</li></ul>
+            </div>
+          </div>
+          <div class="dial-panel p3">
+            <h3>Fellowship Level</h3>
+            <h4>At the Knee</h4>
+            <p>At fellowship level the question is usually moot, because the multiligament knee that would benefit most is the one where graft and tunnel space are least available.</p>
+            <p>That is a resource argument rather than a mechanical one, and recognising it as such stops the discussion going round in circles.</p>
+            <p>Where two bundles are used, the femoral bone bridge and tunnel convergence are the technical constraints that decide feasibility. 3.8.8 covers tunnel planning.</p>
+            <h4>What Changes It</h4>
+            <p>Number of reconstructions in one sitting and total graft needed.</p>
+            <p>Femoral condyle dimensions and tunnel trajectories.</p>
+            <p>Previous tunnels in a revision.</p>
+            <p>Whether staging is an option.</p>
+            <h4>How It Is Measured</h4>
+            <p>Preoperative computed tomography planning assesses tunnel feasibility and convergence.</p>
+            <p>Postoperative imaging confirms what was achieved.</p>
+            <p>Multiligament series report outcomes without separating bundle technique.</p>
+            <p>No measurement establishes the point at which the added complexity stops being worth it.</p>
+            <h4>Clinical Relevance</h4>
+            <p>Recognise the constraint as a resource one rather than a mechanical one.</p>
+            <p>Plan tunnel trajectories and bone bridge before committing to two bundles.</p>
+            <p>Consider staging where graft and time are both short.</p>
+            <p>Accept that the trade off point is not established.</p>
+            <div class="klp">
+              <h4>Key Learning Points</h4>
+              <ul><li>The knee that would benefit most has the least graft and tunnel space.</li><li>That is a resource argument rather than a mechanical one.</li><li>Bone bridge and tunnel convergence decide feasibility.</li><li>Multiligament series do not separate bundle technique.</li><li>The point at which added complexity stops being worth it is not established.</li></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band wrap">
+    <div class="sec-head">
+      <h2>Explore Further</h2>
+      <p class="lede">Where this topic came from and where it goes next in the spiral.</p>
+    </div>
+    <ul class="explore">
+        <li><span class="pid">3.8.8</span><a href="pcl-reconstruction-biomechanics.html">PCL Reconstruction Biomechanics</a></li>
+        <li><span class="pid">3.8.5</span><a href="pcl-pm-bundle-mechanics.html">PM Bundle Mechanics</a></li>
+        <li><span class="pid">3.8.10</span><a href="pcl-inlay-techniques.html">Inlay Techniques</a></li>
+        <li><span class="pid">3.8.3</span><a href="pcl-bundle-function.html">Bundle Function</a></li>
+        <li><span class="pid">3.7.4</span><a href="acl-bundle-function.html">Bundle Function</a></li>
+    </ul>
+  </section>
+
+  <section class="band wrap" style="padding-top:0">
+    <div class="sec-head">
+      <h2>References</h2>
+    </div>
+    <div class="prose refs">
+      <p>No reference list is attached to this draft. Evidence verification has not run, because source retrieval was unavailable at generation time. Under the Operations Handbook a missing reference is acceptable and an invented one is a critical failure, so nothing has been cited and no citation marker appears in the text. Every measurement on this page is written from standard teaching rather than from a retrieved paper, and none has been checked against a source. Under decision 006 each one is registered in pipeline/config/figures with the sentence it supports and a verification state of UNVERIFIED_FROM_MEMORY, so the whole list can be checked and corrected rather than hunted for.</p>
+    </div>
+    <p class="safety"><b>Safety.</b> KneeSchool is educational and does not give individual medical advice. Seek urgent assessment for a knee that cannot bear weight after an injury, a hot swollen knee with a fever, or new numbness, weakness or coldness in the leg or foot.</p>
+  </section>
+
+</main>
+
+<footer class="site-foot" id="about">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h3>Learn</h3>
+        <ul>
+          <li><a href="../levels/junior.html">Junior Academy</a></li>
+          <li><a href="../levels/patient.html">Patient Academy</a></li>
+          <li><a href="../levels/student.html">Student Academy</a></li>
+          <li><a href="../levels/mrcs.html">MRCS Academy</a></li>
+          <li><a href="../levels/frcs.html">FRCS (Tr and Orth) Academy</a></li>
+          <li><a href="../levels/fellowship.html">Fellowship Academy</a></li>
+          <li><a href="../levels/consultant.html">Consultant Masterclass</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Reference</h3>
+        <ul>
+          <li><a href="../encyclopaedia/index.html">The knee encyclopaedia</a></li>
+          <li><a href="../conditions/index.html">Conditions library</a></li>
+          <li><a href="../encyclopaedia/whole-body.html">Whole body factors</a></li>
+          <li><a href="../practise/index.html">Practise and test</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Clinical care</h3>
+        <ul>
+          <li><a href="https://www.chinmaygupte.com/">Consultant clinic</a></li>
+          <li><a href="#">Imaging and injections</a></li>
+          <li><a href="#">Rehabilitation programmes</a></li>
+          <li><a href="#">Braces and recovery products</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>About</h3>
+        <ul>
+          <li><a href="../about/standards.html">How a page reaches this site</a></li>
+          <li><a href="../about/curriculum.html">Mapped to the UK training pathway</a></li>
+          <li><a href="../levels/junior.html">For teachers and coaches</a></li>
+          <li><a href="#">Authors and reviewers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <p>KneeSchool is educational. It does not give individual medical advice and it does not replace assessment by a clinician. Seek urgent care for a hot, swollen knee with fever, a knee that cannot bear weight after injury, or new numbness in the leg.</p>
+      <p>Content written for school age learners carries no advertising and no product placement.</p>
+      <p>&copy; 2026 KneeSchool. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
