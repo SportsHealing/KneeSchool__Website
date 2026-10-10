@@ -45,7 +45,7 @@ run `python3 tools/apply_chrome.py`; all pages and `robots.txt` move together.
 `PUB-010` in the publication gate refuses a half flip. See
 `docs/decisions/015-published-not-publicised.md`.
 
-## Branches
+## Branches, and how `main` moves
 
 ```
 main                            the stable copy, what the site is published from
@@ -53,10 +53,33 @@ claude/great-meitner-kofr7g     the working branch, where changes are made first
 ```
 
 `main` exists so there is always a known good version standing beside the work.
-Changes are made on the working branch, verified with the checks under
-Verification below, and only then brought across. The two were identical when
-`main` was created; after that `main` moves when a batch of work has passed its
-checks, not on every commit.
+Three rules, and decision 021 says why each one is there.
+
+1. **`main` moves only through a pull request.** Not by a direct push, and not
+   by a fast forward from a terminal. The pull request is the record of when a
+   batch was brought across and what was in it.
+2. **A pull request merges only when `verify` is green on its head commit.**
+   The check is required rather than advisory. Before it existed, GitHub's
+   "mergeable" meant only that the branch had no conflict, and pull request #1
+   was merged carrying 276 pages with nothing checking it.
+3. **A merged pull request is finished.** Follow up work is a new pull request
+   from the same working branch. It is not reopened and it is not amended.
+
+Run `make verify` before pushing. It is the same command CI runs, so a green
+local run and a green check mean the same thing.
+
+## Verification
+
+```bash
+make verify     # every gate, stopping at the first failure
+make test       # the test suite alone, 253 tests
+```
+
+`verify` runs the test suite and then six gates: the deterministic style gate
+over every page, the site checks, publication QA, cross link labels, prose
+references against the architecture, and the review packs against the registers.
+It finishes by asking git whether the working tree changed, because every gate
+before that is meant to be read only and twice one was not.
 
 ## The three documents that govern everything
 
@@ -141,8 +164,8 @@ EOF
 ## Pipeline
 
 ```bash
-make -C pipeline test     # 68 tests, no AWS account needed
-make -C pipeline lint DRAFT=path/to/draft.md
+make verify                                 # every gate, see Verification above
+make -C pipeline lint DRAFT=path/to/draft.md   # the style gate over one draft
 ```
 
 See `pipeline/README.md` for the architecture, the deployment steps and the

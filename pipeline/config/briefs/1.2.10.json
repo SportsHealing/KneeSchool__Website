@@ -74,7 +74,8 @@
   "governance": {
     "commercial_content_allowed": false,
     "clinical_advice_allowed": false,
-    "junior_tier_present": true
+    "junior_tier_present": true,
+    "figures_allowed": true
   },
   "pipeline": {
     "priority": "high",
