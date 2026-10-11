@@ -1853,6 +1853,67 @@
       "parent": "Conditions|index.html",
       "status": "Editorial draft. Evidence verification did not run. With a consultant for review. Not for clinical use.",
       "source": "styled_v1.md"
+    },
+    "3.17.1": {
+      "out": "biomechanics/acl-landmark-studies.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.17.2": {
+      "out": "biomechanics/pcl-landmark-studies.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.17.3": {
+      "out": "biomechanics/meniscal-landmark-studies.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md",
+      "meta_description": "The one subject in the knee where the laboratory work, the long term observation and the trials all agree, and practice still lagged."
+    },
+    "3.17.4": {
+      "out": "biomechanics/medial-knee-landmark-studies.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.17.5": {
+      "out": "biomechanics/posterolateral-landmark-studies.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.17.6": {
+      "out": "biomechanics/patellofemoral-landmark-studies.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.17.7": {
+      "out": "biomechanics/osteotomy-landmark-studies.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.17.8": {
+      "out": "biomechanics/arthroplasty-landmark-studies.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.17.9": {
+      "out": "biomechanics/imperial-knee-biomechanics-contributions.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "3.17.10": {
+      "out": "biomechanics/future-research-priorities.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
     }
   },
   "withheld": {

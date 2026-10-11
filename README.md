@@ -72,7 +72,7 @@ local run and a green check mean the same thing.
 
 ```bash
 make verify     # every gate, stopping at the first failure
-make test       # the test suite alone, 253 tests
+make test       # the test suite alone, 274 tests
 ```
 
 `verify` runs the test suite and then six gates: the deterministic style gate
@@ -80,6 +80,21 @@ over every page, the site checks, publication QA, cross link labels, prose
 references against the architecture, and the review packs against the registers.
 It finishes by asking git whether the working tree changed, because every gate
 before that is meant to be read only and twice one was not.
+
+## The three registers
+
+Nothing the site cannot verify is left in prose. Each register is generated from
+the pages rather than compiled by hand, because a hand list falls behind the
+pages it describes and nothing reports that it has.
+
+```bash
+python3 tools/figures.py      --report --unchecked   # measurements, decision 006
+python3 tools/positions.py    --report --unsigned    # clinical direction, decision 007
+python3 tools/attributions.py --report --unchecked   # named studies, decision 022
+```
+
+The review pack carries all three per chapter and reads a filled pack back in,
+so a reviewer's answer reaches the register rather than an inbox.
 
 ## The three documents that govern everything
 

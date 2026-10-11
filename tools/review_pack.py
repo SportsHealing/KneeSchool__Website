@@ -46,6 +46,7 @@ RUNS = os.path.join(ROOT, "pipeline", "runs")
 BRIEFS = os.path.join(ROOT, "pipeline", "config", "briefs")
 POSITIONS = os.path.join(ROOT, "pipeline", "config", "positions")
 FIGURES = os.path.join(ROOT, "pipeline", "config", "figures")
+ATTRIBUTIONS = os.path.join(ROOT, "pipeline", "config", "attributions")
 PUBLISHED = os.path.join(ROOT, "pipeline", "config", "published_pages.json")
 OUTLINE = os.path.join(ROOT, "pipeline", "config", "architecture", "outline_1_to_15.json")
 PACKS = os.path.join(ROOT, "docs", "review", "packs")
@@ -53,7 +54,7 @@ PACKS = os.path.join(ROOT, "docs", "review", "packs")
 # A row reference has to survive a round trip through a text editor and a
 # spreadsheet, so it is short, has no spaces, and names the register it belongs
 # to: P for a position, F for a figure, then the row's index in that file.
-REF = re.compile(r"^([0-9]+(?:\.[0-9]+){2})-([PF])([0-9]+)$")
+REF = re.compile(r"^([0-9]+(?:\.[0-9]+){2})-([PFA])([0-9]+)$")
 
 FIGURE_STATES = ["UNVERIFIED_FROM_MEMORY", "VERIFIED", "CORRECTED", "REMOVED"]
 
@@ -110,6 +111,8 @@ def page_facts(page_id):
             "positions", []),
         "figures": (load(os.path.join(FIGURES, "%s.json" % page_id)) or {}).get(
             "figures", []),
+        "attributions": (load(os.path.join(ATTRIBUTIONS, "%s.json" % page_id)) or {}).get(
+            "attributions", []),
     }
 
 
@@ -154,6 +157,9 @@ def build(chapter, names):
                 if p.get("verification") == "UNSIGNED"]
     unchecked = [(f, i, g) for f in facts for i, g in enumerate(f["figures"], 1)
                  if g.get("verification") == "UNVERIFIED_FROM_MEMORY"]
+    unattributed = [(f, i, a) for f in facts
+                    for i, a in enumerate(f["attributions"], 1)
+                    if a.get("verification") == "UNVERIFIED_FROM_MEMORY"]
 
     meta = {
         "chapter": chapter, "name": name, "section": section, "facts": facts,
@@ -163,6 +169,7 @@ def build(chapter, names):
         "gate": ("all pages pass, %d warnings" % warns if not fails
                  else "%d failures" % fails),
         "unsigned": unsigned, "unchecked": unchecked,
+        "unattributed": unattributed,
     }
 
     out = []
@@ -186,6 +193,8 @@ def build(chapter, names):
     w("| Evidence verification | did not run on any page |")
     w("| Measurements to check | %d |" % len(unchecked))
     w("| Recommendations to sign | %d |" % len(unsigned))
+    if unattributed:
+        w("| Attributions to confirm | %d |" % len(unattributed))
     w("")
     w("## What has not happened")
     w("")
@@ -238,6 +247,31 @@ def build(chapter, names):
     else:
         w("No unchecked measurement in this chapter.")
     w("")
+    if unattributed:
+        w("## Attributions")
+        w("")
+        w("This chapter's subject is named studies and no study was retrieved. Under "
+          "decision 022 each entry below names the author a study is taught under and "
+          "carries no year, journal, volume or page, because those are the parts that "
+          "get invented. Every one was written from memory and some will be wrong.")
+        w("")
+        w("Put `CONFIRMED` where the author is right for the finding, `AMENDED` with the "
+          "correct attribution where it is not, or `WITHDRAWN` to take the claim off the "
+          "page. Use the Citation column for the paper as it actually is, which is the "
+          "one thing this process could not supply and the one thing the pages need.")
+        w("")
+        w("| Ref | Page | Decade | Attributed to | The claim it carries | Decision | "
+          "Citation |")
+        w("|---|---|---|---|---|---|---|")
+        for f, i, a in unattributed:
+            w("| %s-A%d | %s | %s | %s | %s |  |  |"
+              % (f["page_id"], i, f["page_id"],
+                 ", ".join(a.get("decade_as_written") or []),
+                 cell(a.get("attributed_to", "")), cell(a.get("claim", ""))))
+        w("")
+        w("Allowed decisions: `CONFIRMED`, `AMENDED`, `WITHDRAWN`.")
+        w("")
+
     w("## Recommendations")
     w("")
     if unsigned:
@@ -408,6 +442,13 @@ def ingest(path):
             decision = cells[3] if len(cells) > 3 else ""
             who = cells[4] if len(cells) > 4 else ""
             note = cells[5] if len(cells) > 5 else ""
+        elif kind == "A":
+            # Decade | Attributed to | Claim | Decision | Citation
+            reg_path = os.path.join(ATTRIBUTIONS, "%s.json" % page_id)
+            key, states = "attributions", ["CONFIRMED", "AMENDED", "WITHDRAWN"]
+            decision = cells[4] if len(cells) > 4 else ""
+            who = cells[5] if len(cells) > 5 else ""
+            note = cells[6] if len(cells) > 6 else ""
         else:
             reg_path = os.path.join(FIGURES, "%s.json" % page_id)
             key, states = "figures", FIGURE_STATES[1:]
@@ -440,6 +481,11 @@ def ingest(path):
         entry["verification"] = verdict
         if kind == "P":
             entry["signed_off_by"] = who
+        elif kind == "A":
+            # the citation as actually retrieved, which is the one thing this
+            # process could not supply
+            entry["citation_as_retrieved"] = who
+            entry["attribution_correct"] = "yes" if verdict == "CONFIRMED" else "no"
         else:
             entry["source"] = who
         wording = note.strip() or detail.strip()

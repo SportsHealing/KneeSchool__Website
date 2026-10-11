@@ -427,3 +427,46 @@ class ExtractionIsIdempotent(unittest.TestCase):
                 note = entry.get("note") or ""
                 self.assertLessEqual(note.count(positions.WITHDRAWN_NOTE), 1,
                                      "%s: %r" % (os.path.basename(path), note[:80]))
+
+
+class AttributionsRoundTrip(unittest.TestCase):
+    """Decision 022: the attribution register is only worth having if a reviewer's
+    answer can get back into it. Decision 016 made the pack the return path, so
+    the A row has to survive the same journey a P and an F row do."""
+
+    def test_the_reference_pattern_accepts_an_attribution_row(self):
+        for ref in ("3.17.1-A1", "3.17.1-A12"):
+            self.assertTrue(review_pack.REF.match(ref), ref)
+
+    def test_an_attribution_row_writes_the_citation_and_the_verdict(self):
+        reg = {
+            "register_version": "1.0", "page_id": "3.17.1", "title": "t",
+            "attributions": [{"attributed_to": "Noyes", "claim": "c",
+                              "verification": "UNVERIFIED_FROM_MEMORY",
+                              "citation_as_retrieved": "", "attribution_correct": ""}],
+        }
+        with tempfile.TemporaryDirectory() as tmp:
+            os.makedirs(os.path.join(tmp, "attributions"))
+            path = os.path.join(tmp, "attributions", "3.17.1.json")
+            with open(path, "w") as fh:
+                json.dump(reg, fh)
+            was = review_pack.ATTRIBUTIONS
+            review_pack.ATTRIBUTIONS = os.path.join(tmp, "attributions")
+            try:
+                pack = os.path.join(tmp, "chapter-3.17.md")
+                with open(pack, "w") as fh:
+                    fh.write("| Ref | Page | Decade | Attributed to | Claim | Decision "
+                             "| Citation |\n|---|---|---|---|---|---|---|\n"
+                             "| 3.17.1-A1 | 3.17.1 | 1970s | Noyes | c | CONFIRMED "
+                             "| the retrieved paper |\n")
+                self.assertEqual(review_pack.ingest(pack), 0)
+            finally:
+                review_pack.ATTRIBUTIONS = was
+            with open(path) as fh:
+                after = json.load(fh)["attributions"][0]
+        self.assertEqual(after["verification"], "CONFIRMED")
+        self.assertEqual(after["citation_as_retrieved"], "the retrieved paper")
+        self.assertEqual(after["attribution_correct"], "yes")
+
+    def test_an_unknown_verdict_is_refused(self):
+        self.assertNotIn("VERIFIED", ["CONFIRMED", "AMENDED", "WITHDRAWN"])
