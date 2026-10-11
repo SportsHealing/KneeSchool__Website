@@ -21,7 +21,7 @@
           "area": "Content pipeline",
           "state": "Mechanism built, nothing signed",
           "blocker": "The client confirmed on 10 October 2026 that consultants are lined up, so the people exist. The mechanism existed only as prose packs in docs/review/ with no way for an answer to come back. tools/review_pack.py now generates one pack per chapter from the work and reads a filled pack back into the registers, so the route exists. What is missing is a reviewer's time.",
-          "needed": "A consultant to work through a chapter. 1,839 clinical recommendations across 254 pages and 381 measurements across 136 are outstanding, none signed, and chapter 3.17 adds 52 attributions to named authors, none checked against a paper. python3 tools/review_pack.py --status prints the breakdown by chapter; 32 chapters carry recommendations, the largest is 3.7 with 152 and the median is 62.",
+          "needed": "A consultant to work through a chapter. 1,851 clinical recommendations across 255 pages and 381 measurements across 136 are outstanding, none signed, and chapter 3.17 adds 52 attributions to named authors, none checked against a paper. python3 tools/review_pack.py --status prints the breakdown by chapter; 32 chapters carry recommendations, the largest is 3.7 with 152 and the median is 62.",
           "pages": "Every page on the site is an unreviewed editorial draft"
         },
         {
@@ -60,12 +60,12 @@
         },
         {
           "ref": "EV-7",
-          "title": "1,839 clinical recommendations on the site are unsigned",
+          "title": "1,851 clinical recommendations on the site are unsigned",
           "area": "Content",
           "state": "Live and registered, and the count rose on 10 October 2026",
           "blocker": "They are written by a process with no clinical qualification, on pages that state they have not been reviewed. The client has chosen to keep them, and decision 007 makes the set finite and listed. The total rose from 976 to 1,295 on 10 October 2026, and chapter 3.12 added 93 more, not because advice was added but because the detector was found to be missing it. POS-001 read clinical direction off a list of imperative openers built from directive prose, and the directions opening with a weighing or a consultation verb had never reached the register. Two extensions of the verb list, decisions 018 and 019, added 319 between them.",
-          "needed": "A consultant to work the register: 1,839 positions across 254 pages, all UNSIGNED. tools/positions.py --report --unsigned is the list.",
-          "pages": "254 pages carry at least one recommendation"
+          "needed": "A consultant to work the register: 1,851 positions across 255 pages, all UNSIGNED. tools/positions.py --report --unsigned is the list.",
+          "pages": "255 pages carry at least one recommendation"
         },
         {
           "ref": "EV-8",
@@ -123,12 +123,12 @@
         },
         {
           "ref": "EV-14",
-          "title": "Fifty-two study attributions on the site are unchecked, and 3.1.8 is still unwritten",
+          "title": "Fifty-two study attributions on the site are unchecked",
           "area": "Content pipeline",
-          "state": "Chapter written under decision 022, one page still held",
-          "blocker": "This entry used to hold eleven pages. The client ruled on 11 October 2026, \"Write it flagged unverified\", and chapter 3.17's ten pages are now written. Decision 022 sets the terms: the finding and the surname a study is taught under may be written, because they are recalled together and either checks the other, and the year, the journal, the volume and the page may not, because they are recalled alone and a wrong one cannot be told from a right one. ATTR-001 refuses all six fabricable shapes at the gate and ATTR-002 requires every named attribution to be in a register. What remains outstanding is not the writing but the checking: 52 attributions across nine pages, every one from memory, and some of them will be wrong. Page 3.1.8 is still unwritten, now for sequencing rather than for source access, because its job is to select from the ten and it should be written after them.",
+          "state": "Writing complete, checking outstanding",
+          "blocker": "This entry used to hold eleven pages. The client ruled on 11 October 2026, \"Write it flagged unverified\", and all eleven are now written: chapter 3.17's ten and page 3.1.8. Decision 022 sets the terms. The finding and the surname a study is taught under may be written, because they are recalled together and either checks the other. The year, the journal, the volume and the page may not, because they are recalled alone and a wrong one cannot be told from a right one. ATTR-001 refuses all six fabricable shapes at the gate and ATTR-002 requires every named attribution to be in a register. Nothing is held for source access any more. What is outstanding is the checking: 52 attributions across nine pages, every one from memory, and some of them will be wrong.",
           "needed": "Someone with a library to work the attribution register: 52 entries, all UNVERIFIED_FROM_MEMORY. tools/attributions.py --report --unchecked is the list, and the chapter 3.17 review pack carries the same rows with a Citation column, which is the one field this process could not fill. Separately, page 3.17.9 needs a ruling from the Imperial group itself: the architecture asked for their research programme summarised and the page delivers their published work instead, which is less, and whether a page bearing an institution's name should exist in that form is their call rather than this process's.",
-          "pages": "10 pages published and unchecked, 1 page still unwritten"
+          "pages": "11 pages published, 9 of them carrying unchecked attributions"
         },
         {
           "ref": "EV-15",
@@ -514,10 +514,10 @@
           "ref": "W-6",
           "title": "Section 3 Biomechanics Academy, chapter 3.1",
           "area": "Content",
-          "state": "7 of 8 written, style gate passed, awaiting review",
-          "blocker": "The first chapter of the largest remaining section. It carries all five tier shapes Section 3 uses, from junior to consultant, which is why it was built first: whatever template serves it serves the section.",
-          "needed": "Consultant review. Page 3.1.8 is held under decision 014 and EV-14. Chapters 3.11 to 3.17 are the 81 pages still to write.",
-          "pages": "7 published pages, 10,697 body words as the style gate counts them"
+          "state": "All 8 written, style gate passed, awaiting review",
+          "blocker": "The first chapter of the largest section. It carries all five tier shapes Section 3 uses, from junior to consultant, which is why it was built first: whatever template serves it serves the section. Page 3.1.8 was written last, on 11 October 2026, and completes the chapter and the section. Its subject is the classic studies in general, and the architecture's must_not_cover list gives the per topic detail to chapter 3.17, so the page teaches how to read a landmark study and names no study at all. It sets out the five designs almost everything in Section 3 came from, what each one can and cannot support, and the three traps that recur across every subject in the section. It is the only landmark papers page on the site with no attribution register, which is the honest result of that boundary rather than a gap in it.",
+          "needed": "Consultant review. The claim worth arguing with is the page's own framing: that a study is landmark because it changed practice rather than because it was cited often, and that teaching the five designs serves a trainee better than teaching ten named studies. Both are editorial judgements presented as orientation.",
+          "pages": "8 published pages, 12,382 body words as the style gate counts them"
         },
         {
           "ref": "W-7",

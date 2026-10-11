@@ -1914,6 +1914,12 @@
       "parent": "Biomechanics Academy|../encyclopaedia/index.html",
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
+    },
+    "3.1.8": {
+      "out": "biomechanics/landmark-biomechanical-studies.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
     }
   },
   "withheld": {

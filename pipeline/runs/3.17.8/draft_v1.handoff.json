@@ -23,7 +23,7 @@
   "content_rule": "Decision 022: this page's subject is named studies and no study was retrieved. The page names the author a study is taught under and the decade it belongs to, and gives no year, journal, volume or page, because those are the parts of a citation that get invented and a wrong one cannot be told from a right one. ATTR-001 refuses any of them at the gate. Every attribution is registered in pipeline/config/attributions/<page_id>.json with the claim it carries and a verification state. Run tools/attributions.py --report --unchecked for the outstanding list. Decision 006 applies as usual to any measurement on the page.",
   "gaps_or_uncertainties": [
     "9 attribution(s) on this page, each naming an author a study is taught under. All are written from memory and none has been checked against the paper. They are listed in pipeline/config/attributions/3.17.8.json with the claim each one carries. Some will be wrong, and which ones is not knowable from here.",
-    "No page in this chapter carries a citation, a year, a journal or a page number, and that is decision 022 rather than an omission. A reader who wants the paper has a surname, a decade and a finding, which locates it in a catalogue and does not constitute a citation.",
+    "No landmark papers page on this site carries a citation, a year, a journal or a page number, and that is decision 022 rather than an omission. A reader who wants the paper has a surname, a decade and a finding, which locates it in a catalogue and does not constitute a citation.",
     "No measurement appears on this page. Where one would normally sit the page gives the relationship instead, because the value is not one this environment can state with confidence."
   ],
   "duplication_risk_pages": [
