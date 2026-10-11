@@ -27,7 +27,23 @@ sys.path.insert(0, os.path.join(ROOT, "tools"))
 import site_chrome as chrome  # noqa: E402
 import page_index  # noqa: E402
 
-ARCH = os.path.join(ROOT, "pipeline", "config", "architecture", "pages_0_to_3.json")
+ARCH_DIR = os.path.join(ROOT, "pipeline", "config", "architecture")
+
+
+def architecture_pages():
+    """Every architecture page, from every pages_*.json file.
+
+    This read used to name pages_0_to_3.json directly, which was the same latent
+    bug generated_from had: correct while one such file existed, and silently
+    wrong the moment a second did. Section 4's index came out with no chapters
+    and no pages because of it.
+    """
+    pages = []
+    for name in sorted(os.listdir(ARCH_DIR)):
+        if name.startswith("pages_") and name.endswith(".json"):
+            with open(os.path.join(ARCH_DIR, name)) as fh:
+                pages.extend(json.load(fh))
+    return pages
 CONFIG = os.path.join(ROOT, "pipeline", "config", "section_indexes.json")
 REL = "../"
 
@@ -42,9 +58,8 @@ def sort_key(page_id):
 
 def build(section_id, spec):
     out = os.path.join(ROOT, spec["dir"], "index.html")
-    with open(ARCH) as fh:
-        pages = [p for p in json.load(fh)
-                 if str(p["page_id"]).startswith(section_id + ".")]
+    pages = [p for p in architecture_pages()
+             if str(p["page_id"]).startswith(section_id + ".")]
     pages.sort(key=lambda p: sort_key(p["page_id"]))
     published = page_index.load()
 

@@ -24,11 +24,19 @@ TYPE_MAP = os.path.join(ROOT, "pipeline", "config", "page_type_map.json")
 
 
 def load_pages():
+    """Every architecture page, with the file it came from attached.
+
+    The file matters: generated_from used to be the hardcoded string
+    "pages_0_to_3.json" on every brief this tool had ever written, which was
+    harmless while one file existed and wrong the moment a second did.
+    """
     pages = []
     for name in sorted(os.listdir(ARCH_DIR)):
         if name.startswith("pages_") and name.endswith(".json"):
             with open(os.path.join(ARCH_DIR, name)) as fh:
-                pages.extend(json.load(fh))
+                for page in json.load(fh):
+                    page.setdefault("_source_file", name)
+                    pages.append(page)
     return pages
 
 
@@ -163,7 +171,8 @@ def build_brief(page, merge=None):
     brief["chapter"] = page["chapter"]
     brief["page_type"] = page["page_type"]
     brief["article_template"] = template_name
-    brief["generated_from"] = "Master Publishing Architecture, pages_0_to_3.json"
+    brief["generated_from"] = ("Master Publishing Architecture, %s"
+                               % page.get("_source_file", "pages_0_to_3.json"))
     brief["tiers_required"] = tiers
     brief["scope"] = collections.OrderedDict([
         ("must_cover", [page["scope"]]),

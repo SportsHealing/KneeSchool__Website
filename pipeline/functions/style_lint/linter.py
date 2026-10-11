@@ -510,6 +510,7 @@ UNIT = r"(?:mm|cm|%|per\s?cent|degrees?|mL|ml|kg|MPa|m|N)"
 # five and a half degrees. The unit decides, so an id is only stripped when no
 # unit follows it. A bare decimal with no unit is read as a page id, because on
 # this site that is what it almost always is. Write a unit and the rule fires.
+CROSSLINK = re.compile(r"\[\[[^\]]*\]\]")
 XREF = re.compile(r"\b\d+(?:\.\d+){1,2}\b(?!\s*" + UNIT + r"\b)")
 # The trailing lookaheads stop a list like "Sections 6 and 7" swallowing the
 # first component of a page id that follows it. "belongs to Section 6 and 7.49
@@ -555,7 +556,13 @@ def body_figures(doc, rule):
     """
     out = []
     allowed = set(str(n) for n in rule.get("allowed_bare_integers") or [])
-    text = XREF.sub(" ", XREF_WORD.sub(" ", doc.body_text()))
+    # A cross link label is an architecture page title, not a claim the page
+    # makes, and the drafter cannot reword it without breaking the brief. 4.1.5
+    # linked to "4.12.3 Assessment at 30 Degrees" and FIG-002 read the 30 as an
+    # unregistered measurement. The label is blanked, keeping its length so every
+    # offset the caller reports still points at the right place.
+    text = CROSSLINK.sub(lambda m: " " * len(m.group(0)), doc.body_text())
+    text = XREF.sub(" ", XREF_WORD.sub(" ", text))
     spans = []
     for m in RANGE.finditer(text):
         spans.append((m.start(), m.end()))
@@ -963,6 +970,49 @@ def rule_attr_002(doc, rule, brief):
     return out
 
 
+# --- ACC-001, decision 023 ---------------------------------------------------
+#
+# ATTR-001's argument applied to a different fabricable quantity. For an
+# examination test the comparative pattern is standard teaching and is recalled
+# robustly: Lachman beats anterior drawer, the pivot shift is specific and
+# insensitive. A specific percentage is recalled alone, nothing in the pattern
+# constrains it, and a wrong one looks exactly like a right one.
+#
+# A fail rather than a warn, because a wrong sensitivity changes what a
+# clinician does next with a negative test. Angles and distances are untouched:
+# the flexion angle for a Lachman is technique, not an accuracy claim.
+
+ACC_TERM = (r"sensitivit(?:y|ies)|specificit(?:y|ies)|accurac(?:y|ies)|"
+            r"positive predictive value|negative predictive value|"
+            r"likelihood ratio|PPV|NPV|AUC|area under the curve|"
+            r"false positive rate|false negative rate")
+ACC_NUMBER = r"\d{1,3}(?:\.\d+)?\s*(?:%|per cent|percent)|0?\.\d+"
+# The term and a number within one clause of each other, either order.
+ACC_BANNED = tuple(re.compile(p, re.IGNORECASE) for p in (
+    r"(?:%s)[^.;:\n]{0,60}?(?:%s)" % (ACC_TERM, ACC_NUMBER),
+    r"(?:%s)[^.;:\n]{0,40}?(?:%s)" % (ACC_NUMBER, ACC_TERM),
+))
+
+
+def rule_acc_001(doc, rule, brief):
+    """Decision 023: no bare diagnostic accuracy figure on an examination page."""
+    out = []
+    if brief.get("page_type") != "examination":
+        return out
+    text = doc.body_text()
+    seen = set()
+    for pattern in ACC_BANNED:
+        for m in pattern.finditer(text):
+            if m.start() in seen:
+                continue
+            seen.add(m.start())
+            out.append(finding(rule["id"], rule["severity"], rule["description"],
+                               re.sub(r"\s+", " ", m.group(0))[:120],
+                               context(text, m.start(), m.end()),
+                               line_of(text, m.start())))
+    return out
+
+
 def rule_struct_001(doc, rule, brief, template):
     """Structure against the handbook template and the brief.
 
@@ -1297,6 +1347,8 @@ def lint(text, brief=None, rules=None, template=None):
             findings += rule_attr_001(doc, rule, brief)
         elif rid == "ATTR-002":
             findings += rule_attr_002(doc, rule, brief)
+        elif rid == "ACC-001":
+            findings += rule_acc_001(doc, rule, brief)
         elif rid == "STRUCT-001":
             findings += rule_struct_001(doc, rule, brief, template)
         elif rule.get("banned_phrases"):

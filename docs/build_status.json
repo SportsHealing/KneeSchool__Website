@@ -21,7 +21,7 @@
           "area": "Content pipeline",
           "state": "Mechanism built, nothing signed",
           "blocker": "The client confirmed on 10 October 2026 that consultants are lined up, so the people exist. The mechanism existed only as prose packs in docs/review/ with no way for an answer to come back. tools/review_pack.py now generates one pack per chapter from the work and reads a filled pack back into the registers, so the route exists. What is missing is a reviewer's time.",
-          "needed": "A consultant to work through a chapter. 1,851 clinical recommendations across 255 pages and 381 measurements across 136 are outstanding, none signed, and chapter 3.17 adds 52 attributions to named authors, none checked against a paper. python3 tools/review_pack.py --status prints the breakdown by chapter; 32 chapters carry recommendations, the largest is 3.7 with 152 and the median is 62.",
+          "needed": "A consultant to work through a chapter. 1,863 clinical recommendations across 260 pages and 381 measurements across 136 are outstanding, none signed, and chapter 3.17 adds 52 attributions to named authors, none checked against a paper. python3 tools/review_pack.py --status prints the breakdown by chapter; 32 chapters carry recommendations, the largest is 3.7 with 152 and the median is 62.",
           "pages": "Every page on the site is an unreviewed editorial draft"
         },
         {
@@ -60,12 +60,12 @@
         },
         {
           "ref": "EV-7",
-          "title": "1,851 clinical recommendations on the site are unsigned",
+          "title": "1,863 clinical recommendations on the site are unsigned",
           "area": "Content",
           "state": "Live and registered, and the count rose on 10 October 2026",
           "blocker": "They are written by a process with no clinical qualification, on pages that state they have not been reviewed. The client has chosen to keep them, and decision 007 makes the set finite and listed. The total rose from 976 to 1,295 on 10 October 2026, and chapter 3.12 added 93 more, not because advice was added but because the detector was found to be missing it. POS-001 read clinical direction off a list of imperative openers built from directive prose, and the directions opening with a weighing or a consultation verb had never reached the register. Two extensions of the verb list, decisions 018 and 019, added 319 between them.",
-          "needed": "A consultant to work the register: 1,851 positions across 255 pages, all UNSIGNED. tools/positions.py --report --unsigned is the list.",
-          "pages": "255 pages carry at least one recommendation"
+          "needed": "A consultant to work the register: 1,863 positions across 260 pages, all UNSIGNED. tools/positions.py --report --unsigned is the list.",
+          "pages": "260 pages carry at least one recommendation"
         },
         {
           "ref": "EV-8",
@@ -192,6 +192,15 @@
           "blocker": "GitHub Pages deploys this repository and has done since late September. A CNAME in the root holds kneeschool.com. Until 20:26 on 10 October every one of 62 runs was on claude/great-meitner-kofr7g, the working branch, so each push went live immediately and unreviewed. That was the opposite of the README's arrangement and it was found by reading the Actions history rather than by anything in the build.",
           "needed": "Nothing. The client changed the Pages source to main, and run 63 built 15a6ee5, the merge of pull request 2, in 47 seconds. The live site is now main's tip, so it is the copy that passed a green verify and went through a pull request. Decision 021's first rule is complete rather than aspirational. The safeguard held throughout: discoverable is false, so every page carried a noindex directive and robots.txt disallowed every crawler for the whole period.",
           "pages": "293 pages live at kneeschool.com, served from main, all noindexed"
+        },
+        {
+          "ref": "EV-22",
+          "title": "Section 4's page map is provisional and its page count was wrong",
+          "area": "Architecture",
+          "state": "Provisional map in place, replacement needed",
+          "blocker": "Part 1 of the Master Publishing Architecture carries the full page map for Sections 0 to 3 and says so on its own first page. Section 4's map arrives in Part 2, which is not in this repository. What existed instead was outline_1_to_15.json, a bare title list whose own note says a brief generated from it would have no tiers and no must_not_cover list and would be worse than no brief. That note was right. Decision 024 built pages_4.json from Part 1's own tier sentence and authority boundaries rather than from invention, and the build status should say that the map is provisional until Part 2 lands. The page count was also wrong: the outline recorded chapter 4.2's five navigational sub section headings as pages and dropped the 34 four level leaves beneath them, so Section 4 is 227 pages rather than 198. The same extraction produced Sections 1 to 15, so any other section whose source uses four level ids is undercounted the same way and none has been checked.",
+          "needed": "Part 2 of the Master Publishing Architecture, for Section 4's real per page scope, tiers, deeper spiral links and priorities. Separately, a pass over Sections 5 to 15 in the source to find any other chapter organised with four level ids, because the whole site's page count is built from that outline.",
+          "pages": "227 pages in Section 4, 8 published; 11 other sections unverified"
         }
       ]
     },
@@ -662,6 +671,15 @@
           "blocker": "Landmark Biomechanics Papers, the chapter that was held from 9 to 11 October 2026 and is the only one on the site written under a rule invented for it. Each page takes one subject and asks what the studies asked, what they did, what they showed, what they changed, and what to read now. Three disciplines run through it. No page carries a citation, a year, a journal or a page number, which is decision 022 and is enforced by ATTR-001 rather than intended. No page carries a measurement either, which was not planned and follows from the same discipline: a chapter that cannot cite a source has no business quoting a figure, and the figure register gained nothing from these ten pages. And every consultant block is a balance argument under decision 018, which matters more here than elsewhere because a chapter about landmark papers invites a verdict on each one. 3.17.9 is the exception and says so on the page: the architecture asked for the Imperial group's research programme summarised and the page delivers their published work instead, because describing a named group's current work from memory is a different act from writing standard teaching. 3.17.10 collects the seven gaps the other nine pages named and ranks them by what answering them would change.",
           "needed": "Consultant review, and this is the one chapter where the review needs a library rather than only expertise. 52 attributions are listed in the pack with a Citation column, and confirming or correcting them is the work. Three things to check hardest. First, whether the author named beside each finding is the right one, since the whole chapter rests on that pairing. Second, 3.17.9, where the question is not whether the content is right but whether the page should exist in this form, which is the Imperial group's call. Third, 3.17.10's ranking, which is a judgement about clinical consequence rather than a reading of the literature and should be argued with.",
           "pages": "10 published pages, 13,689 body words as the style gate counts them"
+        },
+        {
+          "ref": "W-23",
+          "title": "Section 4 Clinical Examination Academy, chapter 4.1",
+          "area": "Content",
+          "state": "8 of 227 written, style gate passed, awaiting review",
+          "blocker": "The first chapter of Section 4, and the first page on the site built on the examination template that decision 023 invented for it. The type map had pointed examination pages at the anatomy template, whose headings are Structure and Location, Relations, Blood Supply and Innervation, Function and Clinical Relevance, and a page called The Lachman Test has no blood supply. The organising idea of the chapter is that examination is not a cheaper scan: it answers a different question, and the commonest error in knee practice is treating an image as the answer to a question only the examination asked. 4.1.5 is the page a clinician should read before the individual tests rather than after. 4.1.8 argues that the pre-operative record is part of the operation, because a procedure that cannot be audited cannot be improved. No page in the chapter carries a diagnostic accuracy figure, which ACC-001 refuses, so every claim about how good a test is, is written as a comparison.",
+          "needed": "Consultant review, and two structural confirmations before the rest of the section is written. First, the five section examination template: it is invented and no editorial authority has signed it, and 219 pages will be built on it. Second, the tier set: decision 024 took medical student to fellowship from one sentence in Part 1 of the architecture, because Part 2, which carries Section 4's real page map, is not in this build. Beyond those, the claims worth arguing with are the comparative accuracy statements, since they are the ones a reader will act on and the figures behind them were refused rather than retrieved.",
+          "pages": "8 published pages, 9,927 body words as the style gate counts them"
         }
       ]
     }

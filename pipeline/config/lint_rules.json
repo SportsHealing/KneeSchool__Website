@@ -343,6 +343,19 @@
       ]
     },
     {
+      "id": "ACC-001",
+      "severity": "fail",
+      "description": "No bare diagnostic accuracy figure on an examination page: a sensitivity, specificity, predictive value or likelihood ratio written as a number",
+      "applies_when": "the brief's page_type is examination",
+      "source_of_truth": "docs/decisions/023-the-examination-template.md",
+      "notes": [
+        "The same argument as ATTR-001, applied to a different fabricable quantity. For an examination test the comparative pattern is recalled robustly and is standard teaching: Lachman beats anterior drawer, the pivot shift is specific and insensitive, McMurray is specific and insensitive. A specific percentage is recalled alone, nothing in the pattern constrains it, and a wrong one looks exactly like a right one.",
+        "A wrong sensitivity is more dangerous than a wrong anatomical figure, because it changes what a clinician does next with a negative test. That is why this is a fail rather than a warn.",
+        "Angles, distances and grades are untouched. The flexion angle for a Lachman is part of the technique, is not a fabrication risk of this kind, and is registered as a figure under decision 006 like any other measurement.",
+        "The page says the comparison instead, which is what the evidence actually supports from memory, and the reviewer can add the figures once a source exists."
+      ]
+    },
+    {
       "id": "STRUCT-001",
       "severity": "fail",
       "description": "Required blocks present per brief: tier blocks, key learning points, FAQs where required, reference list",

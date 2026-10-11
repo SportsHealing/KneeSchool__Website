@@ -280,13 +280,27 @@ class OutlineIsNotABriefSource(unittest.TestCase):
                  if n.startswith("pages_") and n.endswith(".json")]
         self.assertNotIn("outline_1_to_15.json", names)
 
-    def test_architecture_load_pages_does_not_see_it(self):
-        ids = set(str(p["page_id"]) for p in architecture.load_pages())
-        outline_only = [p["page_id"] for p in self.outline["pages"]
-                        if p["section"]["id"] not in ("1", "2", "3")]
-        self.assertTrue(outline_only)
-        self.assertEqual([p for p in outline_only if p in ids], [],
-                         "an outline only page reached the brief generator")
+    def test_architecture_load_pages_does_not_read_the_outline(self):
+        """The original form of this test compared page ids, on the assumption
+        that any id outside Sections 1 to 3 could only have come from the
+        outline. Decision 024 made that false: pages_4.json supplies Section 4
+        with real tiers and a real must_not_cover list, so its ids are now
+        legitimately in the brief generator. What must stay true is that no page
+        reaching the generator came from the outline file itself."""
+        sources = set(p.get("_source_file") for p in architecture.load_pages())
+        self.assertNotIn("outline_1_to_15.json", sources)
+        self.assertTrue(sources, "the brief generator found no architecture file")
+        for name in sources:
+            self.assertTrue(name and name.startswith("pages_"), name)
+
+    def test_every_page_the_generator_sees_has_tiers_and_a_boundary_list(self):
+        """What the id comparison was actually protecting. A page map file may be
+        added for any section, and this is the property that makes it usable."""
+        thin = []
+        for p in architecture.load_pages():
+            if not p.get("tiers_required") or not p.get("must_not_cover"):
+                thin.append(str(p["page_id"]))
+        self.assertEqual(thin, [])
 
     def test_sections_1_to_3_agree_with_the_page_map(self):
         """The one known exception is 2.12.5, where the upload has a US spelling
