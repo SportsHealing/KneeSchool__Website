@@ -201,6 +201,42 @@
           "blocker": "Part 1 of the Master Publishing Architecture carries the full page map for Sections 0 to 3 and says so on its own first page. Section 4's map arrives in Part 2, which is not in this repository. What existed instead was outline_1_to_15.json, a bare title list whose own note says a brief generated from it would have no tiers and no must_not_cover list and would be worse than no brief. That note was right. Decision 024 built pages_4.json from Part 1's own tier sentence and authority boundaries rather than from invention, and the build status should say that the map is provisional until Part 2 lands. The page count was also wrong: the outline recorded chapter 4.2's five navigational sub section headings as pages and dropped the 34 four level leaves beneath them, so Section 4 is 227 pages rather than 198. The same extraction produced Sections 1 to 15, so any other section whose source uses four level ids is undercounted the same way and none has been checked. Chapter 4.2 has now been written at its correct size of 34 pages, which confirms the renumbering was right and leaves the eleven other sections unchecked.",
           "needed": "Part 2 of the Master Publishing Architecture, for Section 4's real per page scope, tiers, deeper spiral links and priorities. Separately, a pass over Sections 5 to 15 in the source to find any other chapter organised with four level ids, because the whole site's page count is built from that outline.",
           "pages": "227 pages in Section 4, 8 published; 11 other sections unverified"
+        },
+        {
+          "ref": "EV-23",
+          "title": "Section 4 was published and unreachable, and no gate noticed",
+          "area": "Infrastructure",
+          "state": "Fixed, with two tests added",
+          "blocker": "The Clinical Examination Academy's 65 pages passed every gate on this site and could not be reached by browsing. Each page had an inbound link, so an orphan check found nothing, but nothing outside the examination directory linked into it and the section was never added to the ribbon in tools/site_chrome.py. The whole section was an island with no path into it from anywhere a visitor starts, reachable only by typing a URL. Verified against main before the fix: no file outside examination/ contained a link to any page inside it. Six gates and 275 tests did not catch it because the property that matters is reachability from the homepage, not the existence of an inbound link. The client found it by asking to see the pages. Fixed by one line in the ribbon, and by EveryPageIsReachableByClicking, which walks the link graph from index.html and was checked by removing the ribbon line again to confirm it fails.",
+          "needed": "Nothing outstanding. Recorded because the class of bug is more interesting than the instance: a whole section can be built, published, indexed, gated and invisible, and the gates were all measuring something adjacent to the thing that mattered.",
+          "pages": "65 pages were unreachable; all 384 published pages are now reachable from the homepage"
+        },
+        {
+          "ref": "EV-24",
+          "title": "The build notice accumulated one copy per render",
+          "area": "Infrastructure",
+          "state": "Fixed, with a test added",
+          "blocker": "The work in progress notice added under decision 025 sits above the header and is returned by site_chrome.header(). apply_chrome's pattern matched the header alone, so each render prepended another copy rather than replacing the existing one. Three had accumulated on the homepage before it was noticed, and apply_chrome --check reported all 402 pages as drifted because the substitution was not idempotent. This is the third idempotency bug in this repository, after the figure register and the position register, which is why it has a test rather than only a fix.",
+          "needed": "Nothing outstanding. ChromeIsIdempotent asserts one notice per page and that applying the chrome again changes nothing.",
+          "pages": "402 pages were affected and are now correct"
+        },
+        {
+          "ref": "EV-25",
+          "title": "robots.txt named a sitemap that never existed",
+          "area": "Infrastructure",
+          "state": "Fixed, with a test added",
+          "blocker": "robots.txt has named sitemap.xml since the day it was written and the file did not exist. Harmless while discoverable was false, because every crawler was disallowed and none read robots.txt past the Disallow line. It became a 404 for every crawler the moment the client set discoverable true on 12 October 2026, and the site would have been indexed without the map it advertised. The same shape as the other latent bugs here: correct under one setting, wrong under the other, with nothing checking the setting it was wrong under. apply_chrome.py now writes sitemap.xml beside the robots.txt that points at it, so they cannot disagree, and removes it if the site ever returns to not discoverable.",
+          "needed": "Nothing outstanding. sitemap.xml carries 394 urls and test_the_sitemap_agrees_with_the_switch would have caught the absence.",
+          "pages": "394 urls in the sitemap; every published page is listed"
+        },
+        {
+          "ref": "EV-26",
+          "title": "The site is now indexable and nothing on it has been reviewed",
+          "area": "Governance",
+          "state": "Live and indexable, by the client's decision",
+          "blocker": "The client set discoverable true on 12 October 2026, taking responsibility and asking for a disclaimer, which decision 026 records in their words. Search engines may now index 2,139 unsigned clinical recommendations and 448 unchecked measurements, and a reader can arrive from a search rather than from a link given by somebody who could warn them. Three notices stand between them and the content: the work in progress band on every page, the per page status line, and the reference note. None of them is review. Indexing is not fully reversible, because a page can stay cached after it is removed from the site.",
+          "needed": "The same thing as before, and now more urgently: a consultant through the review packs. 43 chapters are current and nothing has been signed. This entry exists so the cost of the decision is visible next to the work that would retire it.",
+          "pages": "Every page on the site is indexable and unreviewed"
         }
       ]
     },

@@ -90,6 +90,23 @@ h1,h2,h3,p,li,a{overflow-wrap:break-word}
 .dark .eyebrow{color:var(--gold)}
 
 /* ---------- header ---------- */
+/* The work in progress notice, above the ribbon on every page. Asked for by the
+   client on 12 October 2026 so every produced page could be made visible while
+   still telling a visitor what they are looking at. It uses --warn rather than
+   the gold, because this is a caution rather than a label, and it is not sticky:
+   it should be read once at the top rather than following the reader down a
+   page it has nothing further to say about. */
+.build-notice{background:var(--warn);color:var(--white);font-size:.84rem;
+  line-height:1.45;padding:.6rem 0}
+.build-notice strong{color:var(--white);letter-spacing:.02em;
+  text-transform:uppercase;font-size:.78rem;margin-right:.25rem}
+.build-notice a{color:var(--white);text-decoration:underline;
+  text-underline-offset:2px;white-space:nowrap}
+.build-notice a:hover{text-decoration-thickness:2px}
+@media (max-width:640px){
+  .build-notice{font-size:.8rem;padding:.55rem 0}
+}
+
 .site-head{background:var(--green-deep);color:var(--ivory);position:sticky;top:0;z-index:20;border-bottom:1px solid var(--line-pale)}
 .head-in{display:flex;align-items:center;gap:1.5rem;min-height:3.9rem;flex-wrap:wrap}
 .brand{font-family:var(--body);font-size:1.55rem;font-weight:700;letter-spacing:-.01em;text-decoration:none;color:var(--ivory);margin-right:auto;white-space:nowrap}
