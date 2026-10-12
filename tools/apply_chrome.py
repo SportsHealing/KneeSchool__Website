@@ -20,7 +20,14 @@ sys.path.insert(0, os.path.join(ROOT, "tools"))
 import site_chrome as chrome  # noqa: E402
 
 SKIP_DIRS = {".git", "pipeline", "docs", "node_modules", "assets"}
-HEADER = re.compile(r'<header class="site-head">.*?</header>\n', re.DOTALL)
+# The work in progress notice sits above the header and is part of what
+# site_chrome.header() returns, so the pattern has to swallow an existing one or
+# the substitution prepends a second copy on every render. It did: three copies
+# accumulated on index.html before anyone looked, and apply_chrome --check
+# reported every page as drifted because the replacement was not idempotent.
+HEADER = re.compile(
+    r'(?:<div class="build-notice".*?</div>\n</div>\n)?'
+    r'<header class="site-head">.*?</header>\n', re.DOTALL)
 FOOTER = re.compile(r'<footer class="site-foot"[^>]*>.*?</footer>\n', re.DOTALL)
 # The stylesheet link lives in <head>, which the header replacement does not
 # reach, so its cache busting version is rewritten separately.

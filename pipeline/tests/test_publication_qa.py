@@ -3,8 +3,10 @@ Operations Handbook. These tests hold its rules against known good and known bad
 markup, and hold the live site at zero findings.
 """
 
+import io
 import json
 import os
+import re
 import subprocess
 import sys
 import unittest
@@ -206,3 +208,115 @@ class PublicationPosture(unittest.TestCase):
         finally:
             with open(path, "w", encoding="utf-8") as fh:
                 fh.write(original)
+
+
+class EveryPageIsReachableByClicking(unittest.TestCase):
+    """A page nobody can navigate to is not published, whatever the index says.
+
+    Section 4's 65 pages passed every gate on this site and were unreachable from
+    the homepage, because the Clinical Examination Academy was never added to the
+    ribbon and nothing outside its own directory linked to it. They formed an
+    island: every page had an inbound link, so an orphan check found nothing, and
+    no path led into the island from anywhere a visitor starts.
+
+    The client found it by asking to see the pages. No gate did.
+    """
+
+    @staticmethod
+    def _links(path, here):
+        with io.open(path, encoding="utf-8", errors="replace") as fh:
+            html = fh.read()
+        out = set()
+        for m in re.finditer(r'href="([^"#?]+\.html)"', html):
+            target = os.path.normpath(os.path.join(here, m.group(1)))
+            out.add(target.replace(os.sep, "/"))
+        return out
+
+    def _graph(self):
+        adjacency = {}
+        for root, dirs, files in os.walk(REPO):
+            dirs[:] = [d for d in dirs
+                       if d not in (".git", "pipeline", "docs", "node_modules")]
+            for name in files:
+                if not name.endswith(".html"):
+                    continue
+                full = os.path.join(root, name)
+                page = os.path.relpath(full, REPO).replace(os.sep, "/")
+                adjacency[page] = self._links(full, os.path.dirname(page))
+        return adjacency
+
+    def test_every_published_page_is_reachable_from_the_homepage(self):
+        adjacency = self._graph()
+        self.assertIn("index.html", adjacency, "no homepage to start from")
+
+        seen, stack = {"index.html"}, ["index.html"]
+        while stack:
+            for target in adjacency.get(stack.pop(), ()):
+                if target not in seen:
+                    seen.add(target)
+                    stack.append(target)
+
+        with open(os.path.join(REPO, "pipeline", "config",
+                               "published_pages.json")) as fh:
+            published = json.load(fh)
+        pages = published.get("pages", published)
+
+        unreachable = []
+        for page_id, value in sorted(pages.items()):
+            out = value if isinstance(value, str) else value.get("out")
+            if out and out not in seen:
+                unreachable.append("%s (%s)" % (page_id, out))
+        self.assertEqual(unreachable, [])
+
+
+class ChromeIsIdempotent(unittest.TestCase):
+    """Rendering twice must not change anything the first render produced.
+
+    The build notice was added above the header, and apply_chrome's pattern
+    matched the header alone, so each render prepended another copy. Three had
+    accumulated on the homepage before anyone looked, and the clean tree check
+    in `make verify` was the thing that would eventually have caught it. This
+    is the third idempotency bug in this repository, after the figure register
+    and the position register, so it earns a test rather than a fix.
+    """
+
+    def test_one_notice_per_page(self):
+        bad = []
+        for root, dirs, files in os.walk(REPO):
+            dirs[:] = [d for d in dirs
+                       if d not in (".git", "pipeline", "docs", "node_modules")]
+            for name in files:
+                if not name.endswith(".html"):
+                    continue
+                full = os.path.join(root, name)
+                with io.open(full, encoding="utf-8", errors="replace") as fh:
+                    count = fh.read().count('class="build-notice"')
+                if count != 1:
+                    bad.append("%s: %d" % (os.path.relpath(full, REPO), count))
+        self.assertEqual(sorted(bad), [])
+
+    def test_applying_chrome_again_changes_nothing(self):
+        out = subprocess.run(
+            [sys.executable, os.path.join(REPO, "tools", "apply_chrome.py"), "--check"],
+            capture_output=True, text=True, cwd=REPO)
+        self.assertEqual(out.returncode, 0, out.stdout)
+
+
+class EveryPageCarriesTheBuildNotice(unittest.TestCase):
+    """The client asked on 12 October 2026 for every produced page to be visible
+    with a disclaimer saying the site is in progress. A disclaimer that is on most
+    pages is not a disclaimer, so this checks all of them."""
+
+    def test_the_notice_is_on_every_page(self):
+        missing = []
+        for root, dirs, files in os.walk(REPO):
+            dirs[:] = [d for d in dirs
+                       if d not in (".git", "pipeline", "docs", "node_modules")]
+            for name in files:
+                if not name.endswith(".html"):
+                    continue
+                full = os.path.join(root, name)
+                with io.open(full, encoding="utf-8", errors="replace") as fh:
+                    if "build-notice" not in fh.read():
+                        missing.append(os.path.relpath(full, REPO))
+        self.assertEqual(sorted(missing), [])

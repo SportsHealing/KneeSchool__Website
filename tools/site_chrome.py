@@ -85,6 +85,7 @@ RIBBON = [
         ("The knee encyclopaedia", "encyclopaedia/index.html"),
         ("The Anatomy Academy", "anatomy/index.html"),
         ("The Biomechanics Academy", "biomechanics/index.html"),
+        ("The Clinical Examination Academy", "examination/index.html"),
         ("Conditions library", "conditions/index.html"),
         ("Whole body factors", "encyclopaedia/whole-body.html"),
     ]),
@@ -170,6 +171,31 @@ def head(title, description, rel, extra_meta="", canonical=None):
        extra_meta, FONT_LINKS, rel, stylesheet_version())
 
 
+# The client asked on 12 October 2026 for every produced page to be visible on
+# the site, with a disclaimer saying it is in progress. This is that disclaimer.
+# It sits in the header so it appears on every page from one definition, above
+# the navigation rather than below it, because a notice a reader scrolls past is
+# a notice that was not given.
+#
+# It says three things and no more: the site is unfinished, no page has been
+# reviewed by a clinician, and it is not for clinical use or for treating your
+# own knee. Each page already carries its own status line; this is the one a
+# visitor sees before they have read anything.
+BUILD_NOTICE = (
+    "This site is being built in the open. No page on it has yet been reviewed "
+    "by a clinician, every page says so, and nothing here is medical advice or "
+    "a substitute for seeing someone about your knee.")
+
+
+def build_banner(rel):
+    return """<div class="build-notice" role="note">
+  <div class="wrap">
+    <strong>Work in progress.</strong> %s <a href="%s">What that means</a>
+  </div>
+</div>
+""" % (BUILD_NOTICE, _href("about/status.html", rel))
+
+
 def header(rel):
     home = "index.html" if rel == "" else rel + "index.html"
     groups = []
@@ -188,7 +214,7 @@ def header(rel):
     # on this site is written seven times and the reader has to pick one.
     groups.append('        <li><a class="start-link" href="%s">Find your level</a></li>'
                   % _href("index.html#levels", rel))
-    return """<header class="site-head">
+    return """%s<header class="site-head">
   <div class="wrap head-in">
     <a class="brand" href="%s"><b>Knee</b><span>School</span></a>
     <input class="nav-toggle" type="checkbox" id="navtoggle" aria-label="Show navigation">
@@ -200,7 +226,7 @@ def header(rel):
     </nav>
   </div>
 </header>
-""" % (home, "\n".join(groups))
+""" % (build_banner(rel), home, "\n".join(groups))
 
 
 def footer(rel):
