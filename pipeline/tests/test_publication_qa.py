@@ -374,3 +374,65 @@ class EveryPageCarriesTheBuildNotice(unittest.TestCase):
                     if "build-notice" not in fh.read():
                         missing.append(os.path.relpath(full, REPO))
         self.assertEqual(sorted(missing), [])
+
+
+class TheBuildStatusPageAgreesWithTheRegisters(unittest.TestCase):
+    """about/status.html quotes the register totals, and those numbers used to be
+    typed into docs/build_status.json.
+
+    By the time chapter 4.11 was written the page was telling a reader there were
+    448 unchecked measurements against a register holding 462, that 32 chapters
+    carried unsigned recommendations when 37 did, and that the largest was 3.7
+    when it was 4.2. Nobody introduced any of that. The prose was right when it
+    was written and the registers moved underneath it, which is the same failure
+    the figure register itself was built to end.
+
+    The numbers now come from the registers through {{token}} substitution, so
+    this holds the substitution rather than the numbers: no token survives into
+    the page, every token the data file uses is one the tool knows, and the
+    totals the page prints are the totals the registers hold.
+    """
+
+    def setUp(self):
+        sys.path.insert(0, os.path.join(REPO, "tools"))
+        import build_status
+        self.mod = build_status
+        with io.open(os.path.join(REPO, "about", "status.html"),
+                     encoding="utf-8") as fh:
+            self.page = fh.read()
+        with io.open(os.path.join(REPO, "docs", "build_status.json"),
+                     encoding="utf-8") as fh:
+            self.data = fh.read()
+
+    def test_no_token_reaches_the_page(self):
+        self.assertEqual(self.mod.TOKEN.findall(self.page), [])
+
+    def test_every_token_in_the_data_file_is_one_the_tool_fills(self):
+        known = set(self.mod.register_counts())
+        used = set(self.mod.TOKEN.findall(self.data))
+        self.assertTrue(used, "the data file no longer uses any register token")
+        self.assertEqual(sorted(used - known), [])
+
+    def test_the_page_prints_the_sentences_the_registers_make(self):
+        """Every tokenised sentence, filled in, appears on the page.
+
+        Checking that the page contains the string "462" somewhere is not this
+        test: the first version of it did, and it passed against a page that said
+        448 unchecked measurements, because 462 happened to appear in another
+        sentence. Each tokenised sentence is filled and looked for whole.
+        """
+        import html
+        counts = self.mod.register_counts()
+        data = json.loads(self.data)
+        missing = []
+        for group in data["groups"]:
+            for item in group["items"]:
+                for field, value in item.items():
+                    if not isinstance(value, str):
+                        continue
+                    if not self.mod.TOKEN.search(value):
+                        continue
+                    want = html.escape(self.mod.fill(value, counts), quote=False)
+                    if want not in self.page:
+                        missing.append("%s %s" % (item.get("ref"), field))
+        self.assertEqual(sorted(missing), [])

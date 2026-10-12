@@ -21,7 +21,7 @@
           "area": "Content pipeline",
           "state": "Mechanism built, nothing signed",
           "blocker": "The client confirmed on 10 October 2026 that consultants are lined up, so the people exist. The mechanism existed only as prose packs in docs/review/ with no way for an answer to come back. tools/review_pack.py now generates one pack per chapter from the work and reads a filled pack back into the registers, so the route exists. What is missing is a reviewer's time.",
-          "needed": "A consultant to work through a chapter. 2,139 clinical recommendations across 316 pages and 448 measurements across 165 are outstanding, none signed, and chapter 3.17 adds 52 attributions to named authors, none checked against a paper. python3 tools/review_pack.py --status prints the breakdown by chapter; 32 chapters carry recommendations, the largest is 3.7 with 152 and the median is 62.",
+          "needed": "A consultant to work through a chapter. {{positions_unsigned}} clinical recommendations across {{position_pages}} pages and {{figures_unchecked}} measurements across {{figure_pages}} are outstanding, none signed, and chapter 3.17 adds {{attributions_unchecked}} attributions to named authors, none checked against a paper. python3 tools/review_pack.py --status prints the breakdown by chapter; {{position_chapters}} chapters carry recommendations, the largest is {{largest_position_chapter}} with {{largest_position_count}} and the median is {{median_position_count}}.",
           "pages": "Every page on the site is an unreviewed editorial draft"
         },
         {
@@ -51,21 +51,21 @@
         },
         {
           "ref": "EV-6",
-          "title": "448 measurements on the site are unchecked",
+          "title": "{{figures_unchecked}} measurements on the site are unchecked",
           "area": "Content",
           "state": "Live and flagged, and the count rose on 12 October 2026 because the scan was wrong",
           "blocker": "They are written from memory because no paper could be retrieved. Each page's references note says so and each figure is registered. The total rose from 381 to 442 on 12 October 2026, not because measurements were added but because the scanner could not see a measurement written in words. rule_fig_001's own docstring asserted that a quantity cannot be written without a digit. Chapter 4.9 disproved it by quoting six flexion angles as \"ninety degrees\" and similar, every one of which escaped the register decision 006 says lists every measurement on the site. 61 had accumulated across the site. The scan now reads a number word carrying a unit, and a bare enumeration such as three structures is still allowed.",
-          "needed": "Someone with source access to work the register: 448 figures across 165 pages, all UNVERIFIED_FROM_MEMORY. tools/figures.py --report --unchecked is the list.",
-          "pages": "165 pages carry at least one measurement"
+          "needed": "Someone with source access to work the register: {{figures_unchecked}} figures across {{figure_pages}} pages, all UNVERIFIED_FROM_MEMORY. tools/figures.py --report --unchecked is the list.",
+          "pages": "{{figure_pages}} pages carry at least one measurement"
         },
         {
           "ref": "EV-7",
-          "title": "2,139 clinical recommendations on the site are unsigned",
+          "title": "{{positions_unsigned}} clinical recommendations on the site are unsigned",
           "area": "Content",
           "state": "Live and registered, and the count rose on 10 October 2026",
           "blocker": "They are written by a process with no clinical qualification, on pages that state they have not been reviewed. The client has chosen to keep them, and decision 007 makes the set finite and listed. The total rose from 976 to 1,295 on 10 October 2026, and chapter 3.12 added 93 more, not because advice was added but because the detector was found to be missing it. POS-001 read clinical direction off a list of imperative openers built from directive prose, and the directions opening with a weighing or a consultation verb had never reached the register. Two extensions of the verb list, decisions 018 and 019, added 319 between them.",
-          "needed": "A consultant to work the register: 2,139 positions across 316 pages, all UNSIGNED. tools/positions.py --report --unsigned is the list. Section 4 is where this count will grow fastest, because an examination page tells a clinician what to do by definition and 185 of its pages are still unwritten.",
-          "pages": "316 pages carry at least one recommendation"
+          "needed": "A consultant to work the register: {{positions_unsigned}} positions across {{position_pages}} pages, all UNSIGNED. tools/positions.py --report --unsigned is the list. Section 4 is where this count will grow fastest, because an examination page tells a clinician what to do by definition and 185 of its pages are still unwritten.",
+          "pages": "{{position_pages}} pages carry at least one recommendation"
         },
         {
           "ref": "EV-8",
@@ -126,7 +126,7 @@
           "title": "Fifty-two study attributions on the site are unchecked",
           "area": "Content pipeline",
           "state": "Writing complete, checking outstanding",
-          "blocker": "This entry used to hold eleven pages. The client ruled on 11 October 2026, \"Write it flagged unverified\", and all eleven are now written: chapter 3.17's ten and page 3.1.8. Decision 022 sets the terms. The finding and the surname a study is taught under may be written, because they are recalled together and either checks the other. The year, the journal, the volume and the page may not, because they are recalled alone and a wrong one cannot be told from a right one. ATTR-001 refuses all six fabricable shapes at the gate and ATTR-002 requires every named attribution to be in a register. Nothing is held for source access any more. What is outstanding is the checking: 52 attributions across nine pages, every one from memory, and some of them will be wrong.",
+          "blocker": "This entry used to hold eleven pages. The client ruled on 11 October 2026, \"Write it flagged unverified\", and all eleven are now written: chapter 3.17's ten and page 3.1.8. Decision 022 sets the terms. The finding and the surname a study is taught under may be written, because they are recalled together and either checks the other. The year, the journal, the volume and the page may not, because they are recalled alone and a wrong one cannot be told from a right one. ATTR-001 refuses all six fabricable shapes at the gate and ATTR-002 requires every named attribution to be in a register. Nothing is held for source access any more. What is outstanding is the checking: {{attributions_unchecked}} attributions across {{attribution_pages}} pages, every one from memory, and some of them will be wrong.",
           "needed": "Someone with a library to work the attribution register: 52 entries, all UNVERIFIED_FROM_MEMORY. tools/attributions.py --report --unchecked is the list, and the chapter 3.17 review pack carries the same rows with a Citation column, which is the one field this process could not fill. Separately, page 3.17.9 needs a ruling from the Imperial group itself: the architecture asked for their research programme summarised and the page delivers their published work instead, which is less, and whether a page bearing an institution's name should exist in that form is their call rather than this process's.",
           "pages": "11 pages published, 9 of them carrying unchecked attributions"
         },
@@ -226,17 +226,26 @@
           "area": "Infrastructure",
           "state": "Fixed, with a test added",
           "blocker": "robots.txt has named sitemap.xml since the day it was written and the file did not exist. Harmless while discoverable was false, because every crawler was disallowed and none read robots.txt past the Disallow line. It became a 404 for every crawler the moment the client set discoverable true on 12 October 2026, and the site would have been indexed without the map it advertised. The same shape as the other latent bugs here: correct under one setting, wrong under the other, with nothing checking the setting it was wrong under. apply_chrome.py now writes sitemap.xml beside the robots.txt that points at it, so they cannot disagree, and removes it if the site ever returns to not discoverable.",
-          "needed": "Nothing outstanding. sitemap.xml carries 394 urls and test_the_sitemap_agrees_with_the_switch would have caught the absence.",
-          "pages": "394 urls in the sitemap; every published page is listed"
+          "needed": "Nothing outstanding. sitemap.xml carries {{sitemap_urls}} urls and test_the_sitemap_agrees_with_the_switch would have caught the absence.",
+          "pages": "{{sitemap_urls}} urls in the sitemap; every published page is listed"
         },
         {
           "ref": "EV-26",
           "title": "The site is now indexable and nothing on it has been reviewed",
           "area": "Governance",
           "state": "Live and indexable, by the client's decision",
-          "blocker": "The client set discoverable true on 12 October 2026, taking responsibility and asking for a disclaimer, which decision 026 records in their words. Search engines may now index 2,139 unsigned clinical recommendations and 448 unchecked measurements, and a reader can arrive from a search rather than from a link given by somebody who could warn them. Three notices stand between them and the content: the work in progress band on every page, the per page status line, and the reference note. None of them is review. Indexing is not fully reversible, because a page can stay cached after it is removed from the site.",
-          "needed": "The same thing as before, and now more urgently: a consultant through the review packs. 43 chapters are current and nothing has been signed. This entry exists so the cost of the decision is visible next to the work that would retire it.",
+          "blocker": "The client set discoverable true on 12 October 2026, taking responsibility and asking for a disclaimer, which decision 026 records in their words. Search engines may now index {{positions_unsigned}} unsigned clinical recommendations and {{figures_unchecked}} unchecked measurements, and a reader can arrive from a search rather than from a link given by somebody who could warn them. Three notices stand between them and the content: the work in progress band on every page, the per page status line, and the reference note. None of them is review. Indexing is not fully reversible, because a page can stay cached after it is removed from the site.",
+          "needed": "The same thing as before, and now more urgently: a consultant through the review packs. {{review_pack_chapters}} chapters are current and nothing has been signed. This entry exists so the cost of the decision is visible next to the work that would retire it.",
           "pages": "Every page on the site is indexable and unreviewed"
+        },
+        {
+          "ref": "EV-27",
+          "title": "The build status page quoted register totals that had fallen behind",
+          "area": "Infrastructure",
+          "state": "Fixed, with a test added",
+          "blocker": "This page tells a reader how much unchecked work the site carries, and until chapter 4.11 those numbers were typed into docs/build_status.json by whoever last edited it. They were right when written and wrong by the next chapter. At the point it was found the page said 448 unchecked measurements against a register holding 462, 2,139 unsigned recommendations against 2,149, that 32 chapters carried recommendations when 37 did, and that the largest was 3.7 with 152 when it was 4.2 with 191. The understatement was the problem: the page exists so the scale of unreviewed content is visible, and it was understating it. Same failure as the hand compiled figure list that decision 006 replaced, so it has the same answer. Every one of those numbers is now a placeholder filled from the registers when the page is built.",
+          "needed": "Nothing outstanding. TheBuildStatusPageAgreesWithTheRegisters fills every tokenised sentence from the live registers and looks for it whole on the page, so a register that moves without the page being rebuilt fails the suite. The first version of that test matched on the bare number and passed against a stale page, which is why it matches sentences.",
+          "pages": "about/status.html, generated from docs/build_status.json"
         }
       ]
     },
@@ -469,7 +478,7 @@
           "state": "Applied",
           "blocker": "A consultant filling eighty five cells wants a column to tab down, not a markdown table, and a printed pack for a meeting wants to be a document.",
           "needed": "Nothing. Every pack generates as markdown, a spreadsheet and a Word file from the same data, all carrying the same row references, and --ingest reads any of them. Two faults were found while verifying: python-docx writes a schema-invalid settings.xml, now corrected, and LibreOffice does not work in this container, so the workbook sets fullCalcOnLoad and the Word file is verified structurally rather than rendered. See decision 017.",
-          "pages": "docs/review/packs/, markdown for all 32 chapters and both binaries for 3.2 to 3.10"
+          "pages": "docs/review/packs/, markdown for all {{review_pack_chapters}} chapters and both binaries for 3.2 to 3.10"
         },
         {
           "ref": "D-018",
@@ -705,7 +714,7 @@
           "area": "Content",
           "state": "All 10 pages written, style gate passed, awaiting review",
           "blocker": "Landmark Biomechanics Papers, the chapter that was held from 9 to 11 October 2026 and is the only one on the site written under a rule invented for it. Each page takes one subject and asks what the studies asked, what they did, what they showed, what they changed, and what to read now. Three disciplines run through it. No page carries a citation, a year, a journal or a page number, which is decision 022 and is enforced by ATTR-001 rather than intended. No page carries a measurement either, which was not planned and follows from the same discipline: a chapter that cannot cite a source has no business quoting a figure, and the figure register gained nothing from these ten pages. And every consultant block is a balance argument under decision 018, which matters more here than elsewhere because a chapter about landmark papers invites a verdict on each one. 3.17.9 is the exception and says so on the page: the architecture asked for the Imperial group's research programme summarised and the page delivers their published work instead, because describing a named group's current work from memory is a different act from writing standard teaching. 3.17.10 collects the seven gaps the other nine pages named and ranks them by what answering them would change.",
-          "needed": "Consultant review, and this is the one chapter where the review needs a library rather than only expertise. 52 attributions are listed in the pack with a Citation column, and confirming or correcting them is the work. Three things to check hardest. First, whether the author named beside each finding is the right one, since the whole chapter rests on that pairing. Second, 3.17.9, where the question is not whether the content is right but whether the page should exist in this form, which is the Imperial group's call. Third, 3.17.10's ranking, which is a judgement about clinical consequence rather than a reading of the literature and should be argued with.",
+          "needed": "Consultant review, and this is the one chapter where the review needs a library rather than only expertise. {{attributions_unchecked}} attributions are listed in the pack with a Citation column, and confirming or correcting them is the work. Three things to check hardest. First, whether the author named beside each finding is the right one, since the whole chapter rests on that pairing. Second, 3.17.9, where the question is not whether the content is right but whether the page should exist in this form, which is the Imperial group's call. Third, 3.17.10's ranking, which is a judgement about clinical consequence rather than a reading of the literature and should be argued with.",
           "pages": "10 published pages, 13,689 body words as the style gate counts them"
         },
         {
