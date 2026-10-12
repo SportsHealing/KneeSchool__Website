@@ -11,6 +11,7 @@ in the site check catches a page that fell behind.
 """
 
 import argparse
+import json
 import os
 import re
 import sys
@@ -62,6 +63,73 @@ def pages():
 def rel_for(path):
     depth = os.path.relpath(path, ROOT).count(os.sep)
     return "../" * depth
+
+
+def write_sitemap(check_only):
+    """sitemap.xml, from the published page index.
+
+    robots.txt has named a sitemap since the day it was written and the file
+    never existed. That was harmless while every crawler was disallowed, because
+    none of them read robots.txt to the end, and it became a 404 for every
+    crawler the moment discoverable was set true on 12 October 2026. Same shape
+    as the other latent bugs in this repository: correct under one setting and
+    wrong under the other, with nothing checking the setting it was wrong under.
+
+    Written here rather than in its own tool so it cannot disagree with the
+    robots.txt that points at it. Removed when the site is not discoverable, for
+    the same reason: a sitemap offered to crawlers that are disallowed is a
+    contradiction.
+    """
+    cfg = chrome.site_config()
+    path = os.path.join(ROOT, "sitemap.xml")
+    if not cfg.get("discoverable"):
+        if os.path.exists(path):
+            if check_only:
+                print("  DRIFTED  sitemap.xml (present while not discoverable)")
+                return True
+            os.remove(path)
+            print("  removed  sitemap.xml")
+        return False
+
+    with open(os.path.join(ROOT, "pipeline", "config",
+                           "published_pages.json"), encoding="utf-8") as fh:
+        published = json.load(fh)
+    pages = published.get("pages", published)
+    outs = sorted({(v if isinstance(v, str) else v.get("out"))
+                   for v in pages.values()} - {None})
+    # The homepage and the section indexes are not in the published page index,
+    # because that index lists articles. A sitemap that omits the pages a reader
+    # actually lands on is not a sitemap.
+    for extra in ("index.html", "anatomy/index.html", "biomechanics/index.html",
+                  "examination/index.html", "encyclopaedia/index.html",
+                  "conditions/index.html", "practise/index.html",
+                  "about/status.html", "about/standards.html",
+                  "about/curriculum.html"):
+        if os.path.exists(os.path.join(ROOT, extra)) and extra not in outs:
+            outs.append(extra)
+    outs.sort()
+
+    base = cfg["base_url"]
+    lines = ['<?xml version="1.0" encoding="UTF-8"?>',
+             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    for out in outs:
+        lines.append("  <url><loc>%s%s</loc></url>" % (base, out))
+    lines.append("</urlset>")
+    body = "\n".join(lines) + "\n"
+
+    existing = ""
+    if os.path.exists(path):
+        with open(path, encoding="utf-8") as fh:
+            existing = fh.read()
+    if existing == body:
+        return False
+    if check_only:
+        print("  DRIFTED  sitemap.xml")
+        return True
+    with open(path, "w", encoding="utf-8") as fh:
+        fh.write(body)
+    print("  written  sitemap.xml (%d urls)" % len(outs))
+    return False
 
 
 def write_robots_txt(check_only):
@@ -160,6 +228,7 @@ def main():
             changed.append(os.path.relpath(path, ROOT))
 
     write_robots_txt(args.check)
+    write_sitemap(args.check)
 
     for name in skipped:
         print("  skipped (no header or footer to replace): %s" % name)

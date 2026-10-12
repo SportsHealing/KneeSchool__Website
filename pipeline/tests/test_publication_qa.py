@@ -156,16 +156,53 @@ class PublicationPosture(unittest.TestCase):
         self.cfg = chrome.site_config()
         self.rel = "levels/junior.html"
 
-    def test_the_site_is_currently_not_publicised(self):
-        self.assertFalse(self.cfg.get("discoverable"))
+    def test_the_posture_is_a_deliberate_boolean(self):
+        """This used to assert the flag was false, which made it a test of one
+        moment rather than of the mechanism. The client set it true on 12 October
+        2026 under decision 026, taking responsibility for publishing unreviewed
+        material behind the work in progress notice. What must stay true is that
+        the value is set deliberately and that everything else agrees with it,
+        which the tests below check."""
+        self.assertIn(self.cfg.get("discoverable"), (True, False))
+        self.assertTrue((self.cfg.get("discoverable_note") or "").strip(),
+                        "the switch has no recorded reason")
 
-    def test_every_page_carries_the_directive(self):
+    def test_every_page_agrees_with_the_switch(self):
         out = subprocess.run(
             [sys.executable, os.path.join(REPO, "tools", "publication_qa.py")],
             capture_output=True, text=True, cwd=REPO)
         self.assertEqual(out.returncode, 0, out.stdout)
         with open(os.path.join(REPO, "index.html"), encoding="utf-8") as fh:
-            self.assertIn('name="robots" content="noindex, nofollow"', fh.read())
+            html = fh.read()
+        directive = 'name="robots" content="noindex, nofollow"'
+        if self.cfg.get("discoverable"):
+            self.assertNotIn(directive, html)
+        else:
+            self.assertIn(directive, html)
+
+    def test_the_sitemap_agrees_with_the_switch(self):
+        """robots.txt has named a sitemap since it was written and the file never
+        existed. Harmless while every crawler was disallowed and a 404 for every
+        crawler once the site became discoverable."""
+        path = os.path.join(REPO, "sitemap.xml")
+        if not self.cfg.get("discoverable"):
+            self.assertFalse(os.path.exists(path),
+                             "a sitemap offered to crawlers that are disallowed")
+            return
+        self.assertTrue(os.path.exists(path), "robots.txt names a sitemap that is absent")
+        with io.open(path, encoding="utf-8") as fh:
+            body = fh.read()
+        with open(os.path.join(REPO, "pipeline", "config",
+                               "published_pages.json")) as fh:
+            pages = json.load(fh)
+        pages = pages.get("pages", pages)
+        missing = []
+        for page_id, value in sorted(pages.items()):
+            out_path = value if isinstance(value, str) else value.get("out")
+            if out_path and ("<loc>%s%s</loc>"
+                             % (self.cfg["base_url"], out_path)) not in body:
+                missing.append(page_id)
+        self.assertEqual(missing, [])
 
     def test_robots_txt_agrees_with_the_switch(self):
         with open(os.path.join(REPO, "robots.txt"), encoding="utf-8") as fh:
@@ -175,28 +212,45 @@ class PublicationPosture(unittest.TestCase):
         else:
             self.assertIn("Disallow: /", body)
 
-    def test_the_rule_catches_a_page_missing_the_directive(self):
+    # PUB-010 is tested against explicit configurations rather than the live one,
+    # so both postures stay covered whichever one the site is in. These two tests
+    # previously used self.cfg and silently changed meaning when the client set
+    # discoverable true on 12 October 2026: one stopped exercising the rule and
+    # the other asserted a half flip in the direction that was no longer the
+    # dangerous one.
+
+    def test_the_rule_catches_a_page_missing_the_directive_when_not_discoverable(self):
         pg = page()
         pg.meta.pop("robots", None)
-        out = pq.pub_010(self.rel, pg, self.cfg, {})
+        out = pq.pub_010(self.rel, pg, dict(self.cfg, discoverable=False), {})
         self.assertTrue(out and out[0].startswith("no robots noindex"), out)
 
-    def test_the_rule_catches_a_stray_directive_once_discoverable(self):
+    def test_the_rule_catches_a_stray_directive_when_discoverable(self):
         pg = page()
         pg.meta["robots"] = "noindex, nofollow"
-        cfg = dict(self.cfg)
-        cfg["discoverable"] = True
-        out = pq.pub_010(self.rel, pg, cfg, {})
+        out = pq.pub_010(self.rel, pg, dict(self.cfg, discoverable=True), {})
         self.assertTrue(out and "but site.json says the site is discoverable" in out[0])
 
+    def test_a_page_with_no_directive_is_fine_when_discoverable(self):
+        pg = page()
+        pg.meta.pop("robots", None)
+        self.assertEqual(pq.pub_010(self.rel, pg, dict(self.cfg, discoverable=True), {}), [])
+
+    def test_a_page_with_the_directive_is_fine_when_not_discoverable(self):
+        pg = page()
+        pg.meta["robots"] = "noindex, nofollow"
+        self.assertEqual(pq.pub_010(self.rel, pg, dict(self.cfg, discoverable=False), {}), [])
+
     def test_flipping_the_switch_without_applying_chrome_fails_the_gate(self):
-        """The half flip is the failure worth catching: a config that says
-        discoverable and 155 pages that still say noindex."""
+        """The half flip is the failure worth catching: site.json and the pages
+        disagreeing. The dangerous direction depends on where the site currently
+        is, so this flips whichever way is currently inconsistent and expects the
+        gate to refuse it."""
         path = os.path.join(ROOT, "config", "site.json")
         with open(path, encoding="utf-8") as fh:
             original = fh.read()
         cfg = json.loads(original)
-        cfg["discoverable"] = True
+        cfg["discoverable"] = not cfg.get("discoverable")
         try:
             with open(path, "w", encoding="utf-8") as fh:
                 json.dump(cfg, fh, indent=2)
