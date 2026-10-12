@@ -87,6 +87,15 @@
       "source": ""
     },
     {
+      "as_written": "two centimetres",
+      "tier": "mrcs",
+      "section": "Clinical Relevance",
+      "claim": "The lateral side is three primary structures within two centimetres of each other.",
+      "occurrences": 2,
+      "verification": "UNVERIFIED_FROM_MEMORY",
+      "source": ""
+    },
+    {
       "as_written": "18 mm",
       "tier": "frcs",
       "section": "Relations",

@@ -2173,6 +2173,72 @@
       "parent": "Clinical Examination Academy|index.html",
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
+    },
+    "4.9.1": {
+      "out": "examination/meniscal-clinical-presentation.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.9.2": {
+      "out": "examination/meniscal-joint-line-tenderness.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.9.3": {
+      "out": "examination/mcmurray-test.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.9.4": {
+      "out": "examination/thessaly-test.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.9.5": {
+      "out": "examination/apley-compression-test.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.9.6": {
+      "out": "examination/childress-squat-test.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.9.7": {
+      "out": "examination/ege-test.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.9.8": {
+      "out": "examination/confirming-a-mechanical-block.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.9.9": {
+      "out": "examination/meniscal-root-tears.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.9.10": {
+      "out": "examination/meniscal-deficiency.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.9.11": {
+      "out": "examination/meniscal-examination-in-oa.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
     }
   },
   "withheld": {

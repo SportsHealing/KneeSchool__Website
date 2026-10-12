@@ -15,6 +15,15 @@
       "source": ""
     },
     {
+      "as_written": "one degree",
+      "tier": "mrcs",
+      "section": "The Principle",
+      "claim": "The pattern is a coupled motion, so it cannot be produced or measured by loading one degree of freedom.",
+      "occurrences": 2,
+      "verification": "UNVERIFIED_FROM_MEMORY",
+      "source": ""
+    },
+    {
       "as_written": "30 and 90 degrees",
       "tier": "mrcs",
       "section": "At the Knee",

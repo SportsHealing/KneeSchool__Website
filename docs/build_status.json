@@ -21,7 +21,7 @@
           "area": "Content pipeline",
           "state": "Mechanism built, nothing signed",
           "blocker": "The client confirmed on 10 October 2026 that consultants are lined up, so the people exist. The mechanism existed only as prose packs in docs/review/ with no way for an answer to come back. tools/review_pack.py now generates one pack per chapter from the work and reads a filled pack back into the registers, so the route exists. What is missing is a reviewer's time.",
-          "needed": "A consultant to work through a chapter. 2,054 clinical recommendations across 294 pages and 381 measurements across 136 are outstanding, none signed, and chapter 3.17 adds 52 attributions to named authors, none checked against a paper. python3 tools/review_pack.py --status prints the breakdown by chapter; 32 chapters carry recommendations, the largest is 3.7 with 152 and the median is 62.",
+          "needed": "A consultant to work through a chapter. 2,087 clinical recommendations across 305 pages and 442 measurements across 161 are outstanding, none signed, and chapter 3.17 adds 52 attributions to named authors, none checked against a paper. python3 tools/review_pack.py --status prints the breakdown by chapter; 32 chapters carry recommendations, the largest is 3.7 with 152 and the median is 62.",
           "pages": "Every page on the site is an unreviewed editorial draft"
         },
         {
@@ -51,21 +51,21 @@
         },
         {
           "ref": "EV-6",
-          "title": "381 measurements on the site are unchecked",
+          "title": "442 measurements on the site are unchecked",
           "area": "Content",
-          "state": "Live and flagged",
-          "blocker": "They are written from memory because no paper could be retrieved. Each page's references note says so and each figure is registered.",
-          "needed": "Someone with source access to work the register: 381 figures across 136 pages, all UNVERIFIED_FROM_MEMORY. tools/figures.py --report --unchecked is the list.",
-          "pages": "136 pages carry at least one measurement"
+          "state": "Live and flagged, and the count rose on 12 October 2026 because the scan was wrong",
+          "blocker": "They are written from memory because no paper could be retrieved. Each page's references note says so and each figure is registered. The total rose from 381 to 442 on 12 October 2026, not because measurements were added but because the scanner could not see a measurement written in words. rule_fig_001's own docstring asserted that a quantity cannot be written without a digit. Chapter 4.9 disproved it by quoting six flexion angles as \"ninety degrees\" and similar, every one of which escaped the register decision 006 says lists every measurement on the site. 61 had accumulated across the site. The scan now reads a number word carrying a unit, and a bare enumeration such as three structures is still allowed.",
+          "needed": "Someone with source access to work the register: 442 figures across 161 pages, all UNVERIFIED_FROM_MEMORY. tools/figures.py --report --unchecked is the list.",
+          "pages": "161 pages carry at least one measurement"
         },
         {
           "ref": "EV-7",
-          "title": "2,054 clinical recommendations on the site are unsigned",
+          "title": "2,087 clinical recommendations on the site are unsigned",
           "area": "Content",
           "state": "Live and registered, and the count rose on 10 October 2026",
           "blocker": "They are written by a process with no clinical qualification, on pages that state they have not been reviewed. The client has chosen to keep them, and decision 007 makes the set finite and listed. The total rose from 976 to 1,295 on 10 October 2026, and chapter 3.12 added 93 more, not because advice was added but because the detector was found to be missing it. POS-001 read clinical direction off a list of imperative openers built from directive prose, and the directions opening with a weighing or a consultation verb had never reached the register. Two extensions of the verb list, decisions 018 and 019, added 319 between them.",
-          "needed": "A consultant to work the register: 2,054 positions across 294 pages, all UNSIGNED. tools/positions.py --report --unsigned is the list. Section 4 is where this count will grow fastest, because an examination page tells a clinician what to do by definition and 185 of its pages are still unwritten.",
-          "pages": "294 pages carry at least one recommendation"
+          "needed": "A consultant to work the register: 2,087 positions across 305 pages, all UNSIGNED. tools/positions.py --report --unsigned is the list. Section 4 is where this count will grow fastest, because an examination page tells a clinician what to do by definition and 185 of its pages are still unwritten.",
+          "pages": "305 pages carry at least one recommendation"
         },
         {
           "ref": "EV-8",
@@ -689,6 +689,15 @@
           "blocker": "History Taking, the largest chapter in Section 4 and the chapter that only exists at this size because EV-22 found the outline had collapsed it to five pages. Each page is one symptom or one question, in five groups: the presenting complaint, pain assessment, injury history, sports-specific history and previous treatment. The examination template fits history taking better than expected, and the reason is worth recording: a history question is a diagnostic test. What It Tests is what asking tells you, How It Is Performed is how to ask, What a Positive Means is what the answer licenses, How Good It Is is how discriminating the question is, and Where It Misleads is where the answer deceives. The organising idea of the first seven pages is that a patient presents with a word and the clinical meaning of that word is almost never what they mean by it, so the presenting complaint is a translation exercise. 4.2.5 on locking carries that argument furthest: almost every patient reporting locking means something else, and the follow-up question about how the knee was freed is the most valuable single addition in the chapter. The treatment history pages at the end carry its conclusion, that the history determines the plan more often than the imaging does.",
           "needed": "Consultant review. Two things to check hardest. First, every comparative claim about which question discriminates: those are the claims a reader will act on, they are written from standard teaching, and ACC-001 refused the figures that would support them rather than inventing any. Second, the repeated argument across 4.2.32 and 4.2.34 that an incomplete rehabilitation trial is the commonest route to an unnecessary operation, which is an editorial judgement stated as a clinical one and should either be backed or removed. The chapter also makes no claim about frequency anywhere, which is deliberate and worth confirming as acceptable.",
           "pages": "34 published pages, 40,193 body words as the style gate counts them"
+        },
+        {
+          "ref": "W-25",
+          "title": "Section 4 Clinical Examination Academy, chapter 4.9",
+          "area": "Content",
+          "state": "All 11 pages written, style gate passed, awaiting review",
+          "blocker": "Meniscal Examination, the first chapter in Section 4 whose pages are individual named tests, so the examination template applies in full. It is also the chapter ACC-001 was written for: the meniscal tests are the ones whose sensitivities are quoted most often and recalled least reliably, and no accuracy figure appears on any of the eleven pages. What appears instead is the ranking, which is standard teaching: the tests are specific rather than sensitive, so a positive is informative and a negative excludes very little, and joint line tenderness is the most sensitive finding and the least specific. The chapter's argument is that no single test performs well enough to rely on, the combination performs better than any of them, and one finding acts alone. That finding is a confirmed mechanical block, which 4.9.8 treats as the chapter's most important page and the one exception to the meniscectomy trial evidence, because those trials recruited mechanical symptoms rather than locked knees. 4.9.9 states plainly that the examination performs worse for root tears than for any other lesion here and that its job is to raise the question rather than answer it. 4.9.10 and 4.9.11 carry the chapter's conclusion: deficiency is the predictable end state of the resection these tests lead to, and in a degenerate knee the examination exists to find the exception rather than confirm the rule.",
+          "needed": "Consultant review, and this chapter needs it more than most because the comparative accuracy claims are the whole content and the figures behind them were refused rather than retrieved. Three things to check hardest. First, the ranking itself: that joint line tenderness is the most sensitive finding and the provocative tests the most specific. Second, 4.9.4's statement that the Thessaly test performs comparably to the older tests rather than better, which contradicts its original reports and is the kind of claim a reviewer should either back or correct. Third, 4.9.11's position on the meniscectomy trials, which the chapter treats as settling the degenerate tear with pain and not settling a true block.",
+          "pages": "11 published pages, 13,886 body words as the style gate counts them"
         }
       ]
     }

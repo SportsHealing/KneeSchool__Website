@@ -13,6 +13,15 @@
       "occurrences": 2,
       "verification": "UNVERIFIED_FROM_MEMORY",
       "source": ""
+    },
+    {
+      "as_written": "six degrees",
+      "tier": "frcs",
+      "section": "How It Is Measured",
+      "claim": "Robotic testing of reconstructed cadaveric knees compares a construct against the intact state in all six degrees of freedom.",
+      "occurrences": 1,
+      "verification": "UNVERIFIED_FROM_MEMORY",
+      "source": ""
     }
   ]
 }

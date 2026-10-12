@@ -529,6 +529,26 @@ QUANTITY = re.compile(r"(?<![A-Za-z])(\d+(?:[.,]\d+)?)"
 RANGE = re.compile(r"(?<![A-Za-z])\d+(?:[.,]\d+)?\s*(?:to|and|or)\s*"
                    r"\d+(?:[.,]\d+)?\s*" + UNIT + r"(?![A-Za-z0-9]|\.\d)",
                    re.IGNORECASE)
+# A measurement written in words. rule_fig_001's docstring used to say "there is
+# no way to write one without a digit", which was false: chapter 4.9 quoted six
+# flexion angles as "ninety degrees" and similar, and every one of them escaped
+# the register decision 006 says lists every measurement on the site. 64 of
+# these existed across 17 pages before the scan was extended.
+#
+# Only a number word carrying a unit counts. A bare "three structures" is an
+# enumeration, which FIG-001's docstring already allows and which this must not
+# start refusing.
+_NUM_WORD = (r"(?:one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|"
+             r"thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|"
+             r"twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety|hundred)"
+             r"(?:[- ](?:one|two|three|four|five|six|seven|eight|nine|hundred))?")
+_WORD_UNIT = (r"(?:degrees?|millimetres?|centimetres?|metres?|newtons?|kilograms?|"
+              r"millilitres?|per\s?cent|percent)")
+WORDED = re.compile(r"\b(%s)\s+(?:a\s+)?%s\b" % (_NUM_WORD, _WORD_UNIT),
+                    re.IGNORECASE)
+WORDED_RANGE = re.compile(
+    r"\b%s\s*(?:to|and|or)\s*%s\s+%s\b" % (_NUM_WORD, _NUM_WORD, _WORD_UNIT),
+    re.IGNORECASE)
 
 
 def rule_fig_001(doc, rule, brief):
@@ -540,8 +560,9 @@ def rule_fig_001(doc, rule, brief):
     trusting review to catch it.
 
     List numbering written into prose is allowed, because the alternative is
-    spelling out every enumeration. A quantity is not, and there is no way to
-    write one without a digit.
+    spelling out every enumeration. A quantity is not. This docstring used to
+    end "and there is no way to write one without a digit", which was wrong:
+    see WORDED above.
     """
     return [finding(rule["id"], rule["severity"], rule["description"] + " (body)",
                     token, context(text, start, end), line_of(text, start))
@@ -564,9 +585,13 @@ def body_figures(doc, rule):
     text = CROSSLINK.sub(lambda m: " " * len(m.group(0)), doc.body_text())
     text = XREF.sub(" ", XREF_WORD.sub(" ", text))
     spans = []
-    for m in RANGE.finditer(text):
-        spans.append((m.start(), m.end()))
-        out.append((re.sub(r"\s+", " ", m.group(0)).strip(), m.start(), m.end(), text))
+    for pattern in (RANGE, WORDED_RANGE, WORDED):
+        for m in pattern.finditer(text):
+            if any(a <= m.start() < b for a, b in spans):
+                continue
+            spans.append((m.start(), m.end()))
+            out.append((re.sub(r"\s+", " ", m.group(0)).strip(),
+                        m.start(), m.end(), text))
     for m in QUANTITY.finditer(text):
         if any(a <= m.start() < b for a, b in spans):
             continue

@@ -13,6 +13,15 @@
       "occurrences": 3,
       "verification": "UNVERIFIED_FROM_MEMORY",
       "source": ""
+    },
+    {
+      "as_written": "hundred newtons",
+      "tier": "mrcs",
+      "section": "At the Knee",
+      "claim": "Conventional teaching gives the native ligament roughly 2000 newtons ultimate load and a stiffness of a few hundred newtons per millimetre, with wide variation by age.",
+      "occurrences": 1,
+      "verification": "UNVERIFIED_FROM_MEMORY",
+      "source": ""
     }
   ]
 }
