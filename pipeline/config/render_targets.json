@@ -2353,6 +2353,138 @@
       "parent": "Clinical Examination Academy|index.html",
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
+    },
+    "4.12.1": {
+      "out": "examination/valgus-stress-testing.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.12.2": {
+      "out": "examination/medial-assessment-in-extension.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.12.3": {
+      "out": "examination/medial-assessment-at-30-degrees.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.12.4": {
+      "out": "examination/deep-mcl-assessment.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.12.5": {
+      "out": "examination/posterior-oblique-ligament-assessment.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.12.6": {
+      "out": "examination/amri-assessment.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.12.7": {
+      "out": "examination/medial-meniscus-versus-mcl-injury.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.12.8": {
+      "out": "examination/mcl-post-reconstruction-assessment.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.13.1": {
+      "out": "examination/varus-stress-test.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.13.2": {
+      "out": "examination/lcl-assessment.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.13.3": {
+      "out": "examination/popliteus-assessment.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.13.4": {
+      "out": "examination/posterolateral-corner-assessment.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.13.5": {
+      "out": "examination/dial-test.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.13.6": {
+      "out": "examination/reverse-pivot-shift-plc.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.13.7": {
+      "out": "examination/external-rotation-recurvatum-test.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.13.8": {
+      "out": "examination/combined-plc-injuries.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.14.1": {
+      "out": "examination/rotational-pivot-shift.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.14.2": {
+      "out": "examination/slocum-test.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.14.3": {
+      "out": "examination/anterolateral-rotatory-instability.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.14.4": {
+      "out": "examination/anteromedial-rotatory-instability.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.14.5": {
+      "out": "examination/combined-instability-patterns.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.14.6": {
+      "out": "examination/rotational-examination-under-anaesthesia.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
     }
   },
   "withheld": {
