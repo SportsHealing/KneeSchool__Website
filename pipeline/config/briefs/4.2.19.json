@@ -1,0 +1,113 @@
+{
+  "brief_version": "1.1",
+  "page_id": "4.2.19",
+  "title": "Hyperextension Injury",
+  "section": {
+    "id": "4",
+    "name": "Clinical Examination Academy"
+  },
+  "chapter": {
+    "id": "4.2",
+    "name": "History Taking"
+  },
+  "page_type": "examination",
+  "article_template": "examination",
+  "generated_from": "Master Publishing Architecture, pages_4.json",
+  "tiers_required": [
+    "medical_student",
+    "mrcs",
+    "frcs",
+    "fellowship"
+  ],
+  "scope": {
+    "must_cover": [
+      "Hyperextension Injury, as it is examined and interpreted."
+    ],
+    "must_not_cover": [
+      "Imaging interpretation (owned by Section 5)",
+      "Clinical management and treatment selection (owned by Section 6)",
+      "Operative technique (owned by Section 7)",
+      "Structure level anatomy (owned by Section 2)",
+      "Biomechanics beyond what the test depends on (owned by Section 3)",
+      "Physical examination manoeuvres (owned by 4.3 to 4.21)"
+    ],
+    "sibling_pages": [
+      "4.2.1",
+      "4.2.2",
+      "4.2.3",
+      "4.2.4",
+      "4.2.5",
+      "4.2.6",
+      "4.2.7",
+      "4.2.8",
+      "4.2.9",
+      "4.2.10",
+      "4.2.11",
+      "4.2.12",
+      "4.2.13",
+      "4.2.14",
+      "4.2.15",
+      "4.2.16",
+      "4.2.17",
+      "4.2.18",
+      "4.2.20",
+      "4.2.21",
+      "4.2.22",
+      "4.2.23",
+      "4.2.24",
+      "4.2.25",
+      "4.2.26",
+      "4.2.27",
+      "4.2.28",
+      "4.2.29",
+      "4.2.30",
+      "4.2.31",
+      "4.2.32",
+      "4.2.33",
+      "4.2.34"
+    ],
+    "deeper_spiral_pages": [
+      "4.3",
+      "6.1"
+    ]
+  },
+  "curriculum_tags": [],
+  "source_requirements": {
+    "kb_topic_filter": "hyperextension injury",
+    "minimum": {
+      "textbook_or_review": 1,
+      "peer_reviewed_for_clinical_claims": true
+    },
+    "preferred_recency_years": 10,
+    "guidelines_expected": []
+  },
+  "output_requirements": {
+    "language": "en-GB",
+    "format": "markdown",
+    "key_learning_points_per_tier": {
+      "min": 3,
+      "max": 5
+    },
+    "faqs_patient_level": {
+      "min": 3,
+      "max": 5
+    },
+    "target_word_count": {
+      "min": 800,
+      "max": 1800
+    },
+    "internal_link_placeholders": true
+  },
+  "governance": {
+    "commercial_content_allowed": false,
+    "clinical_advice_allowed": false,
+    "junior_tier_present": false,
+    "figures_allowed": true
+  },
+  "pipeline": {
+    "priority": "high",
+    "requested_by": "architecture",
+    "regen_count": 0,
+    "consultant_assigned": null
+  }
+}

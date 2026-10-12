@@ -49,27 +49,38 @@ def titles():
     as often as to a page: "3.13 takes that further", "7.20 owns the technique".
     """
     out = {}
-    for name in sorted(os.listdir(ARCH_DIR)):
-        path = os.path.join(ARCH_DIR, name)
-        if name.startswith("pages_") and name.endswith(".json"):
-            with open(path) as fh:
-                pages = json.load(fh)
-        elif name.startswith("outline_") and name.endswith(".json"):
-            with open(path) as fh:
-                doc = json.load(fh)
-            pages = doc.get("pages") or []
-            # chapters are carried separately because 775 of them have no pages,
-            # and a link to one of those is still a link worth checking
-            for chapter in doc.get("chapters") or []:
-                out.setdefault(str(chapter["chapter_id"]), chapter["name"])
-        else:
-            continue
+
+    def absorb(pages):
         for page in pages:
             # a page map entry wins over an outline entry, because it is richer
             out.setdefault(str(page["page_id"]), page["title"])
             chapter = page.get("chapter") or {}
             if chapter.get("id") and chapter.get("name"):
                 out.setdefault(str(chapter["id"]), chapter["name"])
+
+    # Page maps first, then the outline. The loop used to be a single pass over
+    # sorted(listdir), which put outline_1_to_15.json ahead of pages_*.json
+    # alphabetically, so setdefault gave the outline priority and the comment
+    # above was false. It never showed while the two agreed. Section 4's page
+    # map renumbers chapter 4.2, where the outline recorded five navigational
+    # headings as pages, and eleven cross links were then checked against titles
+    # no page has.
+    for name in sorted(os.listdir(ARCH_DIR)):
+        if name.startswith("pages_") and name.endswith(".json"):
+            with open(os.path.join(ARCH_DIR, name)) as fh:
+                absorb(json.load(fh))
+
+    for name in sorted(os.listdir(ARCH_DIR)):
+        if not (name.startswith("outline_") and name.endswith(".json")):
+            continue
+        with open(os.path.join(ARCH_DIR, name)) as fh:
+            doc = json.load(fh)
+        # chapters are carried separately because 775 of them have no pages,
+        # and a link to one of those is still a link worth checking
+        for chapter in doc.get("chapters") or []:
+            out.setdefault(str(chapter["chapter_id"]), chapter["name"])
+        absorb(doc.get("pages") or [])
+
     return out
 
 
