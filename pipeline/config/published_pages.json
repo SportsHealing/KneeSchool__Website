@@ -373,6 +373,18 @@
     "4.9.9": "examination/meniscal-root-tears.html",
     "4.9.10": "examination/meniscal-deficiency.html",
     "4.9.11": "examination/meniscal-examination-in-oa.html",
+    "4.10.1": "examination/history-of-acl-injury.html",
+    "4.10.2": "examination/acute-acl-injury.html",
+    "4.10.3": "examination/chronic-acl-deficiency.html",
+    "4.10.4": "examination/lachman-test.html",
+    "4.10.5": "examination/anterior-drawer-test.html",
+    "4.10.6": "examination/pivot-shift-test.html",
+    "4.10.7": "examination/lever-sign-test.html",
+    "4.10.8": "examination/dynamic-assessment.html",
+    "4.10.9": "examination/acl-rotational-instability.html",
+    "4.10.10": "examination/acl-examination-under-anaesthesia.html",
+    "4.10.11": "examination/acl-post-reconstruction-assessment.html",
+    "4.10.12": "examination/revision-acl-assessment.html",
     "6.1.1": "conditions/acl.html"
   }
 }

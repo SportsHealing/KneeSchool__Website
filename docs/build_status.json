@@ -21,7 +21,7 @@
           "area": "Content pipeline",
           "state": "Mechanism built, nothing signed",
           "blocker": "The client confirmed on 10 October 2026 that consultants are lined up, so the people exist. The mechanism existed only as prose packs in docs/review/ with no way for an answer to come back. tools/review_pack.py now generates one pack per chapter from the work and reads a filled pack back into the registers, so the route exists. What is missing is a reviewer's time.",
-          "needed": "A consultant to work through a chapter. 2,087 clinical recommendations across 305 pages and 442 measurements across 161 are outstanding, none signed, and chapter 3.17 adds 52 attributions to named authors, none checked against a paper. python3 tools/review_pack.py --status prints the breakdown by chapter; 32 chapters carry recommendations, the largest is 3.7 with 152 and the median is 62.",
+          "needed": "A consultant to work through a chapter. 2,139 clinical recommendations across 316 pages and 448 measurements across 165 are outstanding, none signed, and chapter 3.17 adds 52 attributions to named authors, none checked against a paper. python3 tools/review_pack.py --status prints the breakdown by chapter; 32 chapters carry recommendations, the largest is 3.7 with 152 and the median is 62.",
           "pages": "Every page on the site is an unreviewed editorial draft"
         },
         {
@@ -51,21 +51,21 @@
         },
         {
           "ref": "EV-6",
-          "title": "442 measurements on the site are unchecked",
+          "title": "448 measurements on the site are unchecked",
           "area": "Content",
           "state": "Live and flagged, and the count rose on 12 October 2026 because the scan was wrong",
           "blocker": "They are written from memory because no paper could be retrieved. Each page's references note says so and each figure is registered. The total rose from 381 to 442 on 12 October 2026, not because measurements were added but because the scanner could not see a measurement written in words. rule_fig_001's own docstring asserted that a quantity cannot be written without a digit. Chapter 4.9 disproved it by quoting six flexion angles as \"ninety degrees\" and similar, every one of which escaped the register decision 006 says lists every measurement on the site. 61 had accumulated across the site. The scan now reads a number word carrying a unit, and a bare enumeration such as three structures is still allowed.",
-          "needed": "Someone with source access to work the register: 442 figures across 161 pages, all UNVERIFIED_FROM_MEMORY. tools/figures.py --report --unchecked is the list.",
-          "pages": "161 pages carry at least one measurement"
+          "needed": "Someone with source access to work the register: 448 figures across 165 pages, all UNVERIFIED_FROM_MEMORY. tools/figures.py --report --unchecked is the list.",
+          "pages": "165 pages carry at least one measurement"
         },
         {
           "ref": "EV-7",
-          "title": "2,087 clinical recommendations on the site are unsigned",
+          "title": "2,139 clinical recommendations on the site are unsigned",
           "area": "Content",
           "state": "Live and registered, and the count rose on 10 October 2026",
           "blocker": "They are written by a process with no clinical qualification, on pages that state they have not been reviewed. The client has chosen to keep them, and decision 007 makes the set finite and listed. The total rose from 976 to 1,295 on 10 October 2026, and chapter 3.12 added 93 more, not because advice was added but because the detector was found to be missing it. POS-001 read clinical direction off a list of imperative openers built from directive prose, and the directions opening with a weighing or a consultation verb had never reached the register. Two extensions of the verb list, decisions 018 and 019, added 319 between them.",
-          "needed": "A consultant to work the register: 2,087 positions across 305 pages, all UNSIGNED. tools/positions.py --report --unsigned is the list. Section 4 is where this count will grow fastest, because an examination page tells a clinician what to do by definition and 185 of its pages are still unwritten.",
-          "pages": "305 pages carry at least one recommendation"
+          "needed": "A consultant to work the register: 2,139 positions across 316 pages, all UNSIGNED. tools/positions.py --report --unsigned is the list. Section 4 is where this count will grow fastest, because an examination page tells a clinician what to do by definition and 185 of its pages are still unwritten.",
+          "pages": "316 pages carry at least one recommendation"
         },
         {
           "ref": "EV-8",
@@ -698,6 +698,15 @@
           "blocker": "Meniscal Examination, the first chapter in Section 4 whose pages are individual named tests, so the examination template applies in full. It is also the chapter ACC-001 was written for: the meniscal tests are the ones whose sensitivities are quoted most often and recalled least reliably, and no accuracy figure appears on any of the eleven pages. What appears instead is the ranking, which is standard teaching: the tests are specific rather than sensitive, so a positive is informative and a negative excludes very little, and joint line tenderness is the most sensitive finding and the least specific. The chapter's argument is that no single test performs well enough to rely on, the combination performs better than any of them, and one finding acts alone. That finding is a confirmed mechanical block, which 4.9.8 treats as the chapter's most important page and the one exception to the meniscectomy trial evidence, because those trials recruited mechanical symptoms rather than locked knees. 4.9.9 states plainly that the examination performs worse for root tears than for any other lesion here and that its job is to raise the question rather than answer it. 4.9.10 and 4.9.11 carry the chapter's conclusion: deficiency is the predictable end state of the resection these tests lead to, and in a degenerate knee the examination exists to find the exception rather than confirm the rule.",
           "needed": "Consultant review, and this chapter needs it more than most because the comparative accuracy claims are the whole content and the figures behind them were refused rather than retrieved. Three things to check hardest. First, the ranking itself: that joint line tenderness is the most sensitive finding and the provocative tests the most specific. Second, 4.9.4's statement that the Thessaly test performs comparably to the older tests rather than better, which contradicts its original reports and is the kind of claim a reviewer should either back or correct. Third, 4.9.11's position on the meniscectomy trials, which the chapter treats as settling the degenerate tear with pain and not settling a true block.",
           "pages": "11 published pages, 13,886 body words as the style gate counts them"
+        },
+        {
+          "ref": "W-26",
+          "title": "Section 4 Clinical Examination Academy, chapter 4.10",
+          "area": "Content",
+          "state": "All 12 pages written, style gate passed, awaiting review",
+          "blocker": "ACL Examination. The best performing examination in the knee, and the chapter where the gap between what the tests measure and what the patient complains about is widest. 4.10.9 states that gap as the chapter's conclusion: the translation tests are accurate, translation is not the complaint, and the test that measures the complaint is abolished by the patient being awake. Almost every dissatisfied reconstruction in referred practice sits in it. ACC-001 held on all twelve pages, so the comparative ranking is written and no percentage appears: the Lachman outperforms the anterior drawer substantially, the pivot shift is specific and insensitive awake and its sensitivity rises substantially under anaesthesia. 4.10.5 is the clearest case on the site of a position making a test worse, and the page says so rather than defending the anterior drawer. 4.10.7 holds the lever sign provisionally and names the pattern it shares with the Thessaly test, strong initial reports followed by less favourable independent ones. 4.10.11 separates four causes of a disappointing reconstruction and notes that the largest group is confidence and rehabilitation rather than structure. 4.10.12 closes the chapter by arguing that the revision clinic is where the cost of an incomplete pre-operative examination is paid.",
+          "needed": "Consultant review, and the comparative claims are again the whole content with the figures refused rather than retrieved. Three things to check hardest. First, 4.10.9's central claim that rotational instability is the commonest thing missed before reconstruction and the commonest residual complaint after it, which is an editorial judgement stated as a clinical fact. Second, 4.10.7's provisional handling of the lever sign, which a reviewer may consider either too cautious or not cautious enough. Third, 4.10.11's assertion that a small increase in translation with a firm endpoint is a satisfactory graft rather than a failure, which is the kind of claim that changes how a trainee reads their own findings.",
+          "pages": "12 published pages, 15,616 body words as the style gate counts them"
         }
       ]
     }
