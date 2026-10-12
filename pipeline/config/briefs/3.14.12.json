@@ -1,0 +1,89 @@
+{
+  "brief_version": "1.1",
+  "page_id": "3.14.12",
+  "title": "Post-Arthroplasty Gait",
+  "section": {
+    "id": "3",
+    "name": "Biomechanics Academy"
+  },
+  "chapter": {
+    "id": "3.14",
+    "name": "Gait Analysis"
+  },
+  "page_type": "biomechanics",
+  "article_template": "biomechanics",
+  "generated_from": "Master Publishing Architecture, pages_0_to_3.json",
+  "tiers_required": [
+    "medical_student",
+    "mrcs",
+    "frcs"
+  ],
+  "scope": {
+    "must_cover": [
+      "Gait after knee replacement."
+    ],
+    "must_not_cover": [
+      "Examination technique (owned by Section 4)",
+      "Imaging interpretation (owned by Section 5)",
+      "Clinical management (owned by Section 6)",
+      "Operative technique (owned by Section 7)",
+      "Gait examination technique (owned by 4.4)"
+    ],
+    "sibling_pages": [
+      "3.14.1",
+      "3.14.2",
+      "3.14.3",
+      "3.14.4",
+      "3.14.5",
+      "3.14.6",
+      "3.14.7",
+      "3.14.8",
+      "3.14.9",
+      "3.14.10",
+      "3.14.11"
+    ],
+    "deeper_spiral_pages": [
+      "4.4",
+      "8.45"
+    ]
+  },
+  "curriculum_tags": [],
+  "source_requirements": {
+    "kb_topic_filter": "post-arthroplasty gait",
+    "minimum": {
+      "textbook_or_review": 1,
+      "peer_reviewed_for_clinical_claims": true
+    },
+    "preferred_recency_years": 10,
+    "guidelines_expected": []
+  },
+  "output_requirements": {
+    "language": "en-GB",
+    "format": "markdown",
+    "key_learning_points_per_tier": {
+      "min": 3,
+      "max": 5
+    },
+    "faqs_patient_level": {
+      "min": 3,
+      "max": 5
+    },
+    "target_word_count": {
+      "min": 800,
+      "max": 1800
+    },
+    "internal_link_placeholders": true
+  },
+  "governance": {
+    "commercial_content_allowed": false,
+    "clinical_advice_allowed": false,
+    "junior_tier_present": false,
+    "figures_allowed": true
+  },
+  "pipeline": {
+    "priority": "medium",
+    "requested_by": "architecture",
+    "regen_count": 0,
+    "consultant_assigned": null
+  }
+}

@@ -131,9 +131,13 @@ crawler. Nothing unreviewed was ever findable, only reachable by a link.
 ## What was considered and not done
 
 **Branch protection on `main`.** It would enforce rule 1 rather than stating it.
-Not set, because it needs admin rights on the repository and the client should
-decide whether to lock themselves out of a direct push. It is one setting in
-GitHub if they want it, and the rules above are the policy either way.
+Offered three times and declined on 11 October 2026: "Turn off branch
+protection we will check anyway." It was never switched on, so nothing had to
+be undone, and the GitHub API confirms `main` reports `protected: false`. The
+question is now closed and should not be raised again. Rules 1 to 4 above stand
+as policy rather than as an enforced setting, and `verify` running in CI on
+every push is what actually catches a bad commit. The cost of the choice is
+that a direct push to `main` is possible and nothing would block it.
 
 **Regenerating the seventeen briefs.** Rejected above: it would have changed
 published pages' word count caps and lost hand written fields.

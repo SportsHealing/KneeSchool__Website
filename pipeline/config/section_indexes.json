@@ -11,10 +11,22 @@
       "panel_heading": "How these pages differ from the Fundamentals",
       "panel_lede": "Section 1 explains what the knee is. Section 2 is the dissection, and it starts at medical student level rather than ending there.",
       "panel_points": [
-        ["Four tiers, not seven.", "Medical student, MRCS, FRCS and, on the surgical anatomy pages, fellowship. There is no junior or patient tier in this section."],
-        ["Every number is listed.", "These pages carry measurements, and not one has been checked against a source, because this build has no access to any. Each one is registered with the sentence it supports and a verification state, so the whole list can be worked through rather than hunted for."],
-        ["Pathology, technique and imaging interpretation are elsewhere.", "This section is anatomy. What goes wrong is Section 6, what is done about it is Section 7, and how it is imaged is Section 5."],
-        ["Not yet reviewed.", "No page in this section has been through evidence verification or consultant review, and each page states that at the top."]
+        [
+          "Four tiers, not seven.",
+          "Medical student, MRCS, FRCS and, on the surgical anatomy pages, fellowship. There is no junior or patient tier in this section."
+        ],
+        [
+          "Every number is listed.",
+          "These pages carry measurements, and not one has been checked against a source, because this build has no access to any. Each one is registered with the sentence it supports and a verification state, so the whole list can be worked through rather than hunted for."
+        ],
+        [
+          "Pathology, technique and imaging interpretation are elsewhere.",
+          "This section is anatomy. What goes wrong is Section 6, what is done about it is Section 7, and how it is imaged is Section 5."
+        ],
+        [
+          "Not yet reviewed.",
+          "No page in this section has been through evidence verification or consultant review, and each page states that at the top."
+        ]
       ],
       "note": "Nothing in this section is clinical advice or operative instruction. It describes normal anatomy for people who already have a clinical qualification or are working towards one."
     },
@@ -27,12 +39,52 @@
       "panel_heading": "How to read a number on these pages",
       "panel_lede": "Biomechanics is a field where three credible methods give three different answers to the same question, and the difference is usually the method rather than the knee.",
       "panel_points": [
-        ["Every figure carries its method.", "A cadaver figure, a laboratory figure and an in vivo figure are three different kinds of number. Each page says which it is quoting, because a figure without its method attached cannot be used."],
-        ["Every figure is unchecked.", "No measurement on this site has been verified against a source. Each is registered with the sentence it supports and a verification state, so the list can be worked through."],
-        ["How It Is Measured is a section, not an aside.", "Each page has a heading for the methods and their limits, because a template with nowhere to say so produces pages that quote figures as settled. See decision 014."],
-        ["The landmark papers pages are held.", "Every chapter ends with a page about named studies. This build cannot retrieve a paper and will not invent a citation, so those eleven pages wait. See decision 014."]
+        [
+          "Every figure carries its method.",
+          "A cadaver figure, a laboratory figure and an in vivo figure are three different kinds of number. Each page says which it is quoting, because a figure without its method attached cannot be used."
+        ],
+        [
+          "Every figure is unchecked.",
+          "No measurement on this site has been verified against a source. Each is registered with the sentence it supports and a verification state, so the list can be worked through."
+        ],
+        [
+          "How It Is Measured is a section, not an aside.",
+          "Each page has a heading for the methods and their limits, because a template with nowhere to say so produces pages that quote figures as settled. See decision 014."
+        ],
+        [
+          "The landmark papers pages name no citation.",
+          "Chapter 3.17 and page 3.1.8 are about named studies, and this build cannot retrieve a paper. They give the author a study is taught under and the decade, and no year, journal, volume or page, because those are the parts that get invented. Every attribution is registered. See decision 022."
+        ]
       ],
       "note": "Nothing in this section is clinical advice. It describes mechanics, and the figures in it are written from standard teaching rather than from retrieved sources."
+    },
+    "4": {
+      "dir": "examination",
+      "title": "The Clinical Examination Academy",
+      "who": "Section 4 &middot; What the hands can tell you, and what they cannot",
+      "description": "Section 4: knee examination for medical students, MRCS, FRCS and fellowship, test by test, with the limits of each test stated.",
+      "lede_prefix": "Twenty-four chapters on examining the knee, written for medical students, MRCS and FRCS candidates, and fellows.",
+      "panel_heading": "How to read a claim about a test",
+      "panel_lede": "Examination is not a cheaper scan. It answers a different question, and the commonest error in knee practice is treating an image as the answer to a question only the examination asked.",
+      "panel_points": [
+        [
+          "Four tiers, not seven.",
+          "Medical student, MRCS, FRCS and fellowship. There is no junior, patient or consultant tier in this section, which the architecture sets in a single sentence. See decision 024."
+        ],
+        [
+          "No test carries an accuracy figure.",
+          "You will not find a sensitivity or a specificity anywhere in this section. The comparative standing of the tests is standard teaching and a specific percentage written from memory is the same class of claim as an invented citation, so the pages state the comparison and the gate refuses the number. See decision 023."
+        ],
+        [
+          "Where It Misleads is a section, not an aside.",
+          "Every test fails in patterned ways: an effusion limits a Lachman, guarding abolishes it, an anaesthetised knee exaggerates it. A template with nowhere to say so teaches the manoeuvre and omits the thing that makes a clinician wrong."
+        ],
+        [
+          "The page map for this section is provisional.",
+          "Part 1 of the architecture carries the full page map for Sections 0 to 3. Section 4's arrives in Part 2, which this build does not have, so its tiers and boundaries come from one sentence in Part 1 and its scope lines are page titles restated. See decision 024."
+        ]
+      ],
+      "note": "Nothing in this section is clinical advice or a substitute for assessment by a clinician. It describes how a knee is examined, it is written from standard teaching rather than from retrieved sources, and no page on it has been reviewed."
     }
   }
 }

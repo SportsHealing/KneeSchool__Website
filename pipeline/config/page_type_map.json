@@ -1,7 +1,7 @@
 {
   "map_version": "1.0",
   "source_of_truth": "KneeSchool_Master_Publishing_Architecture_Part1.md section 6",
-  "note": "The architecture carries a fine grained page_type. This file is the join onto a template. Three templates come from the Operations Handbook; four (careers, study_skills, teacher_resource, assessment) come from decision 003 and await editorial confirmation. Two more (biomechanics, landmark_papers) come from decision 014. Types still marked variant_pending use the nearest template today and are candidates for their own template in Handbook v1.1.",
+  "note": "The architecture carries a fine grained page_type. This file is the join onto a template. Three templates come from the Operations Handbook; four (careers, study_skills, teacher_resource, assessment) come from decision 003 and await editorial confirmation. Two more (biomechanics, landmark_papers) come from decision 014 and one (examination) from decision 023. Types still marked variant_pending use the nearest template today and are candidates for their own template in Handbook v1.1.",
   "templates": [
     "anatomy",
     "condition",
@@ -11,7 +11,8 @@
     "teacher_resource",
     "assessment",
     "biomechanics",
-    "landmark_papers"
+    "landmark_papers",
+    "examination"
   ],
   "page_types": {
     "anatomy": {
@@ -32,8 +33,9 @@
       "defined_by": "decision 014"
     },
     "examination": {
-      "template": "anatomy",
-      "variant_pending": true
+      "template": "examination",
+      "variant_pending": false,
+      "defined_by": "decision 023"
     },
     "imaging": {
       "template": "anatomy",

@@ -1,0 +1,34 @@
+{
+  "page_id": "3.17.4",
+  "prompt_version": "1.0",
+  "article_template_version": "1.0",
+  "page_type": "landmark_papers",
+  "article_template": "landmark_papers",
+  "tiers_covered": [
+    "frcs",
+    "fellowship",
+    "consultant"
+  ],
+  "scope_statement": "Curated landmark medial knee studies with appraisal notes.",
+  "sources": [],
+  "source_note": "No sources were retrieved. The generation environment had no access to PubMed, Cochrane, any journal or any textbook. The Tier 1 source minimum is NOT met and this draft would not pass Tier 1 in the deployed pipeline. This is the first section on the site written entirely for professionals, and it is unverified.",
+  "claims_needing_verification": [
+    "What to do with a combined medial and cruciate injury is a balance the mechanical literature does not settle.",
+    "Healing capacity is the argument for waiting and it varies between patients more than the mechanics do.",
+    "The five patient factors are what separates the three defensible plans.",
+    "Rotation, not valgus, is where the management argument sits.",
+    "A strong mechanical hierarchy and an unsettled management question can coexist."
+  ],
+  "claims_note": "Listed above are the substantive claims, taken from the deepest tier's key learning points. Every anatomical statement in the page body requires the same verification against a standard text; these are the ones a reviewer should start with.",
+  "content_rule": "Decision 022: this page's subject is named studies and no study was retrieved. The page names the author a study is taught under and the decade it belongs to, and gives no year, journal, volume or page, because those are the parts of a citation that get invented and a wrong one cannot be told from a right one. ATTR-001 refuses any of them at the gate. Every attribution is registered in pipeline/config/attributions/<page_id>.json with the claim it carries and a verification state. Run tools/attributions.py --report --unchecked for the outstanding list. Decision 006 applies as usual to any measurement on the page.",
+  "gaps_or_uncertainties": [
+    "4 attribution(s) on this page, each naming an author a study is taught under. All are written from memory and none has been checked against the paper. They are listed in pipeline/config/attributions/3.17.4.json with the claim each one carries. Some will be wrong, and which ones is not knowable from here.",
+    "No landmark papers page on this site carries a citation, a year, a journal or a page number, and that is decision 022 rather than an omission. A reader who wants the paper has a surname, a decade and a finding, which locates it in a catalogue and does not constitute a citation.",
+    "No measurement appears on this page. Where one would normally sit the page gives the relationship instead, because the value is not one this environment can state with confidence."
+  ],
+  "duplication_risk_pages": [
+    "12.33"
+  ],
+  "architecture_check": "Written against the architecture's own brief for 3.17.4, including its must_not_cover list: Topic teaching content (owned by the matching 3.x chapter)",
+  "status": "AI_DRAFT_READY_FOR_VERIFICATION"
+}

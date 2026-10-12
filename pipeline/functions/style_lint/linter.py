@@ -510,6 +510,7 @@ UNIT = r"(?:mm|cm|%|per\s?cent|degrees?|mL|ml|kg|MPa|m|N)"
 # five and a half degrees. The unit decides, so an id is only stripped when no
 # unit follows it. A bare decimal with no unit is read as a page id, because on
 # this site that is what it almost always is. Write a unit and the rule fires.
+CROSSLINK = re.compile(r"\[\[[^\]]*\]\]")
 XREF = re.compile(r"\b\d+(?:\.\d+){1,2}\b(?!\s*" + UNIT + r"\b)")
 # The trailing lookaheads stop a list like "Sections 6 and 7" swallowing the
 # first component of a page id that follows it. "belongs to Section 6 and 7.49
@@ -528,6 +529,26 @@ QUANTITY = re.compile(r"(?<![A-Za-z])(\d+(?:[.,]\d+)?)"
 RANGE = re.compile(r"(?<![A-Za-z])\d+(?:[.,]\d+)?\s*(?:to|and|or)\s*"
                    r"\d+(?:[.,]\d+)?\s*" + UNIT + r"(?![A-Za-z0-9]|\.\d)",
                    re.IGNORECASE)
+# A measurement written in words. rule_fig_001's docstring used to say "there is
+# no way to write one without a digit", which was false: chapter 4.9 quoted six
+# flexion angles as "ninety degrees" and similar, and every one of them escaped
+# the register decision 006 says lists every measurement on the site. 64 of
+# these existed across 17 pages before the scan was extended.
+#
+# Only a number word carrying a unit counts. A bare "three structures" is an
+# enumeration, which FIG-001's docstring already allows and which this must not
+# start refusing.
+_NUM_WORD = (r"(?:one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|"
+             r"thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|"
+             r"twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety|hundred)"
+             r"(?:[- ](?:one|two|three|four|five|six|seven|eight|nine|hundred))?")
+_WORD_UNIT = (r"(?:degrees?|millimetres?|centimetres?|metres?|newtons?|kilograms?|"
+              r"millilitres?|per\s?cent|percent)")
+WORDED = re.compile(r"\b(%s)\s+(?:a\s+)?%s\b" % (_NUM_WORD, _WORD_UNIT),
+                    re.IGNORECASE)
+WORDED_RANGE = re.compile(
+    r"\b%s\s*(?:to|and|or)\s*%s\s+%s\b" % (_NUM_WORD, _NUM_WORD, _WORD_UNIT),
+    re.IGNORECASE)
 
 
 def rule_fig_001(doc, rule, brief):
@@ -539,8 +560,9 @@ def rule_fig_001(doc, rule, brief):
     trusting review to catch it.
 
     List numbering written into prose is allowed, because the alternative is
-    spelling out every enumeration. A quantity is not, and there is no way to
-    write one without a digit.
+    spelling out every enumeration. A quantity is not. This docstring used to
+    end "and there is no way to write one without a digit", which was wrong:
+    see WORDED above.
     """
     return [finding(rule["id"], rule["severity"], rule["description"] + " (body)",
                     token, context(text, start, end), line_of(text, start))
@@ -555,11 +577,21 @@ def body_figures(doc, rule):
     """
     out = []
     allowed = set(str(n) for n in rule.get("allowed_bare_integers") or [])
-    text = XREF.sub(" ", XREF_WORD.sub(" ", doc.body_text()))
+    # A cross link label is an architecture page title, not a claim the page
+    # makes, and the drafter cannot reword it without breaking the brief. 4.1.5
+    # linked to "4.12.3 Assessment at 30 Degrees" and FIG-002 read the 30 as an
+    # unregistered measurement. The label is blanked, keeping its length so every
+    # offset the caller reports still points at the right place.
+    text = CROSSLINK.sub(lambda m: " " * len(m.group(0)), doc.body_text())
+    text = XREF.sub(" ", XREF_WORD.sub(" ", text))
     spans = []
-    for m in RANGE.finditer(text):
-        spans.append((m.start(), m.end()))
-        out.append((re.sub(r"\s+", " ", m.group(0)).strip(), m.start(), m.end(), text))
+    for pattern in (RANGE, WORDED_RANGE, WORDED):
+        for m in pattern.finditer(text):
+            if any(a <= m.start() < b for a, b in spans):
+                continue
+            spans.append((m.start(), m.end()))
+            out.append((re.sub(r"\s+", " ", m.group(0)).strip(),
+                        m.start(), m.end(), text))
     for m in QUANTITY.finditer(text):
         if any(a <= m.start() < b for a, b in spans):
             continue
@@ -817,6 +849,192 @@ def rule_dec_001(doc, rule, brief, template):
         out.append(finding(rule["id"], rule["severity"],
                            rule["description"] + ": " + factor["name"] + " is not named",
                            factor["key"], "", 0))
+    return out
+
+
+# --- ATTR-001 and ATTR-002, decision 022 ------------------------------------
+#
+# A landmark papers page names studies, and this environment cannot open one.
+# What keeps the page honest rather than invented is a split. The finding and
+# the surname it is taught under are recalled together, so either one checks
+# the other and a reviewer with a library can resolve both at once. The year,
+# the journal, the volume and the page are recalled alone, and a wrong one
+# looks exactly like a right one. So the first are allowed and registered, and
+# the second are banned by a gate rather than by an intention.
+
+ATTR_BANNED = tuple((re.compile(p), label) for p, label in (
+    # An exact year. "the 1970s" passes, "1976" does not: a decade states the
+    # precision this process actually has, a year claims one it does not.
+    (r"\b(1[89]\d\d|20[0-4]\d)\b(?!s)", "an exact year"),
+    (r"\bet\s*al\b\.?", "an et al citation form"),
+    (r"\b\d+\s*\(\d+\)\s*:\s*\d+", "a volume, issue and page citation"),
+    (r"\bpp?\.\s*\d+", "a page number"),
+    (r"\b[dD][oO][iI]\s*:?\s*10\.", "a DOI"),
+    (r"\bPMID\b", "a PMID"),
+    (r"\b(J Bone Joint Surg|JBJS|Am J Sports Med|AJSM|Clin Orthop|CORR|"
+     r"KSSTA|Knee Surg Sports Traumatol|J Orthop Res|J Biomech|Arthroscopy|"
+     r"Bone Joint J|Acta Orthop|J Arthroplasty|Orthopedics|Sports Med)\b",
+     "a journal name or abbreviation"),
+))
+
+# A surname carrying a study: "Noyes showed", "Grood and Suntay described",
+# "the work of Girgis". Keyword matching, so the rule warns.
+ATTR_VERB = (r"showed|found|measured|described|reported|demonstrated|"
+             r"established|quantified|tested|compared|published|observed|"
+             r"proposed|defined|mapped|characterised|sectioned|dissected|"
+             # the first draft of this rule carried only reporting verbs and
+             # missed seven of ten attributions on 3.17.1, because a study is
+             # as often written as somebody running, taking or building
+             # something as somebody showing it
+             r"ran|worked|took|used|applied|loaded|cut|instrumented|implanted|"
+             r"introduced|developed|designed|derived|produced|pioneered|"
+             r"examined|built|computed|argued|traced|separated|collected|"
+             r"recorded|assembled|graded|classified|named")
+# One author, a comma list, an "and" pair, or any of those followed by "and
+# colleagues". "Butler, Noyes and Grood ran" is one attribution, not three.
+_ATTR_NAME = r"[A-Z][a-z]{2,}"
+ATTR_NAMED = re.compile(
+    r"\b(%s(?:(?:,\s+|\s+and\s+)%s)*(?:\s+and\s+colleagues)?)\s+(?:%s)\b"
+    % (_ATTR_NAME, _ATTR_NAME, ATTR_VERB))
+ATTR_OF = re.compile(
+    r"\b(?:work|study|studies|series|experiments?|data|paper|papers)\s+of\s+"
+    r"(%s(?:(?:,\s+|\s+and\s+)%s)*)\b" % (_ATTR_NAME, _ATTR_NAME))
+
+# Words that open a sentence and look like a surname. Without this the rule
+# reads "Cadaveric work showed" as an author called Cadaveric.
+ATTR_NOT_A_NAME = set("""
+The This That These Those It Its They Their There Here What When Where Which
+Who Whose Why How Both Each Either Neither One Two Three Many Most Some Few
+Later Earlier Subsequent Modern Current Recent Original Initial Further Also
+Cadaveric Robotic Clinical Surgical Biomechanical Anatomical Radiographic
+Experimental Laboratory Numerical Computational Statistical Prospective
+Retrospective Randomised Controlled Observational Registry Imaging Motion
+Finite Navigation Wearable Section Chapter Page Decision Figures Positions
+No None Nothing Nobody Several Other Another Such Same Different Every All
+Work Works Studies Study Data Evidence Results Findings Analysis Review
+Papers Paper Nobody Nothing Everything Anything Something Measurement
+January February March April June July August September October November
+December
+""".split())
+# An imperative opener is a capitalised word at the start of a sentence and is
+# never an author. "Treat quantified positions as targets" registered as a study
+# by somebody called Treat on the first extraction of 3.17.4. The openers come
+# from POS-001's own verb list rather than a second hand list, so the two
+# cannot drift apart.
+ATTR_NOT_A_NAME |= set(w.strip() for w in POSITION_VERBS.split("|") if w.strip())
+
+
+def load_attribution_registry(page_id, path=None):
+    here = os.path.dirname(os.path.abspath(__file__))
+    for root in [path, os.environ.get("ATTRIBUTION_REGISTRY_DIR"),
+                 os.path.join(here, "attributions"),
+                 os.path.join(here, "..", "..", "config", "attributions")]:
+        if not root:
+            continue
+        candidate = os.path.join(root, "%s.json" % page_id)
+        if os.path.exists(candidate):
+            with open(candidate) as fh:
+                return json.load(fh)
+    return None
+
+
+def attributed_names(text):
+    """Surnames the text hangs a study on, in order of first appearance."""
+    out = []
+    for pattern in (ATTR_NAMED, ATTR_OF):
+        for m in pattern.finditer(text):
+            name = re.sub(r"\s+", " ", m.group(1)).strip()
+            if name.split()[0] in ATTR_NOT_A_NAME:
+                continue
+            if name not in out:
+                out.append(name)
+    return out
+
+
+def rule_attr_001(doc, rule, brief):
+    """Decision 022: no fabricable bibliographic detail on a landmark papers page.
+
+    The whole document is in scope, the reference list included. On these pages
+    the reference list is the note saying nothing was retrieved, so a citation
+    appearing there is exactly the failure this rule exists to catch.
+    """
+    out = []
+    if brief.get("page_type") != "landmark_papers":
+        return out
+    text = doc.raw
+    for pattern, label in ATTR_BANNED:
+        for m in pattern.finditer(text):
+            out.append(finding(rule["id"], rule["severity"],
+                               rule["description"] + ": %s" % label,
+                               m.group(0), context(text, m.start(), m.end()),
+                               line_of(text, m.start())))
+    return out
+
+
+def rule_attr_002(doc, rule, brief):
+    """Decision 022: every named attribution is in the page's register.
+
+    Warn, for POS-001's reason: a surname followed by a reporting verb is a
+    heuristic and it will both miss an attribution and read one where there is
+    none. It surfaces an unregistered name; it cannot certify a registered one.
+    """
+    out = []
+    if brief.get("page_type") != "landmark_papers":
+        return out
+    registry = load_attribution_registry(brief.get("page_id"))
+    known = set()
+    if registry:
+        known = set((a.get("attributed_to") or "").strip().lower()
+                    for a in registry.get("attributions") or [])
+    for name in attributed_names(doc.body_text()):
+        if name.lower() in known:
+            continue
+        out.append(finding(rule["id"], rule["severity"],
+                           rule["description"] + ": not in the page register",
+                           name, name, 0))
+    return out
+
+
+# --- ACC-001, decision 023 ---------------------------------------------------
+#
+# ATTR-001's argument applied to a different fabricable quantity. For an
+# examination test the comparative pattern is standard teaching and is recalled
+# robustly: Lachman beats anterior drawer, the pivot shift is specific and
+# insensitive. A specific percentage is recalled alone, nothing in the pattern
+# constrains it, and a wrong one looks exactly like a right one.
+#
+# A fail rather than a warn, because a wrong sensitivity changes what a
+# clinician does next with a negative test. Angles and distances are untouched:
+# the flexion angle for a Lachman is technique, not an accuracy claim.
+
+ACC_TERM = (r"sensitivit(?:y|ies)|specificit(?:y|ies)|accurac(?:y|ies)|"
+            r"positive predictive value|negative predictive value|"
+            r"likelihood ratio|PPV|NPV|AUC|area under the curve|"
+            r"false positive rate|false negative rate")
+ACC_NUMBER = r"\d{1,3}(?:\.\d+)?\s*(?:%|per cent|percent)|0?\.\d+"
+# The term and a number within one clause of each other, either order.
+ACC_BANNED = tuple(re.compile(p, re.IGNORECASE) for p in (
+    r"(?:%s)[^.;:\n]{0,60}?(?:%s)" % (ACC_TERM, ACC_NUMBER),
+    r"(?:%s)[^.;:\n]{0,40}?(?:%s)" % (ACC_NUMBER, ACC_TERM),
+))
+
+
+def rule_acc_001(doc, rule, brief):
+    """Decision 023: no bare diagnostic accuracy figure on an examination page."""
+    out = []
+    if brief.get("page_type") != "examination":
+        return out
+    text = doc.body_text()
+    seen = set()
+    for pattern in ACC_BANNED:
+        for m in pattern.finditer(text):
+            if m.start() in seen:
+                continue
+            seen.add(m.start())
+            out.append(finding(rule["id"], rule["severity"], rule["description"],
+                               re.sub(r"\s+", " ", m.group(0))[:120],
+                               context(text, m.start(), m.end()),
+                               line_of(text, m.start())))
     return out
 
 
@@ -1150,6 +1368,12 @@ def lint(text, brief=None, rules=None, template=None):
             findings += rule_pos_001(doc, rule, brief)
         elif rid == "DEC-001":
             findings += rule_dec_001(doc, rule, brief, template)
+        elif rid == "ATTR-001":
+            findings += rule_attr_001(doc, rule, brief)
+        elif rid == "ATTR-002":
+            findings += rule_attr_002(doc, rule, brief)
+        elif rid == "ACC-001":
+            findings += rule_acc_001(doc, rule, brief)
         elif rid == "STRUCT-001":
             findings += rule_struct_001(doc, rule, brief, template)
         elif rule.get("banned_phrases"):

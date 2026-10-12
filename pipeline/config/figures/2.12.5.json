@@ -31,6 +31,15 @@
       "occurrences": 2,
       "verification": "UNVERIFIED_FROM_MEMORY",
       "source": ""
+    },
+    {
+      "as_written": "thirty degrees",
+      "tier": "medical_student",
+      "section": "Function",
+      "claim": "Soft tissue, bone and muscle are all at their weakest in the first thirty degrees.",
+      "occurrences": 2,
+      "verification": "UNVERIFIED_FROM_MEMORY",
+      "source": ""
     }
   ]
 }

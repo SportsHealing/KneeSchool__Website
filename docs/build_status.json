@@ -21,7 +21,7 @@
           "area": "Content pipeline",
           "state": "Mechanism built, nothing signed",
           "blocker": "The client confirmed on 10 October 2026 that consultants are lined up, so the people exist. The mechanism existed only as prose packs in docs/review/ with no way for an answer to come back. tools/review_pack.py now generates one pack per chapter from the work and reads a filled pack back into the registers, so the route exists. What is missing is a reviewer's time.",
-          "needed": "A consultant to work through a chapter. 1,471 clinical recommendations across 212 pages and 352 measurements across 123 are outstanding, none signed. python3 tools/review_pack.py --status prints the breakdown by chapter; the largest is 3.7 with 152 and the median is 32.",
+          "needed": "A consultant to work through a chapter. 2,139 clinical recommendations across 316 pages and 448 measurements across 165 are outstanding, none signed, and chapter 3.17 adds 52 attributions to named authors, none checked against a paper. python3 tools/review_pack.py --status prints the breakdown by chapter; 32 chapters carry recommendations, the largest is 3.7 with 152 and the median is 62.",
           "pages": "Every page on the site is an unreviewed editorial draft"
         },
         {
@@ -51,21 +51,21 @@
         },
         {
           "ref": "EV-6",
-          "title": "357 measurements on the site are unchecked",
+          "title": "448 measurements on the site are unchecked",
           "area": "Content",
-          "state": "Live and flagged",
-          "blocker": "They are written from memory because no paper could be retrieved. Each page's references note says so and each figure is registered.",
-          "needed": "Someone with source access to work the register: 357 figures across 124 pages, all UNVERIFIED_FROM_MEMORY. tools/figures.py --report --unchecked is the list.",
-          "pages": "124 pages carry at least one measurement"
+          "state": "Live and flagged, and the count rose on 12 October 2026 because the scan was wrong",
+          "blocker": "They are written from memory because no paper could be retrieved. Each page's references note says so and each figure is registered. The total rose from 381 to 442 on 12 October 2026, not because measurements were added but because the scanner could not see a measurement written in words. rule_fig_001's own docstring asserted that a quantity cannot be written without a digit. Chapter 4.9 disproved it by quoting six flexion angles as \"ninety degrees\" and similar, every one of which escaped the register decision 006 says lists every measurement on the site. 61 had accumulated across the site. The scan now reads a number word carrying a unit, and a bare enumeration such as three structures is still allowed.",
+          "needed": "Someone with source access to work the register: 448 figures across 165 pages, all UNVERIFIED_FROM_MEMORY. tools/figures.py --report --unchecked is the list.",
+          "pages": "165 pages carry at least one measurement"
         },
         {
           "ref": "EV-7",
-          "title": "1,471 clinical recommendations on the site are unsigned",
+          "title": "2,139 clinical recommendations on the site are unsigned",
           "area": "Content",
           "state": "Live and registered, and the count rose on 10 October 2026",
           "blocker": "They are written by a process with no clinical qualification, on pages that state they have not been reviewed. The client has chosen to keep them, and decision 007 makes the set finite and listed. The total rose from 976 to 1,295 on 10 October 2026, and chapter 3.12 added 93 more, not because advice was added but because the detector was found to be missing it. POS-001 read clinical direction off a list of imperative openers built from directive prose, and the directions opening with a weighing or a consultation verb had never reached the register. Two extensions of the verb list, decisions 018 and 019, added 319 between them.",
-          "needed": "A consultant to work the register: 1,471 positions across 212 pages, all UNSIGNED. tools/positions.py --report --unsigned is the list.",
-          "pages": "212 pages carry at least one recommendation"
+          "needed": "A consultant to work the register: 2,139 positions across 316 pages, all UNSIGNED. tools/positions.py --report --unsigned is the list. Section 4 is where this count will grow fastest, because an examination page tells a clinician what to do by definition and 185 of its pages are still unwritten.",
+          "pages": "316 pages carry at least one recommendation"
         },
         {
           "ref": "EV-8",
@@ -123,12 +123,12 @@
         },
         {
           "ref": "EV-14",
-          "title": "Eleven Landmark Papers pages cannot be written here",
+          "title": "Fifty-two study attributions on the site are unchecked",
           "area": "Content pipeline",
-          "state": "Held, template defined",
-          "blocker": "Section 3 carries eleven pages whose subject is named studies: 3.1.8 Landmark Biomechanical Studies, and the whole of chapter 3.17, which collects them by subject. This environment cannot retrieve a paper, and the Operations Handbook names an invented citation as its one critical failure. A page about specific papers written from memory would either carry a recalled citation, which is that failure, or carry no paper, which is not the page the architecture asked for.",
-          "needed": "Source access, the same thing EV-1 needs. The landmark_papers template is defined under decision 014 so the pages can be written the day it exists. Held: 3.1.8 and 3.17.1 to 3.17.10. Corrected on 10 October 2026: this entry previously named 3.2.11, 3.3.15, 3.4.12, 3.5.11, 3.6.12, 3.7.12, 3.8.11, 3.9.11, 3.10.10 and 3.11.9, on an unchecked assumption that every chapter ends with one. None of those ids exists, so chapters 3.2 to 3.16 hold nothing back.",
-          "pages": "11 pages in Section 3, none published"
+          "state": "Writing complete, checking outstanding",
+          "blocker": "This entry used to hold eleven pages. The client ruled on 11 October 2026, \"Write it flagged unverified\", and all eleven are now written: chapter 3.17's ten and page 3.1.8. Decision 022 sets the terms. The finding and the surname a study is taught under may be written, because they are recalled together and either checks the other. The year, the journal, the volume and the page may not, because they are recalled alone and a wrong one cannot be told from a right one. ATTR-001 refuses all six fabricable shapes at the gate and ATTR-002 requires every named attribution to be in a register. Nothing is held for source access any more. What is outstanding is the checking: 52 attributions across nine pages, every one from memory, and some of them will be wrong.",
+          "needed": "Someone with a library to work the attribution register: 52 entries, all UNVERIFIED_FROM_MEMORY. tools/attributions.py --report --unchecked is the list, and the chapter 3.17 review pack carries the same rows with a Citation column, which is the one field this process could not fill. Separately, page 3.17.9 needs a ruling from the Imperial group itself: the architecture asked for their research programme summarised and the page delivers their published work instead, which is less, and whether a page bearing an institution's name should exist in that form is their call rather than this process's.",
+          "pages": "11 pages published, 9 of them carrying unchecked attributions"
         },
         {
           "ref": "EV-15",
@@ -192,6 +192,15 @@
           "blocker": "GitHub Pages deploys this repository and has done since late September. A CNAME in the root holds kneeschool.com. Until 20:26 on 10 October every one of 62 runs was on claude/great-meitner-kofr7g, the working branch, so each push went live immediately and unreviewed. That was the opposite of the README's arrangement and it was found by reading the Actions history rather than by anything in the build.",
           "needed": "Nothing. The client changed the Pages source to main, and run 63 built 15a6ee5, the merge of pull request 2, in 47 seconds. The live site is now main's tip, so it is the copy that passed a green verify and went through a pull request. Decision 021's first rule is complete rather than aspirational. The safeguard held throughout: discoverable is false, so every page carried a noindex directive and robots.txt disallowed every crawler for the whole period.",
           "pages": "293 pages live at kneeschool.com, served from main, all noindexed"
+        },
+        {
+          "ref": "EV-22",
+          "title": "Section 4's page map is provisional and its page count was wrong",
+          "area": "Architecture",
+          "state": "Provisional map in place, replacement needed",
+          "blocker": "Part 1 of the Master Publishing Architecture carries the full page map for Sections 0 to 3 and says so on its own first page. Section 4's map arrives in Part 2, which is not in this repository. What existed instead was outline_1_to_15.json, a bare title list whose own note says a brief generated from it would have no tiers and no must_not_cover list and would be worse than no brief. That note was right. Decision 024 built pages_4.json from Part 1's own tier sentence and authority boundaries rather than from invention, and the build status should say that the map is provisional until Part 2 lands. The page count was also wrong: the outline recorded chapter 4.2's five navigational sub section headings as pages and dropped the 34 four level leaves beneath them, so Section 4 is 227 pages rather than 198. The same extraction produced Sections 1 to 15, so any other section whose source uses four level ids is undercounted the same way and none has been checked. Chapter 4.2 has now been written at its correct size of 34 pages, which confirms the renumbering was right and leaves the eleven other sections unchecked.",
+          "needed": "Part 2 of the Master Publishing Architecture, for Section 4's real per page scope, tiers, deeper spiral links and priorities. Separately, a pass over Sections 5 to 15 in the source to find any other chapter organised with four level ids, because the whole site's page count is built from that outline.",
+          "pages": "227 pages in Section 4, 8 published; 11 other sections unverified"
         }
       ]
     },
@@ -514,10 +523,10 @@
           "ref": "W-6",
           "title": "Section 3 Biomechanics Academy, chapter 3.1",
           "area": "Content",
-          "state": "7 of 8 written, style gate passed, awaiting review",
-          "blocker": "The first chapter of the largest remaining section. It carries all five tier shapes Section 3 uses, from junior to consultant, which is why it was built first: whatever template serves it serves the section.",
-          "needed": "Consultant review. Page 3.1.8 is held under decision 014 and EV-14. Chapters 3.11 to 3.17 are the 81 pages still to write.",
-          "pages": "7 published pages, 10,697 body words as the style gate counts them"
+          "state": "All 8 written, style gate passed, awaiting review",
+          "blocker": "The first chapter of the largest section. It carries all five tier shapes Section 3 uses, from junior to consultant, which is why it was built first: whatever template serves it serves the section. Page 3.1.8 was written last, on 11 October 2026, and completes the chapter and the section. Its subject is the classic studies in general, and the architecture's must_not_cover list gives the per topic detail to chapter 3.17, so the page teaches how to read a landmark study and names no study at all. It sets out the five designs almost everything in Section 3 came from, what each one can and cannot support, and the three traps that recur across every subject in the section. It is the only landmark papers page on the site with no attribution register, which is the honest result of that boundary rather than a gap in it.",
+          "needed": "Consultant review. The claim worth arguing with is the page's own framing: that a study is landmark because it changed practice rather than because it was cited often, and that teaching the five designs serves a trainee better than teaching ten named studies. Both are editorial judgements presented as orientation.",
+          "pages": "8 published pages, 12,382 body words as the style gate counts them"
         },
         {
           "ref": "W-7",
@@ -626,6 +635,78 @@
           "blocker": "Alignment and Biomechanics. The chapter is about one number nobody can measure in the state that matters: the static angle is taken standing still, the load it governs is applied during movement, and corrections are planned to a target no trial has tested. 3.13.5 and 3.13.7 are where that lands, with constitutional varus saying neutral is not normal for everyone and dynamic alignment saying the adduction moment predicts where the angle does not. Ten pages. 3.13.9 and 3.13.10 carry a fellowship tier.",
           "needed": "Consultant review by a surgeon who does osteotomy. The statements carrying most weight are 3.13.10's, that the classical overcorrection target came from a single 1980s series and has never been compared with an alternative, and 3.13.7's, that the variable which predicts is neither the one measured nor the one surgery corrects. 3.13.6's claim that the accepted joint line obliquity limit is a convention with no outcome study behind it is the third.",
           "pages": "10 published pages, 14,532 body words as the style gate counts them"
+        },
+        {
+          "ref": "W-19",
+          "title": "Section 3 Biomechanics Academy, chapter 3.14",
+          "area": "Content",
+          "state": "All 12 pages written, style gate passed, awaiting review",
+          "blocker": "Gait Analysis. The organising idea is that gait is the one place the whole knee is measured doing its actual job, and what it measures best is adaptation: every disease page here is about a compensation the patient makes without being told to and usually without knowing. The recurring honest point is that this is the most mechanically complete measurement available and it is almost never available in a clinic. Two overlaps are handled on the page rather than left to the reader: chapter 3.3 owns kinematics during walking, running, landing and cutting, and 3.8.7 owns the PCL deficient knee from the ligament's side. 3.14.1 carries a patient tier, which brings the FAQ block and the when to seek help message.",
+          "needed": "Consultant review by someone who reads gait literature. The statements carrying most weight are 3.14.9's, that quadriceps avoidance is the best known finding and not the commonest, and that altered kinematics persist after reconstruction; 3.14.11's, that the adduction moment predicts progression better than the static angle surgery is planned from; and 3.14.12's, that a successful knee replacement does not restore normal knee mechanics. 3.14.8's claim that the landing screen has underperformed while the training has held up is the fourth.",
+          "pages": "12 published pages, 15,507 body words as the style gate counts them"
+        },
+        {
+          "ref": "W-20",
+          "title": "Section 3 Biomechanics Academy, chapter 3.15",
+          "area": "Content",
+          "state": "All 10 pages written, style gate passed, awaiting review",
+          "blocker": "Sports-Specific Knee Biomechanics, ten sports. The organising idea is that each sport asks a different question of the same joint and its characteristic injury is the answer: football asks for a direction change on a planted foot, skiing asks the knee to be the weak link in a long lever, cycling asks for a million low load repetitions, golf asks a fixed foot to absorb a rotating body, dance asks for control at the end of range. Every page carries patient, medical student and MRCS and none goes to FRCS, which the architecture sets. That makes these the most public facing pages in Section 3 and the shallowest, so each carries a real when to seek help message rather than a formality.",
+          "needed": "Consultant review by someone with sports medicine exposure, and ideally by more than one person, since no single reviewer will know ten sports. One discipline runs through the chapter and should be checked: no injury rates are quoted anywhere, because epidemiology needs sources and none has been retrieved. Each page says so where a reader would expect a percentage. The statements carrying most weight are 3.15.6's, that modern ski boots moved the injury from the tibia to the knee, and 3.15.7's, that recreational running is not established as a cause of knee osteoarthritis.",
+          "pages": "10 published pages, 13,105 body words as the style gate counts them"
+        },
+        {
+          "ref": "W-21",
+          "title": "Section 3 Biomechanics Academy, chapter 3.16",
+          "area": "Content",
+          "state": "All 10 pages written, style gate passed, awaiting review",
+          "blocker": "Advanced Biomechanics, ten measurement methods. The organising idea is that every number in Section 3 came from one of these methods, and each buys its precision by giving something up. Cadavers give control and lose life. Robots give repeatability and lose physiology. Models give a continuous field and inherit their assumptions. Motion capture gives the living knee and loses precision. Wearables give volume and lose accuracy. This is the chapter that audits the other sixteen. It is also the first chapter where every page carries a consultant tier, so decision 018 and the DEC-001 gate apply on all ten: each consultant block is a balance argument that names the five patient factors rather than a verdict. 3.16.1 is where that was tested, because the obvious consultant line on cadaveric work is a preference between two study designs, and the gate was answered rather than suppressed. 3.16.10 turns the chapter's argument on this site: every measurement here was written from standard teaching, is registered as unverified, and an unverified number spoken aloud to a patient becomes a fact to them.",
+          "needed": "Consultant review, ideally split, since no one reviewer will know cadaveric rigs, finite element practice, machine learning method and wearable validation. Two things to check hardest. First, the accuracy figures: the chapter quotes marker-based and model-based error bands from standard teaching and they are the kind of number that dates, so all ten pages are in the figure register as unverified. Second, 3.16.6 on artificial intelligence and 3.16.9 on digital twins describe what the methods can do today rather than what is claimed for them, which is a judgement a reviewer should either back or correct.",
+          "pages": "10 published pages, 12,530 body words as the style gate counts them"
+        },
+        {
+          "ref": "W-22",
+          "title": "Section 3 Biomechanics Academy, chapter 3.17",
+          "area": "Content",
+          "state": "All 10 pages written, style gate passed, awaiting review",
+          "blocker": "Landmark Biomechanics Papers, the chapter that was held from 9 to 11 October 2026 and is the only one on the site written under a rule invented for it. Each page takes one subject and asks what the studies asked, what they did, what they showed, what they changed, and what to read now. Three disciplines run through it. No page carries a citation, a year, a journal or a page number, which is decision 022 and is enforced by ATTR-001 rather than intended. No page carries a measurement either, which was not planned and follows from the same discipline: a chapter that cannot cite a source has no business quoting a figure, and the figure register gained nothing from these ten pages. And every consultant block is a balance argument under decision 018, which matters more here than elsewhere because a chapter about landmark papers invites a verdict on each one. 3.17.9 is the exception and says so on the page: the architecture asked for the Imperial group's research programme summarised and the page delivers their published work instead, because describing a named group's current work from memory is a different act from writing standard teaching. 3.17.10 collects the seven gaps the other nine pages named and ranks them by what answering them would change.",
+          "needed": "Consultant review, and this is the one chapter where the review needs a library rather than only expertise. 52 attributions are listed in the pack with a Citation column, and confirming or correcting them is the work. Three things to check hardest. First, whether the author named beside each finding is the right one, since the whole chapter rests on that pairing. Second, 3.17.9, where the question is not whether the content is right but whether the page should exist in this form, which is the Imperial group's call. Third, 3.17.10's ranking, which is a judgement about clinical consequence rather than a reading of the literature and should be argued with.",
+          "pages": "10 published pages, 13,689 body words as the style gate counts them"
+        },
+        {
+          "ref": "W-23",
+          "title": "Section 4 Clinical Examination Academy, chapter 4.1",
+          "area": "Content",
+          "state": "8 of 227 written, style gate passed, awaiting review",
+          "blocker": "The first chapter of Section 4, and the first page on the site built on the examination template that decision 023 invented for it. The type map had pointed examination pages at the anatomy template, whose headings are Structure and Location, Relations, Blood Supply and Innervation, Function and Clinical Relevance, and a page called The Lachman Test has no blood supply. The organising idea of the chapter is that examination is not a cheaper scan: it answers a different question, and the commonest error in knee practice is treating an image as the answer to a question only the examination asked. 4.1.5 is the page a clinician should read before the individual tests rather than after. 4.1.8 argues that the pre-operative record is part of the operation, because a procedure that cannot be audited cannot be improved. No page in the chapter carries a diagnostic accuracy figure, which ACC-001 refuses, so every claim about how good a test is, is written as a comparison.",
+          "needed": "Consultant review, and two structural confirmations before the rest of the section is written. First, the five section examination template: it is invented and no editorial authority has signed it, and 219 pages will be built on it. Second, the tier set: decision 024 took medical student to fellowship from one sentence in Part 1 of the architecture, because Part 2, which carries Section 4's real page map, is not in this build. Beyond those, the claims worth arguing with are the comparative accuracy statements, since they are the ones a reader will act on and the figures behind them were refused rather than retrieved.",
+          "pages": "8 published pages, 9,927 body words as the style gate counts them"
+        },
+        {
+          "ref": "W-24",
+          "title": "Section 4 Clinical Examination Academy, chapter 4.2",
+          "area": "Content",
+          "state": "All 34 pages written, style gate passed, awaiting review",
+          "blocker": "History Taking, the largest chapter in Section 4 and the chapter that only exists at this size because EV-22 found the outline had collapsed it to five pages. Each page is one symptom or one question, in five groups: the presenting complaint, pain assessment, injury history, sports-specific history and previous treatment. The examination template fits history taking better than expected, and the reason is worth recording: a history question is a diagnostic test. What It Tests is what asking tells you, How It Is Performed is how to ask, What a Positive Means is what the answer licenses, How Good It Is is how discriminating the question is, and Where It Misleads is where the answer deceives. The organising idea of the first seven pages is that a patient presents with a word and the clinical meaning of that word is almost never what they mean by it, so the presenting complaint is a translation exercise. 4.2.5 on locking carries that argument furthest: almost every patient reporting locking means something else, and the follow-up question about how the knee was freed is the most valuable single addition in the chapter. The treatment history pages at the end carry its conclusion, that the history determines the plan more often than the imaging does.",
+          "needed": "Consultant review. Two things to check hardest. First, every comparative claim about which question discriminates: those are the claims a reader will act on, they are written from standard teaching, and ACC-001 refused the figures that would support them rather than inventing any. Second, the repeated argument across 4.2.32 and 4.2.34 that an incomplete rehabilitation trial is the commonest route to an unnecessary operation, which is an editorial judgement stated as a clinical one and should either be backed or removed. The chapter also makes no claim about frequency anywhere, which is deliberate and worth confirming as acceptable.",
+          "pages": "34 published pages, 40,193 body words as the style gate counts them"
+        },
+        {
+          "ref": "W-25",
+          "title": "Section 4 Clinical Examination Academy, chapter 4.9",
+          "area": "Content",
+          "state": "All 11 pages written, style gate passed, awaiting review",
+          "blocker": "Meniscal Examination, the first chapter in Section 4 whose pages are individual named tests, so the examination template applies in full. It is also the chapter ACC-001 was written for: the meniscal tests are the ones whose sensitivities are quoted most often and recalled least reliably, and no accuracy figure appears on any of the eleven pages. What appears instead is the ranking, which is standard teaching: the tests are specific rather than sensitive, so a positive is informative and a negative excludes very little, and joint line tenderness is the most sensitive finding and the least specific. The chapter's argument is that no single test performs well enough to rely on, the combination performs better than any of them, and one finding acts alone. That finding is a confirmed mechanical block, which 4.9.8 treats as the chapter's most important page and the one exception to the meniscectomy trial evidence, because those trials recruited mechanical symptoms rather than locked knees. 4.9.9 states plainly that the examination performs worse for root tears than for any other lesion here and that its job is to raise the question rather than answer it. 4.9.10 and 4.9.11 carry the chapter's conclusion: deficiency is the predictable end state of the resection these tests lead to, and in a degenerate knee the examination exists to find the exception rather than confirm the rule.",
+          "needed": "Consultant review, and this chapter needs it more than most because the comparative accuracy claims are the whole content and the figures behind them were refused rather than retrieved. Three things to check hardest. First, the ranking itself: that joint line tenderness is the most sensitive finding and the provocative tests the most specific. Second, 4.9.4's statement that the Thessaly test performs comparably to the older tests rather than better, which contradicts its original reports and is the kind of claim a reviewer should either back or correct. Third, 4.9.11's position on the meniscectomy trials, which the chapter treats as settling the degenerate tear with pain and not settling a true block.",
+          "pages": "11 published pages, 13,886 body words as the style gate counts them"
+        },
+        {
+          "ref": "W-26",
+          "title": "Section 4 Clinical Examination Academy, chapter 4.10",
+          "area": "Content",
+          "state": "All 12 pages written, style gate passed, awaiting review",
+          "blocker": "ACL Examination. The best performing examination in the knee, and the chapter where the gap between what the tests measure and what the patient complains about is widest. 4.10.9 states that gap as the chapter's conclusion: the translation tests are accurate, translation is not the complaint, and the test that measures the complaint is abolished by the patient being awake. Almost every dissatisfied reconstruction in referred practice sits in it. ACC-001 held on all twelve pages, so the comparative ranking is written and no percentage appears: the Lachman outperforms the anterior drawer substantially, the pivot shift is specific and insensitive awake and its sensitivity rises substantially under anaesthesia. 4.10.5 is the clearest case on the site of a position making a test worse, and the page says so rather than defending the anterior drawer. 4.10.7 holds the lever sign provisionally and names the pattern it shares with the Thessaly test, strong initial reports followed by less favourable independent ones. 4.10.11 separates four causes of a disappointing reconstruction and notes that the largest group is confidence and rehabilitation rather than structure. 4.10.12 closes the chapter by arguing that the revision clinic is where the cost of an incomplete pre-operative examination is paid.",
+          "needed": "Consultant review, and the comparative claims are again the whole content with the figures refused rather than retrieved. Three things to check hardest. First, 4.10.9's central claim that rotational instability is the commonest thing missed before reconstruction and the commonest residual complaint after it, which is an editorial judgement stated as a clinical fact. Second, 4.10.7's provisional handling of the lever sign, which a reviewer may consider either too cautious or not cautious enough. Third, 4.10.11's assertion that a small increase in translation with a firm endpoint is a satisfactory graft rather than a failure, which is the kind of claim that changes how a trainee reads their own findings.",
+          "pages": "12 published pages, 15,616 body words as the style gate counts them"
         }
       ]
     }

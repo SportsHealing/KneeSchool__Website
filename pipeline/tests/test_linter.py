@@ -860,3 +860,137 @@ class EveryBriefDeclaresItsGovernance(unittest.TestCase):
                 if key not in gov or gov[key] is None:
                     missing.append("%s: %s" % (name[:-5], key))
         self.assertEqual(missing, [])
+
+
+class FabricableCitationDetail(unittest.TestCase):
+    """ATTR-001, decision 022. The rule that stands in for source access.
+
+    A landmark papers page may name the author a study is taught under and the
+    decade. The year, the journal, the volume, the page, the DOI and the et al
+    form are the parts that get invented, and they are refused at the gate.
+    """
+
+    BRIEF = {"page_id": "3.17.1", "page_type": "landmark_papers",
+             "tiers_required": ["frcs", "fellowship", "consultant"]}
+
+    def fire(self, text, brief=None):
+        rule = next(r for r in linter.load_rules()["rules"] if r["id"] == "ATTR-001")
+        doc = linter.Document(text, linter.load_article_template())
+        return linter.rule_attr_001(doc, rule, brief or self.BRIEF)
+
+    def test_a_decade_is_allowed(self):
+        self.assertEqual(self.fire("Girgis and colleagues described it in the 1970s."), [])
+
+    def test_an_exact_year_is_refused(self):
+        found = self.fire("Girgis and colleagues described it in 1975.")
+        self.assertEqual(len(found), 1)
+        self.assertIn("an exact year", found[0]["description"])
+
+    def test_et_al_is_refused(self):
+        self.assertTrue(self.fire("Girgis et al described the bundles."))
+
+    def test_a_journal_abbreviation_is_refused(self):
+        self.assertTrue(self.fire("The work appeared in Am J Sports Med."))
+
+    def test_a_volume_and_page_is_refused(self):
+        self.assertTrue(self.fire("See 58(2):159 for the series."))
+
+    def test_a_doi_is_refused(self):
+        self.assertTrue(self.fire("Available at doi:10.1000/example."))
+
+    def test_the_reference_note_is_in_scope(self):
+        """A citation hidden in the reference note is the failure the rule exists
+        for, so the scan covers the whole document rather than the body."""
+        text = "# A page\n\nSummary.\n\n## References\n\nSee the 1975 paper.\n"
+        self.assertTrue(self.fire(text))
+
+    def test_other_page_types_keep_their_dates(self):
+        """3.1.7 Historical Development is a page of real years. Scoping by page
+        type is what lets this rule exist without an exemption list."""
+        brief = dict(self.BRIEF, page_type="biomechanics")
+        self.assertEqual(self.fire("The first rig was built in 1975.", brief), [])
+
+
+class AttributionsAreRegistered(unittest.TestCase):
+    """ATTR-002 and the detector behind it, decision 022."""
+
+    def names(self, text):
+        return linter.attributed_names(text)
+
+    def test_a_single_surname(self):
+        self.assertEqual(self.names("Noyes measured the failure load."), ["Noyes"])
+
+    def test_a_pair(self):
+        self.assertEqual(self.names("Race and Amis tested the construct."),
+                         ["Race and Amis"])
+
+    def test_a_comma_list_is_one_attribution(self):
+        """The first version of this detector split on whitespace and lost the
+        whole phrase, so 'Butler, Noyes and Grood' registered as nothing."""
+        self.assertEqual(self.names("Butler, Noyes and Grood ran the study."),
+                         ["Butler, Noyes and Grood"])
+
+    def test_and_colleagues(self):
+        self.assertEqual(self.names("Girgis and colleagues described the bundles."),
+                         ["Girgis and colleagues"])
+
+    def test_the_work_of_form(self):
+        self.assertEqual(self.names("The work of Markolf measured force directly."),
+                         ["Markolf"])
+
+    def test_a_subject_that_is_not_a_person(self):
+        self.assertEqual(self.names("Cadaveric work showed the restraint."), [])
+
+    def test_an_imperative_opener_is_not_an_author(self):
+        """'Treat quantified positions as targets' registered as a study by
+        somebody called Treat on the first extraction of 3.17.4. The openers come
+        from POS-001's verb list so the two cannot drift apart."""
+        self.assertEqual(self.names("Treat quantified positions as targets."), [])
+        self.assertEqual(self.names("Read measured laxity with its angle."), [])
+
+    def test_the_register_satisfies_the_rule(self):
+        rule = next(r for r in linter.load_rules()["rules"] if r["id"] == "ATTR-002")
+        text = "# A page\n\n## FRCS Level\n\n### What Was Done\n\nNoyes measured it.\n"
+        doc = linter.Document(text, linter.load_article_template())
+        brief = {"page_id": "no-such-page", "page_type": "landmark_papers"}
+        self.assertTrue(linter.rule_attr_002(doc, rule, brief))
+
+
+class EveryLandmarkPageOnTheSite(unittest.TestCase):
+    """Decision 022 against the real pages rather than fixtures.
+
+    The chapter names roughly fifty studies. One fabricable detail anywhere in it
+    is the handbook's critical failure, so this runs the gate over every landmark
+    papers page that exists.
+    """
+
+    def pages(self):
+        for page_id in sorted(os.listdir(os.path.join(ROOT, "runs"))):
+            brief_path = os.path.join(ROOT, "config", "briefs", "%s.json" % page_id)
+            page_path = os.path.join(ROOT, "runs", page_id, "styled_v1.md")
+            if not (os.path.exists(brief_path) and os.path.exists(page_path)):
+                continue
+            with open(brief_path) as fh:
+                brief = json.load(fh)
+            if brief.get("page_type") != "landmark_papers":
+                continue
+            with open(page_path) as fh:
+                yield page_id, brief, fh.read()
+
+    def test_no_page_carries_a_fabricable_citation_detail(self):
+        checked, bad = 0, []
+        for page_id, brief, text in self.pages():
+            report = linter.lint(text, brief)
+            bad += ["%s: %s" % (page_id, f["matched_text"]) for f in report["findings"]
+                    if f["rule_id"] == "ATTR-001"]
+            checked += 1
+        self.assertEqual(bad, [])
+        self.assertTrue(checked, "no landmark papers pages found")
+
+    def test_every_attribution_is_in_a_register(self):
+        unregistered = []
+        for page_id, brief, text in self.pages():
+            report = linter.lint(text, brief)
+            unregistered += ["%s: %s" % (page_id, f["matched_text"])
+                             for f in report["findings"] if f["rule_id"] == "ATTR-002"]
+        self.assertEqual(unregistered, [])

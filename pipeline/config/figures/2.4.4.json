@@ -13,6 +13,24 @@
       "occurrences": 2,
       "verification": "UNVERIFIED_FROM_MEMORY",
       "source": ""
+    },
+    {
+      "as_written": "thirty degrees",
+      "tier": "frcs",
+      "section": "Function",
+      "claim": "The range that matters is the first thirty degrees or so of flexion.",
+      "occurrences": 2,
+      "verification": "UNVERIFIED_FROM_MEMORY",
+      "source": ""
+    },
+    {
+      "as_written": "ninety degrees",
+      "tier": "frcs",
+      "section": "Function",
+      "claim": "A reconstruction that is correct at ninety degrees and wrong at twenty has failed, and the reverse is rarely true.",
+      "occurrences": 1,
+      "verification": "UNVERIFIED_FROM_MEMORY",
+      "source": ""
     }
   ]
 }

@@ -225,6 +225,21 @@
         "max": 1800
       },
       "source_of_truth": "decision 014"
+    },
+    "examination": {
+      "body_sections": [
+        "what_it_tests",
+        "how_it_is_performed",
+        "what_a_positive_means",
+        "how_good_it_is",
+        "where_it_misleads"
+      ],
+      "body_sections_rule": "ordered_subset_per_tier; how_good_it_is mrcs_and_above",
+      "word_count": {
+        "min": 800,
+        "max": 1800
+      },
+      "source_of_truth": "decision 023"
     }
   },
   "word_count_override": "brief.output_requirements.target_word_count overrides page_type default when present",
@@ -294,7 +309,12 @@
     "what_to_watch_for": "What to Watch For",
     "what_was_done": "What Was Done",
     "where_to_find_out_more": "Where to Find Out More",
-    "why_it_matters": "Why It Matters"
+    "why_it_matters": "Why It Matters",
+    "what_it_tests": "What It Tests",
+    "how_it_is_performed": "How It Is Performed",
+    "what_a_positive_means": "What a Positive Means",
+    "how_good_it_is": "How Good It Is",
+    "where_it_misleads": "Where It Misleads"
   },
   "body_section_headings_note": "The heading a body section slug is written as. Supplied for every slug the site uses, so a heading is never derived by guesswork. Decision 003 added the Section 0 page types and decision 014 the biomechanics and landmark papers types.",
   "tier_intent": {
@@ -443,6 +463,11 @@
     "variations_and_controversies": {
       "from": "fellowship",
       "reason": "Unchanged from the handbook."
+    },
+    "how_good_it_is": {
+      "from": "mrcs",
+      "source_of_truth": "decision 023",
+      "note": "Diagnostic accuracy is an MRCS and above subject. A medical student block that carried it would be teaching a number before the test, and ACC-001 refuses the number anyway."
     }
   }
 }

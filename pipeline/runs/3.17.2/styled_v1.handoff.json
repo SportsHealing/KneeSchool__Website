@@ -1,0 +1,15 @@
+{
+  "page_id": "3.17.2",
+  "prompt_version": "1.0",
+  "dashes_removed": 0,
+  "ai_phrases_removed": [],
+  "terminology_standardised": [],
+  "sentences_flagged_for_human_review": [],
+  "readability_estimate_by_tier": {
+    "frcs": "decision oriented, anatomy stated as a constraint on a choice",
+    "fellowship": "method appraisal, what each study design can and cannot support",
+    "consultant": "balance argument under decision 018, with the five patient factors named where the block gives clinical direction"
+  },
+  "status": "STYLE_COMPLETE_READY_FOR_CONSULTANT_REVIEW",
+  "status_note": "The draft met house style and the structure template on the run that produced it. No substantive edit was made and no new fact introduced. FIG-002 refuses any figure that is not in the page's register and ATTR-001 refuses any fabricable bibliographic detail, so decision 006's and decision 022's traceability are both enforced mechanically rather than by review."
+}

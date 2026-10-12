@@ -1,0 +1,23 @@
+{
+  "page_id": "3.17.10",
+  "prompt_version": "1.0",
+  "claims_checked": 0,
+  "verified": 0,
+  "corrected": [],
+  "removed_claims": [],
+  "reference_actions": [],
+  "red_flags": [
+    "Tier 1 source minimum not met: no textbook or review source retrieved",
+    "5 listed claims unverified; none confirmed against a source",
+    "0 attribution(s) to a named author, none checked against the paper. This is the chapter where that failure mode is the subject rather than a side effect.",
+    "Professional tiers only. An error here would reach a reader who is revising for an examination or planning an operation."
+  ],
+  "guidelines_checked": [],
+  "escalate_to_consultant": [
+    "Every attribution on this page needs confirmation that the named author is the right one for the finding beside them. tools/attributions.py --report --unchecked is the list, and each entry has a field for the citation as actually retrieved.",
+    "Every claim on this page needs confirmation, because the verification stage could not run. The consultant is standing in for it.",
+    "Any figure on this page needs a source against it. tools/figures.py --report --unchecked is the list."
+  ],
+  "status": "NOT_RUN_TOOLS_UNAVAILABLE",
+  "status_note": "Agent 2 could not run. No source retrieval was available. In the deployed pipeline this execution would stop here."
+}
