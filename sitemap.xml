@@ -326,6 +326,7 @@
   <url><loc>https://kneeschool.com/examination/contact-injury.html</loc></url>
   <url><loc>https://kneeschool.com/examination/contractures.html</loc></url>
   <url><loc>https://kneeschool.com/examination/cricket.html</loc></url>
+  <url><loc>https://kneeschool.com/examination/crossover-hop.html</loc></url>
   <url><loc>https://kneeschool.com/examination/crystal-arthropathy.html</loc></url>
   <url><loc>https://kneeschool.com/examination/dashboard-injury.html</loc></url>
   <url><loc>https://kneeschool.com/examination/deep-mcl-assessment.html</loc></url>
@@ -372,6 +373,7 @@
   <url><loc>https://kneeschool.com/examination/joint-line-tenderness.html</loc></url>
   <url><loc>https://kneeschool.com/examination/jumpers-knee.html</loc></url>
   <url><loc>https://kneeschool.com/examination/lachman-test.html</loc></url>
+  <url><loc>https://kneeschool.com/examination/landing-error-scoring-system.html</loc></url>
   <url><loc>https://kneeschool.com/examination/lcl-assessment.html</loc></url>
   <url><loc>https://kneeschool.com/examination/lever-sign-test.html</loc></url>
   <url><loc>https://kneeschool.com/examination/limb-length-assessment.html</loc></url>
@@ -405,6 +407,7 @@
   <url><loc>https://kneeschool.com/examination/paediatric-patellar-instability.html</loc></url>
   <url><loc>https://kneeschool.com/examination/pain.html</loc></url>
   <url><loc>https://kneeschool.com/examination/painful-arc.html</loc></url>
+  <url><loc>https://kneeschool.com/examination/partial-knee-replacement.html</loc></url>
   <url><loc>https://kneeschool.com/examination/passive-motion.html</loc></url>
   <url><loc>https://kneeschool.com/examination/patellar-apprehension-test.html</loc></url>
   <url><loc>https://kneeschool.com/examination/patellar-dislocation-event.html</loc></url>
@@ -429,6 +432,12 @@
   <url><loc>https://kneeschool.com/examination/posterior-oblique-ligament-assessment.html</loc></url>
   <url><loc>https://kneeschool.com/examination/posterior-sag-sign.html</loc></url>
   <url><loc>https://kneeschool.com/examination/posterolateral-corner-assessment.html</loc></url>
+  <url><loc>https://kneeschool.com/examination/postop-acl-reconstruction.html</loc></url>
+  <url><loc>https://kneeschool.com/examination/postop-cartilage-surgery.html</loc></url>
+  <url><loc>https://kneeschool.com/examination/postop-meniscal-repair.html</loc></url>
+  <url><loc>https://kneeschool.com/examination/postop-mpfl-reconstruction.html</loc></url>
+  <url><loc>https://kneeschool.com/examination/postop-osteotomy.html</loc></url>
+  <url><loc>https://kneeschool.com/examination/postop-root-repair.html</loc></url>
   <url><loc>https://kneeschool.com/examination/previous-imaging.html</loc></url>
   <url><loc>https://kneeschool.com/examination/previous-injections.html</loc></url>
   <url><loc>https://kneeschool.com/examination/previous-physiotherapy.html</loc></url>
@@ -440,9 +449,12 @@
   <url><loc>https://kneeschool.com/examination/quadriceps-tendon.html</loc></url>
   <url><loc>https://kneeschool.com/examination/referred-pain.html</loc></url>
   <url><loc>https://kneeschool.com/examination/relieving-factors.html</loc></url>
+  <url><loc>https://kneeschool.com/examination/return-to-play-decision-making.html</loc></url>
+  <url><loc>https://kneeschool.com/examination/return-to-sport-testing.html</loc></url>
   <url><loc>https://kneeschool.com/examination/reverse-pivot-shift-plc.html</loc></url>
   <url><loc>https://kneeschool.com/examination/reverse-pivot-shift.html</loc></url>
   <url><loc>https://kneeschool.com/examination/revision-acl-assessment.html</loc></url>
+  <url><loc>https://kneeschool.com/examination/revision-knee-surgery.html</loc></url>
   <url><loc>https://kneeschool.com/examination/rotational-alignment.html</loc></url>
   <url><loc>https://kneeschool.com/examination/rotational-examination-under-anaesthesia.html</loc></url>
   <url><loc>https://kneeschool.com/examination/rotational-pivot-shift.html</loc></url>
@@ -451,7 +463,9 @@
   <url><loc>https://kneeschool.com/examination/running.html</loc></url>
   <url><loc>https://kneeschool.com/examination/severity.html</loc></url>
   <url><loc>https://kneeschool.com/examination/sinding-larsen-johansson-syndrome.html</loc></url>
+  <url><loc>https://kneeschool.com/examination/single-leg-hop.html</loc></url>
   <url><loc>https://kneeschool.com/examination/single-leg-landing-assessment.html</loc></url>
+  <url><loc>https://kneeschool.com/examination/single-leg-squat.html</loc></url>
   <url><loc>https://kneeschool.com/examination/sitting-assessment.html</loc></url>
   <url><loc>https://kneeschool.com/examination/skiing.html</loc></url>
   <url><loc>https://kneeschool.com/examination/skin-changes.html</loc></url>
@@ -471,7 +485,9 @@
   <url><loc>https://kneeschool.com/examination/thessaly-test.html</loc></url>
   <url><loc>https://kneeschool.com/examination/tibial-tubercle-tenderness.html</loc></url>
   <url><loc>https://kneeschool.com/examination/torsional-assessment.html</loc></url>
+  <url><loc>https://kneeschool.com/examination/total-knee-replacement.html</loc></url>
   <url><loc>https://kneeschool.com/examination/trendelenburg-gait.html</loc></url>
+  <url><loc>https://kneeschool.com/examination/triple-hop.html</loc></url>
   <url><loc>https://kneeschool.com/examination/trochlear-dysplasia-assessment.html</loc></url>
   <url><loc>https://kneeschool.com/examination/twisting-injury.html</loc></url>
   <url><loc>https://kneeschool.com/examination/valgus-alignment.html</loc></url>
@@ -481,6 +497,7 @@
   <url><loc>https://kneeschool.com/examination/varus-oa.html</loc></url>
   <url><loc>https://kneeschool.com/examination/varus-stress-test.html</loc></url>
   <url><loc>https://kneeschool.com/examination/why-clinical-examination-matters.html</loc></url>
+  <url><loc>https://kneeschool.com/examination/y-balance-test.html</loc></url>
   <url><loc>https://kneeschool.com/index.html</loc></url>
   <url><loc>https://kneeschool.com/junior/ask-a-surgeon.html</loc></url>
   <url><loc>https://kneeschool.com/junior/athlete-stories.html</loc></url>

@@ -509,6 +509,23 @@
     "4.19.5": "examination/paediatric-ocd.html",
     "4.19.6": "examination/developmental-variants.html",
     "4.19.7": "examination/torsional-assessment.html",
+    "4.20.1": "examination/postop-acl-reconstruction.html",
+    "4.20.2": "examination/postop-meniscal-repair.html",
+    "4.20.3": "examination/postop-root-repair.html",
+    "4.20.4": "examination/postop-osteotomy.html",
+    "4.20.5": "examination/postop-cartilage-surgery.html",
+    "4.20.6": "examination/postop-mpfl-reconstruction.html",
+    "4.20.7": "examination/partial-knee-replacement.html",
+    "4.20.8": "examination/total-knee-replacement.html",
+    "4.20.9": "examination/revision-knee-surgery.html",
+    "4.21.1": "examination/single-leg-squat.html",
+    "4.21.2": "examination/single-leg-hop.html",
+    "4.21.3": "examination/triple-hop.html",
+    "4.21.4": "examination/crossover-hop.html",
+    "4.21.5": "examination/y-balance-test.html",
+    "4.21.6": "examination/landing-error-scoring-system.html",
+    "4.21.7": "examination/return-to-sport-testing.html",
+    "4.21.8": "examination/return-to-play-decision-making.html",
     "6.1.1": "conditions/acl.html"
   }
 }
