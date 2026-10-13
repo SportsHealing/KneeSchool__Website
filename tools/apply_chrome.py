@@ -91,23 +91,10 @@ def write_sitemap(check_only):
             print("  removed  sitemap.xml")
         return False
 
-    with open(os.path.join(ROOT, "pipeline", "config",
-                           "published_pages.json"), encoding="utf-8") as fh:
-        published = json.load(fh)
-    pages = published.get("pages", published)
-    outs = sorted({(v if isinstance(v, str) else v.get("out"))
-                   for v in pages.values()} - {None})
-    # The homepage and the section indexes are not in the published page index,
-    # because that index lists articles. A sitemap that omits the pages a reader
-    # actually lands on is not a sitemap.
-    for extra in ("index.html", "anatomy/index.html", "biomechanics/index.html",
-                  "examination/index.html", "encyclopaedia/index.html",
-                  "conditions/index.html", "practise/index.html",
-                  "about/status.html", "about/standards.html",
-                  "about/curriculum.html"):
-        if os.path.exists(os.path.join(ROOT, extra)) and extra not in outs:
-            outs.append(extra)
-    outs.sort()
+    # The path list lives in tools/site_chrome.py so that build_status.py can
+    # quote the count without reading this file back, which used to make the two
+    # disagree whenever they ran in the wrong order.
+    outs = chrome.sitemap_paths()
 
     base = cfg["base_url"]
     lines = ['<?xml version="1.0" encoding="UTF-8"?>',

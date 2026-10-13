@@ -71,11 +71,11 @@ def register_counts():
     counts = sorted(by_chapter.values())
     largest = max(by_chapter.items(), key=lambda kv: (kv[1], kv[0])) if by_chapter else ("", 0)
     packs = len(glob.glob(os.path.join(ROOT, "docs", "review", "packs", "chapter-*.md")))
-    sitemap = os.path.join(ROOT, "sitemap.xml")
-    urls = 0
-    if os.path.exists(sitemap):
-        with open(sitemap, encoding="utf-8") as fh:
-            urls = fh.read().count("<loc>")
+    # Counted from the same function apply_chrome.py writes the sitemap from,
+    # not from sitemap.xml itself. Reading the file made this page quote the
+    # previous count whenever a batch of pages was added and build_status ran
+    # before apply_chrome.
+    urls = len(chrome.sitemap_paths()) if chrome.site_config().get("discoverable") else 0
     return {
         "figures_unchecked": thousands(figures),
         "figure_pages": thousands(fig_pages),

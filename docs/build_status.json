@@ -246,6 +246,33 @@
           "blocker": "This page tells a reader how much unchecked work the site carries, and until chapter 4.11 those numbers were typed into docs/build_status.json by whoever last edited it. They were right when written and wrong by the next chapter. At the point it was found the page said 448 unchecked measurements against a register holding 462, 2,139 unsigned recommendations against 2,149, that 32 chapters carried recommendations when 37 did, and that the largest was 3.7 with 152 when it was 4.2 with 191. The understatement was the problem: the page exists so the scale of unreviewed content is visible, and it was understating it. Same failure as the hand compiled figure list that decision 006 replaced, so it has the same answer. Every one of those numbers is now a placeholder filled from the registers when the page is built.",
           "needed": "Nothing outstanding. TheBuildStatusPageAgreesWithTheRegisters fills every tokenised sentence from the live registers and looks for it whole on the page, so a register that moves without the page being rebuilt fails the suite. The first version of that test matched on the bare number and passed against a stale page, which is why it matches sentences.",
           "pages": "about/status.html, generated from docs/build_status.json"
+        },
+        {
+          "ref": "EV-28",
+          "title": "The renderer gave two pages the same title tag",
+          "area": "Infrastructure",
+          "state": "Fixed, with a test added",
+          "blocker": "PUB-009 requires a unique title tag per page, and the renderer gets one for a colliding page by appending the chapter name, trimmed to fit PUB-001's length bound. It trimmed from the back of the name, on the reasoning that the first word distinguishes. Chapter 4.15 disproved it. Patellofemoral Arthritis exists in chapter 3.12, Patellofemoral Biomechanics, and in chapter 4.15, Patellofemoral Examination, and both trimmed to \"Patellofemoral Arthritis, Patellofemoral\": two identical title tags for the two pages the disambiguation existed to separate. Trimming from the front instead breaks the opposite case, where \"ACL Examination\" loses the ACL that separates it from \"Rotational Instability Examination\". The renderer now ranks a chapter name's words by how many of the other colliding chapters contain them and drops the most shared word first, so the distinguishing word survives at either end.",
+          "needed": "Nothing outstanding. DisambiguatedTitlesSeparateThePages holds both cases and the length bound, the renderer now refuses to write two identical title tags rather than leaving it to the gate, and PUB-009 remains the backstop that found it.",
+          "pages": "One existing title changed: biomechanics/patellofemoral-arthritis.html now carries its chapter name"
+        },
+        {
+          "ref": "EV-29",
+          "title": "The renderer's --only flag could publish a non-unique title",
+          "area": "Infrastructure",
+          "state": "Fixed, with a test added",
+          "blocker": "The same finding had a second cause. The renderer computed its collision set after --only had narrowed the targets, so a page rendered on its own could not see a page it collided with and was written without the chapter suffix. Chapter 4.15 was rendered with --only and published its title tag as though nothing shared it. This is the shape of several bugs in this repository: correct when the whole site is rendered, wrong on the narrower path, and nothing checking the narrow path. The collision set is now computed from every render target and only the rendering is narrowed.",
+          "needed": "Nothing outstanding. The gate caught it, and the renderer no longer depends on the whole site being rendered to get a title right.",
+          "pages": "tools/render_site.py"
+        },
+        {
+          "ref": "EV-30",
+          "title": "The build status page quoted a stale sitemap count",
+          "area": "Infrastructure",
+          "state": "Fixed, with a test added",
+          "blocker": "This page quotes the number of urls in sitemap.xml, and the two tools disagreed by construction: tools/apply_chrome.py writes the sitemap and tools/build_status.py read the written file to get the count. Running build_status before apply_chrome, which is the order a page batch naturally produces, made this page quote the previous count. Chapter 4.15 failed the suite on it. The path list now lives in tools/site_chrome.py and both tools derive it, so the order they run in does not matter. Same answer as EV-27 one step further back: the number is computed rather than read from whatever happened to be on disk.",
+          "needed": "Nothing outstanding. TheSitemapCountAgreesWithTheSitemap holds the derived list against the file, and TheBuildStatusPageAgreesWithTheRegisters holds the page against the derived list.",
+          "pages": "sitemap.xml and about/status.html"
         }
       ]
     },

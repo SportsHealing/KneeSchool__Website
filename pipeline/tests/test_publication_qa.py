@@ -436,3 +436,80 @@ class TheBuildStatusPageAgreesWithTheRegisters(unittest.TestCase):
                     if want not in self.page:
                         missing.append("%s %s" % (item.get("ref"), field))
         self.assertEqual(sorted(missing), [])
+
+
+class DisambiguatedTitlesSeparateThePages(unittest.TestCase):
+    """PUB-009 wants a unique title tag per page, and the renderer gets one for a
+    colliding page by appending the chapter name, trimmed to fit PUB-001's bound.
+
+    Which words to drop is the whole problem. Dropping from the back loses
+    "Examination" from "Patellofemoral Examination", the word that separates it
+    from "Patellofemoral Biomechanics". Dropping from the front loses "ACL" from
+    "ACL Examination", the word that separates it from "Rotational Instability
+    Examination". Chapter 4.15 hit the first and gave two pages the identical
+    title tag the disambiguation existed to separate.
+
+    The renderer now ranks a chapter name's words by how many of the other
+    colliding chapters contain them and drops the most shared word first. These
+    hold both halves of that, and the live site's uniqueness is held by
+    PublicationPosture and the publication gate rather than here.
+    """
+
+    def setUp(self):
+        sys.path.insert(0, os.path.join(REPO, "tools"))
+        import render_site
+        self.mod = render_site
+        self.budget = render_site.title_budget()
+
+    def test_a_shared_opening_word_is_dropped_before_the_distinguishing_one(self):
+        a = self.mod.disambiguate("Patellofemoral Arthritis",
+                                  "Patellofemoral Examination", self.budget,
+                                  ["Patellofemoral Biomechanics"])
+        b = self.mod.disambiguate("Patellofemoral Arthritis",
+                                  "Patellofemoral Biomechanics", self.budget,
+                                  ["Patellofemoral Examination"])
+        self.assertNotEqual(a, b)
+        self.assertIn("Examination", a)
+        self.assertIn("Biomechanics", b)
+
+    def test_a_shared_closing_word_is_dropped_before_the_distinguishing_one(self):
+        a = self.mod.disambiguate("Examination Under Anaesthesia",
+                                  "ACL Examination", self.budget,
+                                  ["Rotational Instability Examination"])
+        self.assertIn("ACL", a)
+
+    def test_every_disambiguated_title_fits_the_bound(self):
+        for chapter in ("Patellofemoral Examination", "ACL Examination",
+                        "Tibiofemoral Contact Mechanics",
+                        "Rotational Instability Examination"):
+            out = self.mod.disambiguate("Effects of Malalignment", chapter,
+                                        self.budget, ["Patellofemoral Biomechanics"])
+            self.assertLessEqual(len(out), self.budget, out)
+
+
+class TheSitemapCountAgreesWithTheSitemap(unittest.TestCase):
+    """about/status.html quotes the number of urls in the sitemap, and the
+    sitemap is written by a different tool.
+
+    build_status.py used to read sitemap.xml to get the count, so adding a batch
+    of pages made the status page quote the previous number until apply_chrome
+    had written the sitemap and build_status had run again. Chapter 4.15 failed
+    the suite on exactly that. Both now derive the path list from
+    site_chrome.sitemap_paths(), and this holds the derived list against the file
+    on disk so the two cannot drift apart again.
+    """
+
+    def test_the_file_lists_the_paths_the_function_derives(self):
+        sys.path.insert(0, os.path.join(REPO, "tools"))
+        import site_chrome as chrome
+        path = os.path.join(REPO, "sitemap.xml")
+        if not chrome.site_config().get("discoverable"):
+            self.assertFalse(os.path.exists(path),
+                             "a sitemap is offered while the site is not discoverable")
+            return
+        with io.open(path, encoding="utf-8") as fh:
+            body = fh.read()
+        self.assertEqual(body.count("<loc>"), len(chrome.sitemap_paths()))
+        base = chrome.site_config()["base_url"]
+        for rel in chrome.sitemap_paths():
+            self.assertIn("<loc>%s%s</loc>" % (base, rel), body)
