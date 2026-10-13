@@ -223,12 +223,23 @@ def main():
                                  "already linked on this page as %r" % seen[pid]))
             seen[pid] = label
             if pid not in known:
-                # Pages beyond section 3 are not in the architecture file yet. A
-                # forward link to one is expected, so only a malformed id is a
-                # fault.
-                if not (re.match(r"^\d+(\.\d+)*$", pid)
-                        or PLACEHOLDER.match(pid)):
+                # An unknown id is a fault. The check used to exempt every one
+                # of them as a forward link to a section the architecture had
+                # not mapped yet, which was written when only sections 0 to 3
+                # were mapped. All sixteen sections now carry page ids, so the
+                # exemption protected nothing and hid a typo: 4.19.4 linked
+                # [[4.15.11 | The Apprehension Test]] when chapter 4.15 ends at
+                # 4.15.10, the renderer counted it as one unresolved link of
+                # six, and no gate failed. A section placeholder is still
+                # exempt, because two future pages in one unpublished section
+                # share an id by design.
+                if PLACEHOLDER.match(pid):
+                    continue
+                if not re.match(r"^\d+(\.\d+)*$", pid):
                     problems.append((page_id, pid, label, "page_id is not a page_id"))
+                else:
+                    problems.append((page_id, pid, label,
+                                     "the architecture has no such page"))
                 continue
             real = known[pid]
             if words(label) & words(real):

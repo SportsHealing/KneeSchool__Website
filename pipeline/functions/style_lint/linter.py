@@ -892,7 +892,17 @@ ATTR_VERB = (r"showed|found|measured|described|reported|demonstrated|"
              r"recorded|assembled|graded|classified|named")
 # One author, a comma list, an "and" pair, or any of those followed by "and
 # colleagues". "Butler, Noyes and Grood ran" is one attribution, not three.
-_ATTR_NAME = r"[A-Z][a-z]{2,}"
+#
+# The name shape allows an internal capital, a hyphenated second part and an
+# apostrophe, because the previous [A-Z][a-z]{2,} could not match McMurray,
+# MacIntosh, Barber-Westin or O'Donoghue. Chapter 4.24 found it: the page about
+# the meniscal test literature attributed the test to McMurray in its own first
+# sentence and the register recorded nothing. A false positive is visible and
+# gets withdrawn on the next extraction; a miss is invisible, and the register's
+# whole value is that it comes from the pages rather than from someone
+# remembering to add a name.
+_ATTR_NAME = (r"(?:[A-Z][a-z]*[A-Z]?[a-z]{2,}|[A-Z]['\u2019][A-Z][a-z]{2,})"
+              r"(?:-[A-Z][a-z]{2,})?")
 ATTR_NAMED = re.compile(
     r"\b(%s(?:(?:,\s+|\s+and\s+)%s)*(?:\s+and\s+colleagues)?)\s+(?:%s)\b"
     % (_ATTR_NAME, _ATTR_NAME, ATTR_VERB))
@@ -915,6 +925,9 @@ Work Works Studies Study Data Evidence Results Findings Analysis Review
 Papers Paper Nobody Nothing Everything Anything Something Measurement
 January February March April June July August September October November
 December
+Patient Patients Translation Symmetry Laxity Instability Grading Confidence
+Criteria Thresholds Threshold Scores Scoring Function Fear Reinjury Tests
+Instrumented Comparative Cohort Cohorts Validation Reproducibility
 """.split())
 # An imperative opener is a capitalised word at the start of a sentence and is
 # never an author. "Treat quantified positions as targets" registered as a study

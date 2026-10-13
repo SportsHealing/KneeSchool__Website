@@ -226,9 +226,9 @@ is an inference from the tenderness and the mechanism.
 - [[4.19.2 | Paediatric ACL Injury]]
 - [[4.19.6 | Developmental Variants]]
 - [[4.19.7 | Torsional Assessment]]
-- [[4.6.5 | Patellar Tenderness]]
-- [[4.2.2 | Instability]]
-- [[4.1.7 | Examination for Different Audiences]]
+- [[4.6.1 | Systematic Palpation]]
+- [[4.8.7 | Acute Haemarthrosis]]
+- [[4.1.5 | Common Examination Pitfalls]]
 
 ## References
 

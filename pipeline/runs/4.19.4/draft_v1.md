@@ -229,9 +229,9 @@ reconstructed restraint.
 
 - [[4.15.8 | Trochlear Dysplasia Assessment]]
 - [[4.15.9 | Patellofemoral Pain Syndrome]]
-- [[4.15.11 | The Apprehension Test]]
+- [[4.15.3 | Patellar Apprehension Test]]
 - [[4.19.7 | Torsional Assessment]]
-- [[4.3.7 | Surgical Scars]]
+- [[4.23.3 | Hypermobile Patients]]
 - [[4.19.1 | Growth Plate Assessment]]
 
 ## References

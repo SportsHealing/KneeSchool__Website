@@ -229,8 +229,8 @@ into the decision. 4.18.5 covers it.
 - [[4.18.5 | Patellofemoral OA]]
 - [[4.18.6 | Functional Limitation]]
 - [[4.18.7 | Arthroplasty Assessment]]
-- [[4.7.8 | Extension Lag]]
 - [[4.5.4 | Flexion Deformity]]
+- [[4.3.10 | Deformity]]
 
 ## References
 

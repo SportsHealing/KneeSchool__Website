@@ -273,6 +273,33 @@
           "blocker": "This page quotes the number of urls in sitemap.xml, and the two tools disagreed by construction: tools/apply_chrome.py writes the sitemap and tools/build_status.py read the written file to get the count. Running build_status before apply_chrome, which is the order a page batch naturally produces, made this page quote the previous count. Chapter 4.15 failed the suite on it. The path list now lives in tools/site_chrome.py and both tools derive it, so the order they run in does not matter. Same answer as EV-27 one step further back: the number is computed rather than read from whatever happened to be on disk.",
           "needed": "Nothing outstanding. TheSitemapCountAgreesWithTheSitemap holds the derived list against the file, and TheBuildStatusPageAgreesWithTheRegisters holds the page against the derived list.",
           "pages": "sitemap.xml and about/status.html"
+        },
+        {
+          "ref": "EV-31",
+          "title": "The style gate banned a page title the architecture had chosen",
+          "area": "Infrastructure",
+          "state": "Fixed, with three tests added",
+          "blocker": "GOV-001 bans a list of commercial terms, Sportshealing among them, on every page whose brief sets commercial_content_allowed to false. tools/architecture.py sets that flag to false for every page it generates a brief for. The architecture names page 4.22.7 Sportshealing Knee Score. So the gate banned that page's own title on its own page, and banned the correct cross link label on every page pointing at it, which is how it was found: chapter 4.18.6's link to 4.22.7 failed the lint and the link was replaced with a worse one rather than the gate being questioned. PHRASE-001 already carried the mechanism for exactly this class of problem, added when 0.5.5 Meet the Researchers tripped the meet the ban in its own H1. GOV-001 now sets the same excludes_architecture_title flag, so the H1 is out of scope when it matches the brief's title and the cross link labels are out of scope entirely. The boolean stays false, so buy, purchase, discount and our clinic remain banned everywhere, including in the body of 4.22.7 itself.",
+          "needed": "Nothing outstanding. Three tests in pipeline/tests/test_linter.py hold the behaviour: the architecture's own title and the cross link label pass, the term in prose on the same page still fails, and a title the brief does not name is not exempted.",
+          "pages": "pipeline/config/lint_rules.json and every page linking to 4.22.7"
+        },
+        {
+          "ref": "EV-32",
+          "title": "A cross link to a page that does not exist passed every gate",
+          "area": "Infrastructure",
+          "state": "Fixed, with four tests added",
+          "blocker": "tools/crossrefs.py --check exempted every unknown page id as a forward link to a section the architecture had not mapped to pages yet. That was true when the tool was written and only sections 0 to 3 were mapped. All sixteen sections now carry page ids, so the exemption protected nothing and hid a real typo: chapter 4.19.4 linked 4.15.11 as The Apprehension Test when chapter 4.15 ends at 4.15.10. The renderer counted it as one unresolved link of six and printed that count, the label check skipped it because it could not resolve it, and the prose check does not look at bracketed links, so the page published with a dead link and make verify passed. An unknown id with a valid shape is now a fault. A section placeholder stays exempt, because two future pages in one unpublished section share an id by design.",
+          "needed": "Nothing outstanding. Four tests in pipeline/tests/test_architecture.py hold it, including one that runs the check against the whole site.",
+          "pages": "examination/paediatric-patellar-instability.html, now corrected"
+        },
+        {
+          "ref": "EV-33",
+          "title": "The attribution register could not see a name with a capital in the middle",
+          "area": "Infrastructure",
+          "state": "Fixed, with six tests added and six attributions recovered",
+          "blocker": "The surname shape the attribution detector used was [A-Z][a-z]{2,}, which cannot match McMurray, MacIntosh, Barber-Westin or O'Connor. Chapter 4.24.3 attributed the meniscal provocation test to McMurray in the first sentence of its What Was Done section and the register recorded nothing. The same shape had been losing names from chapter 3.17 since that chapter was published: re-extracting after the fix recovered LaPrade from 3.17.4 and 3.17.5, Terry and LaPrade, Griffith and LaPrade, and Goodfellow and O'Connor from 3.17.8, where the register had been holding the mangled entry Connor. A false positive in this register is visible and the next extraction withdraws it. A miss is invisible, and the register's whole value under decision 022 is that it comes from the pages rather than from someone remembering to add a name, so a silent miss is the worse failure. The shape now allows an internal capital, a hyphenated second part and an apostrophe. The same extraction run also read three capitalised common nouns as authors, Patient and Translation and Symmetry, each opening a sentence followed by a reporting verb; those words joined the stop list that already exists for that over-read.",
+          "needed": "Nothing outstanding. Six tests in pipeline/tests/test_linter.py hold the name shapes and the stop list. The six recovered attributions are now in the review packs for chapters 3.17 and 4.24, which means they are six more claims waiting on a consultant rather than six fewer.",
+          "pages": "pipeline/config/attributions, chapters 3.17 and 4.24"
         }
       ]
     },

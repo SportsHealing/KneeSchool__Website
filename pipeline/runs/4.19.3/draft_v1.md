@@ -217,9 +217,9 @@ deficiency.
 ## Explore Further
 
 - [[4.19.6 | Developmental Variants]]
-- [[4.9.6 | Childress Squat Test]]
-- [[4.7.8 | Extension Lag]]
-- [[4.9.4 | Thessaly Test]]
+- [[4.9.10 | Meniscal Deficiency]]
+- [[4.5.4 | Flexion Deformity]]
+- [[4.9.3 | McMurray Test]]
 - [[4.2.7 | Mechanical Symptoms]]
 - [[4.18.4 | Valgus OA]]
 

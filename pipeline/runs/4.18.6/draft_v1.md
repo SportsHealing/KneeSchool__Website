@@ -213,10 +213,10 @@ covers that point.
 
 - [[4.18.2 | Established OA]]
 - [[4.18.7 | Arthroplasty Assessment]]
-- [[4.2.12 | Relieving Factors]]
-- [[4.4.9 | Single Leg Landing Assessment]]
-- [[4.2.18 | Twisting Injury]]
-- [[4.2.3 | Swelling]]
+- [[4.7.9 | Functional Range]]
+- [[4.22.8 | PROMs in Clinical Practice]]
+- [[4.22.7 | Sportshealing Knee Score]]
+- [[4.2.10 | Severity]]
 
 ## References
 

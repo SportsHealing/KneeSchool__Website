@@ -224,8 +224,8 @@ covers the use of these scores.
 - [[4.18.6 | Functional Limitation]]
 - [[4.20.7 | Partial Knee Replacement]]
 - [[4.20.8 | Total Knee Replacement]]
-- [[4.5.4 | Flexion Deformity]]
-- [[4.3.9 | Muscle Wasting]]
+- [[4.3.10 | Deformity]]
+- [[4.6.10 | Popliteal Fossa Examination]]
 
 ## References
 

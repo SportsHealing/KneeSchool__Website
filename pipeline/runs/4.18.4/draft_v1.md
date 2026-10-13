@@ -223,10 +223,10 @@ articular defects.
 
 - [[4.18.3 | Varus OA]]
 - [[4.18.2 | Established OA]]
-- [[4.5.5 | Hyperextension]]
+- [[4.5.3 | Valgus Alignment]]
 - [[4.12.5 | POL Assessment]]
-- [[4.9.6 | Childress Squat Test]]
-- [[4.3.9 | Muscle Wasting]]
+- [[4.9.10 | Meniscal Deficiency]]
+- [[4.6.10 | Popliteal Fossa Examination]]
 
 ## References
 

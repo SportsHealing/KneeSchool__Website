@@ -375,7 +375,11 @@
         "purchase",
         "discount"
       ],
-      "conditional_on": "brief.governance.commercial_content_allowed == false"
+      "conditional_on": "brief.governance.commercial_content_allowed == false",
+      "notes": [
+        "excludes_architecture_title: the H1 is not scanned when it matches brief.title exactly, and the cross link labels are not scanned at all. The architecture names page 4.22.7 'Sportshealing Knee Score', so the rule as written banned that page's own title on its own page and banned the correct cross link label on every page pointing at it. A drafter cannot reword either without breaking the brief or the link. Commercial terms in prose are still caught everywhere, including in the body of 4.22.7 itself."
+      ],
+      "excludes_architecture_title": true
     },
     {
       "id": "GOV-002",

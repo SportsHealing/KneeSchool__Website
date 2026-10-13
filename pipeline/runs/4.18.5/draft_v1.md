@@ -221,9 +221,9 @@ against normal. 4.20.6 covers the reconstructed restraint.
 ## Explore Further
 
 - [[4.18.2 | Established OA]]
-- [[4.15.4 | Patellar Glide]]
-- [[4.15.6 | Dynamic Tracking]]
-- [[4.15.7 | MPFL Assessment]]
+- [[4.15.9 | Patellofemoral Pain Syndrome]]
+- [[4.15.10 | Patellofemoral Arthritis]]
+- [[4.6.5 | Patellar Tenderness]]
 - [[4.7.6 | Painful Arc]]
 - [[4.20.7 | Partial Knee Replacement]]
 

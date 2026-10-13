@@ -222,9 +222,9 @@ assessment.
 - [[4.18.4 | Valgus OA]]
 - [[4.18.2 | Established OA]]
 - [[4.5.2 | Varus Alignment]]
-- [[4.5.4 | Flexion Deformity]]
+- [[4.3.10 | Deformity]]
 - [[4.4.6 | Arthritic Gait]]
-- [[4.13.5 | Dial Test]]
+- [[4.13.1 | Varus Stress Test]]
 
 ## References
 

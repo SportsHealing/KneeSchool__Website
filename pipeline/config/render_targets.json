@@ -3157,6 +3157,132 @@
       "parent": "Clinical Examination Academy|index.html",
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
+    },
+    "4.22.1": {
+      "out": "examination/ikdc.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.22.2": {
+      "out": "examination/koos.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.22.3": {
+      "out": "examination/lysholm.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.22.4": {
+      "out": "examination/tegner.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.22.5": {
+      "out": "examination/oxford-knee-score.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.22.6": {
+      "out": "examination/acl-rsi.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.22.7": {
+      "out": "examination/sportshealing-knee-score.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.22.8": {
+      "out": "examination/proms-in-clinical-practice.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.23.1": {
+      "out": "examination/special-examination-under-anaesthesia.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.23.2": {
+      "out": "examination/elite-athletes.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.23.3": {
+      "out": "examination/hypermobile-patients.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.23.4": {
+      "out": "examination/obese-patients.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.23.5": {
+      "out": "examination/revision-surgery-patients.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.23.6": {
+      "out": "examination/complex-multiligament-injuries.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.23.7": {
+      "out": "examination/medico-legal-assessment.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.24.1": {
+      "out": "examination/lachman-literature.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.24.2": {
+      "out": "examination/pivot-shift-literature.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.24.3": {
+      "out": "examination/meniscal-test-literature.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.24.4": {
+      "out": "examination/patellofemoral-literature.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.24.5": {
+      "out": "examination/functional-testing-literature.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.24.6": {
+      "out": "examination/future-directions-in-knee-examination.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
     }
   },
   "withheld": {

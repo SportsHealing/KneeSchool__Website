@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>KOOS | KneeSchool</title>
+<meta name="description" content="A knee outcome questionnaire reported as separate domains rather than as one number.">
+<meta name="theme-color" content="#0e2b22">
+
+<link rel="canonical" href="https://kneeschool.com/examination/koos.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css?v=e50d4cd3">
+</head>
+<body>
+<style>
+.dial-tabs{grid-template-columns:repeat(4,1fr)}
+#t0:checked ~ .dial-tabs label[for=t0]{background:var(--gold-pale);border-color:var(--gold-pale);color:var(--green-deep);font-weight:600}
+#t0:checked ~ .dial-body .p0{display:block}
+#t0:focus-visible ~ .dial-tabs label[for=t0]{outline:3px solid var(--gold);outline-offset:2px}
+#t1:checked ~ .dial-tabs label[for=t1]{background:var(--gold-pale);border-color:var(--gold-pale);color:var(--green-deep);font-weight:600}
+#t1:checked ~ .dial-body .p1{display:block}
+#t1:focus-visible ~ .dial-tabs label[for=t1]{outline:3px solid var(--gold);outline-offset:2px}
+#t2:checked ~ .dial-tabs label[for=t2]{background:var(--gold-pale);border-color:var(--gold-pale);color:var(--green-deep);font-weight:600}
+#t2:checked ~ .dial-body .p2{display:block}
+#t2:focus-visible ~ .dial-tabs label[for=t2]{outline:3px solid var(--gold);outline-offset:2px}
+#t3:checked ~ .dial-tabs label[for=t3]{background:var(--gold-pale);border-color:var(--gold-pale);color:var(--green-deep);font-weight:600}
+#t3:checked ~ .dial-body .p3{display:block}
+#t3:focus-visible ~ .dial-tabs label[for=t3]{outline:3px solid var(--gold);outline-offset:2px}
+</style>
+<div class="build-notice" role="note">
+  <div class="wrap">
+    <strong>Work in progress.</strong> This site is being built in the open. No page on it has yet been reviewed by a clinician, every page says so, and nothing here is medical advice or a substitute for seeing someone about your knee. <a href="../about/status.html">What that means</a>
+  </div>
+</div>
+<header class="site-head">
+  <div class="wrap head-in">
+    <a class="brand" href="../index.html"><b>Knee</b><span>School</span></a>
+    <input class="nav-toggle" type="checkbox" id="navtoggle" aria-label="Show navigation">
+    <label class="burger" for="navtoggle">Menu</label>
+    <nav class="nav" aria-label="Main">
+      <ul>
+        <li class="has-menu">
+          <a class="top" href="../index.html#levels">Learn<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../index.html#levels">Find your level</a></li>
+            <li><a href="../levels/junior.html">Junior Academy</a></li>
+            <li><a href="../levels/patient.html">Patient Academy</a></li>
+            <li><a href="../levels/student.html">Student Academy</a></li>
+            <li><a href="../levels/mrcs.html">MRCS Academy</a></li>
+            <li><a href="../levels/frcs.html">FRCS (Tr and Orth) Academy</a></li>
+            <li><a href="../levels/fellowship.html">Fellowship Academy</a></li>
+            <li><a href="../levels/consultant.html">Consultant Masterclass</a></li>
+            <li><a href="../junior/ready-made-lesson-plans.html">For teachers and coaches</a></li>
+          </ul>
+        </li>
+        <li class="has-menu">
+          <a class="top" href="../encyclopaedia/index.html">Reference<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../encyclopaedia/index.html">The knee encyclopaedia</a></li>
+            <li><a href="../anatomy/index.html">The Anatomy Academy</a></li>
+            <li><a href="../biomechanics/index.html">The Biomechanics Academy</a></li>
+            <li><a href="../examination/index.html">The Clinical Examination Academy</a></li>
+            <li><a href="../conditions/index.html">Conditions library</a></li>
+            <li><a href="../encyclopaedia/whole-body.html">Whole body factors</a></li>
+          </ul>
+        </li>
+        <li class="has-menu">
+          <a class="top" href="../practise/index.html">Practise<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../practise/index.html#questions">Question bank</a></li>
+            <li><a href="../practise/index.html#cases">Case library</a></li>
+            <li><a href="../practise/index.html#video">Video academy</a></li>
+            <li><a href="../practise/index.html#scores">Knee score centre</a></li>
+          </ul>
+        </li>
+        <li class="has-menu">
+          <a class="top" href="../about/standards.html">About<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../about/standards.html">How a page reaches this site</a></li>
+            <li><a href="../about/curriculum.html">Mapped to the UK training pathway</a></li>
+            <li><a href="../about/status.html">Build status</a></li>
+            <li><a href="#">Authors and reviewers</a></li>
+            <li><a href="#">References and sources</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </li>
+        <li><a class="start-link" href="../index.html#levels">Find your level</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumb"><a href="../index.html">KneeSchool</a><span>/</span><a href="index.html">Clinical Examination Academy</a><span>/</span>KOOS</p>
+      <div class="hero-split">
+        <div>
+          <h1>KOOS</h1>
+          <p class="who">Page 4.22.2 &middot; Examination Scoring Systems &middot; examination page</p>
+          <p class="lede">A knee outcome questionnaire reported as separate domains rather than as one number.</p>
+        </div>
+        <div>
+          <div class="status"><b>Pipeline status.</b> Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band dark">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>The same topic at 4 depths</h2>
+        <p class="lede">Each tier deepens the one below it and never repeats it. Choose the level you want.</p>
+      </div>
+      <div class="dial dial-article">
+        <div class="dial-head">
+          <h2>KOOS</h2>
+          <small>Choose a depth</small>
+        </div>
+        <input type="radio" name="depth" id="t0" checked>
+        <input type="radio" name="depth" id="t1">
+        <input type="radio" name="depth" id="t2">
+        <input type="radio" name="depth" id="t3">
+        <div class="dial-tabs">
+          <label for="t0">Student</label>
+          <label for="t1">MRCS</label>
+          <label for="t2">FRCS</label>
+          <label for="t3">Fellow</label>
+        </div>
+        <div class="dial-body">
+          <div class="dial-panel p0">
+            <h3>For Medical Students</h3>
+            <h4>What It Tests</h4>
+            <p>The KOOS asks about pain, symptoms, daily activity, sport and recreation, and quality of life, and reports each as its own subscale. 4.22.1 covers the IKDC.</p>
+            <p>The examination's interest is that the subscales separate what a single score would blend, so a patient's problem can be located within the report. 4.18.6 covers functional limitation.</p>
+            <p>It matters because two patients with the same overall burden can have it in different domains, and the treatment differs. 4.2.10 covers severity.</p>
+            <h4>How It Is Performed</h4>
+            <p>Give the questionnaire to the patient to complete themselves, before the consultation.</p>
+            <p>Explain the recall period, since the questions ask about a defined recent period.</p>
+            <p>Check completeness for each subscale, because the subscales are scored separately. 4.1.8 covers examination documentation.</p>
+            <p>Score each subscale with the published method rather than combining them.</p>
+            <p>Record all the subscales rather than selecting one, since the pattern is the information.</p>
+            <p>Record the date, because the comparison over time is the use.</p>
+            <p>Record the examination separately. 4.1.4 covers the structured approach.</p>
+            <h4>What a Positive Means</h4>
+            <p>A profile across the subscales is the result, and the shape of the profile is read rather than a single value.</p>
+            <p>A low pain subscale with preserved activity means the problem is symptomatic rather than functional. 4.2.1 covers pain.</p>
+            <p>A low sport and recreation subscale with preserved daily activity identifies a patient limited only at higher demand. 4.21.7 covers return to sport testing.</p>
+            <p>A low quality of life subscale with modest symptom scores identifies the patient for whom the knee's effect exceeds its symptoms. 4.22.8 covers the use of these scores.</p>
+            <p>An incomplete subscale is unscored rather than imputed.</p>
+            <p>No item count, score range or validation figure appears on this page. Those are properties of a published instrument and stating one from memory is the same class of claim as an invented citation, so the page describes what the instrument does and a reviewer with the questionnaire can add the numbers.</p>
+            <div class="klp">
+              <h4>Key Learning Points</h4>
+              <ul><li>The instrument reports separate subscales rather than one number.</li><li>The shape of the profile is the result.</li><li>Pain and function can be affected independently.</li><li>A sport subscale deficit identifies limitation only at higher demand.</li><li>An incomplete subscale is unscored rather than imputed.</li></ul>
+            </div>
+          </div>
+          <div class="dial-panel p1">
+            <h3>MRCS Level</h3>
+            <h4>How It Is Performed</h4>
+            <p>In a viva this is the instrument to name when the question asks about domains rather than a single score.</p>
+            <p>The expected points are the self completion, the timing, the recall period, the per subscale completeness, the separate scoring, the whole profile, the date and the separate examination record.</p>
+            <p>Say that the subscales are reported separately, and give the reason. 4.22.1 covers the IKDC.</p>
+            <p>Say that you would record the whole profile rather than one subscale. 4.1.8 covers examination documentation.</p>
+            <p>Say that the questionnaire and the examination are both recorded. 4.1.4 covers the structured approach.</p>
+            <h4>What a Positive Means</h4>
+            <p>The reasoning expected is that a knee problem affects symptoms, function and life differently, so collapsing them into one number discards the pattern. 4.18.6 covers functional limitation.</p>
+            <p>A subscale structure allows a treatment to be judged against the domain it was aimed at, which a single score does not. 4.22.8 covers the use of these scores.</p>
+            <p>The sport subscale extends the measurable range upwards, which reduces the ceiling problem in active patients. 4.22.4 covers the Tegner scale.</p>
+            <p>A quality of life domain captures the part of the burden that neither the symptoms nor the function describe. 4.2.10 covers severity.</p>
+            <h4>How Good It Is</h4>
+            <p>The instrument is reproducible for the same patient over time and more informative than a single score.</p>
+            <p>Its best contribution is locating the burden within a domain, which directs both the treatment and its evaluation. 4.18.6 covers functional limitation.</p>
+            <p>It is longer than a single score instrument, which reduces completion in practice.</p>
+            <p>No examination finding corresponds to a subscale, so the two records sit side by side. 4.1.6 covers that relationship.</p>
+            <p>No figures appear for any accuracy comparison on this page, under decision 023, and the comparison is the claim being made.</p>
+            <p>No item count, score range or validation figure appears on this page. Those are properties of a published instrument and stating one from memory is the same class of claim as an invented citation, so the page describes what the instrument does and a reviewer with the questionnaire can add the numbers.</p>
+            <div class="klp">
+              <h4>Key Learning Points</h4>
+              <ul><li>A knee problem affects symptoms, function and life differently.</li><li>A subscale structure lets a treatment be judged against its target domain.</li><li>The sport subscale reduces the ceiling problem in active patients.</li><li>A quality of life domain captures burden the other domains miss.</li><li>Length reduces completion in practice.</li></ul>
+            </div>
+          </div>
+          <div class="dial-panel p2">
+            <h3>FRCS Level</h3>
+            <h4>How Good It Is</h4>
+            <p>At decision level the profile supports a more specific conversation than a single score does.</p>
+            <p>A patient whose burden sits in the quality of life domain is a different treatment proposition from one whose burden is pain, and the profile separates them. 4.22.8 covers the use of these scores.</p>
+            <p>A sport subscale deficit in an athlete with a normal daily activity score identifies the demand level at which the knee fails. 4.21.7 covers return to sport testing.</p>
+            <p>A profile that does not change after treatment while one subscale does is a more precise result than an unchanged total. 4.20.1 covers the reconstruction assessment.</p>
+            <p>The instrument's length is a practical constraint on using it routinely, which is a service question rather than a clinical one. 4.1.8 covers examination documentation.</p>
+            <h4>Where It Misleads</h4>
+            <p>The commonest error is reporting one subscale and discarding the rest. 4.18.6 covers functional limitation.</p>
+            <p>Subscales are averaged into a single number, which undoes the instrument's design. 4.22.1 covers the IKDC.</p>
+            <p>An incomplete questionnaire is scored anyway.</p>
+            <p>Subscale values are compared with another instrument's total. 4.22.3 covers the Lysholm score.</p>
+            <p>A profile is interpreted without a baseline. 4.22.8 covers the use of these scores.</p>
+            <div class="klp">
+              <h4>Key Learning Points</h4>
+              <ul><li>Reporting one subscale and discarding the rest is the commonest error.</li><li>Averaging the subscales undoes the design.</li><li>An incomplete questionnaire is scored anyway.</li><li>Subscale values are not comparable with another instrument's total.</li><li>A profile without a baseline cannot be interpreted.</li></ul>
+            </div>
+          </div>
+          <div class="dial-panel p3">
+            <h3>Fellowship Level</h3>
+            <h4>Where It Misleads</h4>
+            <p>At fellowship level the subscale structure is the instrument's strength and the source of its harder problems.</p>
+            <p>Five subscales mean five comparisons, which raises the chance that one moves by itself, and interpreting that movement needs care the clinical use rarely gives it. 4.22.8 covers the use of these scores.</p>
+            <p>The domains are not independent, since pain drives function and function drives quality of life, so a change in one appears in the others. 4.18.6 covers functional limitation.</p>
+            <p>Each subscale has its own ceiling and floor, and they truncate different populations. 4.22.4 covers the Tegner scale.</p>
+            <p>Importance thresholds differ by subscale and are published quantities this repository does not state. 4.2.10 covers severity.</p>
+            <p>A profile describes a state and does not explain it, so the examination remains the instrument that localises. 4.1.4 covers the structured approach.</p>
+            <p>No item count, score range or validation figure appears on this page. Those are properties of a published instrument and stating one from memory is the same class of claim as an invented citation, so the page describes what the instrument does and a reviewer with the questionnaire can add the numbers.</p>
+            <div class="klp">
+              <h4>Key Learning Points</h4>
+              <ul><li>Five subscales mean five comparisons, which needs interpretive care.</li><li>The domains are not independent of each other.</li><li>Each subscale has its own ceiling and floor.</li><li>Importance thresholds differ by subscale and are not stated here.</li><li>A profile describes a state without explaining it.</li></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band wrap">
+    <div class="sec-head">
+      <h2>Explore Further</h2>
+      <p class="lede">Where this topic came from and where it goes next in the spiral.</p>
+    </div>
+    <ul class="explore">
+        <li><span class="pid">4.22.1</span><a href="ikdc.html">IKDC</a></li>
+        <li><span class="pid">4.22.3</span><a href="lysholm.html">Lysholm</a></li>
+        <li><span class="pid">4.22.4</span><a href="tegner.html">Tegner</a></li>
+        <li><span class="pid">4.22.8</span><a href="proms-in-clinical-practice.html">PROMs in Clinical Practice</a></li>
+        <li><span class="pid">4.18.6</span><a href="oa-functional-limitation.html">Functional Limitation</a></li>
+        <li><span class="pid">4.21.7</span><a href="return-to-sport-testing.html">Return to Sport Testing</a></li>
+    </ul>
+  </section>
+
+  <section class="band wrap" style="padding-top:0">
+    <div class="sec-head">
+      <h2>References</h2>
+    </div>
+    <div class="prose refs">
+      <p>No reference list is attached to this draft. Evidence verification has not run, because source retrieval was unavailable at generation time. Under the Operations Handbook a missing reference is acceptable and an invented one is a critical failure, so nothing has been cited and no citation marker appears in the text. This page carries no diagnostic accuracy figure, which is decision 023 rather than an omission. The comparative standing of these tests is standard teaching and a specific sensitivity written from memory is the same class of claim as an invented citation, so ACC-001 refuses the number and the page states the comparison. A reviewer with the literature can add the figures into How Good It Is without restructuring the page, and chapter 3.17 lists the studies the figures would come from. Any measurement here, including a flexion angle, is written from standard teaching, has not been checked, and is registered under decision 006 in pipeline/config/figures with a verification state of UNVERIFIED_FROM_MEMORY.</p>
+    </div>
+    <p class="safety"><b>Safety.</b> KneeSchool is educational and does not give individual medical advice. Seek urgent assessment for a knee that cannot bear weight after an injury, a hot swollen knee with a fever, or new numbness, weakness or coldness in the leg or foot.</p>
+  </section>
+
+</main>
+
+<footer class="site-foot" id="about">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h3>Learn</h3>
+        <ul>
+          <li><a href="../levels/junior.html">Junior Academy</a></li>
+          <li><a href="../levels/patient.html">Patient Academy</a></li>
+          <li><a href="../levels/student.html">Student Academy</a></li>
+          <li><a href="../levels/mrcs.html">MRCS Academy</a></li>
+          <li><a href="../levels/frcs.html">FRCS (Tr and Orth) Academy</a></li>
+          <li><a href="../levels/fellowship.html">Fellowship Academy</a></li>
+          <li><a href="../levels/consultant.html">Consultant Masterclass</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Reference</h3>
+        <ul>
+          <li><a href="../encyclopaedia/index.html">The knee encyclopaedia</a></li>
+          <li><a href="../conditions/index.html">Conditions library</a></li>
+          <li><a href="../encyclopaedia/whole-body.html">Whole body factors</a></li>
+          <li><a href="../practise/index.html">Practise and test</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Clinical care</h3>
+        <ul>
+          <li><a href="https://www.chinmaygupte.com/">Consultant clinic</a></li>
+          <li><a href="#">Imaging and injections</a></li>
+          <li><a href="#">Rehabilitation programmes</a></li>
+          <li><a href="#">Braces and recovery products</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>About</h3>
+        <ul>
+          <li><a href="../about/standards.html">How a page reaches this site</a></li>
+          <li><a href="../about/curriculum.html">Mapped to the UK training pathway</a></li>
+          <li><a href="../levels/junior.html">For teachers and coaches</a></li>
+          <li><a href="#">Authors and reviewers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <p>KneeSchool is educational. It does not give individual medical advice and it does not replace assessment by a clinician. Seek urgent care for a hot, swollen knee with fever, a knee that cannot bear weight after injury, or new numbness in the leg.</p>
+      <p>Content written for school age learners carries no advertising and no product placement.</p>
+      <p>&copy; 2026 KneeSchool. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

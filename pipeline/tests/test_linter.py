@@ -142,6 +142,38 @@ class ScopeRules(unittest.TestCase):
                  "governance": {"commercial_content_allowed": False}}
         self.assertIn("GOV-001", ids(linter.lint(doc, brief)))
 
+    def test_commercial_rule_allows_the_architectures_own_title(self):
+        """The architecture names 4.22.7 'Sportshealing Knee Score'.
+
+        The rule banned that page's own title on its own page, and banned the
+        correct cross link label on every page pointing at it. A drafter cannot
+        reword either without breaking the brief or the link, so both are out of
+        scope and prose is not.
+        """
+        doc = ("# Sportshealing Knee Score\n\nSummary.\n\n## For Patients\n\n"
+               "The knee is a hinge joint of the lower limb.\n\n"
+               "## Explore Further\n\n- [[4.22.7 | Sportshealing Knee Score]]\n")
+        brief = {"tiers_required": ["patient"], "title": "Sportshealing Knee Score",
+                 "governance": {"commercial_content_allowed": False}}
+        self.assertNotIn("GOV-001", ids(linter.lint(doc, brief)))
+
+    def test_commercial_rule_still_catches_the_term_in_prose(self):
+        doc = ("# Sportshealing Knee Score\n\nSummary.\n\n## For Patients\n\n"
+               "The Sportshealing clinic scores the knee.\n")
+        brief = {"tiers_required": ["patient"], "title": "Sportshealing Knee Score",
+                 "governance": {"commercial_content_allowed": False}}
+        matched = [f["matched_text"] for f in linter.lint(doc, brief)["findings"]
+                   if f["rule_id"] == "GOV-001"]
+        self.assertEqual(matched, ["Sportshealing"])
+
+    def test_commercial_rule_still_catches_a_different_title(self):
+        """Only the page's own architecture title is out of scope."""
+        doc = ("# Something Else\n\nSummary.\n\n## For Patients\n\n"
+               "The knee bends.\n\n## Explore Further\n\n- [[1.1.1 | A]]\n")
+        brief = {"tiers_required": ["patient"], "title": "Sportshealing Knee Score",
+                 "governance": {"commercial_content_allowed": False}}
+        self.assertNotIn("GOV-001", ids(linter.lint(doc, brief)))
+
     def test_space_hyphen_space_is_a_failure(self):
         doc = "# T\n\nSummary.\n\n## For Patients\n\nThe knee - a hinge joint - bends.\n"
         self.assertIn("DASH-002", ids(linter.lint(doc, {"tiers_required": ["patient"]})))
@@ -938,8 +970,38 @@ class AttributionsAreRegistered(unittest.TestCase):
         self.assertEqual(self.names("The work of Markolf measured force directly."),
                          ["Markolf"])
 
+    def test_a_name_with_an_internal_capital(self):
+        """[A-Z][a-z]{2,} could not match McMurray, so 4.24.3 attributed the test
+        to him in its own first sentence and the register recorded nothing. The
+        same shape had been losing LaPrade from three pages of chapter 3.17 since
+        that chapter was published."""
+        self.assertEqual(self.names("McMurray described the manoeuvre."),
+                         ["McMurray"])
+        self.assertEqual(self.names("Galway and MacIntosh described it."),
+                         ["Galway and MacIntosh"])
+        self.assertEqual(self.names("LaPrade and colleagues sectioned the corner."),
+                         ["LaPrade and colleagues"])
+
+    def test_a_hyphenated_name(self):
+        self.assertEqual(self.names("Barber-Westin and Noyes reported the battery."),
+                         ["Barber-Westin and Noyes"])
+
+    def test_a_name_with_an_apostrophe(self):
+        """3.17.8 recorded 'Connor' for 'Goodfellow and O'Connor', which is a
+        miss and a mangling in one entry."""
+        self.assertEqual(self.names("Goodfellow and O'Connor described the motion."),
+                         ["Goodfellow and O'Connor"])
+
     def test_a_subject_that_is_not_a_person(self):
         self.assertEqual(self.names("Cadaveric work showed the restraint."), [])
+
+    def test_a_capitalised_common_noun_opener_is_not_an_author(self):
+        """Chapter 4.24 produced three of these in one chapter: Patient reported
+        instruments, Translation measured alone, Symmetry measured against a
+        changed limb. Each registered as an author."""
+        self.assertEqual(self.names("Patient reported instruments were developed."), [])
+        self.assertEqual(self.names("Symmetry measured against a limb misleads."), [])
+        self.assertEqual(self.names("Translation measured alone was demoted."), [])
 
     def test_an_imperative_opener_is_not_an_author(self):
         """'Treat quantified positions as targets' registered as a study by

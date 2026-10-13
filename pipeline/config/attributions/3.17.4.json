@@ -58,6 +58,32 @@
       "verification": "UNVERIFIED_FROM_MEMORY",
       "citation_as_retrieved": "",
       "attribution_correct": ""
+    },
+    {
+      "attributed_to": "LaPrade and colleagues",
+      "decade_as_written": [
+        "2000s"
+      ],
+      "tier": "frcs",
+      "section": "What Was Done",
+      "claim": "LaPrade and colleagues quantified the medial anatomy against bony landmarks in the 2000s, producing the measurements reconstruction techniques are now built from.",
+      "further_claims": [],
+      "occurrences": 1,
+      "verification": "UNVERIFIED_FROM_MEMORY",
+      "citation_as_retrieved": "",
+      "attribution_correct": ""
+    },
+    {
+      "attributed_to": "Griffith and LaPrade",
+      "decade_as_written": [],
+      "tier": "frcs",
+      "section": "What Was Done",
+      "claim": "Griffith and LaPrade separated the individual medial structures' contributions experimentally, including the deep and superficial parts of the medial collateral.",
+      "further_claims": [],
+      "occurrences": 1,
+      "verification": "UNVERIFIED_FROM_MEMORY",
+      "citation_as_retrieved": "",
+      "attribution_correct": ""
     }
   ]
 }

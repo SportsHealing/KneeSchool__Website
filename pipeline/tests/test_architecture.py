@@ -623,6 +623,54 @@ class ProseReferenceDetector(unittest.TestCase):
         self.assertIn("0 point at an id the architecture does not have", out.stdout)
 
 
+class CrossLinksToPagesThatExist(unittest.TestCase):
+    """A cross link to a page id that does not exist used to pass every gate.
+
+    The link check exempted every unknown id as a forward link to a section the
+    architecture had not mapped yet. That was written when only sections 0 to 3
+    were mapped; all sixteen now carry page ids, so the exemption protected
+    nothing and hid a typo. 4.19.4 linked [[4.15.11 | The Apprehension Test]]
+    when chapter 4.15 ends at 4.15.10, the renderer counted it as one
+    unresolved link of six, and nothing failed.
+    """
+
+    def run_check(self, runs):
+        return subprocess.run(
+            [sys.executable, os.path.join(REPO, "tools", "crossrefs.py"),
+             "--check", "--runs", runs],
+            capture_output=True, text=True, cwd=REPO)
+
+    def draft(self, runs, page_id, link):
+        os.makedirs(os.path.join(runs, page_id))
+        with open(os.path.join(runs, page_id, "draft_v1.md"), "w") as fh:
+            fh.write("# T\n\nSummary.\n\n## Explore Further\n\n- %s\n" % link)
+
+    def test_a_link_to_a_page_that_does_not_exist_fails(self):
+        with tempfile.TemporaryDirectory() as runs:
+            self.draft(runs, "4.19.4", "[[4.15.11 | The Apprehension Test]]")
+            out = self.run_check(runs)
+            self.assertNotEqual(out.returncode, 0, out.stdout)
+            self.assertIn("4.15.11", out.stdout)
+
+    def test_a_link_past_the_last_section_fails_too(self):
+        with tempfile.TemporaryDirectory() as runs:
+            self.draft(runs, "4.19.4", "[[99.1.1 | A Future Page]]")
+            out = self.run_check(runs)
+            self.assertNotEqual(out.returncode, 0, out.stdout)
+
+    def test_a_real_link_passes(self):
+        with tempfile.TemporaryDirectory() as runs:
+            self.draft(runs, "4.19.4", "[[4.15.3 | Patellar Apprehension Test]]")
+            out = self.run_check(runs)
+            self.assertEqual(out.returncode, 0, out.stdout)
+
+    def test_the_site_has_no_cross_link_to_a_missing_page(self):
+        out = subprocess.run(
+            [sys.executable, os.path.join(REPO, "tools", "crossrefs.py"), "--check"],
+            capture_output=True, text=True, cwd=REPO)
+        self.assertEqual(out.returncode, 0, out.stdout)
+
+
 class RenderTargetCollisions(unittest.TestCase):
     """Two page ids pointing at the same output file would publish one page and
     silently lose the other, with every gate still passing. Chapter 3.6 came
