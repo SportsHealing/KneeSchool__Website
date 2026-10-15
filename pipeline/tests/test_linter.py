@@ -943,6 +943,116 @@ class FabricableCitationDetail(unittest.TestCase):
         self.assertEqual(self.fire("The first rig was built in 1975.", brief), [])
 
 
+class BannedPhrasesSurviveAWrap(unittest.TestCase):
+    """A banned phrase straddling a line break used to pass PHRASE-001.
+
+    Drafts are hard wrapped at about 79 columns and the pattern joined the
+    phrase's words with a literal space, so any multi word phrase that happened
+    to break across lines was invisible. 4.22.7 carried "it is worth noting"
+    with the wrap after "it": lint_local passed the markdown and check_site
+    caught it on the rendered page, where the break had become a space. 82 of
+    the 108 banned phrases are multi word.
+    """
+
+    def fire(self, text):
+        doc = ("# T\n\nSummary.\n\n## For Patients\n\n%s\n" % text)
+        report = linter.lint(doc, {"tiers_required": ["patient"]})
+        return [f["matched_text"] for f in report["findings"]
+                if f["rule_id"] == "PHRASE-001"]
+
+    def test_the_phrase_on_one_line_is_caught(self):
+        self.assertTrue(self.fire("The knee bends and it is worth noting here."))
+
+    def test_the_phrase_across_a_line_break_is_caught(self):
+        self.assertTrue(self.fire("The knee bends and it\nis worth noting here."))
+
+    def test_a_phrase_broken_over_several_spaces_is_caught(self):
+        self.assertTrue(self.fire("The knee bends and it   is  worth noting."))
+
+    def test_the_words_apart_in_different_sentences_are_not_caught(self):
+        """The pattern must not reach across a sentence: 'it' ending one and
+        'is worth noting' is not a phrase, but 'worth noting' alone is not
+        banned either, so an ordinary pair of sentences stays quiet."""
+        self.assertFalse(self.fire("The knee bends. Noting the angle is useful."))
+
+
+class AccuracyFiguresAreRefused(unittest.TestCase):
+    """ACC-001, decision 023 for examination pages and 028 for imaging."""
+
+    def fire(self, text, page_type):
+        doc = ("# T\n\nSummary.\n\n## MRCS Level\n\n### How Good It Is\n\n%s\n"
+               % text)
+        report = linter.lint(doc, {"tiers_required": ["mrcs"],
+                                   "page_type": page_type})
+        return [f["matched_text"] for f in report["findings"]
+                if f["rule_id"] == "ACC-001"]
+
+    def test_the_scope_comes_from_the_config(self):
+        """The rule used to name its page type in linter.py. A scope that lives
+        in code cannot be read off the config, which is how the condition
+        template shipped a frcs_and_above_only that nothing read."""
+        rule = next(r for r in linter.load_rules()["rules"]
+                    if r["id"] == "ACC-001")
+        self.assertEqual(rule["page_types"], ["examination", "imaging"])
+
+    def test_it_fires_on_an_imaging_page(self):
+        self.assertTrue(self.fire("Its sensitivity is 0.94 here.", "imaging"))
+
+    def test_it_fires_on_an_examination_page(self):
+        self.assertTrue(self.fire("Its sensitivity is 0.94 here.", "examination"))
+
+    def test_it_is_silent_on_a_page_type_outside_the_scope(self):
+        self.assertFalse(self.fire("Its sensitivity is 0.94 here.", "anatomy"))
+
+    def test_the_adjective_form_is_caught(self):
+        """'MRI is 95% sensitive for a meniscal tear' is the same fabrication as
+        a sensitivity and passed the rule until decision 028 went looking: the
+        term list held the nouns only, and the adjective is the natural phrasing
+        in imaging prose."""
+        self.assertTrue(self.fire(
+            "Magnetic resonance imaging is 95% sensitive for a tear.", "imaging"))
+        self.assertTrue(self.fire(
+            "The sequence is specific in 90 per cent of knees.", "imaging"))
+
+    def test_the_word_specific_alone_is_not_an_accuracy_claim(self):
+        """'specific' is an ordinary word, and this repository's own reference
+        boilerplate contains 'a specific sensitivity written from memory'."""
+        for safe in (
+                "No sensitivity, specificity or likelihood ratio appears on this"
+                " page, under decision 023.",
+                "A specific sensitivity written from memory is the same class of"
+                " claim as an invented citation.",
+                "The sequence is specific to the collagen orientation.",
+                "The angle is 55 degrees and the effect is specific to collagen."):
+            self.assertFalse(self.fire(safe, "imaging"), safe)
+
+
+class TheImagingTemplate(unittest.TestCase):
+    """Decision 028. Section 5 is 224 pages and had no page type of its own."""
+
+    def setUp(self):
+        self.template = linter.load_article_template()
+
+    def test_the_type_exists_and_is_not_variant_pending(self):
+        here = os.path.dirname(os.path.dirname(os.path.abspath(linter.__file__)))
+        path = os.path.join(os.path.dirname(here), "config", "page_type_map.json")
+        with open(path) as fh:
+            types = json.load(fh)["page_types"]
+        self.assertEqual(types["imaging"]["template"], "imaging")
+        self.assertFalse(types["imaging"]["variant_pending"])
+
+    def test_every_body_section_resolves_to_a_heading(self):
+        headings = self.template["body_section_headings"]
+        for slug in self.template["page_types"]["imaging"]["body_sections"]:
+            self.assertIn(slug, headings, slug)
+
+    def test_the_sections_are_the_six_decision_028_names(self):
+        self.assertEqual(
+            self.template["page_types"]["imaging"]["body_sections"],
+            ["what_it_shows", "how_it_is_acquired", "what_normal_looks_like",
+             "what_abnormal_looks_like", "how_good_it_is", "where_it_misleads"])
+
+
 class AttributionsAreRegistered(unittest.TestCase):
     """ATTR-002 and the detector behind it, decision 022."""
 

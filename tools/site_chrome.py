@@ -86,6 +86,7 @@ RIBBON = [
         ("The Anatomy Academy", "anatomy/index.html"),
         ("The Biomechanics Academy", "biomechanics/index.html"),
         ("The Clinical Examination Academy", "examination/index.html"),
+        ("The Imaging Academy", "imaging/index.html"),
         ("Conditions library", "conditions/index.html"),
         ("Whole body factors", "encyclopaedia/whole-body.html"),
     ]),
@@ -202,7 +203,8 @@ def sitemap_paths():
     # because that index lists articles. A sitemap that omits the pages a reader
     # actually lands on is not a sitemap.
     for extra in ("index.html", "anatomy/index.html", "biomechanics/index.html",
-                  "examination/index.html", "encyclopaedia/index.html",
+                  "examination/index.html", "imaging/index.html",
+                  "encyclopaedia/index.html",
                   "conditions/index.html", "practise/index.html",
                   "about/status.html", "about/standards.html",
                   "about/curriculum.html"):

@@ -272,8 +272,16 @@ def line_of(text, index):
 
 def phrase_pattern(phrase):
     """Word-boundary, case-insensitive pattern that tolerates the trailing comma
-    variants in the banned list (for example 'additionally,')."""
-    escaped = re.escape(phrase)
+    variants in the banned list (for example 'additionally,').
+
+    A space in a banned phrase matches any run of whitespace, including a line
+    break. Drafts are hard wrapped, so a literal space missed every banned
+    phrase that happened to straddle a wrap: 4.22.7 carried "it is worth
+    noting" with the break after "it", the markdown gate passed it, and
+    check_site caught it on the rendered page where the break had become a
+    space. 82 of the 108 banned phrases are multi word and could hide that way.
+    """
+    escaped = r"\s+".join(re.escape(word) for word in phrase.split())
     lead = r"(?<![A-Za-z])" if phrase[:1].isalnum() else ""
     trail = r"(?![A-Za-z])" if phrase[-1:].isalnum() else ""
     return re.compile(lead + escaped + trail, re.IGNORECASE)
@@ -1025,17 +1033,33 @@ ACC_TERM = (r"sensitivit(?:y|ies)|specificit(?:y|ies)|accurac(?:y|ies)|"
             r"likelihood ratio|PPV|NPV|AUC|area under the curve|"
             r"false positive rate|false negative rate")
 ACC_NUMBER = r"\d{1,3}(?:\.\d+)?\s*(?:%|per cent|percent)|0?\.\d+"
+# The adjective forms, which the noun list above does not reach. "Magnetic
+# resonance imaging is 95% sensitive for a meniscal tear" is the same fabricated
+# claim as a sensitivity, and it passed the rule until decision 028 went looking.
+# Kept deliberately tight: "specific" is an ordinary word and this repository's
+# own reference boilerplate contains the phrase "a specific sensitivity written
+# from memory", so only a number bound directly to the adjective counts.
+ACC_ADJECTIVE = tuple(re.compile(p, re.IGNORECASE) for p in (
+    r"\d{1,3}(?:\.\d+)?\s*(?:%|per cent|percent)\s+(?:sensitive|specific)\b",
+    r"\b(?:sensitive|specific)\s+in\s+\d{1,3}(?:\.\d+)?\s*(?:%|per cent|percent)",
+))
 # The term and a number within one clause of each other, either order.
 ACC_BANNED = tuple(re.compile(p, re.IGNORECASE) for p in (
     r"(?:%s)[^.;:\n]{0,60}?(?:%s)" % (ACC_TERM, ACC_NUMBER),
     r"(?:%s)[^.;:\n]{0,40}?(?:%s)" % (ACC_NUMBER, ACC_TERM),
-))
+)) + ACC_ADJECTIVE
 
 
 def rule_acc_001(doc, rule, brief):
-    """Decision 023: no bare diagnostic accuracy figure on an examination page."""
+    """No bare diagnostic accuracy figure where one would be fabricated.
+
+    Decision 023 for examination pages, decision 028 for imaging. The scope is
+    the rule's own page_types list rather than a name written here, so it can be
+    read off the config: this repository has already shipped one rule whose
+    scope was prose in the config that nothing in the code read.
+    """
     out = []
-    if brief.get("page_type") != "examination":
+    if brief.get("page_type") not in (rule.get("page_types") or ["examination"]):
         return out
     text = doc.body_text()
     seen = set()

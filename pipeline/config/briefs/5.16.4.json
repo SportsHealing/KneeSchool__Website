@@ -1,0 +1,86 @@
+{
+  "brief_version": "1.1",
+  "page_id": "5.16.4",
+  "title": "TT-TG Measurement",
+  "section": {
+    "id": "5",
+    "name": "Imaging Academy"
+  },
+  "chapter": {
+    "id": "5.16",
+    "name": "CT of the Knee"
+  },
+  "page_type": "imaging",
+  "article_template": "imaging",
+  "generated_from": "Master Publishing Architecture, pages_5.json",
+  "tiers_required": [
+    "medical_student",
+    "mrcs",
+    "frcs",
+    "fellowship"
+  ],
+  "scope": {
+    "must_cover": [
+      "TT-TG Measurement, as it is acquired and interpreted."
+    ],
+    "must_not_cover": [
+      "Clinical examination technique and interpretation (owned by Section 4)",
+      "Clinical management and treatment selection (owned by Section 6)",
+      "Operative technique (owned by Section 7)",
+      "Structure level anatomy beyond what the image shows (owned by Section 2)",
+      "Biomechanics beyond what the appearance depends on (owned by Section 3)",
+      "Appearance on another modality or of another structure (owned per chapter by 5.2 to 5.20)"
+    ],
+    "sibling_pages": [
+      "5.16.1",
+      "5.16.2",
+      "5.16.3",
+      "5.16.5",
+      "5.16.6",
+      "5.16.7",
+      "5.16.8"
+    ],
+    "deeper_spiral_pages": [
+      "13.28"
+    ]
+  },
+  "curriculum_tags": [],
+  "source_requirements": {
+    "kb_topic_filter": "tt-tg measurement",
+    "minimum": {
+      "textbook_or_review": 1,
+      "peer_reviewed_for_clinical_claims": true
+    },
+    "preferred_recency_years": 10,
+    "guidelines_expected": []
+  },
+  "output_requirements": {
+    "language": "en-GB",
+    "format": "markdown",
+    "key_learning_points_per_tier": {
+      "min": 3,
+      "max": 5
+    },
+    "faqs_patient_level": {
+      "min": 3,
+      "max": 5
+    },
+    "target_word_count": {
+      "min": 800,
+      "max": 1800
+    },
+    "internal_link_placeholders": true
+  },
+  "governance": {
+    "commercial_content_allowed": false,
+    "clinical_advice_allowed": false,
+    "junior_tier_present": false,
+    "figures_allowed": true
+  },
+  "pipeline": {
+    "priority": "high",
+    "requested_by": "architecture",
+    "regen_count": 0,
+    "consultant_assigned": null
+  }
+}

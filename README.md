@@ -72,7 +72,7 @@ local run and a green check mean the same thing.
 
 ```bash
 make verify     # every gate, stopping at the first failure
-make test       # the test suite alone, 300 tests
+make test       # the test suite alone, 319 tests
 ```
 
 `verify` runs the test suite and then six gates: the deterministic style gate

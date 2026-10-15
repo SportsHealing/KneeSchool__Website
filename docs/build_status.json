@@ -300,6 +300,24 @@
           "blocker": "The surname shape the attribution detector used was [A-Z][a-z]{2,}, which cannot match McMurray, MacIntosh, Barber-Westin or O'Connor. Chapter 4.24.3 attributed the meniscal provocation test to McMurray in the first sentence of its What Was Done section and the register recorded nothing. The same shape had been losing names from chapter 3.17 since that chapter was published: re-extracting after the fix recovered LaPrade from 3.17.4 and 3.17.5, Terry and LaPrade, Griffith and LaPrade, and Goodfellow and O'Connor from 3.17.8, where the register had been holding the mangled entry Connor. A false positive in this register is visible and the next extraction withdraws it. A miss is invisible, and the register's whole value under decision 022 is that it comes from the pages rather than from someone remembering to add a name, so a silent miss is the worse failure. The shape now allows an internal capital, a hyphenated second part and an apostrophe. The same extraction run also read three capitalised common nouns as authors, Patient and Translation and Symmetry, each opening a sentence followed by a reporting verb; those words joined the stop list that already exists for that over-read.",
           "needed": "Nothing outstanding. Six tests in pipeline/tests/test_linter.py hold the name shapes and the stop list. The six recovered attributions are now in the review packs for chapters 3.17 and 4.24, which means they are six more claims waiting on a consultant rather than six fewer.",
           "pages": "pipeline/config/attributions, chapters 3.17 and 4.24"
+        },
+        {
+          "ref": "EV-34",
+          "title": "A banned phrase that straddled a line break passed the style gate",
+          "area": "Infrastructure",
+          "state": "Fixed, with four tests added",
+          "blocker": "PHRASE-001 built its pattern by escaping the banned phrase whole, so the space between words matched a literal space. Drafts are hard wrapped at about 79 columns, which means any multi word phrase that happened to break across lines was invisible to the gate. 82 of the 108 banned phrases are multi word. Page 4.22.7 carried \"it is worth noting\" with the wrap falling after \"it\": lint_local passed the markdown and tools/check_site.py caught it on the rendered page, where the break had become a space. The two gates read the same text through different whitespace and disagreed, which is how it surfaced. A space in a banned phrase now matches any run of whitespace. A scan of all 554 drafts for phrases hidden this way found exactly one, so the hole was real and its blast radius was a single page.",
+          "needed": "Nothing outstanding. Four tests in pipeline/tests/test_linter.py hold it: the phrase on one line, across a line break, across several spaces, and an ordinary pair of sentences that must stay quiet.",
+          "pages": "examination/sportshealing-knee-score.html, now corrected"
+        },
+        {
+          "ref": "EV-35",
+          "title": "Flattening Section 5's chapters repointed links from published pages",
+          "area": "Infrastructure",
+          "state": "Fixed, and the gate that caught it was added yesterday",
+          "blocker": "Decision 027 renumbered chapters 5.2 to 5.5 flat, because the outline had recorded their navigational headings as pages and dropped the 78 real pages beneath them. That reassigned ids which two already published Section 2 pages were linking to. 2.1.1 and 2.1.8 carried [[5.3.2 | Distal femoral imaging]] and 2.1.8 also carried [[5.5.2 | Normal MRI Anatomy]]; after flattening, 5.3.2 is Lateral View and 5.5.2 is Sports Knee Protocol. The links now point at pages that carry the material: 5.3.1 AP View and 5.5.6 Bones. Worth recording for two reasons. First, renumbering a chapter is not a local change, and the same hazard will apply to any later section whose outline mixes navigational groupings with leaves. Second, this was caught only because EV-32 had been fixed the previous day: before that fix an unknown page id was skipped as a forward link, and these ids were unknown precisely because navigational headings are not pages. The gate earned its keep inside a day.",
+          "needed": "Nothing outstanding. tools/crossrefs.py --check is a gate and now fails on any link to a page the architecture does not have, and tools/extract_section5.py translates the spiral map's own navigational references so the osteoarthritis chain lands on the osteoarthritis pages rather than on Tunnel View.",
+          "pages": "anatomy/femur-gross-anatomy.html and anatomy/femur-imaging-anatomy.html"
         }
       ]
     },

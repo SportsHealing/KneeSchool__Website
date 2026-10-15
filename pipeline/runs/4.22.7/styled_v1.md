@@ -52,7 +52,7 @@ The seven contributors each describe a domain, and a profile across them would
 be the natural result of an instrument built on them. 4.22.2 covers the KOOS.
 
 Including sleep is a choice the established instruments make differently, and it
-is worth noting as a deliberate difference rather than an omission elsewhere.
+is a deliberate difference rather than an omission elsewhere.
 4.2.13 covers night pain.
 
 Including instability alongside arthritic symptoms spans two populations that
