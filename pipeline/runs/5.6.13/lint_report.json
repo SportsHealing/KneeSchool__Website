@@ -1,0 +1,61 @@
+{
+  "lint_version": "1.0",
+  "pass": true,
+  "fail_count": 0,
+  "warn_count": 5,
+  "findings": [
+    {
+      "rule_id": "POS-001",
+      "severity": "warn",
+      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
+      "matched_text": "Use the post-operative protocol, since suture material and any implant produce local artefact at exactly the site in que",
+      "context": "",
+      "line": 0
+    },
+    {
+      "rule_id": "POS-001",
+      "severity": "warn",
+      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
+      "matched_text": "Compare with the earliest post-operative study available, which turns the appearance into a trend.",
+      "context": "",
+      "line": 0
+    },
+    {
+      "rule_id": "POS-001",
+      "severity": "warn",
+      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
+      "matched_text": "Assess for displacement, which is the finding that does not depend on signal.",
+      "context": "",
+      "line": 0
+    },
+    {
+      "rule_id": "POS-001",
+      "severity": "warn",
+      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
+      "matched_text": "Assess the position of the body, because a repair that has not restored the anchor leaves the meniscus extruded.",
+      "context": "",
+      "line": 0
+    },
+    {
+      "rule_id": "POS-001",
+      "severity": "warn",
+      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
+      "matched_text": "Repair restores continuity, so it should restore the circumferential tension, and persistent extrusion after repair says",
+      "context": "",
+      "line": 0
+    }
+  ],
+  "article_template_version": "1.0",
+  "document": {
+    "word_count": 1428,
+    "tiers_present": [
+      "fellowship",
+      "frcs",
+      "medical_student",
+      "mrcs"
+    ],
+    "has_reference_list": true,
+    "sentence_count": 102,
+    "page_type": "imaging"
+  }
+}

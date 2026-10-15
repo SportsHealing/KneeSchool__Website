@@ -555,6 +555,20 @@
     "5.1.6": "imaging/imaging-pitfalls.html",
     "5.1.7": "imaging/evidence-based-imaging.html",
     "5.1.8": "imaging/future-of-knee-imaging.html",
+    "5.6.1": "imaging/normal-meniscus-mri.html",
+    "5.6.2": "imaging/meniscal-signal-grading.html",
+    "5.6.3": "imaging/horizontal-meniscal-tears.html",
+    "5.6.4": "imaging/vertical-meniscal-tears.html",
+    "5.6.5": "imaging/radial-meniscal-tears.html",
+    "5.6.6": "imaging/bucket-handle-tears.html",
+    "5.6.7": "imaging/flap-tears.html",
+    "5.6.8": "imaging/complex-meniscal-tears.html",
+    "5.6.9": "imaging/meniscal-root-tears.html",
+    "5.6.10": "imaging/ramp-lesions.html",
+    "5.6.11": "imaging/meniscal-extrusion.html",
+    "5.6.12": "imaging/post-operative-meniscus.html",
+    "5.6.13": "imaging/meniscal-repair-imaging.html",
+    "5.6.14": "imaging/meniscal-transplantation-imaging.html",
     "6.1.1": "conditions/acl.html"
   }
 }

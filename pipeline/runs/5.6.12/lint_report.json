@@ -1,0 +1,61 @@
+{
+  "lint_version": "1.0",
+  "pass": true,
+  "fail_count": 0,
+  "warn_count": 5,
+  "findings": [
+    {
+      "rule_id": "POS-001",
+      "severity": "warn",
+      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
+      "matched_text": "Compare with the pre-operative study where one exists, which converts a question about appearance into a question about ",
+      "context": "",
+      "line": 0
+    },
+    {
+      "rule_id": "POS-001",
+      "severity": "warn",
+      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
+      "matched_text": "Use the post-operative protocol rather than the standard one, since metal artefact from fixation and the altered shape b",
+      "context": "",
+      "line": 0
+    },
+    {
+      "rule_id": "POS-001",
+      "severity": "warn",
+      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
+      "matched_text": "Assess the remaining meniscus for its size and its position as well as for signal within it.",
+      "context": "",
+      "line": 0
+    },
+    {
+      "rule_id": "POS-001",
+      "severity": "warn",
+      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
+      "matched_text": "Assess the compartment, because what happens to the cartilage after meniscal surgery is the outcome the patient notices.",
+      "context": "",
+      "line": 0
+    },
+    {
+      "rule_id": "POS-001",
+      "severity": "warn",
+      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
+      "matched_text": "Automated reading is being applied to post-operative studies that were excluded from the training sets, which is the set",
+      "context": "",
+      "line": 0
+    }
+  ],
+  "article_template_version": "1.0",
+  "document": {
+    "word_count": 1480,
+    "tiers_present": [
+      "fellowship",
+      "frcs",
+      "medical_student",
+      "mrcs"
+    ],
+    "has_reference_list": true,
+    "sentence_count": 103,
+    "page_type": "imaging"
+  }
+}
