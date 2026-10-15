@@ -587,6 +587,69 @@
           "blocker": "The gates were five separate commands held in one person's head, so a contributor could not run them, there was no CI to run them, and pull request #1 was merged carrying 26 commits and 276 pages with nothing checking it. The style gate had never run over the whole site: it ran per chapter at the time each chapter was written.",
           "needed": "Nothing outstanding. make verify is the test suite plus six gates, the CI workflow runs that command rather than restating it, and main now moves only through a pull request that is green. Branch protection would enforce that rather than state it, and is left to the client because it needs admin rights and locks out a direct push.",
           "pages": "2 new tools, 1 new flag, 1 workflow, 17 briefs completed, 12 tests"
+        },
+        {
+          "ref": "D-022",
+          "title": "How a landmark papers page is written without source access",
+          "area": "Section 3 and 4",
+          "state": "Applied",
+          "blocker": "A landmark papers page's whole subject is the literature, and no source could be retrieved. A year, a journal, a volume or a citation written from memory is the most fabricable detail on the site and the hardest for a reader to check.",
+          "needed": "Nothing outstanding. ATTR-001 refuses a year, a journal, a volume, a DOI, a PMID and an et al form on these pages, ATTR-002 holds every named attribution against a generated register, and the pages carry surnames and described findings with decades at most.",
+          "pages": "chapters 3.17 and 4.24, 62 attributions across 15 pages"
+        },
+        {
+          "ref": "D-023",
+          "title": "The examination template, and the accuracy figures it refuses",
+          "area": "Section 4",
+          "state": "Applied",
+          "blocker": "Section 4 is 227 pages and the type map pointed examination at the anatomy template, whose headings are Structure and Location, Relations, Blood Supply and Innervation. A page called The Lachman Test has no blood supply.",
+          "needed": "Nothing outstanding. The examination template has five sections and ACC-001 refuses a sensitivity, specificity, predictive value or likelihood ratio written as a number. The template is unvalidated: no editorial authority has confirmed its five sections.",
+          "pages": "227 pages, 1 template, 1 new rule, 5 new headings"
+        },
+        {
+          "ref": "D-024",
+          "title": "How Section 4 is built before Part 2 of the architecture arrives",
+          "area": "Section 4",
+          "state": "Applied",
+          "blocker": "Part 1 governs tier coverage and page scope and gives Section 4 one sentence. Part 2, which carries the real page map, is not in this repository.",
+          "needed": "Part 2. Until it arrives the tier sets, the boundary lists and the scope sentences for 227 pages come from one sentence in Part 1. The script that generated the map lived in a scratchpad and was lost when the container was reclaimed, so Section 4's map can no longer be re-derived or checked against the source. Decision 027 does not repeat that mistake.",
+          "pages": "227 pages, pages_4.json"
+        },
+        {
+          "ref": "D-025",
+          "title": "Every produced page is visible, and the site says it is unfinished",
+          "area": "Governance",
+          "state": "Applied",
+          "blocker": "Pages were being produced faster than they were being linked, so work existed in the repository and could not be reached from the site. A reader had no way to know which pages were reviewed and which were not.",
+          "needed": "Nothing outstanding. Every produced page is reachable, every page carries a status line, and the build notice says the site is being built in the open and that no page has been reviewed.",
+          "pages": "the whole site"
+        },
+        {
+          "ref": "D-026",
+          "title": "The site is discoverable, and who decided that",
+          "area": "Governance",
+          "state": "Applied, on the client's instruction",
+          "blocker": "The site was not indexable. Making an unreviewed site discoverable is the client's call rather than this process's, and it was taken in their name on their instruction.",
+          "needed": "Nothing outstanding. robots.txt allows all, sitemap.xml is generated from the same function that writes the pages, and no page carries a noindex. The disclaimer and the status page carry the honesty burden.",
+          "pages": "robots.txt, sitemap.xml, 574 pages"
+        },
+        {
+          "ref": "D-027",
+          "title": "Section 5's page map, built from the source until Part 2 exists",
+          "area": "Section 5",
+          "state": "Applied",
+          "blocker": "The same gap as decision 024, one section later, and worse: Part 1 gives Section 5 one sentence and states no tier set for it at all, where Section 4 at least had the words Medical Student to Fellowship. The outline file recorded 161 pages because it took four chapters' navigational headings as pages and dropped the 78 real pages beneath them.",
+          "needed": "Part 2. Until then the four professional tiers are carried across from the section that defers its imaging here, which is a weaker derivation than Section 4's and is labelled as such on the Imaging Academy index. tools/extract_section5.py is committed so the 224 page map can be rebuilt and checked against the source, which Section 4's cannot.",
+          "pages": "224 pages designed, pages_5.json, 1 committed tool, 6 tests"
+        },
+        {
+          "ref": "D-028",
+          "title": "The imaging template, and the accuracy hole it found",
+          "area": "Section 5",
+          "state": "Applied",
+          "blocker": "Section 5 had no page type at all, so a brief could not be generated. Widening ACC-001 to cover imaging then exposed a hole in it: the term list held the nouns and not the adjectives, so a claim that a modality is 95 per cent sensitive had passed the gate, and would have passed on all 227 Section 4 pages.",
+          "needed": "Nothing outstanding on the rule. The template itself is unvalidated, as the examination template is, and chapter 5.20 Imaging Reporting is the loosest fit for its six sections and is the first thing to revisit. Chapter 5.19, the Magic Angle MRI Academy, will not be published on the client's instruction of 15 October 2026: its ten pages were never written and are recorded in the withheld block of render_targets.json rather than removed from the architecture, which leaves Section 5 at 224 pages designed and 214 to be written.",
+          "pages": "1 template, 4 new headings, ACC-001 widened, 9 tests"
         }
       ]
     },

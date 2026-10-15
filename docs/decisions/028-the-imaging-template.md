@@ -43,8 +43,8 @@ what lets it:
 - **5.2 physics.** "Generation of X-rays" shows, is acquired, and misleads. It
   has no normal or abnormal appearance, so it carries three sections.
 - **5.6 to 5.17 findings.** "Radial Tears" carries all six.
-- **5.19 Magic Angle.** An artefact academy, where Where It Misleads is the
-  subject of the chapter rather than its last section.
+- **5.2 artefact pages.** "Artefacts" and "Magic Angle Effect" are pages where
+  Where It Misleads is the subject rather than the last section.
 - **5.20 reporting.** How It Is Acquired reads as how the report is produced.
   This is the loosest fit in the set and is the first thing to revisit.
 
@@ -52,8 +52,7 @@ what lets it:
 finding fails in patterned, nameable ways: the magic angle effect, truncation
 artefact, a pulsation artefact crossing a ligament, fluid in a post operative
 bed read as a re-tear. A template with nowhere to put that produces pages that
-teach the appearance and omit the thing that makes a radiologist wrong. Chapter
-5.19 exists because this site's own people have a programme on exactly that.
+teach the appearance and omit the thing that makes a radiologist wrong.
 
 ## ACC-001, widened, and a hole it turned out to have
 
@@ -95,3 +94,17 @@ than the handbook's instruction.
 
 The reporting chapter is the weakest fit and will probably want its own type.
 Recording that now is cheaper than discovering it at page 200.
+
+## Amendment, 15 October 2026
+
+The client has decided not to publish chapter 5.19, the Magic Angle MRI Academy.
+Its ten pages were never written and are recorded in the `withheld` block of
+`render_targets.json` rather than removed from the architecture, because the
+architecture records what the site is designed to contain and this is a
+publishing decision rather than an architectural one. Section 5 is 224 pages
+designed and 214 to be written.
+
+The template is unaffected. The magic angle effect remains in the site as 5.2.20,
+a page of standard MRI physics in the physics chapter, and the five references
+chapter 5.1 made to the academy were repointed at 5.2.19 Artefacts, 5.2.20 Magic
+Angle Effect and 5.18.4 UTE Imaging.

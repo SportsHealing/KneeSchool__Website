@@ -513,3 +513,58 @@ class TheSitemapCountAgreesWithTheSitemap(unittest.TestCase):
         base = chrome.site_config()["base_url"]
         for rel in chrome.sitemap_paths():
             self.assertIn("<loc>%s%s</loc>" % (base, rel), body)
+
+
+class HeldPagesAreNotCountedAsComingSoon(unittest.TestCase):
+    """A page the client decided against is not a page that is coming soon.
+
+    Chapter 5.19, the Magic Angle MRI Academy, will not be published. Before
+    this, the Imaging Academy index read "8 of 224 pages are published; the rest
+    are written in syllabus order", which promised ten pages that are never
+    coming, and the chapter would have sat at nought of ten for ever.
+    """
+
+    def setUp(self):
+        self.root = os.path.dirname(ROOT)
+        with open(os.path.join(ROOT, "config", "render_targets.json"),
+                  encoding="utf-8") as fh:
+            self.targets = json.load(fh)
+
+    def test_the_held_chapter_is_in_the_withheld_block(self):
+        withheld = self.targets.get("withheld") or {}
+        for i in range(1, 11):
+            self.assertIn("5.19.%d" % i, withheld)
+
+    def test_a_held_page_is_not_also_a_render_target(self):
+        """An entry in both would publish a page the client declined."""
+        both = set(self.targets["pages"]) & set(self.targets.get("withheld") or {})
+        self.assertEqual(both, set())
+
+    def test_every_held_entry_says_why(self):
+        for page_id, entry in (self.targets.get("withheld") or {}).items():
+            self.assertTrue(entry.get("reason"), page_id)
+            self.assertTrue(entry.get("title"), page_id)
+
+    def test_a_held_entry_claiming_a_draft_has_one(self):
+        """The Section 0 holds were written before they were held and point at
+        their draft. Chapter 5.19's were never written and say so, so the two
+        kinds must not be confused."""
+        for page_id, entry in (self.targets.get("withheld") or {}).items():
+            if entry.get("written") is False:
+                self.assertNotIn("draft", entry, page_id)
+            else:
+                draft = entry.get("draft")
+                self.assertTrue(draft, page_id)
+                self.assertTrue(os.path.exists(os.path.join(self.root, draft)),
+                                "%s: %s" % (page_id, draft))
+
+    def test_the_index_excludes_held_pages_from_its_total(self):
+        path = os.path.join(self.root, "imaging", "index.html")
+        if not os.path.exists(path):
+            self.skipTest("the imaging index is not built")
+        with open(path, encoding="utf-8") as fh:
+            page = fh.read()
+        self.assertIn("of 214 pages are published", page)
+        self.assertIn("are designed and are not being published", page)
+        self.assertNotIn("of 224 pages are published", page)
+
