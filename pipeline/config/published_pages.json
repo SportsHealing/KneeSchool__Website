@@ -569,6 +569,20 @@
     "5.6.12": "imaging/post-operative-meniscus.html",
     "5.6.13": "imaging/meniscal-repair-imaging.html",
     "5.6.14": "imaging/meniscal-transplantation-imaging.html",
+    "5.7.1": "imaging/normal-acl-mri.html",
+    "5.7.2": "imaging/partial-acl-tears.html",
+    "5.7.3": "imaging/complete-acl-tears.html",
+    "5.7.4": "imaging/acute-acl-injury-mri.html",
+    "5.7.5": "imaging/chronic-acl-injury-mri.html",
+    "5.7.6": "imaging/acl-mucoid-degeneration.html",
+    "5.7.7": "imaging/acl-ganglion-cysts.html",
+    "5.7.8": "imaging/acl-healing.html",
+    "5.7.9": "imaging/acl-reconstruction-mri.html",
+    "5.7.10": "imaging/graft-maturation.html",
+    "5.7.11": "imaging/acl-graft-failure.html",
+    "5.7.12": "imaging/tunnel-assessment.html",
+    "5.7.13": "imaging/cyclops-lesions.html",
+    "5.7.14": "imaging/revision-acl-imaging.html",
     "6.1.1": "conditions/acl.html"
   }
 }

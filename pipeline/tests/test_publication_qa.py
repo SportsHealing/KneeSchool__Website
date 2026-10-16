@@ -568,3 +568,73 @@ class HeldPagesAreNotCountedAsComingSoon(unittest.TestCase):
         self.assertIn("are designed and are not being published", page)
         self.assertNotIn("of 224 pages are published", page)
 
+
+
+class TheRenderTargetRebuildsEverySectionIndex(unittest.TestCase):
+    """EV-36. `make render` is the documented way to rebuild the published
+    pages, and its recipe read `build_section_index.py 3` from the time Section
+    3 was the newest section. That tool rebuilds every section when given no
+    argument and only the named ones otherwise, so the target silently left the
+    anatomy, examination and imaging indexes stale for months.
+
+    Nothing failed, because the indexes were also rebuilt by hand on each
+    content push. The defect would surface as a section index that does not
+    list a page the site publishes, which the reachability test above catches
+    one push later rather than at the point the wrong command ran.
+
+    This holds the recipe itself. A section id in that line is the bug.
+    """
+
+    @classmethod
+    def setUpClass(cls):
+        cls.root = os.path.dirname(os.path.dirname(os.path.dirname(
+            os.path.abspath(__file__))))
+        with open(os.path.join(cls.root, "Makefile"), encoding="utf-8") as fh:
+            cls.makefile = fh.read()
+
+    def recipe_lines(self):
+        """The render target's recipe, which is the tab indented block."""
+        body = self.makefile.split("\nrender:\n", 1)
+        self.assertEqual(len(body), 2, "the Makefile has no render target")
+        lines = []
+        for line in body[1].splitlines():
+            if not line.startswith("\t"):
+                break
+            lines.append(line.strip())
+        return lines
+
+    def test_the_render_target_exists_and_has_a_recipe(self):
+        self.assertTrue(self.recipe_lines())
+
+    def test_the_section_index_is_rebuilt_with_no_section_argument(self):
+        calls = [l for l in self.recipe_lines() if "build_section_index" in l]
+        self.assertEqual(len(calls), 1, self.recipe_lines())
+        trailing = calls[0].split("build_section_index.py", 1)[1].strip()
+        self.assertEqual(trailing, "",
+                         "make render would rebuild only section(s) %r" % trailing)
+
+    def test_the_render_target_still_builds_the_status_page_and_chrome(self):
+        """Fixing the argument must not drop the other two steps, which is the
+        obvious way to break this while making the test pass."""
+        joined = "\n".join(self.recipe_lines())
+        for tool in ("render_site.py", "build_section_index.py",
+                     "build_status.py", "apply_chrome.py"):
+            self.assertIn(tool, joined)
+
+    def test_the_status_page_is_built_after_the_section_indexes(self):
+        """build_status.py counts published pages, so it reads what the index
+        step has just written."""
+        lines = self.recipe_lines()
+        order = [i for i, l in enumerate(lines)
+                 if "build_section_index.py" in l or "build_status.py" in l]
+        self.assertEqual(len(order), 2)
+        self.assertIn("build_section_index.py", lines[order[0]])
+        self.assertIn("build_status.py", lines[order[1]])
+
+    def test_the_chrome_is_applied_last(self):
+        """apply_chrome.py rewrites the chrome of pages the earlier steps wrote,
+        the status page among them, so it cannot run before them."""
+        lines = self.recipe_lines()
+        chrome = [i for i, l in enumerate(lines) if "apply_chrome.py" in l]
+        self.assertEqual(len(chrome), 1)
+        self.assertEqual(chrome[0], len(lines) - 1, lines)

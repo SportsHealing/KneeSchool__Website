@@ -50,9 +50,24 @@ gates:
 	@echo "== review packs match the registers =="
 	$(PYTHON) tools/review_pack.py --check
 
+# Order matters twice here, and both orderings were learned by breaking them.
+#
+# `build_section_index.py` takes section ids and rebuilds every section when
+# given none. This line read `build_section_index.py 3` for several months,
+# from when Section 3 was the newest, so `make render` silently left the
+# anatomy, examination and imaging indexes stale and only the reachability
+# test caught it. Pass no argument: the point of the target is to rebuild
+# what the styled markdown says, and that is all of it.
+#
+# `build_status.py` fills its placeholders from the registers, the sitemap and
+# the review pack directory, so a chapter's pack must be generated before this
+# runs or the status page understates the work waiting for a reviewer. The
+# packs are generated per chapter rather than here, because `--all` rewrites
+# all of them; `TheBuildStatusPageAgreesWithTheRegisters` is what catches a
+# stale page.
 render:
 	$(PYTHON) tools/render_site.py
-	$(PYTHON) tools/build_section_index.py 3
+	$(PYTHON) tools/build_section_index.py
 	$(PYTHON) tools/build_status.py
 	$(PYTHON) tools/apply_chrome.py
 
