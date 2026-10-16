@@ -85,6 +85,34 @@
         ]
       ],
       "note": "Nothing in this section is clinical advice or a substitute for assessment by a clinician. It describes how a knee is examined, it is written from standard teaching rather than from retrieved sources, and no page on it has been reviewed."
+    },
+    "5": {
+      "dir": "imaging",
+      "title": "The Imaging Academy",
+      "who": "Section 5 &middot; What the picture shows, and what it only seems to show",
+      "description": "Section 5: knee imaging for medical students, MRCS, FRCS and fellowship, modality by modality and structure by structure, with the pitfalls stated.",
+      "lede_prefix": "Twenty-one chapters on imaging the knee, written for medical students, MRCS and FRCS candidates, and fellows.",
+      "panel_heading": "How to read a claim about an image",
+      "panel_lede": "An imaging finding is necessary and not sufficient. The commonest error in knee practice is treating a named finding as the cause of a symptom, and the older the knee the more findings a scan offers and the less any one of them means.",
+      "panel_points": [
+        [
+          "Four tiers, and this time the architecture does not even say so.",
+          "Medical student, MRCS, FRCS and fellowship, the same as Section 4. Part 1 names Section 4's tiers in one sentence and says nothing at all about Section 5's, so this set is carried across from the section that defers its imaging here. It is weaker than Section 4's derivation and should be read that way. See decision 027."
+        ],
+        [
+          "No modality carries an accuracy figure.",
+          "You will not find a sensitivity or a specificity anywhere in this section, in either the noun or the adjective form. The comparative standing of the modalities is standard teaching and a percentage written from memory is the same class of claim as an invented citation, so the pages state the comparison and the gate refuses the number. See decision 028."
+        ],
+        [
+          "Where It Misleads is a section, not an aside.",
+          "An imaging finding fails in patterned, nameable ways: the magic angle effect, a truncation artefact, fluid in a post operative bed read as a re-tear. Every page in this section has a section for that, and chapter 5.2 carries the physics the artefacts come from."
+        ],
+        [
+          "The page map for this section was rebuilt, not inherited.",
+          "The outline file recorded 161 pages for Section 5 because it took four chapters' navigational headings as pages and dropped the 78 real pages beneath them. The map here is 224 pages, generated from the source document by tools/extract_section5.py, which is committed so it can be checked and rebuilt. See decision 027."
+        ]
+      ],
+      "note": "Nothing in this section is clinical advice or a substitute for assessment by a clinician. It describes how a knee is imaged and reported, it is written from standard teaching rather than from retrieved sources, and no page on it has been reviewed."
     }
   }
 }

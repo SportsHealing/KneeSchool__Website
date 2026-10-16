@@ -44,6 +44,32 @@
       "attribution_correct": ""
     },
     {
+      "attributed_to": "Terry and LaPrade",
+      "decade_as_written": [],
+      "tier": "frcs",
+      "section": "What Was Done",
+      "claim": "Terry and LaPrade examined the lateral structures including the anterolateral tissue and related the anatomy to injury patterns seen at surgery.",
+      "further_claims": [],
+      "occurrences": 1,
+      "verification": "UNVERIFIED_FROM_MEMORY",
+      "citation_as_retrieved": "",
+      "attribution_correct": ""
+    },
+    {
+      "attributed_to": "LaPrade and colleagues",
+      "decade_as_written": [
+        "2000s"
+      ],
+      "tier": "frcs",
+      "section": "What Was Done",
+      "claim": "LaPrade and colleagues quantified the posterolateral anatomy against bony landmarks in the 2000s and built reconstruction techniques from those measurements.",
+      "further_claims": [],
+      "occurrences": 1,
+      "verification": "UNVERIFIED_FROM_MEMORY",
+      "citation_as_retrieved": "",
+      "attribution_correct": ""
+    },
+    {
       "attributed_to": "Claes and colleagues",
       "decade_as_written": [
         "2010s"

@@ -48,6 +48,14 @@ CONFIG = os.path.join(ROOT, "pipeline", "config", "section_indexes.json")
 REL = "../"
 
 
+def withheld_pages():
+    """Page ids the render targets record as deliberately not published."""
+    path = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                        os.pardir, "pipeline", "config", "render_targets.json")
+    with open(os.path.normpath(path), encoding="utf-8") as fh:
+        return set(json.load(fh).get("withheld") or {})
+
+
 def esc(t):
     return html.escape(str(t), quote=False)
 
@@ -62,12 +70,13 @@ def build(section_id, spec):
              if str(p["page_id"]).startswith(section_id + ".")]
     pages.sort(key=lambda p: sort_key(p["page_id"]))
     published = page_index.load()
+    withheld = withheld_pages()
 
     chapters = collections.OrderedDict()
     for p in pages:
         chapters.setdefault((p["chapter"]["id"], p["chapter"]["name"]), []).append(p)
 
-    cards, live = [], 0
+    cards, live, held = [], 0, 0
     for (cid, cname), items in chapters.items():
         rows = []
         for p in items:
@@ -76,6 +85,12 @@ def build(section_id, spec):
                 live += 1
                 href = os.path.relpath(os.path.join(ROOT, target), os.path.dirname(out))
                 body = '<a href="%s">%s</a>' % (esc(href), esc(p["title"]))
+            elif p["page_id"] in withheld:
+                # A held page is not coming soon. Saying so would promise a page
+                # the client has decided against, every time the index rebuilds.
+                held += 1
+                body = ('<span class="soon">%s <i>(not being published)</i></span>'
+                        % esc(p["title"]))
             else:
                 body = '<span class="soon">%s</span>' % esc(p["title"])
             rows.append("            <li>%s</li>" % body)
@@ -87,9 +102,11 @@ def build(section_id, spec):
           </ul>
         </div>""" % (esc(cid), esc(cname), "\n".join(rows)))
 
-    total = len(pages)
-    # The section is either finished or it is not, and the page should say which
-    # without anyone editing it.
+    # Held pages are designed and will not be published, so they are not part of
+    # what this section is counting towards. Leaving them in the denominator made
+    # the Imaging Academy read "8 of 224" with a chapter that would have sat at
+    # nought of ten for ever.
+    total = len(pages) - held
     if live >= total:
         lede = "All %d pages are published and awaiting review." % total
         note = ("Every chapter is written. No page in this section has been through "
@@ -99,6 +116,11 @@ def build(section_id, spec):
         lede = ("%d of %d pages are published; the rest are written in syllabus order."
                 % (live, total))
         note = "Pages marked as coming soon are written and reviewed in syllabus order."
+    if held:
+        lede += (" %d more are designed and are not being published."
+                 % held)
+        note += (" Pages marked as not being published were decided against; the "
+                 "reason for each is in render_targets.json.")
 
     points = "\n".join(
         "          <li><b>%s</b> %s</li>" % (esc(b), esc(rest))
@@ -166,8 +188,9 @@ def build(section_id, spec):
         os.makedirs(d)
     with open(out, "w") as fh:
         fh.write(page)
-    print("%s/index.html written, %d of %d pages live, %d chapters"
-          % (spec["dir"], live, total, len(chapters)))
+    print("%s/index.html written, %d of %d pages live, %d chapters%s"
+          % (spec["dir"], live, total, len(chapters),
+             ", %d held" % held if held else ""))
 
 
 NUMBER_WORDS = {1: "one", 2: "two", 3: "three", 4: "four", 5: "five", 6: "six",

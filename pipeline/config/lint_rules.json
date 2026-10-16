@@ -345,14 +345,19 @@
     {
       "id": "ACC-001",
       "severity": "fail",
-      "description": "No bare diagnostic accuracy figure on an examination page: a sensitivity, specificity, predictive value or likelihood ratio written as a number",
-      "applies_when": "the brief's page_type is examination",
-      "source_of_truth": "docs/decisions/023-the-examination-template.md",
+      "description": "No bare diagnostic accuracy figure on an examination or imaging page: a sensitivity, specificity, predictive value or likelihood ratio written as a number",
+      "applies_when": "the brief's page_type is one of page_types below",
+      "source_of_truth": "docs/decisions/023-the-examination-template.md and docs/decisions/028-the-imaging-template.md",
       "notes": [
         "The same argument as ATTR-001, applied to a different fabricable quantity. For an examination test the comparative pattern is recalled robustly and is standard teaching: Lachman beats anterior drawer, the pivot shift is specific and insensitive, McMurray is specific and insensitive. A specific percentage is recalled alone, nothing in the pattern constrains it, and a wrong one looks exactly like a right one.",
         "A wrong sensitivity is more dangerous than a wrong anatomical figure, because it changes what a clinician does next with a negative test. That is why this is a fail rather than a warn.",
         "Angles, distances and grades are untouched. The flexion angle for a Lachman is part of the technique, is not a fabrication risk of this kind, and is registered as a figure under decision 006 like any other measurement.",
-        "The page says the comparison instead, which is what the evidence actually supports from memory, and the reviewer can add the figures once a source exists."
+        "The page says the comparison instead, which is what the evidence actually supports from memory, and the reviewer can add the figures once a source exists.",
+        "Extended to imaging pages by decision 028. 'MRI is 95% sensitive for a meniscal tear' is the same fabrication as a sensitivity for the McMurray test: the comparative standing of the modalities is standard teaching and recalled robustly, the percentage is recalled alone and nothing constrains it. The scope is this page_types list rather than a page type named in linter.py, because a rule whose scope lives in code cannot be read off the config, and this repository has already shipped one rule whose scope was prose that nothing read."
+      ],
+      "page_types": [
+        "examination",
+        "imaging"
       ]
     },
     {
@@ -375,7 +380,11 @@
         "purchase",
         "discount"
       ],
-      "conditional_on": "brief.governance.commercial_content_allowed == false"
+      "conditional_on": "brief.governance.commercial_content_allowed == false",
+      "notes": [
+        "excludes_architecture_title: the H1 is not scanned when it matches brief.title exactly, and the cross link labels are not scanned at all. The architecture names page 4.22.7 'Sportshealing Knee Score', so the rule as written banned that page's own title on its own page and banned the correct cross link label on every page pointing at it. A drafter cannot reword either without breaking the brief or the link. Commercial terms in prose are still caught everywhere, including in the body of 4.22.7 itself."
+      ],
+      "excludes_architecture_title": true
     },
     {
       "id": "GOV-002",

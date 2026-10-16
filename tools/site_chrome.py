@@ -86,6 +86,7 @@ RIBBON = [
         ("The Anatomy Academy", "anatomy/index.html"),
         ("The Biomechanics Academy", "biomechanics/index.html"),
         ("The Clinical Examination Academy", "examination/index.html"),
+        ("The Imaging Academy", "imaging/index.html"),
         ("Conditions library", "conditions/index.html"),
         ("Whole body factors", "encyclopaedia/whole-body.html"),
     ]),
@@ -181,6 +182,37 @@ def head(title, description, rel, extra_meta="", canonical=None):
 # reviewed by a clinician, and it is not for clinical use or for treating your
 # own knee. Each page already carries its own status line; this is the one a
 # visitor sees before they have read anything.
+def sitemap_paths():
+    """Every path the sitemap lists, derived rather than read back off disk.
+
+    tools/apply_chrome.py writes sitemap.xml from this and tools/build_status.py
+    quotes the count. They used to disagree: build_status read the file, so a
+    batch of new pages made the status page quote the previous count until
+    apply_chrome had run and build_status had run again. Chapter 4.15 failed the
+    suite on exactly that. One source, computed from the published page index,
+    and the order the tools run in no longer matters.
+    """
+    import json as _json
+    with open(os.path.join(_ROOT, "pipeline", "config",
+                           "published_pages.json"), encoding="utf-8") as fh:
+        published = _json.load(fh)
+    pages = published.get("pages", published)
+    outs = set((v if isinstance(v, str) else v.get("out"))
+               for v in pages.values()) - set([None])
+    # The homepage and the section indexes are not in the published page index,
+    # because that index lists articles. A sitemap that omits the pages a reader
+    # actually lands on is not a sitemap.
+    for extra in ("index.html", "anatomy/index.html", "biomechanics/index.html",
+                  "examination/index.html", "imaging/index.html",
+                  "encyclopaedia/index.html",
+                  "conditions/index.html", "practise/index.html",
+                  "about/status.html", "about/standards.html",
+                  "about/curriculum.html"):
+        if os.path.exists(os.path.join(_ROOT, extra)):
+            outs.add(extra)
+    return sorted(outs)
+
+
 BUILD_NOTICE = (
     "This site is being built in the open. No page on it has yet been reviewed "
     "by a clinician, every page says so, and nothing here is medical advice or "

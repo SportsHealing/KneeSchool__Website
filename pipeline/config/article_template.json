@@ -99,88 +99,6 @@
         "max": 1800
       }
     },
-    "condition": {
-      "body_sections": [
-        "definition",
-        "epidemiology",
-        "causes_and_risk_factors",
-        "presentation",
-        "examination",
-        "investigations_and_imaging",
-        "management_overview",
-        "rehabilitation_outline",
-        "complications_and_prognosis",
-        "controversies_and_evidence"
-      ],
-      "body_sections_rule": "ordered_subset_per_tier; per section tier limits are in section_tier_rules, which restricts controversies_and_evidence to frcs and consultant. See decision 020.",
-      "word_count": {
-        "min": 1200,
-        "max": 2500
-      }
-    },
-    "procedure": {
-      "body_sections": [
-        "what_the_operation_is",
-        "indications",
-        "contraindications",
-        "before_the_operation",
-        "the_operation",
-        "after_the_operation_and_rehabilitation",
-        "risks_and_complications",
-        "outcomes_and_evidence",
-        "variations_and_controversies"
-      ],
-      "body_sections_rule": "ordered_subset_per_tier; technique_detail frcs_and_above_only; variations_and_controversies fellowship_and_above_only; junior_block_careers_framing_only",
-      "word_count": {
-        "min": 1500,
-        "max": 3000
-      }
-    },
-    "careers": {
-      "body_sections": [
-        "what_the_work_involves",
-        "the_people_who_do_it",
-        "the_route",
-        "what_it_takes",
-        "where_to_find_out_more"
-      ],
-      "body_sections_rule": "ordered_subset_per_tier",
-      "word_count": {
-        "min": 500,
-        "max": 1200
-      },
-      "source_of_truth": "decision 003, orders revised 7 October 2026"
-    },
-    "study_skills": {
-      "body_sections": [
-        "what_this_is",
-        "how_it_works",
-        "how_to_prepare",
-        "common_mistakes",
-        "where_to_find_out_more"
-      ],
-      "body_sections_rule": "ordered_subset_per_tier",
-      "word_count": {
-        "min": 500,
-        "max": 1200
-      },
-      "source_of_truth": "decision 003, orders revised 7 October 2026"
-    },
-    "teacher_resource": {
-      "body_sections": [
-        "curriculum_links",
-        "what_this_covers",
-        "how_to_use_it",
-        "what_to_watch_for",
-        "where_to_find_out_more"
-      ],
-      "body_sections_rule": "ordered_subset_per_tier",
-      "word_count": {
-        "min": 500,
-        "max": 1200
-      },
-      "source_of_truth": "decision 003, orders revised 7 October 2026"
-    },
     "assessment": {
       "body_sections": [
         "what_this_is",
@@ -211,20 +129,39 @@
       },
       "source_of_truth": "decision 014"
     },
-    "landmark_papers": {
+    "careers": {
       "body_sections": [
-        "what_the_question_was",
-        "what_was_done",
-        "what_it_showed",
-        "what_it_changed",
-        "what_to_read_now"
+        "what_the_work_involves",
+        "the_people_who_do_it",
+        "the_route",
+        "what_it_takes",
+        "where_to_find_out_more"
       ],
-      "body_sections_rule": "ordered_subset_per_tier; frcs_and_above_only",
+      "body_sections_rule": "ordered_subset_per_tier",
       "word_count": {
-        "min": 800,
-        "max": 1800
+        "min": 500,
+        "max": 1200
       },
-      "source_of_truth": "decision 014"
+      "source_of_truth": "decision 003, orders revised 7 October 2026"
+    },
+    "condition": {
+      "body_sections": [
+        "definition",
+        "epidemiology",
+        "causes_and_risk_factors",
+        "presentation",
+        "examination",
+        "investigations_and_imaging",
+        "management_overview",
+        "rehabilitation_outline",
+        "complications_and_prognosis",
+        "controversies_and_evidence"
+      ],
+      "body_sections_rule": "ordered_subset_per_tier; per section tier limits are in section_tier_rules, which restricts controversies_and_evidence to frcs and consultant. See decision 020.",
+      "word_count": {
+        "min": 1200,
+        "max": 2500
+      }
     },
     "examination": {
       "body_sections": [
@@ -240,6 +177,85 @@
         "max": 1800
       },
       "source_of_truth": "decision 023"
+    },
+    "imaging": {
+      "body_sections": [
+        "what_it_shows",
+        "how_it_is_acquired",
+        "what_normal_looks_like",
+        "what_abnormal_looks_like",
+        "how_good_it_is",
+        "where_it_misleads"
+      ],
+      "body_sections_rule": "ordered_subset_per_tier",
+      "word_count": {
+        "min": 800,
+        "max": 1800
+      },
+      "source_of_truth": "decision 028"
+    },
+    "landmark_papers": {
+      "body_sections": [
+        "what_the_question_was",
+        "what_was_done",
+        "what_it_showed",
+        "what_it_changed",
+        "what_to_read_now"
+      ],
+      "body_sections_rule": "ordered_subset_per_tier; frcs_and_above_only",
+      "word_count": {
+        "min": 800,
+        "max": 1800
+      },
+      "source_of_truth": "decision 014"
+    },
+    "procedure": {
+      "body_sections": [
+        "what_the_operation_is",
+        "indications",
+        "contraindications",
+        "before_the_operation",
+        "the_operation",
+        "after_the_operation_and_rehabilitation",
+        "risks_and_complications",
+        "outcomes_and_evidence",
+        "variations_and_controversies"
+      ],
+      "body_sections_rule": "ordered_subset_per_tier; technique_detail frcs_and_above_only; variations_and_controversies fellowship_and_above_only; junior_block_careers_framing_only",
+      "word_count": {
+        "min": 1500,
+        "max": 3000
+      }
+    },
+    "study_skills": {
+      "body_sections": [
+        "what_this_is",
+        "how_it_works",
+        "how_to_prepare",
+        "common_mistakes",
+        "where_to_find_out_more"
+      ],
+      "body_sections_rule": "ordered_subset_per_tier",
+      "word_count": {
+        "min": 500,
+        "max": 1200
+      },
+      "source_of_truth": "decision 003, orders revised 7 October 2026"
+    },
+    "teacher_resource": {
+      "body_sections": [
+        "curriculum_links",
+        "what_this_covers",
+        "how_to_use_it",
+        "what_to_watch_for",
+        "where_to_find_out_more"
+      ],
+      "body_sections_rule": "ordered_subset_per_tier",
+      "word_count": {
+        "min": 500,
+        "max": 1200
+      },
+      "source_of_truth": "decision 003, orders revised 7 October 2026"
     }
   },
   "word_count_override": "brief.output_requirements.target_word_count overrides page_type default when present",
@@ -275,7 +291,10 @@
     "epidemiology": "Who Gets It",
     "examination": "Examination",
     "function": "Function",
+    "how_good_it_is": "How Good It Is",
+    "how_it_is_acquired": "How It Is Acquired",
     "how_it_is_measured": "How It Is Measured",
+    "how_it_is_performed": "How It Is Performed",
     "how_it_works": "How It Works",
     "how_to_earn_it": "How to Earn It",
     "how_to_prepare": "How to Prepare",
@@ -295,11 +314,16 @@
     "the_principle": "The Principle",
     "the_route": "The Route",
     "variations_and_controversies": "Variations and Controversies",
+    "what_a_positive_means": "What a Positive Means",
+    "what_abnormal_looks_like": "What Abnormal Looks Like",
     "what_changes_it": "What Changes It",
     "what_it_changed": "What It Changed",
     "what_it_covers": "What It Covers",
     "what_it_showed": "What It Showed",
+    "what_it_shows": "What It Shows",
     "what_it_takes": "What It Takes",
+    "what_it_tests": "What It Tests",
+    "what_normal_looks_like": "What Normal Looks Like",
     "what_the_operation_is": "What the Operation Is",
     "what_the_question_was": "What the Question Was",
     "what_the_work_involves": "What the Work Involves",
@@ -308,13 +332,9 @@
     "what_to_read_now": "What to Read Now",
     "what_to_watch_for": "What to Watch For",
     "what_was_done": "What Was Done",
+    "where_it_misleads": "Where It Misleads",
     "where_to_find_out_more": "Where to Find Out More",
-    "why_it_matters": "Why It Matters",
-    "what_it_tests": "What It Tests",
-    "how_it_is_performed": "How It Is Performed",
-    "what_a_positive_means": "What a Positive Means",
-    "how_good_it_is": "How Good It Is",
-    "where_it_misleads": "Where It Misleads"
+    "why_it_matters": "Why It Matters"
   },
   "body_section_headings_note": "The heading a body section slug is written as. Supplied for every slug the site uses, so a heading is never derived by guesswork. Decision 003 added the Section 0 page types and decision 014 the biomechanics and landmark papers types.",
   "tier_intent": {

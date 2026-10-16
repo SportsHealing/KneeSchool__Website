@@ -327,14 +327,26 @@ def build(chapter, names):
 
 
 def files_module():
-    """Imported late and by name, so the markdown path needs nothing installed."""
+    """Imported late and by name, so the markdown path needs nothing installed.
+
+    The dependencies are probed here rather than left to fail inside the writer.
+    review_pack_files imports openpyxl inside write_xlsx, so on a machine where
+    the sibling module imports and openpyxl does not, the guard below was
+    skipped and the command died on a traceback half way through a batch. That
+    happened on an interpreter change: python3 became 3.11 where the packages
+    are installed for 3.13, and the markdown pack had already been written.
+    """
     try:
         import review_pack_files
+        import openpyxl  # noqa: F401  probed, not used here
+        import docx  # noqa: F401  probed, not used here
     except ImportError as exc:  # pragma: no cover - depends on the environment
         raise SystemExit(
             "the spreadsheet and Word formats need openpyxl and python-docx:\n"
             "    pip install openpyxl python-docx\n"
-            "(%s)" % exc)
+            "and they must be installed for the interpreter running this tool,\n"
+            "which is %s\n"
+            "(%s)" % (sys.executable, exc))
     return review_pack_files
 
 

@@ -21,7 +21,7 @@
           "area": "Content pipeline",
           "state": "Mechanism built, nothing signed",
           "blocker": "The client confirmed on 10 October 2026 that consultants are lined up, so the people exist. The mechanism existed only as prose packs in docs/review/ with no way for an answer to come back. tools/review_pack.py now generates one pack per chapter from the work and reads a filled pack back into the registers, so the route exists. What is missing is a reviewer's time.",
-          "needed": "A consultant to work through a chapter. 2,139 clinical recommendations across 316 pages and 448 measurements across 165 are outstanding, none signed, and chapter 3.17 adds 52 attributions to named authors, none checked against a paper. python3 tools/review_pack.py --status prints the breakdown by chapter; 32 chapters carry recommendations, the largest is 3.7 with 152 and the median is 62.",
+          "needed": "A consultant to work through a chapter. {{positions_unsigned}} clinical recommendations across {{position_pages}} pages and {{figures_unchecked}} measurements across {{figure_pages}} are outstanding, none signed, and chapter 3.17 adds {{attributions_unchecked}} attributions to named authors, none checked against a paper. python3 tools/review_pack.py --status prints the breakdown by chapter; {{position_chapters}} chapters carry recommendations, the largest is {{largest_position_chapter}} with {{largest_position_count}} and the median is {{median_position_count}}.",
           "pages": "Every page on the site is an unreviewed editorial draft"
         },
         {
@@ -51,21 +51,21 @@
         },
         {
           "ref": "EV-6",
-          "title": "448 measurements on the site are unchecked",
+          "title": "{{figures_unchecked}} measurements on the site are unchecked",
           "area": "Content",
           "state": "Live and flagged, and the count rose on 12 October 2026 because the scan was wrong",
           "blocker": "They are written from memory because no paper could be retrieved. Each page's references note says so and each figure is registered. The total rose from 381 to 442 on 12 October 2026, not because measurements were added but because the scanner could not see a measurement written in words. rule_fig_001's own docstring asserted that a quantity cannot be written without a digit. Chapter 4.9 disproved it by quoting six flexion angles as \"ninety degrees\" and similar, every one of which escaped the register decision 006 says lists every measurement on the site. 61 had accumulated across the site. The scan now reads a number word carrying a unit, and a bare enumeration such as three structures is still allowed.",
-          "needed": "Someone with source access to work the register: 448 figures across 165 pages, all UNVERIFIED_FROM_MEMORY. tools/figures.py --report --unchecked is the list.",
-          "pages": "165 pages carry at least one measurement"
+          "needed": "Someone with source access to work the register: {{figures_unchecked}} figures across {{figure_pages}} pages, all UNVERIFIED_FROM_MEMORY. tools/figures.py --report --unchecked is the list.",
+          "pages": "{{figure_pages}} pages carry at least one measurement"
         },
         {
           "ref": "EV-7",
-          "title": "2,139 clinical recommendations on the site are unsigned",
+          "title": "{{positions_unsigned}} clinical recommendations on the site are unsigned",
           "area": "Content",
           "state": "Live and registered, and the count rose on 10 October 2026",
           "blocker": "They are written by a process with no clinical qualification, on pages that state they have not been reviewed. The client has chosen to keep them, and decision 007 makes the set finite and listed. The total rose from 976 to 1,295 on 10 October 2026, and chapter 3.12 added 93 more, not because advice was added but because the detector was found to be missing it. POS-001 read clinical direction off a list of imperative openers built from directive prose, and the directions opening with a weighing or a consultation verb had never reached the register. Two extensions of the verb list, decisions 018 and 019, added 319 between them.",
-          "needed": "A consultant to work the register: 2,139 positions across 316 pages, all UNSIGNED. tools/positions.py --report --unsigned is the list. Section 4 is where this count will grow fastest, because an examination page tells a clinician what to do by definition and 185 of its pages are still unwritten.",
-          "pages": "316 pages carry at least one recommendation"
+          "needed": "A consultant to work the register: {{positions_unsigned}} positions across {{position_pages}} pages, all UNSIGNED. tools/positions.py --report --unsigned is the list. Section 4 is where this count will grow fastest, because an examination page tells a clinician what to do by definition and 185 of its pages are still unwritten.",
+          "pages": "{{position_pages}} pages carry at least one recommendation"
         },
         {
           "ref": "EV-8",
@@ -126,7 +126,7 @@
           "title": "Fifty-two study attributions on the site are unchecked",
           "area": "Content pipeline",
           "state": "Writing complete, checking outstanding",
-          "blocker": "This entry used to hold eleven pages. The client ruled on 11 October 2026, \"Write it flagged unverified\", and all eleven are now written: chapter 3.17's ten and page 3.1.8. Decision 022 sets the terms. The finding and the surname a study is taught under may be written, because they are recalled together and either checks the other. The year, the journal, the volume and the page may not, because they are recalled alone and a wrong one cannot be told from a right one. ATTR-001 refuses all six fabricable shapes at the gate and ATTR-002 requires every named attribution to be in a register. Nothing is held for source access any more. What is outstanding is the checking: 52 attributions across nine pages, every one from memory, and some of them will be wrong.",
+          "blocker": "This entry used to hold eleven pages. The client ruled on 11 October 2026, \"Write it flagged unverified\", and all eleven are now written: chapter 3.17's ten and page 3.1.8. Decision 022 sets the terms. The finding and the surname a study is taught under may be written, because they are recalled together and either checks the other. The year, the journal, the volume and the page may not, because they are recalled alone and a wrong one cannot be told from a right one. ATTR-001 refuses all six fabricable shapes at the gate and ATTR-002 requires every named attribution to be in a register. Nothing is held for source access any more. What is outstanding is the checking: {{attributions_unchecked}} attributions across {{attribution_pages}} pages, every one from memory, and some of them will be wrong.",
           "needed": "Someone with a library to work the attribution register: 52 entries, all UNVERIFIED_FROM_MEMORY. tools/attributions.py --report --unchecked is the list, and the chapter 3.17 review pack carries the same rows with a Citation column, which is the one field this process could not fill. Separately, page 3.17.9 needs a ruling from the Imperial group itself: the architecture asked for their research programme summarised and the page delivers their published work instead, which is less, and whether a page bearing an institution's name should exist in that form is their call rather than this process's.",
           "pages": "11 pages published, 9 of them carrying unchecked attributions"
         },
@@ -226,17 +226,98 @@
           "area": "Infrastructure",
           "state": "Fixed, with a test added",
           "blocker": "robots.txt has named sitemap.xml since the day it was written and the file did not exist. Harmless while discoverable was false, because every crawler was disallowed and none read robots.txt past the Disallow line. It became a 404 for every crawler the moment the client set discoverable true on 12 October 2026, and the site would have been indexed without the map it advertised. The same shape as the other latent bugs here: correct under one setting, wrong under the other, with nothing checking the setting it was wrong under. apply_chrome.py now writes sitemap.xml beside the robots.txt that points at it, so they cannot disagree, and removes it if the site ever returns to not discoverable.",
-          "needed": "Nothing outstanding. sitemap.xml carries 394 urls and test_the_sitemap_agrees_with_the_switch would have caught the absence.",
-          "pages": "394 urls in the sitemap; every published page is listed"
+          "needed": "Nothing outstanding. sitemap.xml carries {{sitemap_urls}} urls and test_the_sitemap_agrees_with_the_switch would have caught the absence.",
+          "pages": "{{sitemap_urls}} urls in the sitemap; every published page is listed"
         },
         {
           "ref": "EV-26",
           "title": "The site is now indexable and nothing on it has been reviewed",
           "area": "Governance",
           "state": "Live and indexable, by the client's decision",
-          "blocker": "The client set discoverable true on 12 October 2026, taking responsibility and asking for a disclaimer, which decision 026 records in their words. Search engines may now index 2,139 unsigned clinical recommendations and 448 unchecked measurements, and a reader can arrive from a search rather than from a link given by somebody who could warn them. Three notices stand between them and the content: the work in progress band on every page, the per page status line, and the reference note. None of them is review. Indexing is not fully reversible, because a page can stay cached after it is removed from the site.",
-          "needed": "The same thing as before, and now more urgently: a consultant through the review packs. 43 chapters are current and nothing has been signed. This entry exists so the cost of the decision is visible next to the work that would retire it.",
+          "blocker": "The client set discoverable true on 12 October 2026, taking responsibility and asking for a disclaimer, which decision 026 records in their words. Search engines may now index {{positions_unsigned}} unsigned clinical recommendations and {{figures_unchecked}} unchecked measurements, and a reader can arrive from a search rather than from a link given by somebody who could warn them. Three notices stand between them and the content: the work in progress band on every page, the per page status line, and the reference note. None of them is review. Indexing is not fully reversible, because a page can stay cached after it is removed from the site.",
+          "needed": "The same thing as before, and now more urgently: a consultant through the review packs. {{review_pack_chapters}} chapters are current and nothing has been signed. This entry exists so the cost of the decision is visible next to the work that would retire it.",
           "pages": "Every page on the site is indexable and unreviewed"
+        },
+        {
+          "ref": "EV-27",
+          "title": "The build status page quoted register totals that had fallen behind",
+          "area": "Infrastructure",
+          "state": "Fixed, with a test added",
+          "blocker": "This page tells a reader how much unchecked work the site carries, and until chapter 4.11 those numbers were typed into docs/build_status.json by whoever last edited it. They were right when written and wrong by the next chapter. At the point it was found the page said 448 unchecked measurements against a register holding 462, 2,139 unsigned recommendations against 2,149, that 32 chapters carried recommendations when 37 did, and that the largest was 3.7 with 152 when it was 4.2 with 191. The understatement was the problem: the page exists so the scale of unreviewed content is visible, and it was understating it. Same failure as the hand compiled figure list that decision 006 replaced, so it has the same answer. Every one of those numbers is now a placeholder filled from the registers when the page is built.",
+          "needed": "Nothing outstanding. TheBuildStatusPageAgreesWithTheRegisters fills every tokenised sentence from the live registers and looks for it whole on the page, so a register that moves without the page being rebuilt fails the suite. The first version of that test matched on the bare number and passed against a stale page, which is why it matches sentences.",
+          "pages": "about/status.html, generated from docs/build_status.json"
+        },
+        {
+          "ref": "EV-28",
+          "title": "The renderer gave two pages the same title tag",
+          "area": "Infrastructure",
+          "state": "Fixed, with a test added",
+          "blocker": "PUB-009 requires a unique title tag per page, and the renderer gets one for a colliding page by appending the chapter name, trimmed to fit PUB-001's length bound. It trimmed from the back of the name, on the reasoning that the first word distinguishes. Chapter 4.15 disproved it. Patellofemoral Arthritis exists in chapter 3.12, Patellofemoral Biomechanics, and in chapter 4.15, Patellofemoral Examination, and both trimmed to \"Patellofemoral Arthritis, Patellofemoral\": two identical title tags for the two pages the disambiguation existed to separate. Trimming from the front instead breaks the opposite case, where \"ACL Examination\" loses the ACL that separates it from \"Rotational Instability Examination\". The renderer now ranks a chapter name's words by how many of the other colliding chapters contain them and drops the most shared word first, so the distinguishing word survives at either end.",
+          "needed": "Nothing outstanding. DisambiguatedTitlesSeparateThePages holds both cases and the length bound, the renderer now refuses to write two identical title tags rather than leaving it to the gate, and PUB-009 remains the backstop that found it.",
+          "pages": "One existing title changed: biomechanics/patellofemoral-arthritis.html now carries its chapter name"
+        },
+        {
+          "ref": "EV-29",
+          "title": "The renderer's --only flag could publish a non-unique title",
+          "area": "Infrastructure",
+          "state": "Fixed, with a test added",
+          "blocker": "The same finding had a second cause. The renderer computed its collision set after --only had narrowed the targets, so a page rendered on its own could not see a page it collided with and was written without the chapter suffix. Chapter 4.15 was rendered with --only and published its title tag as though nothing shared it. This is the shape of several bugs in this repository: correct when the whole site is rendered, wrong on the narrower path, and nothing checking the narrow path. The collision set is now computed from every render target and only the rendering is narrowed.",
+          "needed": "Nothing outstanding. The gate caught it, and the renderer no longer depends on the whole site being rendered to get a title right.",
+          "pages": "tools/render_site.py"
+        },
+        {
+          "ref": "EV-30",
+          "title": "The build status page quoted a stale sitemap count",
+          "area": "Infrastructure",
+          "state": "Fixed, with a test added",
+          "blocker": "This page quotes the number of urls in sitemap.xml, and the two tools disagreed by construction: tools/apply_chrome.py writes the sitemap and tools/build_status.py read the written file to get the count. Running build_status before apply_chrome, which is the order a page batch naturally produces, made this page quote the previous count. Chapter 4.15 failed the suite on it. The path list now lives in tools/site_chrome.py and both tools derive it, so the order they run in does not matter. Same answer as EV-27 one step further back: the number is computed rather than read from whatever happened to be on disk.",
+          "needed": "Nothing outstanding. TheSitemapCountAgreesWithTheSitemap holds the derived list against the file, and TheBuildStatusPageAgreesWithTheRegisters holds the page against the derived list.",
+          "pages": "sitemap.xml and about/status.html"
+        },
+        {
+          "ref": "EV-31",
+          "title": "The style gate banned a page title the architecture had chosen",
+          "area": "Infrastructure",
+          "state": "Fixed, with three tests added",
+          "blocker": "GOV-001 bans a list of commercial terms, Sportshealing among them, on every page whose brief sets commercial_content_allowed to false. tools/architecture.py sets that flag to false for every page it generates a brief for. The architecture names page 4.22.7 Sportshealing Knee Score. So the gate banned that page's own title on its own page, and banned the correct cross link label on every page pointing at it, which is how it was found: chapter 4.18.6's link to 4.22.7 failed the lint and the link was replaced with a worse one rather than the gate being questioned. PHRASE-001 already carried the mechanism for exactly this class of problem, added when 0.5.5 Meet the Researchers tripped the meet the ban in its own H1. GOV-001 now sets the same excludes_architecture_title flag, so the H1 is out of scope when it matches the brief's title and the cross link labels are out of scope entirely. The boolean stays false, so buy, purchase, discount and our clinic remain banned everywhere, including in the body of 4.22.7 itself.",
+          "needed": "Nothing outstanding. Three tests in pipeline/tests/test_linter.py hold the behaviour: the architecture's own title and the cross link label pass, the term in prose on the same page still fails, and a title the brief does not name is not exempted.",
+          "pages": "pipeline/config/lint_rules.json and every page linking to 4.22.7"
+        },
+        {
+          "ref": "EV-32",
+          "title": "A cross link to a page that does not exist passed every gate",
+          "area": "Infrastructure",
+          "state": "Fixed, with four tests added",
+          "blocker": "tools/crossrefs.py --check exempted every unknown page id as a forward link to a section the architecture had not mapped to pages yet. That was true when the tool was written and only sections 0 to 3 were mapped. All sixteen sections now carry page ids, so the exemption protected nothing and hid a real typo: chapter 4.19.4 linked 4.15.11 as The Apprehension Test when chapter 4.15 ends at 4.15.10. The renderer counted it as one unresolved link of six and printed that count, the label check skipped it because it could not resolve it, and the prose check does not look at bracketed links, so the page published with a dead link and make verify passed. An unknown id with a valid shape is now a fault. A section placeholder stays exempt, because two future pages in one unpublished section share an id by design.",
+          "needed": "Nothing outstanding. Four tests in pipeline/tests/test_architecture.py hold it, including one that runs the check against the whole site.",
+          "pages": "examination/paediatric-patellar-instability.html, now corrected"
+        },
+        {
+          "ref": "EV-33",
+          "title": "The attribution register could not see a name with a capital in the middle",
+          "area": "Infrastructure",
+          "state": "Fixed, with six tests added and six attributions recovered",
+          "blocker": "The surname shape the attribution detector used was [A-Z][a-z]{2,}, which cannot match McMurray, MacIntosh, Barber-Westin or O'Connor. Chapter 4.24.3 attributed the meniscal provocation test to McMurray in the first sentence of its What Was Done section and the register recorded nothing. The same shape had been losing names from chapter 3.17 since that chapter was published: re-extracting after the fix recovered LaPrade from 3.17.4 and 3.17.5, Terry and LaPrade, Griffith and LaPrade, and Goodfellow and O'Connor from 3.17.8, where the register had been holding the mangled entry Connor. A false positive in this register is visible and the next extraction withdraws it. A miss is invisible, and the register's whole value under decision 022 is that it comes from the pages rather than from someone remembering to add a name, so a silent miss is the worse failure. The shape now allows an internal capital, a hyphenated second part and an apostrophe. The same extraction run also read three capitalised common nouns as authors, Patient and Translation and Symmetry, each opening a sentence followed by a reporting verb; those words joined the stop list that already exists for that over-read.",
+          "needed": "Nothing outstanding. Six tests in pipeline/tests/test_linter.py hold the name shapes and the stop list. The six recovered attributions are now in the review packs for chapters 3.17 and 4.24, which means they are six more claims waiting on a consultant rather than six fewer.",
+          "pages": "pipeline/config/attributions, chapters 3.17 and 4.24"
+        },
+        {
+          "ref": "EV-34",
+          "title": "A banned phrase that straddled a line break passed the style gate",
+          "area": "Infrastructure",
+          "state": "Fixed, with four tests added",
+          "blocker": "PHRASE-001 built its pattern by escaping the banned phrase whole, so the space between words matched a literal space. Drafts are hard wrapped at about 79 columns, which means any multi word phrase that happened to break across lines was invisible to the gate. 82 of the 108 banned phrases are multi word. Page 4.22.7 carried \"it is worth noting\" with the wrap falling after \"it\": lint_local passed the markdown and tools/check_site.py caught it on the rendered page, where the break had become a space. The two gates read the same text through different whitespace and disagreed, which is how it surfaced. A space in a banned phrase now matches any run of whitespace. A scan of all 554 drafts for phrases hidden this way found exactly one, so the hole was real and its blast radius was a single page.",
+          "needed": "Nothing outstanding. Four tests in pipeline/tests/test_linter.py hold it: the phrase on one line, across a line break, across several spaces, and an ordinary pair of sentences that must stay quiet.",
+          "pages": "examination/sportshealing-knee-score.html, now corrected"
+        },
+        {
+          "ref": "EV-35",
+          "title": "Flattening Section 5's chapters repointed links from published pages",
+          "area": "Infrastructure",
+          "state": "Fixed, and the gate that caught it was added yesterday",
+          "blocker": "Decision 027 renumbered chapters 5.2 to 5.5 flat, because the outline had recorded their navigational headings as pages and dropped the 78 real pages beneath them. That reassigned ids which two already published Section 2 pages were linking to. 2.1.1 and 2.1.8 carried [[5.3.2 | Distal femoral imaging]] and 2.1.8 also carried [[5.5.2 | Normal MRI Anatomy]]; after flattening, 5.3.2 is Lateral View and 5.5.2 is Sports Knee Protocol. The links now point at pages that carry the material: 5.3.1 AP View and 5.5.6 Bones. Worth recording for two reasons. First, renumbering a chapter is not a local change, and the same hazard will apply to any later section whose outline mixes navigational groupings with leaves. Second, this was caught only because EV-32 had been fixed the previous day: before that fix an unknown page id was skipped as a forward link, and these ids were unknown precisely because navigational headings are not pages. The gate earned its keep inside a day.",
+          "needed": "Nothing outstanding. tools/crossrefs.py --check is a gate and now fails on any link to a page the architecture does not have, and tools/extract_section5.py translates the spiral map's own navigational references so the osteoarthritis chain lands on the osteoarthritis pages rather than on Tunnel View.",
+          "pages": "anatomy/femur-gross-anatomy.html and anatomy/femur-imaging-anatomy.html"
         }
       ]
     },
@@ -469,7 +550,7 @@
           "state": "Applied",
           "blocker": "A consultant filling eighty five cells wants a column to tab down, not a markdown table, and a printed pack for a meeting wants to be a document.",
           "needed": "Nothing. Every pack generates as markdown, a spreadsheet and a Word file from the same data, all carrying the same row references, and --ingest reads any of them. Two faults were found while verifying: python-docx writes a schema-invalid settings.xml, now corrected, and LibreOffice does not work in this container, so the workbook sets fullCalcOnLoad and the Word file is verified structurally rather than rendered. See decision 017.",
-          "pages": "docs/review/packs/, markdown for all 32 chapters and both binaries for 3.2 to 3.10"
+          "pages": "docs/review/packs/, markdown for all {{review_pack_chapters}} chapters and both binaries for 3.2 to 3.10"
         },
         {
           "ref": "D-018",
@@ -506,6 +587,69 @@
           "blocker": "The gates were five separate commands held in one person's head, so a contributor could not run them, there was no CI to run them, and pull request #1 was merged carrying 26 commits and 276 pages with nothing checking it. The style gate had never run over the whole site: it ran per chapter at the time each chapter was written.",
           "needed": "Nothing outstanding. make verify is the test suite plus six gates, the CI workflow runs that command rather than restating it, and main now moves only through a pull request that is green. Branch protection would enforce that rather than state it, and is left to the client because it needs admin rights and locks out a direct push.",
           "pages": "2 new tools, 1 new flag, 1 workflow, 17 briefs completed, 12 tests"
+        },
+        {
+          "ref": "D-022",
+          "title": "How a landmark papers page is written without source access",
+          "area": "Section 3 and 4",
+          "state": "Applied",
+          "blocker": "A landmark papers page's whole subject is the literature, and no source could be retrieved. A year, a journal, a volume or a citation written from memory is the most fabricable detail on the site and the hardest for a reader to check.",
+          "needed": "Nothing outstanding. ATTR-001 refuses a year, a journal, a volume, a DOI, a PMID and an et al form on these pages, ATTR-002 holds every named attribution against a generated register, and the pages carry surnames and described findings with decades at most.",
+          "pages": "chapters 3.17 and 4.24, 62 attributions across 15 pages"
+        },
+        {
+          "ref": "D-023",
+          "title": "The examination template, and the accuracy figures it refuses",
+          "area": "Section 4",
+          "state": "Applied",
+          "blocker": "Section 4 is 227 pages and the type map pointed examination at the anatomy template, whose headings are Structure and Location, Relations, Blood Supply and Innervation. A page called The Lachman Test has no blood supply.",
+          "needed": "Nothing outstanding. The examination template has five sections and ACC-001 refuses a sensitivity, specificity, predictive value or likelihood ratio written as a number. The template is unvalidated: no editorial authority has confirmed its five sections.",
+          "pages": "227 pages, 1 template, 1 new rule, 5 new headings"
+        },
+        {
+          "ref": "D-024",
+          "title": "How Section 4 is built before Part 2 of the architecture arrives",
+          "area": "Section 4",
+          "state": "Applied",
+          "blocker": "Part 1 governs tier coverage and page scope and gives Section 4 one sentence. Part 2, which carries the real page map, is not in this repository.",
+          "needed": "Part 2. Until it arrives the tier sets, the boundary lists and the scope sentences for 227 pages come from one sentence in Part 1. The script that generated the map lived in a scratchpad and was lost when the container was reclaimed, so Section 4's map can no longer be re-derived or checked against the source. Decision 027 does not repeat that mistake.",
+          "pages": "227 pages, pages_4.json"
+        },
+        {
+          "ref": "D-025",
+          "title": "Every produced page is visible, and the site says it is unfinished",
+          "area": "Governance",
+          "state": "Applied",
+          "blocker": "Pages were being produced faster than they were being linked, so work existed in the repository and could not be reached from the site. A reader had no way to know which pages were reviewed and which were not.",
+          "needed": "Nothing outstanding. Every produced page is reachable, every page carries a status line, and the build notice says the site is being built in the open and that no page has been reviewed.",
+          "pages": "the whole site"
+        },
+        {
+          "ref": "D-026",
+          "title": "The site is discoverable, and who decided that",
+          "area": "Governance",
+          "state": "Applied, on the client's instruction",
+          "blocker": "The site was not indexable. Making an unreviewed site discoverable is the client's call rather than this process's, and it was taken in their name on their instruction.",
+          "needed": "Nothing outstanding. robots.txt allows all, sitemap.xml is generated from the same function that writes the pages, and no page carries a noindex. The disclaimer and the status page carry the honesty burden.",
+          "pages": "robots.txt, sitemap.xml, 574 pages"
+        },
+        {
+          "ref": "D-027",
+          "title": "Section 5's page map, built from the source until Part 2 exists",
+          "area": "Section 5",
+          "state": "Applied",
+          "blocker": "The same gap as decision 024, one section later, and worse: Part 1 gives Section 5 one sentence and states no tier set for it at all, where Section 4 at least had the words Medical Student to Fellowship. The outline file recorded 161 pages because it took four chapters' navigational headings as pages and dropped the 78 real pages beneath them.",
+          "needed": "Part 2. Until then the four professional tiers are carried across from the section that defers its imaging here, which is a weaker derivation than Section 4's and is labelled as such on the Imaging Academy index. tools/extract_section5.py is committed so the 224 page map can be rebuilt and checked against the source, which Section 4's cannot.",
+          "pages": "224 pages designed, pages_5.json, 1 committed tool, 6 tests"
+        },
+        {
+          "ref": "D-028",
+          "title": "The imaging template, and the accuracy hole it found",
+          "area": "Section 5",
+          "state": "Applied",
+          "blocker": "Section 5 had no page type at all, so a brief could not be generated. Widening ACC-001 to cover imaging then exposed a hole in it: the term list held the nouns and not the adjectives, so a claim that a modality is 95 per cent sensitive had passed the gate, and would have passed on all 227 Section 4 pages.",
+          "needed": "Nothing outstanding on the rule. The template itself is unvalidated, as the examination template is, and chapter 5.20 Imaging Reporting is the loosest fit for its six sections and is the first thing to revisit. Chapter 5.19, the Magic Angle MRI Academy, will not be published on the client's instruction of 15 October 2026: its ten pages were never written and are recorded in the withheld block of render_targets.json rather than removed from the architecture, which leaves Section 5 at 224 pages designed and 214 to be written.",
+          "pages": "1 template, 4 new headings, ACC-001 widened, 9 tests"
         }
       ]
     },
@@ -705,7 +849,7 @@
           "area": "Content",
           "state": "All 10 pages written, style gate passed, awaiting review",
           "blocker": "Landmark Biomechanics Papers, the chapter that was held from 9 to 11 October 2026 and is the only one on the site written under a rule invented for it. Each page takes one subject and asks what the studies asked, what they did, what they showed, what they changed, and what to read now. Three disciplines run through it. No page carries a citation, a year, a journal or a page number, which is decision 022 and is enforced by ATTR-001 rather than intended. No page carries a measurement either, which was not planned and follows from the same discipline: a chapter that cannot cite a source has no business quoting a figure, and the figure register gained nothing from these ten pages. And every consultant block is a balance argument under decision 018, which matters more here than elsewhere because a chapter about landmark papers invites a verdict on each one. 3.17.9 is the exception and says so on the page: the architecture asked for the Imperial group's research programme summarised and the page delivers their published work instead, because describing a named group's current work from memory is a different act from writing standard teaching. 3.17.10 collects the seven gaps the other nine pages named and ranks them by what answering them would change.",
-          "needed": "Consultant review, and this is the one chapter where the review needs a library rather than only expertise. 52 attributions are listed in the pack with a Citation column, and confirming or correcting them is the work. Three things to check hardest. First, whether the author named beside each finding is the right one, since the whole chapter rests on that pairing. Second, 3.17.9, where the question is not whether the content is right but whether the page should exist in this form, which is the Imperial group's call. Third, 3.17.10's ranking, which is a judgement about clinical consequence rather than a reading of the literature and should be argued with.",
+          "needed": "Consultant review, and this is the one chapter where the review needs a library rather than only expertise. {{attributions_unchecked}} attributions are listed in the pack with a Citation column, and confirming or correcting them is the work. Three things to check hardest. First, whether the author named beside each finding is the right one, since the whole chapter rests on that pairing. Second, 3.17.9, where the question is not whether the content is right but whether the page should exist in this form, which is the Imperial group's call. Third, 3.17.10's ranking, which is a judgement about clinical consequence rather than a reading of the literature and should be argued with.",
           "pages": "10 published pages, 13,689 body words as the style gate counts them"
         },
         {

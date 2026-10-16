@@ -193,8 +193,8 @@ terms rather than fixed ones.
 - [[2.1.2 | Distal Femur]]
 - [[2.1.5 | Trochlea]]
 - [[2.1.6 | Femoral Attachments of Ligaments]]
-- [[5.3.2 | Distal femoral imaging]]
-- [[5.5.2 | Normal MRI Anatomy]]
+- [[5.3.1 | AP View]]
+- [[5.5.6 | Bones]]
 
 ## References
 

@@ -272,8 +272,16 @@ def line_of(text, index):
 
 def phrase_pattern(phrase):
     """Word-boundary, case-insensitive pattern that tolerates the trailing comma
-    variants in the banned list (for example 'additionally,')."""
-    escaped = re.escape(phrase)
+    variants in the banned list (for example 'additionally,').
+
+    A space in a banned phrase matches any run of whitespace, including a line
+    break. Drafts are hard wrapped, so a literal space missed every banned
+    phrase that happened to straddle a wrap: 4.22.7 carried "it is worth
+    noting" with the break after "it", the markdown gate passed it, and
+    check_site caught it on the rendered page where the break had become a
+    space. 82 of the 108 banned phrases are multi word and could hide that way.
+    """
+    escaped = r"\s+".join(re.escape(word) for word in phrase.split())
     lead = r"(?<![A-Za-z])" if phrase[:1].isalnum() else ""
     trail = r"(?![A-Za-z])" if phrase[-1:].isalnum() else ""
     return re.compile(lead + escaped + trail, re.IGNORECASE)
@@ -892,7 +900,17 @@ ATTR_VERB = (r"showed|found|measured|described|reported|demonstrated|"
              r"recorded|assembled|graded|classified|named")
 # One author, a comma list, an "and" pair, or any of those followed by "and
 # colleagues". "Butler, Noyes and Grood ran" is one attribution, not three.
-_ATTR_NAME = r"[A-Z][a-z]{2,}"
+#
+# The name shape allows an internal capital, a hyphenated second part and an
+# apostrophe, because the previous [A-Z][a-z]{2,} could not match McMurray,
+# MacIntosh, Barber-Westin or O'Donoghue. Chapter 4.24 found it: the page about
+# the meniscal test literature attributed the test to McMurray in its own first
+# sentence and the register recorded nothing. A false positive is visible and
+# gets withdrawn on the next extraction; a miss is invisible, and the register's
+# whole value is that it comes from the pages rather than from someone
+# remembering to add a name.
+_ATTR_NAME = (r"(?:[A-Z][a-z]*[A-Z]?[a-z]{2,}|[A-Z]['\u2019][A-Z][a-z]{2,})"
+              r"(?:-[A-Z][a-z]{2,})?")
 ATTR_NAMED = re.compile(
     r"\b(%s(?:(?:,\s+|\s+and\s+)%s)*(?:\s+and\s+colleagues)?)\s+(?:%s)\b"
     % (_ATTR_NAME, _ATTR_NAME, ATTR_VERB))
@@ -915,6 +933,9 @@ Work Works Studies Study Data Evidence Results Findings Analysis Review
 Papers Paper Nobody Nothing Everything Anything Something Measurement
 January February March April June July August September October November
 December
+Patient Patients Translation Symmetry Laxity Instability Grading Confidence
+Criteria Thresholds Threshold Scores Scoring Function Fear Reinjury Tests
+Instrumented Comparative Cohort Cohorts Validation Reproducibility
 """.split())
 # An imperative opener is a capitalised word at the start of a sentence and is
 # never an author. "Treat quantified positions as targets" registered as a study
@@ -1012,17 +1033,33 @@ ACC_TERM = (r"sensitivit(?:y|ies)|specificit(?:y|ies)|accurac(?:y|ies)|"
             r"likelihood ratio|PPV|NPV|AUC|area under the curve|"
             r"false positive rate|false negative rate")
 ACC_NUMBER = r"\d{1,3}(?:\.\d+)?\s*(?:%|per cent|percent)|0?\.\d+"
+# The adjective forms, which the noun list above does not reach. "Magnetic
+# resonance imaging is 95% sensitive for a meniscal tear" is the same fabricated
+# claim as a sensitivity, and it passed the rule until decision 028 went looking.
+# Kept deliberately tight: "specific" is an ordinary word and this repository's
+# own reference boilerplate contains the phrase "a specific sensitivity written
+# from memory", so only a number bound directly to the adjective counts.
+ACC_ADJECTIVE = tuple(re.compile(p, re.IGNORECASE) for p in (
+    r"\d{1,3}(?:\.\d+)?\s*(?:%|per cent|percent)\s+(?:sensitive|specific)\b",
+    r"\b(?:sensitive|specific)\s+in\s+\d{1,3}(?:\.\d+)?\s*(?:%|per cent|percent)",
+))
 # The term and a number within one clause of each other, either order.
 ACC_BANNED = tuple(re.compile(p, re.IGNORECASE) for p in (
     r"(?:%s)[^.;:\n]{0,60}?(?:%s)" % (ACC_TERM, ACC_NUMBER),
     r"(?:%s)[^.;:\n]{0,40}?(?:%s)" % (ACC_NUMBER, ACC_TERM),
-))
+)) + ACC_ADJECTIVE
 
 
 def rule_acc_001(doc, rule, brief):
-    """Decision 023: no bare diagnostic accuracy figure on an examination page."""
+    """No bare diagnostic accuracy figure where one would be fabricated.
+
+    Decision 023 for examination pages, decision 028 for imaging. The scope is
+    the rule's own page_types list rather than a name written here, so it can be
+    read off the config: this repository has already shipped one rule whose
+    scope was prose in the config that nothing in the code read.
+    """
     out = []
-    if brief.get("page_type") != "examination":
+    if brief.get("page_type") not in (rule.get("page_types") or ["examination"]):
         return out
     text = doc.body_text()
     seen = set()

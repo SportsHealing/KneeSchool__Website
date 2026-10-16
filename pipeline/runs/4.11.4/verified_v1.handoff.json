@@ -1,0 +1,25 @@
+{
+  "page_id": "4.11.4",
+  "prompt_version": "1.0",
+  "claims_checked": 0,
+  "verified": 0,
+  "corrected": [],
+  "removed_claims": [],
+  "reference_actions": [],
+  "red_flags": [
+    "Tier 1 source minimum not met: no textbook or review source retrieved",
+    "5 listed claims unverified; none confirmed against a source",
+    "Every comparative claim about how good a test is, is written from memory. A wrong ranking is more dangerous than a wrong anatomical fact, because it changes what a clinician does next with a negative test.",
+    "The examination template itself is unvalidated. Decision 023 invented it, and no editorial authority has confirmed its five sections.",
+    "Professional tiers only. An error here would reach a reader who is revising for an examination or planning an operation."
+  ],
+  "guidelines_checked": [],
+  "escalate_to_consultant": [
+    "Every comparative accuracy claim on this page needs confirmation. These are the claims a reader is most likely to act on and the ones this process is least able to support, since the figures behind them were refused rather than retrieved.",
+    "Every claim on this page needs confirmation, because the verification stage could not run. The consultant is standing in for it.",
+    "Any figure on this page needs a source against it. tools/figures.py --report --unchecked is the list.",
+    "The tier set needs confirming. Decision 024 took medical student to fellowship from one sentence in Part 1 and no page level tier data exists for Section 4."
+  ],
+  "status": "NOT_RUN_TOOLS_UNAVAILABLE",
+  "status_note": "Agent 2 could not run. No source retrieval was available. In the deployed pipeline this execution would stop here."
+}

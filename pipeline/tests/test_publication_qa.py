@@ -374,3 +374,267 @@ class EveryPageCarriesTheBuildNotice(unittest.TestCase):
                     if "build-notice" not in fh.read():
                         missing.append(os.path.relpath(full, REPO))
         self.assertEqual(sorted(missing), [])
+
+
+class TheBuildStatusPageAgreesWithTheRegisters(unittest.TestCase):
+    """about/status.html quotes the register totals, and those numbers used to be
+    typed into docs/build_status.json.
+
+    By the time chapter 4.11 was written the page was telling a reader there were
+    448 unchecked measurements against a register holding 462, that 32 chapters
+    carried unsigned recommendations when 37 did, and that the largest was 3.7
+    when it was 4.2. Nobody introduced any of that. The prose was right when it
+    was written and the registers moved underneath it, which is the same failure
+    the figure register itself was built to end.
+
+    The numbers now come from the registers through {{token}} substitution, so
+    this holds the substitution rather than the numbers: no token survives into
+    the page, every token the data file uses is one the tool knows, and the
+    totals the page prints are the totals the registers hold.
+    """
+
+    def setUp(self):
+        sys.path.insert(0, os.path.join(REPO, "tools"))
+        import build_status
+        self.mod = build_status
+        with io.open(os.path.join(REPO, "about", "status.html"),
+                     encoding="utf-8") as fh:
+            self.page = fh.read()
+        with io.open(os.path.join(REPO, "docs", "build_status.json"),
+                     encoding="utf-8") as fh:
+            self.data = fh.read()
+
+    def test_no_token_reaches_the_page(self):
+        self.assertEqual(self.mod.TOKEN.findall(self.page), [])
+
+    def test_every_token_in_the_data_file_is_one_the_tool_fills(self):
+        known = set(self.mod.register_counts())
+        used = set(self.mod.TOKEN.findall(self.data))
+        self.assertTrue(used, "the data file no longer uses any register token")
+        self.assertEqual(sorted(used - known), [])
+
+    def test_the_page_prints_the_sentences_the_registers_make(self):
+        """Every tokenised sentence, filled in, appears on the page.
+
+        Checking that the page contains the string "462" somewhere is not this
+        test: the first version of it did, and it passed against a page that said
+        448 unchecked measurements, because 462 happened to appear in another
+        sentence. Each tokenised sentence is filled and looked for whole.
+        """
+        import html
+        counts = self.mod.register_counts()
+        data = json.loads(self.data)
+        missing = []
+        for group in data["groups"]:
+            for item in group["items"]:
+                for field, value in item.items():
+                    if not isinstance(value, str):
+                        continue
+                    if not self.mod.TOKEN.search(value):
+                        continue
+                    want = html.escape(self.mod.fill(value, counts), quote=False)
+                    if want not in self.page:
+                        missing.append("%s %s" % (item.get("ref"), field))
+        self.assertEqual(sorted(missing), [])
+
+
+class DisambiguatedTitlesSeparateThePages(unittest.TestCase):
+    """PUB-009 wants a unique title tag per page, and the renderer gets one for a
+    colliding page by appending the chapter name, trimmed to fit PUB-001's bound.
+
+    Which words to drop is the whole problem. Dropping from the back loses
+    "Examination" from "Patellofemoral Examination", the word that separates it
+    from "Patellofemoral Biomechanics". Dropping from the front loses "ACL" from
+    "ACL Examination", the word that separates it from "Rotational Instability
+    Examination". Chapter 4.15 hit the first and gave two pages the identical
+    title tag the disambiguation existed to separate.
+
+    The renderer now ranks a chapter name's words by how many of the other
+    colliding chapters contain them and drops the most shared word first. These
+    hold both halves of that, and the live site's uniqueness is held by
+    PublicationPosture and the publication gate rather than here.
+    """
+
+    def setUp(self):
+        sys.path.insert(0, os.path.join(REPO, "tools"))
+        import render_site
+        self.mod = render_site
+        self.budget = render_site.title_budget()
+
+    def test_a_shared_opening_word_is_dropped_before_the_distinguishing_one(self):
+        a = self.mod.disambiguate("Patellofemoral Arthritis",
+                                  "Patellofemoral Examination", self.budget,
+                                  ["Patellofemoral Biomechanics"])
+        b = self.mod.disambiguate("Patellofemoral Arthritis",
+                                  "Patellofemoral Biomechanics", self.budget,
+                                  ["Patellofemoral Examination"])
+        self.assertNotEqual(a, b)
+        self.assertIn("Examination", a)
+        self.assertIn("Biomechanics", b)
+
+    def test_a_shared_closing_word_is_dropped_before_the_distinguishing_one(self):
+        a = self.mod.disambiguate("Examination Under Anaesthesia",
+                                  "ACL Examination", self.budget,
+                                  ["Rotational Instability Examination"])
+        self.assertIn("ACL", a)
+
+    def test_every_disambiguated_title_fits_the_bound(self):
+        for chapter in ("Patellofemoral Examination", "ACL Examination",
+                        "Tibiofemoral Contact Mechanics",
+                        "Rotational Instability Examination"):
+            out = self.mod.disambiguate("Effects of Malalignment", chapter,
+                                        self.budget, ["Patellofemoral Biomechanics"])
+            self.assertLessEqual(len(out), self.budget, out)
+
+
+class TheSitemapCountAgreesWithTheSitemap(unittest.TestCase):
+    """about/status.html quotes the number of urls in the sitemap, and the
+    sitemap is written by a different tool.
+
+    build_status.py used to read sitemap.xml to get the count, so adding a batch
+    of pages made the status page quote the previous number until apply_chrome
+    had written the sitemap and build_status had run again. Chapter 4.15 failed
+    the suite on exactly that. Both now derive the path list from
+    site_chrome.sitemap_paths(), and this holds the derived list against the file
+    on disk so the two cannot drift apart again.
+    """
+
+    def test_the_file_lists_the_paths_the_function_derives(self):
+        sys.path.insert(0, os.path.join(REPO, "tools"))
+        import site_chrome as chrome
+        path = os.path.join(REPO, "sitemap.xml")
+        if not chrome.site_config().get("discoverable"):
+            self.assertFalse(os.path.exists(path),
+                             "a sitemap is offered while the site is not discoverable")
+            return
+        with io.open(path, encoding="utf-8") as fh:
+            body = fh.read()
+        self.assertEqual(body.count("<loc>"), len(chrome.sitemap_paths()))
+        base = chrome.site_config()["base_url"]
+        for rel in chrome.sitemap_paths():
+            self.assertIn("<loc>%s%s</loc>" % (base, rel), body)
+
+
+class HeldPagesAreNotCountedAsComingSoon(unittest.TestCase):
+    """A page the client decided against is not a page that is coming soon.
+
+    Chapter 5.19, the Magic Angle MRI Academy, will not be published. Before
+    this, the Imaging Academy index read "8 of 224 pages are published; the rest
+    are written in syllabus order", which promised ten pages that are never
+    coming, and the chapter would have sat at nought of ten for ever.
+    """
+
+    def setUp(self):
+        self.root = os.path.dirname(ROOT)
+        with open(os.path.join(ROOT, "config", "render_targets.json"),
+                  encoding="utf-8") as fh:
+            self.targets = json.load(fh)
+
+    def test_the_held_chapter_is_in_the_withheld_block(self):
+        withheld = self.targets.get("withheld") or {}
+        for i in range(1, 11):
+            self.assertIn("5.19.%d" % i, withheld)
+
+    def test_a_held_page_is_not_also_a_render_target(self):
+        """An entry in both would publish a page the client declined."""
+        both = set(self.targets["pages"]) & set(self.targets.get("withheld") or {})
+        self.assertEqual(both, set())
+
+    def test_every_held_entry_says_why(self):
+        for page_id, entry in (self.targets.get("withheld") or {}).items():
+            self.assertTrue(entry.get("reason"), page_id)
+            self.assertTrue(entry.get("title"), page_id)
+
+    def test_a_held_entry_claiming_a_draft_has_one(self):
+        """The Section 0 holds were written before they were held and point at
+        their draft. Chapter 5.19's were never written and say so, so the two
+        kinds must not be confused."""
+        for page_id, entry in (self.targets.get("withheld") or {}).items():
+            if entry.get("written") is False:
+                self.assertNotIn("draft", entry, page_id)
+            else:
+                draft = entry.get("draft")
+                self.assertTrue(draft, page_id)
+                self.assertTrue(os.path.exists(os.path.join(self.root, draft)),
+                                "%s: %s" % (page_id, draft))
+
+    def test_the_index_excludes_held_pages_from_its_total(self):
+        path = os.path.join(self.root, "imaging", "index.html")
+        if not os.path.exists(path):
+            self.skipTest("the imaging index is not built")
+        with open(path, encoding="utf-8") as fh:
+            page = fh.read()
+        self.assertIn("of 214 pages are published", page)
+        self.assertIn("are designed and are not being published", page)
+        self.assertNotIn("of 224 pages are published", page)
+
+
+
+class TheRenderTargetRebuildsEverySectionIndex(unittest.TestCase):
+    """EV-36. `make render` is the documented way to rebuild the published
+    pages, and its recipe read `build_section_index.py 3` from the time Section
+    3 was the newest section. That tool rebuilds every section when given no
+    argument and only the named ones otherwise, so the target silently left the
+    anatomy, examination and imaging indexes stale for months.
+
+    Nothing failed, because the indexes were also rebuilt by hand on each
+    content push. The defect would surface as a section index that does not
+    list a page the site publishes, which the reachability test above catches
+    one push later rather than at the point the wrong command ran.
+
+    This holds the recipe itself. A section id in that line is the bug.
+    """
+
+    @classmethod
+    def setUpClass(cls):
+        cls.root = os.path.dirname(os.path.dirname(os.path.dirname(
+            os.path.abspath(__file__))))
+        with open(os.path.join(cls.root, "Makefile"), encoding="utf-8") as fh:
+            cls.makefile = fh.read()
+
+    def recipe_lines(self):
+        """The render target's recipe, which is the tab indented block."""
+        body = self.makefile.split("\nrender:\n", 1)
+        self.assertEqual(len(body), 2, "the Makefile has no render target")
+        lines = []
+        for line in body[1].splitlines():
+            if not line.startswith("\t"):
+                break
+            lines.append(line.strip())
+        return lines
+
+    def test_the_render_target_exists_and_has_a_recipe(self):
+        self.assertTrue(self.recipe_lines())
+
+    def test_the_section_index_is_rebuilt_with_no_section_argument(self):
+        calls = [l for l in self.recipe_lines() if "build_section_index" in l]
+        self.assertEqual(len(calls), 1, self.recipe_lines())
+        trailing = calls[0].split("build_section_index.py", 1)[1].strip()
+        self.assertEqual(trailing, "",
+                         "make render would rebuild only section(s) %r" % trailing)
+
+    def test_the_render_target_still_builds_the_status_page_and_chrome(self):
+        """Fixing the argument must not drop the other two steps, which is the
+        obvious way to break this while making the test pass."""
+        joined = "\n".join(self.recipe_lines())
+        for tool in ("render_site.py", "build_section_index.py",
+                     "build_status.py", "apply_chrome.py"):
+            self.assertIn(tool, joined)
+
+    def test_the_status_page_is_built_after_the_section_indexes(self):
+        """build_status.py counts published pages, so it reads what the index
+        step has just written."""
+        lines = self.recipe_lines()
+        order = [i for i, l in enumerate(lines)
+                 if "build_section_index.py" in l or "build_status.py" in l]
+        self.assertEqual(len(order), 2)
+        self.assertIn("build_section_index.py", lines[order[0]])
+        self.assertIn("build_status.py", lines[order[1]])
+
+    def test_the_chrome_is_applied_last(self):
+        """apply_chrome.py rewrites the chrome of pages the earlier steps wrote,
+        the status page among them, so it cannot run before them."""
+        lines = self.recipe_lines()
+        chrome = [i for i, l in enumerate(lines) if "apply_chrome.py" in l]
+        self.assertEqual(len(chrome), 1)
+        self.assertEqual(chrome[0], len(lines) - 1, lines)

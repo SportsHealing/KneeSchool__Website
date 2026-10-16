@@ -1,0 +1,36 @@
+{
+  "page_id": "4.7.3",
+  "prompt_version": "1.0",
+  "article_template_version": "1.0",
+  "page_type": "examination",
+  "article_template": "examination",
+  "tiers_covered": [
+    "medical_student",
+    "mrcs",
+    "frcs",
+    "fellowship"
+  ],
+  "scope_statement": "Hyperextension, as it is examined and interpreted.",
+  "sources": [],
+  "source_note": "No sources were retrieved. The generation environment had no access to PubMed, Cochrane, any journal or any textbook. The Tier 1 source minimum is NOT met and this draft would not pass Tier 1 in the deployed pipeline. This chapter is written entirely for professionals, and it is unverified.",
+  "claims_needing_verification": [
+    "Increasing hyperextension after a corner reconstruction is easy to reproduce and shows stretch.",
+    "Losing hyperextension in a knee that previously had it is an early contracture.",
+    "A knee tensioned to neutral in a hypermobile patient is asymmetrical by design.",
+    "A bony hyperextension will not be controlled by a soft tissue reconstruction.",
+    "A recorded pre-operative figure is rare, which makes claims about a changed range hard to support."
+  ],
+  "claims_note": "Listed above are the substantive claims, taken from the deepest tier's key learning points. Every anatomical and mechanical statement in the page body requires the same verification against a standard text; these are the ones a reviewer should start with.",
+  "content_rule": "Decision 006: this page may carry measurements and every one of them is written from standard teaching rather than from a retrieved paper. None has been checked against a source, because the build environment has none. Each figure is registered in pipeline/config/figures/<page_id>.json with the sentence it supports and a verification state. Run tools/figures.py --report --unchecked for the outstanding list. Decision 023 adds a restriction specific to this section: no sensitivity, specificity, predictive value or likelihood ratio appears on any examination page, because the comparative standing of the tests is standard teaching and a specific percentage written from memory is the same class of claim as an invented citation. ACC-001 refuses it at the gate. A reviewer with access to the literature can add the figures into How Good It Is without restructuring the page.",
+  "gaps_or_uncertainties": [
+    "No figure appears on this page, so there is nothing in pipeline/config/figures/4.7.3.json. The page makes its claims as comparisons and mechanisms rather than as quantities.",
+    "No diagnostic accuracy figure appears on this page, under decision 023. Every claim about how good a test is, is stated as a comparison rather than a number, and the comparison is a judgement a reviewer must agree with rather than look up. That moves the review burden from verification to judgement and is the stated cost of the decision.",
+    "2 clinical recommendation(s) on this page are in the position register awaiting a signature. Nobody has signed any of them.",
+    "This page's tier set and boundary list come from one sentence in Part 1 of the architecture under decision 024, because Part 2, which carries Section 4's real page map, is not in this repository. The scope sentence is the page title restated, which is the most this process could honestly supply."
+  ],
+  "duplication_risk_pages": [
+    "3.3"
+  ],
+  "architecture_check": "Written against the architecture's own brief for 4.7.3, including its must_not_cover list: Imaging interpretation (owned by Section 5); Clinical management and treatment selection (owned by Section 6); Operative technique (owned by Section 7); Structure level anatomy (owned by Section 2); Biomechanics beyond what the test depends on (owned by Section 3)",
+  "status": "AI_DRAFT_READY_FOR_VERIFICATION"
+}

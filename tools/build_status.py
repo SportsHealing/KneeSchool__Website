@@ -9,9 +9,12 @@ convenience, so it is generated from one data file instead of being kept in step
 by hand. Edit the JSON; run this; commit both.
 """
 
+import collections
+import glob
 import html
 import json
 import os
+import re
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -21,6 +24,87 @@ import site_chrome as chrome  # noqa: E402
 DATA = os.path.join(ROOT, "docs", "build_status.json")
 OUT = os.path.join(ROOT, "about", "status.html")
 REL = "../"
+CONFIG = os.path.join(ROOT, "pipeline", "config")
+# A {{token}} in any build_status.json string is filled from the registers. The
+# numbers used to be typed into the prose, and by the time chapter 4.11 was
+# written the page was telling a reader there were 448 unchecked measurements
+# when the register held 462, that 32 chapters carried recommendations when 37
+# did, and that the largest was 3.7 when it was 4.2. Nobody introduced that: the
+# prose was correct when written and the registers moved. Same failure as the
+# hand compiled figure list that decision 006 replaced, so it gets the same
+# answer rather than a correction.
+TOKEN = re.compile(r"\{\{([a-z_]+)\}\}")
+
+
+def thousands(n):
+    return "{:,}".format(n)
+
+
+def register(kind, field, state):
+    """Live counts from one register directory: entries, pages, per chapter."""
+    per_chapter = collections.Counter()
+    pages, total = set(), 0
+    for path in sorted(glob.glob(os.path.join(CONFIG, kind, "*.json"))):
+        with open(path, encoding="utf-8") as fh:
+            entries = json.load(fh)[field]
+        live = [e for e in entries if e.get("verification", state) == state]
+        if not live:
+            continue
+        page_id = os.path.basename(path)[:-len(".json")]
+        total += len(live)
+        pages.add(page_id)
+        per_chapter[".".join(page_id.split(".")[:2])] += len(live)
+    return total, len(pages), per_chapter
+
+
+def register_counts():
+    """Every number about/status.html quotes about the registers.
+
+    Generated from the registers for the reason the registers are themselves
+    generated from the pages: a hand kept number falls behind what it describes
+    and nothing reports that it has.
+    """
+    figures, fig_pages, _ = register("figures", "figures", "UNVERIFIED_FROM_MEMORY")
+    positions, pos_pages, by_chapter = register("positions", "positions", "UNSIGNED")
+    attributions, attr_pages, _ = register("attributions", "attributions",
+                                           "UNVERIFIED_FROM_MEMORY")
+    counts = sorted(by_chapter.values())
+    largest = max(by_chapter.items(), key=lambda kv: (kv[1], kv[0])) if by_chapter else ("", 0)
+    packs = len(glob.glob(os.path.join(ROOT, "docs", "review", "packs", "chapter-*.md")))
+    # Counted from the same function apply_chrome.py writes the sitemap from,
+    # not from sitemap.xml itself. Reading the file made this page quote the
+    # previous count whenever a batch of pages was added and build_status ran
+    # before apply_chrome.
+    urls = len(chrome.sitemap_paths()) if chrome.site_config().get("discoverable") else 0
+    return {
+        "figures_unchecked": thousands(figures),
+        "figure_pages": thousands(fig_pages),
+        "positions_unsigned": thousands(positions),
+        "position_pages": thousands(pos_pages),
+        "position_chapters": thousands(len(by_chapter)),
+        "largest_position_chapter": largest[0],
+        "largest_position_count": thousands(largest[1]),
+        "median_position_count": thousands(counts[len(counts) // 2] if counts else 0),
+        "attributions_unchecked": thousands(attributions),
+        "attribution_pages": thousands(attr_pages),
+        "review_pack_chapters": thousands(packs),
+        "sitemap_urls": thousands(urls),
+    }
+
+
+def fill(value, counts):
+    """Substitute {{token}} anywhere in the data file's strings."""
+    if isinstance(value, str):
+        def one(m):
+            if m.group(1) not in counts:
+                raise SystemExit("build_status.json uses an unknown token: %s" % m.group(0))
+            return counts[m.group(1)]
+        return TOKEN.sub(one, value)
+    if isinstance(value, list):
+        return [fill(v, counts) for v in value]
+    if isinstance(value, dict):
+        return dict((k, fill(v, counts)) for k, v in value.items())
+    return value
 
 
 def esc(t):
@@ -66,6 +150,7 @@ def group(g):
 def main():
     with open(DATA) as fh:
         data = json.load(fh)
+    data = fill(data, register_counts())
     groups = data["groups"]
     total = sum(len(g["items"]) for g in groups)
 

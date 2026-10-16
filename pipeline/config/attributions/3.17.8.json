@@ -44,7 +44,7 @@
       "attribution_correct": ""
     },
     {
-      "attributed_to": "Connor",
+      "attributed_to": "Goodfellow and O'Connor",
       "decade_as_written": [],
       "tier": "frcs",
       "section": "What Was Done",
@@ -106,6 +106,19 @@
       "attribution_correct": ""
     },
     {
+      "attributed_to": "Connor",
+      "decade_as_written": [],
+      "tier": "frcs",
+      "section": "What Was Done",
+      "claim": "Goodfellow and O'Connor designed and reported the meniscal bearing unicompartmental knee, arguing from contact mechanics for a mobile bearing.",
+      "further_claims": [],
+      "occurrences": 1,
+      "verification": "REMOVED",
+      "citation_as_retrieved": "",
+      "attribution_correct": "",
+      "note": "No longer on the page; kept so the record of what was checked survives."
+    },
+    {
       "attributed_to": "Patient",
       "decade_as_written": [],
       "tier": "frcs",
@@ -113,9 +126,10 @@
       "claim": "Patient reported outcome and satisfaction entered the field as endpoints, and the satisfaction figure changed how consent is taken more than it changed how the operation is done.",
       "further_claims": [],
       "occurrences": 1,
-      "verification": "UNVERIFIED_FROM_MEMORY",
+      "verification": "REMOVED",
       "citation_as_retrieved": "",
-      "attribution_correct": ""
+      "attribution_correct": "",
+      "note": "No longer on the page; kept so the record of what was checked survives."
     }
   ]
 }
