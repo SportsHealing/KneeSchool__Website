@@ -1003,7 +1003,8 @@ def rule_attr_001(doc, rule, brief):
     appearing there is exactly the failure this rule exists to catch.
     """
     out = []
-    if brief.get("page_type") != "landmark_papers":
+    if brief.get("page_type") not in (rule.get("page_types")
+                                      or ["landmark_papers"]):
         return out
     text = doc.raw
     for pattern, label in ATTR_BANNED:
@@ -1023,7 +1024,8 @@ def rule_attr_002(doc, rule, brief):
     none. It surfaces an unregistered name; it cannot certify a registered one.
     """
     out = []
-    if brief.get("page_type") != "landmark_papers":
+    if brief.get("page_type") not in (rule.get("page_types")
+                                      or ["landmark_papers"]):
         return out
     registry = load_attribution_registry(brief.get("page_id"))
     known = set()

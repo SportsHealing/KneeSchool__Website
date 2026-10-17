@@ -1195,3 +1195,70 @@ class EveryLandmarkPageOnTheSite(unittest.TestCase):
             unregistered += ["%s: %s" % (page_id, f["matched_text"])
                              for f in report["findings"] if f["rule_id"] == "ATTR-002"]
         self.assertEqual(unregistered, [])
+
+
+class AttributionRuleScopeLivesInTheConfig(unittest.TestCase):
+    """EV-40. ATTR-001 and ATTR-002 hardcoded "landmark_papers" inside
+    linter.py while lint_rules.json said nothing about their reach, so the rules
+    could not be read off the config. That is the third instance of one shape:
+    the condition template's body_sections_rule said one thing in prose and
+    nothing in code, decision 028 found the same in ACC-001, and these two were
+    left.
+
+    Moving the scope changes no behaviour, which is the point, and these tests
+    pin both halves: the config carries the scope, and the rule still refuses
+    to fire outside it.
+
+    Widening was measured rather than assumed, and refused. The detector is a
+    surname followed by a reporting verb, which is landmark papers prose. Run
+    across every published page it returns almost only sentence initial words:
+    Postoperative, Extrusion, Whether, Choose, Urgency, Signal, Tenderness. It
+    also does not find an eponym used as the name of a grading system, which was
+    the case that prompted the question, and which is not an attribution of a
+    study to an author.
+    """
+
+    @classmethod
+    def setUpClass(cls):
+        root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        with open(os.path.join(root, "config", "lint_rules.json"),
+                  encoding="utf-8") as fh:
+            cls.rules = dict((r["id"], r) for r in json.load(fh)["rules"])
+
+    def test_both_rules_name_their_page_types_in_the_config(self):
+        for rule_id in ("ATTR-001", "ATTR-002"):
+            rule = self.rules[rule_id]
+            self.assertEqual(rule.get("page_types"), ["landmark_papers"], rule_id)
+
+    def test_the_applies_when_prose_points_at_the_field(self):
+        """A prose scope that names a page type directly is how the drift
+        started, so the sentence has to point at the field instead."""
+        for rule_id in ("ATTR-001", "ATTR-002"):
+            self.assertIn("page_types", self.rules[rule_id]["applies_when"], rule_id)
+
+    def brief(self, page_type):
+        return {"page_id": "9.9.9", "title": "T", "page_type": page_type,
+                "tiers_required": ["frcs"],
+                "governance": {"figures_allowed": False},
+                "output_requirements": {"target_word_count": {"min": 1, "max": 9000}}}
+
+    PAGE = ("# T\n\nA summary of the page for the standfirst.\n\n## FRCS Level\n\n"
+            "### What It Tests\n\nGrood and colleagues reported the restraint.\n\n"
+            "### Key Learning Points\n\n- One.\n- Two.\n- Three.\n\n"
+            "## Explore Further\n\n- [[2.1.1 | Gross Anatomy]]\n\n"
+            "## References\n\nNothing is cited.\n")
+
+    def attr_002(self, page_type):
+        report = linter.lint(self.PAGE, self.brief(page_type))
+        return [f for f in report["findings"] if f["rule_id"] == "ATTR-002"]
+
+    def test_the_rule_fires_on_a_landmark_papers_page(self):
+        self.assertTrue(self.attr_002("landmark_papers"))
+
+    def test_the_rule_stays_silent_on_an_imaging_page(self):
+        """The behaviour the move must not change. An imaging page naming a
+        grading system after two people is not attributing a study."""
+        self.assertEqual(self.attr_002("imaging"), [])
+
+    def test_the_rule_stays_silent_on_an_examination_page(self):
+        self.assertEqual(self.attr_002("examination"), [])
