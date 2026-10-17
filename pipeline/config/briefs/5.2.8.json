@@ -8,7 +8,8 @@
   },
   "chapter": {
     "id": "5.2",
-    "name": "Imaging Physics for Knee Specialists"
+    "name": "Imaging Physics for Knee Specialists",
+    "nav_group": "Ultrasound Physics"
   },
   "page_type": "imaging",
   "article_template": "imaging",

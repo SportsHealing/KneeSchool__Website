@@ -336,7 +336,8 @@
     },
     "chapter": {
       "id": "5.2",
-      "name": "Imaging Physics for Knee Specialists"
+      "name": "Imaging Physics for Knee Specialists",
+      "nav_group": "X-ray Physics"
     },
     "tiers_required": [
       "medical_student",
@@ -394,7 +395,8 @@
     },
     "chapter": {
       "id": "5.2",
-      "name": "Imaging Physics for Knee Specialists"
+      "name": "Imaging Physics for Knee Specialists",
+      "nav_group": "X-ray Physics"
     },
     "tiers_required": [
       "medical_student",
@@ -452,7 +454,8 @@
     },
     "chapter": {
       "id": "5.2",
-      "name": "Imaging Physics for Knee Specialists"
+      "name": "Imaging Physics for Knee Specialists",
+      "nav_group": "X-ray Physics"
     },
     "tiers_required": [
       "medical_student",
@@ -510,7 +513,8 @@
     },
     "chapter": {
       "id": "5.2",
-      "name": "Imaging Physics for Knee Specialists"
+      "name": "Imaging Physics for Knee Specialists",
+      "nav_group": "X-ray Physics"
     },
     "tiers_required": [
       "medical_student",
@@ -568,7 +572,8 @@
     },
     "chapter": {
       "id": "5.2",
-      "name": "Imaging Physics for Knee Specialists"
+      "name": "Imaging Physics for Knee Specialists",
+      "nav_group": "X-ray Physics"
     },
     "tiers_required": [
       "medical_student",
@@ -626,7 +631,8 @@
     },
     "chapter": {
       "id": "5.2",
-      "name": "Imaging Physics for Knee Specialists"
+      "name": "Imaging Physics for Knee Specialists",
+      "nav_group": "Ultrasound Physics"
     },
     "tiers_required": [
       "medical_student",
@@ -684,7 +690,8 @@
     },
     "chapter": {
       "id": "5.2",
-      "name": "Imaging Physics for Knee Specialists"
+      "name": "Imaging Physics for Knee Specialists",
+      "nav_group": "Ultrasound Physics"
     },
     "tiers_required": [
       "medical_student",
@@ -742,7 +749,8 @@
     },
     "chapter": {
       "id": "5.2",
-      "name": "Imaging Physics for Knee Specialists"
+      "name": "Imaging Physics for Knee Specialists",
+      "nav_group": "Ultrasound Physics"
     },
     "tiers_required": [
       "medical_student",
@@ -800,7 +808,8 @@
     },
     "chapter": {
       "id": "5.2",
-      "name": "Imaging Physics for Knee Specialists"
+      "name": "Imaging Physics for Knee Specialists",
+      "nav_group": "Ultrasound Physics"
     },
     "tiers_required": [
       "medical_student",
@@ -858,7 +867,8 @@
     },
     "chapter": {
       "id": "5.2",
-      "name": "Imaging Physics for Knee Specialists"
+      "name": "Imaging Physics for Knee Specialists",
+      "nav_group": "Ultrasound Physics"
     },
     "tiers_required": [
       "medical_student",
@@ -916,7 +926,8 @@
     },
     "chapter": {
       "id": "5.2",
-      "name": "Imaging Physics for Knee Specialists"
+      "name": "Imaging Physics for Knee Specialists",
+      "nav_group": "Ultrasound Physics"
     },
     "tiers_required": [
       "medical_student",
@@ -974,7 +985,8 @@
     },
     "chapter": {
       "id": "5.2",
-      "name": "Imaging Physics for Knee Specialists"
+      "name": "Imaging Physics for Knee Specialists",
+      "nav_group": "MRI Physics"
     },
     "tiers_required": [
       "medical_student",
@@ -1032,7 +1044,8 @@
     },
     "chapter": {
       "id": "5.2",
-      "name": "Imaging Physics for Knee Specialists"
+      "name": "Imaging Physics for Knee Specialists",
+      "nav_group": "MRI Physics"
     },
     "tiers_required": [
       "medical_student",
@@ -1090,7 +1103,8 @@
     },
     "chapter": {
       "id": "5.2",
-      "name": "Imaging Physics for Knee Specialists"
+      "name": "Imaging Physics for Knee Specialists",
+      "nav_group": "MRI Physics"
     },
     "tiers_required": [
       "medical_student",
@@ -1148,7 +1162,8 @@
     },
     "chapter": {
       "id": "5.2",
-      "name": "Imaging Physics for Knee Specialists"
+      "name": "Imaging Physics for Knee Specialists",
+      "nav_group": "MRI Physics"
     },
     "tiers_required": [
       "medical_student",
@@ -1206,7 +1221,8 @@
     },
     "chapter": {
       "id": "5.2",
-      "name": "Imaging Physics for Knee Specialists"
+      "name": "Imaging Physics for Knee Specialists",
+      "nav_group": "MRI Physics"
     },
     "tiers_required": [
       "medical_student",
@@ -1264,7 +1280,8 @@
     },
     "chapter": {
       "id": "5.2",
-      "name": "Imaging Physics for Knee Specialists"
+      "name": "Imaging Physics for Knee Specialists",
+      "nav_group": "MRI Physics"
     },
     "tiers_required": [
       "medical_student",
@@ -1322,7 +1339,8 @@
     },
     "chapter": {
       "id": "5.2",
-      "name": "Imaging Physics for Knee Specialists"
+      "name": "Imaging Physics for Knee Specialists",
+      "nav_group": "MRI Physics"
     },
     "tiers_required": [
       "medical_student",
@@ -1380,7 +1398,8 @@
     },
     "chapter": {
       "id": "5.2",
-      "name": "Imaging Physics for Knee Specialists"
+      "name": "Imaging Physics for Knee Specialists",
+      "nav_group": "MRI Physics"
     },
     "tiers_required": [
       "medical_student",
@@ -1438,7 +1457,8 @@
     },
     "chapter": {
       "id": "5.2",
-      "name": "Imaging Physics for Knee Specialists"
+      "name": "Imaging Physics for Knee Specialists",
+      "nav_group": "MRI Physics"
     },
     "tiers_required": [
       "medical_student",
@@ -1496,7 +1516,8 @@
     },
     "chapter": {
       "id": "5.2",
-      "name": "Imaging Physics for Knee Specialists"
+      "name": "Imaging Physics for Knee Specialists",
+      "nav_group": "MRI Physics"
     },
     "tiers_required": [
       "medical_student",
@@ -1554,7 +1575,8 @@
     },
     "chapter": {
       "id": "5.2",
-      "name": "Imaging Physics for Knee Specialists"
+      "name": "Imaging Physics for Knee Specialists",
+      "nav_group": "CT Physics"
     },
     "tiers_required": [
       "medical_student",
@@ -1612,7 +1634,8 @@
     },
     "chapter": {
       "id": "5.2",
-      "name": "Imaging Physics for Knee Specialists"
+      "name": "Imaging Physics for Knee Specialists",
+      "nav_group": "CT Physics"
     },
     "tiers_required": [
       "medical_student",
@@ -1670,7 +1693,8 @@
     },
     "chapter": {
       "id": "5.2",
-      "name": "Imaging Physics for Knee Specialists"
+      "name": "Imaging Physics for Knee Specialists",
+      "nav_group": "CT Physics"
     },
     "tiers_required": [
       "medical_student",
@@ -1728,7 +1752,8 @@
     },
     "chapter": {
       "id": "5.2",
-      "name": "Imaging Physics for Knee Specialists"
+      "name": "Imaging Physics for Knee Specialists",
+      "nav_group": "CT Physics"
     },
     "tiers_required": [
       "medical_student",
@@ -1786,7 +1811,8 @@
     },
     "chapter": {
       "id": "5.3",
-      "name": "Plain Radiography"
+      "name": "Plain Radiography",
+      "nav_group": "Standard Knee Radiographs"
     },
     "tiers_required": [
       "medical_student",
@@ -1839,7 +1865,8 @@
     },
     "chapter": {
       "id": "5.3",
-      "name": "Plain Radiography"
+      "name": "Plain Radiography",
+      "nav_group": "Standard Knee Radiographs"
     },
     "tiers_required": [
       "medical_student",
@@ -1892,7 +1919,8 @@
     },
     "chapter": {
       "id": "5.3",
-      "name": "Plain Radiography"
+      "name": "Plain Radiography",
+      "nav_group": "Standard Knee Radiographs"
     },
     "tiers_required": [
       "medical_student",
@@ -1945,7 +1973,8 @@
     },
     "chapter": {
       "id": "5.3",
-      "name": "Plain Radiography"
+      "name": "Plain Radiography",
+      "nav_group": "Standard Knee Radiographs"
     },
     "tiers_required": [
       "medical_student",
@@ -1998,7 +2027,8 @@
     },
     "chapter": {
       "id": "5.3",
-      "name": "Plain Radiography"
+      "name": "Plain Radiography",
+      "nav_group": "Standard Knee Radiographs"
     },
     "tiers_required": [
       "medical_student",
@@ -2051,7 +2081,8 @@
     },
     "chapter": {
       "id": "5.3",
-      "name": "Plain Radiography"
+      "name": "Plain Radiography",
+      "nav_group": "Alignment Imaging"
     },
     "tiers_required": [
       "medical_student",
@@ -2104,7 +2135,8 @@
     },
     "chapter": {
       "id": "5.3",
-      "name": "Plain Radiography"
+      "name": "Plain Radiography",
+      "nav_group": "Alignment Imaging"
     },
     "tiers_required": [
       "medical_student",
@@ -2157,7 +2189,8 @@
     },
     "chapter": {
       "id": "5.3",
-      "name": "Plain Radiography"
+      "name": "Plain Radiography",
+      "nav_group": "Alignment Imaging"
     },
     "tiers_required": [
       "medical_student",
@@ -2210,7 +2243,8 @@
     },
     "chapter": {
       "id": "5.3",
-      "name": "Plain Radiography"
+      "name": "Plain Radiography",
+      "nav_group": "Alignment Imaging"
     },
     "tiers_required": [
       "medical_student",
@@ -2263,7 +2297,8 @@
     },
     "chapter": {
       "id": "5.3",
-      "name": "Plain Radiography"
+      "name": "Plain Radiography",
+      "nav_group": "Alignment Imaging"
     },
     "tiers_required": [
       "medical_student",
@@ -2316,7 +2351,8 @@
     },
     "chapter": {
       "id": "5.3",
-      "name": "Plain Radiography"
+      "name": "Plain Radiography",
+      "nav_group": "Fracture Imaging"
     },
     "tiers_required": [
       "medical_student",
@@ -2369,7 +2405,8 @@
     },
     "chapter": {
       "id": "5.3",
-      "name": "Plain Radiography"
+      "name": "Plain Radiography",
+      "nav_group": "Fracture Imaging"
     },
     "tiers_required": [
       "medical_student",
@@ -2422,7 +2459,8 @@
     },
     "chapter": {
       "id": "5.3",
-      "name": "Plain Radiography"
+      "name": "Plain Radiography",
+      "nav_group": "Fracture Imaging"
     },
     "tiers_required": [
       "medical_student",
@@ -2475,7 +2513,8 @@
     },
     "chapter": {
       "id": "5.3",
-      "name": "Plain Radiography"
+      "name": "Plain Radiography",
+      "nav_group": "Fracture Imaging"
     },
     "tiers_required": [
       "medical_student",
@@ -2528,7 +2567,8 @@
     },
     "chapter": {
       "id": "5.3",
-      "name": "Plain Radiography"
+      "name": "Plain Radiography",
+      "nav_group": "Fracture Imaging"
     },
     "tiers_required": [
       "medical_student",
@@ -2581,7 +2621,8 @@
     },
     "chapter": {
       "id": "5.3",
-      "name": "Plain Radiography"
+      "name": "Plain Radiography",
+      "nav_group": "Osteoarthritis Imaging"
     },
     "tiers_required": [
       "medical_student",
@@ -2634,7 +2675,8 @@
     },
     "chapter": {
       "id": "5.3",
-      "name": "Plain Radiography"
+      "name": "Plain Radiography",
+      "nav_group": "Osteoarthritis Imaging"
     },
     "tiers_required": [
       "medical_student",
@@ -2687,7 +2729,8 @@
     },
     "chapter": {
       "id": "5.3",
-      "name": "Plain Radiography"
+      "name": "Plain Radiography",
+      "nav_group": "Osteoarthritis Imaging"
     },
     "tiers_required": [
       "medical_student",
@@ -2740,7 +2783,8 @@
     },
     "chapter": {
       "id": "5.3",
-      "name": "Plain Radiography"
+      "name": "Plain Radiography",
+      "nav_group": "Osteoarthritis Imaging"
     },
     "tiers_required": [
       "medical_student",
@@ -2793,7 +2837,8 @@
     },
     "chapter": {
       "id": "5.3",
-      "name": "Plain Radiography"
+      "name": "Plain Radiography",
+      "nav_group": "Osteoarthritis Imaging"
     },
     "tiers_required": [
       "medical_student",
@@ -2846,7 +2891,8 @@
     },
     "chapter": {
       "id": "5.4",
-      "name": "Ultrasound of the Knee"
+      "name": "Ultrasound of the Knee",
+      "nav_group": "Normal Ultrasound Anatomy"
     },
     "tiers_required": [
       "medical_student",
@@ -2899,7 +2945,8 @@
     },
     "chapter": {
       "id": "5.4",
-      "name": "Ultrasound of the Knee"
+      "name": "Ultrasound of the Knee",
+      "nav_group": "Normal Ultrasound Anatomy"
     },
     "tiers_required": [
       "medical_student",
@@ -2952,7 +2999,8 @@
     },
     "chapter": {
       "id": "5.4",
-      "name": "Ultrasound of the Knee"
+      "name": "Ultrasound of the Knee",
+      "nav_group": "Normal Ultrasound Anatomy"
     },
     "tiers_required": [
       "medical_student",
@@ -3005,7 +3053,8 @@
     },
     "chapter": {
       "id": "5.4",
-      "name": "Ultrasound of the Knee"
+      "name": "Ultrasound of the Knee",
+      "nav_group": "Normal Ultrasound Anatomy"
     },
     "tiers_required": [
       "medical_student",
@@ -3058,7 +3107,8 @@
     },
     "chapter": {
       "id": "5.4",
-      "name": "Ultrasound of the Knee"
+      "name": "Ultrasound of the Knee",
+      "nav_group": "Tendon Imaging"
     },
     "tiers_required": [
       "medical_student",
@@ -3111,7 +3161,8 @@
     },
     "chapter": {
       "id": "5.4",
-      "name": "Ultrasound of the Knee"
+      "name": "Ultrasound of the Knee",
+      "nav_group": "Tendon Imaging"
     },
     "tiers_required": [
       "medical_student",
@@ -3164,7 +3215,8 @@
     },
     "chapter": {
       "id": "5.4",
-      "name": "Ultrasound of the Knee"
+      "name": "Ultrasound of the Knee",
+      "nav_group": "Tendon Imaging"
     },
     "tiers_required": [
       "medical_student",
@@ -3217,7 +3269,8 @@
     },
     "chapter": {
       "id": "5.4",
-      "name": "Ultrasound of the Knee"
+      "name": "Ultrasound of the Knee",
+      "nav_group": "Tendon Imaging"
     },
     "tiers_required": [
       "medical_student",
@@ -3270,7 +3323,8 @@
     },
     "chapter": {
       "id": "5.4",
-      "name": "Ultrasound of the Knee"
+      "name": "Ultrasound of the Knee",
+      "nav_group": "Ligament Imaging"
     },
     "tiers_required": [
       "medical_student",
@@ -3323,7 +3377,8 @@
     },
     "chapter": {
       "id": "5.4",
-      "name": "Ultrasound of the Knee"
+      "name": "Ultrasound of the Knee",
+      "nav_group": "Ligament Imaging"
     },
     "tiers_required": [
       "medical_student",
@@ -3376,7 +3431,8 @@
     },
     "chapter": {
       "id": "5.4",
-      "name": "Ultrasound of the Knee"
+      "name": "Ultrasound of the Knee",
+      "nav_group": "Ligament Imaging"
     },
     "tiers_required": [
       "medical_student",
@@ -3429,7 +3485,8 @@
     },
     "chapter": {
       "id": "5.4",
-      "name": "Ultrasound of the Knee"
+      "name": "Ultrasound of the Knee",
+      "nav_group": "Ligament Imaging"
     },
     "tiers_required": [
       "medical_student",
@@ -3482,7 +3539,8 @@
     },
     "chapter": {
       "id": "5.4",
-      "name": "Ultrasound of the Knee"
+      "name": "Ultrasound of the Knee",
+      "nav_group": "Dynamic Ultrasound"
     },
     "tiers_required": [
       "medical_student",
@@ -3535,7 +3593,8 @@
     },
     "chapter": {
       "id": "5.4",
-      "name": "Ultrasound of the Knee"
+      "name": "Ultrasound of the Knee",
+      "nav_group": "Dynamic Ultrasound"
     },
     "tiers_required": [
       "medical_student",
@@ -3588,7 +3647,8 @@
     },
     "chapter": {
       "id": "5.4",
-      "name": "Ultrasound of the Knee"
+      "name": "Ultrasound of the Knee",
+      "nav_group": "Dynamic Ultrasound"
     },
     "tiers_required": [
       "medical_student",
@@ -3641,7 +3701,8 @@
     },
     "chapter": {
       "id": "5.4",
-      "name": "Ultrasound of the Knee"
+      "name": "Ultrasound of the Knee",
+      "nav_group": "Interventional Ultrasound"
     },
     "tiers_required": [
       "medical_student",
@@ -3694,7 +3755,8 @@
     },
     "chapter": {
       "id": "5.4",
-      "name": "Ultrasound of the Knee"
+      "name": "Ultrasound of the Knee",
+      "nav_group": "Interventional Ultrasound"
     },
     "tiers_required": [
       "medical_student",
@@ -3747,7 +3809,8 @@
     },
     "chapter": {
       "id": "5.4",
-      "name": "Ultrasound of the Knee"
+      "name": "Ultrasound of the Knee",
+      "nav_group": "Interventional Ultrasound"
     },
     "tiers_required": [
       "medical_student",
@@ -3800,7 +3863,8 @@
     },
     "chapter": {
       "id": "5.4",
-      "name": "Ultrasound of the Knee"
+      "name": "Ultrasound of the Knee",
+      "nav_group": "Interventional Ultrasound"
     },
     "tiers_required": [
       "medical_student",
@@ -3853,7 +3917,8 @@
     },
     "chapter": {
       "id": "5.4",
-      "name": "Ultrasound of the Knee"
+      "name": "Ultrasound of the Knee",
+      "nav_group": "Interventional Ultrasound"
     },
     "tiers_required": [
       "medical_student",
@@ -3906,7 +3971,8 @@
     },
     "chapter": {
       "id": "5.5",
-      "name": "MRI of the Knee"
+      "name": "MRI of the Knee",
+      "nav_group": "MRI Protocols"
     },
     "tiers_required": [
       "medical_student",
@@ -3952,7 +4018,8 @@
     },
     "chapter": {
       "id": "5.5",
-      "name": "MRI of the Knee"
+      "name": "MRI of the Knee",
+      "nav_group": "MRI Protocols"
     },
     "tiers_required": [
       "medical_student",
@@ -3998,7 +4065,8 @@
     },
     "chapter": {
       "id": "5.5",
-      "name": "MRI of the Knee"
+      "name": "MRI of the Knee",
+      "nav_group": "MRI Protocols"
     },
     "tiers_required": [
       "medical_student",
@@ -4044,7 +4112,8 @@
     },
     "chapter": {
       "id": "5.5",
-      "name": "MRI of the Knee"
+      "name": "MRI of the Knee",
+      "nav_group": "MRI Protocols"
     },
     "tiers_required": [
       "medical_student",
@@ -4090,7 +4159,8 @@
     },
     "chapter": {
       "id": "5.5",
-      "name": "MRI of the Knee"
+      "name": "MRI of the Knee",
+      "nav_group": "MRI Protocols"
     },
     "tiers_required": [
       "medical_student",
@@ -4136,7 +4206,8 @@
     },
     "chapter": {
       "id": "5.5",
-      "name": "MRI of the Knee"
+      "name": "MRI of the Knee",
+      "nav_group": "Normal MRI Anatomy"
     },
     "tiers_required": [
       "medical_student",
@@ -4182,7 +4253,8 @@
     },
     "chapter": {
       "id": "5.5",
-      "name": "MRI of the Knee"
+      "name": "MRI of the Knee",
+      "nav_group": "Normal MRI Anatomy"
     },
     "tiers_required": [
       "medical_student",
@@ -4228,7 +4300,8 @@
     },
     "chapter": {
       "id": "5.5",
-      "name": "MRI of the Knee"
+      "name": "MRI of the Knee",
+      "nav_group": "Normal MRI Anatomy"
     },
     "tiers_required": [
       "medical_student",
@@ -4274,7 +4347,8 @@
     },
     "chapter": {
       "id": "5.5",
-      "name": "MRI of the Knee"
+      "name": "MRI of the Knee",
+      "nav_group": "Normal MRI Anatomy"
     },
     "tiers_required": [
       "medical_student",
@@ -4320,7 +4394,8 @@
     },
     "chapter": {
       "id": "5.5",
-      "name": "MRI of the Knee"
+      "name": "MRI of the Knee",
+      "nav_group": "Normal MRI Anatomy"
     },
     "tiers_required": [
       "medical_student",
@@ -4366,7 +4441,8 @@
     },
     "chapter": {
       "id": "5.5",
-      "name": "MRI of the Knee"
+      "name": "MRI of the Knee",
+      "nav_group": "Normal MRI Anatomy"
     },
     "tiers_required": [
       "medical_student",
@@ -4412,7 +4488,8 @@
     },
     "chapter": {
       "id": "5.5",
-      "name": "MRI of the Knee"
+      "name": "MRI of the Knee",
+      "nav_group": "Normal MRI Anatomy"
     },
     "tiers_required": [
       "medical_student",
@@ -4458,7 +4535,8 @@
     },
     "chapter": {
       "id": "5.5",
-      "name": "MRI of the Knee"
+      "name": "MRI of the Knee",
+      "nav_group": "Normal MRI Anatomy"
     },
     "tiers_required": [
       "medical_student",

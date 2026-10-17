@@ -53,6 +53,13 @@ def disambiguate(title, chapter, budget, peers=()):
     equally distinguishing. A single remaining word that still does not fit is
     left, so PUB-001 reports it rather than the renderer shipping a mangled
     title.
+
+    The suffix is not always the chapter name. Chapter 5.2 holds two pages
+    called Radiation Dose, one under the source's X-ray Physics heading and
+    one under its CT Physics heading, and decision 027's flattening left them
+    in one chapter with one name between them. The chapter name separates
+    nothing there, so the caller passes the navigational grouping instead.
+    See suffix_for.
     """
     words = chapter.split()
     shared = collections.Counter()
@@ -114,6 +121,7 @@ def main():
     # backstop working rather than the renderer being right.
     h1 = {}
     chapters = {}
+    nav_groups = {}
     for page_id, t in all_targets.items():
         src_path = os.path.join(ROOT, "pipeline", "runs", page_id,
                                 t.get("source", "styled_v1.md"))
@@ -127,7 +135,10 @@ def main():
         brief = os.path.join(ROOT, "pipeline", "config", "briefs", "%s.json" % page_id)
         if os.path.exists(brief):
             with open(brief) as fh:
-                chapters[page_id] = json.load(fh)["chapter"]["name"]
+                chapter = json.load(fh)["chapter"]
+            chapters[page_id] = chapter["name"]
+            if chapter.get("nav_group"):
+                nav_groups[page_id] = chapter["nav_group"]
     # The suffix has a length budget. PUB-001 bounds the whole title tag, and the
     # renderer adds the site suffix after this, so a long chapter name can make
     # the fix for chapter 14's uniqueness rule break chapter 13's length rule.
@@ -138,13 +149,34 @@ def main():
     # word alone does not fit is left whole, so PUB-001 reports it rather than
     # the renderer shipping a mangled title.
     counts = collections.Counter(h1.values())
+
+    def suffix_for(page_id, title):
+        """What to append to a colliding page's title tag.
+
+        The chapter name, unless another page carrying this title sits in the
+        same chapter. The chapter name cannot separate those, so the
+        navigational grouping the source gave the page is used instead. A page
+        with neither is left to collide, and the refusal below reports it.
+        """
+        chapter = chapters.get(page_id)
+        same_chapter = [other for other, t in h1.items()
+                        if t == title and other != page_id
+                        and chapters.get(other) == chapter]
+        if same_chapter and nav_groups.get(page_id):
+            return nav_groups[page_id]
+        return chapter
+
     seo_titles = {}
     for page_id, title in h1.items():
-        if counts[title] > 1 and chapters.get(page_id):
-            peers = [chapters[other] for other, t in h1.items()
-                     if t == title and other != page_id and chapters.get(other)]
-            seo_titles[page_id] = disambiguate(title, chapters[page_id],
-                                               title_budget(), peers)
+        if counts[title] <= 1:
+            continue
+        suffix = suffix_for(page_id, title)
+        if not suffix:
+            continue
+        peers = [suffix_for(other, t) for other, t in h1.items()
+                 if t == title and other != page_id and suffix_for(other, t)]
+        seo_titles[page_id] = disambiguate(title, suffix,
+                                          title_budget(), peers)
     # Two pages given the same disambiguated title is the failure the
     # disambiguation exists to prevent, so it is refused here rather than left
     # for PUB-009 to find after the files are written.

@@ -113,9 +113,15 @@ BARE_REF = re.compile(r"(?<![\w.])(\d{1,2}(?:\.\d{1,3}){1,2})(?![\w.])")
 NUMBER_RUN = re.compile(
     r"(?<![\w.])\d{1,2}(?:\.\d{1,3}){0,2}"
     r"(?:\s*(?:to|and|or|,)\s*\d{1,2}(?:\.\d{1,3}){0,2})*")
+# tesla was added for chapter 5.2 (EV-38). It was missing from the style gate's
+# unit list and from this one, so a field strength was read as a measurement by
+# neither tool: the gate stripped "1.5 tesla" as a page id and left it out of
+# the figure register, and this detector read it as a reference to a chapter 1.5
+# the architecture does not have. One omission, two tools, opposite failures.
 UNIT_AFTER = re.compile(
     r"^\s*(?:times|x|mm|cm|metres|m|kg|N|Nm|degrees?|per\s+cent|%|body\s+weight"
-    r"|seconds?|ms|minutes?|hours?|years?|months?|weeks?|days?|fold)\b", re.I)
+    r"|tesla|seconds?|ms|minutes?|hours?|years?|months?|weeks?|days?|fold)\b",
+    re.I)
 
 
 DEEPER_ID = re.compile(r"^\.\d")

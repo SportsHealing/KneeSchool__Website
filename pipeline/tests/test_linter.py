@@ -466,6 +466,35 @@ class FigureExtractorEdgeCases(unittest.TestCase):
     def test_a_quantity_after_a_section_reference_still_fires(self):
         self.assertTrue(self.figures("Section 7 owns it, and the slope is 9 degrees."))
 
+    def test_a_field_strength_in_tesla_is_a_measurement(self):
+        """EV-38. tesla was not in the unit list, and its absence did more than
+        leave a gap. "1.5 tesla" matches the page id pattern, so the scan read a
+        field strength as a cross reference and stripped it, which meant decision
+        006's register could never list one. Chapter 5.2 needed to state the
+        routine musculoskeletal field strengths and found it."""
+        self.assertEqual(
+            self.figures("Routine imaging runs at 1.5 tesla."), ["1.5 tesla"])
+
+    def test_a_whole_number_field_strength_fires_with_its_unit(self):
+        self.assertEqual(self.figures("A 3 tesla scanner gives more signal."),
+                         ["3 tesla"])
+
+    def test_a_page_id_is_still_a_page_id_without_the_unit(self):
+        """The fix must not make every decimal a measurement again. 5.2 with no
+        unit after it is a chapter."""
+        self.assertEqual(self.figures("Chapter 5.2 covers the physics."), [])
+
+    def test_a_field_strength_range_is_one_figure(self):
+        """Two bounds reported separately tell a reviewer nothing, which is why
+        RANGE exists. It has to apply to this unit too."""
+        self.assertEqual(
+            self.figures("Scanners run at 1.5 to 3 tesla."), ["1.5 to 3 tesla"])
+
+    def test_a_worded_field_strength_fires(self):
+        """The worded scan chapter 4.9 forced exists so a measurement cannot hide
+        by being spelled out, and that has to hold for a new unit as well."""
+        self.assertTrue(self.figures("The scanner runs at three tesla."))
+
 
 class RangesAndRepeats(unittest.TestCase):
     """A range is one figure and a repeated figure is one thing to check. Both were

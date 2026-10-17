@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Radiation Dose, X-ray Physics | KneeSchool</title>
+<meta name="description" content="The cost side of a radiograph, which is small per study and decided by how many studies get requested.">
+<meta name="theme-color" content="#0e2b22">
+
+<link rel="canonical" href="https://kneeschool.com/imaging/radiographic-radiation-dose.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css?v=e50d4cd3">
+</head>
+<body>
+<style>
+.dial-tabs{grid-template-columns:repeat(4,1fr)}
+#t0:checked ~ .dial-tabs label[for=t0]{background:var(--gold-pale);border-color:var(--gold-pale);color:var(--green-deep);font-weight:600}
+#t0:checked ~ .dial-body .p0{display:block}
+#t0:focus-visible ~ .dial-tabs label[for=t0]{outline:3px solid var(--gold);outline-offset:2px}
+#t1:checked ~ .dial-tabs label[for=t1]{background:var(--gold-pale);border-color:var(--gold-pale);color:var(--green-deep);font-weight:600}
+#t1:checked ~ .dial-body .p1{display:block}
+#t1:focus-visible ~ .dial-tabs label[for=t1]{outline:3px solid var(--gold);outline-offset:2px}
+#t2:checked ~ .dial-tabs label[for=t2]{background:var(--gold-pale);border-color:var(--gold-pale);color:var(--green-deep);font-weight:600}
+#t2:checked ~ .dial-body .p2{display:block}
+#t2:focus-visible ~ .dial-tabs label[for=t2]{outline:3px solid var(--gold);outline-offset:2px}
+#t3:checked ~ .dial-tabs label[for=t3]{background:var(--gold-pale);border-color:var(--gold-pale);color:var(--green-deep);font-weight:600}
+#t3:checked ~ .dial-body .p3{display:block}
+#t3:focus-visible ~ .dial-tabs label[for=t3]{outline:3px solid var(--gold);outline-offset:2px}
+</style>
+<div class="build-notice" role="note">
+  <div class="wrap">
+    <strong>Work in progress.</strong> This site is being built in the open. No page on it has yet been reviewed by a clinician, every page says so, and nothing here is medical advice or a substitute for seeing someone about your knee. <a href="../about/status.html">What that means</a>
+  </div>
+</div>
+<header class="site-head">
+  <div class="wrap head-in">
+    <a class="brand" href="../index.html"><b>Knee</b><span>School</span></a>
+    <input class="nav-toggle" type="checkbox" id="navtoggle" aria-label="Show navigation">
+    <label class="burger" for="navtoggle">Menu</label>
+    <nav class="nav" aria-label="Main">
+      <ul>
+        <li class="has-menu">
+          <a class="top" href="../index.html#levels">Learn<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../index.html#levels">Find your level</a></li>
+            <li><a href="../levels/junior.html">Junior Academy</a></li>
+            <li><a href="../levels/patient.html">Patient Academy</a></li>
+            <li><a href="../levels/student.html">Student Academy</a></li>
+            <li><a href="../levels/mrcs.html">MRCS Academy</a></li>
+            <li><a href="../levels/frcs.html">FRCS (Tr and Orth) Academy</a></li>
+            <li><a href="../levels/fellowship.html">Fellowship Academy</a></li>
+            <li><a href="../levels/consultant.html">Consultant Masterclass</a></li>
+            <li><a href="../junior/ready-made-lesson-plans.html">For teachers and coaches</a></li>
+          </ul>
+        </li>
+        <li class="has-menu">
+          <a class="top" href="../encyclopaedia/index.html">Reference<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../encyclopaedia/index.html">The knee encyclopaedia</a></li>
+            <li><a href="../anatomy/index.html">The Anatomy Academy</a></li>
+            <li><a href="../biomechanics/index.html">The Biomechanics Academy</a></li>
+            <li><a href="../examination/index.html">The Clinical Examination Academy</a></li>
+            <li><a href="../imaging/index.html">The Imaging Academy</a></li>
+            <li><a href="../conditions/index.html">Conditions library</a></li>
+            <li><a href="../encyclopaedia/whole-body.html">Whole body factors</a></li>
+          </ul>
+        </li>
+        <li class="has-menu">
+          <a class="top" href="../practise/index.html">Practise<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../practise/index.html#questions">Question bank</a></li>
+            <li><a href="../practise/index.html#cases">Case library</a></li>
+            <li><a href="../practise/index.html#video">Video academy</a></li>
+            <li><a href="../practise/index.html#scores">Knee score centre</a></li>
+          </ul>
+        </li>
+        <li class="has-menu">
+          <a class="top" href="../about/standards.html">About<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../about/standards.html">How a page reaches this site</a></li>
+            <li><a href="../about/curriculum.html">Mapped to the UK training pathway</a></li>
+            <li><a href="../about/status.html">Build status</a></li>
+            <li><a href="#">Authors and reviewers</a></li>
+            <li><a href="#">References and sources</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </li>
+        <li><a class="start-link" href="../index.html#levels">Find your level</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumb"><a href="../index.html">KneeSchool</a><span>/</span><a href="index.html">Imaging Academy</a><span>/</span>Radiation Dose</p>
+      <div class="hero-split">
+        <div>
+          <h1>Radiation Dose</h1>
+          <p class="who">Page 5.2.3 &middot; Imaging Physics for Knee Specialists &middot; imaging page</p>
+          <p class="lede">The cost side of a radiograph, which is small per study and decided by how many studies get requested.</p>
+        </div>
+        <div>
+          <div class="status"><b>Pipeline status.</b> Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band dark">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>The same topic at 4 depths</h2>
+        <p class="lede">Each tier deepens the one below it and never repeats it. Choose the level you want.</p>
+      </div>
+      <div class="dial dial-article">
+        <div class="dial-head">
+          <h2>Radiation Dose</h2>
+          <small>Choose a depth</small>
+        </div>
+        <input type="radio" name="depth" id="t0" checked>
+        <input type="radio" name="depth" id="t1">
+        <input type="radio" name="depth" id="t2">
+        <input type="radio" name="depth" id="t3">
+        <div class="dial-tabs">
+          <label for="t0">Student</label>
+          <label for="t1">MRCS</label>
+          <label for="t2">FRCS</label>
+          <label for="t3">Fellow</label>
+        </div>
+        <div class="dial-body">
+          <div class="dial-panel p0">
+            <h3>For Medical Students</h3>
+            <h4>What It Shows</h4>
+            <p>Dose is the energy the beam deposits in tissue, and it is the price paid for every radiographic and computed tomography study. 5.2.24 covers the dose in computed tomography.</p>
+            <p>A knee is a peripheral joint away from the trunk, so a knee radiograph is among the lower dose studies in routine practice. 5.3.1 covers the anteroposterior view.</p>
+            <p>It matters because the per study figure is small and the cumulative figure is not, and the cumulative figure is set by requesting habits rather than by physics. 5.1.4 covers imaging pathways.</p>
+            <h4>How It Is Acquired</h4>
+            <p>Dose rises with the number of photons, so it rises with tube current and exposure time. 5.2.1 covers the generation of X-rays.</p>
+            <p>Dose falls as tube voltage rises for the same image noise, which is the trade behind most exposure choices. 5.2.1 covers the generation of X-rays.</p>
+            <p>Filtration removes low energy photons that would be absorbed without reaching the detector, so it lowers dose without changing the image. 5.2.1 covers the generation of X-rays.</p>
+            <p>Collimating to the area of interest lowers both dose and scatter, which is the one thing that improves the image and the dose together. 5.2.4 covers scatter.</p>
+            <p>The dose that matters is to the tissue in the beam, so a knee study and a pelvic study are not comparable. 5.2.24 covers the dose in computed tomography.</p>
+            <div class="klp">
+              <h4>Key Learning Points</h4>
+              <ul><li>Dose is energy the beam deposits in tissue.</li><li>A knee radiograph is a relatively low dose study.</li><li>Dose rises with photon number and falls as voltage rises.</li><li>Collimation improves the image and the dose together.</li><li>The cumulative figure is set by requesting habits.</li></ul>
+            </div>
+          </div>
+          <div class="dial-panel p1">
+            <h3>MRCS Level</h3>
+            <h4>How It Is Acquired</h4>
+            <p>In a viva the expected answer gives the relative scale rather than a number and names the controllable factors.</p>
+            <p>The expected points are the photon number, the voltage trade, filtration, collimation, and the tissue actually in the beam.</p>
+            <p>Say that the comparison that matters is between modalities rather than between settings. 5.2.24 covers the dose in computed tomography.</p>
+            <p>Say that a repeat for a technical failure doubles the dose for one answer. 5.2.2 covers the image formation.</p>
+            <p>Say that a child's dose carries a different consequence from an adult's. 5.15.1 covers the normal paediatric anatomy.</p>
+            <h4>How Good It Is</h4>
+            <p>Radiography is the lowest dose ionising study of the knee and computed tomography the highest, with magnetic resonance imaging and ultrasound carrying none.</p>
+            <p>Its best contribution to a decision is that the radiographic dose is rarely the reason to withhold a knee radiograph. 5.1.3 covers choosing the correct investigation.</p>
+            <p>It is limited as an argument by the cumulative exposure of a patient followed for years, and by computed tomography being the study that dominates any such total. 5.2.24 covers the dose in computed tomography.</p>
+            <p>No figures appear for accuracy on this page, under decision 028, and no dose values appear either, in millisieverts or in equivalents: those are published quantities that differ by equipment and protocol and this environment cannot check them.</p>
+            <div class="klp">
+              <h4>Key Learning Points</h4>
+              <ul><li>Radiography is the lowest dose ionising study of the knee.</li><li>Computed tomography dominates any cumulative total.</li><li>Magnetic resonance imaging and ultrasound carry no ionising dose.</li><li>The dose is rarely the reason to withhold a knee radiograph.</li><li>A repeat for a technical failure buys one answer at twice the dose.</li></ul>
+            </div>
+          </div>
+          <div class="dial-panel p2">
+            <h3>FRCS Level</h3>
+            <h4>How Good It Is</h4>
+            <p>At decision level dose enters a knee pathway through computed tomography and through repetition, not through the single radiograph.</p>
+            <p>Serial long leg alignment films through a growing child accumulate, which is an argument for deciding in advance how often they are needed. 5.3.6 covers long leg alignment films.</p>
+            <p>A computed tomography study for tunnel or rotational assessment carries far more dose than the radiographs around it, which belongs in the request decision. 5.16.3 covers rotational profiles.</p>
+            <p>A magnetic resonance study answers some questions a computed tomography study would, with no dose, and the choice between them is often made by availability instead. 5.1.3 covers choosing the correct investigation.</p>
+            <p>In a young patient followed for years the total is a real quantity, and nobody is counting it. 5.1.4 covers imaging pathways.</p>
+            <h4>Where It Misleads</h4>
+            <p>The commonest error is treating dose as negligible because one knee radiograph is, and then requesting repeatedly. 5.1.4 covers imaging pathways.</p>
+            <p>The opposite error is withholding a useful radiograph on dose grounds. 5.1.3 covers choosing the correct investigation.</p>
+            <p>A computed tomography study is requested as though it carried radiographic dose. 5.2.24 covers the dose in computed tomography.</p>
+            <p>A repeat for positioning is not counted as a dose decision. 5.2.2 covers the image formation.</p>
+            <p>Doses from different body regions are compared as though they were equivalent. 5.2.24 covers the dose in computed tomography.</p>
+            <div class="klp">
+              <h4>Key Learning Points</h4>
+              <ul><li>Dose treated as negligible leads to repeated requesting.</li><li>Withholding a useful radiograph on dose grounds is the opposite error.</li><li>A computed tomography study is not a radiograph.</li><li>A repeat for positioning is a dose decision.</li><li>Doses from different regions are not equivalent.</li></ul>
+            </div>
+          </div>
+          <div class="dial-panel p3">
+            <h3>Fellowship Level</h3>
+            <h4>Where It Misleads</h4>
+            <p>At fellowship level the dose question in knee practice is almost entirely a question about computed tomography and about who is counting.</p>
+            <p>No part of a routine knee pathway records cumulative exposure, so a patient through a staged revision with repeated computed tomography has a total nobody knows. 5.7.14 covers revision cruciate imaging.</p>
+            <p>Dose reduction in computed tomography has advanced faster than the protocols in use, so a department running an older protocol delivers more dose for the same question. 5.2.22 covers the computed tomography acquisition.</p>
+            <p>The risk model behind low dose estimates is itself contested, and quoting a figure from it as though it were measured overstates what is known. 5.21.6 covers the artificial intelligence literature.</p>
+            <p>Weight bearing computed tomography is becoming a knee technique and brings the dose question to a study that competes with a radiograph rather than with a magnetic resonance study. 5.18.5 covers weight bearing imaging.</p>
+            <p>The honest position is that dose is a reason to choose between modalities and a poor reason to decline a study that would change a decision. 5.1.3 covers choosing the correct investigation.</p>
+            <div class="klp">
+              <h4>Key Learning Points</h4>
+              <ul><li>No routine knee pathway records cumulative exposure.</li><li>An older computed tomography protocol delivers more dose for the same question.</li><li>The risk model behind low dose estimates is contested.</li><li>Weight bearing computed tomography competes with a radiograph.</li><li>Dose should choose between modalities rather than decline a useful study.</li></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band wrap">
+    <div class="sec-head">
+      <h2>Explore Further</h2>
+      <p class="lede">Where this topic came from and where it goes next in the spiral.</p>
+    </div>
+    <ul class="explore">
+        <li><span class="pid">5.2.24</span><a href="ct-radiation-dose.html">Radiation Dose</a></li>
+        <li><span class="pid">5.2.1</span><a href="generation-of-xrays.html">Generation of X-rays</a></li>
+        <li><span class="pid">5.2.4</span><a href="scatter.html">Scatter</a></li>
+        <li><span class="pid">5.1.3</span><a href="choosing-the-correct-investigation.html">Choosing the Correct Investigation</a></li>
+        <li><span class="pid">5.1.4</span><a href="imaging-pathways.html">Imaging Pathways</a></li>
+        <li><span class="pid">5.16.3</span><span class="pending">Rotational Profiles</span></li>
+    </ul>
+  </section>
+
+  <section class="band wrap" style="padding-top:0">
+    <div class="sec-head">
+      <h2>References</h2>
+    </div>
+    <div class="prose refs">
+      <p>No reference list is attached to this draft. Evidence verification has not run, because source retrieval was unavailable at generation time. Under the Operations Handbook a missing reference is acceptable and an invented one is a critical failure, so nothing has been cited and no citation marker appears in the text. This page carries no diagnostic accuracy figure, which is decision 028 rather than an omission: the comparative standing of the modalities is standard teaching and a specific sensitivity written from memory is the same class of claim as an invented citation, so ACC-001 refuses the number and the page states the comparison. A reviewer with the literature can add the figures into How Good It Is without restructuring the page. Any measurement here, including a sequence parameter, an angle or a millimetre, is written from standard teaching, has not been checked, and is registered under decision 006 in pipeline/config/figures with a verification state of UNVERIFIED_FROM_MEMORY.</p>
+    </div>
+    <p class="safety"><b>Safety.</b> KneeSchool is educational and does not give individual medical advice. Seek urgent assessment for a knee that cannot bear weight after an injury, a hot swollen knee with a fever, or new numbness, weakness or coldness in the leg or foot.</p>
+  </section>
+
+</main>
+
+<footer class="site-foot" id="about">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h3>Learn</h3>
+        <ul>
+          <li><a href="../levels/junior.html">Junior Academy</a></li>
+          <li><a href="../levels/patient.html">Patient Academy</a></li>
+          <li><a href="../levels/student.html">Student Academy</a></li>
+          <li><a href="../levels/mrcs.html">MRCS Academy</a></li>
+          <li><a href="../levels/frcs.html">FRCS (Tr and Orth) Academy</a></li>
+          <li><a href="../levels/fellowship.html">Fellowship Academy</a></li>
+          <li><a href="../levels/consultant.html">Consultant Masterclass</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Reference</h3>
+        <ul>
+          <li><a href="../encyclopaedia/index.html">The knee encyclopaedia</a></li>
+          <li><a href="../conditions/index.html">Conditions library</a></li>
+          <li><a href="../encyclopaedia/whole-body.html">Whole body factors</a></li>
+          <li><a href="../practise/index.html">Practise and test</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Clinical care</h3>
+        <ul>
+          <li><a href="https://www.chinmaygupte.com/">Consultant clinic</a></li>
+          <li><a href="#">Imaging and injections</a></li>
+          <li><a href="#">Rehabilitation programmes</a></li>
+          <li><a href="#">Braces and recovery products</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>About</h3>
+        <ul>
+          <li><a href="../about/standards.html">How a page reaches this site</a></li>
+          <li><a href="../about/curriculum.html">Mapped to the UK training pathway</a></li>
+          <li><a href="../levels/junior.html">For teachers and coaches</a></li>
+          <li><a href="#">Authors and reviewers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <p>KneeSchool is educational. It does not give individual medical advice and it does not replace assessment by a clinician. Seek urgent care for a hot, swollen knee with fever, a knee that cannot bear weight after injury, or new numbness in the leg.</p>
+      <p>Content written for school age learners carries no advertising and no product placement.</p>
+      <p>&copy; 2026 KneeSchool. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

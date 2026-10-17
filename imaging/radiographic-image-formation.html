@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Image Formation | KneeSchool</title>
+<meta name="description" content="How absorption becomes a picture, which is why bone is white and a meniscus is not there at all.">
+<meta name="theme-color" content="#0e2b22">
+
+<link rel="canonical" href="https://kneeschool.com/imaging/radiographic-image-formation.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css?v=e50d4cd3">
+</head>
+<body>
+<style>
+.dial-tabs{grid-template-columns:repeat(4,1fr)}
+#t0:checked ~ .dial-tabs label[for=t0]{background:var(--gold-pale);border-color:var(--gold-pale);color:var(--green-deep);font-weight:600}
+#t0:checked ~ .dial-body .p0{display:block}
+#t0:focus-visible ~ .dial-tabs label[for=t0]{outline:3px solid var(--gold);outline-offset:2px}
+#t1:checked ~ .dial-tabs label[for=t1]{background:var(--gold-pale);border-color:var(--gold-pale);color:var(--green-deep);font-weight:600}
+#t1:checked ~ .dial-body .p1{display:block}
+#t1:focus-visible ~ .dial-tabs label[for=t1]{outline:3px solid var(--gold);outline-offset:2px}
+#t2:checked ~ .dial-tabs label[for=t2]{background:var(--gold-pale);border-color:var(--gold-pale);color:var(--green-deep);font-weight:600}
+#t2:checked ~ .dial-body .p2{display:block}
+#t2:focus-visible ~ .dial-tabs label[for=t2]{outline:3px solid var(--gold);outline-offset:2px}
+#t3:checked ~ .dial-tabs label[for=t3]{background:var(--gold-pale);border-color:var(--gold-pale);color:var(--green-deep);font-weight:600}
+#t3:checked ~ .dial-body .p3{display:block}
+#t3:focus-visible ~ .dial-tabs label[for=t3]{outline:3px solid var(--gold);outline-offset:2px}
+</style>
+<div class="build-notice" role="note">
+  <div class="wrap">
+    <strong>Work in progress.</strong> This site is being built in the open. No page on it has yet been reviewed by a clinician, every page says so, and nothing here is medical advice or a substitute for seeing someone about your knee. <a href="../about/status.html">What that means</a>
+  </div>
+</div>
+<header class="site-head">
+  <div class="wrap head-in">
+    <a class="brand" href="../index.html"><b>Knee</b><span>School</span></a>
+    <input class="nav-toggle" type="checkbox" id="navtoggle" aria-label="Show navigation">
+    <label class="burger" for="navtoggle">Menu</label>
+    <nav class="nav" aria-label="Main">
+      <ul>
+        <li class="has-menu">
+          <a class="top" href="../index.html#levels">Learn<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../index.html#levels">Find your level</a></li>
+            <li><a href="../levels/junior.html">Junior Academy</a></li>
+            <li><a href="../levels/patient.html">Patient Academy</a></li>
+            <li><a href="../levels/student.html">Student Academy</a></li>
+            <li><a href="../levels/mrcs.html">MRCS Academy</a></li>
+            <li><a href="../levels/frcs.html">FRCS (Tr and Orth) Academy</a></li>
+            <li><a href="../levels/fellowship.html">Fellowship Academy</a></li>
+            <li><a href="../levels/consultant.html">Consultant Masterclass</a></li>
+            <li><a href="../junior/ready-made-lesson-plans.html">For teachers and coaches</a></li>
+          </ul>
+        </li>
+        <li class="has-menu">
+          <a class="top" href="../encyclopaedia/index.html">Reference<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../encyclopaedia/index.html">The knee encyclopaedia</a></li>
+            <li><a href="../anatomy/index.html">The Anatomy Academy</a></li>
+            <li><a href="../biomechanics/index.html">The Biomechanics Academy</a></li>
+            <li><a href="../examination/index.html">The Clinical Examination Academy</a></li>
+            <li><a href="../imaging/index.html">The Imaging Academy</a></li>
+            <li><a href="../conditions/index.html">Conditions library</a></li>
+            <li><a href="../encyclopaedia/whole-body.html">Whole body factors</a></li>
+          </ul>
+        </li>
+        <li class="has-menu">
+          <a class="top" href="../practise/index.html">Practise<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../practise/index.html#questions">Question bank</a></li>
+            <li><a href="../practise/index.html#cases">Case library</a></li>
+            <li><a href="../practise/index.html#video">Video academy</a></li>
+            <li><a href="../practise/index.html#scores">Knee score centre</a></li>
+          </ul>
+        </li>
+        <li class="has-menu">
+          <a class="top" href="../about/standards.html">About<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../about/standards.html">How a page reaches this site</a></li>
+            <li><a href="../about/curriculum.html">Mapped to the UK training pathway</a></li>
+            <li><a href="../about/status.html">Build status</a></li>
+            <li><a href="#">Authors and reviewers</a></li>
+            <li><a href="#">References and sources</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </li>
+        <li><a class="start-link" href="../index.html#levels">Find your level</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumb"><a href="../index.html">KneeSchool</a><span>/</span><a href="index.html">Imaging Academy</a><span>/</span>Image Formation</p>
+      <div class="hero-split">
+        <div>
+          <h1>Image Formation</h1>
+          <p class="who">Page 5.2.2 &middot; Imaging Physics for Knee Specialists &middot; imaging page</p>
+          <p class="lede">How absorption becomes a picture, which is why bone is white and a meniscus is not there at all.</p>
+        </div>
+        <div>
+          <div class="status"><b>Pipeline status.</b> Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band dark">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>The same topic at 4 depths</h2>
+        <p class="lede">Each tier deepens the one below it and never repeats it. Choose the level you want.</p>
+      </div>
+      <div class="dial dial-article">
+        <div class="dial-head">
+          <h2>Image Formation</h2>
+          <small>Choose a depth</small>
+        </div>
+        <input type="radio" name="depth" id="t0" checked>
+        <input type="radio" name="depth" id="t1">
+        <input type="radio" name="depth" id="t2">
+        <input type="radio" name="depth" id="t3">
+        <div class="dial-tabs">
+          <label for="t0">Student</label>
+          <label for="t1">MRCS</label>
+          <label for="t2">FRCS</label>
+          <label for="t3">Fellow</label>
+        </div>
+        <div class="dial-body">
+          <div class="dial-panel p0">
+            <h3>For Medical Students</h3>
+            <h4>What It Shows</h4>
+            <p>A radiograph records how much of the beam reached the detector at each point, so it maps absorption rather than anatomy. 5.2.1 covers the generation of X-rays.</p>
+            <p>Dense tissue absorbs more and leaves less beam, which is why cortical bone is the brightest structure on a knee radiograph. 5.3.1 covers the anteroposterior view.</p>
+            <p>It matters because tissues that absorb similarly cannot be separated however good the image is, and most of the knee's soft tissue falls in that group. 5.5.1 covers the standard protocol.</p>
+            <h4>How It Is Acquired</h4>
+            <p>Absorption depends on the tissue's density and on its atomic composition, which is why calcium separates so sharply from everything else. 5.2.1 covers the generation of X-rays.</p>
+            <p>Absorption also depends on the beam's energy, so the same knee at a different tube voltage gives a different contrast. 5.2.1 covers the generation of X-rays.</p>
+            <p>The detector converts the transmitted beam into a signal, and a digital detector responds over a far wider range than film did. 5.2.3 covers the radiation dose.</p>
+            <p>The displayed image is then rescaled from that signal, which separates what was acquired from what is seen. 5.2.4 covers scatter.</p>
+            <p>Everything in the path lies along the beam, so the image is a projection and every structure is superimposed on the ones behind it. 5.2.5 covers magnification.</p>
+            <div class="klp">
+              <h4>Key Learning Points</h4>
+              <ul><li>A radiograph maps absorption rather than anatomy.</li><li>Absorption depends on density, composition and beam energy.</li><li>Calcium separates sharply and soft tissues do not.</li><li>The displayed image is rescaled from what was acquired.</li><li>Everything along the beam is superimposed.</li></ul>
+            </div>
+          </div>
+          <div class="dial-panel p1">
+            <h3>MRCS Level</h3>
+            <h4>How It Is Acquired</h4>
+            <p>In a viva the expected answer explains why a radiograph shows bone well and nothing else well.</p>
+            <p>The expected points are absorption by density and composition, the energy dependence, the detector, the rescaling, and the projection.</p>
+            <p>Say that superimposition is the reason two views are standard. 5.3.2 covers the lateral view.</p>
+            <p>Say that soft tissue contrast is a physical limit rather than a technique failure. 5.5.1 covers the standard protocol.</p>
+            <p>Say that the displayed contrast is adjustable and the acquired information is not. 5.2.3 covers the radiation dose.</p>
+            <h4>How Good It Is</h4>
+            <p>Radiography delivers bone architecture and joint space better than any other modality and soft tissue worse than all of them.</p>
+            <p>Its best contribution is the loaded joint space and the cortical outline, neither of which the cross sectional modalities give as directly. 5.3.17 covers joint space narrowing.</p>
+            <p>It is limited by projection, so a three dimensional relationship has to be inferred from two flat views. 5.16.8 covers three dimensional reconstructions.</p>
+            <p>No figures appear for accuracy on this page, under decision 028, and no absorption coefficients appear either: those are tabulated physical quantities and this environment cannot check them.</p>
+            <div class="klp">
+              <h4>Key Learning Points</h4>
+              <ul><li>Superimposition is why two views are standard.</li><li>Poor soft tissue contrast is a physical limit, not a technique failure.</li><li>Displayed contrast is adjustable; acquired information is not.</li><li>The loaded joint space is radiography's own contribution.</li><li>A three dimensional relationship has to be inferred from two flat views.</li></ul>
+            </div>
+          </div>
+          <div class="dial-panel p2">
+            <h3>FRCS Level</h3>
+            <h4>How Good It Is</h4>
+            <p>At decision level the projection is what makes a radiograph both useful and treacherous.</p>
+            <p>A weight bearing view answers a question no supine cross sectional study answers, which is what the joint does under load. 5.3.5 covers the Rosenberg view.</p>
+            <p>Alignment is a projection measurement and is correct only when the limb was positioned correctly, so the radiograph's value depends on the radiographer. 5.3.6 covers long leg alignment films.</p>
+            <p>Rotation changes the apparent joint space, which is why a serial comparison needs a reproducible position rather than a similar one. 5.3.17 covers joint space narrowing.</p>
+            <p>A displayed image can be rescaled to look adequate while carrying less information than it appears to, so the acquisition matters more than the appearance. 5.2.1 covers the generation of X-rays.</p>
+            <h4>Where It Misleads</h4>
+            <p>The commonest error is reading an absent finding as absent anatomy, when the tissue simply does not absorb differently. 5.1.6 covers imaging pitfalls.</p>
+            <p>Rotation is read as a change in joint space. 5.3.17 covers joint space narrowing.</p>
+            <p>A supine film is compared with a standing one. 5.3.5 covers the Rosenberg view.</p>
+            <p>Superimposed structures produce a line that is read as a fracture. 5.3.13 covers femoral condyle fractures.</p>
+            <p>Post-processing makes an under-exposed study look normal. 5.2.1 covers the generation of X-rays.</p>
+            <div class="klp">
+              <h4>Key Learning Points</h4>
+              <ul><li>An absent finding is read as absent anatomy.</li><li>Rotation is read as a change in joint space.</li><li>A supine film is compared with a standing one.</li><li>Superimposition produces lines read as fractures.</li><li>Post-processing hides an inadequate acquisition.</li></ul>
+            </div>
+          </div>
+          <div class="dial-panel p3">
+            <h3>Fellowship Level</h3>
+            <h4>Where It Misleads</h4>
+            <p>At fellowship level the gap between the acquired data and the displayed image is the part of this that causes real error.</p>
+            <p>Digital post-processing is applied per department and per vendor, so the same knee looks different in two hospitals and a serial comparison across them compares processing as much as pathology. 5.3.19 covers subchondral sclerosis.</p>
+            <p>The processing is not recorded where the reader looks, which makes it an uncontrolled variable in every quantitative radiographic measure. 5.20.8 covers common reporting errors.</p>
+            <p>Joint space measured on a projection depends on beam angle, limb rotation and flexion, and the published measurement conventions each fix some of those and not others. 5.21.5 covers the osteoarthritis imaging literature.</p>
+            <p>Automated grading inherits all of it, since a model trained on one department's processing and positioning meets another's. 5.18.8 covers artificial intelligence in imaging.</p>
+            <p>The practical conclusion is that radiographic measurement is a protocol question rather than an imaging one, which is why the view pages in chapter 5.3 carry the technique in detail. 5.3.6 covers long leg alignment films.</p>
+            <div class="klp">
+              <h4>Key Learning Points</h4>
+              <ul><li>Post-processing differs per department and per vendor.</li><li>The processing is not recorded where the reader looks.</li><li>Projected joint space depends on beam angle, rotation and flexion.</li><li>The published conventions each fix some of those variables and not others.</li><li>Radiographic measurement is a protocol question.</li></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band wrap">
+    <div class="sec-head">
+      <h2>Explore Further</h2>
+      <p class="lede">Where this topic came from and where it goes next in the spiral.</p>
+    </div>
+    <ul class="explore">
+        <li><span class="pid">5.2.1</span><a href="generation-of-xrays.html">Generation of X-rays</a></li>
+        <li><span class="pid">5.2.4</span><a href="scatter.html">Scatter</a></li>
+        <li><span class="pid">5.2.5</span><a href="radiographic-magnification.html">Magnification</a></li>
+        <li><span class="pid">5.3.17</span><span class="pending">Joint Space Narrowing</span></li>
+        <li><span class="pid">5.3.5</span><span class="pending">Rosenberg View</span></li>
+        <li><span class="pid">5.3.6</span><span class="pending">Long Leg Alignment Films</span></li>
+    </ul>
+  </section>
+
+  <section class="band wrap" style="padding-top:0">
+    <div class="sec-head">
+      <h2>References</h2>
+    </div>
+    <div class="prose refs">
+      <p>No reference list is attached to this draft. Evidence verification has not run, because source retrieval was unavailable at generation time. Under the Operations Handbook a missing reference is acceptable and an invented one is a critical failure, so nothing has been cited and no citation marker appears in the text. This page carries no diagnostic accuracy figure, which is decision 028 rather than an omission: the comparative standing of the modalities is standard teaching and a specific sensitivity written from memory is the same class of claim as an invented citation, so ACC-001 refuses the number and the page states the comparison. A reviewer with the literature can add the figures into How Good It Is without restructuring the page. Any measurement here, including a sequence parameter, an angle or a millimetre, is written from standard teaching, has not been checked, and is registered under decision 006 in pipeline/config/figures with a verification state of UNVERIFIED_FROM_MEMORY.</p>
+    </div>
+    <p class="safety"><b>Safety.</b> KneeSchool is educational and does not give individual medical advice. Seek urgent assessment for a knee that cannot bear weight after an injury, a hot swollen knee with a fever, or new numbness, weakness or coldness in the leg or foot.</p>
+  </section>
+
+</main>
+
+<footer class="site-foot" id="about">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h3>Learn</h3>
+        <ul>
+          <li><a href="../levels/junior.html">Junior Academy</a></li>
+          <li><a href="../levels/patient.html">Patient Academy</a></li>
+          <li><a href="../levels/student.html">Student Academy</a></li>
+          <li><a href="../levels/mrcs.html">MRCS Academy</a></li>
+          <li><a href="../levels/frcs.html">FRCS (Tr and Orth) Academy</a></li>
+          <li><a href="../levels/fellowship.html">Fellowship Academy</a></li>
+          <li><a href="../levels/consultant.html">Consultant Masterclass</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Reference</h3>
+        <ul>
+          <li><a href="../encyclopaedia/index.html">The knee encyclopaedia</a></li>
+          <li><a href="../conditions/index.html">Conditions library</a></li>
+          <li><a href="../encyclopaedia/whole-body.html">Whole body factors</a></li>
+          <li><a href="../practise/index.html">Practise and test</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Clinical care</h3>
+        <ul>
+          <li><a href="https://www.chinmaygupte.com/">Consultant clinic</a></li>
+          <li><a href="#">Imaging and injections</a></li>
+          <li><a href="#">Rehabilitation programmes</a></li>
+          <li><a href="#">Braces and recovery products</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>About</h3>
+        <ul>
+          <li><a href="../about/standards.html">How a page reaches this site</a></li>
+          <li><a href="../about/curriculum.html">Mapped to the UK training pathway</a></li>
+          <li><a href="../levels/junior.html">For teachers and coaches</a></li>
+          <li><a href="#">Authors and reviewers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <p>KneeSchool is educational. It does not give individual medical advice and it does not replace assessment by a clinician. Seek urgent care for a hot, swollen knee with fever, a knee that cannot bear weight after injury, or new numbness in the leg.</p>
+      <p>Content written for school age learners carries no advertising and no product placement.</p>
+      <p>&copy; 2026 KneeSchool. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

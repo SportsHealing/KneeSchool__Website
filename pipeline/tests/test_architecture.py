@@ -2,6 +2,8 @@
 arrived after the pipeline was built. These tests hold the join between them.
 """
 
+import collections
+import glob
 import json
 import os
 import re
@@ -612,6 +614,23 @@ class ProseReferenceDetector(unittest.TestCase):
     def test_a_four_part_id_is_not_reported_as_its_first_three(self):
         self.assertEqual(self.refs("see 5.3.1.1 AP View"), [])
 
+    def test_a_field_strength_is_not_a_reference(self):
+        """EV-38. tesla was in neither unit list. This detector read "1.5 tesla"
+        as a reference to a chapter 1.5 the architecture does not have, while the
+        style gate read the same text as a page id and left the measurement out
+        of the figure register. One omitted word, two tools, opposite failures."""
+        for text in ("imaging runs at 1.5 tesla",
+                     "a 3 tesla scanner",
+                     "runs at 1.5 tesla or 3 tesla",
+                     "scanners run at 1.5 to 3 tesla"):
+            self.assertEqual(self.refs(text), [], text)
+
+    def test_a_reference_before_the_word_tesla_is_still_a_reference(self):
+        """The exclusion must need the number to be the thing the unit measures.
+        A sentence that happens to mention tesla after a reference is not a
+        measurement."""
+        self.assertEqual(self.refs("5.2.12 covers the basic principles"), ["5.2.12"])
+
     def test_an_ordinary_reference_still_resolves(self):
         self.assertEqual(self.refs("3.3.9 covers walking"), ["3.3.9"])
         self.assertEqual(self.refs("3.5 covers contact mechanics"), ["3.5"])
@@ -920,3 +939,91 @@ class VerifyTargetIsTheOnlyList(unittest.TestCase):
             loader = unittest.TestLoader()
             suite = loader.discover(os.path.join(ROOT, "tests"))
             self.assertEqual(int(match.group(1)), suite.countTestCases())
+
+
+class ACollidingTitleInsideOneChapterKeepsItsGrouping(unittest.TestCase):
+    """EV-37. The renderer gives a page whose title collides with another's a
+    title tag carrying its chapter name, which works because a collision had
+    always been between chapters: five pages called Surgical Anatomy, one per
+    structure.
+
+    Chapter 5.2 broke that. The source gives it a Radiation Dose page under the
+    X-ray Physics heading (5.2.1.3) and another under CT Physics (5.2.4.3), and
+    decision 027's flattening renumbered them 5.2.3 and 5.2.24 inside one
+    chapter. Two pages, one title, one chapter name to tell them apart with. The
+    renderer would have refused to render the section, which is the right
+    failure and no use to anybody, and the information that separated them was
+    in the source and had been thrown away.
+
+    So the extractor keeps the heading as chapter.nav_group and the renderer
+    prefers it when the chapter name cannot separate. This holds the invariant
+    the renderer depends on: wherever one chapter carries a title twice, every
+    one of those pages has a grouping, and the groupings differ.
+
+    Found before chapter 5.2 was written rather than by the render failing,
+    which is the only reason it is not also a wasted writing pass.
+    """
+
+    @classmethod
+    def setUpClass(cls):
+        cls.pages = []
+        for path in sorted(glob.glob(os.path.join(
+                REPO, "pipeline", "config", "architecture", "pages_*.json"))):
+            with open(path, encoding="utf-8") as fh:
+                cls.pages.extend(json.load(fh))
+
+    def collisions(self):
+        """Every (chapter id, title) the architecture uses more than once."""
+        seen = collections.defaultdict(list)
+        for page in self.pages:
+            seen[(page["chapter"]["id"], page["title"])].append(page)
+        return dict((k, v) for k, v in seen.items() if len(v) > 1)
+
+    def test_the_known_collision_is_still_the_only_one(self):
+        """If a second appears, this test is how it gets noticed."""
+        self.assertEqual(sorted(self.collisions()),
+                         [("5.2", "Radiation Dose")])
+
+    def test_every_colliding_page_carries_a_grouping(self):
+        for (chapter, title), pages in self.collisions().items():
+            for page in pages:
+                self.assertTrue(
+                    page["chapter"].get("nav_group"),
+                    "%s (%s in %s) has no nav_group to be told apart by"
+                    % (page["page_id"], title, chapter))
+
+    def test_the_groupings_of_a_colliding_set_differ(self):
+        for (chapter, title), pages in self.collisions().items():
+            groups = [p["chapter"].get("nav_group") for p in pages]
+            self.assertEqual(len(set(groups)), len(groups),
+                             "%s in %s: %r" % (title, chapter, groups))
+
+    def test_the_two_radiation_dose_pages_name_their_modality(self):
+        """Named explicitly, because this pair is the reason the field exists."""
+        groups = dict((p["page_id"], p["chapter"].get("nav_group"))
+                      for p in self.pages if p["title"] == "Radiation Dose")
+        self.assertEqual(groups, {"5.2.3": "X-ray Physics",
+                                  "5.2.24": "CT Physics"})
+
+    def test_a_grouping_is_only_on_a_flattened_chapter(self):
+        """Chapters 5.2 to 5.5 were flattened and carry groupings. A chapter the
+        source numbered flat has no heading to record, and inventing one would
+        make the field untrustworthy where it matters."""
+        flattened = {"5.2", "5.3", "5.4", "5.5"}
+        for page in self.pages:
+            if page["section"]["id"] != "5":
+                continue
+            has = bool(page["chapter"].get("nav_group"))
+            self.assertEqual(has, page["chapter"]["id"] in flattened,
+                             "%s: nav_group %r" % (page["page_id"],
+                                                   page["chapter"].get("nav_group")))
+
+    def test_the_grouping_reaches_the_brief(self):
+        """The renderer reads it from the brief, not from the architecture, so a
+        brief that drops the field silently restores the bug."""
+        path = os.path.join(REPO, "pipeline", "config", "briefs", "5.2.24.json")
+        if not os.path.exists(path):
+            self.skipTest("5.2.24 has no brief yet")
+        with open(path, encoding="utf-8") as fh:
+            self.assertEqual(json.load(fh)["chapter"].get("nav_group"),
+                             "CT Physics")
