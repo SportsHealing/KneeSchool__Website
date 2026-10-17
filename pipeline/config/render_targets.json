@@ -3967,6 +3967,72 @@
       "parent": "Imaging Academy|index.html",
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
+    },
+    "5.11.1": {
+      "out": "imaging/normal-cartilage.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.11.2": {
+      "out": "imaging/chondral-defects.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.11.3": {
+      "out": "imaging/cartilage-fissuring.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.11.4": {
+      "out": "imaging/cartilage-delamination.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.11.5": {
+      "out": "imaging/osteochondral-lesions.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.11.6": {
+      "out": "imaging/ocd-imaging.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.11.7": {
+      "out": "imaging/bone-marrow-lesions.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.11.8": {
+      "out": "imaging/cartilage-repair-procedures.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.11.9": {
+      "out": "imaging/aci-imaging.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.11.10": {
+      "out": "imaging/maci-imaging.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.11.11": {
+      "out": "imaging/osteochondral-grafts.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
     }
   },
   "withheld": {

@@ -661,6 +661,17 @@
     "5.7.12": "imaging/tunnel-assessment.html",
     "5.7.13": "imaging/cyclops-lesions.html",
     "5.7.14": "imaging/revision-acl-imaging.html",
+    "5.11.1": "imaging/normal-cartilage.html",
+    "5.11.2": "imaging/chondral-defects.html",
+    "5.11.3": "imaging/cartilage-fissuring.html",
+    "5.11.4": "imaging/cartilage-delamination.html",
+    "5.11.5": "imaging/osteochondral-lesions.html",
+    "5.11.6": "imaging/ocd-imaging.html",
+    "5.11.7": "imaging/bone-marrow-lesions.html",
+    "5.11.8": "imaging/cartilage-repair-procedures.html",
+    "5.11.9": "imaging/aci-imaging.html",
+    "5.11.10": "imaging/maci-imaging.html",
+    "5.11.11": "imaging/osteochondral-grafts.html",
     "6.1.1": "conditions/acl.html"
   }
 }
