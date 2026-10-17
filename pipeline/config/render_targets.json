@@ -3769,6 +3769,126 @@
       "parent": "Imaging Academy|index.html",
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
+    },
+    "5.4.1": {
+      "out": "imaging/us-anterior-knee.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.4.2": {
+      "out": "imaging/us-medial-knee.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.4.3": {
+      "out": "imaging/us-lateral-knee.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.4.4": {
+      "out": "imaging/us-posterior-knee.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.4.5": {
+      "out": "imaging/us-quadriceps-tendon.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.4.6": {
+      "out": "imaging/us-patellar-tendon.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.4.7": {
+      "out": "imaging/us-hamstring-tendons.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.4.8": {
+      "out": "imaging/us-popliteus-tendon.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.4.9": {
+      "out": "imaging/us-mcl.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.4.10": {
+      "out": "imaging/us-lcl.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.4.11": {
+      "out": "imaging/us-mpfl.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.4.12": {
+      "out": "imaging/us-plc-structures.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.4.13": {
+      "out": "imaging/snapping-tendons.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.4.14": {
+      "out": "imaging/us-patellar-tracking.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.4.15": {
+      "out": "imaging/dynamic-instability.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.4.16": {
+      "out": "imaging/knee-injection.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.4.17": {
+      "out": "imaging/knee-aspiration.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.4.18": {
+      "out": "imaging/hydrodissection.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.4.19": {
+      "out": "imaging/prp-procedures.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.4.20": {
+      "out": "imaging/tendon-procedures.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
     }
   },
   "withheld": {
