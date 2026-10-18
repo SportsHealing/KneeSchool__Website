@@ -315,7 +315,7 @@
       "id": "ATTR-001",
       "severity": "fail",
       "description": "No fabricable bibliographic detail on a landmark papers page: an exact year, a journal, a volume or page number, a DOI, a PMID, or an et al citation form",
-      "applies_when": "the brief's page_type is landmark_papers",
+      "applies_when": "the brief's page_type is one of page_types below",
       "source_of_truth": "docs/decisions/022-landmark-papers-without-source-access.md",
       "banned_shapes": {
         "exact_year": "a four digit year that is not written as a decade",
@@ -327,19 +327,27 @@
       "notes": [
         "This is the rule that stands in for source access. The Operations Handbook grades an invented citation as its one critical failure, and the parts of a citation that get invented are the precise ones: the year, the journal, the volume and the page. A finding and the surname it is taught under are recalled together and are checkable from either; a volume number recalled alone is a guess that looks like a fact.",
         "A decade is allowed, because the 1970s is the precision actually available and it says so. 1976 is not allowed, because it claims a precision this process does not have.",
-        "Scoped to landmark papers pages. Other pages carry real dates for real events, and 3.1.7 Historical Development is a page of them."
+        "Scoped to landmark papers pages. Other pages carry real dates for real events, and 3.1.7 Historical Development is a page of them.",
+        "EV-40. The scope was hardcoded as landmark_papers inside linter.py while this file said nothing, so the rule's reach could not be read here. Same shape as the bug decision 028 fixed for ACC-001 and as the condition template's body_sections_rule before it. Moving it changes no behaviour. Widening it was measured and refused: the detector is a surname followed by a reporting verb, which is landmark papers prose, and across the rest of the site it returns almost only sentence initial words such as Postoperative, Extrusion, Whether and Choose. It does not find an eponym used as the name of a grading system, which is not an attribution of a study to an author and is not what the register holds."
+      ],
+      "page_types": [
+        "landmark_papers"
       ]
     },
     {
       "id": "ATTR-002",
       "severity": "warn",
       "description": "Every study attributed to a named author on a landmark papers page is in that page's attribution register",
-      "applies_when": "the brief's page_type is landmark_papers",
+      "applies_when": "the brief's page_type is one of page_types below",
       "register_path": "pipeline/config/attributions/<page_id>.json",
       "source_of_truth": "docs/decisions/022-landmark-papers-without-source-access.md",
       "notes": [
         "Warn, for the reason POS-001 and DEC-001 warn: detecting an attribution is keyword matching over a surname followed by a reporting verb, and it will both miss and over-read. It surfaces an unregistered attribution; it cannot certify that a registered one is right.",
-        "The register is what a reviewer with a library actually works through. Its value depends entirely on being generated from the pages rather than compiled by hand, which is why the rule exists at all."
+        "The register is what a reviewer with a library actually works through. Its value depends entirely on being generated from the pages rather than compiled by hand, which is why the rule exists at all.",
+        "EV-40. The scope was hardcoded as landmark_papers inside linter.py while this file said nothing, so the rule's reach could not be read here. Same shape as the bug decision 028 fixed for ACC-001 and as the condition template's body_sections_rule before it. Moving it changes no behaviour. Widening it was measured and refused: the detector is a surname followed by a reporting verb, which is landmark papers prose, and across the rest of the site it returns almost only sentence initial words such as Postoperative, Extrusion, Whether and Choose. It does not find an eponym used as the name of a grading system, which is not an attribution of a study to an author and is not what the register holds."
+      ],
+      "page_types": [
+        "landmark_papers"
       ]
     },
     {

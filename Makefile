@@ -47,6 +47,8 @@ gates:
 	$(PYTHON) tools/crossrefs.py --check
 	@echo "== prose references against the architecture =="
 	$(PYTHON) tools/crossrefs.py --prose-check
+	@echo "== no published page references a held page =="
+	$(PYTHON) tools/crossrefs.py --withheld-check
 	@echo "== review packs match the registers =="
 	$(PYTHON) tools/review_pack.py --check
 

@@ -1,0 +1,26 @@
+{
+  "page_id": "5.11.8",
+  "prompt_version": "1.0",
+  "claims_checked": 0,
+  "verified": 0,
+  "corrected": [],
+  "removed_claims": [],
+  "reference_actions": [],
+  "red_flags": [
+    "Tier 1 source minimum not met: no textbook or review source retrieved",
+    "5 listed claims unverified; none confirmed against a source",
+    "Every statement about an imaging appearance is written from memory. A wrong appearance is more dangerous than a wrong anatomical fact, because a reader will apply it to a scan in front of them.",
+    "The imaging template is unvalidated. Decision 028 invented it and no editorial authority has confirmed its six sections.",
+    "The tier set has no basis in Part 1 at all, under decision 027.",
+    "Professional tiers only. An error here would reach a reader reporting a scan or planning an operation."
+  ],
+  "guidelines_checked": [],
+  "escalate_to_consultant": [
+    "Every claim about an appearance on this page needs confirmation, because the verification stage could not run. The consultant is standing in for it.",
+    "Every comparative accuracy claim needs confirmation. These are the claims a reader is most likely to act on and the ones this process is least able to support, since the figures behind them were refused rather than retrieved.",
+    "Any figure on this page needs a source against it. tools/figures.py --report --unchecked is the list.",
+    "The tier set needs confirming. Decision 027 applied Section 4's tiers to Section 5 with no statement in Part 1 to support it."
+  ],
+  "status": "NOT_RUN_TOOLS_UNAVAILABLE",
+  "status_note": "Agent 2 could not run. No source retrieval was available. In the deployed pipeline this execution would stop here."
+}

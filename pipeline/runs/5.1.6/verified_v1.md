@@ -19,8 +19,8 @@ it. 5.20.8 covers common reporting errors.
 
 ### Where It Misleads
 
-Prevalent findings are present in asymptomatic knees and accumulate with age, so
-the older the patient the more the scan offers and the less of it means
+Prevalent findings are present in asymptomatic knees and accumulate with age,
+so the older the patient the more the scan offers and the less of it means
 anything. 5.6.2 covers meniscal signal grading.
 
 Technically inadequate studies answer a different question, and the inadequacy
@@ -30,8 +30,8 @@ Artefact mimics pathology in nameable ways, and each modality has its own set.
 5.2.19 covers artefacts.
 
 Timing changes what is there: an effusion resolves, a bone bruise fades, and a
-healing structure looks worse before it looks better. 5.13.1 covers bone marrow
-oedema.
+healing structure looks worse before it looks better. 5.13.1 covers bone
+marrow oedema.
 
 A report written without the clinical question answers the question the
 radiologist inferred. 5.20.1 covers structured reporting.
@@ -48,36 +48,36 @@ radiologist inferred. 5.20.1 covers structured reporting.
 
 ### How Good It Is
 
-Recognising the patterns is what makes imaging usable, and it is a clinical skill
-rather than a radiological one.
+Recognising the patterns is what makes imaging usable, and it is a clinical
+skill rather than a radiological one.
 
 Its best contribution is downgrading a finding that does not fit the clinical
 picture, which is the judgement nothing else in the assessment makes. 5.1.2
 covers that comparison.
 
-It is undermined by the authority of a written report, which is harder to argue
-with than an examination finding.
+It is undermined by the authority of a written report, which is harder to
+argue with than an examination finding.
 
-No figures appear for any accuracy comparison on this page, under decision 028,
-and no prevalence figure appears either, for the same reason.
+No figures appear for any accuracy comparison on this page, under decision
+028, and no prevalence figure appears either, for the same reason.
 
 ### Where It Misleads
 
-In a viva this is the critical appraisal question and the expected answer names
-the patterns rather than listing examples.
+In a viva this is the critical appraisal question and the expected answer
+names the patterns rather than listing examples.
 
 The expected points are the prevalent finding, the technical inadequacy, the
 artefact, the timing and the missing clinical question.
 
-Say that a degenerate meniscal finding in an older knee is prevalent rather than
-causal, and say what that means for the plan. 5.6.2 covers meniscal signal
-grading.
+Say that a degenerate meniscal finding in an older knee is prevalent rather
+than causal, and say what that means for the plan. 5.6.2 covers meniscal
+signal grading.
 
-Say that the magic angle effect is a specific and nameable artefact rather than
-a general warning. 5.2.20 covers the magic angle effect.
+Say that the magic angle effect is a specific and nameable artefact rather
+than a general warning. 5.2.20 covers the magic angle effect.
 
-Say that you would read the images rather than the report alone where the decision
-depends on them. 5.20.8 covers common reporting errors.
+Say that you would read the images rather than the report alone where the
+decision depends on them. 5.20.8 covers common reporting errors.
 
 ### Key Learning Points
 
@@ -91,18 +91,19 @@ depends on them. 5.20.8 covers common reporting errors.
 
 ### How Good It Is
 
-At decision level the pitfalls are what stand between a report and an operation.
+At decision level the pitfalls are what stand between a report and an
+operation.
 
 A finding that does not match the examination is downgraded explicitly and in
-writing, because an unrecorded downgrade will be reversed by the next clinician.
-4.1.8 covers examination documentation.
+writing, because an unrecorded downgrade will be reversed by the next
+clinician. 4.1.8 covers examination documentation.
 
-A technically inadequate study is repeated or worked around, and deciding which
-needs knowing what the protocol could not show. 5.5.1 covers the standard
-protocol.
+A technically inadequate study is repeated or worked around, and deciding
+which needs knowing what the protocol could not show. 5.5.1 covers the
+standard protocol.
 
-An incidental finding needs a decision, and deciding to do nothing is a decision
-that belongs in the record. 5.1.5 covers cost effectiveness.
+An incidental finding needs a decision, and deciding to do nothing is a
+decision that belongs in the record. 5.1.5 covers cost effectiveness.
 
 A finding that would change the operation is checked on the images rather than
 taken from the report. 5.20.8 covers common reporting errors.
@@ -137,26 +138,27 @@ reporting.
 
 ### Where It Misleads
 
-At fellowship level the pitfalls are structural rather than individual, and that
-changes what can be done about them.
+At fellowship level the pitfalls are structural rather than individual, and
+that changes what can be done about them.
 
-The prevalence problem has no clinical solution, because the finding is real and
-its relevance is a judgement every time. 5.6.2 covers meniscal signal grading.
+The prevalence problem has no clinical solution, because the finding is real
+and its relevance is a judgement every time. 5.6.2 covers meniscal signal
+grading.
 
-Protocol variation between centres is invisible on reports, so comparison across
-studies is unreliable in a way nobody flags. 5.5.1 covers the standard protocol.
+Protocol variation between centres is invisible on reports, so comparison
+across studies is unreliable in a way nobody flags. 5.5.1 covers the standard
+protocol.
 
-Advanced sequences introduce their own artefacts, so the techniques that answer
-the harder questions bring new pitfalls rather than fewer. 5.18.1 covers
-quantitative imaging.
+Advanced sequences introduce their own artefacts, so the techniques that
+answer the harder questions bring new pitfalls rather than fewer. 5.18.1
+covers quantitative imaging.
 
-Automated and assisted reading changes the error pattern rather than removing it,
-and the new pattern is less familiar than the old one. 5.18.8 covers artificial
-intelligence in imaging.
+Automated and assisted reading changes the error pattern rather than removing
+it, and the new pattern is less familiar than the old one. 5.18.8 covers
+artificial intelligence in imaging.
 
 The pitfalls recur across this whole section, which is why they have a chapter
-rather than a paragraph on each page. 5.19.1 covers the physics of magic angle
-imaging.
+rather than a paragraph on each page. 5.2.20 covers the magic angle effect.
 
 ### Key Learning Points
 
@@ -189,4 +191,5 @@ page states the comparison. A reviewer with the literature can add the figures
 into How Good It Is without restructuring the page. Any measurement here,
 including a sequence parameter, an angle or a millimetre, is written from
 standard teaching, has not been checked, and is registered under decision 006
-in pipeline/config/figures with a verification state of UNVERIFIED_FROM_MEMORY.
+in pipeline/config/figures with a verification state of
+UNVERIFIED_FROM_MEMORY.

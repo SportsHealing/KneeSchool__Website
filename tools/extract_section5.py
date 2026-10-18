@@ -183,6 +183,15 @@ def build():
     # radiographic view. Each old navigational id is translated to the pages that
     # came from under it instead.
     nav_to_new = {}
+    # The grouping is also the only thing that distinguishes two pages the
+    # flattening gives the same title. Chapter 5.2 has a Radiation Dose page
+    # under X-ray Physics (5.2.1.3) and another under CT Physics (5.2.4.3), and
+    # after flattening they are 5.2.3 and 5.2.24 with one title and one chapter
+    # name between them. The renderer disambiguates a colliding title tag with
+    # the chapter name, which separates nothing here, so it would refuse to
+    # render. Keeping the heading keeps the distinction the source made.
+    nav_names = dict(navs)
+    nav_group = {}
     for chapter, data in chapters.items():
         leaves = data["leaves"]
         # A chapter whose leaves sit a level below a navigational grouping is
@@ -196,6 +205,8 @@ def build():
             for new_id, (old_id, _) in zip(ids, leaves):
                 nav = ".".join(old_id.split(".")[:3])
                 nav_to_new.setdefault(nav, []).append(new_id)
+                if nav in nav_names:
+                    nav_group[new_id] = nav_names[nav]
     for nav, new_ids in nav_to_new.items():
         if nav in deeper_map:
             for new_id in new_ids:
@@ -213,11 +224,15 @@ def build():
             # A page the map names itself wins over its chapter's entry.
             deeper = deeper_map.get(page_id) or deeper_map.get(chapter) \
                 or fallback
+            chapter_entry = collections.OrderedDict([
+                ("id", chapter), ("name", data["name"])])
+            if page_id in nav_group:
+                chapter_entry["nav_group"] = nav_group[page_id]
             pages.append(collections.OrderedDict([
                 ("page_id", page_id),
                 ("title", title),
                 ("section", dict(SECTION)),
-                ("chapter", {"id": chapter, "name": data["name"]}),
+                ("chapter", chapter_entry),
                 ("tiers_required", list(TIERS)),
                 ("scope", scope_for(chapter, title)),
                 ("siblings", [i for i in ids if i != page_id]),

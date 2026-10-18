@@ -162,7 +162,7 @@ Every figure below was written from standard teaching and none has a source agai
 
 | Ref | Page | Tier | Figure | The sentence it supports | Decision | Source |
 |---|---|---|---|---|---|---|
-| 3.3.1-F1 | 3.3.1 | medical_student | six degrees | names the six degrees of freedom this chapter then describes through range. |  |  |
+| 3.3.1-F1 | 3.3.1 | medical_student | six degrees | 3.2.1 names the six degrees of freedom this chapter then describes through range. |  |  |
 | 3.3.2-F1 | 3.3.2 | mrcs | 20 to 30 degrees | Conventional teaching describes rolling as dominant through roughly the first 20 to 30 degrees of flexion, with gliding taking an increasing share beyond that. |  |  |
 | 3.3.4-F1 | 3.3.4 | mrcs | 25 to 30 degrees | Conventional teaching gives roughly 25 to 30 degrees of total axial rotation at 90 degrees of flexion in open chain, falling to near zero in full extension. |  |  |
 | 3.3.4-F2 | 3.3.4 | mrcs | 90 degrees | Conventional teaching gives roughly 25 to 30 degrees of total axial rotation at 90 degrees of flexion in open chain, falling to near zero in full extension. |  |  |

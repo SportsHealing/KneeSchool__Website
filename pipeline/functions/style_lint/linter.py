@@ -513,7 +513,13 @@ def is_ordered_subset(found, allowed):
 # the prose constantly ("3.13 takes that further", "Section 7 owns the argument",
 # "decision 005 records why"), so they are removed before the scan rather than
 # listed as exceptions one at a time.
-UNIT = r"(?:mm|cm|%|per\s?cent|degrees?|mL|ml|kg|MPa|m|N)"
+# tesla was missing until chapter 5.2 needed it, and its absence was worse than
+# a gap: "1.5 tesla" matched the page id pattern below, so a field strength was
+# stripped as a cross reference rather than read as the measurement it is. Same
+# shape as the worded figures chapter 4.9 found. Spelled out rather than "T",
+# because a bare capital letter in this list reaches the negative lookahead in
+# XREF and the case insensitive RANGE, and the pages write it out anyway.
+UNIT = r"(?:mm|cm|%|per\s?cent|degrees?|mL|ml|kg|MPa|tesla|m|N)"
 # A page id and a decimal measurement look identical: 5.5 could be chapter 5.5 or
 # five and a half degrees. The unit decides, so an id is only stripped when no
 # unit follows it. A bare decimal with no unit is read as a page id, because on
@@ -551,7 +557,7 @@ _NUM_WORD = (r"(?:one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve
              r"twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety|hundred)"
              r"(?:[- ](?:one|two|three|four|five|six|seven|eight|nine|hundred))?")
 _WORD_UNIT = (r"(?:degrees?|millimetres?|centimetres?|metres?|newtons?|kilograms?|"
-              r"millilitres?|per\s?cent|percent)")
+              r"millilitres?|per\s?cent|percent|teslas?)")
 WORDED = re.compile(r"\b(%s)\s+(?:a\s+)?%s\b" % (_NUM_WORD, _WORD_UNIT),
                     re.IGNORECASE)
 WORDED_RANGE = re.compile(
@@ -590,8 +596,19 @@ def body_figures(doc, rule):
     # linked to "4.12.3 Assessment at 30 Degrees" and FIG-002 read the 30 as an
     # unregistered measurement. The label is blanked, keeping its length so every
     # offset the caller reports still points at the right place.
-    text = CROSSLINK.sub(lambda m: " " * len(m.group(0)), doc.body_text())
-    text = XREF.sub(" ", XREF_WORD.sub(" ", text))
+    blank = lambda m: " " * len(m.group(0))
+    text = CROSSLINK.sub(blank, doc.body_text())
+    # EV-39. The ranges are matched before the cross reference stripping, and
+    # they have to be. XREF reads a decimal with no unit directly after it as a
+    # page id, and a range's lower bound never has one: the unit sits on the far
+    # end. So "2.5 to 4 mm" lost its lower bound and registered as "4 mm", which
+    # is worse than missing it. A reviewer checking "4 mm" would have passed a
+    # page saying something else. Integer ranges were unaffected, which is why
+    # this survived from the day RANGE was written.
+    #
+    # Fixing it in XREF's lookahead would mean restating RANGE's grammar there
+    # and keeping the two in step, so instead the ranges are taken first and
+    # their spans masked out of the copy the rest of the scan reads.
     spans = []
     for pattern in (RANGE, WORDED_RANGE, WORDED):
         for m in pattern.finditer(text):
@@ -600,7 +617,13 @@ def body_figures(doc, rule):
             spans.append((m.start(), m.end()))
             out.append((re.sub(r"\s+", " ", m.group(0)).strip(),
                         m.start(), m.end(), text))
-    for m in QUANTITY.finditer(text):
+    # Every substitution here keeps the match's length, so the offsets above
+    # still point into this string and the caller's one text argument stays
+    # correct for every row.
+    scan = XREF.sub(blank, XREF_WORD.sub(blank, text))
+    for a, b in spans:
+        scan = scan[:a] + " " * (b - a) + scan[b:]
+    for m in QUANTITY.finditer(scan):
         if any(a <= m.start() < b for a, b in spans):
             continue
         token = m.group(0).strip()
@@ -980,7 +1003,8 @@ def rule_attr_001(doc, rule, brief):
     appearing there is exactly the failure this rule exists to catch.
     """
     out = []
-    if brief.get("page_type") != "landmark_papers":
+    if brief.get("page_type") not in (rule.get("page_types")
+                                      or ["landmark_papers"]):
         return out
     text = doc.raw
     for pattern, label in ATTR_BANNED:
@@ -1000,7 +1024,8 @@ def rule_attr_002(doc, rule, brief):
     none. It surfaces an unregistered name; it cannot certify a registered one.
     """
     out = []
-    if brief.get("page_type") != "landmark_papers":
+    if brief.get("page_type") not in (rule.get("page_types")
+                                      or ["landmark_papers"]):
         return out
     registry = load_attribution_registry(brief.get("page_id"))
     known = set()

@@ -104,7 +104,7 @@ teacher, coach or doctor.
 
 - [[0.1.1 | Meet Your Knee]]
 - [[0.2.5 | When to Tell an Adult]]
-- [[0.6.2 | Future Surgeon Challenge]]
+- [[0.2.1 | Common Knee Injuries in Young Athletes]]
 - [[0.1.6 | Curriculum Links]]
 
 ## References

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Artefacts | KneeSchool</title>
+<meta name="description" content="The appearances the scanner makes rather than finds, which is a subject rather than a footnote.">
+<meta name="theme-color" content="#0e2b22">
+
+<link rel="canonical" href="https://kneeschool.com/imaging/mri-artefacts.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css?v=e50d4cd3">
+</head>
+<body>
+<style>
+.dial-tabs{grid-template-columns:repeat(4,1fr)}
+#t0:checked ~ .dial-tabs label[for=t0]{background:var(--gold-pale);border-color:var(--gold-pale);color:var(--green-deep);font-weight:600}
+#t0:checked ~ .dial-body .p0{display:block}
+#t0:focus-visible ~ .dial-tabs label[for=t0]{outline:3px solid var(--gold);outline-offset:2px}
+#t1:checked ~ .dial-tabs label[for=t1]{background:var(--gold-pale);border-color:var(--gold-pale);color:var(--green-deep);font-weight:600}
+#t1:checked ~ .dial-body .p1{display:block}
+#t1:focus-visible ~ .dial-tabs label[for=t1]{outline:3px solid var(--gold);outline-offset:2px}
+#t2:checked ~ .dial-tabs label[for=t2]{background:var(--gold-pale);border-color:var(--gold-pale);color:var(--green-deep);font-weight:600}
+#t2:checked ~ .dial-body .p2{display:block}
+#t2:focus-visible ~ .dial-tabs label[for=t2]{outline:3px solid var(--gold);outline-offset:2px}
+#t3:checked ~ .dial-tabs label[for=t3]{background:var(--gold-pale);border-color:var(--gold-pale);color:var(--green-deep);font-weight:600}
+#t3:checked ~ .dial-body .p3{display:block}
+#t3:focus-visible ~ .dial-tabs label[for=t3]{outline:3px solid var(--gold);outline-offset:2px}
+</style>
+<div class="build-notice" role="note">
+  <div class="wrap">
+    <strong>Work in progress.</strong> This site is being built in the open. No page on it has yet been reviewed by a clinician, every page says so, and nothing here is medical advice or a substitute for seeing someone about your knee. <a href="../about/status.html">What that means</a>
+  </div>
+</div>
+<header class="site-head">
+  <div class="wrap head-in">
+    <a class="brand" href="../index.html"><b>Knee</b><span>School</span></a>
+    <input class="nav-toggle" type="checkbox" id="navtoggle" aria-label="Show navigation">
+    <label class="burger" for="navtoggle">Menu</label>
+    <nav class="nav" aria-label="Main">
+      <ul>
+        <li class="has-menu">
+          <a class="top" href="../index.html#levels">Learn<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../index.html#levels">Find your level</a></li>
+            <li><a href="../levels/junior.html">Junior Academy</a></li>
+            <li><a href="../levels/patient.html">Patient Academy</a></li>
+            <li><a href="../levels/student.html">Student Academy</a></li>
+            <li><a href="../levels/mrcs.html">MRCS Academy</a></li>
+            <li><a href="../levels/frcs.html">FRCS (Tr and Orth) Academy</a></li>
+            <li><a href="../levels/fellowship.html">Fellowship Academy</a></li>
+            <li><a href="../levels/consultant.html">Consultant Masterclass</a></li>
+            <li><a href="../junior/ready-made-lesson-plans.html">For teachers and coaches</a></li>
+          </ul>
+        </li>
+        <li class="has-menu">
+          <a class="top" href="../encyclopaedia/index.html">Reference<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../encyclopaedia/index.html">The knee encyclopaedia</a></li>
+            <li><a href="../anatomy/index.html">The Anatomy Academy</a></li>
+            <li><a href="../biomechanics/index.html">The Biomechanics Academy</a></li>
+            <li><a href="../examination/index.html">The Clinical Examination Academy</a></li>
+            <li><a href="../imaging/index.html">The Imaging Academy</a></li>
+            <li><a href="../conditions/index.html">Conditions library</a></li>
+            <li><a href="../encyclopaedia/whole-body.html">Whole body factors</a></li>
+          </ul>
+        </li>
+        <li class="has-menu">
+          <a class="top" href="../practise/index.html">Practise<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../practise/index.html#questions">Question bank</a></li>
+            <li><a href="../practise/index.html#cases">Case library</a></li>
+            <li><a href="../practise/index.html#video">Video academy</a></li>
+            <li><a href="../practise/index.html#scores">Knee score centre</a></li>
+          </ul>
+        </li>
+        <li class="has-menu">
+          <a class="top" href="../about/standards.html">About<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../about/standards.html">How a page reaches this site</a></li>
+            <li><a href="../about/curriculum.html">Mapped to the UK training pathway</a></li>
+            <li><a href="../about/status.html">Build status</a></li>
+            <li><a href="#">Authors and reviewers</a></li>
+            <li><a href="#">References and sources</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </li>
+        <li><a class="start-link" href="../index.html#levels">Find your level</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumb"><a href="../index.html">KneeSchool</a><span>/</span><a href="index.html">Imaging Academy</a><span>/</span>Artefacts</p>
+      <div class="hero-split">
+        <div>
+          <h1>Artefacts</h1>
+          <p class="who">Page 5.2.19 &middot; Imaging Physics for Knee Specialists &middot; imaging page</p>
+          <p class="lede">The appearances the scanner makes rather than finds, which is a subject rather than a footnote.</p>
+        </div>
+        <div>
+          <div class="status"><b>Pipeline status.</b> Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band dark">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>The same topic at 4 depths</h2>
+        <p class="lede">Each tier deepens the one below it and never repeats it. Choose the level you want.</p>
+      </div>
+      <div class="dial dial-article">
+        <div class="dial-head">
+          <h2>Artefacts</h2>
+          <small>Choose a depth</small>
+        </div>
+        <input type="radio" name="depth" id="t0" checked>
+        <input type="radio" name="depth" id="t1">
+        <input type="radio" name="depth" id="t2">
+        <input type="radio" name="depth" id="t3">
+        <div class="dial-tabs">
+          <label for="t0">Student</label>
+          <label for="t1">MRCS</label>
+          <label for="t2">FRCS</label>
+          <label for="t3">Fellow</label>
+        </div>
+        <div class="dial-body">
+          <div class="dial-panel p0">
+            <h3>For Medical Students</h3>
+            <h4>What It Shows</h4>
+            <p>An artefact is a feature of the image that does not correspond to anything in the patient. 5.2.12 covers the basic principles.</p>
+            <p>Each one has a mechanism and a characteristic appearance, so they are recognisable rather than random. 5.2.18 covers gradient echo imaging.</p>
+            <p>It matters because an artefact that looks like pathology is reported as pathology, and this chapter exists largely to prevent that. 5.1.6 covers imaging pitfalls.</p>
+            <h4>How It Is Acquired</h4>
+            <p>Motion during the acquisition blurs and ghosts along the phase direction, which is why a restless knee produces repeated edges. 5.5.1 covers the standard protocol.</p>
+            <p>Metal distorts the local field, producing signal loss and geometric distortion around it. 5.5.3 covers the post-operative protocol.</p>
+            <p>Chemical shift displaces the fat signal relative to water at a fat and water boundary, producing a bright and a dark line. 5.2.16 covers fat suppression.</p>
+            <p>Truncation produces alternating bright and dark lines at a high contrast edge, which is the mechanism behind a line inside a meniscus. 5.6.2 covers meniscal signal grading.</p>
+            <p>Pulsation from a vessel propagates across the image, which can cross a ligament. 5.7.1 covers the normal cruciate.</p>
+            <h4>Where It Misleads</h4>
+            <p>A truncation line inside a meniscus is read as a tear, and it is the one artefact in this list that imitates the commonest knee diagnosis. 5.6.2 covers meniscal signal grading.</p>
+            <p>A pulsation artefact crossing the cruciate is read as a tear. 5.7.3 covers complete cruciate tears.</p>
+            <p>Metal signal loss is read as absent tissue. 5.5.3 covers the post-operative protocol.</p>
+            <p>Motion ghosting is read as a second structure. 5.5.1 covers the standard protocol.</p>
+            <p>Chemical shift at a cartilage surface is read as a chondral lesion. 5.11.2 covers chondral defects.</p>
+            <div class="klp">
+              <h4>Key Learning Points</h4>
+              <ul><li>An artefact corresponds to nothing in the patient.</li><li>Each has a mechanism and a recognisable appearance.</li><li>Truncation imitates a meniscal tear.</li><li>Pulsation can cross a cruciate ligament.</li><li>Metal produces signal loss and geometric distortion.</li></ul>
+            </div>
+          </div>
+          <div class="dial-panel p1">
+            <h3>MRCS Level</h3>
+            <h4>How It Is Acquired</h4>
+            <p>In a viva the expected answer names the mechanism and the appearance together, because the mechanism is what makes the appearance predictable.</p>
+            <p>The expected points are motion, metal, chemical shift, truncation, and pulsation.</p>
+            <p>Say that a finding on one sequence or one plane only should raise artefact. 5.5.1 covers the standard protocol.</p>
+            <p>Say that an artefact's position relates to the acquisition rather than to anatomy. 5.2.12 covers the basic principles.</p>
+            <p>Say that changing the phase direction moves an artefact and not a lesion. 5.2.18 covers gradient echo imaging.</p>
+            <h4>How Good It Is</h4>
+            <p>Artefact recognition is the difference between a reliable reader and an unreliable one, more than any other single skill in this section.</p>
+            <p>Its best contribution is negative: it prevents a report rather than producing one. 5.20.8 covers common reporting errors.</p>
+            <p>It is limited by depending on the reader knowing the mechanism, since no gate or checklist detects an artefact. 5.1.6 covers imaging pitfalls.</p>
+            <p>No figures appear for accuracy on this page, under decision 028, and no displacement or band width values appear either: those depend on field strength and bandwidth and this environment cannot check them.</p>
+            <h4>Where It Misleads</h4>
+            <p>The commonest failure is not considering artefact at all when a finding sits on one sequence. 5.5.1 covers the standard protocol.</p>
+            <p>An artefact reported once is then confirmed by the next reader, because the report anchors them. 5.20.8 covers common reporting errors.</p>
+            <p>A repeat sequence with a changed parameter would settle it and is rarely requested. 5.2.18 covers gradient echo imaging.</p>
+            <p>A technically poor study is reported rather than repeated. 5.5.1 covers the standard protocol.</p>
+            <p>An artefact in a post-operative knee is attributed to the surgery. 5.5.3 covers the post-operative protocol.</p>
+            <div class="klp">
+              <h4>Key Learning Points</h4>
+              <ul><li>Artefact must be considered for any single sequence finding.</li><li>An artefact's position follows the acquisition, not the anatomy.</li><li>Changing the phase direction moves an artefact and not a lesion.</li><li>A reported artefact anchors the next reader.</li><li>The settling repeat sequence is rarely requested.</li></ul>
+            </div>
+          </div>
+          <div class="dial-panel p2">
+            <h3>FRCS Level</h3>
+            <h4>How Good It Is</h4>
+            <p>At decision level artefact recognition decides whether a finding should change an operation.</p>
+            <p>A meniscal line present on one sequence and absent on the others is not a tear, and operating on it is the error this page prevents. 5.6.2 covers meniscal signal grading.</p>
+            <p>A cruciate crossed by a pulsation artefact in a stable knee is intact, and the examination settles it. 5.7.1 covers the normal cruciate.</p>
+            <p>Signal loss around fixation is not tissue loss, which matters in revision planning. 5.7.12 covers tunnel assessment.</p>
+            <p>Any finding that will change an operation is worth reviewing on the images rather than from the report. 5.20.1 covers structured reporting.</p>
+            <h4>Where It Misleads</h4>
+            <p>The commonest error is accepting a single sequence finding as real. 5.5.1 covers the standard protocol.</p>
+            <p>Truncation is operated on as a meniscal tear. 5.6.2 covers meniscal signal grading.</p>
+            <p>Metal distortion is read as bone loss before a revision. 5.7.14 covers revision cruciate imaging.</p>
+            <p>Motion artefact in a painful knee is read as pathology rather than as a reason to repeat. 5.5.1 covers the standard protocol.</p>
+            <p>An artefact is recognised and not stated, so the next reader repeats the error. 5.20.8 covers common reporting errors.</p>
+            <div class="klp">
+              <h4>Key Learning Points</h4>
+              <ul><li>A single sequence finding is accepted as real.</li><li>Truncation is operated on as a meniscal tear.</li><li>Metal distortion is read as bone loss before a revision.</li><li>Motion artefact is read as pathology rather than as a reason to repeat.</li><li>A recognised artefact goes unstated and the next reader repeats the error.</li></ul>
+            </div>
+          </div>
+          <div class="dial-panel p3">
+            <h3>Fellowship Level</h3>
+            <h4>Where It Misleads</h4>
+            <p>At fellowship level artefact is the part of imaging knowledge that depreciates fastest and is taught least.</p>
+            <p>Each artefact belongs to a sequence and a field strength, so the set a reader learned on one generation of scanner is not the set they meet on the next. 5.2.12 covers the basic principles.</p>
+            <p>Three dimensional isotropic acquisition and metal artefact reduction both change which artefacts appear, and the literature describing artefacts predates both. 5.2.18 covers gradient echo imaging.</p>
+            <p>An artefact is never recorded as such in a structured report, so there is no record of how often one is mistaken for pathology. 5.20.1 covers structured reporting.</p>
+            <p>Automated reading has no artefact concept unless it was trained on labelled artefacts, and the labelled sets are small, so a model confidently reports what a reader would dismiss. 5.18.8 covers artificial intelligence in imaging.</p>
+            <p>The conclusion the whole chapter has been building towards is that an imaging appearance is a product of the tissue and the instrument together, and this is the page where that is plainly true. 5.2.10 covers anisotropy.</p>
+            <div class="klp">
+              <h4>Key Learning Points</h4>
+              <ul><li>The artefact set belongs to a sequence and a field strength.</li><li>New acquisition methods change which artefacts appear.</li><li>An artefact is never recorded as such, so its frequency is unknown.</li><li>Automated reading has no artefact concept without labelled training.</li><li>An appearance is a product of the tissue and the instrument together.</li></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band wrap">
+    <div class="sec-head">
+      <h2>Explore Further</h2>
+      <p class="lede">Where this topic came from and where it goes next in the spiral.</p>
+    </div>
+    <ul class="explore">
+        <li><span class="pid">5.2.20</span><a href="magic-angle-effect.html">Magic Angle Effect</a></li>
+        <li><span class="pid">5.2.18</span><a href="gradient-echo-imaging.html">Gradient Echo Imaging</a></li>
+        <li><span class="pid">5.2.16</span><a href="fat-suppression.html">Fat Suppression</a></li>
+        <li><span class="pid">5.6.2</span><a href="meniscal-signal-grading.html">Meniscal Signal Grading</a></li>
+        <li><span class="pid">5.5.3</span><a href="post-operative-protocol.html">Post-operative Protocol</a></li>
+        <li><span class="pid">5.20.8</span><a href="common-reporting-errors.html">Common Reporting Errors</a></li>
+    </ul>
+  </section>
+
+  <section class="band wrap" style="padding-top:0">
+    <div class="sec-head">
+      <h2>References</h2>
+    </div>
+    <div class="prose refs">
+      <p>No reference list is attached to this draft. Evidence verification has not run, because source retrieval was unavailable at generation time. Under the Operations Handbook a missing reference is acceptable and an invented one is a critical failure, so nothing has been cited and no citation marker appears in the text. This page carries no diagnostic accuracy figure, which is decision 028 rather than an omission: the comparative standing of the modalities is standard teaching and a specific sensitivity written from memory is the same class of claim as an invented citation, so ACC-001 refuses the number and the page states the comparison. A reviewer with the literature can add the figures into How Good It Is without restructuring the page. Any measurement here, including a sequence parameter, an angle or a millimetre, is written from standard teaching, has not been checked, and is registered under decision 006 in pipeline/config/figures with a verification state of UNVERIFIED_FROM_MEMORY.</p>
+    </div>
+    <p class="safety"><b>Safety.</b> KneeSchool is educational and does not give individual medical advice. Seek urgent assessment for a knee that cannot bear weight after an injury, a hot swollen knee with a fever, or new numbness, weakness or coldness in the leg or foot.</p>
+  </section>
+
+</main>
+
+<footer class="site-foot" id="about">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h3>Learn</h3>
+        <ul>
+          <li><a href="../levels/junior.html">Junior Academy</a></li>
+          <li><a href="../levels/patient.html">Patient Academy</a></li>
+          <li><a href="../levels/student.html">Student Academy</a></li>
+          <li><a href="../levels/mrcs.html">MRCS Academy</a></li>
+          <li><a href="../levels/frcs.html">FRCS (Tr and Orth) Academy</a></li>
+          <li><a href="../levels/fellowship.html">Fellowship Academy</a></li>
+          <li><a href="../levels/consultant.html">Consultant Masterclass</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Reference</h3>
+        <ul>
+          <li><a href="../encyclopaedia/index.html">The knee encyclopaedia</a></li>
+          <li><a href="../conditions/index.html">Conditions library</a></li>
+          <li><a href="../encyclopaedia/whole-body.html">Whole body factors</a></li>
+          <li><a href="../practise/index.html">Practise and test</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Clinical care</h3>
+        <ul>
+          <li><a href="https://www.chinmaygupte.com/">Consultant clinic</a></li>
+          <li><a href="#">Imaging and injections</a></li>
+          <li><a href="#">Rehabilitation programmes</a></li>
+          <li><a href="#">Braces and recovery products</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>About</h3>
+        <ul>
+          <li><a href="../about/standards.html">How a page reaches this site</a></li>
+          <li><a href="../about/curriculum.html">Mapped to the UK training pathway</a></li>
+          <li><a href="../levels/junior.html">For teachers and coaches</a></li>
+          <li><a href="#">Authors and reviewers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <p>KneeSchool is educational. It does not give individual medical advice and it does not replace assessment by a clinician. Seek urgent care for a hot, swollen knee with fever, a knee that cannot bear weight after injury, or new numbness in the leg.</p>
+      <p>Content written for school age learners carries no advertising and no product placement.</p>
+      <p>&copy; 2026 KneeSchool. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

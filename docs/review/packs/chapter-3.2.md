@@ -184,7 +184,7 @@ Every figure below was written from standard teaching and none has a source agai
 | 3.2.8-F5 | 3.2.8 | mrcs | 5 to 10 mm | Conventional teaching grades by step off: 0 to 5 mm grade one, 5 to 10 mm grade two, more than 10 mm grade three. |  |  |
 | 3.2.8-F6 | 3.2.8 | mrcs | 0 | - Conventional teaching grades by step off: 0 to 5, 5 to 10, and more than 10 mm. |  |  |
 | 3.2.9-F1 | 3.2.9 | medical_student | one degree | Coupled motion means that moving a joint in one degree of freedom produces motion in another, without any separate effort to create it. |  |  |
-| 3.2.9-F2 | 3.2.9 | medical_student | six degrees | The six degrees of freedom described in are therefore a vocabulary rather than a list of independent movements. |  |  |
+| 3.2.9-F2 | 3.2.9 | medical_student | six degrees | The six degrees of freedom described in 3.2.1 are therefore a vocabulary rather than a list of independent movements. |  |  |
 | 3.2.10-F1 | 3.2.10 | mrcs | 30 degrees | The handover from bone to soft tissue occurs over roughly the first 30 degrees of flexion, which is why the same test gives different answers at 0 and 30 degrees. |  |  |
 | 3.2.10-F2 | 3.2.10 | mrcs | 0 and 30 degrees | The handover from bone to soft tissue occurs over roughly the first 30 degrees of flexion, which is why the same test gives different answers at 0 and 30 degrees. |  |  |
 

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Quantitative MRI | KneeSchool</title>
+<meta name="description" content="Imaging that returns a number with units rather than a picture, and the reason almost none of those numbers travels between departments.">
+<meta name="theme-color" content="#0e2b22">
+
+<link rel="canonical" href="https://kneeschool.com/imaging/quantitative-mri.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css?v=e50d4cd3">
+</head>
+<body>
+<style>
+.dial-tabs{grid-template-columns:repeat(4,1fr)}
+#t0:checked ~ .dial-tabs label[for=t0]{background:var(--gold-pale);border-color:var(--gold-pale);color:var(--green-deep);font-weight:600}
+#t0:checked ~ .dial-body .p0{display:block}
+#t0:focus-visible ~ .dial-tabs label[for=t0]{outline:3px solid var(--gold);outline-offset:2px}
+#t1:checked ~ .dial-tabs label[for=t1]{background:var(--gold-pale);border-color:var(--gold-pale);color:var(--green-deep);font-weight:600}
+#t1:checked ~ .dial-body .p1{display:block}
+#t1:focus-visible ~ .dial-tabs label[for=t1]{outline:3px solid var(--gold);outline-offset:2px}
+#t2:checked ~ .dial-tabs label[for=t2]{background:var(--gold-pale);border-color:var(--gold-pale);color:var(--green-deep);font-weight:600}
+#t2:checked ~ .dial-body .p2{display:block}
+#t2:focus-visible ~ .dial-tabs label[for=t2]{outline:3px solid var(--gold);outline-offset:2px}
+#t3:checked ~ .dial-tabs label[for=t3]{background:var(--gold-pale);border-color:var(--gold-pale);color:var(--green-deep);font-weight:600}
+#t3:checked ~ .dial-body .p3{display:block}
+#t3:focus-visible ~ .dial-tabs label[for=t3]{outline:3px solid var(--gold);outline-offset:2px}
+</style>
+<div class="build-notice" role="note">
+  <div class="wrap">
+    <strong>Work in progress.</strong> This site is being built in the open. No page on it has yet been reviewed by a clinician, every page says so, and nothing here is medical advice or a substitute for seeing someone about your knee. <a href="../about/status.html">What that means</a>
+  </div>
+</div>
+<header class="site-head">
+  <div class="wrap head-in">
+    <a class="brand" href="../index.html"><b>Knee</b><span>School</span></a>
+    <input class="nav-toggle" type="checkbox" id="navtoggle" aria-label="Show navigation">
+    <label class="burger" for="navtoggle">Menu</label>
+    <nav class="nav" aria-label="Main">
+      <ul>
+        <li class="has-menu">
+          <a class="top" href="../index.html#levels">Learn<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../index.html#levels">Find your level</a></li>
+            <li><a href="../levels/junior.html">Junior Academy</a></li>
+            <li><a href="../levels/patient.html">Patient Academy</a></li>
+            <li><a href="../levels/student.html">Student Academy</a></li>
+            <li><a href="../levels/mrcs.html">MRCS Academy</a></li>
+            <li><a href="../levels/frcs.html">FRCS (Tr and Orth) Academy</a></li>
+            <li><a href="../levels/fellowship.html">Fellowship Academy</a></li>
+            <li><a href="../levels/consultant.html">Consultant Masterclass</a></li>
+            <li><a href="../junior/ready-made-lesson-plans.html">For teachers and coaches</a></li>
+          </ul>
+        </li>
+        <li class="has-menu">
+          <a class="top" href="../encyclopaedia/index.html">Reference<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../encyclopaedia/index.html">The knee encyclopaedia</a></li>
+            <li><a href="../anatomy/index.html">The Anatomy Academy</a></li>
+            <li><a href="../biomechanics/index.html">The Biomechanics Academy</a></li>
+            <li><a href="../examination/index.html">The Clinical Examination Academy</a></li>
+            <li><a href="../imaging/index.html">The Imaging Academy</a></li>
+            <li><a href="../conditions/index.html">Conditions library</a></li>
+            <li><a href="../encyclopaedia/whole-body.html">Whole body factors</a></li>
+          </ul>
+        </li>
+        <li class="has-menu">
+          <a class="top" href="../practise/index.html">Practise<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../practise/index.html#questions">Question bank</a></li>
+            <li><a href="../practise/index.html#cases">Case library</a></li>
+            <li><a href="../practise/index.html#video">Video academy</a></li>
+            <li><a href="../practise/index.html#scores">Knee score centre</a></li>
+          </ul>
+        </li>
+        <li class="has-menu">
+          <a class="top" href="../about/standards.html">About<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../about/standards.html">How a page reaches this site</a></li>
+            <li><a href="../about/curriculum.html">Mapped to the UK training pathway</a></li>
+            <li><a href="../about/status.html">Build status</a></li>
+            <li><a href="#">Authors and reviewers</a></li>
+            <li><a href="#">References and sources</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </li>
+        <li><a class="start-link" href="../index.html#levels">Find your level</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumb"><a href="../index.html">KneeSchool</a><span>/</span><a href="index.html">Imaging Academy</a><span>/</span>Quantitative MRI</p>
+      <div class="hero-split">
+        <div>
+          <h1>Quantitative MRI</h1>
+          <p class="who">Page 5.18.1 &middot; Advanced Imaging &middot; imaging page</p>
+          <p class="lede">Imaging that returns a number with units rather than a picture, and the reason almost none of those numbers travels between departments.</p>
+        </div>
+        <div>
+          <div class="status"><b>Pipeline status.</b> Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band dark">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>The same topic at 4 depths</h2>
+        <p class="lede">Each tier deepens the one below it and never repeats it. Choose the level you want.</p>
+      </div>
+      <div class="dial dial-article">
+        <div class="dial-head">
+          <h2>Quantitative MRI</h2>
+          <small>Choose a depth</small>
+        </div>
+        <input type="radio" name="depth" id="t0" checked>
+        <input type="radio" name="depth" id="t1">
+        <input type="radio" name="depth" id="t2">
+        <input type="radio" name="depth" id="t3">
+        <div class="dial-tabs">
+          <label for="t0">Student</label>
+          <label for="t1">MRCS</label>
+          <label for="t2">FRCS</label>
+          <label for="t3">Fellow</label>
+        </div>
+        <div class="dial-body">
+          <div class="dial-panel p0">
+            <h3>For Medical Students</h3>
+            <h4>What It Shows</h4>
+            <p>Conventional magnetic resonance imaging produces a signal whose brightness is relative, so a reader compares one structure with another in the same image. 5.2.12 covers the basic principles.</p>
+            <p>Quantitative magnetic resonance imaging measures a physical property of the tissue and reports it as a number with units. 5.2.21 covers the advanced MRI techniques.</p>
+            <p>It matters because a number can be compared with the same knee a year later, and a brightness cannot. 5.20.1 covers structured reporting.</p>
+            <h4>How It Is Acquired</h4>
+            <p>Acquire a series of images with one parameter varied, then fit a curve to the signal at each point. 5.2.12 covers the basic principles.</p>
+            <p>Use the same scanner, coil and sequence for every study that will be compared. 5.5.1 covers the standard protocol.</p>
+            <p>Record the post-processing, because the fitting method changes the value. 5.2.23 covers the reconstruction.</p>
+            <p>Define the region measured, since the value depends on where it was taken. 5.11.1 covers the normal cartilage.</p>
+            <p>State what the value cannot be compared with. 5.20.8 covers common reporting errors.</p>
+            <h4>What Normal Looks Like</h4>
+            <p>A value reported with its units, its sequence and its region. 5.20.1 covers structured reporting.</p>
+            <p>Values consistent across repeat scans on the same scanner. 5.5.1 covers the standard protocol.</p>
+            <p>A spatial pattern across the tissue rather than one figure for the whole structure. 5.11.1 covers the normal cartilage.</p>
+            <p>A reference range stated as belonging to that site and that protocol. 5.21.3 covers the cartilage imaging literature.</p>
+            <h4>What Abnormal Looks Like</h4>
+            <p>A value shifted from the site's own range in a defined region. 5.11.2 covers chondral defects.</p>
+            <p>A spatial pattern of change where the surface still looks intact. 5.18.2 covers the T2 mapping.</p>
+            <p>A value quoted with no sequence, no site and no processing method. 5.20.8 covers common reporting errors.</p>
+            <p>A change between two studies acquired on different scanners, which measures the scanners. 5.5.1 covers the standard protocol.</p>
+            <div class="klp">
+              <h4>Key Learning Points</h4>
+              <ul><li>Conventional signal brightness is relative.</li><li>A quantitative measure reports a number with units.</li><li>The value depends on scanner, sequence and processing.</li><li>A pattern across the tissue says more than one figure.</li><li>A change across scanners measures the scanners.</li></ul>
+            </div>
+          </div>
+          <div class="dial-panel p1">
+            <h3>MRCS Level</h3>
+            <h4>How It Is Acquired</h4>
+            <p>In a viva the expected answer explains why a number is wanted and why it is hard to get.</p>
+            <p>The expected points are the varied parameter, the curve fit, the fixed hardware, the processing, and the defined region.</p>
+            <p>Say that the measurement is of a physical property rather than of a diagnosis. 5.2.12 covers the basic principles.</p>
+            <p>Say that comparability requires the same scanner. 5.5.1 covers the standard protocol.</p>
+            <p>Say that most of these measures are research tools at present. 5.1.8 covers the future of knee imaging.</p>
+            <h4>What Normal Looks Like</h4>
+            <p>The reasoning expected is that tissue properties vary with composition and organisation, so a measure sensitive to one of them detects change before the structure fails. 5.11.1 covers the normal cartilage.</p>
+            <p>The same sensitivity makes the measure respond to loading, hydration and time of day, which is noise in a clinic and signal in a study. 5.18.5 covers weight-bearing MRI.</p>
+            <p>Fitting a curve to a few measurements amplifies noise, so the value carries an uncertainty that is rarely reported beside it. 5.2.19 covers the artefacts.</p>
+            <p>A spatial map is more robust than a single value, because a pattern survives a scaling error that a number does not. 5.18.2 covers the T2 mapping.</p>
+            <h4>How Good It Is</h4>
+            <p>Quantitative magnetic resonance imaging is the best available way to detect tissue change before structural failure and is not yet a clinic measurement.</p>
+            <p>Its best contribution is within one study on one scanner, where it detects change conventional imaging cannot. 5.21.3 covers the cartilage imaging literature.</p>
+            <p>It is limited by variation between scanners, by sensitivity to conditions unrelated to disease, and by the absence of agreed reference ranges. 5.1.8 covers the future of knee imaging.</p>
+            <p>No figures appear for accuracy on this page, under decision 028, and no relaxation values, reference ranges or reproducibility statistics appear either: those are published quantities tied to particular scanners and this environment cannot check them.</p>
+            <div class="klp">
+              <h4>Key Learning Points</h4>
+              <ul><li>A composition sensitive measure detects change before failure.</li><li>The same sensitivity responds to loading and hydration.</li><li>Curve fitting carries an uncertainty rarely reported.</li><li>A spatial map survives a scaling error.</li><li>The measure works within a study rather than across clinics.</li></ul>
+            </div>
+          </div>
+          <div class="dial-panel p2">
+            <h3>FRCS Level</h3>
+            <h4>How Good It Is</h4>
+            <p>At decision level none of these measures changes an operative decision today, and saying so is more useful than listing them. 5.1.3 covers choosing the correct investigation.</p>
+            <p>They change trial design, because an outcome measure that detects change early shortens a study. 5.1.7 covers evidence-based imaging.</p>
+            <p>They will reach the clinic through standardisation rather than through better physics. 5.1.8 covers the future of knee imaging.</p>
+            <p>A value in a referral letter from a research study should not be read as a clinical result. 5.20.8 covers common reporting errors.</p>
+            <p>The cost and the scanner time are real and fall on a service with queues for conventional studies. 5.1.5 covers the cost-effectiveness of imaging.</p>
+            <h4>Where It Misleads</h4>
+            <p>The commonest error is reading a number as more objective than a description. 5.20.1 covers structured reporting.</p>
+            <p>A value from one site is compared with a published range from another. 5.21.3 covers the cartilage imaging literature.</p>
+            <p>A change over time is attributed to the knee when the scanner was upgraded. 5.5.1 covers the standard protocol.</p>
+            <p>A small region measured in a thin tissue is dominated by partial volume. 5.5.7 covers the cartilage.</p>
+            <p>A measure sensitive to water is read as a measure of structure. 5.13.1 covers bone marrow oedema.</p>
+            <div class="klp">
+              <h4>Key Learning Points</h4>
+              <ul><li>A number is not more objective than a description.</li><li>A published range belongs to the site that produced it.</li><li>A scanner upgrade looks like disease progression.</li><li>Partial volume dominates a small region in thin tissue.</li><li>Water sensitivity is read as structural information.</li></ul>
+            </div>
+          </div>
+          <div class="dial-panel p3">
+            <h3>Fellowship Level</h3>
+            <h4>Where It Misleads</h4>
+            <p>At fellowship level these values arrive in research reports and industry material, presented as established measurements. 5.21.8 covers the future directions.</p>
+            <p>A measure validated against histology in a small series is presented as validated. 5.1.7 covers evidence-based imaging.</p>
+            <p>Cross sectional differences between groups are presented as within patient sensitivity to change, which is a different property. 5.21.5 covers the osteoarthritis imaging literature.</p>
+            <p>Repaired or grafted tissue has properties unlike native tissue, so a native reference range does not apply to it. 5.11.8 covers the cartilage repair procedures.</p>
+            <p>Automated pipelines produce these maps now, which removes the operator variability and leaves the scanner variability untouched. 5.18.8 covers artificial intelligence in imaging.</p>
+            <p>The honest position is that the physics works, the measurement does not travel, and standardisation rather than discovery is what stands between these techniques and use. 5.1.8 covers the future of knee imaging.</p>
+            <div class="klp">
+              <h4>Key Learning Points</h4>
+              <ul><li>Validation in a small series is presented as validation.</li><li>Group differences are not within patient sensitivity.</li><li>A native reference range does not apply to repaired tissue.</li><li>Automation removes operator variability and not scanner variability.</li><li>Standardisation rather than discovery is the obstacle.</li></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band wrap">
+    <div class="sec-head">
+      <h2>Explore Further</h2>
+      <p class="lede">Where this topic came from and where it goes next in the spiral.</p>
+    </div>
+    <ul class="explore">
+        <li><span class="pid">5.18.2</span><a href="t2-mapping.html">T2 Mapping</a></li>
+        <li><span class="pid">5.18.3</span><a href="t1-rho-imaging.html">T1 Rho Imaging</a></li>
+        <li><span class="pid">5.2.21</span><a href="advanced-mri-techniques.html">Advanced MRI Techniques</a></li>
+        <li><span class="pid">5.1.8</span><a href="future-of-knee-imaging.html">Future of Knee Imaging</a></li>
+        <li><span class="pid">5.21.3</span><span class="pending">Cartilage Imaging Literature</span></li>
+        <li><span class="pid">5.18.8</span><a href="artificial-intelligence-in-imaging.html">Artificial Intelligence in Imaging</a></li>
+    </ul>
+  </section>
+
+  <section class="band wrap" style="padding-top:0">
+    <div class="sec-head">
+      <h2>References</h2>
+    </div>
+    <div class="prose refs">
+      <p>No reference list is attached to this draft. Evidence verification has not run, because source retrieval was unavailable at generation time. Under the Operations Handbook a missing reference is acceptable and an invented one is a critical failure, so nothing has been cited and no citation marker appears in the text. This page carries no diagnostic accuracy figure, which is decision 028 rather than an omission: the comparative standing of the modalities is standard teaching and a specific sensitivity written from memory is the same class of claim as an invented citation, so ACC-001 refuses the number and the page states the comparison. A reviewer with the literature can add the figures into How Good It Is without restructuring the page. Any measurement here, including a sequence parameter, an angle or a millimetre, is written from standard teaching, has not been checked, and is registered under decision 006 in pipeline/config/figures with a verification state of UNVERIFIED_FROM_MEMORY.</p>
+    </div>
+    <p class="safety"><b>Safety.</b> KneeSchool is educational and does not give individual medical advice. Seek urgent assessment for a knee that cannot bear weight after an injury, a hot swollen knee with a fever, or new numbness, weakness or coldness in the leg or foot.</p>
+  </section>
+
+</main>
+
+<footer class="site-foot" id="about">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h3>Learn</h3>
+        <ul>
+          <li><a href="../levels/junior.html">Junior Academy</a></li>
+          <li><a href="../levels/patient.html">Patient Academy</a></li>
+          <li><a href="../levels/student.html">Student Academy</a></li>
+          <li><a href="../levels/mrcs.html">MRCS Academy</a></li>
+          <li><a href="../levels/frcs.html">FRCS (Tr and Orth) Academy</a></li>
+          <li><a href="../levels/fellowship.html">Fellowship Academy</a></li>
+          <li><a href="../levels/consultant.html">Consultant Masterclass</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Reference</h3>
+        <ul>
+          <li><a href="../encyclopaedia/index.html">The knee encyclopaedia</a></li>
+          <li><a href="../conditions/index.html">Conditions library</a></li>
+          <li><a href="../encyclopaedia/whole-body.html">Whole body factors</a></li>
+          <li><a href="../practise/index.html">Practise and test</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Clinical care</h3>
+        <ul>
+          <li><a href="https://www.chinmaygupte.com/">Consultant clinic</a></li>
+          <li><a href="#">Imaging and injections</a></li>
+          <li><a href="#">Rehabilitation programmes</a></li>
+          <li><a href="#">Braces and recovery products</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>About</h3>
+        <ul>
+          <li><a href="../about/standards.html">How a page reaches this site</a></li>
+          <li><a href="../about/curriculum.html">Mapped to the UK training pathway</a></li>
+          <li><a href="../levels/junior.html">For teachers and coaches</a></li>
+          <li><a href="#">Authors and reviewers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <p>KneeSchool is educational. It does not give individual medical advice and it does not replace assessment by a clinician. Seek urgent care for a hot, swollen knee with fever, a knee that cannot bear weight after injury, or new numbness in the leg.</p>
+      <p>Content written for school age learners carries no advertising and no product placement.</p>
+      <p>&copy; 2026 KneeSchool. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
