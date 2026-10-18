@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dynamic MRI | KneeSchool</title>
+<meta name="description" content="Imaging through movement, which records a slow deliberate motion rather than the fast one that fails.">
+<meta name="theme-color" content="#0e2b22">
+
+<link rel="canonical" href="https://kneeschool.com/imaging/dynamic-mri.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css?v=e50d4cd3">
+</head>
+<body>
+<style>
+.dial-tabs{grid-template-columns:repeat(4,1fr)}
+#t0:checked ~ .dial-tabs label[for=t0]{background:var(--gold-pale);border-color:var(--gold-pale);color:var(--green-deep);font-weight:600}
+#t0:checked ~ .dial-body .p0{display:block}
+#t0:focus-visible ~ .dial-tabs label[for=t0]{outline:3px solid var(--gold);outline-offset:2px}
+#t1:checked ~ .dial-tabs label[for=t1]{background:var(--gold-pale);border-color:var(--gold-pale);color:var(--green-deep);font-weight:600}
+#t1:checked ~ .dial-body .p1{display:block}
+#t1:focus-visible ~ .dial-tabs label[for=t1]{outline:3px solid var(--gold);outline-offset:2px}
+#t2:checked ~ .dial-tabs label[for=t2]{background:var(--gold-pale);border-color:var(--gold-pale);color:var(--green-deep);font-weight:600}
+#t2:checked ~ .dial-body .p2{display:block}
+#t2:focus-visible ~ .dial-tabs label[for=t2]{outline:3px solid var(--gold);outline-offset:2px}
+#t3:checked ~ .dial-tabs label[for=t3]{background:var(--gold-pale);border-color:var(--gold-pale);color:var(--green-deep);font-weight:600}
+#t3:checked ~ .dial-body .p3{display:block}
+#t3:focus-visible ~ .dial-tabs label[for=t3]{outline:3px solid var(--gold);outline-offset:2px}
+</style>
+<div class="build-notice" role="note">
+  <div class="wrap">
+    <strong>Work in progress.</strong> This site is being built in the open. No page on it has yet been reviewed by a clinician, every page says so, and nothing here is medical advice or a substitute for seeing someone about your knee. <a href="../about/status.html">What that means</a>
+  </div>
+</div>
+<header class="site-head">
+  <div class="wrap head-in">
+    <a class="brand" href="../index.html"><b>Knee</b><span>School</span></a>
+    <input class="nav-toggle" type="checkbox" id="navtoggle" aria-label="Show navigation">
+    <label class="burger" for="navtoggle">Menu</label>
+    <nav class="nav" aria-label="Main">
+      <ul>
+        <li class="has-menu">
+          <a class="top" href="../index.html#levels">Learn<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../index.html#levels">Find your level</a></li>
+            <li><a href="../levels/junior.html">Junior Academy</a></li>
+            <li><a href="../levels/patient.html">Patient Academy</a></li>
+            <li><a href="../levels/student.html">Student Academy</a></li>
+            <li><a href="../levels/mrcs.html">MRCS Academy</a></li>
+            <li><a href="../levels/frcs.html">FRCS (Tr and Orth) Academy</a></li>
+            <li><a href="../levels/fellowship.html">Fellowship Academy</a></li>
+            <li><a href="../levels/consultant.html">Consultant Masterclass</a></li>
+            <li><a href="../junior/ready-made-lesson-plans.html">For teachers and coaches</a></li>
+          </ul>
+        </li>
+        <li class="has-menu">
+          <a class="top" href="../encyclopaedia/index.html">Reference<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../encyclopaedia/index.html">The knee encyclopaedia</a></li>
+            <li><a href="../anatomy/index.html">The Anatomy Academy</a></li>
+            <li><a href="../biomechanics/index.html">The Biomechanics Academy</a></li>
+            <li><a href="../examination/index.html">The Clinical Examination Academy</a></li>
+            <li><a href="../imaging/index.html">The Imaging Academy</a></li>
+            <li><a href="../conditions/index.html">Conditions library</a></li>
+            <li><a href="../encyclopaedia/whole-body.html">Whole body factors</a></li>
+          </ul>
+        </li>
+        <li class="has-menu">
+          <a class="top" href="../practise/index.html">Practise<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../practise/index.html#questions">Question bank</a></li>
+            <li><a href="../practise/index.html#cases">Case library</a></li>
+            <li><a href="../practise/index.html#video">Video academy</a></li>
+            <li><a href="../practise/index.html#scores">Knee score centre</a></li>
+          </ul>
+        </li>
+        <li class="has-menu">
+          <a class="top" href="../about/standards.html">About<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../about/standards.html">How a page reaches this site</a></li>
+            <li><a href="../about/curriculum.html">Mapped to the UK training pathway</a></li>
+            <li><a href="../about/status.html">Build status</a></li>
+            <li><a href="#">Authors and reviewers</a></li>
+            <li><a href="#">References and sources</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </li>
+        <li><a class="start-link" href="../index.html#levels">Find your level</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumb"><a href="../index.html">KneeSchool</a><span>/</span><a href="index.html">Imaging Academy</a><span>/</span>Dynamic MRI</p>
+      <div class="hero-split">
+        <div>
+          <h1>Dynamic MRI</h1>
+          <p class="who">Page 5.18.6 &middot; Advanced Imaging &middot; imaging page</p>
+          <p class="lede">Imaging through movement, which records a slow deliberate motion rather than the fast one that fails.</p>
+        </div>
+        <div>
+          <div class="status"><b>Pipeline status.</b> Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band dark">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>The same topic at 4 depths</h2>
+        <p class="lede">Each tier deepens the one below it and never repeats it. Choose the level you want.</p>
+      </div>
+      <div class="dial dial-article">
+        <div class="dial-head">
+          <h2>Dynamic MRI</h2>
+          <small>Choose a depth</small>
+        </div>
+        <input type="radio" name="depth" id="t0" checked>
+        <input type="radio" name="depth" id="t1">
+        <input type="radio" name="depth" id="t2">
+        <input type="radio" name="depth" id="t3">
+        <div class="dial-tabs">
+          <label for="t0">Student</label>
+          <label for="t1">MRCS</label>
+          <label for="t2">FRCS</label>
+          <label for="t3">Fellow</label>
+        </div>
+        <div class="dial-body">
+          <div class="dial-panel p0">
+            <h3>For Medical Students</h3>
+            <h4>What It Shows</h4>
+            <p>Dynamic magnetic resonance imaging acquires a series of images while the knee moves. 5.2.18 covers the gradient echo imaging.</p>
+            <p>The movement is slow and often repeated, and the images are built across it. 5.2.12 covers the basic principles.</p>
+            <p>It matters because the failures that bring patients to clinic happen during movement, and a static study records a posture. 3.12.1 covers patellar tracking.</p>
+            <h4>How It Is Acquired</h4>
+            <p>Use a fast sequence and accept the resolution that the speed costs. 5.2.18 covers the gradient echo imaging.</p>
+            <p>Ask for a slow controlled movement through the available range. 3.3.8 covers the changes throughout flexion.</p>
+            <p>Repeat the movement where the acquisition is built across cycles. 5.2.19 covers the artefacts.</p>
+            <p>Record whether the movement was loaded or unloaded. 5.18.5 covers weight-bearing MRI.</p>
+            <p>Record the range covered, because it is narrower than the clinical one. 5.20.1 covers structured reporting.</p>
+            <h4>What Normal Looks Like</h4>
+            <p>A patella engaging in the groove early in flexion. 3.12.1 covers patellar tracking.</p>
+            <p>Smooth tracking with no lateral deviation. 4.15.6 covers dynamic tracking.</p>
+            <p>Menisci moving with the tibia through the range. 3.6.1 covers the functions of the meniscus.</p>
+            <p>Tibiofemoral contact moving posteriorly with flexion. 3.3.2 covers the roll and glide mechanisms.</p>
+            <h4>What Abnormal Looks Like</h4>
+            <p>A lateral deviation of the patella early in flexion. 5.12.3 covers patellar tilt.</p>
+            <p>Delayed engagement in a dysplastic groove. 5.12.1 covers trochlear dysplasia.</p>
+            <p>Abnormal meniscal movement alongside a root tear. 5.6.9 covers root tears.</p>
+            <p>A movement so slow that the abnormality never appears. 4.15.2 covers the J sign.</p>
+            <div class="klp">
+              <h4>Key Learning Points</h4>
+              <ul><li>Images are acquired through a slow repeated movement.</li><li>Speed costs resolution.</li><li>The range covered is narrower than the clinical one.</li><li>The clinical failure is faster than the acquisition.</li><li>Whether the movement was loaded has to be recorded.</li></ul>
+            </div>
+          </div>
+          <div class="dial-panel p1">
+            <h3>MRCS Level</h3>
+            <h4>How It Is Acquired</h4>
+            <p>In a viva the expected answer names the trade between speed and resolution.</p>
+            <p>The expected points are the fast sequence, the slow movement, the repeated cycles, the loading, and the range covered.</p>
+            <p>Say that resolution and speed trade directly. 5.2.18 covers the gradient echo imaging.</p>
+            <p>Say that the imaged movement is not the symptomatic one. 4.15.6 covers dynamic tracking.</p>
+            <p>Say that the examination observes the real movement and the scan does not. 4.15.2 covers the J sign.</p>
+            <h4>What Abnormal Looks Like</h4>
+            <p>The reasoning expected is that patellar instability occurs rapidly near extension under load, while a dynamic study is slow, often unloaded and limited in range, so the mechanism it images is a different one. 5.12.4 covers patellar subluxation.</p>
+            <p>Ultrasound observes the same movement in real time through a limited view, so the two techniques fail in opposite ways. 5.4.14 covers patellar tracking.</p>
+            <p>Building an acquisition across repeated cycles assumes the cycles are identical, which a symptomatic knee does not guarantee. 5.2.19 covers the artefacts.</p>
+            <p>A normal dynamic study therefore excludes very little, which is the conclusion the static patellofemoral pages reach as well. 5.12.4 covers patellar subluxation.</p>
+            <h4>How Good It Is</h4>
+            <p>Dynamic magnetic resonance imaging is the only cross sectional technique that images the knee moving, and it images a movement the patient does not complain about.</p>
+            <p>Its best contribution is tracking through early flexion, where the groove engages. 3.12.1 covers patellar tracking.</p>
+            <p>It is limited by resolution, by the slow movement, by the narrow range, by the usual absence of load, and by availability. 5.19.9 covers the clinical translation.</p>
+            <p>No figures appear for accuracy on this page, under decision 028, and no frame rates, resolutions or angular ranges appear either: those are protocol quantities tied to particular implementations and this environment cannot check them.</p>
+            <div class="klp">
+              <h4>Key Learning Points</h4>
+              <ul><li>Resolution and speed trade directly.</li><li>The imaged mechanism is not the symptomatic one.</li><li>Ultrasound and this technique fail in opposite ways.</li><li>Repeated cycle acquisition assumes identical cycles.</li><li>A normal study excludes very little.</li></ul>
+            </div>
+          </div>
+          <div class="dial-panel p2">
+            <h3>FRCS Level</h3>
+            <h4>How Good It Is</h4>
+            <p>At decision level this rarely changes a plan and occasionally settles a disagreement between examination and static imaging. 5.1.3 covers choosing the correct investigation.</p>
+            <p>A patient with instability and normal static measurements is the case for it. 5.16.4 covers the TT-TG measurement.</p>
+            <p>The apprehension test and the observed J sign still carry more information about the behaviour. 4.15.3 covers the patellar apprehension test.</p>
+            <p>Combining it with load would address both mismatches at once and is not routinely available. 5.18.5 covers weight-bearing MRI.</p>
+            <p>A normal study should be reported as not excluding the diagnosis. 5.20.8 covers common reporting errors.</p>
+            <h4>Where It Misleads</h4>
+            <p>The commonest error is reading a normal dynamic study as excluding instability. 5.12.4 covers patellar subluxation.</p>
+            <p>Low resolution is read as a normal appearance. 5.2.19 covers the artefacts.</p>
+            <p>An unloaded movement is reported as tracking. 5.18.5 covers weight-bearing MRI.</p>
+            <p>A narrow range is reported as the range. 3.3.8 covers the changes throughout flexion.</p>
+            <p>A movement the patient could perform is reported as the movement that fails. 4.15.6 covers dynamic tracking.</p>
+            <div class="klp">
+              <h4>Key Learning Points</h4>
+              <ul><li>A normal study does not exclude instability.</li><li>Low resolution is read as normal.</li><li>Unloaded movement is reported as tracking.</li><li>A narrow range is reported as the range.</li><li>The performed movement is not the failing one.</li></ul>
+            </div>
+          </div>
+          <div class="dial-panel p3">
+            <h3>Fellowship Level</h3>
+            <h4>Where It Misleads</h4>
+            <p>At fellowship level the study arrives having been requested to settle an argument it cannot settle. 5.1.6 covers imaging pitfalls.</p>
+            <p>Implementations differ in speed, range and loading, so studies from two centres are not comparable. 5.18.1 covers the quantitative MRI.</p>
+            <p>A patient who guards during the acquisition produces a normal study for that reason alone. 4.15.3 covers the patellar apprehension test.</p>
+            <p>The alternative is cheaper and already available: observe the knee and record what you see. 4.1.8 covers the examination documentation.</p>
+            <p>Automated analysis of these series is being developed on movements that are already unrepresentative. 5.18.8 covers artificial intelligence in imaging.</p>
+            <p>The honest position is that this technique addresses a real gap and that the examination still addresses it better. 4.15.2 covers the J sign.</p>
+            <div class="klp">
+              <h4>Key Learning Points</h4>
+              <ul><li>The study is asked to settle what it cannot.</li><li>Implementations are not comparable.</li><li>Guarding during the acquisition produces a normal study.</li><li>The examination is cheaper and already available.</li><li>Automation is built on unrepresentative movements.</li></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band wrap">
+    <div class="sec-head">
+      <h2>Explore Further</h2>
+      <p class="lede">Where this topic came from and where it goes next in the spiral.</p>
+    </div>
+    <ul class="explore">
+        <li><span class="pid">5.12.4</span><a href="patellar-subluxation-imaging.html">Patellar Subluxation</a></li>
+        <li><span class="pid">5.18.5</span><a href="weight-bearing-mri.html">Weight-Bearing MRI</a></li>
+        <li><span class="pid">4.15.6</span><a href="../examination/dynamic-tracking.html">Dynamic Tracking</a></li>
+        <li><span class="pid">5.4.14</span><a href="us-patellar-tracking.html">Patellar Tracking</a></li>
+        <li><span class="pid">4.15.2</span><a href="../examination/j-sign.html">J Sign</a></li>
+        <li><span class="pid">5.19.9</span><span class="pending">Clinical Translation</span></li>
+    </ul>
+  </section>
+
+  <section class="band wrap" style="padding-top:0">
+    <div class="sec-head">
+      <h2>References</h2>
+    </div>
+    <div class="prose refs">
+      <p>No reference list is attached to this draft. Evidence verification has not run, because source retrieval was unavailable at generation time. Under the Operations Handbook a missing reference is acceptable and an invented one is a critical failure, so nothing has been cited and no citation marker appears in the text. This page carries no diagnostic accuracy figure, which is decision 028 rather than an omission: the comparative standing of the modalities is standard teaching and a specific sensitivity written from memory is the same class of claim as an invented citation, so ACC-001 refuses the number and the page states the comparison. A reviewer with the literature can add the figures into How Good It Is without restructuring the page. Any measurement here, including a sequence parameter, an angle or a millimetre, is written from standard teaching, has not been checked, and is registered under decision 006 in pipeline/config/figures with a verification state of UNVERIFIED_FROM_MEMORY.</p>
+    </div>
+    <p class="safety"><b>Safety.</b> KneeSchool is educational and does not give individual medical advice. Seek urgent assessment for a knee that cannot bear weight after an injury, a hot swollen knee with a fever, or new numbness, weakness or coldness in the leg or foot.</p>
+  </section>
+
+</main>
+
+<footer class="site-foot" id="about">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h3>Learn</h3>
+        <ul>
+          <li><a href="../levels/junior.html">Junior Academy</a></li>
+          <li><a href="../levels/patient.html">Patient Academy</a></li>
+          <li><a href="../levels/student.html">Student Academy</a></li>
+          <li><a href="../levels/mrcs.html">MRCS Academy</a></li>
+          <li><a href="../levels/frcs.html">FRCS (Tr and Orth) Academy</a></li>
+          <li><a href="../levels/fellowship.html">Fellowship Academy</a></li>
+          <li><a href="../levels/consultant.html">Consultant Masterclass</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Reference</h3>
+        <ul>
+          <li><a href="../encyclopaedia/index.html">The knee encyclopaedia</a></li>
+          <li><a href="../conditions/index.html">Conditions library</a></li>
+          <li><a href="../encyclopaedia/whole-body.html">Whole body factors</a></li>
+          <li><a href="../practise/index.html">Practise and test</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Clinical care</h3>
+        <ul>
+          <li><a href="https://www.chinmaygupte.com/">Consultant clinic</a></li>
+          <li><a href="#">Imaging and injections</a></li>
+          <li><a href="#">Rehabilitation programmes</a></li>
+          <li><a href="#">Braces and recovery products</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>About</h3>
+        <ul>
+          <li><a href="../about/standards.html">How a page reaches this site</a></li>
+          <li><a href="../about/curriculum.html">Mapped to the UK training pathway</a></li>
+          <li><a href="../levels/junior.html">For teachers and coaches</a></li>
+          <li><a href="#">Authors and reviewers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <p>KneeSchool is educational. It does not give individual medical advice and it does not replace assessment by a clinician. Seek urgent care for a hot, swollen knee with fever, a knee that cannot bear weight after injury, or new numbness in the leg.</p>
+      <p>Content written for school age learners carries no advertising and no product placement.</p>
+      <p>&copy; 2026 KneeSchool. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Artificial Intelligence in Imaging | KneeSchool</title>
+<meta name="description" content="Systems trained on what readers said, which are strongest where reading was already reliable and silent about their own uncertainty.">
+<meta name="theme-color" content="#0e2b22">
+
+<link rel="canonical" href="https://kneeschool.com/imaging/artificial-intelligence-in-imaging.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css?v=e50d4cd3">
+</head>
+<body>
+<style>
+.dial-tabs{grid-template-columns:repeat(4,1fr)}
+#t0:checked ~ .dial-tabs label[for=t0]{background:var(--gold-pale);border-color:var(--gold-pale);color:var(--green-deep);font-weight:600}
+#t0:checked ~ .dial-body .p0{display:block}
+#t0:focus-visible ~ .dial-tabs label[for=t0]{outline:3px solid var(--gold);outline-offset:2px}
+#t1:checked ~ .dial-tabs label[for=t1]{background:var(--gold-pale);border-color:var(--gold-pale);color:var(--green-deep);font-weight:600}
+#t1:checked ~ .dial-body .p1{display:block}
+#t1:focus-visible ~ .dial-tabs label[for=t1]{outline:3px solid var(--gold);outline-offset:2px}
+#t2:checked ~ .dial-tabs label[for=t2]{background:var(--gold-pale);border-color:var(--gold-pale);color:var(--green-deep);font-weight:600}
+#t2:checked ~ .dial-body .p2{display:block}
+#t2:focus-visible ~ .dial-tabs label[for=t2]{outline:3px solid var(--gold);outline-offset:2px}
+#t3:checked ~ .dial-tabs label[for=t3]{background:var(--gold-pale);border-color:var(--gold-pale);color:var(--green-deep);font-weight:600}
+#t3:checked ~ .dial-body .p3{display:block}
+#t3:focus-visible ~ .dial-tabs label[for=t3]{outline:3px solid var(--gold);outline-offset:2px}
+</style>
+<div class="build-notice" role="note">
+  <div class="wrap">
+    <strong>Work in progress.</strong> This site is being built in the open. No page on it has yet been reviewed by a clinician, every page says so, and nothing here is medical advice or a substitute for seeing someone about your knee. <a href="../about/status.html">What that means</a>
+  </div>
+</div>
+<header class="site-head">
+  <div class="wrap head-in">
+    <a class="brand" href="../index.html"><b>Knee</b><span>School</span></a>
+    <input class="nav-toggle" type="checkbox" id="navtoggle" aria-label="Show navigation">
+    <label class="burger" for="navtoggle">Menu</label>
+    <nav class="nav" aria-label="Main">
+      <ul>
+        <li class="has-menu">
+          <a class="top" href="../index.html#levels">Learn<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../index.html#levels">Find your level</a></li>
+            <li><a href="../levels/junior.html">Junior Academy</a></li>
+            <li><a href="../levels/patient.html">Patient Academy</a></li>
+            <li><a href="../levels/student.html">Student Academy</a></li>
+            <li><a href="../levels/mrcs.html">MRCS Academy</a></li>
+            <li><a href="../levels/frcs.html">FRCS (Tr and Orth) Academy</a></li>
+            <li><a href="../levels/fellowship.html">Fellowship Academy</a></li>
+            <li><a href="../levels/consultant.html">Consultant Masterclass</a></li>
+            <li><a href="../junior/ready-made-lesson-plans.html">For teachers and coaches</a></li>
+          </ul>
+        </li>
+        <li class="has-menu">
+          <a class="top" href="../encyclopaedia/index.html">Reference<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../encyclopaedia/index.html">The knee encyclopaedia</a></li>
+            <li><a href="../anatomy/index.html">The Anatomy Academy</a></li>
+            <li><a href="../biomechanics/index.html">The Biomechanics Academy</a></li>
+            <li><a href="../examination/index.html">The Clinical Examination Academy</a></li>
+            <li><a href="../imaging/index.html">The Imaging Academy</a></li>
+            <li><a href="../conditions/index.html">Conditions library</a></li>
+            <li><a href="../encyclopaedia/whole-body.html">Whole body factors</a></li>
+          </ul>
+        </li>
+        <li class="has-menu">
+          <a class="top" href="../practise/index.html">Practise<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../practise/index.html#questions">Question bank</a></li>
+            <li><a href="../practise/index.html#cases">Case library</a></li>
+            <li><a href="../practise/index.html#video">Video academy</a></li>
+            <li><a href="../practise/index.html#scores">Knee score centre</a></li>
+          </ul>
+        </li>
+        <li class="has-menu">
+          <a class="top" href="../about/standards.html">About<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../about/standards.html">How a page reaches this site</a></li>
+            <li><a href="../about/curriculum.html">Mapped to the UK training pathway</a></li>
+            <li><a href="../about/status.html">Build status</a></li>
+            <li><a href="#">Authors and reviewers</a></li>
+            <li><a href="#">References and sources</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </li>
+        <li><a class="start-link" href="../index.html#levels">Find your level</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumb"><a href="../index.html">KneeSchool</a><span>/</span><a href="index.html">Imaging Academy</a><span>/</span>Artificial Intelligence in Imaging</p>
+      <div class="hero-split">
+        <div>
+          <h1>Artificial Intelligence in Imaging</h1>
+          <p class="who">Page 5.18.8 &middot; Advanced Imaging &middot; imaging page</p>
+          <p class="lede">Systems trained on what readers said, which are strongest where reading was already reliable and silent about their own uncertainty.</p>
+        </div>
+        <div>
+          <div class="status"><b>Pipeline status.</b> Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band dark">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>The same topic at 4 depths</h2>
+        <p class="lede">Each tier deepens the one below it and never repeats it. Choose the level you want.</p>
+      </div>
+      <div class="dial dial-article">
+        <div class="dial-head">
+          <h2>Artificial Intelligence in Imaging</h2>
+          <small>Choose a depth</small>
+        </div>
+        <input type="radio" name="depth" id="t0" checked>
+        <input type="radio" name="depth" id="t1">
+        <input type="radio" name="depth" id="t2">
+        <input type="radio" name="depth" id="t3">
+        <div class="dial-tabs">
+          <label for="t0">Student</label>
+          <label for="t1">MRCS</label>
+          <label for="t2">FRCS</label>
+          <label for="t3">Fellow</label>
+        </div>
+        <div class="dial-body">
+          <div class="dial-panel p0">
+            <h3>For Medical Students</h3>
+            <h4>What It Shows</h4>
+            <p>These systems detect findings, measure structures and draft reports from the images. 5.20.1 covers structured reporting.</p>
+            <p>They are trained on labels that human readers produced, so they learn what readers said rather than what was there. 5.21.6 covers the artificial intelligence literature.</p>
+            <p>It matters because that training sets both their accuracy and their blind spots. 5.1.7 covers evidence-based imaging.</p>
+            <h4>How It Is Acquired</h4>
+            <p>Establish what the system was trained on, including which departments and which scanners. 5.5.1 covers the standard protocol.</p>
+            <p>Establish where the labels came from, whether from another reader or from an operative finding. 5.21.6 covers the artificial intelligence literature.</p>
+            <p>Establish what it was validated on and whether that set was independent. 5.1.7 covers evidence-based imaging.</p>
+            <p>Establish what it does not attempt, which is rarely stated as clearly as what it does. 5.20.8 covers common reporting errors.</p>
+            <p>Establish whether the output carries an uncertainty. 5.18.1 covers the quantitative MRI.</p>
+            <h4>What Normal Looks Like</h4>
+            <p>A stated training population with its scanners and protocols. 5.5.1 covers the standard protocol.</p>
+            <p>A validation set independent of the training set. 5.1.7 covers evidence-based imaging.</p>
+            <p>An output that marks what it could not assess. 5.20.1 covers structured reporting.</p>
+            <p>Performance reported by subgroup rather than as one figure. 5.21.6 covers the artificial intelligence literature.</p>
+            <h4>What Abnormal Looks Like</h4>
+            <p>A system deployed on scanners unlike those it was trained on. 5.5.1 covers the standard protocol.</p>
+            <p>Performance quoted as a single number for a whole joint. 5.21.6 covers the artificial intelligence literature.</p>
+            <p>An output with uniform confidence across easy and hard cases. 5.1.6 covers imaging pitfalls.</p>
+            <p>A measurement produced with no convention named. 5.16.4 covers the TT-TG measurement.</p>
+            <p>A complete report with nothing marked as unassessable. 5.20.8 covers common reporting errors.</p>
+            <div class="klp">
+              <h4>Key Learning Points</h4>
+              <ul><li>These systems learn what readers said.</li><li>The training population sets the blind spots.</li><li>Validation has to be independent of training.</li><li>Performance varies by subgroup.</li><li>An output should mark what it could not assess.</li></ul>
+            </div>
+          </div>
+          <div class="dial-panel p1">
+            <h3>MRCS Level</h3>
+            <h4>How It Is Acquired</h4>
+            <p>In a viva the expected answer asks what the system was trained on.</p>
+            <p>The expected points are the training population, the label reference, the independent validation, the stated scope, and the uncertainty.</p>
+            <p>Say that a label from a reader inherits that reader's variability. 5.20.8 covers common reporting errors.</p>
+            <p>Say that a system is strongest where readers already agreed. 5.21.6 covers the artificial intelligence literature.</p>
+            <p>Say that an operative reference beats a reader reference and is harder to obtain. 5.1.7 covers evidence-based imaging.</p>
+            <h4>What Abnormal Looks Like</h4>
+            <p>The reasoning expected is that a system trained on reader labels can at best reproduce the readers, so it performs best on the complete ACL tear and worst on the partial one, which is where readers disagreed. 5.20.3 covers reporting ACL injuries.</p>
+            <p>The same argument applies to cartilage grading, to meniscal tear classification, and to any finding whose definition varies. 5.20.5 covers reporting cartilage lesions.</p>
+            <p>Fixing the measurement rules removes variability without settling which convention is correct, so consistency improves and validity does not. 5.16.4 covers the TT-TG measurement.</p>
+            <p>The departments that supplied the training data supplied their reporting conventions with it, local phrasing included. 5.20.1 covers structured reporting.</p>
+            <h4>How Good It Is</h4>
+            <p>These systems are the best available way to make reading consistent and are no better than the readers who labelled their training data.</p>
+            <p>Their best contribution is consistency, triage, and the removal of the missing negative and the hedge. 5.20.8 covers common reporting errors.</p>
+            <p>They are limited by label quality, by the training population, by uniform confidence, and by being weakest exactly where reading was hardest. 5.21.6 covers the artificial intelligence literature.</p>
+            <p>No figures appear for accuracy on this page, under decision 028, and no performance statistics appear either: those are published quantities from particular datasets and this environment cannot check them. The restriction bites hardest here, since performance figures are the main claim made for these systems.</p>
+            <div class="klp">
+              <h4>Key Learning Points</h4>
+              <ul><li>A system can at best reproduce its labellers.</li><li>It is strongest where readers already agreed.</li><li>Fixing the rules improves consistency and not validity.</li><li>Training departments supply their conventions too.</li><li>It is weakest where reading was hardest.</li></ul>
+            </div>
+          </div>
+          <div class="dial-panel p2">
+            <h3>FRCS Level</h3>
+            <h4>How Good It Is</h4>
+            <p>At decision level nothing in a report should be acted on differently because a system produced it. 5.20.1 covers structured reporting.</p>
+            <p>The gain is in workflow: triage, measurement, comparison with priors, and completeness. 5.1.5 covers the cost-effectiveness of imaging.</p>
+            <p>A measurement produced automatically still needs its convention stated before it can be compared. 5.16.4 covers the TT-TG measurement.</p>
+            <p>A finding the system did not report is not a negative unless the system reports negatives. 5.20.8 covers common reporting errors.</p>
+            <p>The surgeon remains the last check, and that does not change because the report was drafted differently. 4.1.8 covers the examination documentation.</p>
+            <h4>Where It Misleads</h4>
+            <p>The commonest error is reading machine confidence as accuracy. 5.1.6 covers imaging pitfalls.</p>
+            <p>A complete report is read as a thorough study. 5.20.1 covers structured reporting.</p>
+            <p>Performance from the development dataset is assumed to hold locally. 5.21.6 covers the artificial intelligence literature.</p>
+            <p>Agreement between a system and a reader is counted as validation when both learned the same convention. 5.1.7 covers evidence-based imaging.</p>
+            <p>A system silent on a structure is read as having cleared it. 5.5.9 covers the ligaments.</p>
+            <div class="klp">
+              <h4>Key Learning Points</h4>
+              <ul><li>Machine confidence is read as accuracy.</li><li>Completeness is read as thoroughness.</li><li>Development performance is assumed to hold locally.</li><li>Agreement with a reader may be shared convention.</li><li>Silence is read as clearance.</li></ul>
+            </div>
+          </div>
+          <div class="dial-panel p3">
+            <h3>Fellowship Level</h3>
+            <h4>Where It Misleads</h4>
+            <p>At fellowship level these outputs arrive inside reports from other departments, usually unmarked as automated. 5.20.7 covers reporting the post-operative knee.</p>
+            <p>Post-operative knees, paediatric knees and revision cases are under-represented in training data and over-represented in a tertiary practice. 5.17.9 covers the revision arthroplasty.</p>
+            <p>A system updated between two studies of one patient makes the comparison a comparison of systems. 5.18.1 covers the quantitative MRI.</p>
+            <p>Automated measurement of the patellofemoral geometry inherits the convention problem and returns a number that looks settled. 5.16.4 covers the TT-TG measurement.</p>
+            <p>Trial outcomes read by an automated system are consistent, which improves the statistics without improving the truth. 5.1.7 covers evidence-based imaging.</p>
+            <p>The honest position is that these systems will change the workflow before they change the accuracy, and the accuracy they change will be in the easy cases. 5.21.6 covers the artificial intelligence literature.</p>
+            <div class="klp">
+              <h4>Key Learning Points</h4>
+              <ul><li>Automated output arrives unmarked inside reports.</li><li>Tertiary cases are under-represented in training data.</li><li>A system update makes a serial comparison meaningless.</li><li>An automated measurement looks settled and is not.</li><li>Workflow will change before accuracy does.</li></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band wrap">
+    <div class="sec-head">
+      <h2>Explore Further</h2>
+      <p class="lede">Where this topic came from and where it goes next in the spiral.</p>
+    </div>
+    <ul class="explore">
+        <li><span class="pid">5.21.6</span><span class="pending">Artificial Intelligence Literature</span></li>
+        <li><span class="pid">5.20.1</span><a href="structured-reporting.html">Structured Reporting</a></li>
+        <li><span class="pid">5.20.8</span><a href="common-reporting-errors.html">Common Reporting Errors</a></li>
+        <li><span class="pid">5.16.4</span><a href="tt-tg-measurement.html">TT-TG Measurement</a></li>
+        <li><span class="pid">3.16.6</span><a href="../biomechanics/artificial-intelligence-in-biomechanics.html">Artificial Intelligence</a></li>
+        <li><span class="pid">5.1.7</span><a href="evidence-based-imaging.html">Evidence-Based Imaging</a></li>
+    </ul>
+  </section>
+
+  <section class="band wrap" style="padding-top:0">
+    <div class="sec-head">
+      <h2>References</h2>
+    </div>
+    <div class="prose refs">
+      <p>No reference list is attached to this draft. Evidence verification has not run, because source retrieval was unavailable at generation time. Under the Operations Handbook a missing reference is acceptable and an invented one is a critical failure, so nothing has been cited and no citation marker appears in the text. This page carries no diagnostic accuracy figure, which is decision 028 rather than an omission: the comparative standing of the modalities is standard teaching and a specific sensitivity written from memory is the same class of claim as an invented citation, so ACC-001 refuses the number and the page states the comparison. A reviewer with the literature can add the figures into How Good It Is without restructuring the page. Any measurement here, including a sequence parameter, an angle or a millimetre, is written from standard teaching, has not been checked, and is registered under decision 006 in pipeline/config/figures with a verification state of UNVERIFIED_FROM_MEMORY.</p>
+    </div>
+    <p class="safety"><b>Safety.</b> KneeSchool is educational and does not give individual medical advice. Seek urgent assessment for a knee that cannot bear weight after an injury, a hot swollen knee with a fever, or new numbness, weakness or coldness in the leg or foot.</p>
+  </section>
+
+</main>
+
+<footer class="site-foot" id="about">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h3>Learn</h3>
+        <ul>
+          <li><a href="../levels/junior.html">Junior Academy</a></li>
+          <li><a href="../levels/patient.html">Patient Academy</a></li>
+          <li><a href="../levels/student.html">Student Academy</a></li>
+          <li><a href="../levels/mrcs.html">MRCS Academy</a></li>
+          <li><a href="../levels/frcs.html">FRCS (Tr and Orth) Academy</a></li>
+          <li><a href="../levels/fellowship.html">Fellowship Academy</a></li>
+          <li><a href="../levels/consultant.html">Consultant Masterclass</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Reference</h3>
+        <ul>
+          <li><a href="../encyclopaedia/index.html">The knee encyclopaedia</a></li>
+          <li><a href="../conditions/index.html">Conditions library</a></li>
+          <li><a href="../encyclopaedia/whole-body.html">Whole body factors</a></li>
+          <li><a href="../practise/index.html">Practise and test</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Clinical care</h3>
+        <ul>
+          <li><a href="https://www.chinmaygupte.com/">Consultant clinic</a></li>
+          <li><a href="#">Imaging and injections</a></li>
+          <li><a href="#">Rehabilitation programmes</a></li>
+          <li><a href="#">Braces and recovery products</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>About</h3>
+        <ul>
+          <li><a href="../about/standards.html">How a page reaches this site</a></li>
+          <li><a href="../about/curriculum.html">Mapped to the UK training pathway</a></li>
+          <li><a href="../levels/junior.html">For teachers and coaches</a></li>
+          <li><a href="#">Authors and reviewers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <p>KneeSchool is educational. It does not give individual medical advice and it does not replace assessment by a clinician. Seek urgent care for a hot, swollen knee with fever, a knee that cannot bear weight after injury, or new numbness in the leg.</p>
+      <p>Content written for school age learners carries no advertising and no product placement.</p>
+      <p>&copy; 2026 KneeSchool. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
