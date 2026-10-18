@@ -4225,6 +4225,48 @@
       "parent": "Imaging Academy|index.html",
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
+    },
+    "5.13.1": {
+      "out": "imaging/bone-marrow-oedema.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.13.2": {
+      "out": "imaging/stress-reactions.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.13.3": {
+      "out": "imaging/stress-fractures.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.13.4": {
+      "out": "imaging/insufficiency-fractures.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.13.5": {
+      "out": "imaging/osteonecrosis.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.13.6": {
+      "out": "imaging/transient-osteoporosis.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.13.7": {
+      "out": "imaging/bone-tumours.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
     }
   },
   "withheld": {
