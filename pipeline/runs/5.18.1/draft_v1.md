@@ -26,8 +26,8 @@ signal at each point. 5.2.12 covers the basic principles.
 Use the same scanner, coil and sequence for every study that will be compared.
 5.5.1 covers the standard protocol.
 
-Record the post-processing, because the fitting method changes the value. 5.2.23
-covers the reconstruction.
+Record the post-processing, because the fitting method changes the value.
+5.2.23 covers the reconstruction.
 
 Define the region measured, since the value depends on where it was taken.
 5.11.1 covers the normal cartilage.
@@ -54,14 +54,14 @@ covers the cartilage imaging literature.
 A value shifted from the site's own range in a defined region. 5.11.2 covers
 chondral defects.
 
-A spatial pattern of change where the surface still looks intact. 5.18.2 covers
-the T2 mapping.
+A spatial pattern of change where the surface still looks intact. 5.18.2
+covers the T2 mapping.
 
-A value quoted with no sequence, no site and no processing method. 5.20.8 covers
-common reporting errors.
+A value quoted with no sequence, no site and no processing method. 5.20.8
+covers common reporting errors.
 
-A change between two studies acquired on different scanners, which measures the
-scanners. 5.5.1 covers the standard protocol.
+A change between two studies acquired on different scanners, which measures
+the scanners. 5.5.1 covers the standard protocol.
 
 ### Key Learning Points
 
@@ -87,17 +87,17 @@ Say that the measurement is of a physical property rather than of a diagnosis.
 Say that comparability requires the same scanner. 5.5.1 covers the standard
 protocol.
 
-Say that most of these measures are research tools at present. 5.19.9 covers the
-clinical translation.
+Say that most of these measures are research tools at present. 5.1.8 covers
+the future of knee imaging.
 
 ### What Normal Looks Like
 
 The reasoning expected is that tissue properties vary with composition and
 organisation, so a measure sensitive to one of them detects change before the
-structure fails. 5.19.2 covers the collagen architecture.
+structure fails. 5.11.1 covers the normal cartilage.
 
-The same sensitivity makes the measure respond to loading, hydration and time of
-day, which is noise in a clinic and signal in a study. 5.18.5 covers
+The same sensitivity makes the measure respond to loading, hydration and time
+of day, which is noise in a clinic and signal in a study. 5.18.5 covers
 weight-bearing MRI.
 
 Fitting a curve to a few measurements amplifies noise, so the value carries an
@@ -116,13 +116,13 @@ change conventional imaging cannot. 5.21.3 covers the cartilage imaging
 literature.
 
 It is limited by variation between scanners, by sensitivity to conditions
-unrelated to disease, and by the absence of agreed reference ranges. 5.19.9
-covers the clinical translation.
+unrelated to disease, and by the absence of agreed reference ranges. 5.1.8
+covers the future of knee imaging.
 
 No figures appear for accuracy on this page, under decision 028, and no
-relaxation values, reference ranges or reproducibility statistics appear either:
-those are published quantities tied to particular scanners and this environment
-cannot check them.
+relaxation values, reference ranges or reproducibility statistics appear
+either: those are published quantities tied to particular scanners and this
+environment cannot check them.
 
 ### Key Learning Points
 
@@ -144,7 +144,7 @@ They change trial design, because an outcome measure that detects change early
 shortens a study. 5.1.7 covers evidence-based imaging.
 
 They will reach the clinic through standardisation rather than through better
-physics. 5.19.9 covers the clinical translation.
+physics. 5.1.8 covers the future of knee imaging.
 
 A value in a referral letter from a research study should not be read as a
 clinical result. 5.20.8 covers common reporting errors.
@@ -200,9 +200,9 @@ Automated pipelines produce these maps now, which removes the operator
 variability and leaves the scanner variability untouched. 5.18.8 covers
 artificial intelligence in imaging.
 
-The honest position is that the physics works, the measurement does not travel,
-and standardisation rather than discovery is what stands between these
-techniques and use. 5.19.9 covers the clinical translation.
+The honest position is that the physics works, the measurement does not
+travel, and standardisation rather than discovery is what stands between these
+techniques and use. 5.1.8 covers the future of knee imaging.
 
 ### Key Learning Points
 
@@ -217,7 +217,7 @@ techniques and use. 5.19.9 covers the clinical translation.
 - [[5.18.2 | T2 Mapping]]
 - [[5.18.3 | T1 Rho Imaging]]
 - [[5.2.21 | Advanced MRI Techniques]]
-- [[5.19.9 | Clinical Translation]]
+- [[5.1.8 | Future of Knee Imaging]]
 - [[5.21.3 | Cartilage Imaging Literature]]
 - [[5.18.8 | Artificial Intelligence in Imaging]]
 
@@ -235,4 +235,5 @@ page states the comparison. A reviewer with the literature can add the figures
 into How Good It Is without restructuring the page. Any measurement here,
 including a sequence parameter, an angle or a millimetre, is written from
 standard teaching, has not been checked, and is registered under decision 006
-in pipeline/config/figures with a verification state of UNVERIFIED_FROM_MEMORY.
+in pipeline/config/figures with a verification state of
+UNVERIFIED_FROM_MEMORY.

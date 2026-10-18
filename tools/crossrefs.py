@@ -37,6 +37,86 @@ STOP = set("the a an and of or in to for on at is are be with your you it its as
            "from by what how why when".split())
 
 
+def render_sources():
+    """page_id to the markdown file the site publishes for it.
+
+    Every check in this file read draft_v1.md until 18 October 2026. The site
+    publishes the file the render target names, which is styled_v1.md, and for
+    thirteen pages the two differ because the style stage edited the text. So a
+    cross link or a prose reference introduced at the style stage was invisible
+    to every check here: 5.1.8 carried four references into the held chapter
+    5.19 in its published text and none in its draft, and this gate reported it
+    clean. Check what is published; fall back to the draft for a page that has
+    no render target yet.
+    """
+    path = os.path.join(ROOT, "pipeline", "config", "render_targets.json")
+    with open(path, encoding="utf-8") as fh:
+        pages = json.load(fh).get("pages") or {}
+    return {pid: v.get("source") or "styled_v1.md" for pid, v in pages.items()}
+
+
+def source_text(runs, page_id, sources):
+    """The published markdown for a page, or the draft when it is unpublished."""
+    for name in (sources.get(page_id), "styled_v1.md", "draft_v1.md"):
+        if not name:
+            continue
+        path = os.path.join(runs, page_id, name)
+        if os.path.exists(path):
+            with open(path, encoding="utf-8") as fh:
+                return fh.read()
+    return None
+
+
+def withheld_and_published():
+    """The ids render_targets.json holds back, and the ids it publishes.
+
+    A held page is not coming soon and is not coming at all: the withheld block
+    records a client decision, not a backlog. So a published page that says
+    "5.19.9 covers the clinical translation" promises the reader a page nobody
+    will ever be able to open, and a cross link to one renders as a row that
+    goes nowhere. Neither is visible to the other gates: the architecture has
+    the page, so the id resolves and the label matches, and the renderer counts
+    the dead cross link as one unresolved link among several.
+
+    This was found on 18 October 2026, after chapter 5.18 was written leaning on
+    chapter 5.19 for the claim that the quantitative techniques are not yet
+    clinic ready. Chapter 5.19 had been held three days earlier. Thirty four
+    prose references and eight cross links pointed into it, and every gate
+    passed. The pre-existing count was twelve, in 5.1.6, 5.1.8, 5.12.6 and
+    0.6.1, so the hold had already left broken promises behind it and nothing
+    was looking.
+    """
+    path = os.path.join(ROOT, "pipeline", "config", "render_targets.json")
+    with open(path, encoding="utf-8") as fh:
+        data = json.load(fh)
+    return set(data.get("withheld") or {}), set(data.get("pages") or {})
+
+
+def withheld_references(runs, listing=True):
+    """Every reference, from a published page, into a page that is held."""
+    withheld, published = withheld_and_published()
+    sources = render_sources()
+    found = []
+    for page_id in sorted(published, key=lambda k: [int(x) for x in k.split(".")]):
+        text = source_text(runs, page_id, sources)
+        if text is None:
+            continue
+        body = text.partition("## References")[0]
+        for m in LINK.finditer(body):
+            pid = m.group(1).strip()
+            if pid in withheld:
+                found.append((page_id, pid, "cross link"))
+        for m in re.finditer(r"\b(\d+\.\d+\.\d+)\b", body):
+            if m.group(1) in withheld:
+                found.append((page_id, m.group(1), "prose reference"))
+    if listing:
+        for src_id, pid, kind in found:
+            print("%-9s -> %-8s %s into a held page" % (src_id, pid, kind))
+    print("%d published page(s) checked, %d reference(s) into a held page"
+          % (len(published), len(found)))
+    return found
+
+
 def titles():
     """page_id to title, and chapter_id to chapter name.
 
@@ -202,20 +282,31 @@ def main():
                     help="list every bare chapter or page reference in prose with the title "
                          "it resolves to, so a valid id pointing at the wrong chapter is "
                          "visible rather than hunted for")
+    ap.add_argument("--withheld-check", action="store_true",
+                    help="fail if any published page references a page the render "
+                         "targets hold back, in prose or in a cross link; a held page "
+                         "is a client decision rather than a backlog, so the reference "
+                         "promises a page that will never exist")
     ap.add_argument("--prose-check", action="store_true",
                     help="count the same references and exit non zero if any points at an "
                          "id the architecture does not have, without the full listing")
     args = ap.parse_args()
 
+    if args.withheld_check:
+        if withheld_references(args.runs):
+            sys.exit(1)
+        return
+
     known = titles()
+    sources = render_sources()
     problems = []
     checked = 0
     for page_id in sorted(os.listdir(args.runs)):
-        draft = os.path.join(args.runs, page_id, "draft_v1.md")
-        if not os.path.exists(draft):
+        if not os.path.isdir(os.path.join(args.runs, page_id)):
             continue
-        with open(draft) as fh:
-            text = fh.read()
+        text = source_text(args.runs, page_id, sources)
+        if text is None:
+            continue
         seen = {}
         for m in LINK.finditer(text):
             pid, label = m.group(1).strip(), m.group(2).strip()

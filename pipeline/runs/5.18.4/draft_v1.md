@@ -12,7 +12,7 @@ too fast for a conventional sequence to record. 5.2.12 covers the basic
 principles.
 
 Those tissues include the deep and calcified cartilage, the menisci, tendon,
-ligament and cortical bone. 5.19.2 covers the collagen architecture.
+ligament and cortical bone. 5.11.1 covers the normal cartilage.
 
 It matters because every conventional study shows these as dark, so their
 internal structure has never been part of routine reading. 5.5.10 covers the
@@ -23,30 +23,30 @@ tendons.
 Sample the signal almost immediately after excitation rather than after a
 conventional delay. 5.2.12 covers the basic principles.
 
-Use a subtraction approach, so the long signal tissues do not obscure the short
-ones. 5.2.16 covers the fat suppression.
+Use a subtraction approach, so the long signal tissues do not obscure the
+short ones. 5.2.16 covers the fat suppression.
 
-Accept a longer acquisition and a different artefact pattern from a conventional
-sequence. 5.2.19 covers the artefacts.
+Accept a longer acquisition and a different artefact pattern from a
+conventional sequence. 5.2.19 covers the artefacts.
 
 Image the structure of interest specifically, because the sequence is not a
 whole joint study. 5.5.1 covers the standard protocol.
 
-Expect no established normal appearance for most of these tissues. 5.19.9 covers
-the clinical translation.
+Expect no established normal appearance for most of these tissues. 5.1.8
+covers the future of knee imaging.
 
 ### What Normal Looks Like
 
 Signal where a conventional sequence shows none. 5.5.7 covers the cartilage.
 
-A layered appearance at the deep cartilage and the calcified zone. 5.11.1 covers
-the normal cartilage.
+A layered appearance at the deep cartilage and the calcified zone. 5.11.1
+covers the normal cartilage.
 
 Internal structure inside tendon and inside the meniscus. 5.5.8 covers the
 menisci.
 
-Cortical bone carrying signal rather than appearing as an absence. 5.5.6 covers
-the bones.
+Cortical bone carrying signal rather than appearing as an absence. 5.5.6
+covers the bones.
 
 ### What Abnormal Looks Like
 
@@ -59,8 +59,8 @@ Signal change inside a tendon that a conventional sequence could not show.
 Change in the calcified cartilage and the subchondral plate together. 5.11.7
 covers bone marrow lesions.
 
-An appearance with no published normal to compare it against, which is the usual
-situation here. 5.19.9 covers the clinical translation.
+An appearance with no published normal to compare it against, which is the
+usual situation here. 5.1.8 covers the future of knee imaging.
 
 ### Key Learning Points
 
@@ -80,27 +80,26 @@ new.
 The expected points are the immediate sampling, the subtraction, the target
 structures, the acquisition cost, and the absence of a reference.
 
-Say that a dark structure on a conventional sequence is not a structureless one.
-5.5.10 covers the tendons.
+Say that a dark structure on a conventional sequence is not a structureless
+one. 5.5.10 covers the tendons.
 
-Say that the osteochondral junction is the region this addresses. 5.11.5 covers
-osteochondral lesions.
+Say that the osteochondral junction is the region this addresses. 5.11.5
+covers osteochondral lesions.
 
-Say that interpretation rather than acquisition is the limiting step. 5.19.9
-covers the clinical translation.
+Say that interpretation rather than acquisition is the limiting step. 5.1.8
+covers the future of knee imaging.
 
 ### What Abnormal Looks Like
 
 The reasoning expected is that highly ordered collagen gives a very short
 signal, so the tissues with the most organised matrix are precisely the ones
-conventional imaging cannot characterise. 5.19.2 covers the collagen
-architecture.
+conventional imaging cannot characterise. 5.11.1 covers the normal cartilage.
 
 The same organisation produces the magic angle behaviour, so both techniques
 exist because of one tissue property. 5.2.20 covers the magic angle effect.
 
-The calcified cartilage and the subchondral plate form a mechanical unit that no
-other sequence resolves, which is where the clinical interest sits. 5.11.5
+The calcified cartilage and the subchondral plate form a mechanical unit that
+no other sequence resolves, which is where the clinical interest sits. 5.11.5
 covers osteochondral lesions.
 
 A new appearance with no normal reference cannot be called abnormal, which is
@@ -108,15 +107,15 @@ the honest limit on reading these studies. 5.1.6 covers imaging pitfalls.
 
 ### How Good It Is
 
-Ultrashort echo time imaging is the only way to see inside these tissues and has
-almost nothing established to compare an appearance against.
+Ultrashort echo time imaging is the only way to see inside these tissues and
+has almost nothing established to compare an appearance against.
 
 Its best contribution is the osteochondral junction and the deep cartilage.
 5.11.5 covers osteochondral lesions.
 
 It is limited by acquisition time, by unfamiliar artefacts, by its structure
-specific scope, and above all by the absence of a normal reference. 5.19.9
-covers the clinical translation.
+specific scope, and above all by the absence of a normal reference. 5.1.8
+covers the future of knee imaging.
 
 No figures appear for accuracy on this page, under decision 028, and no echo
 times or signal values appear either: those are protocol quantities tied to
@@ -144,25 +143,25 @@ lesions.
 Tendon and ligament structure could support a return to play decision that
 currently rests on time and examination. 5.5.10 covers the tendons.
 
-Meniscal matrix assessment could separate a degenerate meniscus from an acutely
-torn one. 5.6.2 covers the meniscal signal grading.
+Meniscal matrix assessment could separate a degenerate meniscus from an
+acutely torn one. 5.6.2 covers the meniscal signal grading.
 
 None of these uses is established, and the reason is the reference rather than
-the physics. 5.19.9 covers the clinical translation.
+the physics. 5.1.8 covers the future of knee imaging.
 
 ### Where It Misleads
 
-The commonest error is calling a newly visible appearance abnormal. 5.1.6 covers
-imaging pitfalls.
+The commonest error is calling a newly visible appearance abnormal. 5.1.6
+covers imaging pitfalls.
 
 Subtraction artefacts are read as signal inside the tissue. 5.2.19 covers the
 artefacts.
 
-Motion over a long acquisition degrades exactly the fine structure being sought.
-5.2.21 covers the advanced MRI techniques.
+Motion over a long acquisition degrades exactly the fine structure being
+sought. 5.2.21 covers the advanced MRI techniques.
 
-An appearance from one implementation is compared with one from another. 5.18.1
-covers the quantitative MRI.
+An appearance from one implementation is compared with one from another.
+5.18.1 covers the quantitative MRI.
 
 A structure specific study is read as a knee assessment. 5.5.1 covers the
 standard protocol.
@@ -179,8 +178,8 @@ standard protocol.
 
 ### Where It Misleads
 
-At fellowship level this appears in research collaborations and device material
-rather than in reports. 5.19.7 covers the current research.
+At fellowship level this appears in research collaborations and device
+material rather than in reports. 5.21.8 covers the future directions.
 
 The tissues it shows are the ones orthopaedic practice cares most about and
 knows least about radiologically, which leaves the literature thin and the
@@ -194,12 +193,12 @@ Combining it with quantitative mapping of the same tissue is the current
 direction and compounds both standardisation problems. 5.18.1 covers the
 quantitative MRI.
 
-Automated analysis is being applied to appearances no reader has yet learned to
-call normal. 5.18.8 covers artificial intelligence in imaging.
+Automated analysis is being applied to appearances no reader has yet learned
+to call normal. 5.18.8 covers artificial intelligence in imaging.
 
 The honest position is that this is the most genuinely new technique in the
-chapter and the one with the least ground under it. 5.19.9 covers the clinical
-translation.
+chapter and the one with the least ground under it. 5.1.8 covers the future of
+knee imaging.
 
 ### Key Learning Points
 
@@ -211,11 +210,11 @@ translation.
 
 ## Explore Further
 
-- [[5.19.2 | Collagen Architecture]]
+- [[5.11.1 | Normal Cartilage]]
 - [[5.11.5 | Osteochondral Lesions]]
 - [[5.2.20 | Magic Angle Effect]]
 - [[5.5.10 | Tendons]]
-- [[5.19.9 | Clinical Translation]]
+- [[5.1.8 | Future of Knee Imaging]]
 - [[5.18.1 | Quantitative MRI]]
 
 ## References
@@ -232,4 +231,5 @@ page states the comparison. A reviewer with the literature can add the figures
 into How Good It Is without restructuring the page. Any measurement here,
 including a sequence parameter, an angle or a millimetre, is written from
 standard teaching, has not been checked, and is registered under decision 006
-in pipeline/config/figures with a verification state of UNVERIFIED_FROM_MEMORY.
+in pipeline/config/figures with a verification state of
+UNVERIFIED_FROM_MEMORY.

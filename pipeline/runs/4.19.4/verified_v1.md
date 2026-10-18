@@ -25,8 +25,8 @@ Take the history: the age at first episode, how many episodes, what position
 the knee was in, and whether the patella had to be put back. 4.2.20 covers a
 direct blow.
 
-Ask about family history and about generalised laxity, since both are common in
-this group. 4.19.6 covers developmental variants.
+Ask about family history and about generalised laxity, since both are common
+in this group. 4.19.6 covers developmental variants.
 
 Assess generalised laxity with the standard joint assessment, because it
 changes the interpretation of the knee findings. 4.23.3 covers the hypermobile
@@ -50,9 +50,9 @@ distinguishes instability from laxity. 4.15.3 covers the apprehension test.
 Increased lateral translation with apprehension, in a knee with valgus
 alignment or an abnormal rotational profile, is the characteristic picture.
 
-Translation without apprehension in a generally lax child is laxity rather than
-instability, and the distinction decides whether anything needs doing. 4.23.3
-covers the hypermobile patient.
+Translation without apprehension in a generally lax child is laxity rather
+than instability, and the distinction decides whether anything needs doing.
+4.23.3 covers the hypermobile patient.
 
 Lateral deviation of the patella near extension indicates maltracking, which
 predisposes to the dislocation rather than resulting from it. 4.15.1 covers
@@ -97,16 +97,16 @@ usually bilateral. 4.1.4 covers the structured approach.
 ### What a Positive Means
 
 The reasoning expected is that patellar stability comes from the trochlear
-shape, the alignment, the soft tissue restraints and the quadriceps vector, and
-instability follows a deficiency in any of those. 3.12.8 covers patellar
+shape, the alignment, the soft tissue restraints and the quadriceps vector,
+and instability follows a deficiency in any of those. 3.12.8 covers patellar
 instability.
 
-Near full extension the patella sits above the groove and is restrained by soft
-tissue alone, which is why the instability and the apprehension appear there.
-3.12.4 covers trochlear function.
+Near full extension the patella sits above the groove and is restrained by
+soft tissue alone, which is why the instability and the apprehension appear
+there. 3.12.4 covers trochlear function.
 
-A valgus vector and internal femoral rotation increase the lateral force on the
-patella, which is why the rotational profile is examined. 4.19.7 covers
+A valgus vector and internal femoral rotation increase the lateral force on
+the patella, which is why the rotational profile is examined. 4.19.7 covers
 torsional assessment.
 
 Generalised laxity reduces the soft tissue contribution, so a given trochlear
@@ -130,8 +130,8 @@ Radiographs and cross sectional imaging measure those, so the examination
 establishes the instability and the imaging establishes the anatomy. 4.1.6
 covers that relationship.
 
-No figures appear for any accuracy comparison on this page, under decision 023,
-and the comparison is the claim being made.
+No figures appear for any accuracy comparison on this page, under decision
+023, and the comparison is the claim being made.
 
 ### Key Learning Points
 
@@ -156,11 +156,12 @@ Recurrent instability with a valgus and rotational abnormality moves the
 discussion towards correcting the alignment rather than only the restraint.
 4.19.7 covers torsional assessment.
 
-Generalised laxity changes the expected result of any soft tissue procedure, so
-it is recorded as part of the decision. 4.23.3 covers the hypermobile patient.
+Generalised laxity changes the expected result of any soft tissue procedure,
+so it is recorded as part of the decision. 4.23.3 covers the hypermobile
+patient.
 
-Skeletal immaturity restricts the procedures available, so maturity is assessed
-alongside the instability. 4.19.1 covers the growth plate assessment.
+Skeletal immaturity restricts the procedures available, so maturity is
+assessed alongside the instability. 4.19.1 covers the growth plate assessment.
 
 ### Where It Misleads
 
@@ -171,8 +172,8 @@ patient.
 Apprehension is reported by an anxious adolescent on any firm examination,
 which inflates the test. 4.15.3 covers the apprehension test.
 
-The rotational profile is omitted, so a torsional contribution is attributed to
-the soft tissues. 4.19.7 covers torsional assessment.
+The rotational profile is omitted, so a torsional contribution is attributed
+to the soft tissues. 4.19.7 covers torsional assessment.
 
 A history of the knee giving way is taken as patellar when it can be cruciate,
 and the two are distinguished by what the patient felt move. 4.2.6 covers
@@ -198,20 +199,20 @@ shape, alignment, rotation and soft tissue, and it can only see the last two
 directly.
 
 Trochlear dysplasia is the strongest predisposing feature and the examination
-only infers it, so the inference is checked rather than acted on. 4.15.8 covers
-trochlear dysplasia.
+only infers it, so the inference is checked rather than acted on. 4.15.8
+covers trochlear dysplasia.
 
 Patellar height is not clinically measurable with any reliability and it
 changes the treatment, so the examination substitutes the tracking for it.
 4.15.1 covers patellar tracking.
 
-Rotational contributions from the femur and the tibia can oppose each other, so
-a normal foot progression angle can hide both. 4.19.7 covers torsional
+Rotational contributions from the femur and the tibia can oppose each other,
+so a normal foot progression angle can hide both. 4.19.7 covers torsional
 assessment.
 
 Generalised laxity is a spectrum, and the formal assessment reduces it to a
-score whose threshold is a convention rather than a biological boundary. 4.23.3
-covers the hypermobile patient.
+score whose threshold is a convention rather than a biological boundary.
+4.23.3 covers the hypermobile patient.
 
 A previously operated knee examines against its own baseline, and the
 examination's normal references do not apply to it. 4.20.6 covers the
@@ -229,7 +230,7 @@ reconstructed restraint.
 
 - [[4.15.8 | Trochlear Dysplasia Assessment]]
 - [[4.15.9 | Patellofemoral Pain Syndrome]]
-- [[4.15.11 | The Apprehension Test]]
+- [[4.15.3 | Patellar Apprehension Test]]
 - [[4.19.7 | Torsional Assessment]]
 - [[4.3.7 | Surgical Scars]]
 - [[4.19.1 | Growth Plate Assessment]]

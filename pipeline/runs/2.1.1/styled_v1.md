@@ -214,7 +214,7 @@ it, whether graft or bone, competes for that volume.
 - [[2.1.7 | Surgical Anatomy]]
 - [[1.2.1 | Bones of the Knee]]
 - [[3.13 | Alignment and Biomechanics]]
-- [[5.3.2 | Distal femoral imaging]]
+- [[5.3.2 | Lateral View]]
 
 ## References
 

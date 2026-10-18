@@ -1,7 +1,7 @@
 # Dynamic MRI
 
-Imaging through movement, which records a slow deliberate motion rather than the
-fast one that fails.
+Imaging through movement, which records a slow deliberate motion rather than
+the fast one that fails.
 
 ## For Medical Students
 
@@ -14,21 +14,22 @@ The movement is slow and often repeated, and the images are built across it.
 5.2.12 covers the basic principles.
 
 It matters because the failures that bring patients to clinic happen during
-movement, and a static study records a posture. 3.12.1 covers patellar tracking.
+movement, and a static study records a posture. 3.12.1 covers patellar
+tracking.
 
 ### How It Is Acquired
 
 Use a fast sequence and accept the resolution that the speed costs. 5.2.18
 covers the gradient echo imaging.
 
-Ask for a slow controlled movement through the available range. 3.3.8 covers the
-changes throughout flexion.
+Ask for a slow controlled movement through the available range. 3.3.8 covers
+the changes throughout flexion.
 
-Repeat the movement where the acquisition is built across cycles. 5.2.19 covers
-the artefacts.
+Repeat the movement where the acquisition is built across cycles. 5.2.19
+covers the artefacts.
 
-Record whether the movement was loaded or unloaded. 5.18.5 covers
-weight-bearing MRI.
+Record whether the movement was loaded or unloaded. 5.18.5 covers weight-
+bearing MRI.
 
 Record the range covered, because it is narrower than the clinical one. 5.20.1
 covers structured reporting.
@@ -43,8 +44,8 @@ Smooth tracking with no lateral deviation. 4.15.6 covers dynamic tracking.
 Menisci moving with the tibia through the range. 3.6.1 covers the functions of
 the meniscus.
 
-Tibiofemoral contact moving posteriorly with flexion. 3.3.2 covers the roll and
-glide mechanisms.
+Tibiofemoral contact moving posteriorly with flexion. 3.3.2 covers the roll
+and glide mechanisms.
 
 ### What Abnormal Looks Like
 
@@ -55,7 +56,8 @@ Delayed engagement in a dysplastic groove. 5.12.1 covers trochlear dysplasia.
 
 Abnormal meniscal movement alongside a root tear. 5.6.9 covers root tears.
 
-A movement so slow that the abnormality never appears. 4.15.2 covers the J sign.
+A movement so slow that the abnormality never appears. 4.15.2 covers the J
+sign.
 
 ### Key Learning Points
 
@@ -86,9 +88,9 @@ Say that the examination observes the real movement and the scan does not.
 ### What Abnormal Looks Like
 
 The reasoning expected is that patellar instability occurs rapidly near
-extension under load, while a dynamic study is slow, often unloaded and limited
-in range, so the mechanism it images is a different one. 5.12.4 covers patellar
-subluxation.
+extension under load, while a dynamic study is slow, often unloaded and
+limited in range, so the mechanism it images is a different one. 5.12.4 covers
+patellar subluxation.
 
 Ultrasound observes the same movement in real time through a limited view, so
 the two techniques fail in opposite ways. 5.4.14 covers patellar tracking.
@@ -111,13 +113,13 @@ Its best contribution is tracking through early flexion, where the groove
 engages. 3.12.1 covers patellar tracking.
 
 It is limited by resolution, by the slow movement, by the narrow range, by the
-usual absence of load, and by availability. 5.19.9 covers the clinical
-translation.
+usual absence of load, and by availability. 5.1.8 covers the future of knee
+imaging.
 
 No figures appear for accuracy on this page, under decision 028, and no frame
 rates, resolutions or angular ranges appear either: those are protocol
-quantities tied to particular implementations and this environment cannot check
-them.
+quantities tied to particular implementations and this environment cannot
+check them.
 
 ### Key Learning Points
 
@@ -138,23 +140,24 @@ correct investigation.
 A patient with instability and normal static measurements is the case for it.
 5.16.4 covers the TT-TG measurement.
 
-The apprehension test and the observed J sign still carry more information about
-the behaviour. 4.15.3 covers the patellar apprehension test.
+The apprehension test and the observed J sign still carry more information
+about the behaviour. 4.15.3 covers the patellar apprehension test.
 
 Combining it with load would address both mismatches at once and is not
 routinely available. 5.18.5 covers weight-bearing MRI.
 
-A normal study should be reported as not excluding the diagnosis. 5.20.8 covers
-common reporting errors.
+A normal study should be reported as not excluding the diagnosis. 5.20.8
+covers common reporting errors.
 
 ### Where It Misleads
 
-The commonest error is reading a normal dynamic study as excluding instability.
-5.12.4 covers patellar subluxation.
+The commonest error is reading a normal dynamic study as excluding
+instability. 5.12.4 covers patellar subluxation.
 
 Low resolution is read as a normal appearance. 5.2.19 covers the artefacts.
 
-An unloaded movement is reported as tracking. 5.18.5 covers weight-bearing MRI.
+An unloaded movement is reported as tracking. 5.18.5 covers weight-bearing
+MRI.
 
 A narrow range is reported as the range. 3.3.8 covers the changes throughout
 flexion.
@@ -177,8 +180,8 @@ A movement the patient could perform is reported as the movement that fails.
 At fellowship level the study arrives having been requested to settle an
 argument it cannot settle. 5.1.6 covers imaging pitfalls.
 
-Implementations differ in speed, range and loading, so studies from two centres
-are not comparable. 5.18.1 covers the quantitative MRI.
+Implementations differ in speed, range and loading, so studies from two
+centres are not comparable. 5.18.1 covers the quantitative MRI.
 
 A patient who guards during the acquisition produces a normal study for that
 reason alone. 4.15.3 covers the patellar apprehension test.
@@ -207,7 +210,7 @@ examination still addresses it better. 4.15.2 covers the J sign.
 - [[4.15.6 | Dynamic Tracking]]
 - [[5.4.14 | Patellar Tracking]]
 - [[4.15.2 | J Sign]]
-- [[5.19.9 | Clinical Translation]]
+- [[5.1.8 | Future of Knee Imaging]]
 
 ## References
 
@@ -223,4 +226,5 @@ page states the comparison. A reviewer with the literature can add the figures
 into How Good It Is without restructuring the page. Any measurement here,
 including a sequence parameter, an angle or a millimetre, is written from
 standard teaching, has not been checked, and is registered under decision 006
-in pipeline/config/figures with a verification state of UNVERIFIED_FROM_MEMORY.
+in pipeline/config/figures with a verification state of
+UNVERIFIED_FROM_MEMORY.

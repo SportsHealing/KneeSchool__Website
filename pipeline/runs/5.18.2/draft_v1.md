@@ -1,7 +1,7 @@
 # T2 Mapping
 
-A relaxation time that changes with cartilage water and collagen, which detects
-degeneration before the surface breaks.
+A relaxation time that changes with cartilage water and collagen, which
+detects degeneration before the surface breaks.
 
 ## For Medical Students
 
@@ -11,15 +11,15 @@ T2 mapping measures the T2 relaxation time at each point in a tissue and
 displays it as a map. 5.2.14 covers the T2 imaging.
 
 In cartilage the value rises with water content and falls with collagen
-organisation. 5.19.2 covers the collagen architecture.
+organisation. 5.11.1 covers the normal cartilage.
 
-It matters because both change early in degeneration, before any defect appears
-on a conventional sequence. 5.11.2 covers chondral defects.
+It matters because both change early in degeneration, before any defect
+appears on a conventional sequence. 5.11.2 covers chondral defects.
 
 ### How It Is Acquired
 
-Acquire several images at different echo times and fit the signal decay at each
-point. 5.2.14 covers the T2 imaging.
+Acquire several images at different echo times and fit the signal decay at
+each point. 5.2.14 covers the T2 imaging.
 
 Segment the cartilage carefully, since the value at the edges is contaminated.
 5.5.7 covers the cartilage.
@@ -30,8 +30,8 @@ covers the normal cartilage.
 Standardise the time since the patient last loaded the knee, because the value
 changes with loading. 5.18.5 covers weight-bearing MRI.
 
-Keep the scanner and the sequence fixed across any comparison. 5.5.1 covers the
-standard protocol.
+Keep the scanner and the sequence fixed across any comparison. 5.5.1 covers
+the standard protocol.
 
 ### What Normal Looks Like
 
@@ -53,12 +53,12 @@ A regional rise in value with an intact surface. 5.11.2 covers chondral
 defects.
 
 Loss of the normal depth gradient, which reflects collagen disorganisation.
-5.19.2 covers the collagen architecture.
+5.11.1 covers the normal cartilage.
 
 A focal rise over a bone marrow lesion. 5.11.7 covers bone marrow lesions.
 
-Raised values in repair tissue, which is expected rather than a failure. 5.11.8
-covers the cartilage repair procedures.
+Raised values in repair tissue, which is expected rather than a failure.
+5.11.8 covers the cartilage repair procedures.
 
 ### Key Learning Points
 
@@ -77,21 +77,21 @@ In a viva the expected answer names what the value is sensitive to.
 The expected points are the multiple echo times, the segmentation, the depth
 zones, the loading history, and the fixed hardware.
 
-Say that the depth gradient matters more than the mean. 5.11.1 covers the normal
-cartilage.
+Say that the depth gradient matters more than the mean. 5.11.1 covers the
+normal cartilage.
 
 Say that the measure is sensitive and not specific. 5.18.1 covers the
 quantitative MRI.
 
-Say that values are not transferable between sites. 5.21.3 covers the cartilage
-imaging literature.
+Say that values are not transferable between sites. 5.21.3 covers the
+cartilage imaging literature.
 
 ### What Abnormal Looks Like
 
 The reasoning expected is that collagen fibre orientation changes through the
 cartilage depth, so the relaxation time does too, and the gradient rather than
-the mean carries the structural information. 5.19.2 covers the collagen
-architecture.
+the mean carries the structural information. 5.11.1 covers the normal
+cartilage.
 
 Early degeneration raises water content and disrupts the collagen network,
 which raises the value and flattens the gradient together. 5.11.2 covers
@@ -101,16 +101,16 @@ Fibre orientation also sets the magic angle behaviour, which is why one tissue
 property turns up in two different techniques. 5.2.20 covers the magic angle
 effect.
 
-Loading expresses water from the matrix, so a value taken after walking differs
-from one taken after rest. 5.18.5 covers weight-bearing MRI.
+Loading expresses water from the matrix, so a value taken after walking
+differs from one taken after rest. 5.18.5 covers weight-bearing MRI.
 
 ### How Good It Is
 
 T2 mapping is the most studied quantitative cartilage measure and the least
 specific one.
 
-Its best contribution is detecting matrix change before a surface defect, within
-one study. 5.21.3 covers the cartilage imaging literature.
+Its best contribution is detecting matrix change before a surface defect,
+within one study. 5.21.3 covers the cartilage imaging literature.
 
 It is limited by scanner dependence, by loading sensitivity, by segmentation
 error, and by responding to anything that changes water content. 5.5.7 covers
@@ -159,8 +159,8 @@ A segmentation error at the subchondral edge produces a band of high values.
 A knee scanned after activity is compared with one scanned after rest. 5.18.5
 covers weight-bearing MRI.
 
-Repair tissue is compared with native cartilage and reported as failing. 5.11.8
-covers the cartilage repair procedures.
+Repair tissue is compared with native cartilage and reported as failing.
+5.11.8 covers the cartilage repair procedures.
 
 The patellofemoral compartment is mapped where its curved thin cartilage makes
 the value least reliable. 5.12.6 covers the patellofemoral cartilage injury.
@@ -180,21 +180,22 @@ the value least reliable. 5.12.6 covers the patellofemoral cartilage injury.
 At fellowship level these maps arrive from trials and from centres with their
 own normal ranges. 5.21.3 covers the cartilage imaging literature.
 
-A multicentre study has to harmonise the sequence before it can pool the values,
-and the harmonisation is itself a result. 5.18.1 covers the quantitative MRI.
+A multicentre study has to harmonise the sequence before it can pool the
+values, and the harmonisation is itself a result. 5.18.1 covers the
+quantitative MRI.
 
 A patient scanned on one scanner before surgery and another after has no
 comparable pair. 5.5.1 covers the standard protocol.
 
-The relationship between the value and the symptoms is weak, so an abnormal map
-in a comfortable knee is common. 5.21.5 covers the osteoarthritis imaging
+The relationship between the value and the symptoms is weak, so an abnormal
+map in a comfortable knee is common. 5.21.5 covers the osteoarthritis imaging
 literature.
 
 Automated segmentation makes the maps reproducible and inherits the same edge
 problem at the deep zone. 5.18.8 covers artificial intelligence in imaging.
 
 The useful position is that T2 mapping has earned its place as an outcome
-measure and not as a diagnostic test. 5.19.9 covers the clinical translation.
+measure and not as a diagnostic test. 5.1.8 covers the future of knee imaging.
 
 ### Key Learning Points
 
@@ -209,7 +210,7 @@ measure and not as a diagnostic test. 5.19.9 covers the clinical translation.
 - [[5.18.1 | Quantitative MRI]]
 - [[5.18.3 | T1 Rho Imaging]]
 - [[5.11.1 | Normal Cartilage]]
-- [[5.19.2 | Collagen Architecture]]
+- [[5.2.20 | Magic Angle Effect]]
 - [[5.11.8 | Cartilage Repair Procedures]]
 - [[5.21.3 | Cartilage Imaging Literature]]
 
@@ -227,4 +228,5 @@ page states the comparison. A reviewer with the literature can add the figures
 into How Good It Is without restructuring the page. Any measurement here,
 including a sequence parameter, an angle or a millimetre, is written from
 standard teaching, has not been checked, and is registered under decision 006
-in pipeline/config/figures with a verification state of UNVERIFIED_FROM_MEMORY.
+in pipeline/config/figures with a verification state of
+UNVERIFIED_FROM_MEMORY.

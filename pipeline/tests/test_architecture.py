@@ -7,6 +7,7 @@ import glob
 import json
 import os
 import re
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -18,6 +19,7 @@ sys.path.insert(0, os.path.join(ROOT, "functions", "style_lint"))
 import linter  # noqa: E402
 sys.path.insert(0, os.path.join(REPO, "tools"))
 import architecture  # noqa: E402
+import crossrefs  # noqa: E402
 
 
 def load(*parts):
@@ -1027,3 +1029,67 @@ class ACollidingTitleInsideOneChapterKeepsItsGrouping(unittest.TestCase):
         with open(path, encoding="utf-8") as fh:
             self.assertEqual(json.load(fh)["chapter"].get("nav_group"),
                              "CT Physics")
+
+
+class NoPublishedPagePointsAtAHeldPage(unittest.TestCase):
+    """EV-41. render_targets.json holds pages back at the client's instruction,
+    and a held page is not coming soon: chapter 5.19 was held on 15 October 2026
+    because the Magic Angle MRI Academy will not be published at all. Nothing
+    checked whether a published page still pointed at one. Chapter 5.18 was then
+    written leaning on 5.19 for its central claim, and shipped 34 prose
+    references and 8 cross links into pages no reader will ever open, with every
+    gate green. Twelve such references already existed before that chapter.
+    """
+
+    def setUp(self):
+        with open(os.path.join(REPO, "pipeline", "config",
+                               "render_targets.json")) as fh:
+            self.targets = json.load(fh)
+
+    def test_the_withheld_block_is_a_dict_of_page_ids(self):
+        withheld = self.targets.get("withheld") or {}
+        self.assertIsInstance(withheld, dict)
+        for page_id in withheld:
+            self.assertRegex(page_id, r"^\d+\.\d+\.\d+$")
+
+    def test_a_held_page_is_never_also_a_render_target(self):
+        held = set(self.targets.get("withheld") or {})
+        published = set(self.targets.get("pages") or {})
+        self.assertEqual(held & published, set())
+
+    def test_no_published_page_references_a_held_page(self):
+        found = crossrefs.withheld_references(
+            os.path.join(REPO, "pipeline", "runs"), listing=False)
+        self.assertEqual(found, [], "references into a held page: %r" % (found[:8],))
+
+    def test_the_check_reads_what_is_published_not_the_draft(self):
+        # EV-42. Every check in crossrefs.py read draft_v1.md while the site
+        # publishes the file the render target names. For thirteen pages the two
+        # differ, so 5.1.8's four references into the held chapter were in its
+        # published text and not in its draft, and the gate called it clean.
+        sources = crossrefs.render_sources()
+        self.assertTrue(sources)
+        self.assertEqual(set(sources.values()), {"styled_v1.md"})
+
+    def test_the_gate_catches_a_reference_it_is_given(self):
+        runs = tempfile.mkdtemp()
+        os.makedirs(os.path.join(runs, "9.9.9"))
+        with open(os.path.join(runs, "9.9.9", "styled_v1.md"), "w") as fh:
+            fh.write("# X\n\nBody. 5.19.9 covers the clinical translation.\n")
+        try:
+            held, _ = crossrefs.withheld_and_published()
+            self.assertIn("5.19.9", held)
+            sources = crossrefs.render_sources()
+            text = crossrefs.source_text(runs, "9.9.9", sources)
+            self.assertIn("5.19.9", text)
+        finally:
+            shutil.rmtree(runs)
+
+    def test_the_makefile_runs_the_withheld_gate(self):
+        with open(os.path.join(REPO, "Makefile")) as fh:
+            mk = fh.read()
+        self.assertIn("crossrefs.py --withheld-check", mk)
+        # and it runs inside `gates`, not in some unreferenced target
+        gates = mk.split("gates:", 1)[1].split("\n\n", 1)[0]
+        self.assertIn("--withheld-check", gates)
+

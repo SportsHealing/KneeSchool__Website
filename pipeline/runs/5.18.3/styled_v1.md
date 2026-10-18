@@ -1,7 +1,7 @@
 # T1 Rho Imaging
 
-A measure aimed at proteoglycan loss, which is the earliest change in cartilage
-and the hardest signal to acquire.
+A measure aimed at proteoglycan loss, which is the earliest change in
+cartilage and the hardest signal to acquire.
 
 ## For Medical Students
 
@@ -24,11 +24,11 @@ covers the basic principles.
 Segment the cartilage and measure by depth zone as for the other quantitative
 maps. 5.18.1 covers the quantitative MRI.
 
-Standardise the loading history, since the matrix water content varies with it.
-5.18.5 covers weight-bearing MRI.
+Standardise the loading history, since the matrix water content varies with
+it. 5.18.5 covers weight-bearing MRI.
 
-Keep the scanner and the spin lock parameters fixed across any comparison. 5.5.1
-covers the standard protocol.
+Keep the scanner and the spin lock parameters fixed across any comparison.
+5.5.1 covers the standard protocol.
 
 Note the acquisition time, which is longer than for a conventional sequence.
 5.2.21 covers the advanced MRI techniques.
@@ -77,46 +77,48 @@ In a viva the expected answer says what it targets and why it is rare.
 The expected points are the spin lock pulse, the depth zones, the loading
 history, the fixed parameters, and the acquisition time.
 
-Say that it targets an earlier change than T2 mapping does. 5.18.2 covers the T2
-mapping.
+Say that it targets an earlier change than T2 mapping does. 5.18.2 covers the
+T2 mapping.
 
 Say that the energy deposited limits the sequence on clinical scanners. 5.2.12
 covers the basic principles.
 
-Say that it is a research sequence in most departments. 5.19.9 covers the
-clinical translation.
+Say that it is a research sequence in most departments. 5.1.8 covers the
+future of knee imaging.
 
 ### What Abnormal Looks Like
 
 The reasoning expected is that proteoglycan carries the fixed charge holding
-water osmotically, so losing it changes the local environment a relaxation time
-is sensitive to, before any fibre damage. 5.11.1 covers the normal cartilage.
+water osmotically, so losing it changes the local environment a relaxation
+time is sensitive to, before any fibre damage. 5.11.1 covers the normal
+cartilage.
 
 That makes the theoretical case for this sequence the strongest in the chapter
 and its practical reach the smallest. 5.18.1 covers the quantitative MRI.
 
-The spin lock pulse deposits energy, so the achievable parameters are limited by
-safety rather than by physics. 5.2.12 covers the basic principles.
+The spin lock pulse deposits energy, so the achievable parameters are limited
+by safety rather than by physics. 5.2.12 covers the basic principles.
 
-The value correlates with the T2 value, which means the two are not independent
-measures of the same tissue. 5.18.2 covers the T2 mapping.
+The value correlates with the T2 value, which means the two are not
+independent measures of the same tissue. 5.18.2 covers the T2 mapping.
 
 ### How Good It Is
 
-T1 rho imaging has the best theoretical target among the quantitative cartilage
-measures and the least clinical availability.
+T1 rho imaging has the best theoretical target among the quantitative
+cartilage measures and the least clinical availability.
 
-Its best contribution is detecting matrix loss earlier than the other measures,
-in a research setting. 5.21.3 covers the cartilage imaging literature.
+Its best contribution is detecting matrix loss earlier than the other
+measures, in a research setting. 5.21.3 covers the cartilage imaging
+literature.
 
 It is limited by acquisition time, by energy deposition limits, by scanner
 dependence, and by correlating with the measure it was meant to improve on.
 5.18.2 covers the T2 mapping.
 
 No figures appear for accuracy on this page, under decision 028, and no
-relaxation values, spin lock parameters or reference ranges appear either: those
-are published quantities tied to particular scanners and this environment
-cannot check them.
+relaxation values, spin lock parameters or reference ranges appear either:
+those are published quantities tied to particular scanners and this
+environment cannot check them.
 
 ### Key Learning Points
 
@@ -133,8 +135,8 @@ cannot check them.
 At decision level this sequence is unavailable to most practices and changes
 nothing today. 5.1.3 covers choosing the correct investigation.
 
-Its value is in trials of disease modification, where an early measure shortens
-the study. 5.1.7 covers evidence-based imaging.
+Its value is in trials of disease modification, where an early measure
+shortens the study. 5.1.7 covers evidence-based imaging.
 
 A patient who has had it inside a study arrives with a number that has no
 clinical interpretation. 5.20.8 covers common reporting errors.
@@ -149,18 +151,18 @@ cartilage lesions.
 ### Where It Misleads
 
 The commonest error is treating the sequence as available because it is
-published. 5.19.9 covers the clinical translation.
+published. 5.1.8 covers the future of knee imaging.
 
 A raised value is read as a lesion. 5.11.2 covers chondral defects.
 
-The correlation with T2 is read as validation when it may be shared sensitivity.
-5.18.2 covers the T2 mapping.
+The correlation with T2 is read as validation when it may be shared
+sensitivity. 5.18.2 covers the T2 mapping.
 
 Loading before the scan shifts the matrix water and the value with it. 5.18.5
 covers weight-bearing MRI.
 
-A long acquisition moves, and motion across the fitted series corrupts the map.
-5.2.19 covers the artefacts.
+A long acquisition moves, and motion across the fitted series corrupts the
+map. 5.2.19 covers the artefacts.
 
 ### Key Learning Points
 
@@ -177,22 +179,22 @@ A long acquisition moves, and motion across the fitted series corrupts the map.
 At fellowship level this appears in trial protocols and grant applications
 rather than in referrals. 5.21.8 covers the future directions.
 
-Validation against histology exists in small series, and a small series checked
-against a destructive reference is the best anyone can do and is still a small
-series. 5.1.7 covers evidence-based imaging.
+Validation against histology exists in small series, and a small series
+checked against a destructive reference is the best anyone can do and is still
+a small series. 5.1.7 covers evidence-based imaging.
 
-Sites differ in the spin lock implementation, so values from two centres measure
-different things under one name. 5.18.1 covers the quantitative MRI.
+Sites differ in the spin lock implementation, so values from two centres
+measure different things under one name. 5.18.1 covers the quantitative MRI.
 
-Repaired cartilage has a matrix unlike native cartilage, so the measure's basis
-does not transfer to it. 5.11.8 covers the cartilage repair procedures.
+Repaired cartilage has a matrix unlike native cartilage, so the measure's
+basis does not transfer to it. 5.11.8 covers the cartilage repair procedures.
 
 Combining it with the other quantitative maps is the current direction, which
-multiplies the standardisation problem rather than solving it. 5.19.7 covers the
-current research.
+multiplies the standardisation problem rather than solving it. 5.21.8 covers
+the future directions.
 
 The honest position is that this is the most promising measure in the chapter
-and the one furthest from a clinic. 5.19.9 covers the clinical translation.
+and the one furthest from a clinic. 5.1.8 covers the future of knee imaging.
 
 ### Key Learning Points
 
@@ -207,8 +209,8 @@ and the one furthest from a clinic. 5.19.9 covers the clinical translation.
 - [[5.18.2 | T2 Mapping]]
 - [[5.18.1 | Quantitative MRI]]
 - [[5.11.1 | Normal Cartilage]]
-- [[5.19.7 | Current Research]]
-- [[5.19.9 | Clinical Translation]]
+- [[5.21.8 | Future Directions]]
+- [[5.1.8 | Future of Knee Imaging]]
 - [[5.21.3 | Cartilage Imaging Literature]]
 
 ## References
@@ -225,4 +227,5 @@ page states the comparison. A reviewer with the literature can add the figures
 into How Good It Is without restructuring the page. Any measurement here,
 including a sequence parameter, an angle or a millimetre, is written from
 standard teaching, has not been checked, and is registered under decision 006
-in pipeline/config/figures with a verification state of UNVERIFIED_FROM_MEMORY.
+in pipeline/config/figures with a verification state of
+UNVERIFIED_FROM_MEMORY.
