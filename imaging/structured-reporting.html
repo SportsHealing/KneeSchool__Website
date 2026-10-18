@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Structured Reporting | KneeSchool</title>
+<meta name="description" content="The template that decides what a report contains, and the reason a described scan is not the same thing as an answered question.">
+<meta name="theme-color" content="#0e2b22">
+
+<link rel="canonical" href="https://kneeschool.com/imaging/structured-reporting.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css?v=e50d4cd3">
+</head>
+<body>
+<style>
+.dial-tabs{grid-template-columns:repeat(4,1fr)}
+#t0:checked ~ .dial-tabs label[for=t0]{background:var(--gold-pale);border-color:var(--gold-pale);color:var(--green-deep);font-weight:600}
+#t0:checked ~ .dial-body .p0{display:block}
+#t0:focus-visible ~ .dial-tabs label[for=t0]{outline:3px solid var(--gold);outline-offset:2px}
+#t1:checked ~ .dial-tabs label[for=t1]{background:var(--gold-pale);border-color:var(--gold-pale);color:var(--green-deep);font-weight:600}
+#t1:checked ~ .dial-body .p1{display:block}
+#t1:focus-visible ~ .dial-tabs label[for=t1]{outline:3px solid var(--gold);outline-offset:2px}
+#t2:checked ~ .dial-tabs label[for=t2]{background:var(--gold-pale);border-color:var(--gold-pale);color:var(--green-deep);font-weight:600}
+#t2:checked ~ .dial-body .p2{display:block}
+#t2:focus-visible ~ .dial-tabs label[for=t2]{outline:3px solid var(--gold);outline-offset:2px}
+#t3:checked ~ .dial-tabs label[for=t3]{background:var(--gold-pale);border-color:var(--gold-pale);color:var(--green-deep);font-weight:600}
+#t3:checked ~ .dial-body .p3{display:block}
+#t3:focus-visible ~ .dial-tabs label[for=t3]{outline:3px solid var(--gold);outline-offset:2px}
+</style>
+<div class="build-notice" role="note">
+  <div class="wrap">
+    <strong>Work in progress.</strong> This site is being built in the open. No page on it has yet been reviewed by a clinician, every page says so, and nothing here is medical advice or a substitute for seeing someone about your knee. <a href="../about/status.html">What that means</a>
+  </div>
+</div>
+<header class="site-head">
+  <div class="wrap head-in">
+    <a class="brand" href="../index.html"><b>Knee</b><span>School</span></a>
+    <input class="nav-toggle" type="checkbox" id="navtoggle" aria-label="Show navigation">
+    <label class="burger" for="navtoggle">Menu</label>
+    <nav class="nav" aria-label="Main">
+      <ul>
+        <li class="has-menu">
+          <a class="top" href="../index.html#levels">Learn<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../index.html#levels">Find your level</a></li>
+            <li><a href="../levels/junior.html">Junior Academy</a></li>
+            <li><a href="../levels/patient.html">Patient Academy</a></li>
+            <li><a href="../levels/student.html">Student Academy</a></li>
+            <li><a href="../levels/mrcs.html">MRCS Academy</a></li>
+            <li><a href="../levels/frcs.html">FRCS (Tr and Orth) Academy</a></li>
+            <li><a href="../levels/fellowship.html">Fellowship Academy</a></li>
+            <li><a href="../levels/consultant.html">Consultant Masterclass</a></li>
+            <li><a href="../junior/ready-made-lesson-plans.html">For teachers and coaches</a></li>
+          </ul>
+        </li>
+        <li class="has-menu">
+          <a class="top" href="../encyclopaedia/index.html">Reference<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../encyclopaedia/index.html">The knee encyclopaedia</a></li>
+            <li><a href="../anatomy/index.html">The Anatomy Academy</a></li>
+            <li><a href="../biomechanics/index.html">The Biomechanics Academy</a></li>
+            <li><a href="../examination/index.html">The Clinical Examination Academy</a></li>
+            <li><a href="../imaging/index.html">The Imaging Academy</a></li>
+            <li><a href="../conditions/index.html">Conditions library</a></li>
+            <li><a href="../encyclopaedia/whole-body.html">Whole body factors</a></li>
+          </ul>
+        </li>
+        <li class="has-menu">
+          <a class="top" href="../practise/index.html">Practise<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../practise/index.html#questions">Question bank</a></li>
+            <li><a href="../practise/index.html#cases">Case library</a></li>
+            <li><a href="../practise/index.html#video">Video academy</a></li>
+            <li><a href="../practise/index.html#scores">Knee score centre</a></li>
+          </ul>
+        </li>
+        <li class="has-menu">
+          <a class="top" href="../about/standards.html">About<span class="caret" aria-hidden="true"></span></a>
+          <ul class="menu">
+            <li><a href="../about/standards.html">How a page reaches this site</a></li>
+            <li><a href="../about/curriculum.html">Mapped to the UK training pathway</a></li>
+            <li><a href="../about/status.html">Build status</a></li>
+            <li><a href="#">Authors and reviewers</a></li>
+            <li><a href="#">References and sources</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </li>
+        <li><a class="start-link" href="../index.html#levels">Find your level</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumb"><a href="../index.html">KneeSchool</a><span>/</span><a href="index.html">Imaging Academy</a><span>/</span>Structured Reporting</p>
+      <div class="hero-split">
+        <div>
+          <h1>Structured Reporting</h1>
+          <p class="who">Page 5.20.1 &middot; Imaging Reporting Academy &middot; imaging page</p>
+          <p class="lede">The template that decides what a report contains, and the reason a described scan is not the same thing as an answered question.</p>
+        </div>
+        <div>
+          <div class="status"><b>Pipeline status.</b> Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band dark">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>The same topic at 4 depths</h2>
+        <p class="lede">Each tier deepens the one below it and never repeats it. Choose the level you want.</p>
+      </div>
+      <div class="dial dial-article">
+        <div class="dial-head">
+          <h2>Structured Reporting</h2>
+          <small>Choose a depth</small>
+        </div>
+        <input type="radio" name="depth" id="t0" checked>
+        <input type="radio" name="depth" id="t1">
+        <input type="radio" name="depth" id="t2">
+        <input type="radio" name="depth" id="t3">
+        <div class="dial-tabs">
+          <label for="t0">Student</label>
+          <label for="t1">MRCS</label>
+          <label for="t2">FRCS</label>
+          <label for="t3">Fellow</label>
+        </div>
+        <div class="dial-body">
+          <div class="dial-panel p0">
+            <h3>For Medical Students</h3>
+            <h4>What It Shows</h4>
+            <p>A structured report follows a fixed set of headings rather than free prose, so the same facts appear in the same order for every study. 5.1.1 covers why imaging matters.</p>
+            <p>On the pages of this chapter the six template headings are read as questions about the report rather than about an image: what the report shows, how it is produced, what a good one looks like, what a poor one looks like, how good reporting is, and where reports mislead. 5.1.7 covers evidence-based imaging.</p>
+            <p>It matters because the report is the only part of the study most referrers read, so what the template omits is effectively absent. 5.1.2 covers clinical examination versus imaging.</p>
+            <h4>How It Is Acquired</h4>
+            <p>Start from the clinical question in the request, because that is what the report has to answer. 5.1.3 covers choosing the correct investigation.</p>
+            <p>State the technique: the sequences acquired, the planes, and anything that limited them. 5.5.1 covers the standard protocol.</p>
+            <p>Work through the structures in a fixed order, so an omission shows up as a missing heading rather than hiding in prose. 5.5.9 covers the ligaments.</p>
+            <p>Record the relevant negatives, since a question is answered only when the alternative has been excluded. 5.1.6 covers imaging pitfalls.</p>
+            <p>Finish with a conclusion that answers the question in the words the referrer used. 4.1.8 covers the examination documentation.</p>
+            <h4>What Normal Looks Like</h4>
+            <p>A technique paragraph that says what was acquired and what was not. 5.5.1 covers the standard protocol.</p>
+            <p>A findings section organised by structure, each one stated as present, absent or not assessable. 5.5.8 covers the menisci.</p>
+            <p>Measurements given with the convention used to make them. 5.16.4 covers the TT-TG measurement.</p>
+            <p>A conclusion short enough to be read in full and specific enough to act on. 5.20.8 covers common reporting errors.</p>
+            <h4>What Abnormal Looks Like</h4>
+            <p>A report that describes the images and never returns to the question. 5.1.3 covers choosing the correct investigation.</p>
+            <p>A findings list with no negatives, so a structure's absence from the text could mean normal or unexamined. 5.1.6 covers imaging pitfalls.</p>
+            <p>A conclusion that repeats the findings rather than interpreting them. 5.20.8 covers common reporting errors.</p>
+            <p>A measurement with no convention attached to it. 5.16.4 covers the TT-TG measurement.</p>
+            <p>Hedging language that hands the decision back to the referrer. 4.1.6 covers the examination in the era of MRI.</p>
+            <div class="klp">
+              <h4>Key Learning Points</h4>
+              <ul><li>The template fixes what a report must contain.</li><li>The referrer reads the report rather than the images.</li><li>Without negatives, an omitted structure looks like a normal one.</li><li>A measurement without its convention cannot be used.</li><li>The conclusion answers the question that was asked.</li></ul>
+            </div>
+          </div>
+          <div class="dial-panel p1">
+            <h3>MRCS Level</h3>
+            <h4>How It Is Acquired</h4>
+            <p>In a viva the expected answer treats the report as an instrument with a user.</p>
+            <p>The expected points are the clinical question, the technique, the fixed order, the relevant negatives, and a conclusion that decides something.</p>
+            <p>Say that the quality of the request sets a ceiling on the quality of the report. 5.1.3 covers choosing the correct investigation.</p>
+            <p>Say that a structured report can be audited where free prose cannot. 5.1.7 covers evidence-based imaging.</p>
+            <p>Say that the same template is what makes two studies comparable over time. 5.20.7 covers reporting the post-operative knee.</p>
+            <h4>What Normal Looks Like</h4>
+            <p>The reasoning expected is that a report serves a reader who will not look at the images, so completeness and ordering do work that prose cannot. 4.1.8 covers the examination documentation.</p>
+            <p>Relevant negatives are the part most often dropped and the part a surgeon leans on hardest, because an operation is planned around what is not there. 5.17.2 covers the meniscal repair.</p>
+            <p>A fixed order lets a reader find one structure without reading the whole report, which is how reports are used in a clinic. 5.5.9 covers the ligaments.</p>
+            <p>Naming the convention behind a measurement is what makes the number portable between departments. 5.16.4 covers the TT-TG measurement.</p>
+            <h4>How Good It Is</h4>
+            <p>Structured reporting is the best available way to make reports complete and does nothing for the judgement inside them.</p>
+            <p>Its best contribution is completeness and comparability, both of which free text achieves by luck. 5.1.7 covers evidence-based imaging.</p>
+            <p>It is limited by the fact that a template can be filled in without thought, so a complete report can still be wrong. 5.20.8 covers common reporting errors.</p>
+            <p>No figures appear for accuracy on this page, under decision 028, and no reader agreement statistics appear either: those are published quantities from particular reader panels and this environment cannot check them.</p>
+            <div class="klp">
+              <h4>Key Learning Points</h4>
+              <ul><li>A report serves a reader who will not see the images.</li><li>Negatives are dropped most often and relied on most heavily.</li><li>A fixed order is how reports are used in clinic.</li><li>The convention is what makes a measurement portable.</li><li>A template improves completeness rather than judgement.</li></ul>
+            </div>
+          </div>
+          <div class="dial-panel p2">
+            <h3>FRCS Level</h3>
+            <h4>How Good It Is</h4>
+            <p>At decision level a report either constrains the operative plan or it does not, and most reports do not. 5.1.2 covers clinical examination versus imaging.</p>
+            <p>A report naming the pattern, the location and the extent constrains the plan. 5.20.2 covers reporting meniscal tears.</p>
+            <p>A report naming the structure alone leaves the plan where it was. 5.20.8 covers common reporting errors.</p>
+            <p>The surgeon reviews the images regardless, so the report's value lies in directing that review rather than replacing it. 4.1.6 covers the examination in the era of MRI.</p>
+            <p>A conclusion that commits is what allows a disagreement between the report and the images to be noticed at all. 5.1.6 covers imaging pitfalls.</p>
+            <h4>Where It Misleads</h4>
+            <p>The commonest error is reading completeness as accuracy. 5.20.8 covers common reporting errors.</p>
+            <p>A populated template reads as a thorough study even when the sequences acquired could not support the findings. 5.5.1 covers the standard protocol.</p>
+            <p>Text copied from a previous report carries forward a finding that has since changed. 5.20.7 covers reporting the post-operative knee.</p>
+            <p>Standard phrases acquire local meanings, so one department's wording is read as the national one. 5.21.1 covers the meniscal imaging literature.</p>
+            <p>A long findings section with a short conclusion reads as a careful report when it may be an undecided one. 4.1.6 covers the examination in the era of MRI.</p>
+            <div class="klp">
+              <h4>Key Learning Points</h4>
+              <ul><li>Completeness is read as accuracy.</li><li>A populated template can outrun the sequences acquired.</li><li>Copied text carries a stale finding forward.</li><li>Standard phrases carry local meanings.</li><li>Length is read as care.</li></ul>
+            </div>
+          </div>
+          <div class="dial-panel p3">
+            <h3>Fellowship Level</h3>
+            <h4>Where It Misleads</h4>
+            <p>At fellowship level the report in front of you was written in another department, to another template, for another question. 5.1.3 covers choosing the correct investigation.</p>
+            <p>The words have no shared definition between departments, so the same appearance yields different reports and the referrer cannot tell which. 5.21.1 covers the meniscal imaging literature.</p>
+            <p>A report generated automatically is complete by construction and carries no record of what the model could not assess. 5.18.8 covers artificial intelligence in imaging.</p>
+            <p>Serial comparison across departments compares templates as much as it compares knees. 5.20.6 covers reporting osteoarthritis.</p>
+            <p>Re-reporting a study from elsewhere is a clinical act and belongs in the notes as one. 4.1.8 covers the examination documentation.</p>
+            <p>The useful report states the question, the technique and its limits, the findings with their negatives, the measurements with their conventions, and a conclusion that commits. 5.20.8 covers common reporting errors.</p>
+            <div class="klp">
+              <h4>Key Learning Points</h4>
+              <ul><li>Report words have no shared definition between departments.</li><li>An automated report is complete by construction.</li><li>Serial comparison across departments compares templates.</li><li>Re-reporting is a clinical act and belongs in the notes.</li><li>A conclusion that commits is the point of the exercise.</li></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band wrap">
+    <div class="sec-head">
+      <h2>Explore Further</h2>
+      <p class="lede">Where this topic came from and where it goes next in the spiral.</p>
+    </div>
+    <ul class="explore">
+        <li><span class="pid">5.20.8</span><a href="common-reporting-errors.html">Common Reporting Errors</a></li>
+        <li><span class="pid">5.1.3</span><a href="choosing-the-correct-investigation.html">Choosing the Correct Investigation</a></li>
+        <li><span class="pid">5.20.2</span><a href="reporting-meniscal-tears.html">Reporting Meniscal Tears</a></li>
+        <li><span class="pid">4.1.8</span><a href="../examination/examination-documentation.html">Examination Documentation</a></li>
+        <li><span class="pid">5.5.1</span><a href="standard-mri-protocol.html">Standard Protocol</a></li>
+        <li><span class="pid">5.1.7</span><a href="evidence-based-imaging.html">Evidence-Based Imaging</a></li>
+    </ul>
+  </section>
+
+  <section class="band wrap" style="padding-top:0">
+    <div class="sec-head">
+      <h2>References</h2>
+    </div>
+    <div class="prose refs">
+      <p>No reference list is attached to this draft. Evidence verification has not run, because source retrieval was unavailable at generation time. Under the Operations Handbook a missing reference is acceptable and an invented one is a critical failure, so nothing has been cited and no citation marker appears in the text. This page carries no diagnostic accuracy figure, which is decision 028 rather than an omission: the comparative standing of the modalities is standard teaching and a specific sensitivity written from memory is the same class of claim as an invented citation, so ACC-001 refuses the number and the page states the comparison. A reviewer with the literature can add the figures into How Good It Is without restructuring the page. Any measurement here, including a sequence parameter, an angle or a millimetre, is written from standard teaching, has not been checked, and is registered under decision 006 in pipeline/config/figures with a verification state of UNVERIFIED_FROM_MEMORY.</p>
+    </div>
+    <p class="safety"><b>Safety.</b> KneeSchool is educational and does not give individual medical advice. Seek urgent assessment for a knee that cannot bear weight after an injury, a hot swollen knee with a fever, or new numbness, weakness or coldness in the leg or foot.</p>
+  </section>
+
+</main>
+
+<footer class="site-foot" id="about">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h3>Learn</h3>
+        <ul>
+          <li><a href="../levels/junior.html">Junior Academy</a></li>
+          <li><a href="../levels/patient.html">Patient Academy</a></li>
+          <li><a href="../levels/student.html">Student Academy</a></li>
+          <li><a href="../levels/mrcs.html">MRCS Academy</a></li>
+          <li><a href="../levels/frcs.html">FRCS (Tr and Orth) Academy</a></li>
+          <li><a href="../levels/fellowship.html">Fellowship Academy</a></li>
+          <li><a href="../levels/consultant.html">Consultant Masterclass</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Reference</h3>
+        <ul>
+          <li><a href="../encyclopaedia/index.html">The knee encyclopaedia</a></li>
+          <li><a href="../conditions/index.html">Conditions library</a></li>
+          <li><a href="../encyclopaedia/whole-body.html">Whole body factors</a></li>
+          <li><a href="../practise/index.html">Practise and test</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Clinical care</h3>
+        <ul>
+          <li><a href="https://www.chinmaygupte.com/">Consultant clinic</a></li>
+          <li><a href="#">Imaging and injections</a></li>
+          <li><a href="#">Rehabilitation programmes</a></li>
+          <li><a href="#">Braces and recovery products</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>About</h3>
+        <ul>
+          <li><a href="../about/standards.html">How a page reaches this site</a></li>
+          <li><a href="../about/curriculum.html">Mapped to the UK training pathway</a></li>
+          <li><a href="../levels/junior.html">For teachers and coaches</a></li>
+          <li><a href="#">Authors and reviewers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <p>KneeSchool is educational. It does not give individual medical advice and it does not replace assessment by a clinician. Seek urgent care for a hot, swollen knee with fever, a knee that cannot bear weight after injury, or new numbness in the leg.</p>
+      <p>Content written for school age learners carries no advertising and no product placement.</p>
+      <p>&copy; 2026 KneeSchool. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

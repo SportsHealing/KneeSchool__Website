@@ -680,6 +680,14 @@
     "5.12.6": "imaging/patellofemoral-cartilage-injury.html",
     "5.12.7": "imaging/patellofemoral-arthritis-imaging.html",
     "5.12.8": "imaging/patellofemoral-post-operative-imaging.html",
+    "5.20.1": "imaging/structured-reporting.html",
+    "5.20.2": "imaging/reporting-meniscal-tears.html",
+    "5.20.3": "imaging/reporting-acl-injuries.html",
+    "5.20.4": "imaging/reporting-mcl-injuries.html",
+    "5.20.5": "imaging/reporting-cartilage-lesions.html",
+    "5.20.6": "imaging/reporting-osteoarthritis.html",
+    "5.20.7": "imaging/reporting-post-operative-knees.html",
+    "5.20.8": "imaging/common-reporting-errors.html",
     "6.1.1": "conditions/acl.html"
   }
 }
