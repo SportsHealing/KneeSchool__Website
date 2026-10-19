@@ -4399,6 +4399,48 @@
       "parent": "Imaging Academy|index.html",
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
+    },
+    "5.9.1": {
+      "out": "imaging/mcl-imaging-anatomy.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.9.2": {
+      "out": "imaging/mcl-sprains.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.9.3": {
+      "out": "imaging/deep-mcl-injuries.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.9.4": {
+      "out": "imaging/pol-injuries.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.9.5": {
+      "out": "imaging/posteromedial-corner-injuries.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.9.6": {
+      "out": "imaging/amri-imaging.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.9.7": {
+      "out": "imaging/postop-medial-reconstructions.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
     }
   },
   "withheld": {
