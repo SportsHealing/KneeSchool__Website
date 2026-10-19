@@ -4363,6 +4363,42 @@
       "parent": "Imaging Academy|index.html",
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
+    },
+    "5.10.1": {
+      "out": "imaging/lcl-injuries.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.10.2": {
+      "out": "imaging/popliteus-injuries.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.10.3": {
+      "out": "imaging/plc-injuries.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.10.4": {
+      "out": "imaging/popliteofibular-ligament-mri.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.10.5": {
+      "out": "imaging/common-peroneal-nerve-mri.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.10.6": {
+      "out": "imaging/postop-plc-imaging.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
     }
   },
   "withheld": {
