@@ -1072,16 +1072,22 @@ class NoPublishedPagePointsAtAHeldPage(unittest.TestCase):
         self.assertEqual(set(sources.values()), {"styled_v1.md"})
 
     def test_the_gate_catches_a_reference_it_is_given(self):
+        # The fixture used to name 5.19.9 because that chapter was held. The
+        # client released it on 19 October 2026 and this test failed, which is
+        # the test naming a page rather than the behaviour. It now takes
+        # whichever page is held, so releasing one does not break the gate's
+        # own test.
+        held, _ = crossrefs.withheld_and_published()
+        self.assertTrue(held, "nothing is held, so the gate cannot be exercised")
+        target = sorted(held)[0]
         runs = tempfile.mkdtemp()
         os.makedirs(os.path.join(runs, "9.9.9"))
         with open(os.path.join(runs, "9.9.9", "styled_v1.md"), "w") as fh:
-            fh.write("# X\n\nBody. 5.19.9 covers the clinical translation.\n")
+            fh.write("# X\n\nBody. %s covers the held subject.\n" % target)
         try:
-            held, _ = crossrefs.withheld_and_published()
-            self.assertIn("5.19.9", held)
             sources = crossrefs.render_sources()
             text = crossrefs.source_text(runs, "9.9.9", sources)
-            self.assertIn("5.19.9", text)
+            self.assertIn(target, text)
         finally:
             shutil.rmtree(runs)
 

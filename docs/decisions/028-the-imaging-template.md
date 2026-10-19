@@ -108,3 +108,54 @@ The template is unaffected. The magic angle effect remains in the site as 5.2.20
 a page of standard MRI physics in the physics chapter, and the five references
 chapter 5.1 made to the academy were repointed at 5.2.19 Artefacts, 5.2.20 Magic
 Angle Effect and 5.18.4 UTE Imaging.
+
+## Amendment, 19 October 2026: the hold is reversed
+
+The client instructed that chapter 5.19 be published. The ten pages have been
+written and are render targets. The `withheld` block now holds only the three
+Section 0 pages it held before 15 October. Section 5 is 224 pages designed and
+203 of them published.
+
+Three consequences are worth recording, because the hold left traces.
+
+**5.2.20 said the hold was permanent.** Its fellowship block carried a sentence
+stating that the academy would not be published and that the physics page was
+therefore the site's whole treatment of the effect. That sentence was true when
+written and false the moment this amendment was made, so it has been replaced by
+one pointing at 5.19.1. This is the second time a page has recorded a client
+decision in its own prose and then had to be corrected when the decision moved.
+A page that states a publishing decision becomes stale when the decision does,
+and there is no gate for that.
+
+**The withheld gate stays.** The gate added for EV-41 refuses a reference from a
+published page into a held page. Releasing ten of the thirteen held pages does
+not weaken it, and the three Section 0 holds keep it live.
+
+**The references repointed on 15 October have not been repointed back.** The 52
+prose references and cross links that pointed into 5.19 were moved to 5.1.8,
+5.11.1, 5.21.8 and 5.2.20 when the chapter was held. They now read correctly
+where they are, and moving them back would be a large diff for no gain in
+accuracy. The chapter is reachable from the Imaging Academy index and carries 60
+outbound links of its own, so it is not orphaned. It is, however, the only
+chapter in Section 5 with almost no inbound prose references, and a reviewer
+deciding the question later should know the asymmetry was deliberate.
+
+## What 5.19.8 does not contain
+
+Chapter 5.19's eighth page is titled Imperial Magic Angle Programme. Its subject
+is a named research programme at a named institution, which makes it the only
+page in Section 5 whose content would be a claim about a real organisation.
+
+This environment has no source access, and the handbook's rule is that a missing
+reference is acceptable while an invented one is a critical failure. An
+investigator, a date, a grant, a trial name or a result written from memory falls
+on the wrong side of that rule. The page therefore names none of them.
+
+What it carries instead is the structure such a programme would have and the
+questions a reader should ask of it, with the first paragraph stating plainly
+that the emptiness is a decision rather than an oversight. The alternatives were
+to invent content, which the handbook forbids, or to hold one page of a chapter
+the client asked to be published, which is not this process's call to make.
+
+The page is the first item a reviewer with source access should reach for in this
+chapter.

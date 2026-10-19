@@ -180,9 +180,10 @@ Ultra short echo time sequences image ordered collagen directly and behave
 differently again, so the effect's relevance will change rather than disappear.
 5.18.4 covers ultra short echo time imaging.
 
-The client has decided not to publish the Magic Angle MRI Academy, so this page
-is the site's whole treatment of the effect, and it is deliberately a physics
-page rather than a specialty subject. 5.1.6 covers imaging pitfalls.
+The Magic Angle MRI Academy at 5.19 carries the specialty treatment, so this
+page stays a physics page and the chapter there takes the effect as an
+unrealised measurement rather than only as an error. 5.19.1 covers the physics
+of magic angle imaging.
 
 The transferable lesson is the one this chapter keeps returning to: before
 believing an appearance, ask what the instrument contributed to it. 5.2.12
