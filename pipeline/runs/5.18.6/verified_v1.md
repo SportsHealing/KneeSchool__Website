@@ -113,8 +113,8 @@ Its best contribution is tracking through early flexion, where the groove
 engages. 3.12.1 covers patellar tracking.
 
 It is limited by resolution, by the slow movement, by the narrow range, by the
-usual absence of load, and by availability. 5.1.8 covers the future of knee
-imaging.
+usual absence of load, and by availability. 5.19.9 covers the clinical
+translation.
 
 No figures appear for accuracy on this page, under decision 028, and no frame
 rates, resolutions or angular ranges appear either: those are protocol
@@ -210,7 +210,7 @@ examination still addresses it better. 4.15.2 covers the J sign.
 - [[4.15.6 | Dynamic Tracking]]
 - [[5.4.14 | Patellar Tracking]]
 - [[4.15.2 | J Sign]]
-- [[5.1.8 | Future of Knee Imaging]]
+- [[5.19.9 | Clinical Translation]]
 
 ## References
 

@@ -96,9 +96,9 @@ The reasoning expected is that these surfaces are curved and thin where the
 trochlea turns, so the same defect is easier to see on the patella than in the
 groove. 2.12.1 covers the trochlea.
 
-Cartilage signal alters where the surface lies at a particular orientation to
-the field, and this joint reaches that orientation. 5.2.20 covers the magic
-angle effect.
+Cartilage signal alters where the surface lies at a particular orientation to the
+field, and this joint reaches that orientation. 5.19.6 covers cartilage
+applications.
 
 A defect under the median ridge is foreshortened on axial images and is
 missed. 3.12.2 covers contact areas.
@@ -116,8 +116,8 @@ Its best contribution is a full thickness defect with its location and the
 state of the bone beneath. 5.11.2 covers chondral defects.
 
 It is limited by the curved thin surfaces, by signal effects at particular
-orientations, and by grading that varies between readers. 5.2.20 covers the
-magic angle effect.
+orientations, and by grading that varies between readers. 5.19.6 covers cartilage
+applications.
 
 No figures appear for accuracy on this page, under decision 028, and no
 cartilage thickness values or grade boundaries appear either: those are

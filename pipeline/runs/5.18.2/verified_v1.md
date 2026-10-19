@@ -11,7 +11,7 @@ T2 mapping measures the T2 relaxation time at each point in a tissue and
 displays it as a map. 5.2.14 covers the T2 imaging.
 
 In cartilage the value rises with water content and falls with collagen
-organisation. 5.11.1 covers the normal cartilage.
+organisation. 5.19.2 covers the collagen architecture.
 
 It matters because both change early in degeneration, before any defect
 appears on a conventional sequence. 5.11.2 covers chondral defects.
@@ -53,7 +53,7 @@ A regional rise in value with an intact surface. 5.11.2 covers chondral
 defects.
 
 Loss of the normal depth gradient, which reflects collagen disorganisation.
-5.11.1 covers the normal cartilage.
+5.19.2 covers the collagen architecture.
 
 A focal rise over a bone marrow lesion. 5.11.7 covers bone marrow lesions.
 
@@ -90,8 +90,8 @@ cartilage imaging literature.
 
 The reasoning expected is that collagen fibre orientation changes through the
 cartilage depth, so the relaxation time does too, and the gradient rather than
-the mean carries the structural information. 5.11.1 covers the normal
-cartilage.
+the mean carries the structural information. 5.19.2 covers the collagen
+architecture.
 
 Early degeneration raises water content and disrupts the collagen network,
 which raises the value and flattens the gradient together. 5.11.2 covers
@@ -195,7 +195,7 @@ Automated segmentation makes the maps reproducible and inherits the same edge
 problem at the deep zone. 5.18.8 covers artificial intelligence in imaging.
 
 The useful position is that T2 mapping has earned its place as an outcome
-measure and not as a diagnostic test. 5.1.8 covers the future of knee imaging.
+measure and not as a diagnostic test. 5.19.9 covers the clinical translation.
 
 ### Key Learning Points
 
@@ -210,7 +210,7 @@ measure and not as a diagnostic test. 5.1.8 covers the future of knee imaging.
 - [[5.18.1 | Quantitative MRI]]
 - [[5.18.3 | T1 Rho Imaging]]
 - [[5.11.1 | Normal Cartilage]]
-- [[5.2.20 | Magic Angle Effect]]
+- [[5.19.2 | Collagen Architecture]]
 - [[5.11.8 | Cartilage Repair Procedures]]
 - [[5.21.3 | Cartilage Imaging Literature]]
 

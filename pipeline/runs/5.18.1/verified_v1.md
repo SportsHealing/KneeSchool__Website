@@ -87,14 +87,14 @@ Say that the measurement is of a physical property rather than of a diagnosis.
 Say that comparability requires the same scanner. 5.5.1 covers the standard
 protocol.
 
-Say that most of these measures are research tools at present. 5.1.8 covers
-the future of knee imaging.
+Say that most of these measures are research tools at present. 5.19.9 covers the
+clinical translation.
 
 ### What Normal Looks Like
 
 The reasoning expected is that tissue properties vary with composition and
 organisation, so a measure sensitive to one of them detects change before the
-structure fails. 5.11.1 covers the normal cartilage.
+structure fails. 5.19.2 covers the collagen architecture.
 
 The same sensitivity makes the measure respond to loading, hydration and time
 of day, which is noise in a clinic and signal in a study. 5.18.5 covers
@@ -116,8 +116,8 @@ change conventional imaging cannot. 5.21.3 covers the cartilage imaging
 literature.
 
 It is limited by variation between scanners, by sensitivity to conditions
-unrelated to disease, and by the absence of agreed reference ranges. 5.1.8
-covers the future of knee imaging.
+unrelated to disease, and by the absence of agreed reference ranges. 5.19.9
+covers the clinical translation.
 
 No figures appear for accuracy on this page, under decision 028, and no
 relaxation values, reference ranges or reproducibility statistics appear
@@ -144,7 +144,7 @@ They change trial design, because an outcome measure that detects change early
 shortens a study. 5.1.7 covers evidence-based imaging.
 
 They will reach the clinic through standardisation rather than through better
-physics. 5.1.8 covers the future of knee imaging.
+physics. 5.19.9 covers the clinical translation.
 
 A value in a referral letter from a research study should not be read as a
 clinical result. 5.20.8 covers common reporting errors.
@@ -200,9 +200,9 @@ Automated pipelines produce these maps now, which removes the operator
 variability and leaves the scanner variability untouched. 5.18.8 covers
 artificial intelligence in imaging.
 
-The honest position is that the physics works, the measurement does not
-travel, and standardisation rather than discovery is what stands between these
-techniques and use. 5.1.8 covers the future of knee imaging.
+The honest position is that the physics works, the measurement does not travel,
+and standardisation rather than discovery is what stands between these
+techniques and use. 5.19.9 covers the clinical translation.
 
 ### Key Learning Points
 
@@ -217,7 +217,7 @@ techniques and use. 5.1.8 covers the future of knee imaging.
 - [[5.18.2 | T2 Mapping]]
 - [[5.18.3 | T1 Rho Imaging]]
 - [[5.2.21 | Advanced MRI Techniques]]
-- [[5.1.8 | Future of Knee Imaging]]
+- [[5.19.9 | Clinical Translation]]
 - [[5.21.3 | Cartilage Imaging Literature]]
 - [[5.18.8 | Artificial Intelligence in Imaging]]
 

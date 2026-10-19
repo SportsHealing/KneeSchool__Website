@@ -12,7 +12,7 @@ too fast for a conventional sequence to record. 5.2.12 covers the basic
 principles.
 
 Those tissues include the deep and calcified cartilage, the menisci, tendon,
-ligament and cortical bone. 5.11.1 covers the normal cartilage.
+ligament and cortical bone. 5.19.2 covers the collagen architecture.
 
 It matters because every conventional study shows these as dark, so their
 internal structure has never been part of routine reading. 5.5.10 covers the
@@ -32,8 +32,8 @@ conventional sequence. 5.2.19 covers the artefacts.
 Image the structure of interest specifically, because the sequence is not a
 whole joint study. 5.5.1 covers the standard protocol.
 
-Expect no established normal appearance for most of these tissues. 5.1.8
-covers the future of knee imaging.
+Expect no established normal appearance for most of these tissues. 5.19.9 covers
+the clinical translation.
 
 ### What Normal Looks Like
 
@@ -59,8 +59,8 @@ Signal change inside a tendon that a conventional sequence could not show.
 Change in the calcified cartilage and the subchondral plate together. 5.11.7
 covers bone marrow lesions.
 
-An appearance with no published normal to compare it against, which is the
-usual situation here. 5.1.8 covers the future of knee imaging.
+An appearance with no published normal to compare it against, which is the usual
+situation here. 5.19.9 covers the clinical translation.
 
 ### Key Learning Points
 
@@ -86,14 +86,15 @@ one. 5.5.10 covers the tendons.
 Say that the osteochondral junction is the region this addresses. 5.11.5
 covers osteochondral lesions.
 
-Say that interpretation rather than acquisition is the limiting step. 5.1.8
-covers the future of knee imaging.
+Say that interpretation rather than acquisition is the limiting step. 5.19.9
+covers the clinical translation.
 
 ### What Abnormal Looks Like
 
 The reasoning expected is that highly ordered collagen gives a very short
 signal, so the tissues with the most organised matrix are precisely the ones
-conventional imaging cannot characterise. 5.11.1 covers the normal cartilage.
+conventional imaging cannot characterise. 5.19.2 covers the collagen
+architecture.
 
 The same organisation produces the magic angle behaviour, so both techniques
 exist because of one tissue property. 5.2.20 covers the magic angle effect.
@@ -114,8 +115,8 @@ Its best contribution is the osteochondral junction and the deep cartilage.
 5.11.5 covers osteochondral lesions.
 
 It is limited by acquisition time, by unfamiliar artefacts, by its structure
-specific scope, and above all by the absence of a normal reference. 5.1.8
-covers the future of knee imaging.
+specific scope, and above all by the absence of a normal reference. 5.19.9
+covers the clinical translation.
 
 No figures appear for accuracy on this page, under decision 028, and no echo
 times or signal values appear either: those are protocol quantities tied to
@@ -147,7 +148,7 @@ Meniscal matrix assessment could separate a degenerate meniscus from an
 acutely torn one. 5.6.2 covers the meniscal signal grading.
 
 None of these uses is established, and the reason is the reference rather than
-the physics. 5.1.8 covers the future of knee imaging.
+the physics. 5.19.9 covers the clinical translation.
 
 ### Where It Misleads
 
@@ -178,8 +179,8 @@ standard protocol.
 
 ### Where It Misleads
 
-At fellowship level this appears in research collaborations and device
-material rather than in reports. 5.21.8 covers the future directions.
+At fellowship level this appears in research collaborations and device material
+rather than in reports. 5.19.7 covers the current research.
 
 The tissues it shows are the ones orthopaedic practice cares most about and
 knows least about radiologically, which leaves the literature thin and the
@@ -197,8 +198,8 @@ Automated analysis is being applied to appearances no reader has yet learned
 to call normal. 5.18.8 covers artificial intelligence in imaging.
 
 The honest position is that this is the most genuinely new technique in the
-chapter and the one with the least ground under it. 5.1.8 covers the future of
-knee imaging.
+chapter and the one with the least ground under it. 5.19.9 covers the clinical
+translation.
 
 ### Key Learning Points
 
@@ -210,11 +211,11 @@ knee imaging.
 
 ## Explore Further
 
-- [[5.11.1 | Normal Cartilage]]
+- [[5.19.2 | Collagen Architecture]]
 - [[5.11.5 | Osteochondral Lesions]]
 - [[5.2.20 | Magic Angle Effect]]
 - [[5.5.10 | Tendons]]
-- [[5.1.8 | Future of Knee Imaging]]
+- [[5.19.9 | Clinical Translation]]
 - [[5.18.1 | Quantitative MRI]]
 
 ## References

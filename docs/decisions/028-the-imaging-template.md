@@ -131,14 +131,26 @@ and there is no gate for that.
 published page into a held page. Releasing ten of the thirteen held pages does
 not weaken it, and the three Section 0 holds keep it live.
 
-**The references repointed on 15 October have not been repointed back.** The 52
-prose references and cross links that pointed into 5.19 were moved to 5.1.8,
-5.11.1, 5.21.8 and 5.2.20 when the chapter was held. They now read correctly
-where they are, and moving them back would be a large diff for no gain in
-accuracy. The chapter is reachable from the Imaging Academy index and carries 60
-outbound links of its own, so it is not orphaned. It is, however, the only
-chapter in Section 5 with almost no inbound prose references, and a reviewer
-deciding the question later should know the asymmetry was deliberate.
+**The references repointed on 15 October have been repointed back.** The prose
+references and cross links that pointed into 5.19 were moved to 5.1.8, 5.11.1,
+5.21.8 and 5.2.20 when the chapter was held, by 513d9d4 for chapter 5.1 and by
+4e0dfa0 for the rest. The client asked for them back on 19 October, so 39
+paragraphs across nine pages were returned to their pre-hold text: 5.1.6, 5.1.8,
+5.12.6 and 5.18.1 to 5.18.6. The chapter now carries 33 inbound prose references
+and 9 inbound cross links.
+
+The restoration was done paragraph by paragraph rather than by rewriting
+sentences. For each file the two commits touched, the script took the text before
+the commit and the text after, paired the blocks that differed, kept only the
+pairs whose before side named a page in 5.19, and swapped the after side back.
+Anything that had changed since would have been reported and left alone; nothing
+had. Doing it that way matters because the repointing had reworded the
+surrounding sentences to match each substitute page's title, so a page id swap
+alone would have left prose that named the wrong subject.
+
+One of the moves had pointed at 5.21.8 Future Directions, which is designed and
+unwritten, so restoring it also removed a cross link into a page that does not
+exist yet.
 
 ## What 5.19.8 does not contain
 
