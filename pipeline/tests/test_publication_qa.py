@@ -3,6 +3,7 @@ Operations Handbook. These tests hold its rules against known good and known bad
 markup, and hold the live site at zero findings.
 """
 
+import collections
 import io
 import json
 import os
@@ -518,10 +519,17 @@ class TheSitemapCountAgreesWithTheSitemap(unittest.TestCase):
 class HeldPagesAreNotCountedAsComingSoon(unittest.TestCase):
     """A page the client decided against is not a page that is coming soon.
 
-    Chapter 5.19, the Magic Angle MRI Academy, will not be published. Before
-    this, the Imaging Academy index read "8 of 224 pages are published; the rest
-    are written in syllabus order", which promised ten pages that are never
-    coming, and the chapter would have sat at nought of ten for ever.
+    Written for chapter 5.19, the Magic Angle MRI Academy, held on 15 October
+    2026. Before it, the Imaging Academy index read "8 of 224 pages are
+    published; the rest are written in syllabus order", which promised ten pages
+    that were never coming, and the chapter would have sat at nought of ten for
+    ever.
+
+    The client released 5.19 on 19 October 2026 and three of these tests failed,
+    because they named that chapter instead of the rule. They now read the
+    withheld block and check the arithmetic against whatever it holds, which at
+    present is the three Section 0 pages held on 7 October. The mechanism is
+    what matters and it is still live.
     """
 
     def setUp(self):
@@ -530,10 +538,30 @@ class HeldPagesAreNotCountedAsComingSoon(unittest.TestCase):
                   encoding="utf-8") as fh:
             self.targets = json.load(fh)
 
-    def test_the_held_chapter_is_in_the_withheld_block(self):
+    def test_the_withheld_block_is_not_empty_and_names_real_pages(self):
+        """Something is held, and every held id is a page the architecture has.
+
+        This replaced a test that asserted the ten ids of chapter 5.19. That
+        chapter was released, so the assertion was about one client decision
+        rather than about the withheld mechanism.
+        """
         withheld = self.targets.get("withheld") or {}
-        for i in range(1, 11):
-            self.assertIn("5.19.%d" % i, withheld)
+        self.assertTrue(withheld, "the withheld block is empty")
+        known = set()
+        arch = os.path.join(ROOT, "config", "architecture")
+        for name in sorted(os.listdir(arch)):
+            if not name.endswith(".json"):
+                continue
+            with open(os.path.join(arch, name), encoding="utf-8") as fh:
+                data = json.load(fh)
+            items = data if isinstance(data, list) else data.get("pages", [])
+            if isinstance(items, dict):
+                items = list(items.values())
+            for p in items:
+                if isinstance(p, dict) and "page_id" in p:
+                    known.add(p["page_id"])
+        for page_id in withheld:
+            self.assertIn(page_id, known, "held id is not in the architecture")
 
     def test_a_held_page_is_not_also_a_render_target(self):
         """An entry in both would publish a page the client declined."""
@@ -559,14 +587,49 @@ class HeldPagesAreNotCountedAsComingSoon(unittest.TestCase):
                                 "%s: %s" % (page_id, draft))
 
     def test_the_index_excludes_held_pages_from_its_total(self):
-        path = os.path.join(self.root, "imaging", "index.html")
-        if not os.path.exists(path):
-            self.skipTest("the imaging index is not built")
-        with open(path, encoding="utf-8") as fh:
-            page = fh.read()
-        self.assertIn("of 214 pages are published", page)
-        self.assertIn("are designed and are not being published", page)
-        self.assertNotIn("of 224 pages are published", page)
+        """The denominator on a section index is designed minus held.
+
+        The previous version of this test asserted the Imaging Academy's two
+        literal numbers, 214 published of 224 designed, which were correct only
+        while chapter 5.19 was held. It now computes the arithmetic, so it holds
+        whichever pages are held and in whichever section.
+        """
+        withheld = set(self.targets.get("withheld") or {})
+        arch = os.path.join(ROOT, "config", "architecture")
+        designed = collections.Counter()
+        held = collections.Counter()
+        # The generator counts only the pages_*.json files, so this does too.
+        # Counting outline_1_to_15.json as well made Section 2 come out at 237
+        # designed pages against an index that says 79.
+        for name in sorted(os.listdir(arch)):
+            if not (name.startswith("pages_") and name.endswith(".json")):
+                continue
+            with open(os.path.join(arch, name), encoding="utf-8") as fh:
+                for p in json.load(fh):
+                    sid = str(p["page_id"]).split(".")[0]
+                    designed[sid] += 1
+                    if p["page_id"] in withheld:
+                        held[sid] += 1
+        checked = 0
+        for sid, folder in (("2", "anatomy"), ("3", "biomechanics"),
+                            ("4", "examination"), ("5", "imaging")):
+            path = os.path.join(self.root, folder, "index.html")
+            if not os.path.exists(path):
+                continue
+            with open(path, encoding="utf-8") as fh:
+                page = fh.read()
+            total = designed[sid] - held[sid]
+            self.assertTrue(
+                ("of %d pages are published" % total) in page
+                or ("All %d pages are published" % total) in page,
+                "%s does not count %d pages" % (folder, total))
+            if held[sid]:
+                self.assertIn("are designed and are not being published", page)
+                self.assertNotIn("of %d pages are published" % designed[sid], page)
+            else:
+                self.assertNotIn("are designed and are not being published", page)
+            checked += 1
+        self.assertTrue(checked, "no section index is built")
 
 
 

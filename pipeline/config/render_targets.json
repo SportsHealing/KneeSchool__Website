@@ -4441,6 +4441,66 @@
       "parent": "Imaging Academy|index.html",
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
+    },
+    "5.19.1": {
+      "out": "imaging/magic-angle-physics.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.19.2": {
+      "out": "imaging/magic-angle-collagen-architecture.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.19.3": {
+      "out": "imaging/magic-angle-tendon-imaging.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.19.4": {
+      "out": "imaging/magic-angle-ligament-imaging.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.19.5": {
+      "out": "imaging/magic-angle-meniscal-imaging.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.19.6": {
+      "out": "imaging/magic-angle-cartilage-applications.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.19.7": {
+      "out": "imaging/magic-angle-current-research.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.19.8": {
+      "out": "imaging/magic-angle-imperial-programme.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.19.9": {
+      "out": "imaging/magic-angle-clinical-translation.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.19.10": {
+      "out": "imaging/magic-angle-future-applications.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
     }
   },
   "withheld": {
@@ -4461,66 +4521,6 @@
       "reason": "Held at the client's instruction on 7 October 2026. The page was written and passes the style gate, but its whole subject is a feature that needs accounts, progress tracking and the children's data protection work in PG-5. Publishing a page whose job is to explain why there are no badges was judged not worth the shelf space. The Junior Academy syllabus shows it as coming soon instead.",
       "draft": "pipeline/runs/0.6.4/styled_v1.md",
       "would_have_been": "junior/digital-badges.html"
-    },
-    "5.19.1": {
-      "title": "Physics of Magic Angle Imaging",
-      "reason": "Held at the client's instruction on 15 October 2026: the Magic Angle MRI Academy will not be published. Unlike the Section 0 holds, these ten pages were never written, so there is no draft to restore. The architecture still carries the chapter, because the architecture records what the site is designed to contain and the client's decision is a publishing decision, not an architectural one. Section 5 is therefore 224 pages designed and 214 to be written. The magic angle effect itself stays in the site at 5.2.20, where it is a page of standard MRI physics in the physics chapter rather than part of the academy.",
-      "written": false,
-      "would_have_been": "imaging/<not assigned, the chapter was never slugged>"
-    },
-    "5.19.2": {
-      "title": "Collagen Architecture",
-      "reason": "Held at the client's instruction on 15 October 2026: the Magic Angle MRI Academy will not be published. Unlike the Section 0 holds, these ten pages were never written, so there is no draft to restore. The architecture still carries the chapter, because the architecture records what the site is designed to contain and the client's decision is a publishing decision, not an architectural one. Section 5 is therefore 224 pages designed and 214 to be written. The magic angle effect itself stays in the site at 5.2.20, where it is a page of standard MRI physics in the physics chapter rather than part of the academy.",
-      "written": false,
-      "would_have_been": "imaging/<not assigned, the chapter was never slugged>"
-    },
-    "5.19.3": {
-      "title": "Tendon Imaging",
-      "reason": "Held at the client's instruction on 15 October 2026: the Magic Angle MRI Academy will not be published. Unlike the Section 0 holds, these ten pages were never written, so there is no draft to restore. The architecture still carries the chapter, because the architecture records what the site is designed to contain and the client's decision is a publishing decision, not an architectural one. Section 5 is therefore 224 pages designed and 214 to be written. The magic angle effect itself stays in the site at 5.2.20, where it is a page of standard MRI physics in the physics chapter rather than part of the academy.",
-      "written": false,
-      "would_have_been": "imaging/<not assigned, the chapter was never slugged>"
-    },
-    "5.19.4": {
-      "title": "Ligament Imaging",
-      "reason": "Held at the client's instruction on 15 October 2026: the Magic Angle MRI Academy will not be published. Unlike the Section 0 holds, these ten pages were never written, so there is no draft to restore. The architecture still carries the chapter, because the architecture records what the site is designed to contain and the client's decision is a publishing decision, not an architectural one. Section 5 is therefore 224 pages designed and 214 to be written. The magic angle effect itself stays in the site at 5.2.20, where it is a page of standard MRI physics in the physics chapter rather than part of the academy.",
-      "written": false,
-      "would_have_been": "imaging/<not assigned, the chapter was never slugged>"
-    },
-    "5.19.5": {
-      "title": "Meniscal Imaging",
-      "reason": "Held at the client's instruction on 15 October 2026: the Magic Angle MRI Academy will not be published. Unlike the Section 0 holds, these ten pages were never written, so there is no draft to restore. The architecture still carries the chapter, because the architecture records what the site is designed to contain and the client's decision is a publishing decision, not an architectural one. Section 5 is therefore 224 pages designed and 214 to be written. The magic angle effect itself stays in the site at 5.2.20, where it is a page of standard MRI physics in the physics chapter rather than part of the academy.",
-      "written": false,
-      "would_have_been": "imaging/<not assigned, the chapter was never slugged>"
-    },
-    "5.19.6": {
-      "title": "Cartilage Applications",
-      "reason": "Held at the client's instruction on 15 October 2026: the Magic Angle MRI Academy will not be published. Unlike the Section 0 holds, these ten pages were never written, so there is no draft to restore. The architecture still carries the chapter, because the architecture records what the site is designed to contain and the client's decision is a publishing decision, not an architectural one. Section 5 is therefore 224 pages designed and 214 to be written. The magic angle effect itself stays in the site at 5.2.20, where it is a page of standard MRI physics in the physics chapter rather than part of the academy.",
-      "written": false,
-      "would_have_been": "imaging/<not assigned, the chapter was never slugged>"
-    },
-    "5.19.7": {
-      "title": "Current Research",
-      "reason": "Held at the client's instruction on 15 October 2026: the Magic Angle MRI Academy will not be published. Unlike the Section 0 holds, these ten pages were never written, so there is no draft to restore. The architecture still carries the chapter, because the architecture records what the site is designed to contain and the client's decision is a publishing decision, not an architectural one. Section 5 is therefore 224 pages designed and 214 to be written. The magic angle effect itself stays in the site at 5.2.20, where it is a page of standard MRI physics in the physics chapter rather than part of the academy.",
-      "written": false,
-      "would_have_been": "imaging/<not assigned, the chapter was never slugged>"
-    },
-    "5.19.8": {
-      "title": "Imperial Magic Angle Programme",
-      "reason": "Held at the client's instruction on 15 October 2026: the Magic Angle MRI Academy will not be published. Unlike the Section 0 holds, these ten pages were never written, so there is no draft to restore. The architecture still carries the chapter, because the architecture records what the site is designed to contain and the client's decision is a publishing decision, not an architectural one. Section 5 is therefore 224 pages designed and 214 to be written. The magic angle effect itself stays in the site at 5.2.20, where it is a page of standard MRI physics in the physics chapter rather than part of the academy.",
-      "written": false,
-      "would_have_been": "imaging/<not assigned, the chapter was never slugged>"
-    },
-    "5.19.9": {
-      "title": "Clinical Translation",
-      "reason": "Held at the client's instruction on 15 October 2026: the Magic Angle MRI Academy will not be published. Unlike the Section 0 holds, these ten pages were never written, so there is no draft to restore. The architecture still carries the chapter, because the architecture records what the site is designed to contain and the client's decision is a publishing decision, not an architectural one. Section 5 is therefore 224 pages designed and 214 to be written. The magic angle effect itself stays in the site at 5.2.20, where it is a page of standard MRI physics in the physics chapter rather than part of the academy.",
-      "written": false,
-      "would_have_been": "imaging/<not assigned, the chapter was never slugged>"
-    },
-    "5.19.10": {
-      "title": "Future Applications",
-      "reason": "Held at the client's instruction on 15 October 2026: the Magic Angle MRI Academy will not be published. Unlike the Section 0 holds, these ten pages were never written, so there is no draft to restore. The architecture still carries the chapter, because the architecture records what the site is designed to contain and the client's decision is a publishing decision, not an architectural one. Section 5 is therefore 224 pages designed and 214 to be written. The magic angle effect itself stays in the site at 5.2.20, where it is a page of standard MRI physics in the physics chapter rather than part of the academy.",
-      "written": false,
-      "would_have_been": "imaging/<not assigned, the chapter was never slugged>"
     }
   },
   "withheld_note": "Pages written and gated but deliberately not published, and pages the client decided against before they were written. Where a draft exists it stays in pipeline/runs so nothing is lost, and the entry points at it. An entry with \"written\": false has no draft, because the decision came first. Move an entry back into pages and run tools/render_site.py to publish one that exists.",
