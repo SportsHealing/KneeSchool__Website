@@ -1,0 +1,37 @@
+{
+  "lint_version": "1.0",
+  "pass": true,
+  "fail_count": 0,
+  "warn_count": 2,
+  "findings": [
+    {
+      "rule_id": "POS-001",
+      "severity": "warn",
+      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
+      "matched_text": "Confirm the discontinuity on more than one plane, since a tear seen on one sagittal image can be a partial volume effect",
+      "context": "",
+      "line": 0
+    },
+    {
+      "rule_id": "POS-001",
+      "severity": "warn",
+      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
+      "matched_text": "Check the tibial attachment for a bony avulsion, which is a different injury with a different treatment.",
+      "context": "",
+      "line": 0
+    }
+  ],
+  "article_template_version": "1.0",
+  "document": {
+    "word_count": 1306,
+    "tiers_present": [
+      "fellowship",
+      "frcs",
+      "medical_student",
+      "mrcs"
+    ],
+    "has_reference_list": true,
+    "sentence_count": 102,
+    "page_type": "imaging"
+  }
+}

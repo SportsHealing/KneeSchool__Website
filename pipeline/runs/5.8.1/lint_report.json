@@ -1,0 +1,53 @@
+{
+  "lint_version": "1.0",
+  "pass": true,
+  "fail_count": 0,
+  "warn_count": 4,
+  "findings": [
+    {
+      "rule_id": "POS-001",
+      "severity": "warn",
+      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
+      "matched_text": "Read it on the sagittal images along its whole length, where its curve is seen in one plane.",
+      "context": "",
+      "line": 0
+    },
+    {
+      "rule_id": "POS-001",
+      "severity": "warn",
+      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
+      "matched_text": "Confirm the tibial attachment on coronal and axial images, since an avulsion there is a bony injury.",
+      "context": "",
+      "line": 0
+    },
+    {
+      "rule_id": "POS-001",
+      "severity": "warn",
+      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
+      "matched_text": "Identify the meniscofemoral ligaments beside it, which are normal structures mistaken for fragments or for tears.",
+      "context": "",
+      "line": 0
+    },
+    {
+      "rule_id": "POS-001",
+      "severity": "warn",
+      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
+      "matched_text": "Treat the ligament as the study's internal control: if it is not well seen, the study's quality is the first question.",
+      "context": "",
+      "line": 0
+    }
+  ],
+  "article_template_version": "1.0",
+  "document": {
+    "word_count": 1473,
+    "tiers_present": [
+      "fellowship",
+      "frcs",
+      "medical_student",
+      "mrcs"
+    ],
+    "has_reference_list": true,
+    "sentence_count": 109,
+    "page_type": "imaging"
+  }
+}
