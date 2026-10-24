@@ -155,7 +155,8 @@ and the new pattern is less familiar than the old one. 5.18.8 covers artificial
 intelligence in imaging.
 
 The pitfalls recur across this whole section, which is why they have a chapter
-rather than a paragraph on each page. 5.2.19 covers artefacts.
+rather than a paragraph on each page. 5.19.1 covers the physics of magic angle
+imaging.
 
 ### Key Learning Points
 

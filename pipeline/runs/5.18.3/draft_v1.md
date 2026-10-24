@@ -83,8 +83,8 @@ T2 mapping.
 Say that the energy deposited limits the sequence on clinical scanners. 5.2.12
 covers the basic principles.
 
-Say that it is a research sequence in most departments. 5.1.8 covers the
-future of knee imaging.
+Say that it is a research sequence in most departments. 5.19.9 covers the
+clinical translation.
 
 ### What Abnormal Looks Like
 
@@ -151,7 +151,7 @@ cartilage lesions.
 ### Where It Misleads
 
 The commonest error is treating the sequence as available because it is
-published. 5.1.8 covers the future of knee imaging.
+published. 5.19.9 covers the clinical translation.
 
 A raised value is read as a lesion. 5.11.2 covers chondral defects.
 
@@ -190,11 +190,11 @@ Repaired cartilage has a matrix unlike native cartilage, so the measure's
 basis does not transfer to it. 5.11.8 covers the cartilage repair procedures.
 
 Combining it with the other quantitative maps is the current direction, which
-multiplies the standardisation problem rather than solving it. 5.21.8 covers
-the future directions.
+multiplies the standardisation problem rather than solving it. 5.19.7 covers the
+current research.
 
 The honest position is that this is the most promising measure in the chapter
-and the one furthest from a clinic. 5.1.8 covers the future of knee imaging.
+and the one furthest from a clinic. 5.19.9 covers the clinical translation.
 
 ### Key Learning Points
 
@@ -209,8 +209,8 @@ and the one furthest from a clinic. 5.1.8 covers the future of knee imaging.
 - [[5.18.2 | T2 Mapping]]
 - [[5.18.1 | Quantitative MRI]]
 - [[5.11.1 | Normal Cartilage]]
-- [[5.21.8 | Future Directions]]
-- [[5.1.8 | Future of Knee Imaging]]
+- [[5.19.7 | Current Research]]
+- [[5.19.9 | Clinical Translation]]
 - [[5.21.3 | Cartilage Imaging Literature]]
 
 ## References

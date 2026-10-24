@@ -85,8 +85,8 @@ covers the quantitative MRI.
 Say that the achievable positions are few and are not the symptomatic ones.
 5.18.6 covers the dynamic MRI.
 
-Say that availability is the practical constraint. 5.1.8 covers the future of
-knee imaging.
+Say that availability is the practical constraint. 5.19.9 covers the clinical
+translation.
 
 ### What Abnormal Looks Like
 
@@ -113,8 +113,8 @@ Its best contribution is a finding that appears only under load, with
 extrusion the established example. 5.6.11 covers meniscal extrusion.
 
 It is limited by availability, by image quality, by the restricted positions,
-and by load that is applied rather than natural. 5.1.8 covers the future of
-knee imaging.
+and by load that is applied rather than natural. 5.19.9 covers the clinical
+translation.
 
 No figures appear for accuracy on this page, under decision 028, and no load
 values, cartilage deformation values or positional angles appear either: those
@@ -196,8 +196,8 @@ Combining load with quantitative mapping is the current direction and
 compounds both standardisation problems. 5.18.2 covers the T2 mapping.
 
 The honest position is that a loaded study asks a question the rest of this
-section cannot ask, and that almost nobody can obtain one. 5.1.8 covers the
-future of knee imaging.
+section cannot ask, and that almost nobody can obtain one. 5.19.9 covers the
+clinical translation.
 
 ### Key Learning Points
 
@@ -213,7 +213,7 @@ future of knee imaging.
 - [[5.12.4 | Patellar Subluxation]]
 - [[5.18.6 | Dynamic MRI]]
 - [[5.3.5 | Rosenberg View]]
-- [[5.1.8 | Future of Knee Imaging]]
+- [[5.19.9 | Clinical Translation]]
 - [[5.18.1 | Quantitative MRI]]
 
 ## References

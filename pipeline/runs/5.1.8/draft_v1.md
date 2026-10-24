@@ -31,9 +31,9 @@ short echo time imaging.
 Automated reading applies trained software to the images, either to triage or to
 measure. 5.18.8 covers artificial intelligence in imaging.
 
-The magic angle effect sits across several of these, since it is a physical
-effect that quantitative sequences have to account for. 5.2.20 covers the magic
-angle effect.
+The magic angle work sits across several of these, since it is a physical effect
+that quantitative sequences have to account for and can also exploit. 5.19.1
+covers the physics of magic angle imaging.
 
 ### Key Learning Points
 
@@ -104,8 +104,7 @@ decisions, which is a different kind of benefit and easier to evaluate. 5.18.8
 covers artificial intelligence in imaging.
 
 Short echo time work would change the assessment of structures currently
-reported as normal because they cannot be seen. 5.18.4 covers ultra short echo
-time imaging.
+reported as normal because they cannot be seen. 5.19.3 covers tendon imaging.
 
 ### Where It Misleads
 
@@ -151,10 +150,9 @@ Whether automated reading reduces error or relocates it is open, and the second
 is the historical pattern for every reading aid. 5.18.8 covers artificial
 intelligence in imaging.
 
-Whether short echo time work reaches the tendon insertions and the deep
-cartilage reliably enough to report is open, and those are structures currently
-called normal because they cannot be seen. 5.18.4 covers ultra short echo time
-imaging.
+Whether the magic angle effect can be exploited as a measurement rather than
+only corrected for is the question this site's own programme exists to ask.
+5.19.8 covers the Imperial programme.
 
 Whether any of it reaches a district general hospital within a decade is the
 question that decides whether the rest matters, and it is not a clinical
@@ -173,7 +171,7 @@ question at all. 5.1.5 covers cost effectiveness.
 - [[5.18.1 | Quantitative MRI]]
 - [[5.18.5 | Weight-Bearing MRI]]
 - [[5.18.8 | Artificial Intelligence in Imaging]]
-- [[5.2.20 | Magic Angle Effect]]
+- [[5.19.1 | Physics of Magic Angle Imaging]]
 - [[5.1.7 | Evidence-Based Imaging]]
 - [[5.21.8 | Future Directions]]
 
