@@ -516,6 +516,79 @@ class TheSitemapCountAgreesWithTheSitemap(unittest.TestCase):
             self.assertIn("<loc>%s%s</loc>" % (base, rel), body)
 
 
+class TheSitemapCoversEveryPageTheSiteServes(unittest.TestCase):
+    """site_chrome.sitemap_paths() used to end with eleven paths typed by hand.
+
+    It listed the homepage, the section indexes and the three about pages, and
+    it did not list the seven tier pages under levels/ or
+    encyclopaedia/whole-body.html. All eight are linked from the navigation on
+    every page of the site, so a reader reached them and a crawler following
+    sitemap.xml did not. Nothing failed, because a page missing from a sitemap
+    is still served, and the site has been discoverable since decision 026.
+
+    The typed list was a copy of the navigation and drifted from it. The paths
+    are now read out of header() and footer(), so a page added to either is in
+    the sitemap from that moment. These tests hold both halves: that the
+    derivation finds the navigation, and that the result leaves nothing served
+    unlisted.
+    """
+
+    def served_pages(self):
+        """Every html file the site publishes, by path from the repository root."""
+        out = set()
+        for base, dirs, files in os.walk(REPO):
+            dirs[:] = [d for d in dirs
+                       if d not in {".git", "pipeline", "docs", "node_modules",
+                                    "assets"}]
+            for name in files:
+                if name.endswith(".html"):
+                    out.add(os.path.relpath(os.path.join(base, name), REPO))
+        return out
+
+    def test_every_served_page_is_in_the_sitemap(self):
+        if not chrome.site_config().get("discoverable"):
+            self.skipTest("the site is not discoverable, so there is no sitemap")
+        missing = sorted(self.served_pages() - set(chrome.sitemap_paths()))
+        self.assertEqual(missing, [], "served and unlisted: %r" % (missing[:8],))
+
+    def test_the_sitemap_lists_nothing_that_is_not_served(self):
+        extra = sorted(set(chrome.sitemap_paths()) - self.served_pages())
+        self.assertEqual(extra, [], "listed and not served: %r" % (extra[:8],))
+
+    def test_the_navigation_is_where_the_extra_paths_come_from(self):
+        """The eight that were missing are the point of the change."""
+        nav = set(chrome.nav_targets())
+        for rel in ("levels/junior.html", "levels/patient.html",
+                    "levels/student.html", "levels/mrcs.html",
+                    "levels/frcs.html", "levels/fellowship.html",
+                    "levels/consultant.html", "encyclopaedia/whole-body.html"):
+            self.assertIn(rel, nav)
+            self.assertIn(rel, chrome.sitemap_paths())
+
+    def test_the_derivation_drops_fragments_and_placeholders(self):
+        """practise/index.html#cases is one page, and "#" is not a page."""
+        nav = chrome.nav_targets()
+        self.assertNotIn("#", "".join(nav))
+        self.assertIn("practise/index.html", nav)
+        for target in nav:
+            self.assertFalse(target.startswith(("http", "mailto:")), target)
+
+    def test_a_new_navigation_entry_reaches_the_sitemap(self):
+        """The drift this replaced is the thing worth testing, so add a page to
+        the ribbon and check it arrives without anything else being edited."""
+        original = chrome.RIBBON
+        page = os.path.join(REPO, "about", "standards.html")
+        try:
+            chrome.RIBBON = original + [
+                ("Test", "about/standards.html",
+                 [("Test entry", "about/standards.html#x")])]
+            self.assertIn("about/standards.html", chrome.nav_targets())
+            self.assertTrue(os.path.exists(page))
+            self.assertIn("about/standards.html", chrome.sitemap_paths())
+        finally:
+            chrome.RIBBON = original
+
+
 class HeldPagesAreNotCountedAsComingSoon(unittest.TestCase):
     """A page the client decided against is not a page that is coming soon.
 
