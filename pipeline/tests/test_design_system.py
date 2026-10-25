@@ -170,3 +170,61 @@ class WebFonts(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class Breadcrumbs(unittest.TestCase):
+    """site_chrome.crumb returns a finished paragraph, and two generators wrapped
+    it in another one.
+
+    tools/build_section_index.py and tools/build_status.py each held a template
+    reading `<p class="crumb">%s</p>` and filled it with chrome.crumb(), which
+    already closes its own paragraph. Five published pages carried
+    `<p class="crumb"><p class="crumb">...</p></p>`: the four section indexes and
+    about/status.html. A nested paragraph is not valid HTML, and a browser
+    recovers from it by closing the first tag early, so the breadcrumb rendered
+    correctly and nothing reported a fault for as long as the pages existed.
+
+    tools/render_article.py never had the bug, because it inserts the helper's
+    output directly. These tests hold that shape for all three.
+    """
+
+    def setUp(self):
+        sys.path.insert(0, os.path.join(REPO, "tools"))
+        import site_chrome
+        self.chrome = site_chrome
+
+    def test_the_helper_returns_one_closed_paragraph(self):
+        html = self.chrome.crumb([("KneeSchool", "index.html"),
+                                  ("Reference", None), ("A Page", None)])
+        self.assertEqual(html.count('<p class="crumb">'), 1)
+        self.assertEqual(html.count("</p>"), 1)
+        self.assertTrue(html.startswith('<p class="crumb">'))
+        self.assertTrue(html.endswith("</p>"))
+
+    def test_no_generator_wraps_the_helper_again(self):
+        """The template, not the output, is what regressed, so read the source."""
+        for name in ("build_section_index.py", "build_status.py",
+                     "render_article.py"):
+            path = os.path.join(REPO, "tools", name)
+            with open(path, encoding="utf-8") as fh:
+                src = fh.read()
+            self.assertIn("chrome.crumb(", src, name)
+            self.assertNotIn('<p class="crumb">%s</p>', src, name)
+
+    def test_no_published_page_nests_a_breadcrumb(self):
+        for base, dirs, files in os.walk(REPO):
+            dirs[:] = [d for d in dirs
+                       if d not in {".git", "pipeline", "docs", "node_modules",
+                                    "assets"}]
+            for name in sorted(files):
+                if not name.endswith(".html"):
+                    continue
+                path = os.path.join(base, name)
+                with open(path, encoding="utf-8") as fh:
+                    page = fh.read()
+                rel = os.path.relpath(path, REPO)
+                # assertNotIn would print the whole page as the container, so
+                # the count is asserted instead and the message names the file.
+                self.assertLessEqual(
+                    page.count('<p class="crumb">'), 1,
+                    "%s opens the breadcrumb paragraph more than once" % rel)

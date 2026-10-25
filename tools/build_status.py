@@ -163,7 +163,7 @@ def main():
 
   <section class="page-hero">
     <div class="wrap">
-      <p class="crumb">%s</p>
+      %s
       <div class="hero-split">
         <div>
           <h1>Build status</h1>
