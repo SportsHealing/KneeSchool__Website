@@ -15,7 +15,7 @@
     {
       "as_written": "State the extent and whether the tear reaches a surface.",
       "tier": "medical_student",
-      "section": "How It Is Acquired",
+      "section": "How the Report Is Built",
       "detected_as": "imperative",
       "kind": "CLINICAL_RECOMMENDATION",
       "verification": "UNSIGNED",
@@ -24,7 +24,7 @@
     {
       "as_written": "State whether a fragment is displaced and where it has gone.",
       "tier": "medical_student",
-      "section": "How It Is Acquired",
+      "section": "How the Report Is Built",
       "detected_as": "imperative",
       "kind": "CLINICAL_RECOMMENDATION",
       "verification": "UNSIGNED",
@@ -33,7 +33,7 @@
     {
       "as_written": "Report the root separately, because a root tear behaves unlike a body tear.",
       "tier": "medical_student",
-      "section": "How It Is Acquired",
+      "section": "How the Report Is Built",
       "detected_as": "imperative",
       "kind": "CLINICAL_RECOMMENDATION",
       "verification": "UNSIGNED",

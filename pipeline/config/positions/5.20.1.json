@@ -15,7 +15,7 @@
     {
       "as_written": "Start from the clinical question in the request, because that is what the report has to answer.",
       "tier": "medical_student",
-      "section": "How It Is Acquired",
+      "section": "How the Report Is Built",
       "detected_as": "imperative",
       "kind": "CLINICAL_RECOMMENDATION",
       "verification": "UNSIGNED",
@@ -24,7 +24,7 @@
     {
       "as_written": "State the technique: the sequences acquired, the planes, and anything that limited them.",
       "tier": "medical_student",
-      "section": "How It Is Acquired",
+      "section": "How the Report Is Built",
       "detected_as": "imperative",
       "kind": "CLINICAL_RECOMMENDATION",
       "verification": "UNSIGNED",
@@ -33,7 +33,7 @@
     {
       "as_written": "Record the relevant negatives, since a question is answered only when the alternative has been excluded.",
       "tier": "medical_student",
-      "section": "How It Is Acquired",
+      "section": "How the Report Is Built",
       "detected_as": "imperative",
       "kind": "CLINICAL_RECOMMENDATION",
       "verification": "UNSIGNED",

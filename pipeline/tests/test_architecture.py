@@ -1099,3 +1099,116 @@ class NoPublishedPagePointsAtAHeldPage(unittest.TestCase):
         gates = mk.split("gates:", 1)[1].split("\n\n", 1)[0]
         self.assertIn("--withheld-check", gates)
 
+
+
+class TheReportingTemplate(unittest.TestCase):
+    """Decision 029. Chapter 5.20's subject is the report, not an image.
+
+    It was written against the imaging template, whose six sections had to be
+    read as questions about a report: "What Normal Looks Like" meant what a good
+    report looks like, and "What Abnormal Looks Like" meant a poor one. Those two
+    headings collide with their own meaning everywhere else in Section 5, where
+    normal and abnormal describe a knee. The chapter papered over it with a
+    paragraph on 5.20.1 telling the reader how to read the headings, which is a
+    translation note standing in for a template.
+
+    Decision 028 recorded at the time that this chapter was the loosest fit in
+    the set and would probably want its own type. This is that type.
+
+    The content did not move. The pages were already written to these six
+    questions, so the change is the headings, the page_type and the join.
+    """
+
+    IDS = ["5.20.%d" % n for n in range(1, 9)]
+
+    def template(self):
+        path = os.path.join(ROOT, "config", "article_template.json")
+        with open(path, encoding="utf-8") as fh:
+            return json.load(fh)
+
+    def test_the_template_exists_and_keeps_the_six_questions(self):
+        spec = self.template()["page_types"].get("reporting")
+        self.assertIsNotNone(spec, "no reporting template")
+        self.assertEqual(spec["body_sections"], [
+            "what_the_report_is_for", "how_the_report_is_built",
+            "what_a_good_one_looks_like", "what_a_poor_one_looks_like",
+            "how_good_it_is", "where_it_misleads"])
+
+    def test_every_section_has_a_heading(self):
+        """A section key with no heading renders as its own key."""
+        t = self.template()
+        heads = t["body_section_headings"]
+        for key in t["page_types"]["reporting"]["body_sections"]:
+            self.assertIn(key, heads, key)
+
+    def test_the_two_reused_sections_are_the_two_that_fitted(self):
+        """how_good_it_is and where_it_misleads carried over unchanged, so the
+        MRCS floor in section_tier_rules still reaches this template."""
+        t = self.template()
+        shared = set(t["page_types"]["reporting"]["body_sections"]) \
+            & set(t["page_types"]["imaging"]["body_sections"])
+        self.assertEqual(shared, {"how_good_it_is", "where_it_misleads"})
+        self.assertEqual(t["section_tier_rules"]["how_good_it_is"]["from"], "mrcs")
+
+    def test_the_page_type_joins_onto_the_template(self):
+        path = os.path.join(ROOT, "config", "page_type_map.json")
+        with open(path, encoding="utf-8") as fh:
+            m = json.load(fh)
+        self.assertIn("reporting", m["templates"])
+        self.assertEqual(m["page_types"]["reporting"]["template"], "reporting")
+        self.assertFalse(m["page_types"]["reporting"]["variant_pending"])
+
+    def test_the_architecture_gives_the_chapter_the_new_type(self):
+        path = os.path.join(ROOT, "config", "architecture", "pages_5.json")
+        with open(path, encoding="utf-8") as fh:
+            pages = json.load(fh)
+        by_id = {p["page_id"]: p for p in pages}
+        for page_id in self.IDS:
+            self.assertEqual(by_id[page_id]["page_type"], "reporting", page_id)
+        # and nothing else moved with it
+        others = {p["page_type"] for p in pages
+                  if not p["page_id"].startswith("5.20.")}
+        self.assertEqual(others, {"imaging", "landmark_papers"})
+
+    def test_the_accuracy_ban_still_covers_these_pages(self):
+        """ACC-001 named examination and imaging. A page type split that drops a
+        chapter out of a content rule is the kind of regression this change could
+        have shipped quietly, because every gate would still have been green."""
+        path = os.path.join(ROOT, "config", "lint_rules.json")
+        with open(path, encoding="utf-8") as fh:
+            rules = json.load(fh)["rules"]
+        acc = [r for r in rules if r["id"] == "ACC-001"][0]
+        self.assertIn("reporting", acc["page_types"])
+        self.assertIn("imaging", acc["page_types"])
+        self.assertIn("examination", acc["page_types"])
+
+    def test_the_briefs_and_the_pages_agree_with_the_architecture(self):
+        for page_id in self.IDS:
+            brief = os.path.join(ROOT, "config", "briefs", "%s.json" % page_id)
+            with open(brief, encoding="utf-8") as fh:
+                b = json.load(fh)
+            self.assertEqual(b["page_type"], "reporting", page_id)
+            self.assertEqual(b["article_template"], "reporting", page_id)
+
+    def test_no_reporting_page_still_carries_an_imaging_heading(self):
+        """The rename had to reach all three stage files of all eight pages, and
+        the site publishes styled_v1.md rather than the draft."""
+        gone = ("### What Normal Looks Like", "### What Abnormal Looks Like",
+                "### What It Shows", "### How It Is Acquired")
+        for page_id in self.IDS:
+            for stage in ("draft_v1.md", "verified_v1.md", "styled_v1.md"):
+                path = os.path.join(ROOT, "runs", page_id, stage)
+                if not os.path.exists(path):
+                    continue
+                with open(path, encoding="utf-8") as fh:
+                    text = fh.read()
+                for heading in gone:
+                    self.assertNotIn(heading, text,
+                                     "%s/%s keeps %r" % (page_id, stage, heading))
+
+    def test_the_translation_note_is_gone(self):
+        """5.20.1 told the reader how to read the headings. The headings say it."""
+        path = os.path.join(ROOT, "runs", "5.20.1", "styled_v1.md")
+        with open(path, encoding="utf-8") as fh:
+            text = fh.read()
+        self.assertNotIn("the six template headings are read as questions", text)

@@ -16,6 +16,7 @@ expands into one list behind the Menu checkbox.
 import hashlib
 import json
 import os
+import re
 
 _ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 _SITE = os.path.join(_ROOT, "pipeline", "config", "site.json")
@@ -201,16 +202,41 @@ def sitemap_paths():
                for v in pages.values()) - set([None])
     # The homepage and the section indexes are not in the published page index,
     # because that index lists articles. A sitemap that omits the pages a reader
-    # actually lands on is not a sitemap.
-    for extra in ("index.html", "anatomy/index.html", "biomechanics/index.html",
-                  "examination/index.html", "imaging/index.html",
-                  "encyclopaedia/index.html",
-                  "conditions/index.html", "practise/index.html",
-                  "about/status.html", "about/standards.html",
-                  "about/curriculum.html"):
+    # actually lands on is not a sitemap, so the navigation supplies the rest.
+    for extra in nav_targets():
         if os.path.exists(os.path.join(_ROOT, extra)):
             outs.add(extra)
     return sorted(outs)
+
+
+def nav_targets():
+    """Every internal page the site chrome links to, read from the chrome.
+
+    This list used to be typed out beside the call above, and it was eleven
+    paths that did not include the seven tier pages under levels/ or
+    encyclopaedia/whole-body.html. All eight are linked from the navigation on
+    every page of the site, so a reader reaches them and a crawler following
+    sitemap.xml does not. Nothing reported it, because a page missing from a
+    sitemap is still served.
+
+    A typed list was always going to drift from the navigation it was copied
+    from, so it is derived from the navigation instead. header() and footer()
+    between them render every standing link on the site, and asking them with
+    rel="" gives the paths already root relative. A page added to RIBBON or to
+    the footer is in the sitemap from that moment, with nothing to remember.
+
+    Fragments are dropped, so practise/index.html#cases counts as
+    practise/index.html, and the "#" placeholders that mark a navigation entry
+    whose page does not exist yet are skipped along with external links.
+    """
+    found = set()
+    for href in re.findall(r'href="([^"]+)"', header("") + footer("")):
+        if href.startswith(("http", "mailto:", "#")):
+            continue
+        path = href.split("#", 1)[0]
+        if path:
+            found.add(path)
+    return sorted(found)
 
 
 BUILD_NOTICE = (

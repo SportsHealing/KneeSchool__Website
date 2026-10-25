@@ -1006,7 +1006,13 @@ class BannedPhrasesSurviveAWrap(unittest.TestCase):
 
 
 class AccuracyFiguresAreRefused(unittest.TestCase):
-    """ACC-001, decision 023 for examination pages and 028 for imaging."""
+    """ACC-001, decision 023 for examination, 028 for imaging, 029 for reporting.
+
+    The reporting type was split out of imaging by decision 029. A split that
+    forgot this list would have dropped chapter 5.20's eight pages out of the
+    accuracy ban with every gate still green, so the scope is pinned here and
+    the firing test below covers each type in it.
+    """
 
     def fire(self, text, page_type):
         doc = ("# T\n\nSummary.\n\n## MRCS Level\n\n### How Good It Is\n\n%s\n"
@@ -1022,13 +1028,18 @@ class AccuracyFiguresAreRefused(unittest.TestCase):
         template shipped a frcs_and_above_only that nothing read."""
         rule = next(r for r in linter.load_rules()["rules"]
                     if r["id"] == "ACC-001")
-        self.assertEqual(rule["page_types"], ["examination", "imaging"])
+        self.assertEqual(rule["page_types"],
+                         ["examination", "imaging", "reporting"])
 
     def test_it_fires_on_an_imaging_page(self):
         self.assertTrue(self.fire("Its sensitivity is 0.94 here.", "imaging"))
 
     def test_it_fires_on_an_examination_page(self):
         self.assertTrue(self.fire("Its sensitivity is 0.94 here.", "examination"))
+
+    def test_it_fires_on_a_reporting_page(self):
+        """Decision 029 split this type out of imaging; the ban came with it."""
+        self.assertTrue(self.fire("Its sensitivity is 0.94 here.", "reporting"))
 
     def test_it_is_silent_on_a_page_type_outside_the_scope(self):
         self.assertFalse(self.fire("Its sensitivity is 0.94 here.", "anatomy"))

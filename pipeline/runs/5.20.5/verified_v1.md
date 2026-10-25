@@ -5,7 +5,7 @@ in a knee report.
 
 ## For Medical Students
 
-### What It Shows
+### What the Report Is For
 
 A cartilage report states the depth of the lesion, its area, its location and
 the state of the bone beneath it. 5.11.2 covers chondral defects.
@@ -16,7 +16,7 @@ sensitive sequence alone. 5.5.7 covers the cartilage.
 It matters because the depth and the location decide whether a cartilage
 procedure is possible at all. 5.17.5 covers the cartilage procedures.
 
-### How It Is Acquired
+### How the Report Is Built
 
 Name the grading system used, because several are in use and their grades are
 not interchangeable. 5.11.2 covers chondral defects.
@@ -33,7 +33,7 @@ does not. 5.11.7 covers bone marrow lesions.
 Report whether the cartilage is separated from the bone with the surface intact.
 5.11.4 covers delamination.
 
-### What Normal Looks Like
+### What a Good One Looks Like
 
 The grading system named in the technique or the findings. 5.11.2 covers
 chondral defects.
@@ -50,7 +50,7 @@ the patellofemoral cartilage injury.
 A statement of which sequences the assessment rested on. 5.5.7 covers the
 cartilage.
 
-### What Abnormal Looks Like
+### What a Poor One Looks Like
 
 A grade quoted with no system named. 5.20.8 covers common reporting errors.
 
@@ -76,7 +76,7 @@ the patellofemoral cartilage injury.
 
 ## MRCS Level
 
-### How It Is Acquired
+### How the Report Is Built
 
 In a viva the expected answer names the system before the grade.
 
@@ -92,7 +92,7 @@ Say that a grade from an arthroscopic system applied to a scan is an inference.
 Say that the patellofemoral joint is the hardest compartment to grade. 5.12.6
 covers the patellofemoral cartilage injury.
 
-### What Abnormal Looks Like
+### What a Poor One Looks Like
 
 The reasoning expected is that the systems in use were written for different
 purposes, some for arthroscopy and some for imaging, so a grade carries its

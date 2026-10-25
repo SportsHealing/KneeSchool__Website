@@ -15,7 +15,7 @@
     {
       "as_written": "Check that the conclusion answers the question in the request.",
       "tier": "medical_student",
-      "section": "How It Is Acquired",
+      "section": "How the Report Is Built",
       "detected_as": "imperative",
       "kind": "CLINICAL_RECOMMENDATION",
       "verification": "UNSIGNED",
@@ -24,7 +24,7 @@
     {
       "as_written": "Check that the relevant negatives are present rather than assumed.",
       "tier": "medical_student",
-      "section": "How It Is Acquired",
+      "section": "How the Report Is Built",
       "detected_as": "imperative",
       "kind": "CLINICAL_RECOMMENDATION",
       "verification": "UNSIGNED",
@@ -33,7 +33,7 @@
     {
       "as_written": "Check that every measurement and grade names its convention.",
       "tier": "medical_student",
-      "section": "How It Is Acquired",
+      "section": "How the Report Is Built",
       "detected_as": "imperative",
       "kind": "CLINICAL_RECOMMENDATION",
       "verification": "UNSIGNED",
@@ -42,7 +42,7 @@
     {
       "as_written": "Check that an incidental finding is described as incidental.",
       "tier": "medical_student",
-      "section": "How It Is Acquired",
+      "section": "How the Report Is Built",
       "detected_as": "imperative",
       "kind": "CLINICAL_RECOMMENDATION",
       "verification": "UNSIGNED",
@@ -51,7 +51,7 @@
     {
       "as_written": "Check that the conclusion commits rather than returning the decision.",
       "tier": "medical_student",
-      "section": "How It Is Acquired",
+      "section": "How the Report Is Built",
       "detected_as": "imperative",
       "kind": "CLINICAL_RECOMMENDATION",
       "verification": "UNSIGNED",

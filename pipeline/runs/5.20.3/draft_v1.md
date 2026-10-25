@@ -5,7 +5,7 @@ the findings that matter more than the grade.
 
 ## For Medical Students
 
-### What It Shows
+### What the Report Is For
 
 An ACL report states whether the ligament is intact, partially torn or
 completely torn, and what else was injured. 5.7.1 covers the normal ACL.
@@ -16,7 +16,7 @@ together with the secondary signs. 5.7.3 covers complete tears.
 It matters because the associated injuries change the operation more often than
 the ACL's own grade does. 5.7.4 covers the acute ACL injury.
 
-### How It Is Acquired
+### How the Report Is Built
 
 Assess continuity on sagittal, coronal and axial images rather than on one
 plane. 5.5.9 covers the ligaments.
@@ -33,7 +33,7 @@ study. 5.20.2 covers reporting meniscal tears.
 Report the bone bruising pattern, which records the mechanism. 5.13.1 covers
 bone marrow oedema.
 
-### What Normal Looks Like
+### What a Good One Looks Like
 
 A clear statement of intact, partial or complete with the planes that support
 it. 5.7.1 covers the normal ACL.
@@ -50,7 +50,7 @@ marrow oedema.
 A conclusion that names the injury combination rather than the ligament alone.
 5.7.4 covers the acute ACL injury.
 
-### What Abnormal Looks Like
+### What a Poor One Looks Like
 
 A report that says ACL tear without saying partial or complete. 5.20.8 covers
 common reporting errors.
@@ -77,7 +77,7 @@ degeneration.
 
 ## MRCS Level
 
-### How It Is Acquired
+### How the Report Is Built
 
 In a viva the expected answer reports the knee rather than the ligament.
 
@@ -94,7 +94,7 @@ the structural one. 4.14.1 covers the pivot shift.
 Say that an ACL study is a whole knee study. 5.5.2 covers the sports knee
 protocol.
 
-### What Abnormal Looks Like
+### What a Poor One Looks Like
 
 The reasoning expected is that a ligament can be structurally continuous and
 mechanically incompetent, which is why the scan cannot replace the examination.

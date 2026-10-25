@@ -5,7 +5,7 @@ an expected appearance that is largely unpublished.
 
 ## For Medical Students
 
-### What It Shows
+### What the Report Is For
 
 A post-operative report states which construct is present, whether each part is
 intact, and whether the appearance is expected for the interval. 5.5.3 covers
@@ -18,7 +18,7 @@ It matters because the altered anatomy is the new baseline, and a reader without
 the operative detail reports it as disease. 5.20.8 covers common reporting
 errors.
 
-### How It Is Acquired
+### How the Report Is Built
 
 Establish which operation was performed before reporting anything. 5.20.1 covers
 structured reporting.
@@ -35,7 +35,7 @@ post-operative protocol.
 Repeat the measurements that led to the operation wherever recurrence is the
 question. 5.16.4 covers the TT-TG measurement.
 
-### What Normal Looks Like
+### What a Good One Looks Like
 
 The operation named in the report, or the report saying it is not known. 5.20.1
 covers structured reporting.
@@ -51,7 +51,7 @@ post-operative protocol.
 A conclusion that distinguishes expected from unexpected. 5.20.8 covers common
 reporting errors.
 
-### What Abnormal Looks Like
+### What a Poor One Looks Like
 
 A report written without knowing the operation and not saying so. 5.20.8 covers
 common reporting errors.
@@ -77,7 +77,7 @@ covers structured reporting.
 
 ## MRCS Level
 
-### How It Is Acquired
+### How the Report Is Built
 
 In a viva the expected answer asks what was done and when.
 
@@ -93,7 +93,7 @@ scan. 5.16.8 covers the 3D reconstructions.
 Say that a graft remodels, so an appearance is read against an interval. 5.7.10
 covers the graft maturation.
 
-### What Abnormal Looks Like
+### What a Poor One Looks Like
 
 The reasoning expected is that an operated knee carries three questions: whether
 the repair is intact, whether the fixation is sound, and whether the original

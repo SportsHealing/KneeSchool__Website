@@ -15,7 +15,7 @@
     {
       "as_written": "Report each compartment separately, the patellofemoral joint included.",
       "tier": "medical_student",
-      "section": "How It Is Acquired",
+      "section": "How the Report Is Built",
       "detected_as": "imperative",
       "kind": "CLINICAL_RECOMMENDATION",
       "verification": "UNSIGNED",
@@ -24,7 +24,7 @@
     {
       "as_written": "State the loading conditions and the view each film was taken with.",
       "tier": "medical_student",
-      "section": "How It Is Acquired",
+      "section": "How the Report Is Built",
       "detected_as": "imperative",
       "kind": "CLINICAL_RECOMMENDATION",
       "verification": "UNSIGNED",
@@ -33,7 +33,7 @@
     {
       "as_written": "Report the osteophytes, the sclerosis and the cysts as findings of their own.",
       "tier": "medical_student",
-      "section": "How It Is Acquired",
+      "section": "How the Report Is Built",
       "detected_as": "imperative",
       "kind": "CLINICAL_RECOMMENDATION",
       "verification": "UNSIGNED",
@@ -42,7 +42,7 @@
     {
       "as_written": "Report the alignment from a long leg film wherever the question is surgical.",
       "tier": "medical_student",
-      "section": "How It Is Acquired",
+      "section": "How the Report Is Built",
       "detected_as": "imperative",
       "kind": "CLINICAL_RECOMMENDATION",
       "verification": "UNSIGNED",

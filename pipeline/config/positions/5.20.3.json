@@ -15,7 +15,7 @@
     {
       "as_written": "Assess continuity on sagittal, coronal and axial images rather than on one plane.",
       "tier": "medical_student",
-      "section": "How It Is Acquired",
+      "section": "How the Report Is Built",
       "detected_as": "imperative",
       "kind": "CLINICAL_RECOMMENDATION",
       "verification": "UNSIGNED",
@@ -24,7 +24,7 @@
     {
       "as_written": "State the bundle involvement wherever it can be seen.",
       "tier": "medical_student",
-      "section": "How It Is Acquired",
+      "section": "How the Report Is Built",
       "detected_as": "imperative",
       "kind": "CLINICAL_RECOMMENDATION",
       "verification": "UNSIGNED",
@@ -33,7 +33,7 @@
     {
       "as_written": "Record the secondary signs of anterior translation separately from the ligament itself.",
       "tier": "medical_student",
-      "section": "How It Is Acquired",
+      "section": "How the Report Is Built",
       "detected_as": "imperative",
       "kind": "CLINICAL_RECOMMENDATION",
       "verification": "UNSIGNED",
@@ -42,7 +42,7 @@
     {
       "as_written": "Report the menisci, the collateral structures and the cartilage from the same study.",
       "tier": "medical_student",
-      "section": "How It Is Acquired",
+      "section": "How the Report Is Built",
       "detected_as": "imperative",
       "kind": "CLINICAL_RECOMMENDATION",
       "verification": "UNSIGNED",
@@ -51,7 +51,7 @@
     {
       "as_written": "Report the bone bruising pattern, which records the mechanism.",
       "tier": "medical_student",
-      "section": "How It Is Acquired",
+      "section": "How the Report Is Built",
       "detected_as": "imperative",
       "kind": "CLINICAL_RECOMMENDATION",
       "verification": "UNSIGNED",
