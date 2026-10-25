@@ -218,6 +218,13 @@ def build():
         ids = ["%s.%d" % (chapter, i) for i in range(1, len(leaves) + 1)] \
             if flat else [pid for pid, _ in leaves]
         landmark = chapter == "5.21"
+        # Decision 029. Chapter 5.20's subject is the report rather than an
+        # image, so the imaging template's "What Normal Looks Like" had to be
+        # read as "what a good report looks like" and the chapter carried a
+        # paragraph on 5.20.1 telling the reader so. Its own type says it in
+        # the headings instead. Decision 028 predicted this chapter would want
+        # one.
+        reporting = chapter == "5.20"
         on_a_topic_chain = chapter in deeper_map \
             or any(k.startswith(chapter + ".") for k in deeper_map)
         for page_id, (_, title) in zip(ids, leaves):
@@ -238,7 +245,8 @@ def build():
                 ("siblings", [i for i in ids if i != page_id]),
                 ("deeper_pages", sorted(set(deeper))),
                 ("must_not_cover", BASE_MNC + [own_chapters(chapter)]),
-                ("page_type", "landmark_papers" if landmark else "imaging"),
+                ("page_type", "landmark_papers" if landmark
+                 else "reporting" if reporting else "imaging"),
                 # Derived from the spiral map rather than stated by Part 1: a
                 # chapter on a core topic chain is high, a chapter reached only
                 # through the Imaging row is medium, landmark papers low.

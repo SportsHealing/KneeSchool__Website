@@ -353,7 +353,7 @@
     {
       "id": "ACC-001",
       "severity": "fail",
-      "description": "No bare diagnostic accuracy figure on an examination or imaging page: a sensitivity, specificity, predictive value or likelihood ratio written as a number",
+      "description": "No bare diagnostic accuracy figure on an examination, imaging or reporting page: a sensitivity, specificity, predictive value or likelihood ratio written as a number",
       "applies_when": "the brief's page_type is one of page_types below",
       "source_of_truth": "docs/decisions/023-the-examination-template.md and docs/decisions/028-the-imaging-template.md",
       "notes": [
@@ -365,7 +365,8 @@
       ],
       "page_types": [
         "examination",
-        "imaging"
+        "imaging",
+        "reporting"
       ]
     },
     {

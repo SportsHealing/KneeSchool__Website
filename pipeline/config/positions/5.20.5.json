@@ -15,7 +15,7 @@
     {
       "as_written": "State the depth as partial or full thickness rather than by grade alone.",
       "tier": "medical_student",
-      "section": "How It Is Acquired",
+      "section": "How the Report Is Built",
       "detected_as": "imperative",
       "kind": "CLINICAL_RECOMMENDATION",
       "verification": "UNSIGNED",
@@ -24,7 +24,7 @@
     {
       "as_written": "State the area and the compartment, since a contained lesion differs from diffuse loss.",
       "tier": "medical_student",
-      "section": "How It Is Acquired",
+      "section": "How the Report Is Built",
       "detected_as": "imperative",
       "kind": "CLINICAL_RECOMMENDATION",
       "verification": "UNSIGNED",
@@ -33,7 +33,7 @@
     {
       "as_written": "Report the bone beneath, because marrow change often marks a lesion the surface does not.",
       "tier": "medical_student",
-      "section": "How It Is Acquired",
+      "section": "How the Report Is Built",
       "detected_as": "imperative",
       "kind": "CLINICAL_RECOMMENDATION",
       "verification": "UNSIGNED",
@@ -42,7 +42,7 @@
     {
       "as_written": "Report whether the cartilage is separated from the bone with the surface intact.",
       "tier": "medical_student",
-      "section": "How It Is Acquired",
+      "section": "How the Report Is Built",
       "detected_as": "imperative",
       "kind": "CLINICAL_RECOMMENDATION",
       "verification": "UNSIGNED",
@@ -51,7 +51,7 @@
     {
       "as_written": "Say that the report should state which sequences the assessment rests on.",
       "tier": "mrcs",
-      "section": "How It Is Acquired",
+      "section": "How the Report Is Built",
       "detected_as": "directed modal",
       "kind": "CLINICAL_RECOMMENDATION",
       "verification": "UNSIGNED",

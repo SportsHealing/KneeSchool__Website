@@ -5,7 +5,7 @@ what causes them rather than by what they affect.
 
 ## For Medical Students
 
-### What It Shows
+### What the Report Is For
 
 The recurring reporting failures fall into five groups: the unanswered question,
 the missing negative, the unnamed convention, the promoted incidental finding,
@@ -17,7 +17,7 @@ single one. 5.20.2 covers reporting meniscal tears.
 It matters because a report carrying any of the five reads as a normal report,
 which is why they persist. 5.1.6 covers imaging pitfalls.
 
-### How It Is Acquired
+### How the Report Is Built
 
 Check that the conclusion answers the question in the request. 5.1.3 covers
 choosing the correct investigation.
@@ -34,7 +34,7 @@ meniscal signal grading.
 Check that the conclusion commits rather than returning the decision. 4.1.6
 covers the examination in the era of MRI.
 
-### What Normal Looks Like
+### What a Good One Looks Like
 
 A conclusion that uses the referrer's words and answers them. 5.1.3 covers
 choosing the correct investigation.
@@ -50,7 +50,7 @@ synovitis.
 A limitations sentence saying what the study could not assess. 5.5.1 covers the
 standard protocol.
 
-### What Abnormal Looks Like
+### What a Poor One Looks Like
 
 A described scan with no answer in it. 5.1.2 covers clinical examination versus
 imaging.
@@ -77,7 +77,7 @@ A conclusion offering possibilities in the order they occurred to the reader.
 
 ## MRCS Level
 
-### How It Is Acquired
+### How the Report Is Built
 
 In a viva the expected answer groups the errors by cause rather than listing
 them.
@@ -95,7 +95,7 @@ reporting the post-operative knee.
 Say that the hedge is the failure that costs a clinic appointment. 4.1.6 covers
 the examination in the era of MRI.
 
-### What Abnormal Looks Like
+### What a Poor One Looks Like
 
 The reasoning expected is that each failure has a cause rather than being
 carelessness: a vague request, a template without negatives, several competing

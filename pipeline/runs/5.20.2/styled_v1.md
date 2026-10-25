@@ -5,7 +5,7 @@ with none of them.
 
 ## For Medical Students
 
-### What It Shows
+### What the Report Is For
 
 A meniscal tear report states the pattern, the location, the extent and whether
 any fragment has displaced. 5.6.3 covers horizontal tears.
@@ -17,7 +17,7 @@ It matters because repair is possible for some patterns in some locations and
 not for others, so the words decide the operation. 5.17.2 covers the meniscal
 repair.
 
-### How It Is Acquired
+### How the Report Is Built
 
 Describe the pattern in the recognised terms rather than as a tear. 5.6.5 covers
 radial tears.
@@ -34,7 +34,7 @@ handle tears.
 Report the root separately, because a root tear behaves unlike a body tear.
 5.6.9 covers root tears.
 
-### What Normal Looks Like
+### What a Good One Looks Like
 
 A named pattern, a named location and a stated extent in the findings. 5.6.8
 covers complex tears.
@@ -50,7 +50,7 @@ meniscal extrusion.
 A conclusion that says whether the appearance is repairable in principle. 5.17.2
 covers the meniscal repair.
 
-### What Abnormal Looks Like
+### What a Poor One Looks Like
 
 A report that says meniscal tear with no pattern and no location. 5.20.8 covers
 common reporting errors.
@@ -77,7 +77,7 @@ bucket handle tears.
 
 ## MRCS Level
 
-### How It Is Acquired
+### How the Report Is Built
 
 In a viva the expected answer gives the four facts before any opinion.
 
@@ -93,7 +93,7 @@ covers the meniscal signal grading.
 Say that extrusion is a separate finding from the tear. 5.6.11 covers meniscal
 extrusion.
 
-### What Abnormal Looks Like
+### What a Poor One Looks Like
 
 The reasoning expected is that the pattern maps onto a mechanical consequence,
 so a radial tear and a horizontal tear of the same length mean different things.

@@ -5,7 +5,7 @@ pattern that decides the operation.
 
 ## For Medical Students
 
-### What It Shows
+### What the Report Is For
 
 An osteoarthritis report states which compartments are affected, how severely,
 and what the alignment is. 5.3.17 covers joint space narrowing.
@@ -16,7 +16,7 @@ covers the Rosenberg view.
 It matters because the compartment pattern rather than the severity decides
 which operations are available. 5.3.20 covers the alignment changes.
 
-### How It Is Acquired
+### How the Report Is Built
 
 Report each compartment separately, the patellofemoral joint included. 5.12.7
 covers the patellofemoral arthritis.
@@ -33,7 +33,7 @@ Report the alignment from a long leg film wherever the question is surgical.
 Name the grading system if a grade is given at all. 5.3.16 covers the
 Kellgren-Lawrence grading.
 
-### What Normal Looks Like
+### What a Good One Looks Like
 
 Three compartments reported separately with the pattern stated. 5.12.7 covers
 the patellofemoral arthritis.
@@ -50,7 +50,7 @@ alignment films.
 A conclusion naming the pattern rather than the word osteoarthritis alone.
 5.20.8 covers common reporting errors.
 
-### What Abnormal Looks Like
+### What a Poor One Looks Like
 
 A grade with no compartment pattern behind it. 5.20.8 covers common reporting
 errors.
@@ -76,7 +76,7 @@ covers bone marrow lesions.
 
 ## MRCS Level
 
-### How It Is Acquired
+### How the Report Is Built
 
 In a viva the expected answer reports the pattern and the alignment rather than
 a grade.
@@ -93,7 +93,7 @@ the Rosenberg view.
 Say that symptoms and radiographic severity correspond loosely. 3.12.9 covers
 patellofemoral pain.
 
-### What Normal Looks Like
+### What a Good One Looks Like
 
 The reasoning expected is that an operation is chosen by which compartments are
 spared, so a report giving severity without pattern answers the wrong question.

@@ -95,6 +95,10 @@ than the handbook's instruction.
 The reporting chapter is the weakest fit and will probably want its own type.
 Recording that now is cheaper than discovering it at page 200.
 
+*It did. Decision 029 gave chapter 5.20 its own type on 25 October 2026, once
+the rest of the section was written and the eight pages could be read for what
+they had turned out to need.*
+
 ## Amendment, 15 October 2026
 
 The client has decided not to publish chapter 5.19, the Magic Angle MRI Academy.

@@ -10,8 +10,8 @@
     "id": "5.20",
     "name": "Imaging Reporting Academy"
   },
-  "page_type": "imaging",
-  "article_template": "imaging",
+  "page_type": "reporting",
+  "article_template": "reporting",
   "generated_from": "Master Publishing Architecture, pages_5.json",
   "tiers_required": [
     "medical_student",

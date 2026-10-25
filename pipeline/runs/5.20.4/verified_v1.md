@@ -5,7 +5,7 @@ decides whether the knee is operated on.
 
 ## For Medical Students
 
-### What It Shows
+### What the Report Is For
 
 An MCL report states which layer is injured, where along its length, and whether
 the posteromedial structures are involved. 5.9.1 covers the MCL anatomy.
@@ -17,7 +17,7 @@ It matters because a superficial injury is usually managed without an operation
 and a posteromedial one often is not. 5.9.5 covers posteromedial corner
 injuries.
 
-### How It Is Acquired
+### How the Report Is Built
 
 Assess the superficial and the deep layer as separate structures on coronal
 images. 5.9.3 covers deep MCL injuries.
@@ -34,7 +34,7 @@ from it. 5.6.10 covers ramp lesions.
 Report the associated cruciate injury, because an isolated grade means little
 beside a combined one. 5.20.3 covers reporting ACL injuries.
 
-### What Normal Looks Like
+### What a Good One Looks Like
 
 The two layers reported separately with the injured one named. 5.9.3 covers deep
 MCL injuries.
@@ -50,7 +50,7 @@ lesions.
 A conclusion that names the pattern rather than quoting a grade. 5.20.8 covers
 common reporting errors.
 
-### What Abnormal Looks Like
+### What a Poor One Looks Like
 
 A report that says MCL sprain with no layer and no site. 5.20.8 covers common
 reporting errors.
@@ -77,7 +77,7 @@ injuries.
 
 ## MRCS Level
 
-### How It Is Acquired
+### How the Report Is Built
 
 In a viva the expected answer separates the layers and the corner before grading
 anything.
@@ -94,7 +94,7 @@ equivalent. 4.12.2 covers the assessment in full extension.
 Say that a medial meniscal tear and an MCL injury produce overlapping
 tenderness. 4.12.7 covers the medial meniscus versus MCL injury.
 
-### What Abnormal Looks Like
+### What a Poor One Looks Like
 
 The reasoning expected is that the medial side resists valgus and rotation
 through different layers, so the layer injured predicts the instability pattern.

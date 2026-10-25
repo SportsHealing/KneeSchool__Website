@@ -650,6 +650,15 @@
           "blocker": "Section 5 had no page type at all, so a brief could not be generated. Widening ACC-001 to cover imaging then exposed a hole in it: the term list held the nouns and not the adjectives, so a claim that a modality is 95 per cent sensitive had passed the gate, and would have passed on all 227 Section 4 pages.",
           "needed": "Nothing outstanding on the rule. The template itself is unvalidated, as the examination template is, and chapter 5.20 Imaging Reporting is the loosest fit for its six sections and is the first thing to revisit. Chapter 5.19, the Magic Angle MRI Academy, was held on the client's instruction of 15 October 2026 and published on their instruction of 19 October 2026. Its ten pages were written for that second instruction, so the chapter went from unwritten to published in one step and has had no separate drafting review. Its eighth page, Imperial Magic Angle Programme, is published as a declared gap: its subject is a named research programme and this environment has no source access, so the page names no investigator, date or result and says so in its first paragraph.",
           "pages": "1 template, 4 new headings, ACC-001 widened, 9 tests"
+        },
+        {
+          "ref": "D-029",
+          "title": "The reporting template, and the four joins a page type needs",
+          "area": "Section 5",
+          "state": "Applied",
+          "blocker": "Chapter 5.20's subject is the report rather than an image, so two of the imaging template's six headings meant something else on its eight pages: What Normal Looks Like meant a good report and What Abnormal Looks Like meant a poor one. Everywhere else in Section 5 those words describe a knee. The chapter carried a paragraph on 5.20.1 telling the reader how to read the headings, which is a translation note standing in for a template. Decision 028 predicted this and recorded it as the first thing to revisit.",
+          "needed": "Nothing outstanding. The chapter has its own type, derived from the eight pages after they were written rather than guessed at before. No page's content moved, because they were already written to these six questions. The type is as unvalidated as the imaging and examination templates: no editorial authority has confirmed its sections. The one real risk was ACC-001, which named examination and imaging, so splitting a chapter out of imaging would have dropped it out of the accuracy ban with every gate still green; a test holds it.",
+          "pages": "1 template, 4 new headings, 8 pages retyped, 4 config joins, 9 tests"
         }
       ]
     },

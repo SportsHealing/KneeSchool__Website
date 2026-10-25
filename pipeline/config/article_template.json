@@ -227,6 +227,22 @@
         "max": 3000
       }
     },
+    "reporting": {
+      "body_sections": [
+        "what_the_report_is_for",
+        "how_the_report_is_built",
+        "what_a_good_one_looks_like",
+        "what_a_poor_one_looks_like",
+        "how_good_it_is",
+        "where_it_misleads"
+      ],
+      "body_sections_rule": "ordered_subset_per_tier; how_good_it_is mrcs_and_above, as for imaging",
+      "word_count": {
+        "min": 800,
+        "max": 1800
+      },
+      "source_of_truth": "decision 029"
+    },
     "study_skills": {
       "body_sections": [
         "what_this_is",
@@ -296,6 +312,7 @@
     "how_it_is_measured": "How It Is Measured",
     "how_it_is_performed": "How It Is Performed",
     "how_it_works": "How It Works",
+    "how_the_report_is_built": "How the Report Is Built",
     "how_to_earn_it": "How to Earn It",
     "how_to_prepare": "How to Prepare",
     "how_to_use_it": "How to Use It",
@@ -314,6 +331,8 @@
     "the_principle": "The Principle",
     "the_route": "The Route",
     "variations_and_controversies": "Variations and Controversies",
+    "what_a_good_one_looks_like": "What a Good One Looks Like",
+    "what_a_poor_one_looks_like": "What a Poor One Looks Like",
     "what_a_positive_means": "What a Positive Means",
     "what_abnormal_looks_like": "What Abnormal Looks Like",
     "what_changes_it": "What Changes It",
@@ -326,6 +345,7 @@
     "what_normal_looks_like": "What Normal Looks Like",
     "what_the_operation_is": "What the Operation Is",
     "what_the_question_was": "What the Question Was",
+    "what_the_report_is_for": "What the Report Is For",
     "what_the_work_involves": "What the Work Involves",
     "what_this_covers": "What This Covers",
     "what_this_is": "What This Is",

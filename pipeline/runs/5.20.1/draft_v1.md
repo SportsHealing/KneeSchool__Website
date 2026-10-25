@@ -5,22 +5,22 @@ scan is not the same thing as an answered question.
 
 ## For Medical Students
 
-### What It Shows
+### What the Report Is For
 
 A structured report follows a fixed set of headings rather than free prose, so
 the same facts appear in the same order for every study. 5.1.1 covers why
 imaging matters.
 
-On the pages of this chapter the six template headings are read as questions
-about the report rather than about an image: what the report shows, how it is
-produced, what a good one looks like, what a poor one looks like, how good
-reporting is, and where reports mislead. 5.1.7 covers evidence-based imaging.
+The pages of this chapter are built on the report rather than on an image, so
+they ask what the report is for, how it is built, what a good one and a poor one
+look like, how good reporting is, and where reports mislead. 5.1.7 covers
+evidence-based imaging.
 
 It matters because the report is the only part of the study most referrers
 read, so what the template omits is effectively absent. 5.1.2 covers clinical
 examination versus imaging.
 
-### How It Is Acquired
+### How the Report Is Built
 
 Start from the clinical question in the request, because that is what the report
 has to answer. 5.1.3 covers choosing the correct investigation.
@@ -37,7 +37,7 @@ alternative has been excluded. 5.1.6 covers imaging pitfalls.
 Finish with a conclusion that answers the question in the words the referrer
 used. 4.1.8 covers the examination documentation.
 
-### What Normal Looks Like
+### What a Good One Looks Like
 
 A technique paragraph that says what was acquired and what was not. 5.5.1
 covers the standard protocol.
@@ -51,7 +51,7 @@ TT-TG measurement.
 A conclusion short enough to be read in full and specific enough to act on.
 5.20.8 covers common reporting errors.
 
-### What Abnormal Looks Like
+### What a Poor One Looks Like
 
 A report that describes the images and never returns to the question. 5.1.3
 covers choosing the correct investigation.
@@ -78,7 +78,7 @@ examination in the era of MRI.
 
 ## MRCS Level
 
-### How It Is Acquired
+### How the Report Is Built
 
 In a viva the expected answer treats the report as an instrument with a user.
 
@@ -94,7 +94,7 @@ covers evidence-based imaging.
 Say that the same template is what makes two studies comparable over time.
 5.20.7 covers reporting the post-operative knee.
 
-### What Normal Looks Like
+### What a Good One Looks Like
 
 The reasoning expected is that a report serves a reader who will not look at the
 images, so completeness and ordering do work that prose cannot. 4.1.8 covers the
