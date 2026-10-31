@@ -1,0 +1,64 @@
+{
+  "lint_version": "1.0",
+  "pass": true,
+  "fail_count": 0,
+  "warn_count": 5,
+  "findings": [
+    {
+      "rule_id": "POS-001",
+      "severity": "warn",
+      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
+      "matched_text": "State the two sided risk first: growth disturbance against meniscal loss.",
+      "context": "",
+      "line": 0
+    },
+    {
+      "rule_id": "POS-001",
+      "severity": "warn",
+      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
+      "matched_text": "State that the modern position favours stabilisation with a physeal respecting technique in the genuinely unstable knee,",
+      "context": "",
+      "line": 0
+    },
+    {
+      "rule_id": "POS-001",
+      "severity": "warn",
+      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
+      "matched_text": "State that non-operative management with activity modification remains an option in a stable knee and a compliant family",
+      "context": "",
+      "line": 0
+    },
+    {
+      "rule_id": "POS-001",
+      "severity": "warn",
+      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
+      "matched_text": "Add skeletal age to the adult workup and say why.",
+      "context": "",
+      "line": 0
+    },
+    {
+      "rule_id": "POS-001",
+      "severity": "warn",
+      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
+      "matched_text": "Take all five explicitly rather than by impression, and ask the child separately what they want.",
+      "context": "",
+      "line": 0
+    }
+  ],
+  "article_template_version": "1.0",
+  "document": {
+    "word_count": 2128,
+    "tiers_present": [
+      "consultant",
+      "fellowship",
+      "frcs",
+      "junior",
+      "medical_student",
+      "mrcs",
+      "patient"
+    ],
+    "has_reference_list": true,
+    "sentence_count": 152,
+    "page_type": "condition"
+  }
+}

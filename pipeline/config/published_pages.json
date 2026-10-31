@@ -789,6 +789,17 @@
     "6.5.1": "conditions/acl-deficiency-instability.html",
     "6.5.2": "conditions/acl-deficiency-meniscal-damage.html",
     "6.5.3": "conditions/acl-deficiency-cartilage-degeneration.html",
-    "6.5.4": "conditions/post-traumatic-osteoarthritis.html"
+    "6.5.4": "conditions/post-traumatic-osteoarthritis.html",
+    "6.6.1": "conditions/female-acl-epidemiology.html",
+    "6.6.2": "conditions/female-acl-hormonal-factors.html",
+    "6.6.3": "conditions/female-acl-neuromuscular-factors.html",
+    "6.6.4": "conditions/acl-injury-prevention.html",
+    "6.7.1": "conditions/paediatric-acl-skeletally-immature.html",
+    "6.7.2": "conditions/paediatric-acl-physeal-injuries.html",
+    "6.7.3": "conditions/paediatric-acl-reconstruction-strategies.html",
+    "6.8.1": "conditions/acl-graft-failure.html",
+    "6.8.2": "conditions/acl-tunnel-malposition.html",
+    "6.8.3": "conditions/acl-biological-failure.html",
+    "6.8.4": "conditions/acl-reconstruction-infection.html"
   }
 }

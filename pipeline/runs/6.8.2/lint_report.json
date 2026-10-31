@@ -1,0 +1,72 @@
+{
+  "lint_version": "1.0",
+  "pass": true,
+  "fail_count": 0,
+  "warn_count": 6,
+  "findings": [
+    {
+      "rule_id": "POS-001",
+      "severity": "warn",
+      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
+      "matched_text": "Say that the plan depends on whether the existing tunnel can be avoided, reused, or must be grafted, and that only a qua",
+      "context": "",
+      "line": 0
+    },
+    {
+      "rule_id": "POS-001",
+      "severity": "warn",
+      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
+      "matched_text": "State the three routes: a new independent tunnel where the old position allows it, reuse where the position is acceptabl",
+      "context": "",
+      "line": 0
+    },
+    {
+      "rule_id": "POS-001",
+      "severity": "warn",
+      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
+      "matched_text": "State that hardware removal may be required and may itself dictate staging.",
+      "context": "",
+      "line": 0
+    },
+    {
+      "rule_id": "POS-001",
+      "severity": "warn",
+      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
+      "matched_text": "State that an unaddressed secondary restraint or malalignment is corrected in the same plan, because a correctly placed ",
+      "context": "",
+      "line": 0
+    },
+    {
+      "rule_id": "POS-001",
+      "severity": "warn",
+      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
+      "matched_text": "State position, width and available bone before stating the number of stages.",
+      "context": "",
+      "line": 0
+    },
+    {
+      "rule_id": "POS-001",
+      "severity": "warn",
+      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
+      "matched_text": "Take all five explicitly rather than by impression, and separate the measurement from the attribution when you say it ou",
+      "context": "",
+      "line": 0
+    }
+  ],
+  "article_template_version": "1.0",
+  "document": {
+    "word_count": 2136,
+    "tiers_present": [
+      "consultant",
+      "fellowship",
+      "frcs",
+      "junior",
+      "medical_student",
+      "mrcs",
+      "patient"
+    ],
+    "has_reference_list": true,
+    "sentence_count": 148,
+    "page_type": "condition"
+  }
+}

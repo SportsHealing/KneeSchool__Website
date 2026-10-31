@@ -1,0 +1,48 @@
+{
+  "lint_version": "1.0",
+  "pass": true,
+  "fail_count": 0,
+  "warn_count": 3,
+  "findings": [
+    {
+      "rule_id": "POS-001",
+      "severity": "warn",
+      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
+      "matched_text": "State that the modifiable factors are addressed before a revision rather than alongside it: smoking, nutrition, graft ch",
+      "context": "",
+      "line": 0
+    },
+    {
+      "rule_id": "POS-001",
+      "severity": "warn",
+      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
+      "matched_text": "State that the technical exclusion is repeated rather than assumed, because the commonest reason a knee is labelled biol",
+      "context": "",
+      "line": 0
+    },
+    {
+      "rule_id": "POS-001",
+      "severity": "warn",
+      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
+      "matched_text": "Take all five explicitly rather than by impression, and answer the question about stopping honestly rather than deferrin",
+      "context": "",
+      "line": 0
+    }
+  ],
+  "article_template_version": "1.0",
+  "document": {
+    "word_count": 2171,
+    "tiers_present": [
+      "consultant",
+      "fellowship",
+      "frcs",
+      "junior",
+      "medical_student",
+      "mrcs",
+      "patient"
+    ],
+    "has_reference_list": true,
+    "sentence_count": 151,
+    "page_type": "condition"
+  }
+}

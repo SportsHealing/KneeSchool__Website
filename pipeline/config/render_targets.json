@@ -4735,6 +4735,72 @@
       "parent": "Conditions|index.html",
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
+    },
+    "6.6.1": {
+      "out": "conditions/female-acl-epidemiology.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.6.2": {
+      "out": "conditions/female-acl-hormonal-factors.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.6.3": {
+      "out": "conditions/female-acl-neuromuscular-factors.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.6.4": {
+      "out": "conditions/acl-injury-prevention.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.7.1": {
+      "out": "conditions/paediatric-acl-skeletally-immature.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.7.2": {
+      "out": "conditions/paediatric-acl-physeal-injuries.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.7.3": {
+      "out": "conditions/paediatric-acl-reconstruction-strategies.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.8.1": {
+      "out": "conditions/acl-graft-failure.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.8.2": {
+      "out": "conditions/acl-tunnel-malposition.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.8.3": {
+      "out": "conditions/acl-biological-failure.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.8.4": {
+      "out": "conditions/acl-reconstruction-infection.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
     }
   },
   "withheld": {
