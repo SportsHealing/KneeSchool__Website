@@ -1848,12 +1848,6 @@
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
     },
-    "6.1.1": {
-      "out": "conditions/acl.html",
-      "parent": "Conditions|index.html",
-      "status": "Editorial draft. Evidence verification did not run. With a consultant for review. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
     "3.17.1": {
       "out": "biomechanics/acl-landmark-studies.html",
       "parent": "Biomechanics Academy|../encyclopaedia/index.html",
@@ -4579,6 +4573,42 @@
       "parent": "Imaging Academy|index.html",
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
+    },
+    "6.1.0": {
+      "out": "conditions/acl.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. With a consultant for review. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.1.1": {
+      "out": "conditions/acl-what-is-the-acl.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.1.2": {
+      "out": "conditions/acl-functions.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.1.3": {
+      "out": "conditions/acl-epidemiology.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.1.4": {
+      "out": "conditions/acl-natural-history.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.1.5": {
+      "out": "conditions/acl-mechanisms-of-injury.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
     }
   },
   "withheld": {
@@ -4602,5 +4632,13 @@
     }
   },
   "withheld_note": "Pages written and gated but deliberately not published, and pages the client decided against before they were written. Where a draft exists it stays in pipeline/runs so nothing is lost, and the entry points at it. An entry with \"written\": false has no draft, because the decision came first. Move an entry back into pages and run tools/render_site.py to publish one that exists.",
-  "naming_note": "Section 2 reuses page titles across chapters, so its published names carry the chapter: anatomy/<chapter>-<page>.html. Flat rather than nested, because the renderer builds one level of relative path."
+  "naming_note": "Section 2 reuses page titles across chapters, so its published names carry the chapter: anatomy/<chapter>-<page>.html. Flat rather than nested, because the renderer builds one level of relative path.",
+  "unmapped": {
+    "6.1.0": {
+      "title": "Anterior cruciate ligament injury",
+      "out": "conditions/acl.html",
+      "reason": "Written in the repository's first commit, before any page map existed, as the worked example of a seven tier condition article. about/standards.html points at it as \"See it applied\" and six tier landing pages link it as \"ACL injury\". The source architecture has no page matching it: its 6.1.1 is \"What is the ACL?\", a narrower chapter opener, and this page's ground is spread across chapters 6.1 to 6.5. It held the id 6.1.1 until 31 October 2026 and was the only render target in the site with no entry in any architecture map. Moved to 6.1.0 to free the real id and declared here rather than left silent.",
+      "decide_when": "Chapters 6.1 to 6.8 are written, which cover its ground. The choice is then to retire it and point its nine inbound links at 6.1.1, or to keep it as the section's overview page and give it an id the architecture recognises. Not this process's call to make."
+    }
+  }
 }

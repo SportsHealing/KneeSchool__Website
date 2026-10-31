@@ -763,6 +763,11 @@
     "5.20.6": "imaging/reporting-osteoarthritis.html",
     "5.20.7": "imaging/reporting-post-operative-knees.html",
     "5.20.8": "imaging/common-reporting-errors.html",
-    "6.1.1": "conditions/acl.html"
+    "6.1.0": "conditions/acl.html",
+    "6.1.1": "conditions/acl-what-is-the-acl.html",
+    "6.1.2": "conditions/acl-functions.html",
+    "6.1.3": "conditions/acl-epidemiology.html",
+    "6.1.4": "conditions/acl-natural-history.html",
+    "6.1.5": "conditions/acl-mechanisms-of-injury.html"
   }
 }

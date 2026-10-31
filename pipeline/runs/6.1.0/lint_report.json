@@ -1,0 +1,23 @@
+{
+  "lint_version": "1.0",
+  "pass": true,
+  "fail_count": 0,
+  "warn_count": 0,
+  "findings": [],
+  "article_template_version": "1.0",
+  "document": {
+    "word_count": 1923,
+    "tiers_present": [
+      "consultant",
+      "fellowship",
+      "frcs",
+      "junior",
+      "medical_student",
+      "mrcs",
+      "patient"
+    ],
+    "has_reference_list": true,
+    "sentence_count": 124,
+    "page_type": "condition"
+  }
+}

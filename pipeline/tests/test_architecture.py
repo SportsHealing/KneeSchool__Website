@@ -1212,3 +1212,128 @@ class TheReportingTemplate(unittest.TestCase):
         with open(path, encoding="utf-8") as fh:
             text = fh.read()
         self.assertNotIn("the six template headings are read as questions", text)
+
+
+class Section6PageMapIsRebuildable(unittest.TestCase):
+    """Decision 030. pages_6.json is generated, so it must be regenerable.
+
+    Same reason decision 027 committed the Section 5 extractor: pages_4.json was
+    made by a script in a scratchpad directory, the container was reclaimed, and
+    that map can no longer be re-derived or checked against anything.
+    """
+
+    def built(self):
+        import importlib
+        sys.path.insert(0, os.path.join(REPO, "tools"))
+        try:
+            mod = importlib.import_module("extract_section6")
+            importlib.reload(mod)
+            return mod.build()
+        finally:
+            sys.path.remove(os.path.join(REPO, "tools"))
+
+    def committed(self):
+        path = os.path.join(ROOT, "config", "architecture", "pages_6.json")
+        with open(path, encoding="utf-8") as fh:
+            return json.load(fh)
+
+    def test_the_committed_map_matches_a_rebuild_from_the_source(self):
+        self.assertEqual(self.committed(), self.built()[0])
+
+    def test_it_builds_the_37_pages_the_source_enumerates(self):
+        pages = self.committed()
+        self.assertEqual(len(pages), 37)
+        chapters = sorted({p["chapter"]["id"] for p in pages},
+                          key=lambda c: int(c.split(".")[1]))
+        self.assertEqual(chapters, ["6.%d" % n for n in range(1, 9)])
+
+    def test_it_refuses_to_invent_the_rest_of_the_section(self):
+        """148 of Section 6's 156 chapters have no numbered sub pages in the
+        source. Part 1's conventions say so in as many words, that a chapter
+        listed without them, "common from Section 6 onwards", publishes as a
+        single page carrying the chapter id. Building those would be this
+        process inventing a page map, which is what decisions 024 and 027 were
+        written about."""
+        skipped = self.built()[1]
+        self.assertEqual(len(skipped), 148)
+        self.assertEqual(skipped[0][0], "6.9")
+        self.assertEqual(skipped[-1][0], "6.156")
+
+    def test_every_page_is_a_condition_page_with_seven_tiers(self):
+        for page in self.committed():
+            self.assertEqual(page["page_type"], "condition", page["page_id"])
+            self.assertEqual(len(page["tiers_required"]), 7, page["page_id"])
+
+    def test_the_deeper_step_comes_from_the_spiral_map(self):
+        """Part 1's ACL row steps from 6.1 to 6.8 into 7.20 to 7.31, and 6.6
+        appears again in the women's row, whose next step is 8.99 and 8.100."""
+        by_id = {p["page_id"]: p for p in self.committed()}
+        self.assertEqual(by_id["6.2.1"]["deeper_pages"], ["7.20", "7.31"])
+        self.assertIn("8.99", by_id["6.6.4"]["deeper_pages"])
+
+    def test_the_part_names_keep_their_acronyms(self):
+        """str.title() turns "ACL DISORDERS" into "Acl Disorders"."""
+        for page in self.committed():
+            self.assertEqual(page["part"]["name"], "ACL Disorders")
+
+
+class NoRenderTargetIsUngoverned(unittest.TestCase):
+    """Every published page is in an architecture map or is declared unmapped.
+
+    conditions/acl.html was written in this repository's first commit, before any
+    page map existed, as the worked example of a seven tier condition article. It
+    held the id 6.1.1 and was the only render target in the site with no entry in
+    any pages_*.json. Nothing noticed for as long as it existed, because no gate
+    compared the two lists.
+
+    Section 6's map gave 6.1.1 to the page the source actually names, "What is
+    the ACL?", so the showcase page moved to 6.1.0 and was declared in an
+    unmapped block carrying its reason and the decision still owed on it. The
+    block is the same mechanism as withheld: it turns a silent gap into a stated
+    one. This test is what stops the next one being silent.
+    """
+
+    def targets(self):
+        path = os.path.join(ROOT, "config", "render_targets.json")
+        with open(path, encoding="utf-8") as fh:
+            return json.load(fh)
+
+    def mapped(self):
+        known = set()
+        arch = os.path.join(ROOT, "config", "architecture")
+        for name in sorted(os.listdir(arch)):
+            if not (name.startswith("pages_") and name.endswith(".json")):
+                continue
+            with open(os.path.join(arch, name), encoding="utf-8") as fh:
+                for page in json.load(fh):
+                    known.add(page["page_id"])
+        return known
+
+    def test_every_render_target_is_mapped_or_declared(self):
+        data = self.targets()
+        declared = set(data.get("unmapped") or {})
+        ungoverned = sorted(set(data["pages"]) - self.mapped() - declared)
+        self.assertEqual(ungoverned, [],
+                         "render targets in no map and not declared: %r"
+                         % (ungoverned[:8],))
+
+    def test_a_declared_page_says_why_and_what_is_owed(self):
+        for page_id, entry in (self.targets().get("unmapped") or {}).items():
+            self.assertTrue(entry.get("reason"), page_id)
+            self.assertTrue(entry.get("decide_when"), page_id)
+            self.assertTrue(entry.get("out"), page_id)
+
+    def test_a_declared_page_is_still_published(self):
+        """Declared means unmapped, not withheld. The two blocks are opposites."""
+        data = self.targets()
+        for page_id in (data.get("unmapped") or {}):
+            self.assertIn(page_id, data["pages"], page_id)
+            self.assertNotIn(page_id, data.get("withheld") or {}, page_id)
+
+    def test_the_showcase_page_moved_off_the_id_the_source_names(self):
+        data = self.targets()
+        self.assertIn("6.1.0", data.get("unmapped") or {})
+        self.assertEqual(data["pages"]["6.1.0"]["out"], "conditions/acl.html")
+        self.assertIn("6.1.1", self.mapped())
+        self.assertEqual(data["pages"]["6.1.1"]["out"],
+                         "conditions/acl-what-is-the-acl.html")

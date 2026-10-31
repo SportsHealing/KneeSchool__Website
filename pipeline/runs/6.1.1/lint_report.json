@@ -2,11 +2,28 @@
   "lint_version": "1.0",
   "pass": true,
   "fail_count": 0,
-  "warn_count": 0,
-  "findings": [],
+  "warn_count": 2,
+  "findings": [
+    {
+      "rule_id": "POS-001",
+      "severity": "warn",
+      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
+      "matched_text": "Ask what the knee was doing rather than what hit it, because most tears are non contact.",
+      "context": "",
+      "line": 0
+    },
+    {
+      "rule_id": "POS-001",
+      "severity": "warn",
+      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
+      "matched_text": "Take all five explicitly rather than by impression.",
+      "context": "",
+      "line": 0
+    }
+  ],
   "article_template_version": "1.0",
   "document": {
-    "word_count": 1923,
+    "word_count": 2098,
     "tiers_present": [
       "consultant",
       "fellowship",
@@ -17,7 +34,7 @@
       "patient"
     ],
     "has_reference_list": true,
-    "sentence_count": 124,
+    "sentence_count": 147,
     "page_type": "condition"
   }
 }
