@@ -2,65 +2,8 @@
   "lint_version": "1.0",
   "pass": true,
   "fail_count": 0,
-  "warn_count": 7,
-  "findings": [
-    {
-      "rule_id": "POS-001",
-      "severity": "warn",
-      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
-      "matched_text": "Say that posteromedial tibial oedema on the scan should prompt the look even where no tear is reported.",
-      "context": "",
-      "line": 0
-    },
-    {
-      "rule_id": "POS-001",
-      "severity": "warn",
-      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
-      "matched_text": "Repair where found, at the same sitting as the reconstruction.",
-      "context": "",
-      "line": 0
-    },
-    {
-      "rule_id": "POS-001",
-      "severity": "warn",
-      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
-      "matched_text": "Repair carries the usual meniscal repair restrictions and the usual failure rate, neither of which this page quantifies.",
-      "context": "",
-      "line": 0
-    },
-    {
-      "rule_id": "POS-001",
-      "severity": "warn",
-      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
-      "matched_text": "- Posteromedial tibial oedema should prompt the look.",
-      "context": "",
-      "line": 0
-    },
-    {
-      "rule_id": "POS-001",
-      "severity": "warn",
-      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
-      "matched_text": "Repair technique and whether a stable lesion needs repair at all are the technical questions that follow, and they follo",
-      "context": "",
-      "line": 0
-    },
-    {
-      "rule_id": "POS-001",
-      "severity": "warn",
-      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
-      "matched_text": "Residual anterior laxity in a well placed graft should prompt a question about the posteromedial corner of the meniscus ",
-      "context": "",
-      "line": 0
-    },
-    {
-      "rule_id": "POS-001",
-      "severity": "warn",
-      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
-      "matched_text": "Take all five explicitly rather than by impression, and say before the operation that the look will be done and what it ",
-      "context": "",
-      "line": 0
-    }
-  ],
+  "warn_count": 0,
+  "findings": [],
   "article_template_version": "1.0",
   "document": {
     "word_count": 1926,

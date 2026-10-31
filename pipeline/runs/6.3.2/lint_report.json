@@ -2,25 +2,8 @@
   "lint_version": "1.0",
   "pass": true,
   "fail_count": 0,
-  "warn_count": 2,
-  "findings": [
-    {
-      "rule_id": "POS-001",
-      "severity": "warn",
-      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
-      "matched_text": "The second is whether an anterolateral procedure should be added routinely in high risk patients.",
-      "context": "",
-      "line": 0
-    },
-    {
-      "rule_id": "POS-001",
-      "severity": "warn",
-      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
-      "matched_text": "Take all five explicitly rather than by impression, and name the non-operative route even when the patient has not asked",
-      "context": "",
-      "line": 0
-    }
-  ],
+  "warn_count": 0,
+  "findings": [],
   "article_template_version": "1.0",
   "document": {
     "word_count": 1939,

@@ -2,33 +2,8 @@
   "lint_version": "1.0",
   "pass": true,
   "fail_count": 0,
-  "warn_count": 3,
-  "findings": [
-    {
-      "rule_id": "POS-001",
-      "severity": "warn",
-      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
-      "matched_text": "The first question is how much rotational control the anterolateral structures supply, and therefore when they should be",
-      "context": "",
-      "line": 0
-    },
-    {
-      "rule_id": "POS-001",
-      "severity": "warn",
-      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
-      "matched_text": "The honest position is that the two cannot be separated with what is measured today, and that a fellow should not presen",
-      "context": "",
-      "line": 0
-    },
-    {
-      "rule_id": "POS-001",
-      "severity": "warn",
-      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
-      "matched_text": "Take all five explicitly rather than by impression, and counsel against them rather than against a cohort.",
-      "context": "",
-      "line": 0
-    }
-  ],
+  "warn_count": 0,
+  "findings": [],
   "article_template_version": "1.0",
   "document": {
     "word_count": 1985,

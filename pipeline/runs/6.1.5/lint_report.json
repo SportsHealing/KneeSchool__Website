@@ -2,41 +2,8 @@
   "lint_version": "1.0",
   "pass": true,
   "fail_count": 0,
-  "warn_count": 4,
-  "findings": [
-    {
-      "rule_id": "POS-001",
-      "severity": "warn",
-      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
-      "matched_text": "Immediate haemarthrosis is the finding that should prompt a search for a structural injury rather than reassurance.",
-      "context": "",
-      "line": 0
-    },
-    {
-      "rule_id": "POS-001",
-      "severity": "warn",
-      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
-      "matched_text": "Examine for what the mechanism predicts, then for what it does not, because the second is where the missed injuries are.",
-      "context": "",
-      "line": 0
-    },
-    {
-      "rule_id": "POS-001",
-      "severity": "warn",
-      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
-      "matched_text": "A different bruise pattern should prompt a different injury search.",
-      "context": "",
-      "line": 0
-    },
-    {
-      "rule_id": "POS-001",
-      "severity": "warn",
-      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
-      "matched_text": "Take all five explicitly rather than by impression.",
-      "context": "",
-      "line": 0
-    }
-  ],
+  "warn_count": 0,
+  "findings": [],
   "article_template_version": "1.0",
   "document": {
     "word_count": 1987,

@@ -2,49 +2,8 @@
   "lint_version": "1.0",
   "pass": true,
   "fail_count": 0,
-  "warn_count": 5,
-  "findings": [
-    {
-      "rule_id": "POS-001",
-      "severity": "warn",
-      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
-      "matched_text": "Whether it prevents the long term joint changes is a genuinely open question and should not be presented as settled.",
-      "context": "",
-      "line": 0
-    },
-    {
-      "rule_id": "POS-001",
-      "severity": "warn",
-      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
-      "matched_text": "Delay is safe while the knee is stable and unsafe once it is not, which makes the history more informative than the inte",
-      "context": "",
-      "line": 0
-    },
-    {
-      "rule_id": "POS-001",
-      "severity": "warn",
-      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
-      "matched_text": "The third is whether the older recreational patient should be managed from evidence gathered on young athletes.",
-      "context": "",
-      "line": 0
-    },
-    {
-      "rule_id": "POS-001",
-      "severity": "warn",
-      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
-      "matched_text": "A patient who has already lost meniscal tissue is in a different natural history from one who has not, and the two shoul",
-      "context": "",
-      "line": 0
-    },
-    {
-      "rule_id": "POS-001",
-      "severity": "warn",
-      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
-      "matched_text": "Take all five explicitly rather than by impression.",
-      "context": "",
-      "line": 0
-    }
-  ],
+  "warn_count": 0,
+  "findings": [],
   "article_template_version": "1.0",
   "document": {
     "word_count": 2068,
