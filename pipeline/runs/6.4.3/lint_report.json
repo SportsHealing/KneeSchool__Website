@@ -1,0 +1,56 @@
+{
+  "lint_version": "1.0",
+  "pass": true,
+  "fail_count": 0,
+  "warn_count": 4,
+  "findings": [
+    {
+      "rule_id": "POS-001",
+      "severity": "warn",
+      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
+      "matched_text": "Repair restores continuity of the root and aims to restore hoop tension.",
+      "context": "",
+      "line": 0
+    },
+    {
+      "rule_id": "POS-001",
+      "severity": "warn",
+      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
+      "matched_text": "Repair at the same sitting as the cruciate reconstruction where both are present, because the repair needs a stable knee",
+      "context": "",
+      "line": 0
+    },
+    {
+      "rule_id": "POS-001",
+      "severity": "warn",
+      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
+      "matched_text": "That makes the root the structure where the argument for acting early is strongest and the evidence that acting helps is",
+      "context": "",
+      "line": 0
+    },
+    {
+      "rule_id": "POS-001",
+      "severity": "warn",
+      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
+      "matched_text": "Take all five explicitly rather than by impression, and say which part of the argument is mechanical and which is eviden",
+      "context": "",
+      "line": 0
+    }
+  ],
+  "article_template_version": "1.0",
+  "document": {
+    "word_count": 1978,
+    "tiers_present": [
+      "consultant",
+      "fellowship",
+      "frcs",
+      "junior",
+      "medical_student",
+      "mrcs",
+      "patient"
+    ],
+    "has_reference_list": true,
+    "sentence_count": 153,
+    "page_type": "condition"
+  }
+}

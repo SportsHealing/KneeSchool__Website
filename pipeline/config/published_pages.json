@@ -779,6 +779,12 @@
     "6.3.3": "conditions/acl-tibial-avulsion.html",
     "6.3.4": "conditions/acl-partial-tears.html",
     "6.3.5": "conditions/acl-complete-tears.html",
-    "6.3.6": "conditions/acl-healing-tears.html"
+    "6.3.6": "conditions/acl-healing-tears.html",
+    "6.4.1": "conditions/acl-bone-bruising.html",
+    "6.4.2": "conditions/ramp-lesions.html",
+    "6.4.3": "conditions/meniscal-root-tears.html",
+    "6.4.4": "conditions/anterolateral-ligament-injuries.html",
+    "6.4.5": "conditions/acl-associated-mcl-injuries.html",
+    "6.4.6": "conditions/acl-associated-cartilage-injuries.html"
   }
 }

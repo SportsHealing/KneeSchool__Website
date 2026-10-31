@@ -4675,6 +4675,42 @@
       "parent": "Conditions|index.html",
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
+    },
+    "6.4.1": {
+      "out": "conditions/acl-bone-bruising.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.4.2": {
+      "out": "conditions/ramp-lesions.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.4.3": {
+      "out": "conditions/meniscal-root-tears.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.4.4": {
+      "out": "conditions/anterolateral-ligament-injuries.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.4.5": {
+      "out": "conditions/acl-associated-mcl-injuries.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.4.6": {
+      "out": "conditions/acl-associated-cartilage-injuries.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
     }
   },
   "withheld": {
