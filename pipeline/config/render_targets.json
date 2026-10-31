@@ -4639,6 +4639,42 @@
       "parent": "Conditions|index.html",
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
+    },
+    "6.3.1": {
+      "out": "conditions/acl-femoral-avulsion.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.3.2": {
+      "out": "conditions/acl-mid-substance-tear.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.3.3": {
+      "out": "conditions/acl-tibial-avulsion.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.3.4": {
+      "out": "conditions/acl-partial-tears.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.3.5": {
+      "out": "conditions/acl-complete-tears.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.3.6": {
+      "out": "conditions/acl-healing-tears.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
     }
   },
   "withheld": {

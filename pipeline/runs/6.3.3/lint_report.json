@@ -1,0 +1,40 @@
+{
+  "lint_version": "1.0",
+  "pass": true,
+  "fail_count": 0,
+  "warn_count": 2,
+  "findings": [
+    {
+      "rule_id": "POS-001",
+      "severity": "warn",
+      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
+      "matched_text": "Preserve the physis, which constrains implant choice and position.",
+      "context": "",
+      "line": 0
+    },
+    {
+      "rule_id": "POS-001",
+      "severity": "warn",
+      "description": "Clinical recommendations on a professional page are registered for sign off: not in the page register",
+      "matched_text": "Take all five explicitly rather than by impression, and record growth remaining because it dates every later option.",
+      "context": "",
+      "line": 0
+    }
+  ],
+  "article_template_version": "1.0",
+  "document": {
+    "word_count": 1977,
+    "tiers_present": [
+      "consultant",
+      "fellowship",
+      "frcs",
+      "junior",
+      "medical_student",
+      "mrcs",
+      "patient"
+    ],
+    "has_reference_list": true,
+    "sentence_count": 154,
+    "page_type": "condition"
+  }
+}
