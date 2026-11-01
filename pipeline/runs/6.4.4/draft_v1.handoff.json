@@ -1,0 +1,41 @@
+{
+  "page_id": "6.4.4",
+  "prompt_version": "1.0",
+  "article_template_version": "1.0",
+  "page_type": "condition",
+  "article_template": "condition",
+  "tiers_covered": [
+    "junior",
+    "patient",
+    "medical_student",
+    "mrcs",
+    "frcs",
+    "fellowship",
+    "consultant"
+  ],
+  "scope_statement": "ALL Injuries, as it presents and is managed.",
+  "sources": [],
+  "source_note": "No sources were retrieved. The generation environment had no access to PubMed, Cochrane, any journal or any textbook. The Tier 1 source minimum is NOT met and this draft would not pass Tier 1 in the deployed pipeline. This section is written entirely for professionals, and it is unverified.",
+  "claims_needing_verification": [
+    "The evidence supports the direction and not the cut-off.",
+    "A low threshold treats many for a benefit concentrated in few.",
+    "A high threshold leaves the highest risk group exposed.",
+    "The threshold is a departmental position rather than a citable finding.",
+    "Age and return to pivoting sport are the two strongest individual factors."
+  ],
+  "claims_note": "Listed above are the substantive claims, taken from the deepest tier's key learning points. Every statement about an appearance, a sequence or an artefact in the page body requires the same verification; these are the ones a reviewer should start with.",
+  "content_rule": "Decision 006: this page may carry measurements and every one of them is written from standard teaching rather than from a retrieved paper. None has been checked against a source, because the build environment has none. Each figure is registered in pipeline/config/figures/<page_id>.json with the sentence it supports and a verification state. A condition page is where that constraint bites hardest: incidence, outcome and failure rates are the content a reader comes for, every one of them is a published quantity, and none appears on these pages. ACC-001 does not reach the condition page type, so the gate would not have refused a diagnostic accuracy figure here; the omission is editorial and deliberate rather than enforced, and a reviewer should know the difference.",
+  "gaps_or_uncertainties": [
+    "No measurement appears on this page. Where one would normally sit the page gives the relationship instead, because the value is not one this environment can state with confidence.",
+    "No diagnostic accuracy figure appears on this page. ACC-001 covers the examination, imaging and reporting page types and does not reach the condition page type, so the gate would not have refused one here. The omission is editorial and deliberate rather than enforced.",
+    "No incidence, prevalence, outcome or failure rate appears on this page either. Those quantities are most of what a reader comes to a condition page for, every one of them is a published value, and each is given here as a relationship instead. Who Gets It and Complications and Prognosis are the sections a reviewer should fill first.",
+    "This page's place in the section comes from decision 030, because Part 1 estimates 500 to 700 pages across chapters 6.1 to 6.156 and puts the section map in the Part 3 instalment, which is not in this repository. Sub-pages are enumerated in the source for chapters 6.1 to 6.8 only.",
+    "The condition template is the handbook's own rather than one invented here. Its ten body sections and their fixed order are enforced by STRUCT-001, and the tier restriction on Controversies and Evidence by decision 020."
+  ],
+  "duplication_risk_pages": [
+    "7.20",
+    "7.31"
+  ],
+  "architecture_check": "Written against the architecture's own brief for 6.4.4, including its must_not_cover list: Structure level anatomy (owned by Section 2); Biomechanics beyond what the condition depends on (owned by Section 3); Examination technique and interpretation (owned by Section 4); Imaging acquisition and appearance (owned by Section 5); Operative technique (owned by Section 7); Rehabilitation protocol detail (owned by Section 8); Another condition's presentation or management (owned per chapter by 6.1 to 6.156)",
+  "status": "AI_DRAFT_READY_FOR_VERIFICATION"
+}

@@ -1,0 +1,25 @@
+{
+  "page_id": "6.1.1",
+  "prompt_version": "1.0",
+  "dashes_removed": 0,
+  "ai_phrases_removed": [],
+  "terminology_standardised": [
+    {"chosen": "anterior cruciate ligament (ACL)", "replaced": ["ACL", "the cruciate"]},
+    {"chosen": "posterior tibial slope", "replaced": ["slope", "tibial slope"]}
+  ],
+  "sentences_flagged_for_human_review": [
+    "Junior tier: 'Girls and women tear the ACL more often than boys and men playing the same sport. The reasons are still being studied, and they are not simply about strength.' Written without a citation by tier rule. Confirm the framing is right for reading age 12 to 14.",
+    "FRCS tier: 'Allograft in a young pivoting athlete carries a higher failure rate.' Deliberately unquantified because no figure could be verified."
+  ],
+  "readability_estimate_by_tier": {
+    "junior": "short sentences, no jargon without a gloss, target reading age 12 to 14",
+    "patient": "plain English, honest about uncertainty",
+    "medical_student": "foundation academic",
+    "mrcs": "applied and examination aware",
+    "frcs": "evidence led, viva ready",
+    "fellowship": "technical, honest about variation",
+    "consultant": "peer register, open controversy"
+  },
+  "status": "STYLE_COMPLETE_READY_FOR_CONSULTANT_REVIEW",
+  "status_note": "The draft met house style on first pass. No substantive edit was made and no new fact was introduced."
+}

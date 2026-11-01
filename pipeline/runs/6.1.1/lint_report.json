@@ -6,7 +6,7 @@
   "findings": [],
   "article_template_version": "1.0",
   "document": {
-    "word_count": 1923,
+    "word_count": 2098,
     "tiers_present": [
       "consultant",
       "fellowship",
@@ -17,7 +17,7 @@
       "patient"
     ],
     "has_reference_list": true,
-    "sentence_count": 124,
+    "sentence_count": 147,
     "page_type": "condition"
   }
 }

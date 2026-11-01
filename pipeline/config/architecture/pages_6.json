@@ -1,0 +1,1743 @@
+[
+  {
+    "page_id": "6.1.1",
+    "title": "What is the ACL?",
+    "section": {
+      "id": "6",
+      "name": "Conditions Library"
+    },
+    "chapter": {
+      "id": "6.1",
+      "name": "ACL Fundamentals"
+    },
+    "part": {
+      "letter": "A",
+      "name": "ACL Disorders"
+    },
+    "tiers_required": [
+      "junior",
+      "patient",
+      "medical_student",
+      "mrcs",
+      "frcs",
+      "fellowship",
+      "consultant"
+    ],
+    "scope": "What is the ACL? As the clinician needs to understand it.",
+    "siblings": [
+      "6.1.2",
+      "6.1.3",
+      "6.1.4",
+      "6.1.5"
+    ],
+    "deeper_pages": [
+      "7.20",
+      "7.31"
+    ],
+    "must_not_cover": [
+      "Structure level anatomy (owned by Section 2)",
+      "Biomechanics beyond what the condition depends on (owned by Section 3)",
+      "Examination technique and interpretation (owned by Section 4)",
+      "Imaging acquisition and appearance (owned by Section 5)",
+      "Operative technique (owned by Section 7)",
+      "Rehabilitation protocol detail (owned by Section 8)",
+      "Another condition's presentation or management (owned per chapter by 6.1 to 6.156)"
+    ],
+    "page_type": "condition",
+    "priority": "high"
+  },
+  {
+    "page_id": "6.1.2",
+    "title": "Functions of the ACL",
+    "section": {
+      "id": "6",
+      "name": "Conditions Library"
+    },
+    "chapter": {
+      "id": "6.1",
+      "name": "ACL Fundamentals"
+    },
+    "part": {
+      "letter": "A",
+      "name": "ACL Disorders"
+    },
+    "tiers_required": [
+      "junior",
+      "patient",
+      "medical_student",
+      "mrcs",
+      "frcs",
+      "fellowship",
+      "consultant"
+    ],
+    "scope": "Functions of the ACL, as the clinician needs to understand it.",
+    "siblings": [
+      "6.1.1",
+      "6.1.3",
+      "6.1.4",
+      "6.1.5"
+    ],
+    "deeper_pages": [
+      "7.20",
+      "7.31"
+    ],
+    "must_not_cover": [
+      "Structure level anatomy (owned by Section 2)",
+      "Biomechanics beyond what the condition depends on (owned by Section 3)",
+      "Examination technique and interpretation (owned by Section 4)",
+      "Imaging acquisition and appearance (owned by Section 5)",
+      "Operative technique (owned by Section 7)",
+      "Rehabilitation protocol detail (owned by Section 8)",
+      "Another condition's presentation or management (owned per chapter by 6.1 to 6.156)"
+    ],
+    "page_type": "condition",
+    "priority": "high"
+  },
+  {
+    "page_id": "6.1.3",
+    "title": "Epidemiology",
+    "section": {
+      "id": "6",
+      "name": "Conditions Library"
+    },
+    "chapter": {
+      "id": "6.1",
+      "name": "ACL Fundamentals"
+    },
+    "part": {
+      "letter": "A",
+      "name": "ACL Disorders"
+    },
+    "tiers_required": [
+      "junior",
+      "patient",
+      "medical_student",
+      "mrcs",
+      "frcs",
+      "fellowship",
+      "consultant"
+    ],
+    "scope": "Epidemiology, as the clinician needs to understand it.",
+    "siblings": [
+      "6.1.1",
+      "6.1.2",
+      "6.1.4",
+      "6.1.5"
+    ],
+    "deeper_pages": [
+      "7.20",
+      "7.31"
+    ],
+    "must_not_cover": [
+      "Structure level anatomy (owned by Section 2)",
+      "Biomechanics beyond what the condition depends on (owned by Section 3)",
+      "Examination technique and interpretation (owned by Section 4)",
+      "Imaging acquisition and appearance (owned by Section 5)",
+      "Operative technique (owned by Section 7)",
+      "Rehabilitation protocol detail (owned by Section 8)",
+      "Another condition's presentation or management (owned per chapter by 6.1 to 6.156)"
+    ],
+    "page_type": "condition",
+    "priority": "high"
+  },
+  {
+    "page_id": "6.1.4",
+    "title": "Natural History",
+    "section": {
+      "id": "6",
+      "name": "Conditions Library"
+    },
+    "chapter": {
+      "id": "6.1",
+      "name": "ACL Fundamentals"
+    },
+    "part": {
+      "letter": "A",
+      "name": "ACL Disorders"
+    },
+    "tiers_required": [
+      "junior",
+      "patient",
+      "medical_student",
+      "mrcs",
+      "frcs",
+      "fellowship",
+      "consultant"
+    ],
+    "scope": "Natural History, as the clinician needs to understand it.",
+    "siblings": [
+      "6.1.1",
+      "6.1.2",
+      "6.1.3",
+      "6.1.5"
+    ],
+    "deeper_pages": [
+      "7.20",
+      "7.31"
+    ],
+    "must_not_cover": [
+      "Structure level anatomy (owned by Section 2)",
+      "Biomechanics beyond what the condition depends on (owned by Section 3)",
+      "Examination technique and interpretation (owned by Section 4)",
+      "Imaging acquisition and appearance (owned by Section 5)",
+      "Operative technique (owned by Section 7)",
+      "Rehabilitation protocol detail (owned by Section 8)",
+      "Another condition's presentation or management (owned per chapter by 6.1 to 6.156)"
+    ],
+    "page_type": "condition",
+    "priority": "high"
+  },
+  {
+    "page_id": "6.1.5",
+    "title": "Mechanisms of Injury",
+    "section": {
+      "id": "6",
+      "name": "Conditions Library"
+    },
+    "chapter": {
+      "id": "6.1",
+      "name": "ACL Fundamentals"
+    },
+    "part": {
+      "letter": "A",
+      "name": "ACL Disorders"
+    },
+    "tiers_required": [
+      "junior",
+      "patient",
+      "medical_student",
+      "mrcs",
+      "frcs",
+      "fellowship",
+      "consultant"
+    ],
+    "scope": "Mechanisms of Injury, as the clinician needs to understand it.",
+    "siblings": [
+      "6.1.1",
+      "6.1.2",
+      "6.1.3",
+      "6.1.4"
+    ],
+    "deeper_pages": [
+      "7.20",
+      "7.31"
+    ],
+    "must_not_cover": [
+      "Structure level anatomy (owned by Section 2)",
+      "Biomechanics beyond what the condition depends on (owned by Section 3)",
+      "Examination technique and interpretation (owned by Section 4)",
+      "Imaging acquisition and appearance (owned by Section 5)",
+      "Operative technique (owned by Section 7)",
+      "Rehabilitation protocol detail (owned by Section 8)",
+      "Another condition's presentation or management (owned per chapter by 6.1 to 6.156)"
+    ],
+    "page_type": "condition",
+    "priority": "high"
+  },
+  {
+    "page_id": "6.2.1",
+    "title": "Non-contact Injury",
+    "section": {
+      "id": "6",
+      "name": "Conditions Library"
+    },
+    "chapter": {
+      "id": "6.2",
+      "name": "Acute ACL Injury"
+    },
+    "part": {
+      "letter": "A",
+      "name": "ACL Disorders"
+    },
+    "tiers_required": [
+      "junior",
+      "patient",
+      "medical_student",
+      "mrcs",
+      "frcs",
+      "fellowship",
+      "consultant"
+    ],
+    "scope": "Non-contact Injury, as it presents and is managed.",
+    "siblings": [
+      "6.2.2",
+      "6.2.3",
+      "6.2.4",
+      "6.2.5"
+    ],
+    "deeper_pages": [
+      "7.20",
+      "7.31"
+    ],
+    "must_not_cover": [
+      "Structure level anatomy (owned by Section 2)",
+      "Biomechanics beyond what the condition depends on (owned by Section 3)",
+      "Examination technique and interpretation (owned by Section 4)",
+      "Imaging acquisition and appearance (owned by Section 5)",
+      "Operative technique (owned by Section 7)",
+      "Rehabilitation protocol detail (owned by Section 8)",
+      "Another condition's presentation or management (owned per chapter by 6.1 to 6.156)"
+    ],
+    "page_type": "condition",
+    "priority": "high"
+  },
+  {
+    "page_id": "6.2.2",
+    "title": "Contact Injury",
+    "section": {
+      "id": "6",
+      "name": "Conditions Library"
+    },
+    "chapter": {
+      "id": "6.2",
+      "name": "Acute ACL Injury"
+    },
+    "part": {
+      "letter": "A",
+      "name": "ACL Disorders"
+    },
+    "tiers_required": [
+      "junior",
+      "patient",
+      "medical_student",
+      "mrcs",
+      "frcs",
+      "fellowship",
+      "consultant"
+    ],
+    "scope": "Contact Injury, as it presents and is managed.",
+    "siblings": [
+      "6.2.1",
+      "6.2.3",
+      "6.2.4",
+      "6.2.5"
+    ],
+    "deeper_pages": [
+      "7.20",
+      "7.31"
+    ],
+    "must_not_cover": [
+      "Structure level anatomy (owned by Section 2)",
+      "Biomechanics beyond what the condition depends on (owned by Section 3)",
+      "Examination technique and interpretation (owned by Section 4)",
+      "Imaging acquisition and appearance (owned by Section 5)",
+      "Operative technique (owned by Section 7)",
+      "Rehabilitation protocol detail (owned by Section 8)",
+      "Another condition's presentation or management (owned per chapter by 6.1 to 6.156)"
+    ],
+    "page_type": "condition",
+    "priority": "high"
+  },
+  {
+    "page_id": "6.2.3",
+    "title": "Hyperextension Injury",
+    "section": {
+      "id": "6",
+      "name": "Conditions Library"
+    },
+    "chapter": {
+      "id": "6.2",
+      "name": "Acute ACL Injury"
+    },
+    "part": {
+      "letter": "A",
+      "name": "ACL Disorders"
+    },
+    "tiers_required": [
+      "junior",
+      "patient",
+      "medical_student",
+      "mrcs",
+      "frcs",
+      "fellowship",
+      "consultant"
+    ],
+    "scope": "Hyperextension Injury, as it presents and is managed.",
+    "siblings": [
+      "6.2.1",
+      "6.2.2",
+      "6.2.4",
+      "6.2.5"
+    ],
+    "deeper_pages": [
+      "7.20",
+      "7.31"
+    ],
+    "must_not_cover": [
+      "Structure level anatomy (owned by Section 2)",
+      "Biomechanics beyond what the condition depends on (owned by Section 3)",
+      "Examination technique and interpretation (owned by Section 4)",
+      "Imaging acquisition and appearance (owned by Section 5)",
+      "Operative technique (owned by Section 7)",
+      "Rehabilitation protocol detail (owned by Section 8)",
+      "Another condition's presentation or management (owned per chapter by 6.1 to 6.156)"
+    ],
+    "page_type": "condition",
+    "priority": "high"
+  },
+  {
+    "page_id": "6.2.4",
+    "title": "Combined Injuries",
+    "section": {
+      "id": "6",
+      "name": "Conditions Library"
+    },
+    "chapter": {
+      "id": "6.2",
+      "name": "Acute ACL Injury"
+    },
+    "part": {
+      "letter": "A",
+      "name": "ACL Disorders"
+    },
+    "tiers_required": [
+      "junior",
+      "patient",
+      "medical_student",
+      "mrcs",
+      "frcs",
+      "fellowship",
+      "consultant"
+    ],
+    "scope": "Combined Injuries, as it presents and is managed.",
+    "siblings": [
+      "6.2.1",
+      "6.2.2",
+      "6.2.3",
+      "6.2.5"
+    ],
+    "deeper_pages": [
+      "7.20",
+      "7.31"
+    ],
+    "must_not_cover": [
+      "Structure level anatomy (owned by Section 2)",
+      "Biomechanics beyond what the condition depends on (owned by Section 3)",
+      "Examination technique and interpretation (owned by Section 4)",
+      "Imaging acquisition and appearance (owned by Section 5)",
+      "Operative technique (owned by Section 7)",
+      "Rehabilitation protocol detail (owned by Section 8)",
+      "Another condition's presentation or management (owned per chapter by 6.1 to 6.156)"
+    ],
+    "page_type": "condition",
+    "priority": "high"
+  },
+  {
+    "page_id": "6.2.5",
+    "title": "Acute Haemarthrosis",
+    "section": {
+      "id": "6",
+      "name": "Conditions Library"
+    },
+    "chapter": {
+      "id": "6.2",
+      "name": "Acute ACL Injury"
+    },
+    "part": {
+      "letter": "A",
+      "name": "ACL Disorders"
+    },
+    "tiers_required": [
+      "junior",
+      "patient",
+      "medical_student",
+      "mrcs",
+      "frcs",
+      "fellowship",
+      "consultant"
+    ],
+    "scope": "Acute Haemarthrosis, as it presents and is managed.",
+    "siblings": [
+      "6.2.1",
+      "6.2.2",
+      "6.2.3",
+      "6.2.4"
+    ],
+    "deeper_pages": [
+      "7.20",
+      "7.31"
+    ],
+    "must_not_cover": [
+      "Structure level anatomy (owned by Section 2)",
+      "Biomechanics beyond what the condition depends on (owned by Section 3)",
+      "Examination technique and interpretation (owned by Section 4)",
+      "Imaging acquisition and appearance (owned by Section 5)",
+      "Operative technique (owned by Section 7)",
+      "Rehabilitation protocol detail (owned by Section 8)",
+      "Another condition's presentation or management (owned per chapter by 6.1 to 6.156)"
+    ],
+    "page_type": "condition",
+    "priority": "high"
+  },
+  {
+    "page_id": "6.3.1",
+    "title": "Femoral Avulsion",
+    "section": {
+      "id": "6",
+      "name": "Conditions Library"
+    },
+    "chapter": {
+      "id": "6.3",
+      "name": "ACL Tear Patterns"
+    },
+    "part": {
+      "letter": "A",
+      "name": "ACL Disorders"
+    },
+    "tiers_required": [
+      "junior",
+      "patient",
+      "medical_student",
+      "mrcs",
+      "frcs",
+      "fellowship",
+      "consultant"
+    ],
+    "scope": "Femoral Avulsion, as it presents and is managed.",
+    "siblings": [
+      "6.3.2",
+      "6.3.3",
+      "6.3.4",
+      "6.3.5",
+      "6.3.6"
+    ],
+    "deeper_pages": [
+      "7.20",
+      "7.31"
+    ],
+    "must_not_cover": [
+      "Structure level anatomy (owned by Section 2)",
+      "Biomechanics beyond what the condition depends on (owned by Section 3)",
+      "Examination technique and interpretation (owned by Section 4)",
+      "Imaging acquisition and appearance (owned by Section 5)",
+      "Operative technique (owned by Section 7)",
+      "Rehabilitation protocol detail (owned by Section 8)",
+      "Another condition's presentation or management (owned per chapter by 6.1 to 6.156)"
+    ],
+    "page_type": "condition",
+    "priority": "high"
+  },
+  {
+    "page_id": "6.3.2",
+    "title": "Mid-substance Tear",
+    "section": {
+      "id": "6",
+      "name": "Conditions Library"
+    },
+    "chapter": {
+      "id": "6.3",
+      "name": "ACL Tear Patterns"
+    },
+    "part": {
+      "letter": "A",
+      "name": "ACL Disorders"
+    },
+    "tiers_required": [
+      "junior",
+      "patient",
+      "medical_student",
+      "mrcs",
+      "frcs",
+      "fellowship",
+      "consultant"
+    ],
+    "scope": "Mid-substance Tear, as it presents and is managed.",
+    "siblings": [
+      "6.3.1",
+      "6.3.3",
+      "6.3.4",
+      "6.3.5",
+      "6.3.6"
+    ],
+    "deeper_pages": [
+      "7.20",
+      "7.31"
+    ],
+    "must_not_cover": [
+      "Structure level anatomy (owned by Section 2)",
+      "Biomechanics beyond what the condition depends on (owned by Section 3)",
+      "Examination technique and interpretation (owned by Section 4)",
+      "Imaging acquisition and appearance (owned by Section 5)",
+      "Operative technique (owned by Section 7)",
+      "Rehabilitation protocol detail (owned by Section 8)",
+      "Another condition's presentation or management (owned per chapter by 6.1 to 6.156)"
+    ],
+    "page_type": "condition",
+    "priority": "high"
+  },
+  {
+    "page_id": "6.3.3",
+    "title": "Tibial Avulsion",
+    "section": {
+      "id": "6",
+      "name": "Conditions Library"
+    },
+    "chapter": {
+      "id": "6.3",
+      "name": "ACL Tear Patterns"
+    },
+    "part": {
+      "letter": "A",
+      "name": "ACL Disorders"
+    },
+    "tiers_required": [
+      "junior",
+      "patient",
+      "medical_student",
+      "mrcs",
+      "frcs",
+      "fellowship",
+      "consultant"
+    ],
+    "scope": "Tibial Avulsion, as it presents and is managed.",
+    "siblings": [
+      "6.3.1",
+      "6.3.2",
+      "6.3.4",
+      "6.3.5",
+      "6.3.6"
+    ],
+    "deeper_pages": [
+      "7.20",
+      "7.31"
+    ],
+    "must_not_cover": [
+      "Structure level anatomy (owned by Section 2)",
+      "Biomechanics beyond what the condition depends on (owned by Section 3)",
+      "Examination technique and interpretation (owned by Section 4)",
+      "Imaging acquisition and appearance (owned by Section 5)",
+      "Operative technique (owned by Section 7)",
+      "Rehabilitation protocol detail (owned by Section 8)",
+      "Another condition's presentation or management (owned per chapter by 6.1 to 6.156)"
+    ],
+    "page_type": "condition",
+    "priority": "high"
+  },
+  {
+    "page_id": "6.3.4",
+    "title": "Partial Tears",
+    "section": {
+      "id": "6",
+      "name": "Conditions Library"
+    },
+    "chapter": {
+      "id": "6.3",
+      "name": "ACL Tear Patterns"
+    },
+    "part": {
+      "letter": "A",
+      "name": "ACL Disorders"
+    },
+    "tiers_required": [
+      "junior",
+      "patient",
+      "medical_student",
+      "mrcs",
+      "frcs",
+      "fellowship",
+      "consultant"
+    ],
+    "scope": "Partial Tears, as it presents and is managed.",
+    "siblings": [
+      "6.3.1",
+      "6.3.2",
+      "6.3.3",
+      "6.3.5",
+      "6.3.6"
+    ],
+    "deeper_pages": [
+      "7.20",
+      "7.31"
+    ],
+    "must_not_cover": [
+      "Structure level anatomy (owned by Section 2)",
+      "Biomechanics beyond what the condition depends on (owned by Section 3)",
+      "Examination technique and interpretation (owned by Section 4)",
+      "Imaging acquisition and appearance (owned by Section 5)",
+      "Operative technique (owned by Section 7)",
+      "Rehabilitation protocol detail (owned by Section 8)",
+      "Another condition's presentation or management (owned per chapter by 6.1 to 6.156)"
+    ],
+    "page_type": "condition",
+    "priority": "high"
+  },
+  {
+    "page_id": "6.3.5",
+    "title": "Complete Tears",
+    "section": {
+      "id": "6",
+      "name": "Conditions Library"
+    },
+    "chapter": {
+      "id": "6.3",
+      "name": "ACL Tear Patterns"
+    },
+    "part": {
+      "letter": "A",
+      "name": "ACL Disorders"
+    },
+    "tiers_required": [
+      "junior",
+      "patient",
+      "medical_student",
+      "mrcs",
+      "frcs",
+      "fellowship",
+      "consultant"
+    ],
+    "scope": "Complete Tears, as it presents and is managed.",
+    "siblings": [
+      "6.3.1",
+      "6.3.2",
+      "6.3.3",
+      "6.3.4",
+      "6.3.6"
+    ],
+    "deeper_pages": [
+      "7.20",
+      "7.31"
+    ],
+    "must_not_cover": [
+      "Structure level anatomy (owned by Section 2)",
+      "Biomechanics beyond what the condition depends on (owned by Section 3)",
+      "Examination technique and interpretation (owned by Section 4)",
+      "Imaging acquisition and appearance (owned by Section 5)",
+      "Operative technique (owned by Section 7)",
+      "Rehabilitation protocol detail (owned by Section 8)",
+      "Another condition's presentation or management (owned per chapter by 6.1 to 6.156)"
+    ],
+    "page_type": "condition",
+    "priority": "high"
+  },
+  {
+    "page_id": "6.3.6",
+    "title": "Healing ACL Tears",
+    "section": {
+      "id": "6",
+      "name": "Conditions Library"
+    },
+    "chapter": {
+      "id": "6.3",
+      "name": "ACL Tear Patterns"
+    },
+    "part": {
+      "letter": "A",
+      "name": "ACL Disorders"
+    },
+    "tiers_required": [
+      "junior",
+      "patient",
+      "medical_student",
+      "mrcs",
+      "frcs",
+      "fellowship",
+      "consultant"
+    ],
+    "scope": "Healing ACL Tears, as it presents and is managed.",
+    "siblings": [
+      "6.3.1",
+      "6.3.2",
+      "6.3.3",
+      "6.3.4",
+      "6.3.5"
+    ],
+    "deeper_pages": [
+      "7.20",
+      "7.31"
+    ],
+    "must_not_cover": [
+      "Structure level anatomy (owned by Section 2)",
+      "Biomechanics beyond what the condition depends on (owned by Section 3)",
+      "Examination technique and interpretation (owned by Section 4)",
+      "Imaging acquisition and appearance (owned by Section 5)",
+      "Operative technique (owned by Section 7)",
+      "Rehabilitation protocol detail (owned by Section 8)",
+      "Another condition's presentation or management (owned per chapter by 6.1 to 6.156)"
+    ],
+    "page_type": "condition",
+    "priority": "high"
+  },
+  {
+    "page_id": "6.4.1",
+    "title": "Bone Bruising",
+    "section": {
+      "id": "6",
+      "name": "Conditions Library"
+    },
+    "chapter": {
+      "id": "6.4",
+      "name": "ACL Associated Injuries"
+    },
+    "part": {
+      "letter": "A",
+      "name": "ACL Disorders"
+    },
+    "tiers_required": [
+      "junior",
+      "patient",
+      "medical_student",
+      "mrcs",
+      "frcs",
+      "fellowship",
+      "consultant"
+    ],
+    "scope": "Bone Bruising, as it presents and is managed.",
+    "siblings": [
+      "6.4.2",
+      "6.4.3",
+      "6.4.4",
+      "6.4.5",
+      "6.4.6"
+    ],
+    "deeper_pages": [
+      "7.20",
+      "7.31"
+    ],
+    "must_not_cover": [
+      "Structure level anatomy (owned by Section 2)",
+      "Biomechanics beyond what the condition depends on (owned by Section 3)",
+      "Examination technique and interpretation (owned by Section 4)",
+      "Imaging acquisition and appearance (owned by Section 5)",
+      "Operative technique (owned by Section 7)",
+      "Rehabilitation protocol detail (owned by Section 8)",
+      "Another condition's presentation or management (owned per chapter by 6.1 to 6.156)"
+    ],
+    "page_type": "condition",
+    "priority": "high"
+  },
+  {
+    "page_id": "6.4.2",
+    "title": "Ramp Lesions",
+    "section": {
+      "id": "6",
+      "name": "Conditions Library"
+    },
+    "chapter": {
+      "id": "6.4",
+      "name": "ACL Associated Injuries"
+    },
+    "part": {
+      "letter": "A",
+      "name": "ACL Disorders"
+    },
+    "tiers_required": [
+      "junior",
+      "patient",
+      "medical_student",
+      "mrcs",
+      "frcs",
+      "fellowship",
+      "consultant"
+    ],
+    "scope": "Ramp Lesions, as it presents and is managed.",
+    "siblings": [
+      "6.4.1",
+      "6.4.3",
+      "6.4.4",
+      "6.4.5",
+      "6.4.6"
+    ],
+    "deeper_pages": [
+      "7.20",
+      "7.31"
+    ],
+    "must_not_cover": [
+      "Structure level anatomy (owned by Section 2)",
+      "Biomechanics beyond what the condition depends on (owned by Section 3)",
+      "Examination technique and interpretation (owned by Section 4)",
+      "Imaging acquisition and appearance (owned by Section 5)",
+      "Operative technique (owned by Section 7)",
+      "Rehabilitation protocol detail (owned by Section 8)",
+      "Another condition's presentation or management (owned per chapter by 6.1 to 6.156)"
+    ],
+    "page_type": "condition",
+    "priority": "high"
+  },
+  {
+    "page_id": "6.4.3",
+    "title": "Meniscal Root Tears",
+    "section": {
+      "id": "6",
+      "name": "Conditions Library"
+    },
+    "chapter": {
+      "id": "6.4",
+      "name": "ACL Associated Injuries"
+    },
+    "part": {
+      "letter": "A",
+      "name": "ACL Disorders"
+    },
+    "tiers_required": [
+      "junior",
+      "patient",
+      "medical_student",
+      "mrcs",
+      "frcs",
+      "fellowship",
+      "consultant"
+    ],
+    "scope": "Meniscal Root Tears, as it presents and is managed.",
+    "siblings": [
+      "6.4.1",
+      "6.4.2",
+      "6.4.4",
+      "6.4.5",
+      "6.4.6"
+    ],
+    "deeper_pages": [
+      "7.20",
+      "7.31"
+    ],
+    "must_not_cover": [
+      "Structure level anatomy (owned by Section 2)",
+      "Biomechanics beyond what the condition depends on (owned by Section 3)",
+      "Examination technique and interpretation (owned by Section 4)",
+      "Imaging acquisition and appearance (owned by Section 5)",
+      "Operative technique (owned by Section 7)",
+      "Rehabilitation protocol detail (owned by Section 8)",
+      "Another condition's presentation or management (owned per chapter by 6.1 to 6.156)"
+    ],
+    "page_type": "condition",
+    "priority": "high"
+  },
+  {
+    "page_id": "6.4.4",
+    "title": "ALL Injuries",
+    "section": {
+      "id": "6",
+      "name": "Conditions Library"
+    },
+    "chapter": {
+      "id": "6.4",
+      "name": "ACL Associated Injuries"
+    },
+    "part": {
+      "letter": "A",
+      "name": "ACL Disorders"
+    },
+    "tiers_required": [
+      "junior",
+      "patient",
+      "medical_student",
+      "mrcs",
+      "frcs",
+      "fellowship",
+      "consultant"
+    ],
+    "scope": "ALL Injuries, as it presents and is managed.",
+    "siblings": [
+      "6.4.1",
+      "6.4.2",
+      "6.4.3",
+      "6.4.5",
+      "6.4.6"
+    ],
+    "deeper_pages": [
+      "7.20",
+      "7.31"
+    ],
+    "must_not_cover": [
+      "Structure level anatomy (owned by Section 2)",
+      "Biomechanics beyond what the condition depends on (owned by Section 3)",
+      "Examination technique and interpretation (owned by Section 4)",
+      "Imaging acquisition and appearance (owned by Section 5)",
+      "Operative technique (owned by Section 7)",
+      "Rehabilitation protocol detail (owned by Section 8)",
+      "Another condition's presentation or management (owned per chapter by 6.1 to 6.156)"
+    ],
+    "page_type": "condition",
+    "priority": "high"
+  },
+  {
+    "page_id": "6.4.5",
+    "title": "MCL Injuries",
+    "section": {
+      "id": "6",
+      "name": "Conditions Library"
+    },
+    "chapter": {
+      "id": "6.4",
+      "name": "ACL Associated Injuries"
+    },
+    "part": {
+      "letter": "A",
+      "name": "ACL Disorders"
+    },
+    "tiers_required": [
+      "junior",
+      "patient",
+      "medical_student",
+      "mrcs",
+      "frcs",
+      "fellowship",
+      "consultant"
+    ],
+    "scope": "MCL Injuries, as it presents and is managed.",
+    "siblings": [
+      "6.4.1",
+      "6.4.2",
+      "6.4.3",
+      "6.4.4",
+      "6.4.6"
+    ],
+    "deeper_pages": [
+      "7.20",
+      "7.31"
+    ],
+    "must_not_cover": [
+      "Structure level anatomy (owned by Section 2)",
+      "Biomechanics beyond what the condition depends on (owned by Section 3)",
+      "Examination technique and interpretation (owned by Section 4)",
+      "Imaging acquisition and appearance (owned by Section 5)",
+      "Operative technique (owned by Section 7)",
+      "Rehabilitation protocol detail (owned by Section 8)",
+      "Another condition's presentation or management (owned per chapter by 6.1 to 6.156)"
+    ],
+    "page_type": "condition",
+    "priority": "high"
+  },
+  {
+    "page_id": "6.4.6",
+    "title": "Cartilage Injuries",
+    "section": {
+      "id": "6",
+      "name": "Conditions Library"
+    },
+    "chapter": {
+      "id": "6.4",
+      "name": "ACL Associated Injuries"
+    },
+    "part": {
+      "letter": "A",
+      "name": "ACL Disorders"
+    },
+    "tiers_required": [
+      "junior",
+      "patient",
+      "medical_student",
+      "mrcs",
+      "frcs",
+      "fellowship",
+      "consultant"
+    ],
+    "scope": "Cartilage Injuries, as it presents and is managed.",
+    "siblings": [
+      "6.4.1",
+      "6.4.2",
+      "6.4.3",
+      "6.4.4",
+      "6.4.5"
+    ],
+    "deeper_pages": [
+      "7.20",
+      "7.31"
+    ],
+    "must_not_cover": [
+      "Structure level anatomy (owned by Section 2)",
+      "Biomechanics beyond what the condition depends on (owned by Section 3)",
+      "Examination technique and interpretation (owned by Section 4)",
+      "Imaging acquisition and appearance (owned by Section 5)",
+      "Operative technique (owned by Section 7)",
+      "Rehabilitation protocol detail (owned by Section 8)",
+      "Another condition's presentation or management (owned per chapter by 6.1 to 6.156)"
+    ],
+    "page_type": "condition",
+    "priority": "high"
+  },
+  {
+    "page_id": "6.5.1",
+    "title": "Instability",
+    "section": {
+      "id": "6",
+      "name": "Conditions Library"
+    },
+    "chapter": {
+      "id": "6.5",
+      "name": "Chronic ACL Deficiency"
+    },
+    "part": {
+      "letter": "A",
+      "name": "ACL Disorders"
+    },
+    "tiers_required": [
+      "junior",
+      "patient",
+      "medical_student",
+      "mrcs",
+      "frcs",
+      "fellowship",
+      "consultant"
+    ],
+    "scope": "Instability, as it presents and is managed.",
+    "siblings": [
+      "6.5.2",
+      "6.5.3",
+      "6.5.4"
+    ],
+    "deeper_pages": [
+      "7.20",
+      "7.31"
+    ],
+    "must_not_cover": [
+      "Structure level anatomy (owned by Section 2)",
+      "Biomechanics beyond what the condition depends on (owned by Section 3)",
+      "Examination technique and interpretation (owned by Section 4)",
+      "Imaging acquisition and appearance (owned by Section 5)",
+      "Operative technique (owned by Section 7)",
+      "Rehabilitation protocol detail (owned by Section 8)",
+      "Another condition's presentation or management (owned per chapter by 6.1 to 6.156)"
+    ],
+    "page_type": "condition",
+    "priority": "high"
+  },
+  {
+    "page_id": "6.5.2",
+    "title": "Meniscal Damage",
+    "section": {
+      "id": "6",
+      "name": "Conditions Library"
+    },
+    "chapter": {
+      "id": "6.5",
+      "name": "Chronic ACL Deficiency"
+    },
+    "part": {
+      "letter": "A",
+      "name": "ACL Disorders"
+    },
+    "tiers_required": [
+      "junior",
+      "patient",
+      "medical_student",
+      "mrcs",
+      "frcs",
+      "fellowship",
+      "consultant"
+    ],
+    "scope": "Meniscal Damage, as it presents and is managed.",
+    "siblings": [
+      "6.5.1",
+      "6.5.3",
+      "6.5.4"
+    ],
+    "deeper_pages": [
+      "7.20",
+      "7.31"
+    ],
+    "must_not_cover": [
+      "Structure level anatomy (owned by Section 2)",
+      "Biomechanics beyond what the condition depends on (owned by Section 3)",
+      "Examination technique and interpretation (owned by Section 4)",
+      "Imaging acquisition and appearance (owned by Section 5)",
+      "Operative technique (owned by Section 7)",
+      "Rehabilitation protocol detail (owned by Section 8)",
+      "Another condition's presentation or management (owned per chapter by 6.1 to 6.156)"
+    ],
+    "page_type": "condition",
+    "priority": "high"
+  },
+  {
+    "page_id": "6.5.3",
+    "title": "Cartilage Degeneration",
+    "section": {
+      "id": "6",
+      "name": "Conditions Library"
+    },
+    "chapter": {
+      "id": "6.5",
+      "name": "Chronic ACL Deficiency"
+    },
+    "part": {
+      "letter": "A",
+      "name": "ACL Disorders"
+    },
+    "tiers_required": [
+      "junior",
+      "patient",
+      "medical_student",
+      "mrcs",
+      "frcs",
+      "fellowship",
+      "consultant"
+    ],
+    "scope": "Cartilage Degeneration, as it presents and is managed.",
+    "siblings": [
+      "6.5.1",
+      "6.5.2",
+      "6.5.4"
+    ],
+    "deeper_pages": [
+      "7.20",
+      "7.31"
+    ],
+    "must_not_cover": [
+      "Structure level anatomy (owned by Section 2)",
+      "Biomechanics beyond what the condition depends on (owned by Section 3)",
+      "Examination technique and interpretation (owned by Section 4)",
+      "Imaging acquisition and appearance (owned by Section 5)",
+      "Operative technique (owned by Section 7)",
+      "Rehabilitation protocol detail (owned by Section 8)",
+      "Another condition's presentation or management (owned per chapter by 6.1 to 6.156)"
+    ],
+    "page_type": "condition",
+    "priority": "high"
+  },
+  {
+    "page_id": "6.5.4",
+    "title": "Osteoarthritis",
+    "section": {
+      "id": "6",
+      "name": "Conditions Library"
+    },
+    "chapter": {
+      "id": "6.5",
+      "name": "Chronic ACL Deficiency"
+    },
+    "part": {
+      "letter": "A",
+      "name": "ACL Disorders"
+    },
+    "tiers_required": [
+      "junior",
+      "patient",
+      "medical_student",
+      "mrcs",
+      "frcs",
+      "fellowship",
+      "consultant"
+    ],
+    "scope": "Osteoarthritis, as it presents and is managed.",
+    "siblings": [
+      "6.5.1",
+      "6.5.2",
+      "6.5.3"
+    ],
+    "deeper_pages": [
+      "7.20",
+      "7.31"
+    ],
+    "must_not_cover": [
+      "Structure level anatomy (owned by Section 2)",
+      "Biomechanics beyond what the condition depends on (owned by Section 3)",
+      "Examination technique and interpretation (owned by Section 4)",
+      "Imaging acquisition and appearance (owned by Section 5)",
+      "Operative technique (owned by Section 7)",
+      "Rehabilitation protocol detail (owned by Section 8)",
+      "Another condition's presentation or management (owned per chapter by 6.1 to 6.156)"
+    ],
+    "page_type": "condition",
+    "priority": "high"
+  },
+  {
+    "page_id": "6.6.1",
+    "title": "Epidemiology",
+    "section": {
+      "id": "6",
+      "name": "Conditions Library"
+    },
+    "chapter": {
+      "id": "6.6",
+      "name": "Female ACL Injuries"
+    },
+    "part": {
+      "letter": "A",
+      "name": "ACL Disorders"
+    },
+    "tiers_required": [
+      "junior",
+      "patient",
+      "medical_student",
+      "mrcs",
+      "frcs",
+      "fellowship",
+      "consultant"
+    ],
+    "scope": "Epidemiology, as it bears on the female athlete's risk.",
+    "siblings": [
+      "6.6.2",
+      "6.6.3",
+      "6.6.4"
+    ],
+    "deeper_pages": [
+      "7.20",
+      "7.31",
+      "8.100",
+      "8.99"
+    ],
+    "must_not_cover": [
+      "Structure level anatomy (owned by Section 2)",
+      "Biomechanics beyond what the condition depends on (owned by Section 3)",
+      "Examination technique and interpretation (owned by Section 4)",
+      "Imaging acquisition and appearance (owned by Section 5)",
+      "Operative technique (owned by Section 7)",
+      "Rehabilitation protocol detail (owned by Section 8)",
+      "Another condition's presentation or management (owned per chapter by 6.1 to 6.156)"
+    ],
+    "page_type": "condition",
+    "priority": "high"
+  },
+  {
+    "page_id": "6.6.2",
+    "title": "Hormonal Factors",
+    "section": {
+      "id": "6",
+      "name": "Conditions Library"
+    },
+    "chapter": {
+      "id": "6.6",
+      "name": "Female ACL Injuries"
+    },
+    "part": {
+      "letter": "A",
+      "name": "ACL Disorders"
+    },
+    "tiers_required": [
+      "junior",
+      "patient",
+      "medical_student",
+      "mrcs",
+      "frcs",
+      "fellowship",
+      "consultant"
+    ],
+    "scope": "Hormonal Factors, as it bears on the female athlete's risk.",
+    "siblings": [
+      "6.6.1",
+      "6.6.3",
+      "6.6.4"
+    ],
+    "deeper_pages": [
+      "7.20",
+      "7.31",
+      "8.100",
+      "8.99"
+    ],
+    "must_not_cover": [
+      "Structure level anatomy (owned by Section 2)",
+      "Biomechanics beyond what the condition depends on (owned by Section 3)",
+      "Examination technique and interpretation (owned by Section 4)",
+      "Imaging acquisition and appearance (owned by Section 5)",
+      "Operative technique (owned by Section 7)",
+      "Rehabilitation protocol detail (owned by Section 8)",
+      "Another condition's presentation or management (owned per chapter by 6.1 to 6.156)"
+    ],
+    "page_type": "condition",
+    "priority": "high"
+  },
+  {
+    "page_id": "6.6.3",
+    "title": "Neuromuscular Factors",
+    "section": {
+      "id": "6",
+      "name": "Conditions Library"
+    },
+    "chapter": {
+      "id": "6.6",
+      "name": "Female ACL Injuries"
+    },
+    "part": {
+      "letter": "A",
+      "name": "ACL Disorders"
+    },
+    "tiers_required": [
+      "junior",
+      "patient",
+      "medical_student",
+      "mrcs",
+      "frcs",
+      "fellowship",
+      "consultant"
+    ],
+    "scope": "Neuromuscular Factors, as it bears on the female athlete's risk.",
+    "siblings": [
+      "6.6.1",
+      "6.6.2",
+      "6.6.4"
+    ],
+    "deeper_pages": [
+      "7.20",
+      "7.31",
+      "8.100",
+      "8.99"
+    ],
+    "must_not_cover": [
+      "Structure level anatomy (owned by Section 2)",
+      "Biomechanics beyond what the condition depends on (owned by Section 3)",
+      "Examination technique and interpretation (owned by Section 4)",
+      "Imaging acquisition and appearance (owned by Section 5)",
+      "Operative technique (owned by Section 7)",
+      "Rehabilitation protocol detail (owned by Section 8)",
+      "Another condition's presentation or management (owned per chapter by 6.1 to 6.156)"
+    ],
+    "page_type": "condition",
+    "priority": "high"
+  },
+  {
+    "page_id": "6.6.4",
+    "title": "Prevention",
+    "section": {
+      "id": "6",
+      "name": "Conditions Library"
+    },
+    "chapter": {
+      "id": "6.6",
+      "name": "Female ACL Injuries"
+    },
+    "part": {
+      "letter": "A",
+      "name": "ACL Disorders"
+    },
+    "tiers_required": [
+      "junior",
+      "patient",
+      "medical_student",
+      "mrcs",
+      "frcs",
+      "fellowship",
+      "consultant"
+    ],
+    "scope": "Prevention, as it bears on the female athlete's risk.",
+    "siblings": [
+      "6.6.1",
+      "6.6.2",
+      "6.6.3"
+    ],
+    "deeper_pages": [
+      "7.20",
+      "7.31",
+      "8.100",
+      "8.99"
+    ],
+    "must_not_cover": [
+      "Structure level anatomy (owned by Section 2)",
+      "Biomechanics beyond what the condition depends on (owned by Section 3)",
+      "Examination technique and interpretation (owned by Section 4)",
+      "Imaging acquisition and appearance (owned by Section 5)",
+      "Operative technique (owned by Section 7)",
+      "Rehabilitation protocol detail (owned by Section 8)",
+      "Another condition's presentation or management (owned per chapter by 6.1 to 6.156)"
+    ],
+    "page_type": "condition",
+    "priority": "high"
+  },
+  {
+    "page_id": "6.7.1",
+    "title": "Skeletally Immature Patients",
+    "section": {
+      "id": "6",
+      "name": "Conditions Library"
+    },
+    "chapter": {
+      "id": "6.7",
+      "name": "Paediatric ACL Injuries"
+    },
+    "part": {
+      "letter": "A",
+      "name": "ACL Disorders"
+    },
+    "tiers_required": [
+      "junior",
+      "patient",
+      "medical_student",
+      "mrcs",
+      "frcs",
+      "fellowship",
+      "consultant"
+    ],
+    "scope": "Skeletally Immature Patients, as it presents and is managed.",
+    "siblings": [
+      "6.7.2",
+      "6.7.3"
+    ],
+    "deeper_pages": [
+      "7.20",
+      "7.31"
+    ],
+    "must_not_cover": [
+      "Structure level anatomy (owned by Section 2)",
+      "Biomechanics beyond what the condition depends on (owned by Section 3)",
+      "Examination technique and interpretation (owned by Section 4)",
+      "Imaging acquisition and appearance (owned by Section 5)",
+      "Operative technique (owned by Section 7)",
+      "Rehabilitation protocol detail (owned by Section 8)",
+      "Another condition's presentation or management (owned per chapter by 6.1 to 6.156)"
+    ],
+    "page_type": "condition",
+    "priority": "high"
+  },
+  {
+    "page_id": "6.7.2",
+    "title": "Physeal Injuries",
+    "section": {
+      "id": "6",
+      "name": "Conditions Library"
+    },
+    "chapter": {
+      "id": "6.7",
+      "name": "Paediatric ACL Injuries"
+    },
+    "part": {
+      "letter": "A",
+      "name": "ACL Disorders"
+    },
+    "tiers_required": [
+      "junior",
+      "patient",
+      "medical_student",
+      "mrcs",
+      "frcs",
+      "fellowship",
+      "consultant"
+    ],
+    "scope": "Physeal Injuries, as it presents and is managed.",
+    "siblings": [
+      "6.7.1",
+      "6.7.3"
+    ],
+    "deeper_pages": [
+      "7.20",
+      "7.31"
+    ],
+    "must_not_cover": [
+      "Structure level anatomy (owned by Section 2)",
+      "Biomechanics beyond what the condition depends on (owned by Section 3)",
+      "Examination technique and interpretation (owned by Section 4)",
+      "Imaging acquisition and appearance (owned by Section 5)",
+      "Operative technique (owned by Section 7)",
+      "Rehabilitation protocol detail (owned by Section 8)",
+      "Another condition's presentation or management (owned per chapter by 6.1 to 6.156)"
+    ],
+    "page_type": "condition",
+    "priority": "high"
+  },
+  {
+    "page_id": "6.7.3",
+    "title": "Reconstruction Strategies",
+    "section": {
+      "id": "6",
+      "name": "Conditions Library"
+    },
+    "chapter": {
+      "id": "6.7",
+      "name": "Paediatric ACL Injuries"
+    },
+    "part": {
+      "letter": "A",
+      "name": "ACL Disorders"
+    },
+    "tiers_required": [
+      "junior",
+      "patient",
+      "medical_student",
+      "mrcs",
+      "frcs",
+      "fellowship",
+      "consultant"
+    ],
+    "scope": "Reconstruction Strategies, as it presents and is managed.",
+    "siblings": [
+      "6.7.1",
+      "6.7.2"
+    ],
+    "deeper_pages": [
+      "7.20",
+      "7.31"
+    ],
+    "must_not_cover": [
+      "Structure level anatomy (owned by Section 2)",
+      "Biomechanics beyond what the condition depends on (owned by Section 3)",
+      "Examination technique and interpretation (owned by Section 4)",
+      "Imaging acquisition and appearance (owned by Section 5)",
+      "Operative technique (owned by Section 7)",
+      "Rehabilitation protocol detail (owned by Section 8)",
+      "Another condition's presentation or management (owned per chapter by 6.1 to 6.156)"
+    ],
+    "page_type": "condition",
+    "priority": "high"
+  },
+  {
+    "page_id": "6.8.1",
+    "title": "Graft Failure",
+    "section": {
+      "id": "6",
+      "name": "Conditions Library"
+    },
+    "chapter": {
+      "id": "6.8",
+      "name": "Revision ACL Problems"
+    },
+    "part": {
+      "letter": "A",
+      "name": "ACL Disorders"
+    },
+    "tiers_required": [
+      "junior",
+      "patient",
+      "medical_student",
+      "mrcs",
+      "frcs",
+      "fellowship",
+      "consultant"
+    ],
+    "scope": "Graft Failure, as it presents and is managed.",
+    "siblings": [
+      "6.8.2",
+      "6.8.3",
+      "6.8.4"
+    ],
+    "deeper_pages": [
+      "7.20",
+      "7.31"
+    ],
+    "must_not_cover": [
+      "Structure level anatomy (owned by Section 2)",
+      "Biomechanics beyond what the condition depends on (owned by Section 3)",
+      "Examination technique and interpretation (owned by Section 4)",
+      "Imaging acquisition and appearance (owned by Section 5)",
+      "Operative technique (owned by Section 7)",
+      "Rehabilitation protocol detail (owned by Section 8)",
+      "Another condition's presentation or management (owned per chapter by 6.1 to 6.156)"
+    ],
+    "page_type": "condition",
+    "priority": "high"
+  },
+  {
+    "page_id": "6.8.2",
+    "title": "Tunnel Malposition",
+    "section": {
+      "id": "6",
+      "name": "Conditions Library"
+    },
+    "chapter": {
+      "id": "6.8",
+      "name": "Revision ACL Problems"
+    },
+    "part": {
+      "letter": "A",
+      "name": "ACL Disorders"
+    },
+    "tiers_required": [
+      "junior",
+      "patient",
+      "medical_student",
+      "mrcs",
+      "frcs",
+      "fellowship",
+      "consultant"
+    ],
+    "scope": "Tunnel Malposition, as it presents and is managed.",
+    "siblings": [
+      "6.8.1",
+      "6.8.3",
+      "6.8.4"
+    ],
+    "deeper_pages": [
+      "7.20",
+      "7.31"
+    ],
+    "must_not_cover": [
+      "Structure level anatomy (owned by Section 2)",
+      "Biomechanics beyond what the condition depends on (owned by Section 3)",
+      "Examination technique and interpretation (owned by Section 4)",
+      "Imaging acquisition and appearance (owned by Section 5)",
+      "Operative technique (owned by Section 7)",
+      "Rehabilitation protocol detail (owned by Section 8)",
+      "Another condition's presentation or management (owned per chapter by 6.1 to 6.156)"
+    ],
+    "page_type": "condition",
+    "priority": "high"
+  },
+  {
+    "page_id": "6.8.3",
+    "title": "Biological Failure",
+    "section": {
+      "id": "6",
+      "name": "Conditions Library"
+    },
+    "chapter": {
+      "id": "6.8",
+      "name": "Revision ACL Problems"
+    },
+    "part": {
+      "letter": "A",
+      "name": "ACL Disorders"
+    },
+    "tiers_required": [
+      "junior",
+      "patient",
+      "medical_student",
+      "mrcs",
+      "frcs",
+      "fellowship",
+      "consultant"
+    ],
+    "scope": "Biological Failure, as it presents and is managed.",
+    "siblings": [
+      "6.8.1",
+      "6.8.2",
+      "6.8.4"
+    ],
+    "deeper_pages": [
+      "7.20",
+      "7.31"
+    ],
+    "must_not_cover": [
+      "Structure level anatomy (owned by Section 2)",
+      "Biomechanics beyond what the condition depends on (owned by Section 3)",
+      "Examination technique and interpretation (owned by Section 4)",
+      "Imaging acquisition and appearance (owned by Section 5)",
+      "Operative technique (owned by Section 7)",
+      "Rehabilitation protocol detail (owned by Section 8)",
+      "Another condition's presentation or management (owned per chapter by 6.1 to 6.156)"
+    ],
+    "page_type": "condition",
+    "priority": "high"
+  },
+  {
+    "page_id": "6.8.4",
+    "title": "Infection",
+    "section": {
+      "id": "6",
+      "name": "Conditions Library"
+    },
+    "chapter": {
+      "id": "6.8",
+      "name": "Revision ACL Problems"
+    },
+    "part": {
+      "letter": "A",
+      "name": "ACL Disorders"
+    },
+    "tiers_required": [
+      "junior",
+      "patient",
+      "medical_student",
+      "mrcs",
+      "frcs",
+      "fellowship",
+      "consultant"
+    ],
+    "scope": "Infection, as it presents and is managed.",
+    "siblings": [
+      "6.8.1",
+      "6.8.2",
+      "6.8.3"
+    ],
+    "deeper_pages": [
+      "7.20",
+      "7.31"
+    ],
+    "must_not_cover": [
+      "Structure level anatomy (owned by Section 2)",
+      "Biomechanics beyond what the condition depends on (owned by Section 3)",
+      "Examination technique and interpretation (owned by Section 4)",
+      "Imaging acquisition and appearance (owned by Section 5)",
+      "Operative technique (owned by Section 7)",
+      "Rehabilitation protocol detail (owned by Section 8)",
+      "Another condition's presentation or management (owned per chapter by 6.1 to 6.156)"
+    ],
+    "page_type": "condition",
+    "priority": "high"
+  }
+]

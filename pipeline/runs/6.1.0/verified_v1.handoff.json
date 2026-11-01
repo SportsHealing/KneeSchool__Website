@@ -1,0 +1,23 @@
+{
+  "page_id": "6.1.1",
+  "prompt_version": "1.0",
+  "claims_checked": 0,
+  "verified": 0,
+  "corrected": [],
+  "removed_claims": [],
+  "reference_actions": [],
+  "red_flags": [
+    "Tier 1 source minimum not met: no textbook or review source retrieved",
+    "Twenty three claims unverified, including indication and outcome statements at FRCS and Fellowship level",
+    "Handbook citation marker requirement not met at Medical Student tier and above"
+  ],
+  "guidelines_checked": [],
+  "escalate_to_consultant": [
+    "Every indication and outcome statement on this page needs confirmation, because verification could not run",
+    "Confirm the strength of wording on allograft failure in young pivoting athletes",
+    "Confirm that the five listed failure modes are the right five, and complete",
+    "Confirm the junior tier's claim about warm up programme frequency, which carries no citation by rule"
+  ],
+  "status": "NOT_RUN_TOOLS_UNAVAILABLE",
+  "status_note": "Agent 2 could not run. No source retrieval was available. In the deployed pipeline this execution would stop here."
+}

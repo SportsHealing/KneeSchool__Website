@@ -1,0 +1,27 @@
+{
+  "page_id": "6.1.5",
+  "prompt_version": "1.0",
+  "claims_checked": 0,
+  "verified": 0,
+  "corrected": [],
+  "removed_claims": [],
+  "reference_actions": [],
+  "red_flags": [
+    "Tier 1 source minimum not met: no textbook or review source retrieved",
+    "5 listed claims unverified; none confirmed against a source",
+    "Every statement about presentation, investigation and management is written from standard teaching. A wrong management statement is more dangerous than a wrong anatomical fact, because a reader may apply it to a patient rather than to an examination answer.",
+    "No incidence, outcome or failure rate appears, so the sections a reader would use for counselling carry relationships rather than quantities.",
+    "The section map comes from decision 030 rather than from the architecture's Part 3 instalment, which is absent.",
+    "All seven tiers are present, so a single error reaches a child reader and a consultant reader on the same page."
+  ],
+  "guidelines_checked": [],
+  "escalate_to_consultant": [
+    "Every claim on this page needs confirmation, because the verification stage could not run. The consultant is standing in for it.",
+    "The management and prognosis statements need confirmation first. They are what a reader is most likely to act on and what this process is least able to support, since the outcome figures behind them were withheld rather than retrieved.",
+    "The quantities missing from Who Gets It and from Complications and Prognosis need supplying from the literature. The page is built so they drop into those sections without restructuring it.",
+    "Any figure on this page needs a source against it. tools/figures.py --report --unchecked is the list.",
+    "The tier set needs confirming. Decision 027 applied Section 4's tiers to Section 5 with no statement in Part 1 to support it."
+  ],
+  "status": "NOT_RUN_TOOLS_UNAVAILABLE",
+  "status_note": "Agent 2 could not run. No source retrieval was available. In the deployed pipeline this execution would stop here."
+}

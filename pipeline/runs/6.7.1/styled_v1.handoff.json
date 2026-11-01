@@ -1,0 +1,18 @@
+{
+  "page_id": "6.7.1",
+  "prompt_version": "1.0",
+  "dashes_removed": 0,
+  "ai_phrases_removed": [],
+  "terminology_standardised": [],
+  "sentences_flagged_for_human_review": [],
+  "readability_estimate_by_tier": {
+    "junior": "plain words, short sentences, the speak-to-an-adult closer present",
+    "patient": "lay register, mechanism before management, FAQs and the red flag closer",
+    "medical_student": "foundation academic register, terms defined on first use",
+    "mrcs": "viva register, the expected answer stated before the detail",
+    "frcs": "decision oriented, the described patient and what would change the decision",
+    "fellowship": "referred and revision practice, and the recording habit the next surgeon needs"
+  },
+  "status": "STYLE_COMPLETE_READY_FOR_CONSULTANT_REVIEW",
+  "status_note": "The draft met house style and the structure template on the run that produced it. No substantive edit was made and no new fact introduced. FIG-002 refuses any figure that is not in the page's register, so decision 006's traceability is enforced mechanically. ACC-001 does not reach the condition page type, so the absence of diagnostic accuracy figures here is an editorial choice a reviewer should check rather than a gate a reviewer can rely on."
+}

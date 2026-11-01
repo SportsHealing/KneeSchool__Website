@@ -827,6 +827,12 @@
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
     },
+    "3.1.8": {
+      "out": "biomechanics/landmark-biomechanical-studies.html",
+      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
     "3.2.1": {
       "out": "biomechanics/degrees-of-freedom.html",
       "parent": "Biomechanics Academy|../encyclopaedia/index.html",
@@ -1848,12 +1854,6 @@
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
     },
-    "6.1.1": {
-      "out": "conditions/acl.html",
-      "parent": "Conditions|index.html",
-      "status": "Editorial draft. Evidence verification did not run. With a consultant for review. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
     "3.17.1": {
       "out": "biomechanics/acl-landmark-studies.html",
       "parent": "Biomechanics Academy|../encyclopaedia/index.html",
@@ -1911,12 +1911,6 @@
     },
     "3.17.10": {
       "out": "biomechanics/future-research-priorities.html",
-      "parent": "Biomechanics Academy|../encyclopaedia/index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "3.1.8": {
-      "out": "biomechanics/landmark-biomechanical-studies.html",
       "parent": "Biomechanics Academy|../encyclopaedia/index.html",
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
@@ -2170,318 +2164,6 @@
     },
     "4.2.34": {
       "out": "examination/previous-rehabilitation.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.9.1": {
-      "out": "examination/meniscal-clinical-presentation.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.9.2": {
-      "out": "examination/meniscal-joint-line-tenderness.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.9.3": {
-      "out": "examination/mcmurray-test.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.9.4": {
-      "out": "examination/thessaly-test.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.9.5": {
-      "out": "examination/apley-compression-test.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.9.6": {
-      "out": "examination/childress-squat-test.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.9.7": {
-      "out": "examination/ege-test.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.9.8": {
-      "out": "examination/confirming-a-mechanical-block.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.9.9": {
-      "out": "examination/meniscal-root-tears.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.9.10": {
-      "out": "examination/meniscal-deficiency.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.9.11": {
-      "out": "examination/meniscal-examination-in-oa.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.10.1": {
-      "out": "examination/history-of-acl-injury.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.10.2": {
-      "out": "examination/acute-acl-injury.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.10.3": {
-      "out": "examination/chronic-acl-deficiency.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.10.4": {
-      "out": "examination/lachman-test.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.10.5": {
-      "out": "examination/anterior-drawer-test.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.10.6": {
-      "out": "examination/pivot-shift-test.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.10.7": {
-      "out": "examination/lever-sign-test.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.10.8": {
-      "out": "examination/dynamic-assessment.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.10.9": {
-      "out": "examination/acl-rotational-instability.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.10.10": {
-      "out": "examination/acl-examination-under-anaesthesia.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.10.11": {
-      "out": "examination/acl-post-reconstruction-assessment.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.10.12": {
-      "out": "examination/revision-acl-assessment.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.11.1": {
-      "out": "examination/posterior-sag-sign.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.11.2": {
-      "out": "examination/posterior-drawer-test.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.11.3": {
-      "out": "examination/quadriceps-active-test.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.11.4": {
-      "out": "examination/reverse-pivot-shift.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.11.5": {
-      "out": "examination/dynamic-pcl-examination.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.11.6": {
-      "out": "examination/chronic-pcl-deficiency.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.11.7": {
-      "out": "examination/combined-ligament-injury-assessment.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.12.1": {
-      "out": "examination/valgus-stress-testing.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.12.2": {
-      "out": "examination/medial-assessment-in-extension.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.12.3": {
-      "out": "examination/medial-assessment-at-30-degrees.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.12.4": {
-      "out": "examination/deep-mcl-assessment.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.12.5": {
-      "out": "examination/posterior-oblique-ligament-assessment.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.12.6": {
-      "out": "examination/amri-assessment.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.12.7": {
-      "out": "examination/medial-meniscus-versus-mcl-injury.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.12.8": {
-      "out": "examination/mcl-post-reconstruction-assessment.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.13.1": {
-      "out": "examination/varus-stress-test.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.13.2": {
-      "out": "examination/lcl-assessment.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.13.3": {
-      "out": "examination/popliteus-assessment.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.13.4": {
-      "out": "examination/posterolateral-corner-assessment.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.13.5": {
-      "out": "examination/dial-test.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.13.6": {
-      "out": "examination/reverse-pivot-shift-plc.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.13.7": {
-      "out": "examination/external-rotation-recurvatum-test.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.13.8": {
-      "out": "examination/combined-plc-injuries.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.14.1": {
-      "out": "examination/rotational-pivot-shift.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.14.2": {
-      "out": "examination/slocum-test.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.14.3": {
-      "out": "examination/anterolateral-rotatory-instability.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.14.4": {
-      "out": "examination/anteromedial-rotatory-instability.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.14.5": {
-      "out": "examination/combined-instability-patterns.html",
-      "parent": "Clinical Examination Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "4.14.6": {
-      "out": "examination/rotational-examination-under-anaesthesia.html",
       "parent": "Clinical Examination Academy|index.html",
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
@@ -2830,6 +2512,318 @@
     },
     "4.8.10": {
       "out": "examination/crystal-arthropathy.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.9.1": {
+      "out": "examination/meniscal-clinical-presentation.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.9.2": {
+      "out": "examination/meniscal-joint-line-tenderness.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.9.3": {
+      "out": "examination/mcmurray-test.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.9.4": {
+      "out": "examination/thessaly-test.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.9.5": {
+      "out": "examination/apley-compression-test.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.9.6": {
+      "out": "examination/childress-squat-test.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.9.7": {
+      "out": "examination/ege-test.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.9.8": {
+      "out": "examination/confirming-a-mechanical-block.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.9.9": {
+      "out": "examination/meniscal-root-tears.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.9.10": {
+      "out": "examination/meniscal-deficiency.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.9.11": {
+      "out": "examination/meniscal-examination-in-oa.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.10.1": {
+      "out": "examination/history-of-acl-injury.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.10.2": {
+      "out": "examination/acute-acl-injury.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.10.3": {
+      "out": "examination/chronic-acl-deficiency.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.10.4": {
+      "out": "examination/lachman-test.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.10.5": {
+      "out": "examination/anterior-drawer-test.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.10.6": {
+      "out": "examination/pivot-shift-test.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.10.7": {
+      "out": "examination/lever-sign-test.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.10.8": {
+      "out": "examination/dynamic-assessment.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.10.9": {
+      "out": "examination/acl-rotational-instability.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.10.10": {
+      "out": "examination/acl-examination-under-anaesthesia.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.10.11": {
+      "out": "examination/acl-post-reconstruction-assessment.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.10.12": {
+      "out": "examination/revision-acl-assessment.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.11.1": {
+      "out": "examination/posterior-sag-sign.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.11.2": {
+      "out": "examination/posterior-drawer-test.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.11.3": {
+      "out": "examination/quadriceps-active-test.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.11.4": {
+      "out": "examination/reverse-pivot-shift.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.11.5": {
+      "out": "examination/dynamic-pcl-examination.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.11.6": {
+      "out": "examination/chronic-pcl-deficiency.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.11.7": {
+      "out": "examination/combined-ligament-injury-assessment.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.12.1": {
+      "out": "examination/valgus-stress-testing.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.12.2": {
+      "out": "examination/medial-assessment-in-extension.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.12.3": {
+      "out": "examination/medial-assessment-at-30-degrees.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.12.4": {
+      "out": "examination/deep-mcl-assessment.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.12.5": {
+      "out": "examination/posterior-oblique-ligament-assessment.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.12.6": {
+      "out": "examination/amri-assessment.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.12.7": {
+      "out": "examination/medial-meniscus-versus-mcl-injury.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.12.8": {
+      "out": "examination/mcl-post-reconstruction-assessment.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.13.1": {
+      "out": "examination/varus-stress-test.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.13.2": {
+      "out": "examination/lcl-assessment.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.13.3": {
+      "out": "examination/popliteus-assessment.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.13.4": {
+      "out": "examination/posterolateral-corner-assessment.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.13.5": {
+      "out": "examination/dial-test.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.13.6": {
+      "out": "examination/reverse-pivot-shift-plc.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.13.7": {
+      "out": "examination/external-rotation-recurvatum-test.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.13.8": {
+      "out": "examination/combined-plc-injuries.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.14.1": {
+      "out": "examination/rotational-pivot-shift.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.14.2": {
+      "out": "examination/slocum-test.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.14.3": {
+      "out": "examination/anterolateral-rotatory-instability.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.14.4": {
+      "out": "examination/anteromedial-rotatory-instability.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.14.5": {
+      "out": "examination/combined-instability-patterns.html",
+      "parent": "Clinical Examination Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "4.14.6": {
+      "out": "examination/rotational-examination-under-anaesthesia.html",
       "parent": "Clinical Examination Academy|index.html",
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
@@ -3332,174 +3326,6 @@
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
     },
-    "5.6.1": {
-      "out": "imaging/normal-meniscus-mri.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.6.2": {
-      "out": "imaging/meniscal-signal-grading.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.6.3": {
-      "out": "imaging/horizontal-meniscal-tears.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.6.4": {
-      "out": "imaging/vertical-meniscal-tears.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.6.5": {
-      "out": "imaging/radial-meniscal-tears.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.6.6": {
-      "out": "imaging/bucket-handle-tears.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.6.7": {
-      "out": "imaging/flap-tears.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.6.8": {
-      "out": "imaging/complex-meniscal-tears.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.6.9": {
-      "out": "imaging/meniscal-root-tears.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.6.10": {
-      "out": "imaging/ramp-lesions.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.6.11": {
-      "out": "imaging/meniscal-extrusion.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.6.12": {
-      "out": "imaging/post-operative-meniscus.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.6.13": {
-      "out": "imaging/meniscal-repair-imaging.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.6.14": {
-      "out": "imaging/meniscal-transplantation-imaging.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.7.1": {
-      "out": "imaging/normal-acl-mri.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.7.2": {
-      "out": "imaging/partial-acl-tears.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.7.3": {
-      "out": "imaging/complete-acl-tears.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.7.4": {
-      "out": "imaging/acute-acl-injury-mri.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.7.5": {
-      "out": "imaging/chronic-acl-injury-mri.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.7.6": {
-      "out": "imaging/acl-mucoid-degeneration.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.7.7": {
-      "out": "imaging/acl-ganglion-cysts.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.7.8": {
-      "out": "imaging/acl-healing.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.7.9": {
-      "out": "imaging/acl-reconstruction-mri.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.7.10": {
-      "out": "imaging/graft-maturation.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.7.11": {
-      "out": "imaging/acl-graft-failure.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.7.12": {
-      "out": "imaging/tunnel-assessment.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.7.13": {
-      "out": "imaging/cyclops-lesions.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.7.14": {
-      "out": "imaging/revision-acl-imaging.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
     "5.2.1": {
       "out": "imaging/generation-of-xrays.html",
       "parent": "Imaging Academy|index.html",
@@ -3968,6 +3794,288 @@
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
     },
+    "5.6.1": {
+      "out": "imaging/normal-meniscus-mri.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.6.2": {
+      "out": "imaging/meniscal-signal-grading.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.6.3": {
+      "out": "imaging/horizontal-meniscal-tears.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.6.4": {
+      "out": "imaging/vertical-meniscal-tears.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.6.5": {
+      "out": "imaging/radial-meniscal-tears.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.6.6": {
+      "out": "imaging/bucket-handle-tears.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.6.7": {
+      "out": "imaging/flap-tears.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.6.8": {
+      "out": "imaging/complex-meniscal-tears.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.6.9": {
+      "out": "imaging/meniscal-root-tears.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.6.10": {
+      "out": "imaging/ramp-lesions.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.6.11": {
+      "out": "imaging/meniscal-extrusion.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.6.12": {
+      "out": "imaging/post-operative-meniscus.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.6.13": {
+      "out": "imaging/meniscal-repair-imaging.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.6.14": {
+      "out": "imaging/meniscal-transplantation-imaging.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.7.1": {
+      "out": "imaging/normal-acl-mri.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.7.2": {
+      "out": "imaging/partial-acl-tears.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.7.3": {
+      "out": "imaging/complete-acl-tears.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.7.4": {
+      "out": "imaging/acute-acl-injury-mri.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.7.5": {
+      "out": "imaging/chronic-acl-injury-mri.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.7.6": {
+      "out": "imaging/acl-mucoid-degeneration.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.7.7": {
+      "out": "imaging/acl-ganglion-cysts.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.7.8": {
+      "out": "imaging/acl-healing.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.7.9": {
+      "out": "imaging/acl-reconstruction-mri.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.7.10": {
+      "out": "imaging/graft-maturation.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.7.11": {
+      "out": "imaging/acl-graft-failure.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.7.12": {
+      "out": "imaging/tunnel-assessment.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.7.13": {
+      "out": "imaging/cyclops-lesions.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.7.14": {
+      "out": "imaging/revision-acl-imaging.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.8.1": {
+      "out": "imaging/normal-pcl.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.8.2": {
+      "out": "imaging/pcl-partial-tears.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.8.3": {
+      "out": "imaging/pcl-complete-tears.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.8.4": {
+      "out": "imaging/chronic-pcl-injury.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.8.5": {
+      "out": "imaging/pcl-reconstruction.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.8.6": {
+      "out": "imaging/pcl-graft-assessment.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.9.1": {
+      "out": "imaging/mcl-imaging-anatomy.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.9.2": {
+      "out": "imaging/mcl-sprains.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.9.3": {
+      "out": "imaging/deep-mcl-injuries.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.9.4": {
+      "out": "imaging/pol-injuries.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.9.5": {
+      "out": "imaging/posteromedial-corner-injuries.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.9.6": {
+      "out": "imaging/amri-imaging.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.9.7": {
+      "out": "imaging/postop-medial-reconstructions.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.10.1": {
+      "out": "imaging/lcl-injuries.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.10.2": {
+      "out": "imaging/popliteus-injuries.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.10.3": {
+      "out": "imaging/plc-injuries.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.10.4": {
+      "out": "imaging/popliteofibular-ligament-mri.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.10.5": {
+      "out": "imaging/common-peroneal-nerve-mri.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.10.6": {
+      "out": "imaging/postop-plc-imaging.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
     "5.11.1": {
       "out": "imaging/normal-cartilage.html",
       "parent": "Imaging Academy|index.html",
@@ -4082,150 +4190,6 @@
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
     },
-    "5.20.1": {
-      "out": "imaging/structured-reporting.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.20.2": {
-      "out": "imaging/reporting-meniscal-tears.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.20.3": {
-      "out": "imaging/reporting-acl-injuries.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.20.4": {
-      "out": "imaging/reporting-mcl-injuries.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.20.5": {
-      "out": "imaging/reporting-cartilage-lesions.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.20.6": {
-      "out": "imaging/reporting-osteoarthritis.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.20.7": {
-      "out": "imaging/reporting-post-operative-knees.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.20.8": {
-      "out": "imaging/common-reporting-errors.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.16.1": {
-      "out": "imaging/ct-fracture-assessment.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.16.2": {
-      "out": "imaging/ct-tibial-plateau-fractures.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.16.3": {
-      "out": "imaging/ct-rotational-profiles.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.16.4": {
-      "out": "imaging/tt-tg-measurement.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.16.5": {
-      "out": "imaging/ct-osteotomy-planning.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.16.6": {
-      "out": "imaging/ct-arthroplasty-planning.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.16.7": {
-      "out": "imaging/robotic-surgery-planning.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.16.8": {
-      "out": "imaging/ct-3d-reconstructions.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.18.1": {
-      "out": "imaging/quantitative-mri.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.18.2": {
-      "out": "imaging/t2-mapping.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.18.3": {
-      "out": "imaging/t1-rho-imaging.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.18.4": {
-      "out": "imaging/ute-imaging.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.18.5": {
-      "out": "imaging/weight-bearing-mri.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.18.6": {
-      "out": "imaging/dynamic-mri.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.18.7": {
-      "out": "imaging/pet-mri.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.18.8": {
-      "out": "imaging/artificial-intelligence-in-imaging.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
     "5.13.1": {
       "out": "imaging/bone-marrow-oedema.html",
       "parent": "Imaging Academy|index.html",
@@ -4310,6 +4274,96 @@
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
     },
+    "5.15.1": {
+      "out": "imaging/paediatric-normal-anatomy.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.15.2": {
+      "out": "imaging/paediatric-growth-plates.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.15.3": {
+      "out": "imaging/paediatric-ocd.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.15.4": {
+      "out": "imaging/discoid-meniscus.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.15.5": {
+      "out": "imaging/paediatric-acl-injury.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.15.6": {
+      "out": "imaging/paediatric-patellar-instability.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.15.7": {
+      "out": "imaging/paediatric-developmental-variants.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.16.1": {
+      "out": "imaging/ct-fracture-assessment.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.16.2": {
+      "out": "imaging/ct-tibial-plateau-fractures.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.16.3": {
+      "out": "imaging/ct-rotational-profiles.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.16.4": {
+      "out": "imaging/tt-tg-measurement.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.16.5": {
+      "out": "imaging/ct-osteotomy-planning.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.16.6": {
+      "out": "imaging/ct-arthroplasty-planning.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.16.7": {
+      "out": "imaging/robotic-surgery-planning.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "5.16.8": {
+      "out": "imaging/ct-3d-reconstructions.html",
+      "parent": "Imaging Academy|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
     "5.17.1": {
       "out": "imaging/postop-acl-reconstruction.html",
       "parent": "Imaging Academy|index.html",
@@ -4364,80 +4418,50 @@
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
     },
-    "5.10.1": {
-      "out": "imaging/lcl-injuries.html",
+    "5.18.1": {
+      "out": "imaging/quantitative-mri.html",
       "parent": "Imaging Academy|index.html",
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
     },
-    "5.10.2": {
-      "out": "imaging/popliteus-injuries.html",
+    "5.18.2": {
+      "out": "imaging/t2-mapping.html",
       "parent": "Imaging Academy|index.html",
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
     },
-    "5.10.3": {
-      "out": "imaging/plc-injuries.html",
+    "5.18.3": {
+      "out": "imaging/t1-rho-imaging.html",
       "parent": "Imaging Academy|index.html",
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
     },
-    "5.10.4": {
-      "out": "imaging/popliteofibular-ligament-mri.html",
+    "5.18.4": {
+      "out": "imaging/ute-imaging.html",
       "parent": "Imaging Academy|index.html",
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
     },
-    "5.10.5": {
-      "out": "imaging/common-peroneal-nerve-mri.html",
+    "5.18.5": {
+      "out": "imaging/weight-bearing-mri.html",
       "parent": "Imaging Academy|index.html",
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
     },
-    "5.10.6": {
-      "out": "imaging/postop-plc-imaging.html",
+    "5.18.6": {
+      "out": "imaging/dynamic-mri.html",
       "parent": "Imaging Academy|index.html",
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
     },
-    "5.9.1": {
-      "out": "imaging/mcl-imaging-anatomy.html",
+    "5.18.7": {
+      "out": "imaging/pet-mri.html",
       "parent": "Imaging Academy|index.html",
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
     },
-    "5.9.2": {
-      "out": "imaging/mcl-sprains.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.9.3": {
-      "out": "imaging/deep-mcl-injuries.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.9.4": {
-      "out": "imaging/pol-injuries.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.9.5": {
-      "out": "imaging/posteromedial-corner-injuries.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.9.6": {
-      "out": "imaging/amri-imaging.html",
-      "parent": "Imaging Academy|index.html",
-      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
-      "source": "styled_v1.md"
-    },
-    "5.9.7": {
-      "out": "imaging/postop-medial-reconstructions.html",
+    "5.18.8": {
+      "out": "imaging/artificial-intelligence-in-imaging.html",
       "parent": "Imaging Academy|index.html",
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
@@ -4502,81 +4526,279 @@
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
     },
-    "5.15.1": {
-      "out": "imaging/paediatric-normal-anatomy.html",
+    "5.20.1": {
+      "out": "imaging/structured-reporting.html",
       "parent": "Imaging Academy|index.html",
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
     },
-    "5.15.2": {
-      "out": "imaging/paediatric-growth-plates.html",
+    "5.20.2": {
+      "out": "imaging/reporting-meniscal-tears.html",
       "parent": "Imaging Academy|index.html",
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
     },
-    "5.15.3": {
-      "out": "imaging/paediatric-ocd.html",
+    "5.20.3": {
+      "out": "imaging/reporting-acl-injuries.html",
       "parent": "Imaging Academy|index.html",
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
     },
-    "5.15.4": {
-      "out": "imaging/discoid-meniscus.html",
+    "5.20.4": {
+      "out": "imaging/reporting-mcl-injuries.html",
       "parent": "Imaging Academy|index.html",
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
     },
-    "5.15.5": {
-      "out": "imaging/paediatric-acl-injury.html",
+    "5.20.5": {
+      "out": "imaging/reporting-cartilage-lesions.html",
       "parent": "Imaging Academy|index.html",
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
     },
-    "5.15.6": {
-      "out": "imaging/paediatric-patellar-instability.html",
+    "5.20.6": {
+      "out": "imaging/reporting-osteoarthritis.html",
       "parent": "Imaging Academy|index.html",
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
     },
-    "5.15.7": {
-      "out": "imaging/paediatric-developmental-variants.html",
+    "5.20.7": {
+      "out": "imaging/reporting-post-operative-knees.html",
       "parent": "Imaging Academy|index.html",
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
     },
-    "5.8.1": {
-      "out": "imaging/normal-pcl.html",
+    "5.20.8": {
+      "out": "imaging/common-reporting-errors.html",
       "parent": "Imaging Academy|index.html",
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
     },
-    "5.8.2": {
-      "out": "imaging/pcl-partial-tears.html",
-      "parent": "Imaging Academy|index.html",
+    "6.1.0": {
+      "out": "conditions/acl.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. With a consultant for review. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.1.1": {
+      "out": "conditions/acl-what-is-the-acl.html",
+      "parent": "Conditions|index.html",
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
     },
-    "5.8.3": {
-      "out": "imaging/pcl-complete-tears.html",
-      "parent": "Imaging Academy|index.html",
+    "6.1.2": {
+      "out": "conditions/acl-functions.html",
+      "parent": "Conditions|index.html",
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
     },
-    "5.8.4": {
-      "out": "imaging/chronic-pcl-injury.html",
-      "parent": "Imaging Academy|index.html",
+    "6.1.3": {
+      "out": "conditions/acl-epidemiology.html",
+      "parent": "Conditions|index.html",
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
     },
-    "5.8.5": {
-      "out": "imaging/pcl-reconstruction.html",
-      "parent": "Imaging Academy|index.html",
+    "6.1.4": {
+      "out": "conditions/acl-natural-history.html",
+      "parent": "Conditions|index.html",
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
     },
-    "5.8.6": {
-      "out": "imaging/pcl-graft-assessment.html",
-      "parent": "Imaging Academy|index.html",
+    "6.1.5": {
+      "out": "conditions/acl-mechanisms-of-injury.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.2.1": {
+      "out": "conditions/acl-non-contact-injury.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.2.2": {
+      "out": "conditions/acl-contact-injury.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.2.3": {
+      "out": "conditions/acl-hyperextension-injury.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.2.4": {
+      "out": "conditions/acl-combined-injuries.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.2.5": {
+      "out": "conditions/acute-haemarthrosis.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.3.1": {
+      "out": "conditions/acl-femoral-avulsion.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.3.2": {
+      "out": "conditions/acl-mid-substance-tear.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.3.3": {
+      "out": "conditions/acl-tibial-avulsion.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.3.4": {
+      "out": "conditions/acl-partial-tears.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.3.5": {
+      "out": "conditions/acl-complete-tears.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.3.6": {
+      "out": "conditions/acl-healing-tears.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.4.1": {
+      "out": "conditions/acl-bone-bruising.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.4.2": {
+      "out": "conditions/ramp-lesions.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.4.3": {
+      "out": "conditions/meniscal-root-tears.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.4.4": {
+      "out": "conditions/anterolateral-ligament-injuries.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.4.5": {
+      "out": "conditions/acl-associated-mcl-injuries.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.4.6": {
+      "out": "conditions/acl-associated-cartilage-injuries.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.5.1": {
+      "out": "conditions/acl-deficiency-instability.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.5.2": {
+      "out": "conditions/acl-deficiency-meniscal-damage.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.5.3": {
+      "out": "conditions/acl-deficiency-cartilage-degeneration.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.5.4": {
+      "out": "conditions/post-traumatic-osteoarthritis.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.6.1": {
+      "out": "conditions/female-acl-epidemiology.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.6.2": {
+      "out": "conditions/female-acl-hormonal-factors.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.6.3": {
+      "out": "conditions/female-acl-neuromuscular-factors.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.6.4": {
+      "out": "conditions/acl-injury-prevention.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.7.1": {
+      "out": "conditions/paediatric-acl-skeletally-immature.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.7.2": {
+      "out": "conditions/paediatric-acl-physeal-injuries.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.7.3": {
+      "out": "conditions/paediatric-acl-reconstruction-strategies.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.8.1": {
+      "out": "conditions/acl-graft-failure.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.8.2": {
+      "out": "conditions/acl-tunnel-malposition.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.8.3": {
+      "out": "conditions/acl-biological-failure.html",
+      "parent": "Conditions|index.html",
+      "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
+      "source": "styled_v1.md"
+    },
+    "6.8.4": {
+      "out": "conditions/acl-reconstruction-infection.html",
+      "parent": "Conditions|index.html",
       "status": "Editorial draft. Evidence verification did not run. Not consultant reviewed. Not for clinical use.",
       "source": "styled_v1.md"
     }
@@ -4602,5 +4824,13 @@
     }
   },
   "withheld_note": "Pages written and gated but deliberately not published, and pages the client decided against before they were written. Where a draft exists it stays in pipeline/runs so nothing is lost, and the entry points at it. An entry with \"written\": false has no draft, because the decision came first. Move an entry back into pages and run tools/render_site.py to publish one that exists.",
-  "naming_note": "Section 2 reuses page titles across chapters, so its published names carry the chapter: anatomy/<chapter>-<page>.html. Flat rather than nested, because the renderer builds one level of relative path."
+  "naming_note": "Section 2 reuses page titles across chapters, so its published names carry the chapter: anatomy/<chapter>-<page>.html. Flat rather than nested, because the renderer builds one level of relative path.",
+  "unmapped": {
+    "6.1.0": {
+      "title": "Anterior cruciate ligament injury",
+      "out": "conditions/acl.html",
+      "reason": "Written in the repository's first commit, before any page map existed, as the worked example of a seven tier condition article. about/standards.html points at it as \"See it applied\" and six tier landing pages link it as \"ACL injury\". The source architecture has no page matching it: its 6.1.1 is \"What is the ACL?\", a narrower chapter opener, and this page's ground is spread across chapters 6.1 to 6.5. It held the id 6.1.1 until 31 October 2026 and was the only render target in the site with no entry in any architecture map. Moved to 6.1.0 to free the real id and declared here rather than left silent.",
+      "decide_when": "Chapters 6.1 to 6.8 are written, which cover its ground. The choice is then to retire it and point its nine inbound links at 6.1.1, or to keep it as the section's overview page and give it an id the architecture recognises. Not this process's call to make."
+    }
+  }
 }

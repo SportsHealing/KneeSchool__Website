@@ -659,6 +659,15 @@
           "blocker": "Chapter 5.20's subject is the report rather than an image, so two of the imaging template's six headings meant something else on its eight pages: What Normal Looks Like meant a good report and What Abnormal Looks Like meant a poor one. Everywhere else in Section 5 those words describe a knee. The chapter carried a paragraph on 5.20.1 telling the reader how to read the headings, which is a translation note standing in for a template. Decision 028 predicted this and recorded it as the first thing to revisit.",
           "needed": "Nothing outstanding. The chapter has its own type, derived from the eight pages after they were written rather than guessed at before. No page's content moved, because they were already written to these six questions. The type is as unvalidated as the imaging and examination templates: no editorial authority has confirmed its sections. The one real risk was ACC-001, which named examination and imaging, so splitting a chapter out of imaging would have dropped it out of the accuracy ban with every gate still green; a test holds it.",
           "pages": "1 template, 4 new headings, 8 pages retyped, 4 config joins, 9 tests"
+        },
+        {
+          "ref": "D-030",
+          "title": "Section 6's page map until Part 3, and the one page nothing governed",
+          "area": "Section 6",
+          "state": "Applied",
+          "blocker": "Part 1 estimates Section 6 at 500 to 700 pages across 156 chapters and puts its page map in the Part 3 instalment, which is not in this repository. The source enumerates numbered sub pages for chapters 6.1 to 6.8 only, 37 pages, and Part 1's own conventions say the rest are chapters that publish as single pages, so Section 5's flattening does not transfer. Separately, conditions/acl.html had held the id 6.1.1 since the first commit and was the only render target in the site with no entry in any architecture map; no gate compared the two lists.",
+          "needed": "Part 3. Until it arrives the section is 37 pages designed and 148 chapters unmapped, and the seven tier set is an editorial default carried across from the section's own overview, which is the same weak derivation decisions 024 and 027 record. tools/extract_section6.py is committed so the map can be rebuilt and checked, and it prints the 148 it refuses to invent on every run. The showcase page moved to 6.1.0 and is declared in a new unmapped block, with the decision still owed on it recorded there; a gate now fails on any render target that is in no map and not declared.",
+          "pages": "37 pages designed, 5 written, pages_6.json, 1 committed tool, 1 new gate, 10 tests"
         }
       ]
     },
